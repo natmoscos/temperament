@@ -13,8 +13,10 @@ export default function ShareButtons({ fullCode, mbtiNickname, temperamentNickna
 
   // 공유 URL: /share/ENFJ-SC 형태 (OG 이미지 포함)
   const shareUrl = typeof window !== 'undefined' ? `${window.location.origin}/share/${fullCode}` : '';
-  const shareText = `나의 성격 유형: ${fullCode}\n${mbtiNickname} + ${temperamentNickname}\n\n192가지 성격 유형 검사에서 확인해보세요!`;
+  const shareText = `나는 ${fullCode}! ${mbtiNickname} x ${temperamentNickname}\n너의 숨겨진 성격은? 192가지 유형 중 나만의 유형을 찾아봐!`;
+  const twitterText = `나는 ${fullCode}! ${mbtiNickname} x ${temperamentNickname} 🔮\n너의 숨겨진 성격은? MBTI를 넘어선 192가지 유형 검사`;
   const encodedText = encodeURIComponent(shareText);
+  const encodedTwitterText = encodeURIComponent(twitterText);
   const encodedUrl = encodeURIComponent(shareUrl);
 
   const handleCopyLink = async () => {
@@ -35,12 +37,47 @@ export default function ShareButtons({ fullCode, mbtiNickname, temperamentNickna
   };
 
   const shareKakao = () => {
-    const kakaoUrl = `https://story.kakao.com/share?url=${encodedUrl}&text=${encodedText}`;
-    window.open(kakaoUrl, '_blank', 'width=600,height=400');
+    // Kakao SDK가 로드된 경우 KakaoTalk 공유
+    if (typeof window !== 'undefined' && (window as unknown as Record<string, unknown>).Kakao) {
+      const Kakao = (window as unknown as Record<string, any>).Kakao;
+      try {
+        Kakao.Share.sendDefault({
+          objectType: 'feed',
+          content: {
+            title: `나는 ${fullCode}! ${mbtiNickname}`,
+            description: `${temperamentNickname} - 너의 숨겨진 성격은? 192가지 유형 검사로 확인해봐!`,
+            imageUrl: `${shareUrl.replace(`/share/${fullCode}`, '')}/api/og?code=${fullCode}`,
+            link: { mobileWebUrl: shareUrl, webUrl: shareUrl },
+          },
+          buttons: [
+            { title: '나도 검사하기', link: { mobileWebUrl: shareUrl, webUrl: shareUrl } },
+          ],
+        });
+        return;
+      } catch {
+        // SDK 에러시 폴백
+      }
+    }
+    // 폴백: 카카오톡 공유 링크 (모바일에서 카카오톡 앱 열기 시도)
+    const kakaoShareUrl = `https://sharer.kakao.com/talk/friends/picker/link?url=${encodedUrl}&text=${encodedText}`;
+    // 카카오스토리 폴백
+    const kakaoStoryUrl = `https://story.kakao.com/share?url=${encodedUrl}&text=${encodedText}`;
+
+    // 모바일에서는 카카오톡 공유 시도, PC에서는 카카오스토리
+    if (/Android|iPhone|iPad/i.test(navigator.userAgent)) {
+      // 모바일: 클립보드 복사 + 안내
+      navigator.clipboard.writeText(`${shareText}\n${shareUrl}`).then(() => {
+        alert('링크가 복사되었습니다! 카카오톡에서 붙여넣기 해주세요.');
+      }).catch(() => {
+        window.open(kakaoStoryUrl, '_blank', 'width=600,height=400');
+      });
+    } else {
+      window.open(kakaoStoryUrl, '_blank', 'width=600,height=400');
+    }
   };
 
   const shareTwitter = () => {
-    const url = `https://twitter.com/intent/tweet?text=${encodedText}&url=${encodedUrl}`;
+    const url = `https://twitter.com/intent/tweet?text=${encodedTwitterText}&url=${encodedUrl}`;
     window.open(url, '_blank', 'width=600,height=400');
   };
 
@@ -68,7 +105,7 @@ export default function ShareButtons({ fullCode, mbtiNickname, temperamentNickna
 
   return (
     <div className="space-y-4">
-      <p className="text-center text-sm text-gray-500">결과를 공유해보세요</p>
+      <p className="text-center text-sm font-medium text-gray-600">친구에게 공유하고 궁합도 확인해보세요!</p>
 
       {/* 주요 공유 버튼 */}
       <div className="flex justify-center gap-3 flex-wrap">

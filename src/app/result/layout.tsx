@@ -1,6 +1,7 @@
 'use client';
 
 import ResultNav from '@/components/ResultNav';
+import FloatingPdfReminder from '@/components/FloatingPdfReminder';
 
 export default function ResultLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -9,6 +10,7 @@ export default function ResultLayout({ children }: { children: React.ReactNode }
       <div className="py-8 px-4">
         {children}
       </div>
+      <FloatingPdfReminder />
     </div>
   );
 }

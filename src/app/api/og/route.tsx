@@ -63,101 +63,133 @@ export async function GET(req: NextRequest) {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          background: `linear-gradient(135deg, ${palette.bg1} 0%, ${palette.bg2} 50%, ${palette.bg1} 100%)`,
+          background: `linear-gradient(145deg, ${palette.bg1} 0%, ${palette.bg2} 40%, white 70%, ${palette.bg1} 100%)`,
           fontFamily: 'sans-serif',
           position: 'relative',
+          overflow: 'hidden',
         }}
       >
-        {/* 배경 장식 */}
-        <div style={{ position: 'absolute', top: '40px', left: '60px', fontSize: '80px', opacity: 0.15, display: 'flex' }}>
+        {/* 배경 대형 장식 원 */}
+        <div style={{
+          position: 'absolute', top: '-80px', right: '-80px',
+          width: '400px', height: '400px', borderRadius: '50%',
+          background: palette.bg2, opacity: 0.3, display: 'flex',
+        }} />
+        <div style={{
+          position: 'absolute', bottom: '-60px', left: '-60px',
+          width: '300px', height: '300px', borderRadius: '50%',
+          background: palette.bg2, opacity: 0.2, display: 'flex',
+        }} />
+
+        {/* 배경 이모지 장식 */}
+        <div style={{ position: 'absolute', top: '50px', left: '70px', fontSize: '90px', opacity: 0.1, display: 'flex' }}>
           {palette.emoji}
         </div>
-        <div style={{ position: 'absolute', bottom: '40px', right: '60px', fontSize: '80px', opacity: 0.15, display: 'flex' }}>
-          {mbtiInfo.emoji}
-        </div>
-        <div style={{ position: 'absolute', top: '40px', right: '80px', fontSize: '60px', opacity: 0.1, display: 'flex' }}>
-          {palette.emoji}
-        </div>
-        <div style={{ position: 'absolute', bottom: '50px', left: '80px', fontSize: '60px', opacity: 0.1, display: 'flex' }}>
+        <div style={{ position: 'absolute', bottom: '50px', right: '70px', fontSize: '90px', opacity: 0.1, display: 'flex' }}>
           {mbtiInfo.emoji}
         </div>
 
-        {/* 상단 레이블 */}
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '8px',
-            background: 'rgba(255,255,255,0.7)',
-            borderRadius: '50px',
-            padding: '10px 28px',
-            marginBottom: '24px',
-          }}
-        >
-          <span style={{ fontSize: '18px', color: '#6366F1', fontWeight: 700 }}>192 성격 유형 검사 결과</span>
-        </div>
+        {/* 좌측 장식 라인 */}
+        <div style={{
+          position: 'absolute', left: '0', top: '0', bottom: '0', width: '6px',
+          background: `linear-gradient(180deg, ${palette.accent}, transparent)`,
+          display: 'flex',
+        }} />
 
-        {/* 메인 유형 코드 */}
-        <div
-          style={{
-            fontSize: '120px',
-            fontWeight: 900,
-            letterSpacing: '-3px',
-            background: `linear-gradient(135deg, #6366F1, #A855F7)`,
-            backgroundClip: 'text',
-            color: 'transparent',
-            lineHeight: 1.1,
-            display: 'flex',
-          }}
-        >
-          {code}
-        </div>
-
-        {/* MBTI 닉네임 */}
+        {/* 상단 브랜딩 */}
         <div
           style={{
             display: 'flex',
             alignItems: 'center',
             gap: '10px',
-            marginTop: '16px',
-            fontSize: '36px',
-            fontWeight: 700,
-            color: '#374151',
+            background: 'rgba(255,255,255,0.85)',
+            borderRadius: '50px',
+            padding: '10px 30px',
+            marginBottom: '28px',
+            boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
+          }}
+        >
+          <span style={{ fontSize: '20px', color: '#6366F1', fontWeight: 800, letterSpacing: '-0.5px' }}>192 성격 유형 검사</span>
+          <span style={{ fontSize: '16px', color: '#A855F7', fontWeight: 500 }}>결과</span>
+        </div>
+
+        {/* 메인 유형 코드 */}
+        <div
+          style={{
+            fontSize: '130px',
+            fontWeight: 900,
+            letterSpacing: '-4px',
+            background: `linear-gradient(135deg, ${palette.accent}, #6366F1, #A855F7)`,
+            backgroundClip: 'text',
+            color: 'transparent',
+            lineHeight: 1.05,
+            display: 'flex',
+            textShadow: '0 2px 40px rgba(99,102,241,0.15)',
+          }}
+        >
+          {code}
+        </div>
+
+        {/* MBTI 닉네임 - 크게 */}
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '12px',
+            marginTop: '18px',
+            fontSize: '40px',
+            fontWeight: 800,
+            color: '#1F2937',
+            letterSpacing: '-1px',
           }}
         >
           <span>{mbtiInfo.emoji}</span>
           <span>{mbtiInfo.nickname}</span>
         </div>
 
-        {/* 기질 닉네임 */}
+        {/* 기질 조합 설명 */}
         <div
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '8px',
-            marginTop: '12px',
-            fontSize: '26px',
-            fontWeight: 500,
+            gap: '12px',
+            marginTop: '10px',
+            fontSize: '24px',
+            fontWeight: 600,
             color: palette.text,
           }}
         >
-          <span>{tempNickname}</span>
-          <span style={{ opacity: 0.6 }}>({temperamentPalettes[tempCode[0]]?.name ?? ''} + {temperamentPalettes[tempCode[1]]?.name ?? ''})</span>
+          <span style={{
+            background: `${palette.bg2}`,
+            padding: '4px 14px',
+            borderRadius: '8px',
+            fontSize: '22px',
+          }}>{temperamentPalettes[tempCode[0]]?.name ?? ''}</span>
+          <span style={{ color: '#9CA3AF', fontSize: '18px' }}>+</span>
+          <span style={{
+            background: `${(temperamentPalettes[tempCode[1]] ?? palette).bg2}`,
+            padding: '4px 14px',
+            borderRadius: '8px',
+            fontSize: '22px',
+          }}>{temperamentPalettes[tempCode[1]]?.name ?? ''}</span>
+          <span style={{ color: '#6B7280', marginLeft: '4px' }}>{tempNickname}</span>
         </div>
 
-        {/* 하단 CTA */}
+        {/* 하단 CTA 버튼 */}
         <div
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '8px',
-            marginTop: '40px',
-            background: '#6366F1',
+            gap: '10px',
+            marginTop: '36px',
+            background: 'linear-gradient(135deg, #6366F1, #8B5CF6)',
             color: 'white',
-            borderRadius: '16px',
-            padding: '14px 36px',
-            fontSize: '22px',
-            fontWeight: 700,
+            borderRadius: '20px',
+            padding: '16px 44px',
+            fontSize: '24px',
+            fontWeight: 800,
+            boxShadow: '0 8px 24px rgba(99,102,241,0.3)',
+            letterSpacing: '-0.5px',
           }}
         >
           나도 검사하기 →

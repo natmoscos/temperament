@@ -89,7 +89,100 @@ export default function QuickResultPage() {
           </div>
         </div>
 
-        {/* ━━━ 잠긴 콘텐츠 미리보기 ━━━ */}
+        {/* ━━━ 비교표: 빠른 검사 vs 정밀 검사 ━━━ */}
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 sm:p-6">
+          <h3 className="text-base font-bold text-gray-800 mb-4 text-center">빠른 검사 vs 정밀 검사</h3>
+          <div className="grid grid-cols-[1fr_auto_auto] gap-x-3 gap-y-2.5 text-sm">
+            {/* Header */}
+            <div className="text-xs text-gray-400 font-medium" />
+            <div className="text-center">
+              <span className="inline-block px-2.5 py-1 bg-gray-100 text-gray-500 rounded-full text-xs font-bold">30문항</span>
+              <p className="text-[11px] text-gray-400 mt-0.5">정확도 ~70%</p>
+            </div>
+            <div className="text-center">
+              <span className="inline-block px-2.5 py-1 bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-full text-xs font-bold">100문항</span>
+              <p className="text-[11px] text-indigo-500 font-semibold mt-0.5">정확도 95%+</p>
+            </div>
+            {/* Rows */}
+            {[
+              { label: '기본 유형 코드', quick: true, full: true },
+              { label: '성격 심층 분석', quick: false, full: true },
+              { label: '연애 스타일 & 궁합', quick: false, full: true },
+              { label: '커리어 전략', quick: false, full: true },
+              { label: '스트레스 패턴', quick: false, full: true },
+              { label: '과학적 근거', quick: false, full: true },
+              { label: 'PDF 보고서', quick: false, full: true },
+            ].map((row) => (
+              <div key={row.label} className="contents">
+                <p className="text-gray-600 py-1 border-t border-gray-50">{row.label}</p>
+                <p className="text-center py-1 border-t border-gray-50">
+                  {row.quick
+                    ? <span className="text-emerald-500 font-bold">✅</span>
+                    : <span className="text-gray-300">❌</span>}
+                </p>
+                <p className="text-center py-1 border-t border-gray-50">
+                  <span className="text-emerald-500 font-bold">✅</span>
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* ━━━ 잠긴 콘텐츠 미리보기 (블러 티저) ━━━ */}
+        <div className="space-y-4">
+          <h3 className="text-base font-bold text-gray-800 text-center">정밀 검사에서 확인할 수 있는 내용</h3>
+
+          {/* 성격 인사이트 티저 카드 */}
+          <div className="relative bg-white rounded-2xl border border-gray-100 p-5 overflow-hidden">
+            <div className="blur-[6px] select-none pointer-events-none" aria-hidden="true">
+              <p className="text-sm font-bold text-gray-800 mb-2">🎭 숨겨진 성격 분석</p>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                당신의 {mbti.type} 유형은 겉으로는 차분해 보이지만,
+                내면에서는 강렬한 감정의 소용돌이가 일어납니다.
+                특히 가까운 관계에서는 예상과 다른 모습이 나타나며...
+              </p>
+              <div className="flex gap-2 mt-3">
+                <span className="px-2 py-1 bg-indigo-100 text-indigo-700 rounded text-xs">내면 분석</span>
+                <span className="px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs">갈등 패턴</span>
+                <span className="px-2 py-1 bg-pink-100 text-pink-700 rounded text-xs">성장 포인트</span>
+              </div>
+            </div>
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/60">
+              <span className="text-3xl mb-2">🔒</span>
+              <p className="text-sm font-bold text-gray-700">정밀 검사 후 확인 가능</p>
+              <p className="text-xs text-gray-400 mt-0.5">192가지 유형별 맞춤 분석</p>
+            </div>
+          </div>
+
+          {/* 궁합 티저 카드 */}
+          <div className="relative bg-white rounded-2xl border border-gray-100 p-5 overflow-hidden">
+            <div className="blur-[6px] select-none pointer-events-none" aria-hidden="true">
+              <p className="text-sm font-bold text-gray-800 mb-2">❤️ 연애 궁합 분석</p>
+              <div className="flex items-center justify-around mb-3">
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-indigo-100 rounded-full mx-auto mb-1" />
+                  <p className="text-xs text-gray-500">{result.fullCode}</p>
+                </div>
+                <span className="text-xl">💕</span>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-pink-100 rounded-full mx-auto mb-1" />
+                  <p className="text-xs text-gray-500">???</p>
+                </div>
+              </div>
+              <div className="w-full bg-gray-100 rounded-full h-3 mb-2">
+                <div className="bg-gradient-to-r from-pink-400 to-red-400 h-3 rounded-full w-4/5" />
+              </div>
+              <p className="text-xs text-gray-500">궁합 점수: 87%</p>
+            </div>
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-white/60">
+              <span className="text-3xl mb-2">🔒</span>
+              <p className="text-sm font-bold text-gray-700">정밀 검사 후 확인 가능</p>
+              <p className="text-xs text-gray-400 mt-0.5">연애 스타일 & 궁합 심층 분석</p>
+            </div>
+          </div>
+        </div>
+
+        {/* ━━━ 잠긴 콘텐츠 목록 ━━━ */}
         <div className="space-y-3">
           {[
             { icon: '🔑', title: 'MBTI만으로는 설명할 수 없었던 것들', desc: '기질론이 풀어주는 당신의 모순' },
@@ -116,25 +209,50 @@ export default function QuickResultPage() {
         <AdPlaceholder />
 
         {/* ━━━ 정밀 검사 CTA (핵심!) ━━━ */}
-        <div className="bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl p-6 sm:p-8 text-center text-white shadow-xl">
-          <p className="text-sm text-indigo-200 mb-2">30문항 간편 검사의 정확도는 약 70%입니다</p>
-          <h3 className="text-xl font-bold mb-3">100문항 정밀 검사로<br />진짜 나를 만나보세요</h3>
-          <ul className="text-sm text-indigo-100 space-y-1.5 mb-5 text-left max-w-xs mx-auto">
-            <li>✓ 정확도 95%+ 의 정밀 분석</li>
-            <li>✓ 192유형 맞춤 인생 공략집</li>
-            <li>✓ 연애, 커리어, 스트레스 심층 분석</li>
-            <li>✓ Grip 스트레스 패턴 + 회복법</li>
-            <li>✓ 과학적 근거 (Eysenck, Helen Fisher)</li>
-            <li>✓ 궁합 검사 기능</li>
-          </ul>
-          <a
-            href="/test"
-            onClick={() => localStorage.removeItem('temperament-test-answers')}
-            className="inline-block w-full py-4 bg-white text-indigo-700 rounded-xl text-lg font-bold hover:bg-indigo-50 transition shadow-lg"
-          >
-            무료 정밀 검사 시작하기
-          </a>
-          <p className="text-xs text-indigo-200 mt-3">약 12~15분 소요 | 100문항 | 완전 무료</p>
+        <div className="bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl p-6 sm:p-8 text-center text-white shadow-xl relative overflow-hidden">
+          {/* Decorative background circles */}
+          <div className="absolute -top-10 -right-10 w-40 h-40 bg-white/5 rounded-full" />
+          <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-white/5 rounded-full" />
+
+          <div className="relative">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/15 rounded-full text-xs text-indigo-100 mb-3">
+              <span className="inline-block w-2 h-2 bg-amber-400 rounded-full" />
+              지금 바로 시작 가능
+            </div>
+
+            <h3 className="text-xl sm:text-2xl font-bold mb-2">100문항 정밀 검사로<br />진짜 나를 만나보세요</h3>
+            <p className="text-sm text-indigo-200 mb-5">
+              지금 바로 정밀 검사를 시작하면<br />
+              12~15분 안에 완전한 분석을 받을 수 있어요
+            </p>
+
+            {/* Accuracy comparison bar */}
+            <div className="flex items-center gap-3 max-w-xs mx-auto mb-5">
+              <div className="flex-1">
+                <p className="text-xs text-indigo-200 mb-1">빠른 검사</p>
+                <div className="w-full bg-white/10 rounded-full h-2.5">
+                  <div className="bg-white/40 h-2.5 rounded-full" style={{ width: '70%' }} />
+                </div>
+                <p className="text-xs text-indigo-300 mt-0.5">~70%</p>
+              </div>
+              <div className="flex-1">
+                <p className="text-xs text-white font-semibold mb-1">정밀 검사</p>
+                <div className="w-full bg-white/10 rounded-full h-2.5">
+                  <div className="bg-gradient-to-r from-amber-300 to-yellow-300 h-2.5 rounded-full" style={{ width: '95%' }} />
+                </div>
+                <p className="text-xs text-amber-300 font-semibold mt-0.5">95%+</p>
+              </div>
+            </div>
+
+            <a
+              href="/test"
+              onClick={() => localStorage.removeItem('temperament-test-answers')}
+              className="inline-block w-full py-4 bg-white text-indigo-700 rounded-xl text-lg font-bold hover:bg-indigo-50 transition shadow-lg animate-[pulse_2s_ease-in-out_infinite] hover:animate-none"
+            >
+              무료 정밀 검사 시작하기 →
+            </a>
+            <p className="text-xs text-indigo-200 mt-3">약 12~15분 소요 | 100문항 | 완전 무료</p>
+          </div>
         </div>
 
         {/* ━━━ 공유 ━━━ */}

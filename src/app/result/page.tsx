@@ -1,11 +1,13 @@
 'use client';
 
+import { useEffect } from 'react';
 import { useResult } from '@/hooks/useResult';
 import { HeroCharacter } from '@/components/CharacterAvatar';
 import ShareButtons from '@/components/ShareButtons';
 import AdPlaceholder from '@/components/AdPlaceholder';
 import PdfDownloadButton from '@/components/PdfDownloadButton';
 import { LoadingSpinner, NextPageCTA } from '@/components/ResultSection';
+import ResultSaveReminder from '@/components/ResultSaveReminder';
 
 const temperamentNames: Record<string, string> = { S: '다혈질', C: '담즙질', P: '점액질', M: '우울질' };
 const temperamentTextColors: Record<string, string> = { S: 'text-amber-700', C: 'text-red-700', P: 'text-emerald-700', M: 'text-blue-700' };
@@ -20,6 +22,32 @@ const reliabilityInfo: Record<string, { text: string; color: string }> = {
 
 export default function ResultSummaryPage() {
   const { result, profile, loading } = useResult();
+
+  // 동적 OG 메타 태그 삽입 (클라이언트 컴포넌트이므로 useEffect 사용)
+  // 참고: 소셜 크롤러는 JS를 실행하지 않으므로 실제 OG 공유는 /share/[code] 페이지가 담당
+  useEffect(() => {
+    if (!result || !profile) return;
+    const code = result.fullCode;
+    const title = `${code} - ${profile.mbtiNickname} | 192 성격 유형 검사`;
+    document.title = title;
+
+    // OG 메타 태그 업데이트 또는 추가
+    const ogTags: Record<string, string> = {
+      'og:title': title,
+      'og:description': `${code} 유형: ${profile.mbtiNickname} x ${profile.temperamentNickname}. 나의 숨겨진 성격을 확인하세요!`,
+      'og:image': `${window.location.origin}/api/og?code=${code}`,
+      'og:url': `${window.location.origin}/share/${code}`,
+    };
+    Object.entries(ogTags).forEach(([property, content]) => {
+      let tag = document.querySelector(`meta[property="${property}"]`) as HTMLMetaElement | null;
+      if (!tag) {
+        tag = document.createElement('meta');
+        tag.setAttribute('property', property);
+        document.head.appendChild(tag);
+      }
+      tag.setAttribute('content', content);
+    });
+  }, [result, profile]);
 
   if (loading || !result || !profile) return <LoadingSpinner />;
 
@@ -48,6 +76,9 @@ export default function ResultSummaryPage() {
           </span>
         </div>
       </div>
+
+      {/* ━━━ PDF 저장 리마인더 ━━━ */}
+      <ResultSaveReminder />
 
       {/* ━━━ 복합 기질 조합 카드 ━━━ */}
       {profile.dualTemperamentDescription && (

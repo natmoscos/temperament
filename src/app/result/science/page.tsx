@@ -7,6 +7,7 @@ import PremiumTeaser from '@/components/PremiumTeaser';
 import ShareButtons from '@/components/ShareButtons';
 import AdPlaceholder from '@/components/AdPlaceholder';
 import PdfDownloadButton from '@/components/PdfDownloadButton';
+import ResultSaveReminder from '@/components/ResultSaveReminder';
 
 export default function SciencePage() {
   const { result, profile, loading } = useResult();
@@ -90,6 +91,9 @@ export default function SciencePage() {
           <li>• 히포크라테스 4체액설 — 인체를 구성하는 4원소(불, 물, 공기, 흙)와 체액의 균형 이론</li>
         </ul>
       </div>
+
+      {/* ━━━ PDF 저장 리마인더 ━━━ */}
+      <ResultSaveReminder />
 
       {/* ━━━ PDF 보고서 ━━━ */}
       <PdfDownloadButton result={result} profile={profile} />

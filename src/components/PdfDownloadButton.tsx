@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { TestResult } from '@/data/types';
 import { IntegratedProfile } from '@/data/profiles-integrated';
+import { trackEvent } from '@/lib/analytics';
 
 interface Props {
   result: TestResult;
@@ -15,10 +16,12 @@ export default function PdfDownloadButton({ result, profile }: Props) {
 
   const handleDownload = async () => {
     setLoading(true);
+    trackEvent('pdf_download_click', { type: result.fullCode });
     try {
       // 동적 import로 번들 사이즈 최적화
       const { generatePremiumPDF } = await import('@/lib/generate-pdf');
       await generatePremiumPDF(result, profile);
+      trackEvent('pdf_download_success', { type: result.fullCode });
       setDone(true);
       setTimeout(() => setDone(false), 3000);
     } catch (err) {

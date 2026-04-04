@@ -4,6 +4,7 @@ import { useState, useCallback, useEffect } from 'react';
 import { questions } from '@/data/questions';
 import { Answer, TestResult } from '@/data/types';
 import { calculateResult } from '@/data/scoring';
+import { trackEvent } from '@/lib/analytics';
 
 const STORAGE_KEY = 'temperament-test-answers';
 
@@ -68,11 +69,22 @@ export function useTest() {
         newAnswers = [...answers, newAnswer];
       }
 
+      // Track test_start on first answer
+      if (answers.length === 0) {
+        trackEvent('test_start');
+      }
+
+      // Track halfway point
+      if (newAnswers.length === Math.floor(totalQuestions / 2)) {
+        trackEvent('test_halfway', { questions: Math.floor(totalQuestions / 2) });
+      }
+
       saveAnswers(newAnswers);
 
       // 마지막 문항이면 결과 산출
       if (currentIndex === totalQuestions - 1) {
         setResult(calculateResult(newAnswers));
+        trackEvent('test_complete', { questions: totalQuestions });
       } else {
         setCurrentIndex((prev) => prev + 1);
       }
@@ -96,6 +108,7 @@ export function useTest() {
 
   // 검사 초기화
   const reset = useCallback(() => {
+    trackEvent('test_reset');
     setCurrentIndex(0);
     setAnswers([]);
     setResult(null);

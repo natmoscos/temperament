@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { quickQuestions } from '@/data/questions-quick';
 import { calculateQuickResult } from '@/data/scoring-quick';
 import { Answer, TestResult } from '@/data/types';
+import { trackEvent } from '@/lib/analytics';
 
 const STORAGE_KEY = 'temperament-quick-test-answers';
 
@@ -38,11 +39,18 @@ export function useQuickTest() {
 
     const newAnswer: Answer = { questionId: currentQuestion.id, order: currentQuestion.order, value };
     const updated = [...answers.filter(a => a.questionId !== currentQuestion.id), newAnswer];
+
+    // Track quick_test_start on first answer
+    if (answers.length === 0) {
+      trackEvent('quick_test_start');
+    }
+
     setAnswers(updated);
     localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
 
     if (currentIndex >= totalQuestions - 1) {
       setResult(calculateQuickResult(updated));
+      trackEvent('quick_test_complete');
     } else {
       setCurrentIndex(currentIndex + 1);
     }
