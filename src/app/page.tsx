@@ -9,7 +9,7 @@ export default function Home() {
         {/* 신뢰 배지 */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full mb-8">
           <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-          <span className="text-xs text-indigo-200 font-medium">2,400년 검증된 성격 과학</span>
+          <span className="text-xs text-indigo-200 font-medium">MBTI 16가지로는 부족했습니다</span>
         </div>
 
         {/* 헤드카피 */}
@@ -82,17 +82,19 @@ export default function Home() {
         </div>
 
         {/* 사회적 증거 */}
-        <div className="mt-8 flex items-center justify-center gap-2">
-          <div className="flex -space-x-2">
-            {['🟡', '🔴', '🔵', '🟢'].map((c, i) => (
-              <div key={i} className="w-7 h-7 rounded-full bg-white/20 border-2 border-indigo-950 flex items-center justify-center text-xs">
-                {c}
+        <div className="mt-8 flex flex-col items-center gap-3">
+          <div className="flex items-center gap-3">
+            {[
+              { icon: '🔬', text: 'Eysenck 성격 모델 기반' },
+              { icon: '🧬', text: 'Helen Fisher 신경화학 이론' },
+            ].map((item) => (
+              <div key={item.text} className="flex items-center gap-1.5 px-3 py-1 bg-white/5 rounded-lg border border-white/10">
+                <span className="text-xs">{item.icon}</span>
+                <span className="text-[11px] text-indigo-300/60">{item.text}</span>
               </div>
             ))}
           </div>
-          <p className="text-sm text-indigo-300/70">
-            <strong className="text-indigo-200">2,847명</strong>이 성격을 발견했습니다
-          </p>
+          <p className="text-xs text-indigo-400/50">현대 심리학 + 2,400년 관찰 데이터 통합 분석</p>
         </div>
       </div>
 
