@@ -2,6 +2,8 @@
 
 import { useResult } from '@/hooks/useResult';
 import { Section, Paragraph, LoadingSpinner } from '@/components/ResultSection';
+import { PremiumSectionTeaser } from '@/components/PremiumTeaser';
+import PremiumTeaser from '@/components/PremiumTeaser';
 import ShareButtons from '@/components/ShareButtons';
 import AdPlaceholder from '@/components/AdPlaceholder';
 import PdfDownloadButton from '@/components/PdfDownloadButton';
@@ -20,24 +22,32 @@ export default function SciencePage() {
         <h1 className="text-2xl font-bold text-gray-800 mt-1">과학적 근거</h1>
       </div>
 
-      {/* ━━━ Eysenck ━━━ */}
+      {/* ━━━ Eysenck (FREE) ━━━ */}
       <Section icon="🔬" title="Eysenck의 2차원 성격 모델" subtitle="당신의 기질이 가진 신경생물학적 기반">
         <Paragraph text={profile.eysenckInsight} />
       </Section>
 
       <AdPlaceholder />
 
-      {/* ━━━ 신경과학 ━━━ */}
-      <Section icon="🧪" title="Helen Fisher의 신경화학 이론" subtitle="도파민, 세로토닌, 테스토스테론, 에스트로겐과 기질의 관계">
-        <Paragraph text={profile.neuroscienceInsight} />
-      </Section>
+      {/* ━━━ 신경과학 (PREMIUM) ━━━ */}
+      <PremiumSectionTeaser
+        icon="🧪"
+        title="Helen Fisher의 신경화학 이론"
+        subtitle="도파민, 세로토닌, 테스토스테론, 에스트로겐과 기질의 관계"
+        content={profile.neuroscienceInsight}
+      />
 
-      {/* ━━━ 4체액설 ━━━ */}
-      <Section icon="🏺" title="히포크라테스의 4체액설" subtitle="2,400년 전의 통찰이 현대 과학과 만나다">
-        <Paragraph text={profile.humorTheoryInsight} />
+      {/* ━━━ 4체액설 (PREMIUM) ━━━ */}
+      <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sm:p-8">
+        <div className="mb-5">
+          <h3 className="text-xl font-bold text-gray-800 flex items-center gap-2">
+            <span className="text-2xl">🏺</span>히포크라테스의 4체액설
+          </h3>
+          <p className="text-sm text-gray-400 mt-1 ml-9">2,400년 전의 통찰이 현대 과학과 만나다</p>
+        </div>
 
-        {/* 4원소 시각화 */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-5 text-center text-sm">
+        {/* 4원소 시각화 (FREE — visual element) */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-5 text-center text-sm">
           <div className={`rounded-xl p-3 border ${result.temperament.code[0] === 'S' ? 'bg-amber-100 border-amber-300 ring-2 ring-amber-400' : 'bg-amber-50 border-amber-100'}`}>
             <p className="text-xl mb-1">💨</p>
             <p className="font-bold text-amber-700">공기(Air)</p>
@@ -59,7 +69,10 @@ export default function SciencePage() {
             <p className="text-blue-500 text-xs">흑담즙 · 가을 · 우울질</p>
           </div>
         </div>
-      </Section>
+
+        {/* 4체액설 텍스트 (PREMIUM) */}
+        <PremiumTeaser content={profile.humorTheoryInsight} />
+      </div>
 
       <AdPlaceholder />
 

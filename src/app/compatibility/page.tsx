@@ -44,10 +44,21 @@ function ScoreRing({ score, size = 120 }: { score: number; size?: number }) {
 
 export default function CompatibilityPage() {
   const { result, profile, loading } = useResult();
-  const [step, setStep] = useState<'select-mbti' | 'select-temp' | 'result'>('select-mbti');
+  const [step, setStep] = useState<'select-my' | 'select-mbti' | 'select-temp' | 'result'>('select-my');
+  const [myMbti, setMyMbti] = useState<string>('');
+  const [myTemp, setMyTemp] = useState<string>('');
+  const [myEditMode, setMyEditMode] = useState<'none' | 'mbti' | 'temp'>('none');
   const [partnerMbti, setPartnerMbti] = useState<string>('');
   const [partnerTemp, setPartnerTemp] = useState<string>('');
   const [compatibility, setCompatibility] = useState<CompatibilityResult | null>(null);
+
+  // 테스트 결과에서 나의 유형 초기화
+  useEffect(() => {
+    if (result) {
+      setMyMbti(result.mbti.type);
+      setMyTemp(result.temperament.code);
+    }
+  }, [result]);
 
   // URL 파라미터로 상대 유형이 전달된 경우
   useEffect(() => {
@@ -59,12 +70,20 @@ export default function CompatibilityPage() {
         if (parts[0] && parts[1]) {
           setPartnerMbti(parts[0]);
           setPartnerTemp(parts[1]);
-          setCompatibility(analyzeCompatibility(result.fullCode, withCode));
+          const myCode = `${result.mbti.type}-${result.temperament.code}`;
+          setCompatibility(analyzeCompatibility(myCode, withCode));
           setStep('result');
         }
       }
     }
   }, [result]);
+
+  const myCode = `${myMbti}-${myTemp}`;
+
+  const handleConfirmMyType = () => {
+    setMyEditMode('none');
+    setStep('select-mbti');
+  };
 
   const handleSelectMbti = (type: string) => {
     setPartnerMbti(type);
@@ -73,9 +92,9 @@ export default function CompatibilityPage() {
 
   const handleSelectTemp = (code: string) => {
     setPartnerTemp(code);
-    if (result) {
+    if (myMbti && myTemp) {
       const partnerCode = `${partnerMbti}-${code}`;
-      setCompatibility(analyzeCompatibility(result.fullCode, partnerCode));
+      setCompatibility(analyzeCompatibility(myCode, partnerCode));
       setStep('result');
     }
   };
@@ -89,12 +108,99 @@ export default function CompatibilityPage() {
 
   if (loading || !result || !profile) return <LoadingSpinner />;
 
+  // ── STEP 0: 나의 유형 확인/변경 ──
+  if (step === 'select-my') {
+    return (
+      <div className="w-full max-w-3xl mx-auto space-y-5 py-8 px-4">
+        <div className="text-center py-4">
+          <h1 className="text-2xl font-bold text-gray-800 mt-1">궁합 검사</h1>
+          <p className="text-sm text-gray-500 mt-2">먼저 나의 유형을 확인하세요</p>
+        </div>
+
+        {/* 나의 유형 표시 */}
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 text-center">
+          <p className="text-xs text-gray-400 mb-1">나의 유형</p>
+          {myEditMode === 'none' && (
+            <>
+              <p className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">{myCode}</p>
+              <p className="text-sm text-gray-500 mt-1">{profile.mbtiEmoji} {profile.mbtiNickname} · {profile.temperamentNickname}</p>
+              <button
+                onClick={() => setMyEditMode('mbti')}
+                className="mt-3 px-4 py-2 text-sm text-indigo-600 bg-indigo-50 rounded-xl font-medium hover:bg-indigo-100 transition"
+              >
+                변경하기
+              </button>
+            </>
+          )}
+
+          {/* MBTI 변경 모드 */}
+          {myEditMode === 'mbti' && (
+            <div className="mt-4 space-y-4 text-left">
+              <p className="text-sm font-semibold text-gray-600 text-center">나의 MBTI를 선택하세요</p>
+              {mbtiGroups.map((group) => (
+                <div key={group.label}>
+                  <p className="text-sm font-semibold text-gray-500 mb-2 ml-1">{group.label}</p>
+                  <div className="grid grid-cols-4 gap-2">
+                    {group.types.map((type) => (
+                      <button
+                        key={type}
+                        onClick={() => { setMyMbti(type); setMyEditMode('temp'); }}
+                        className={`py-3 rounded-xl border font-bold text-sm transition hover:shadow-md hover:scale-[1.02] active:scale-[0.98] ${
+                          myMbti === type ? 'ring-2 ring-indigo-500 ' : ''
+                        }${group.color}`}
+                      >
+                        {type}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* 기질 변경 모드 */}
+          {myEditMode === 'temp' && (
+            <div className="mt-4 space-y-4 text-left">
+              <p className="text-sm font-semibold text-gray-600 text-center">나의 기질 조합을 선택하세요 (MBTI: {myMbti})</p>
+              <div className="grid grid-cols-3 gap-3">
+                {tempCodes.map((code) => (
+                  <button
+                    key={code}
+                    onClick={() => { setMyTemp(code); setMyEditMode('none'); }}
+                    className={`py-4 bg-white rounded-xl border hover:border-indigo-300 hover:shadow-md transition text-center ${
+                      myTemp === code ? 'border-indigo-400 ring-2 ring-indigo-500' : 'border-gray-200'
+                    }`}
+                  >
+                    <p className="font-bold text-gray-800">{code}</p>
+                    <p className="text-xs text-gray-500 mt-1">
+                      {temperamentNames[code[0]]}+{temperamentNames[code[1]]}
+                    </p>
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* 다음 단계 버튼 */}
+        {myEditMode === 'none' && (
+          <button
+            onClick={handleConfirmMyType}
+            className="w-full py-3.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl font-bold text-base hover:shadow-lg transition"
+          >
+            상대 유형 선택하기 →
+          </button>
+        )}
+      </div>
+    );
+  }
+
   // ── STEP 1: MBTI 선택 ──
   if (step === 'select-mbti') {
     return (
       <div className="w-full max-w-3xl mx-auto space-y-5 py-8 px-4">
         <div className="text-center py-4">
-          <p className="text-sm text-indigo-500 font-medium">{result.fullCode}</p>
+          <p className="text-sm text-indigo-500 font-medium">{myCode}</p>
           <h1 className="text-2xl font-bold text-gray-800 mt-1">궁합 검사</h1>
           <p className="text-sm text-gray-500 mt-2">상대방의 MBTI 유형을 선택하세요</p>
         </div>
@@ -102,8 +208,13 @@ export default function CompatibilityPage() {
         {/* 내 유형 표시 */}
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 text-center">
           <p className="text-xs text-gray-400 mb-1">나의 유형</p>
-          <p className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">{result.fullCode}</p>
-          <p className="text-sm text-gray-500 mt-1">{profile.mbtiEmoji} {profile.mbtiNickname} · {profile.temperamentNickname}</p>
+          <p className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">{myCode}</p>
+          <button
+            onClick={() => { setStep('select-my'); setMyEditMode('mbti'); }}
+            className="mt-1 text-xs text-indigo-500 hover:text-indigo-700 underline transition"
+          >
+            변경하기
+          </button>
         </div>
 
         <div className="text-center text-2xl text-gray-300 py-2">×</div>
@@ -143,7 +254,7 @@ export default function CompatibilityPage() {
     return (
       <div className="w-full max-w-3xl mx-auto space-y-5 py-8 px-4">
         <div className="text-center py-4">
-          <p className="text-sm text-indigo-500 font-medium">{result.fullCode} × {partnerMbti}-?</p>
+          <p className="text-sm text-indigo-500 font-medium">{myCode} × {partnerMbti}-?</p>
           <h1 className="text-2xl font-bold text-gray-800 mt-1">상대의 기질 조합을 선택하세요</h1>
           <p className="text-sm text-gray-500 mt-2">모르면 &ldquo;모름&rdquo;을 선택하세요 (MBTI만으로 분석)</p>
         </div>
@@ -196,7 +307,7 @@ export default function CompatibilityPage() {
         {/* 두 유형 표시 */}
         <div className="flex items-center justify-center gap-4 mb-6">
           <div>
-            <p className="text-2xl sm:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">{result.fullCode}</p>
+            <p className="text-2xl sm:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">{myCode}</p>
             <p className="text-xs text-gray-500 mt-1">나</p>
           </div>
           <div className="text-3xl text-pink-400">♥</div>
@@ -289,7 +400,7 @@ export default function CompatibilityPage() {
       <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sm:p-8 text-center">
         <p className="text-sm text-gray-500 mb-3">궁합 결과를 상대에게 공유해보세요</p>
         <ShareButtons
-          fullCode={`${result.fullCode} ♥ ${partnerCode}`}
+          fullCode={`${myCode} ♥ ${partnerCode}`}
           mbtiNickname={`궁합 ${compatibility.overallScore}점`}
           temperamentNickname={compatibility.label}
         />

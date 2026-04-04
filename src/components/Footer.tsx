@@ -32,7 +32,7 @@ export default function Footer() {
           <div>
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">연락처</p>
             <div className="space-y-2">
-              <p className="text-sm text-gray-600">contact@192types.com</p>
+              <p className="text-sm text-gray-600">zx.mocz@gmail.com</p>
             </div>
           </div>
         </div>

@@ -30,7 +30,7 @@ export default function PdfDownloadButton({ result, profile }: Props) {
   };
 
   return (
-    <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl border border-amber-200 p-6 sm:p-8">
+    <div data-pdf-download className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl border border-amber-200 p-6 sm:p-8">
       <div className="text-center">
         <span className="text-3xl mb-3 block">📄</span>
         <h3 className="text-lg font-bold text-gray-800 mb-2">
@@ -90,13 +90,13 @@ export default function PdfDownloadButton({ result, profile }: Props) {
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
-              무료 PDF 다운로드
+              PDF 보고서 다운로드
             </>
           )}
         </button>
 
         <p className="text-[10px] text-gray-400 mt-3">
-          회원가입 불필요 · 즉시 다운로드 · 완전 무료
+          회원가입 불필요 · 즉시 다운로드
         </p>
       </div>
     </div>

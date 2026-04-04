@@ -145,7 +145,7 @@ export default function AboutPage() {
             <div className="text-[15px] text-gray-600 leading-[1.85]">
               <p>서비스 관련 문의, 제안, 오류 신고는 아래로 보내주세요.</p>
               <div className="mt-3 p-4 bg-gray-50 rounded-xl text-sm space-y-1">
-                <p><strong>이메일:</strong> contact@192types.com</p>
+                <p><strong>이메일:</strong> zx.mocz@gmail.com</p>
                 <p><strong>서비스:</strong> 192 성격 유형 검사 (192types.com)</p>
               </div>
             </div>

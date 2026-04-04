@@ -2,6 +2,7 @@
 
 import { useResult } from '@/hooks/useResult';
 import { Section, Paragraph, LoadingSpinner, NextPageCTA } from '@/components/ResultSection';
+import PremiumTeaser from '@/components/PremiumTeaser';
 import AdPlaceholder from '@/components/AdPlaceholder';
 
 export default function CareerPage() {
@@ -18,7 +19,7 @@ export default function CareerPage() {
         <h1 className="text-2xl font-bold text-gray-800 mt-1">커리어 전략</h1>
       </div>
 
-      {/* ━━━ 커리어 가이드 ━━━ */}
+      {/* ━━━ 커리어 가이드 (FREE) ━━━ */}
       <Section icon="🚀" title="당신만의 커리어 전략" subtitle="MBTI + 기질이 알려주는 당신에게 맞는 일과 환경">
         <Paragraph text={profile.careerGuide} />
         <div className="mt-5 flex flex-wrap gap-2">
@@ -30,56 +31,12 @@ export default function CareerPage() {
 
       <AdPlaceholder />
 
-      {/* ━━━ 업무 환경 매트릭스 ━━━ */}
+      {/* ━━━ 업무 환경 매트릭스 (PREMIUM) ━━━ */}
       <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sm:p-8">
         <h3 className="text-xl font-bold text-gray-800 flex items-center gap-2 mb-5">
           <span className="text-2xl">🏢</span>업무 환경 적합도
         </h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {[
-            {
-              label: '혼자 집중하는 환경',
-              score: ['I', 'M', 'P'].filter(t => result.mbti.type.includes(t) || result.temperament.code.includes(t)).length,
-            },
-            {
-              label: '팀 협업 환경',
-              score: ['E', 'F', 'S'].filter(t => result.mbti.type.includes(t) || result.temperament.code[0] === t).length,
-            },
-            {
-              label: '도전적/경쟁적 환경',
-              score: ['E', 'T', 'J'].filter(t => result.mbti.type.includes(t)).length + (result.temperament.code.includes('C') ? 1 : 0),
-            },
-            {
-              label: '안정적/체계적 환경',
-              score: ['S', 'J'].filter(t => result.mbti.type.includes(t)).length + (result.temperament.code.includes('P') ? 1 : 0) + (result.temperament.code.includes('M') ? 1 : 0),
-            },
-            {
-              label: '창의적/자유로운 환경',
-              score: ['N', 'P'].filter(t => result.mbti.type.includes(t)).length + (result.temperament.code[0] === 'S' ? 1 : 0),
-            },
-            {
-              label: '리더십/관리 역할',
-              score: ['E', 'J', 'T'].filter(t => result.mbti.type.includes(t)).length + (result.temperament.code.includes('C') ? 1 : 0),
-            },
-          ].map((item) => {
-            const maxScore = 4;
-            const pct = Math.min(100, (item.score / maxScore) * 100);
-            return (
-              <div key={item.label} className="bg-gray-50 rounded-xl p-4">
-                <div className="flex justify-between text-sm mb-2">
-                  <span className="text-gray-700 font-medium">{item.label}</span>
-                  <span className="text-indigo-600 font-semibold">{Math.round(pct)}%</span>
-                </div>
-                <div className="w-full h-2 bg-gray-200 rounded-full">
-                  <div
-                    className="h-full bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full transition-all"
-                    style={{ width: `${pct}%` }}
-                  />
-                </div>
-              </div>
-            );
-          })}
-        </div>
+        <PremiumTeaser content="당신의 MBTI와 기질 조합을 기반으로 6가지 업무 환경(집중 환경, 팀 협업, 도전적 환경, 안정적 환경, 창의적 환경, 리더십)에 대한 적합도를 분석합니다." maxChars={90} />
       </div>
 
       <AdPlaceholder />

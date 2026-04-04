@@ -99,7 +99,7 @@ export default function PrivacyPage() {
             </p>
             <div className="mt-2 p-4 bg-gray-50 rounded-xl text-sm">
               <p>서비스명: 192 성격 유형 검사</p>
-              <p>이메일: contact@192types.com</p>
+              <p>이메일: zx.mocz@gmail.com</p>
             </div>
           </section>
 

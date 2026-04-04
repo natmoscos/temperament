@@ -2,12 +2,17 @@
 
 import { useResult } from '@/hooks/useResult';
 import { Section, Paragraph, LoadingSpinner, NextPageCTA } from '@/components/ResultSection';
+import { PremiumSectionTeaser } from '@/components/PremiumTeaser';
 import AdPlaceholder from '@/components/AdPlaceholder';
 
 export default function PersonalityPage() {
   const { result, profile, loading } = useResult();
 
   if (loading || !result || !profile) return <LoadingSpinner />;
+
+  const allInsights = profile.contradictionInsights;
+  const freeInsights = allInsights.slice(0, 2);
+  const hasMore = allInsights.length > 2;
 
   return (
     <div className="w-full max-w-3xl mx-auto space-y-5">
@@ -18,39 +23,63 @@ export default function PersonalityPage() {
         <h1 className="text-2xl font-bold text-gray-800 mt-1">성격 심층 분석</h1>
       </div>
 
-      {/* ━━━ 당신은 이런 사람입니다 ━━━ */}
+      {/* ━━━ 당신은 이런 사람입니다 (FREE) ━━━ */}
       <Section icon="🪞" title="당신은 이런 사람입니다" subtitle="MBTI와 기질론이 만나 그려내는 당신의 초상화">
         <Paragraph text={profile.personalityNarrative} />
       </Section>
 
       <AdPlaceholder />
 
-      {/* ━━━ MBTI만으로는 설명할 수 없었던 것들 ━━━ */}
-      {profile.contradictionInsights.length > 0 && (
+      {/* ━━━ MBTI만으로는 설명할 수 없었던 것들 (FREE: first 2) ━━━ */}
+      {allInsights.length > 0 && (
         <Section icon="🔑" title="MBTI만으로는 설명할 수 없었던 것들" subtitle="기질론이 풀어주는 당신의 모순과 혼란">
           <div className="space-y-5">
-            {profile.contradictionInsights.map((insight, i) => (
+            {freeInsights.map((insight, i) => (
               <div key={i} className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-5 border border-indigo-100">
                 <p className="text-gray-700 leading-[1.85] text-[15px]">{insight}</p>
               </div>
             ))}
+            {hasMore && (
+              <div className="flex flex-col items-center gap-2 py-4 px-5 bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl border border-amber-200/60">
+                <p className="text-sm font-semibold text-amber-700 flex items-center gap-1.5">
+                  <span>&#x1f512;</span> {allInsights.length - 2}개의 인사이트가 더 있습니다
+                </p>
+                <a
+                  href="#pdf-download"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const el = document.querySelector('[data-pdf-download]');
+                    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  }}
+                  className="text-xs text-amber-600 hover:text-amber-800 underline underline-offset-2 transition"
+                >
+                  PDF 보고서에서 전체 내용 확인 &rarr;
+                </a>
+              </div>
+            )}
           </div>
         </Section>
       )}
 
-      {/* ━━━ 사람들이 모르는 진짜 당신 ━━━ */}
-      <Section icon="🎭" title="사람들이 모르는 진짜 당신" subtitle="밖에서 보이는 모습과 실제 내면 사이의 이야기">
-        <Paragraph text={profile.hiddenSelf} />
-      </Section>
+      {/* ━━━ 사람들이 모르는 진짜 당신 (PREMIUM) ━━━ */}
+      <PremiumSectionTeaser
+        icon="🎭"
+        title="사람들이 모르는 진짜 당신"
+        subtitle="밖에서 보이는 모습과 실제 내면 사이의 이야기"
+        content={profile.hiddenSelf}
+      />
 
-      {/* ━━━ 대화와 소통의 비밀 ━━━ */}
-      <Section icon="💬" title="대화와 소통의 비밀" subtitle="당신이 소통할 때 일어나는 일들">
-        <Paragraph text={profile.communicationGuide} />
-      </Section>
+      {/* ━━━ 대화와 소통의 비밀 (PREMIUM) ━━━ */}
+      <PremiumSectionTeaser
+        icon="💬"
+        title="대화와 소통의 비밀"
+        subtitle="당신이 소통할 때 일어나는 일들"
+        content={profile.communicationGuide}
+      />
 
       <AdPlaceholder />
 
-      {/* ━━━ 유명인 ━━━ */}
+      {/* ━━━ 유명인 (FREE) ━━━ */}
       {profile.celebrities.length > 0 && (
         <Section icon="⭐" title={`같은 유형(${result.mbti.type})의 유명인`}>
           <div className="flex gap-2 flex-wrap">

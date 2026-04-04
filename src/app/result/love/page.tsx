@@ -2,6 +2,7 @@
 
 import { useResult } from '@/hooks/useResult';
 import { Section, Paragraph, LoadingSpinner, NextPageCTA } from '@/components/ResultSection';
+import { PremiumSectionTeaser } from '@/components/PremiumTeaser';
 import AdPlaceholder from '@/components/AdPlaceholder';
 
 export default function LovePage() {
@@ -20,7 +21,7 @@ export default function LovePage() {
         <h1 className="text-2xl font-bold text-gray-800 mt-1">연애 & 궁합</h1>
       </div>
 
-      {/* ━━━ 연애 스타일 ━━━ */}
+      {/* ━━━ 연애 스타일 (FREE) ━━━ */}
       <Section icon="❤️" title="연애할 때 당신은" subtitle="기질과 성격이 만들어내는 당신만의 사랑 방식">
         <Paragraph text={profile.loveNarrative} />
         {profile.bestMatch.length > 0 && (
@@ -37,7 +38,7 @@ export default function LovePage() {
 
       <AdPlaceholder />
 
-      {/* ━━━ 연애 핵심 키워드 ━━━ */}
+      {/* ━━━ 연애 핵심 키워드 (FREE) ━━━ */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
           <p className="text-sm font-semibold text-gray-500 mb-2">💕 사랑의 언어</p>
@@ -59,10 +60,13 @@ export default function LovePage() {
         </div>
       </div>
 
-      {/* ━━━ 연애 상세 (기질 기반) ━━━ */}
-      <Section icon="🌹" title="기질이 만드는 연애 패턴" subtitle="히포크라테스 기질론으로 보는 당신의 사랑">
-        <Paragraph text={profile.primaryTemperament.loveDetail} />
-      </Section>
+      {/* ━━━ 연애 상세 (PREMIUM) ━━━ */}
+      <PremiumSectionTeaser
+        icon="🌹"
+        title="기질이 만드는 연애 패턴"
+        subtitle="히포크라테스 기질론으로 보는 당신의 사랑"
+        content={profile.primaryTemperament.loveDetail}
+      />
 
       <AdPlaceholder />
 
