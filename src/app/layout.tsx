@@ -48,8 +48,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    // Google Search Console 인증 후 추가
-    // google: 'your-verification-code',
+    google: 'ry36Wa0KGdON4bM2LL6vTmxw8P9oHj6PaIfWUwJy5VE',
   },
 };
 
