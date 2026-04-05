@@ -4,11 +4,14 @@ import { useResult } from '@/hooks/useResult';
 import { Section, Paragraph, LoadingSpinner, NextPageCTA } from '@/components/ResultSection';
 import { PremiumSectionTeaser } from '@/components/PremiumTeaser';
 import AdPlaceholder from '@/components/AdPlaceholder';
+import { temperamentProfiles } from '@/data/profiles-temperament';
 
 export default function PersonalityPage() {
   const { result, profile, loading } = useResult();
 
   if (loading || !result || !profile) return <LoadingSpinner />;
+
+  const temperamentProfile = temperamentProfiles[result.temperament.code];
 
   const allInsights = profile.contradictionInsights;
   const freeInsights = allInsights.slice(0, 2);
@@ -29,6 +32,31 @@ export default function PersonalityPage() {
       </Section>
 
       <AdPlaceholder />
+
+      {/* ━━━ 기질 심층 분석 (FREE) ━━━ */}
+      {temperamentProfile && (
+        <Section icon="🧬" title="기질 심층 분석" subtitle="고대 체액설에서 현대 심리학까지, 당신의 기질을 깊이 들여다봅니다">
+          <div className="space-y-4">
+            {[
+              { icon: '🧪', label: '체액 기원', value: temperamentProfile.origin },
+              { icon: '🔬', label: '현대 심리학적 정의', value: temperamentProfile.modernLabel },
+              { icon: '💫', label: '감정 패턴', value: temperamentProfile.emotionalStyle },
+              { icon: '⚡', label: '행동 패턴', value: temperamentProfile.behaviorStyle },
+              { icon: '🧠', label: '인지 패턴', value: temperamentProfile.cognitiveStyle },
+            ].map((item, i) => (
+              <div key={i} className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+                <div className="flex items-start gap-3">
+                  <span className="text-xl flex-shrink-0 mt-0.5">{item.icon}</span>
+                  <div>
+                    <h4 className="text-sm font-semibold text-gray-500 mb-1">{item.label}</h4>
+                    <p className="text-gray-700 leading-[1.85] text-[15px]">{item.value}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Section>
+      )}
 
       {/* ━━━ MBTI만으로는 설명할 수 없었던 것들 (FREE: first 2) ━━━ */}
       {allInsights.length > 0 && (

@@ -80,16 +80,45 @@ export default function SciencePage() {
       {/* ━━━ 참고 문헌 ━━━ */}
       <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 sm:p-8">
         <h3 className="text-lg font-bold text-gray-800 flex items-center gap-2 mb-4">
-          <span className="text-xl">📚</span>참고 자료
+          <span className="text-xl">📚</span>참고 문헌
         </h3>
-        <ul className="space-y-2 text-sm text-gray-500 leading-relaxed">
-          <li>• Eysenck, H.J. (1967). <em>The Biological Basis of Personality</em>. Springfield, IL: Thomas.</li>
-          <li>• Fisher, H. (2009). <em>Why Him? Why Her?: How to Find and Keep Lasting Love</em>. Henry Holt.</li>
-          <li>• Keirsey, D. (1998). <em>Please Understand Me II: Temperament, Character, Intelligence</em>. Prometheus Nemesis.</li>
-          <li>• Myers, I.B. & Myers, P.B. (1995). <em>Gifts Differing: Understanding Personality Type</em>. Davies-Black.</li>
-          <li>• Quenk, N.L. (2002). <em>Was That Really Me? How Everyday Stress Brings Out Our Hidden Personality</em>. Davies-Black.</li>
-          <li>• 히포크라테스 4체액설 — 인체를 구성하는 4원소(불, 물, 공기, 흙)와 체액의 균형 이론</li>
-        </ul>
+        <div className="space-y-4">
+          <div>
+            <p className="text-xs text-gray-400 font-semibold uppercase tracking-wide mb-2">고대 기질론의 기원</p>
+            <ul className="space-y-1.5 text-sm text-gray-500 leading-relaxed">
+              <li>• Hippocrates. <em>Corpus Hippocraticum</em> (기원전 5세기) — 4체액설의 원형, 체액 균형과 기질의 관계를 최초 제시</li>
+              <li>• Galen. <em>De Temperamentis</em> (2세기) — 4체액설을 체계화하여 다혈질·담즙질·우울질·점액질 분류 확립</li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-xs text-gray-400 font-semibold uppercase tracking-wide mb-2">근대 철학·심리학</p>
+            <ul className="space-y-1.5 text-sm text-gray-500 leading-relaxed">
+              <li>• Kant, I. <em>Anthropologie in pragmatischer Hinsicht</em> — 감정과 활동의 두 축으로 4기질을 철학적으로 분류</li>
+              <li>• Wundt, W. — 감정의 강도와 변화 속도에 따른 4기질 2차원 도식 (최초의 과학적 기질 모델)</li>
+              <li>• Steiner, R. — 발도르프 교육에 4기질론 적용, 아동 기질별 교수법 개발</li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-xs text-gray-400 font-semibold uppercase tracking-wide mb-2">현대 성격 심리학</p>
+            <ul className="space-y-1.5 text-sm text-gray-500 leading-relaxed">
+              <li>• Eysenck, H.J. (1967). <em>The Biological Basis of Personality</em>. Springfield, IL: Thomas. — 외향성×신경증 2차원 모델과 4기질의 과학적 대응</li>
+              <li>• Keirsey, D. (1998). <em>Please Understand Me II: Temperament, Character, Intelligence</em>. Prometheus Nemesis. — 4기질과 MBTI 16유형의 연결</li>
+              <li>• LaHaye, T. (1984). <em>Why You Act the Way You Do</em>. Tyndale House. — 4기질의 현대적 재해석과 12가지 복합 기질 조합</li>
+              <li>• Myers, I.B. & Myers, P.B. (1995). <em>Gifts Differing: Understanding Personality Type</em>. Davies-Black.</li>
+              <li>• Quenk, N.L. (2002). <em>Was That Really Me? How Everyday Stress Brings Out Our Hidden Personality</em>. Davies-Black.</li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-xs text-gray-400 font-semibold uppercase tracking-wide mb-2">신경과학</p>
+            <ul className="space-y-1.5 text-sm text-gray-500 leading-relaxed">
+              <li>• Fisher, H. (2009). <em>Why Him? Why Her?: How to Find and Keep Lasting Love</em>. Henry Holt. — 4가지 신경전달물질과 기질의 대응</li>
+            </ul>
+          </div>
+          <div className="mt-3 p-3 bg-gray-50 rounded-xl">
+            <p className="text-xs text-gray-500 font-semibold mb-1">Big Five 성격 모델과 4기질</p>
+            <p className="text-xs text-gray-400">외향성↑·성실성↓ → 다혈질 | 외향성↑·성실성↑ → 담즙질 | 외향성↓·성실성↑ → 우울질 | 외향성↓·성실성↓ → 점액질</p>
+          </div>
+        </div>
       </div>
 
       {/* ━━━ PDF 저장 리마인더 ━━━ */}

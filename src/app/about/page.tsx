@@ -87,31 +87,70 @@ export default function AboutPage() {
 
           {/* 학술적 근거 */}
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 sm:p-8">
-            <h2 className="text-lg font-bold text-gray-800 mb-4">📚 학술적 근거</h2>
+            <h2 className="text-lg font-bold text-gray-800 mb-2">📚 학술적 근거</h2>
+            <p className="text-xs text-gray-400 mb-5">본 서비스는 고대 그리스 의학에서 현대 신경과학에 이르는 2,400년간의 학술적 전통을 토대로 구성되었습니다.</p>
             <div className="space-y-4">
               {[
                 {
                   title: 'Carl Jung의 인지기능 이론 (1921)',
                   desc: 'MBTI의 기반이 되는 8가지 인지기능(Se, Si, Ne, Ni, Te, Ti, Fe, Fi)을 통해 사고와 인식 패턴을 분석합니다.',
+                  color: 'border-indigo-200',
                 },
                 {
-                  title: 'Hippocrates의 4가지 기질론 (BC 400)',
-                  desc: '2,400년의 관찰을 기반으로 한 4가지 기본 기질(다혈질, 담즙질, 점액질, 우울질)로 성격의 감정적 측면을 분석합니다.',
+                  title: 'Hippocrates, Corpus Hippocraticum (기원전 5세기)',
+                  desc: '4체액설(혈액, 황담즙, 흑담즙, 점액)의 원형을 제시하여 인간 기질 분류의 토대를 마련했습니다. 체액의 균형이 건강과 성격을 결정한다는 이론의 출발점입니다.',
+                  color: 'border-amber-200',
                 },
                 {
-                  title: 'Hans Eysenck의 2차원 성격 모델 (1967)',
-                  desc: '외향성(Extraversion)과 신경증(Neuroticism) 두 축이 히포크라테스의 4기질과 정확히 일치함을 과학적으로 증명했습니다.',
+                  title: 'Galen의 4기질 체계화 (2세기)',
+                  desc: '히포크라테스의 체액설을 발전시켜 다혈질·담즙질·우울질·점액질의 4가지 기질 유형을 명확히 정의하고 체계적으로 분류했습니다.',
+                  color: 'border-amber-200',
+                },
+                {
+                  title: 'Immanuel Kant — 기질의 철학적 분류',
+                  desc: '저서 Anthropologie in pragmatischer Hinsicht에서 4가지 기질을 감정과 활동의 두 축으로 철학적·실용적 관점에서 재해석했습니다.',
+                  color: 'border-blue-200',
+                },
+                {
+                  title: 'Wilhelm Wundt — 감정의 2차원 도식',
+                  desc: '실험심리학의 창시자로서, 감정의 강도(strength)와 변화 속도(speed)를 두 축으로 삼아 4기질을 최초의 과학적 2차원 모델에 매핑했습니다.',
+                  color: 'border-purple-200',
+                },
+                {
+                  title: 'Hans Eysenck의 생물학적 성격 모델 (1967)',
+                  desc: '외향성(Extraversion)과 신경증(Neuroticism) 두 차원이 대뇌 피질 각성 수준과 자율신경계 반응성이라는 생물학적 기반을 가지며, 히포크라테스의 4기질과 정확히 대응함을 증명했습니다.',
+                  color: 'border-rose-200',
+                },
+                {
+                  title: 'Rudolf Steiner — 발도르프 교육과 4기질',
+                  desc: '4기질론을 교육에 적용하여, 아동의 기질 특성에 맞는 개별화 교수법과 환경 설계를 발도르프(Waldorf) 학교 체계에서 실천했습니다.',
+                  color: 'border-emerald-200',
+                },
+                {
+                  title: 'David Keirsey, "Please Understand Me" (1978)',
+                  desc: '히포크라테스의 4기질과 MBTI 16유형을 연결하여, 기질(Temperament)과 성격 유형(Character)의 통합 모델을 구축했습니다.',
+                  color: 'border-orange-200',
+                },
+                {
+                  title: 'Tim LaHaye, "Why You Act the Way You Do" (1984)',
+                  desc: '4기질의 주/보조 조합으로 12가지 복합 기질 유형을 제안하여, 단일 기질로는 설명할 수 없는 개인차를 포착하는 실용적 프레임워크를 완성했습니다.',
+                  color: 'border-orange-200',
                 },
                 {
                   title: 'Helen Fisher의 신경화학 모델 (2009)',
-                  desc: '도파민, 세로토닌, 테스토스테론, 에스트로겐 4가지 신경전달물질이 기질과 연애 스타일에 미치는 영향을 연구했습니다.',
+                  desc: '도파민(탐험가), 세로토닌(건설자), 테스토스테론(지휘자), 에스트로겐(협상가) 4가지 신경전달물질 시스템이 기질과 관계 패턴을 결정한다는 신경화학적 기질 모델을 제시했습니다.',
+                  color: 'border-rose-200',
                 },
               ].map((item) => (
-                <div key={item.title} className="border-l-4 border-indigo-200 pl-4">
+                <div key={item.title} className={`border-l-4 ${item.color} pl-4`}>
                   <p className="text-sm font-semibold text-gray-700">{item.title}</p>
                   <p className="text-sm text-gray-500 mt-0.5">{item.desc}</p>
                 </div>
               ))}
+            </div>
+            <div className="mt-5 p-3 bg-gray-50 rounded-xl">
+              <p className="text-xs text-gray-500 font-semibold mb-1.5">Big Five 성격 모델과 4기질의 대응</p>
+              <p className="text-xs text-gray-400">외향성↑·성실성↓ → 다혈질 | 외향성↑·성실성↑ → 담즙질 | 외향성↓·성실성↑ → 우울질 | 외향성↓·성실성↓ → 점액질</p>
             </div>
           </div>
 
