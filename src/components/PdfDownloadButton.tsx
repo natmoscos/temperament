@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { TestResult } from '@/data/types';
 import { IntegratedProfile } from '@/data/profiles-integrated';
 import { trackEvent } from '@/lib/analytics';
@@ -11,6 +11,45 @@ interface Props {
 }
 
 export default function PdfDownloadButton({ result, profile }: Props) {
+  const isPaymentConfigured = !!process.env.NEXT_PUBLIC_TOSS_CLIENT_KEY;
+
+  // If payment is configured, render PaymentButton instead
+  if (isPaymentConfigured) {
+    return <DynamicPaymentButton result={result} profile={profile} />;
+  }
+
+  // Otherwise, show the free download button
+  return <FreePdfDownloadButton result={result} profile={profile} />;
+}
+
+/** Dynamically loads PaymentButton to avoid bundling Toss SDK when not needed */
+function DynamicPaymentButton({ result, profile }: Props) {
+  const [PaymentBtn, setPaymentBtn] = useState<React.ComponentType<Props> | null>(null);
+
+  useEffect(() => {
+    import('@/components/PaymentButton').then((mod) => {
+      setPaymentBtn(() => mod.default);
+    }).catch(() => {
+      // If PaymentButton fails to load, will render nothing (free button shown as fallback inside PaymentButton)
+    });
+  }, []);
+
+  if (!PaymentBtn) {
+    // Show a placeholder while loading
+    return (
+      <div data-pdf-download className="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl border border-indigo-200 p-6 sm:p-8">
+        <div className="text-center">
+          <div className="w-8 h-8 border-2 border-indigo-400 border-t-transparent rounded-full animate-spin mx-auto" />
+        </div>
+      </div>
+    );
+  }
+
+  return <PaymentBtn result={result} profile={profile} />;
+}
+
+/** Original free PDF download button */
+function FreePdfDownloadButton({ result, profile }: Props) {
   const [loading, setLoading] = useState(false);
   const [done, setDone] = useState(false);
 
@@ -18,7 +57,6 @@ export default function PdfDownloadButton({ result, profile }: Props) {
     setLoading(true);
     trackEvent('pdf_download_click', { type: result.fullCode });
     try {
-      // 동적 import로 번들 사이즈 최적화
       const { generatePremiumPDF } = await import('@/lib/generate-pdf');
       await generatePremiumPDF(result, profile);
       trackEvent('pdf_download_success', { type: result.fullCode });

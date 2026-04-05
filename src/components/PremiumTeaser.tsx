@@ -19,7 +19,10 @@ export default function PremiumTeaser({ content, maxChars = 80 }: { content: str
       <div className="relative mt-2 pt-2">
         <div className="flex flex-col items-center gap-2 py-4 px-5 bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl border border-amber-200/60">
           <p className="text-sm font-semibold text-amber-700 flex items-center gap-1.5">
-            <span>&#x1f512;</span> PDF 보고서에서 전체 내용을 확인하세요
+            <span>&#x1f512;</span>
+            {process.env.NEXT_PUBLIC_TOSS_CLIENT_KEY
+              ? 'PDF 보고서를 구매하면 전체 내용을 확인할 수 있어요 (₩3,900)'
+              : 'PDF 보고서에서 전체 내용을 확인하세요'}
           </p>
           <a
             href="#pdf-download"
@@ -30,7 +33,7 @@ export default function PremiumTeaser({ content, maxChars = 80 }: { content: str
             }}
             className="text-xs text-amber-600 hover:text-amber-800 underline underline-offset-2 transition"
           >
-            PDF 보고서 다운로드 &rarr;
+            {process.env.NEXT_PUBLIC_TOSS_CLIENT_KEY ? 'PDF 보고서 구매하기' : 'PDF 보고서 다운로드'} &rarr;
           </a>
         </div>
       </div>
