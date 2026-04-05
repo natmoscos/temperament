@@ -21,9 +21,8 @@ export default function Home() {
         </h1>
 
         {/* 서브카피 */}
-        <p className="text-lg sm:text-xl text-indigo-200/90 leading-relaxed max-w-md mx-auto mb-4">
-          MBTI가 알려주지 않는<br className="sm:hidden" />
-          <strong className="text-white">나의 숨겨진 성격</strong>을 찾아보세요.
+        <p className="text-lg sm:text-xl text-indigo-200/90 leading-relaxed max-w-lg mx-auto mb-4">
+          MBTI가 알려주지 않는 <strong className="text-white">나의 숨겨진 성격</strong>을 찾아보세요
         </p>
         <p className="text-sm text-indigo-300/60 mb-10">
           히포크라테스 기질론 × MBTI = 192가지 유형
@@ -63,7 +62,7 @@ export default function Home() {
         {/* 메인 CTA */}
         <Link
           href="/test"
-          className="inline-flex items-center gap-2 px-10 py-4.5 bg-gradient-to-r from-amber-400 to-pink-500 text-gray-900 text-lg font-black rounded-2xl shadow-xl shadow-pink-500/30 hover:shadow-2xl hover:shadow-pink-500/40 hover:scale-105 active:scale-[0.98] transition-all duration-200"
+          className="inline-flex items-center gap-2 px-10 py-4.5 bg-amber-400 hover:bg-amber-300 text-gray-900 text-lg font-black rounded-2xl shadow-xl shadow-amber-400/30 hover:shadow-2xl hover:shadow-amber-400/50 hover:scale-105 active:scale-[0.98] transition-all duration-200"
         >
           내 숨겨진 성격 확인하기
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -88,9 +87,9 @@ export default function Home() {
               { icon: '🔬', text: 'Eysenck 성격 모델 기반' },
               { icon: '🧬', text: 'Helen Fisher 신경화학 이론' },
             ].map((item) => (
-              <div key={item.text} className="flex items-center gap-1.5 px-3 py-1 bg-white/5 rounded-lg border border-white/10">
-                <span className="text-xs">{item.icon}</span>
-                <span className="text-[11px] text-indigo-300/60">{item.text}</span>
+              <div key={item.text} className="flex items-center gap-1.5 px-3 py-1.5 bg-white/5 rounded-lg border border-white/10">
+                <span className="text-sm">{item.icon}</span>
+                <span className="text-xs text-indigo-300/60">{item.text}</span>
               </div>
             ))}
           </div>
@@ -104,7 +103,7 @@ export default function Home() {
           <p className="text-2xl sm:text-3xl font-black text-white mb-3 leading-snug">
             &ldquo;나 진짜 I야? E야?&rdquo;
           </p>
-          <p className="text-base text-indigo-200/80 leading-relaxed max-w-md mx-auto">
+          <p className="text-sm sm:text-base text-indigo-200/80 leading-relaxed max-w-md mx-auto">
             그 혼란의 이유는 MBTI에 빠진 한 가지 차원 때문입니다.<br />
             <strong className="text-amber-300">기질(Temperament)</strong>이 그 답을 알고 있습니다.
           </p>
@@ -149,7 +148,7 @@ export default function Home() {
 
           <div className="text-center mb-10">
             <p className="text-sm text-gray-500 mb-1">같은 ENFJ인데 이렇게 다릅니다</p>
-            <p className="text-xs text-gray-400">MBTI 16유형 × 기질 12조합 = <strong className="text-indigo-600">192가지</strong> 고유한 성격</p>
+            <p className="text-sm text-gray-400">MBTI 16유형 × 기질 12조합 = <strong className="text-indigo-600">192가지</strong> 고유한 성격</p>
           </div>
 
           {/* Feature Cards */}
@@ -162,7 +161,7 @@ export default function Home() {
               <div key={f.title} className={`rounded-2xl p-4 sm:p-5 border text-center ${f.color}`}>
                 <span className="text-2xl block mb-2">{f.icon}</span>
                 <p className="text-sm font-bold text-gray-800">{f.title}</p>
-                <p className="text-[11px] text-gray-400 mt-0.5">{f.desc}</p>
+                <p className="text-xs text-gray-400 mt-0.5">{f.desc}</p>
               </div>
             ))}
           </div>
@@ -225,7 +224,7 @@ export default function Home() {
                   className="flex items-start gap-3 bg-white rounded-xl p-4 border border-gray-100 hover:shadow-md hover:border-gray-200 transition group"
                 >
                   <div className="flex-1 min-w-0">
-                    <span className="text-[10px] text-indigo-500 bg-indigo-50 px-1.5 py-0.5 rounded font-bold">{item.tag}</span>
+                    <span className="text-xs text-indigo-500 bg-indigo-50 px-1.5 py-0.5 rounded font-bold">{item.tag}</span>
                     <p className="text-sm font-semibold text-gray-700 group-hover:text-indigo-600 transition mt-1 leading-snug">{item.title}</p>
                   </div>
                 </Link>
