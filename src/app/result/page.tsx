@@ -57,12 +57,12 @@ export default function ResultSummaryPage() {
     <div className="w-full max-w-3xl mx-auto space-y-5">
 
       {/* ━━━ 메인 결과 카드 ━━━ */}
-      <div className="bg-white rounded-2xl shadow-sm border border-gray-100 text-center py-10 sm:py-14 px-6">
+      <div className="bg-white rounded-2xl shadow-sm border border-gray-100 text-center py-10 sm:py-14 px-4 sm:px-6">
         <div className="mb-6">
           <HeroCharacter mbtiType={mbti.type} temperamentCode={temperament.code} />
         </div>
         <p className="text-sm text-gray-400 mb-3">당신의 성격 유형</p>
-        <h1 className="text-5xl sm:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 mb-3 tracking-tight">
+        <h1 className="text-4xl sm:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 mb-3 tracking-tight">
           {result.fullCode}
         </h1>
         <p className="text-xl text-gray-700 font-semibold">{profile.mbtiEmoji} {profile.mbtiNickname}</p>

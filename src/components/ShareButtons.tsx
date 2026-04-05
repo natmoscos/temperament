@@ -108,11 +108,11 @@ export default function ShareButtons({ fullCode, mbtiNickname, temperamentNickna
       <p className="text-center text-sm font-medium text-gray-600">친구에게 공유하고 궁합도 확인해보세요!</p>
 
       {/* 주요 공유 버튼 */}
-      <div className="flex justify-center gap-3 flex-wrap">
+      <div className="flex justify-center gap-2 sm:gap-3 flex-wrap">
         {/* 카카오톡 */}
         <button
           onClick={shareKakao}
-          className="flex items-center gap-2 px-4 py-2.5 bg-[#FEE500] text-[#3C1E1E] rounded-xl font-medium text-sm hover:brightness-95 transition shadow-sm"
+          className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2.5 bg-[#FEE500] text-[#3C1E1E] rounded-xl font-medium text-sm hover:brightness-95 transition shadow-sm"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="#3C1E1E">
             <path d="M12 3C6.477 3 2 6.463 2 10.691c0 2.72 1.8 5.108 4.509 6.458l-.919 3.397c-.085.315.273.57.548.39l4.026-2.685c.595.083 1.21.128 1.836.128 5.523 0 10-3.463 10-7.688S17.523 3 12 3z"/>
@@ -123,7 +123,7 @@ export default function ShareButtons({ fullCode, mbtiNickname, temperamentNickna
         {/* X(트위터) */}
         <button
           onClick={shareTwitter}
-          className="flex items-center gap-2 px-4 py-2.5 bg-black text-white rounded-xl font-medium text-sm hover:bg-gray-800 transition shadow-sm"
+          className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2.5 bg-black text-white rounded-xl font-medium text-sm hover:bg-gray-800 transition shadow-sm"
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
             <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
@@ -134,7 +134,7 @@ export default function ShareButtons({ fullCode, mbtiNickname, temperamentNickna
         {/* 페이스북 */}
         <button
           onClick={shareFacebook}
-          className="flex items-center gap-2 px-4 py-2.5 bg-[#1877F2] text-white rounded-xl font-medium text-sm hover:bg-[#166FE5] transition shadow-sm"
+          className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2.5 bg-[#1877F2] text-white rounded-xl font-medium text-sm hover:bg-[#166FE5] transition shadow-sm"
         >
           <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
             <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
@@ -145,7 +145,7 @@ export default function ShareButtons({ fullCode, mbtiNickname, temperamentNickna
         {/* 라인 */}
         <button
           onClick={shareLine}
-          className="flex items-center gap-2 px-4 py-2.5 bg-[#00C300] text-white rounded-xl font-medium text-sm hover:bg-[#00B300] transition shadow-sm"
+          className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2.5 bg-[#00C300] text-white rounded-xl font-medium text-sm hover:bg-[#00B300] transition shadow-sm"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
             <path d="M12 2C6.48 2 2 5.89 2 10.63c0 3.12 2.08 5.85 5.19 7.3l-.67 2.44c-.06.22.18.4.37.28l2.9-1.93c.72.1 1.46.16 2.21.16 5.52 0 10-3.89 10-8.63S17.52 2 12 2z"/>
