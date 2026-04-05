@@ -20,14 +20,22 @@ export default function TestPage() {
     reset,
   } = useTest();
 
-  const [showResume, setShowResume] = useState(false);
+  const [showResume, setShowResume] = useState<boolean | null>(null);
 
-  // 이전 진행 기록이 있고, 아직 완료 전이면 이어하기 팝업
+  // 최초 마운트 시에만 이전 기록 확인 (한 번만 실행)
   useEffect(() => {
-    if (answers.length > 0 && answers.length < totalQuestions && !result) {
-      setShowResume(true);
-    }
-  }, [answers.length, totalQuestions, result]);
+    try {
+      const saved = localStorage.getItem('temperament-test-answers');
+      if (saved) {
+        const savedAnswers = JSON.parse(saved);
+        if (savedAnswers.length > 0 && savedAnswers.length < totalQuestions) {
+          setShowResume(true);
+          return;
+        }
+      }
+    } catch {}
+    setShowResume(false);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   // 결과가 나오면 결과 페이지로 이동
   useEffect(() => {
@@ -37,6 +45,15 @@ export default function TestPage() {
   }, [result]);
 
   if (result) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="animate-spin w-8 h-8 border-4 border-indigo-500 border-t-transparent rounded-full" />
+      </div>
+    );
+  }
+
+  // 초기 로딩 중
+  if (showResume === null) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="animate-spin w-8 h-8 border-4 border-indigo-500 border-t-transparent rounded-full" />
