@@ -187,6 +187,9 @@ export default function CharacterAvatar({ mbtiType, temperamentCode, size = 200,
   const palette = temperamentPalettes[primaryTemp] || temperamentPalettes.S;
   const traits = mbtiTraits[mbtiType] || mbtiTraits.ISTJ;
 
+  const temperamentLabel: Record<string, string> = { S: '다혈질', C: '담즙질', P: '점액질', M: '우울질' };
+  const ariaLabel = `${mbtiType} ${temperamentLabel[primaryTemp] || ''} 캐릭터`;
+
   return (
     <svg
       width={size}
@@ -194,6 +197,8 @@ export default function CharacterAvatar({ mbtiType, temperamentCode, size = 200,
       viewBox="0 0 200 200"
       className={className}
       xmlns="http://www.w3.org/2000/svg"
+      role="img"
+      aria-label={ariaLabel}
     >
       {/* 배경 원 */}
       <circle cx="100" cy="100" r="98" fill={palette.bg} />

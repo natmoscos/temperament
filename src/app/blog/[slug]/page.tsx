@@ -3,6 +3,9 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getBlogPost, getAllSlugs, blogPosts } from '@/data/blog-posts';
 import AdPlaceholder from '@/components/AdPlaceholder';
+import JsonLd from '@/components/JsonLd';
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://192types.com';
 
 // 정적 경로 생성
 export function generateStaticParams() {
@@ -56,6 +59,30 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-8 px-4">
+      <JsonLd data={{
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: post.title,
+        description: post.description,
+        datePublished: post.publishDate,
+        dateModified: post.publishDate,
+        author: {
+          '@type': 'Organization',
+          name: '192 성격 유형 검사',
+          url: SITE_URL,
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: '192 성격 유형 검사',
+          url: SITE_URL,
+        },
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': `${SITE_URL}/blog/${slug}`,
+        },
+        keywords: post.keywords.join(', '),
+        inLanguage: 'ko',
+      }} />
       <article className="w-full max-w-2xl mx-auto">
 
         {/* 네비게이션 */}

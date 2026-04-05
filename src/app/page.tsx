@@ -1,8 +1,74 @@
 import Link from 'next/link';
+import JsonLd from '@/components/JsonLd';
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://192types.com';
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: '192 성격 유형 검사',
+  url: SITE_URL,
+  description: 'MBTI와 히포크라테스 기질론을 결합한 192가지 성격 유형 검사',
+  inLanguage: 'ko',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: `${SITE_URL}/types/{search_term_string}`,
+    'query-input': 'required name=search_term_string',
+  },
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: '192 성격 유형 검사는 무엇인가요?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: '192 성격 유형 검사는 칼 융의 인지기능 이론(MBTI 16유형)과 히포크라테스의 4가지 기질론(12가지 조합)을 과학적으로 결합한 통합 성격 분석 검사입니다. 16 × 12 = 192가지 고유한 성격 유형으로 당신을 분석합니다.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'MBTI와 기질론의 차이는 무엇인가요?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'MBTI는 인지기능(사고·감정·감각·직관의 방향)을 분류하고, 기질론은 감정의 기본 반응 패턴(다혈질·담즙질·점액질·우울질)을 분류합니다. 같은 MBTI 유형이라도 기질에 따라 완전히 다른 성격이 됩니다.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '검사는 무료인가요?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: '네, 100문항 정밀 검사와 30문항 빠른 검사 모두 완전 무료입니다. 회원가입도 필요하지 않습니다.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '검사 시간은 얼마나 걸리나요?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: '100문항 정밀 검사는 약 12~15분, 30문항 빠른 검사는 약 3분이 소요됩니다. 정밀 검사는 중간에 저장되어 이어서 할 수 있습니다.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: '192가지 유형은 어떻게 나뉘나요?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'MBTI 16가지 유형(ISTJ, ISFJ 등)에 히포크라테스 기질 12가지 조합(다혈담즙, 담즙다혈 등)을 곱하여 16 × 12 = 192가지 고유한 성격 유형이 만들어집니다. 예를 들어 같은 ENFJ라도 담즙질 ENFJ와 우울질 ENFJ는 전혀 다른 성격입니다.',
+      },
+    },
+  ],
+};
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-950 via-indigo-950 to-purple-950 flex flex-col items-center px-4">
+      <JsonLd data={websiteSchema} />
+      <JsonLd data={faqSchema} />
       {/* ━━━ Hero Section ━━━ */}
       <div className="text-center max-w-2xl mx-auto pt-12 sm:pt-20 pb-16">
 
@@ -236,6 +302,79 @@ export default function Home() {
               </Link>
             </div>
           </div>
+
+          {/* ━━━ 더 알아보기 (내부 링크) ━━━ */}
+          <div className="mb-12">
+            <h3 className="text-lg font-bold text-gray-800 mb-4 text-center">더 알아보기</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <Link
+                href="/temperaments"
+                className="bg-amber-50 rounded-xl p-4 border border-amber-100 hover:shadow-md hover:border-amber-200 transition group text-center"
+              >
+                <span className="text-2xl block mb-2">🏺</span>
+                <p className="text-sm font-bold text-gray-800 group-hover:text-amber-700 transition">히포크라테스 기질론</p>
+                <p className="text-xs text-gray-400 mt-1">다혈질 · 담즙질 · 점액질 · 우울질</p>
+              </Link>
+              <Link
+                href="/types"
+                className="bg-indigo-50 rounded-xl p-4 border border-indigo-100 hover:shadow-md hover:border-indigo-200 transition group text-center"
+              >
+                <span className="text-2xl block mb-2">🧩</span>
+                <p className="text-sm font-bold text-gray-800 group-hover:text-indigo-700 transition">192가지 유형 목록</p>
+                <p className="text-xs text-gray-400 mt-1">MBTI 16유형 × 기질 12조합</p>
+              </Link>
+              <Link
+                href="/compatibility"
+                className="bg-pink-50 rounded-xl p-4 border border-pink-100 hover:shadow-md hover:border-pink-200 transition group text-center"
+              >
+                <span className="text-2xl block mb-2">💘</span>
+                <p className="text-sm font-bold text-gray-800 group-hover:text-pink-700 transition">궁합 검사</p>
+                <p className="text-xs text-gray-400 mt-1">MBTI + 기질 궁합 분석</p>
+              </Link>
+            </div>
+          </div>
+
+          {/* ━━━ FAQ 섹션 ━━━ */}
+          <div className="mb-12">
+            <h2 className="text-2xl font-black text-gray-900 mb-6 text-center">자주 묻는 질문</h2>
+            <div className="space-y-3">
+              {[
+                {
+                  q: '192 성격 유형 검사는 무엇인가요?',
+                  a: '칼 융의 인지기능 이론(MBTI 16유형)과 히포크라테스의 4가지 기질론(12가지 조합)을 과학적으로 결합한 통합 성격 분석 검사입니다. 16 × 12 = 192가지 고유한 성격 유형으로 당신을 분석합니다.',
+                },
+                {
+                  q: 'MBTI와 기질론의 차이는 무엇인가요?',
+                  a: 'MBTI는 인지기능(사고·감정·감각·직관의 방향)을 분류하고, 기질론은 감정의 기본 반응 패턴(다혈질·담즙질·점액질·우울질)을 분류합니다. 같은 MBTI 유형이라도 기질에 따라 완전히 다른 성격이 됩니다.',
+                },
+                {
+                  q: '검사는 무료인가요?',
+                  a: '네, 100문항 정밀 검사와 30문항 빠른 검사 모두 완전 무료입니다. 회원가입도 필요하지 않습니다.',
+                },
+                {
+                  q: '검사 시간은 얼마나 걸리나요?',
+                  a: '100문항 정밀 검사는 약 12~15분, 30문항 빠른 검사는 약 3분이 소요됩니다. 정밀 검사는 중간에 저장되어 이어서 할 수 있습니다.',
+                },
+                {
+                  q: '192가지 유형은 어떻게 나뉘나요?',
+                  a: 'MBTI 16가지 유형(ISTJ, ISFJ 등)에 히포크라테스 기질 12가지 조합(다혈담즙, 담즙다혈 등)을 곱하여 16 × 12 = 192가지 고유한 성격 유형이 만들어집니다.',
+                },
+              ].map((faq) => (
+                <details key={faq.q} className="bg-white rounded-xl border border-gray-100 shadow-sm group">
+                  <summary className="p-4 sm:p-5 cursor-pointer font-semibold text-gray-800 text-sm sm:text-base flex items-center justify-between gap-2 list-none [&::-webkit-details-marker]:hidden">
+                    <span>{faq.q}</span>
+                    <svg className="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <div className="px-4 sm:px-5 pb-4 sm:pb-5 text-sm text-gray-600 leading-relaxed">
+                    {faq.a}
+                  </div>
+                </details>
+              ))}
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

@@ -1,14 +1,34 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import JsonLd from '@/components/JsonLd';
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://192types.com';
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: '192 성격 유형 검사',
+  url: SITE_URL,
+  description: 'MBTI와 히포크라테스 기질론을 결합한 192가지 성격 유형 검사 서비스',
+  email: 'zx.mocz@gmail.com',
+  sameAs: [],
+  foundingDate: '2026',
+};
 
 export const metadata: Metadata = {
-  title: '서비스 소개',
-  description: '192 성격 유형 검사는 MBTI와 히포크라테스 기질론을 결합한 통합 성격 분석 서비스입니다.',
+  title: '서비스 소개 — 192 성격 유형 검사란?',
+  description: 'MBTI 16유형과 히포크라테스 기질론 12조합을 결합한 192가지 성격 유형 검사 서비스. 칼 융, Eysenck, Helen Fisher 이론 기반.',
+  keywords: ['192 성격 유형 검사', 'MBTI 기질론', '성격 검사 서비스', '히포크라테스 기질론', 'Eysenck', 'Helen Fisher'],
+  openGraph: {
+    title: '서비스 소개 — 192 성격 유형 검사란?',
+    description: 'MBTI 16유형과 히포크라테스 기질론 12조합을 결합한 192가지 성격 유형 검사 서비스입니다.',
+  },
 };
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-12 px-4">
+      <JsonLd data={organizationSchema} />
       <div className="w-full max-w-2xl mx-auto">
         <Link href="/" className="text-sm text-indigo-500 hover:text-indigo-700 font-medium mb-6 inline-block">
           ← 홈으로

@@ -1,4 +1,15 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: '히포크라테스 4가지 기질론 — 다혈질 담즙질 점액질 우울질',
+  description: '히포크라테스의 4가지 기질(다혈질, 담즙질, 점액질, 우울질)을 Eysenck 모델과 Helen Fisher 신경과학으로 분석합니다. 12가지 복합 기질 조합도 확인하세요.',
+  keywords: ['기질론', '히포크라테스', '4가지 기질', '다혈질', '담즙질', '점액질', '우울질', 'Eysenck', '성격 유형'],
+  openGraph: {
+    title: '히포크라테스 4가지 기질론 — 다혈질 담즙질 점액질 우울질',
+    description: '히포크라테스의 4가지 기질을 현대 심리학으로 분석합니다. Eysenck 모델과 Helen Fisher 신경과학 이론 기반.',
+  },
+};
 
 const temperaments = [
   {

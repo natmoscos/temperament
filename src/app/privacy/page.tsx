@@ -3,7 +3,11 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: '개인정보처리방침',
-  description: '192 성격 유형 검사 서비스의 개인정보처리방침입니다.',
+  description: '192 성격 유형 검사(192types.com) 서비스의 개인정보처리방침. 검사 데이터는 브라우저에만 저장되며 서버 전송 없음.',
+  openGraph: {
+    title: '개인정보처리방침 — 192 성격 유형 검사',
+    description: '192 성격 유형 검사 서비스의 개인정보처리방침입니다.',
+  },
 };
 
 export default function PrivacyPage() {

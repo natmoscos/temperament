@@ -1,5 +1,16 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
 import CharacterAvatar from '@/components/CharacterAvatar';
+
+export const metadata: Metadata = {
+  title: 'MBTI 16유형 × 기질 12조합 — 192가지 성격 유형 목록',
+  description: 'MBTI 16가지 유형과 히포크라테스 기질 12조합으로 만들어지는 192가지 성격 유형을 모두 확인하세요. 각 유형의 특징과 기질 해석을 제공합니다.',
+  keywords: ['MBTI 유형', '성격 유형 목록', '192 성격 유형', 'MBTI 16유형', '기질론 조합', 'INTJ', 'ENFP', 'INFJ', 'ENTP'],
+  openGraph: {
+    title: 'MBTI 16유형 × 기질 12조합 — 192가지 성격 유형 목록',
+    description: 'MBTI 16가지 유형과 히포크라테스 기질 12조합으로 만들어지는 192가지 성격 유형을 모두 확인하세요.',
+  },
+};
 
 const typeGroups = [
   {

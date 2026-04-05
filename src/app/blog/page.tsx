@@ -5,6 +5,7 @@ import { blogPosts } from '@/data/blog-posts';
 export const metadata: Metadata = {
   title: '성격 유형 블로그 — MBTI × 기질론 인사이트',
   description: 'MBTI 궁합, 연애 스타일, 직업 추천, 기질론 가이드 등 성격 유형에 관한 깊이 있는 콘텐츠를 제공합니다.',
+  keywords: ['MBTI 블로그', 'MBTI 궁합', 'MBTI 연애', 'MBTI 직업', '기질론 가이드', '성격 유형 분석'],
   openGraph: {
     title: '성격 유형 블로그 — MBTI × 기질론 인사이트',
     description: 'MBTI 궁합, 연애 스타일, 직업 추천, 기질론 가이드 등 성격 유형에 관한 깊이 있는 콘텐츠를 제공합니다.',
