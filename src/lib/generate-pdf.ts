@@ -6,8 +6,48 @@ import { IntegratedProfile } from '@/data/profiles-integrated';
 
 /**
  * 프리미엄 PDF 보고서 생성
- * 클라이언트 사이드에서 jsPDF로 직접 생성 (서버 불필요)
+ * NanumGothic 한글 폰트를 로드하여 한글이 깨지지 않는 PDF 생성
  */
+
+// 폰트 캐시 (한 세션에서 한 번만 로드)
+let fontCacheRegular: ArrayBuffer | null = null;
+let fontCacheBold: ArrayBuffer | null = null;
+
+async function loadFont(url: string): Promise<ArrayBuffer> {
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`Failed to load font: ${url}`);
+  return response.arrayBuffer();
+}
+
+function arrayBufferToBase64(buffer: ArrayBuffer): string {
+  const bytes = new Uint8Array(buffer);
+  let binary = '';
+  for (let i = 0; i < bytes.byteLength; i++) {
+    binary += String.fromCharCode(bytes[i]);
+  }
+  return btoa(binary);
+}
+
+async function setupKoreanFont(doc: jsPDF): Promise<void> {
+  // 캐시에서 폰트 로드 또는 네트워크에서 다운로드
+  if (!fontCacheRegular) {
+    fontCacheRegular = await loadFont('/fonts/NanumGothic-Regular.ttf');
+  }
+  if (!fontCacheBold) {
+    fontCacheBold = await loadFont('/fonts/NanumGothic-Bold.ttf');
+  }
+
+  const regularBase64 = arrayBufferToBase64(fontCacheRegular);
+  const boldBase64 = arrayBufferToBase64(fontCacheBold);
+
+  doc.addFileToVFS('NanumGothic-Regular.ttf', regularBase64);
+  doc.addFont('NanumGothic-Regular.ttf', 'NanumGothic', 'normal');
+
+  doc.addFileToVFS('NanumGothic-Bold.ttf', boldBase64);
+  doc.addFont('NanumGothic-Bold.ttf', 'NanumGothic', 'bold');
+
+  doc.setFont('NanumGothic', 'normal');
+}
 
 // 한글 줄바꿈 유틸리티
 function wrapText(doc: jsPDF, text: string, maxWidth: number): string[] {
@@ -40,15 +80,18 @@ function drawSectionHeader(doc: jsPDF, title: string, y: number, margin: number)
   y = ensureSpace(doc, y, 20, margin);
   doc.setFillColor(99, 102, 241); // indigo-500
   doc.rect(margin, y, 4, 14, 'F');
-  doc.setFontSize(14);
+  doc.setFont('NanumGothic', 'bold');
+  doc.setFontSize(13);
   doc.setTextColor(30, 30, 30);
   doc.text(title, margin + 10, y + 10);
+  doc.setFont('NanumGothic', 'normal');
   return y + 22;
 }
 
 // 본문 텍스트
 function drawBody(doc: jsPDF, text: string, y: number, margin: number, contentWidth: number): number {
-  doc.setFontSize(10);
+  doc.setFont('NanumGothic', 'normal');
+  doc.setFontSize(9.5);
   doc.setTextColor(80, 80, 80);
   const lines = wrapText(doc, text, contentWidth);
 
@@ -59,7 +102,7 @@ function drawBody(doc: jsPDF, text: string, y: number, margin: number, contentWi
       continue;
     }
     doc.text(line, margin + 4, y);
-    y += 5.5;
+    y += 5;
   }
   return y + 4;
 }
@@ -67,6 +110,7 @@ function drawBody(doc: jsPDF, text: string, y: number, margin: number, contentWi
 // 태그 목록
 function drawTags(doc: jsPDF, tags: string[], y: number, margin: number): number {
   y = ensureSpace(doc, y, 10, margin);
+  doc.setFont('NanumGothic', 'normal');
   let x = margin + 4;
 
   for (const tag of tags) {
@@ -102,10 +146,13 @@ function drawPercentBar(
   const barHeight = 6;
 
   // 라벨
+  doc.setFont('NanumGothic', 'normal');
   doc.setFontSize(8);
   doc.setTextColor(100, 100, 100);
   doc.text(`${leftLabel} ${percentage}%`, barX, y);
-  doc.text(`${100 - percentage}% ${rightLabel}`, barX + barWidth, y, { align: 'right' });
+  if (rightLabel) {
+    doc.text(`${100 - percentage}% ${rightLabel}`, barX + barWidth, y, { align: 'right' });
+  }
   y += 4;
 
   // 배경
@@ -129,28 +176,35 @@ export async function generatePremiumPDF(result: TestResult, profile: Integrated
   const contentWidth = pageWidth - margin * 2;
   let y = margin;
 
+  // ═══ 한글 폰트 로드 ═══
+  await setupKoreanFont(doc);
+
   // ═══════════════════════════════════════════
   // 표지
   // ═══════════════════════════════════════════
-  // 배경 그라데이션 (상단)
+  // 배경 (상단)
   doc.setFillColor(79, 70, 229); // indigo-600
   doc.rect(0, 0, pageWidth, 120, 'F');
   doc.setFillColor(124, 58, 237); // purple-600
   doc.rect(0, 80, pageWidth, 40, 'F');
 
   // 제목
-  doc.setFontSize(12);
+  doc.setFont('NanumGothic', 'normal');
+  doc.setFontSize(11);
   doc.setTextColor(200, 200, 255);
-  doc.text('192 Personality Type Report', pageWidth / 2, 35, { align: 'center' });
+  doc.text('192 성격 유형 프리미엄 분석 보고서', pageWidth / 2, 35, { align: 'center' });
 
-  doc.setFontSize(36);
+  doc.setFont('NanumGothic', 'bold');
+  doc.setFontSize(32);
   doc.setTextColor(255, 255, 255);
   doc.text(result.fullCode, pageWidth / 2, 60, { align: 'center' });
 
+  doc.setFont('NanumGothic', 'bold');
   doc.setFontSize(14);
   doc.setTextColor(220, 220, 255);
   doc.text(`${profile.mbtiEmoji} ${profile.mbtiNickname}`, pageWidth / 2, 75, { align: 'center' });
 
+  doc.setFont('NanumGothic', 'normal');
   doc.setFontSize(11);
   doc.setTextColor(200, 200, 255);
   doc.text(profile.temperamentNickname, pageWidth / 2, 85, { align: 'center' });
@@ -158,19 +212,19 @@ export async function generatePremiumPDF(result: TestResult, profile: Integrated
   // 인지기능 & 인구비율
   doc.setFontSize(10);
   doc.setTextColor(180, 180, 255);
-  doc.text(`Cognitive Stack: ${profile.cognitiveStack}`, pageWidth / 2, 100, { align: 'center' });
-  doc.text(`Population: ${profile.population}`, pageWidth / 2, 108, { align: 'center' });
+  doc.text(`인지기능: ${profile.cognitiveStack}`, pageWidth / 2, 100, { align: 'center' });
+  doc.text(`인구 비율: ${profile.population}`, pageWidth / 2, 108, { align: 'center' });
 
   // 하단 안내
   doc.setFontSize(9);
   doc.setTextColor(150, 150, 150);
-  doc.text('Premium Personality Analysis Report', pageWidth / 2, 140, { align: 'center' });
+  doc.text('MBTI + 히포크라테스 기질론 통합 분석 보고서', pageWidth / 2, 140, { align: 'center' });
   doc.text('192types.com', pageWidth / 2, 148, { align: 'center' });
 
   const today = new Date().toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' });
   doc.setFontSize(8);
   doc.setTextColor(180, 180, 180);
-  doc.text(`Generated: ${today}`, pageWidth / 2, 160, { align: 'center' });
+  doc.text(`발행일: ${today}`, pageWidth / 2, 160, { align: 'center' });
 
   // ═══════════════════════════════════════════
   // 페이지 2: 성향 분석 차트
@@ -178,13 +232,13 @@ export async function generatePremiumPDF(result: TestResult, profile: Integrated
   doc.addPage();
   y = margin + 5;
 
-  y = drawSectionHeader(doc, 'MBTI Analysis', y, margin);
+  y = drawSectionHeader(doc, 'MBTI 성향 분석', y, margin);
 
   const axisLabels: Record<string, [string, string]> = {
-    EI: ['Extraversion (E)', 'Introversion (I)'],
-    SN: ['Intuition (N)', 'Sensing (S)'],
-    TF: ['Feeling (F)', 'Thinking (T)'],
-    JP: ['Perceiving (P)', 'Judging (J)'],
+    EI: ['외향 (E)', '내향 (I)'],
+    SN: ['직관 (N)', '감각 (S)'],
+    TF: ['감정 (F)', '사고 (T)'],
+    JP: ['인식 (P)', '판단 (J)'],
   };
 
   for (const axis of ['EI', 'SN', 'TF', 'JP'] as const) {
@@ -194,54 +248,57 @@ export async function generatePremiumPDF(result: TestResult, profile: Integrated
   }
 
   y += 6;
-  y = drawSectionHeader(doc, 'Temperament Distribution', y, margin);
+  y = drawSectionHeader(doc, '기질 분포', y, margin);
 
-  const tempNames: Record<string, string> = { S: 'Sanguine', C: 'Choleric', P: 'Phlegmatic', M: 'Melancholic' };
+  const tempNames: Record<string, string> = { S: '다혈질', C: '담즙질', P: '점액질', M: '우울질' };
   for (const t of ['S', 'C', 'P', 'M'] as const) {
     const d = result.temperament.all[t];
     const isPrimary = result.temperament.primary.type === t;
     const isSecondary = result.temperament.secondary.type === t;
-    const label = `${tempNames[t]}${isPrimary ? ' (Primary)' : isSecondary ? ' (Secondary)' : ''}`;
+    const label = `${tempNames[t]}${isPrimary ? ' (주 기질)' : isSecondary ? ' (보조 기질)' : ''}`;
     y = drawPercentBar(doc, label, '', d.percentage, y, margin, contentWidth);
   }
 
   // 신뢰도
   y += 4;
+  doc.setFont('NanumGothic', 'normal');
   doc.setFontSize(9);
   doc.setTextColor(100, 100, 100);
-  const gradeText = result.reliability.grade === 'A' ? 'High' : result.reliability.grade === 'B' ? 'Moderate' : 'Low';
-  doc.text(`Reliability: Grade ${result.reliability.grade} (${gradeText})`, margin + 4, y);
+  const gradeText = result.reliability.grade === 'A' ? '높음' : result.reliability.grade === 'B' ? '보통' : '낮음';
+  doc.text(`검사 신뢰도: ${result.reliability.grade}등급 (${gradeText})`, margin + 4, y);
   y += 10;
 
   // ═══════════════════════════════════════════
-  // 페이지 3: 성격 심층 분석
+  // 성격 심층 분석
   // ═══════════════════════════════════════════
-  y = drawSectionHeader(doc, 'Personality Deep Dive', y, margin);
+  y = drawSectionHeader(doc, '성격 심층 분석', y, margin);
   y = drawBody(doc, profile.personalityNarrative, y, margin, contentWidth);
 
   // 모순 인사이트
   if (profile.contradictionInsights.length > 0) {
-    y = drawSectionHeader(doc, 'Hidden Contradictions', y, margin);
+    y = drawSectionHeader(doc, '숨겨진 모순', y, margin);
     for (const insight of profile.contradictionInsights) {
       y = drawBody(doc, `• ${insight}`, y, margin, contentWidth);
     }
   }
 
   // 숨겨진 자아
-  y = drawSectionHeader(doc, 'Hidden Self', y, margin);
+  y = drawSectionHeader(doc, '숨겨진 자아', y, margin);
   y = drawBody(doc, profile.hiddenSelf, y, margin, contentWidth);
 
   // ═══════════════════════════════════════════
   // 연애 분석
   // ═══════════════════════════════════════════
-  y = drawSectionHeader(doc, 'Love & Relationships', y, margin);
+  y = drawSectionHeader(doc, '연애 & 관계', y, margin);
   y = drawBody(doc, profile.loveNarrative, y, margin, contentWidth);
 
   if (profile.bestMatch.length > 0) {
     y = ensureSpace(doc, y, 16, margin);
+    doc.setFont('NanumGothic', 'bold');
     doc.setFontSize(10);
     doc.setTextColor(60, 60, 60);
-    doc.text('Best Match Types:', margin + 4, y);
+    doc.text('최고 궁합 유형:', margin + 4, y);
+    doc.setFont('NanumGothic', 'normal');
     y += 6;
     y = drawTags(doc, profile.bestMatch, y, margin);
   }
@@ -249,14 +306,16 @@ export async function generatePremiumPDF(result: TestResult, profile: Integrated
   // ═══════════════════════════════════════════
   // 커리어 전략
   // ═══════════════════════════════════════════
-  y = drawSectionHeader(doc, 'Career Strategy', y, margin);
+  y = drawSectionHeader(doc, '커리어 전략', y, margin);
   y = drawBody(doc, profile.careerGuide, y, margin, contentWidth);
 
   if (profile.careers.length > 0) {
     y = ensureSpace(doc, y, 16, margin);
+    doc.setFont('NanumGothic', 'bold');
     doc.setFontSize(10);
     doc.setTextColor(60, 60, 60);
-    doc.text('Recommended Careers:', margin + 4, y);
+    doc.text('추천 직업:', margin + 4, y);
+    doc.setFont('NanumGothic', 'normal');
     y += 6;
     y = drawTags(doc, profile.careers, y, margin);
   }
@@ -264,49 +323,55 @@ export async function generatePremiumPDF(result: TestResult, profile: Integrated
   // ═══════════════════════════════════════════
   // 스트레스 & 성장
   // ═══════════════════════════════════════════
-  y = drawSectionHeader(doc, 'Stress Pattern (Grip)', y, margin);
+  y = drawSectionHeader(doc, '스트레스 패턴 (Grip 상태)', y, margin);
   y = drawBody(doc, profile.gripStressNarrative, y, margin, contentWidth);
 
-  y = drawSectionHeader(doc, 'Recovery & Growth', y, margin);
+  y = drawSectionHeader(doc, '회복 & 성장 전략', y, margin);
   y = drawBody(doc, profile.stressGuide, y, margin, contentWidth);
 
-  y = drawSectionHeader(doc, 'Life Strategy', y, margin);
+  y = drawSectionHeader(doc, '인생 전략', y, margin);
   y = drawBody(doc, profile.lifeStrategy, y, margin, contentWidth);
 
   // ═══════════════════════════════════════════
   // 소통 & 양육
   // ═══════════════════════════════════════════
-  y = drawSectionHeader(doc, 'Communication Style', y, margin);
+  y = drawSectionHeader(doc, '소통 스타일', y, margin);
   y = drawBody(doc, profile.communicationGuide, y, margin, contentWidth);
 
-  y = drawSectionHeader(doc, 'Parenting Insight', y, margin);
+  y = drawSectionHeader(doc, '양육 인사이트', y, margin);
   y = drawBody(doc, profile.parentingInsight, y, margin, contentWidth);
 
   // ═══════════════════════════════════════════
   // 기질 약점 & 성장 포인트
   // ═══════════════════════════════════════════
-  y = drawSectionHeader(doc, 'Shadow Side & Growth', y, margin);
+  y = drawSectionHeader(doc, '그림자 & 성장 포인트', y, margin);
   y = drawBody(doc, profile.weaknessInsight, y, margin, contentWidth);
 
   // ═══════════════════════════════════════════
   // 과학적 근거
   // ═══════════════════════════════════════════
-  y = drawSectionHeader(doc, 'Scientific Basis', y, margin);
+  y = drawSectionHeader(doc, '과학적 근거', y, margin);
 
+  doc.setFont('NanumGothic', 'bold');
   doc.setFontSize(9);
   doc.setTextColor(100, 100, 100);
   y = ensureSpace(doc, y, 8, margin);
-  doc.text('Eysenck Model:', margin + 4, y);
+  doc.text('Eysenck 모델:', margin + 4, y);
+  doc.setFont('NanumGothic', 'normal');
   y += 5;
   y = drawBody(doc, profile.eysenckInsight, y, margin, contentWidth);
 
+  doc.setFont('NanumGothic', 'bold');
   y = ensureSpace(doc, y, 8, margin);
-  doc.text('Neuroscience (Helen Fisher):', margin + 4, y);
+  doc.text('신경과학 (Helen Fisher):', margin + 4, y);
+  doc.setFont('NanumGothic', 'normal');
   y += 5;
   y = drawBody(doc, profile.neuroscienceInsight, y, margin, contentWidth);
 
+  doc.setFont('NanumGothic', 'bold');
   y = ensureSpace(doc, y, 8, margin);
-  doc.text('Humor Theory:', margin + 4, y);
+  doc.text('4체액설:', margin + 4, y);
+  doc.setFont('NanumGothic', 'normal');
   y += 5;
   y = drawBody(doc, profile.humorTheoryInsight, y, margin, contentWidth);
 
@@ -314,7 +379,7 @@ export async function generatePremiumPDF(result: TestResult, profile: Integrated
   // 유명인
   // ═══════════════════════════════════════════
   if (profile.celebrities.length > 0) {
-    y = drawSectionHeader(doc, 'Famous People Like You', y, margin);
+    y = drawSectionHeader(doc, '같은 유형의 유명인', y, margin);
     y = drawTags(doc, profile.celebrities, y, margin);
   }
 
@@ -328,13 +393,14 @@ export async function generatePremiumPDF(result: TestResult, profile: Integrated
   doc.line(margin, y, pageWidth - margin, y);
   y += 8;
 
+  doc.setFont('NanumGothic', 'normal');
   doc.setFontSize(8);
   doc.setTextColor(160, 160, 160);
-  doc.text('This report was generated by 192 Personality Type Test (192types.com)', pageWidth / 2, y, { align: 'center' });
+  doc.text('이 보고서는 192 성격 유형 검사 (192types.com)에서 생성되었습니다.', pageWidth / 2, y, { align: 'center' });
   y += 5;
-  doc.text('Based on MBTI cognitive functions and Hippocrates Four Temperaments theory.', pageWidth / 2, y, { align: 'center' });
+  doc.text('MBTI 인지기능 + 히포크라테스 4기질론 기반 통합 분석', pageWidth / 2, y, { align: 'center' });
   y += 5;
-  doc.text(`Report ID: ${result.fullCode}-${Date.now().toString(36).toUpperCase()}`, pageWidth / 2, y, { align: 'center' });
+  doc.text(`보고서 ID: ${result.fullCode}-${Date.now().toString(36).toUpperCase()}`, pageWidth / 2, y, { align: 'center' });
 
   // ═══════════════════════════════════════════
   // 페이지 번호
@@ -342,6 +408,7 @@ export async function generatePremiumPDF(result: TestResult, profile: Integrated
   const totalPages = doc.getNumberOfPages();
   for (let i = 2; i <= totalPages; i++) {
     doc.setPage(i);
+    doc.setFont('NanumGothic', 'normal');
     doc.setFontSize(8);
     doc.setTextColor(180, 180, 180);
     doc.text(`${i} / ${totalPages}`, pageWidth / 2, doc.internal.pageSize.getHeight() - 8, { align: 'center' });
