@@ -1,7 +1,17 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://192types.com';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: 'https://192types.com/',
+  },
+  openGraph: {
+    images: ['/api/og?type=home'],
+  },
+};
 
 const websiteSchema = {
   '@context': 'https://schema.org',

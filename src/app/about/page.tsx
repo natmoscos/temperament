@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   title: '서비스 소개 — 192 성격 유형 검사란?',
   description: 'MBTI 16유형과 히포크라테스 기질론 12조합을 결합한 192가지 성격 유형 검사 서비스. 칼 융, Eysenck, Helen Fisher 이론 기반.',
   keywords: ['192 성격 유형 검사', 'MBTI 기질론', '성격 검사 서비스', '히포크라테스 기질론', 'Eysenck', 'Helen Fisher'],
+  alternates: {
+    canonical: 'https://192types.com/about',
+  },
   openGraph: {
     title: '서비스 소개 — 192 성격 유형 검사란?',
     description: 'MBTI 16유형과 히포크라테스 기질론 12조합을 결합한 192가지 성격 유형 검사 서비스입니다.',

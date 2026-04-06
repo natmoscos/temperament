@@ -1,5 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import JsonLd from '@/components/JsonLd';
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://192types.com';
 
 // MBTI 닉네임 (서버 컴포넌트에서 사용)
 const mbtiNicknames: Record<string, { nickname: string; emoji: string }> = {
@@ -50,6 +53,9 @@ export async function generateMetadata({ params }: { params: Promise<{ code: str
   return {
     title,
     description,
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://192types.com'}/share/${code}`,
+    },
     openGraph: {
       title,
       description,
@@ -101,6 +107,15 @@ export default async function SharePage({ params }: { params: Promise<{ code: st
 
   return (
     <div className={`min-h-screen bg-gradient-to-b ${bgColor} flex flex-col items-center justify-center px-4 py-12`}>
+      <JsonLd data={{
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: '홈', item: SITE_URL },
+          { '@type': 'ListItem', position: 2, name: '성격 유형', item: `${SITE_URL}/types` },
+          { '@type': 'ListItem', position: 3, name: fullCode },
+        ],
+      }} />
       <div className="w-full max-w-lg text-center space-y-6">
 
         {/* 상단 브랜딩 */}

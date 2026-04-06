@@ -2,6 +2,9 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { TypeDetailContent } from '@/components/TypeDetailContent';
+import JsonLd from '@/components/JsonLd';
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://192types.com';
 
 const mbtiDescriptions: Record<string, { name: string; desc: string }> = {
   ISTJ: { name: '신뢰의 수호자', desc: 'ISTJ 유형의 성격 특징, 기질별 차이, 연애 스타일, 직업 추천을 확인하세요.' },
@@ -32,6 +35,9 @@ export async function generateMetadata({ params }: { params: Promise<{ type: str
     title: `${mbtiType} 성격 유형 — ${info.name} | 기질별 심층 분석`,
     description: info.desc,
     keywords: [mbtiType, `${mbtiType} 성격`, `${mbtiType} 특징`, `${mbtiType} 연애`, `${mbtiType} 직업`, 'MBTI', '기질론'],
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://192types.com'}/types/${type}`,
+    },
     openGraph: {
       title: `${mbtiType} 성격 유형 — ${info.name}`,
       description: info.desc,
@@ -53,8 +59,20 @@ export default async function TypePage({ params }: { params: Promise<{ type: str
     notFound();
   }
 
+  const info = mbtiDescriptions[mbtiType];
+  const typeName = info ? `${mbtiType} ${info.name}` : mbtiType;
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-12 px-4">
+      <JsonLd data={{
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: '홈', item: SITE_URL },
+          { '@type': 'ListItem', position: 2, name: '성격 유형', item: `${SITE_URL}/types` },
+          { '@type': 'ListItem', position: 3, name: typeName },
+        ],
+      }} />
       <div className="max-w-3xl mx-auto">
         <Link href="/types" className="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-indigo-600 mb-6 transition">
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

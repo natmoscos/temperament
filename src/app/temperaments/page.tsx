@@ -1,10 +1,16 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import JsonLd from '@/components/JsonLd';
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://192types.com';
 
 export const metadata: Metadata = {
   title: '히포크라테스 4가지 기질론 — 다혈질 담즙질 점액질 우울질',
   description: '히포크라테스의 4가지 기질(다혈질, 담즙질, 점액질, 우울질)을 Eysenck 모델과 Helen Fisher 신경과학으로 분석합니다. 12가지 복합 기질 조합도 확인하세요.',
   keywords: ['기질론', '히포크라테스', '4가지 기질', '다혈질', '담즙질', '점액질', '우울질', 'Eysenck', '성격 유형'],
+  alternates: {
+    canonical: 'https://192types.com/temperaments',
+  },
   openGraph: {
     title: '히포크라테스 4가지 기질론 — 다혈질 담즙질 점액질 우울질',
     description: '히포크라테스의 4가지 기질을 현대 심리학으로 분석합니다. Eysenck 모델과 Helen Fisher 신경과학 이론 기반.',
@@ -140,6 +146,14 @@ const dualCombinations = [
 export default function TemperamentsPage() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <JsonLd data={{
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: '홈', item: SITE_URL },
+          { '@type': 'ListItem', position: 2, name: '기질론' },
+        ],
+      }} />
       {/* 히어로 */}
       <div className="bg-white border-b border-gray-100">
         <div className="max-w-5xl mx-auto px-4 py-12 sm:py-16 text-center">

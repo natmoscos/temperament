@@ -1,11 +1,17 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import CharacterAvatar from '@/components/CharacterAvatar';
+import JsonLd from '@/components/JsonLd';
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://192types.com';
 
 export const metadata: Metadata = {
   title: 'MBTI 16유형 × 기질 12조합 — 192가지 성격 유형 목록',
   description: 'MBTI 16가지 유형과 히포크라테스 기질 12조합으로 만들어지는 192가지 성격 유형을 모두 확인하세요. 각 유형의 특징과 기질 해석을 제공합니다.',
   keywords: ['MBTI 유형', '성격 유형 목록', '192 성격 유형', 'MBTI 16유형', '기질론 조합', 'INTJ', 'ENFP', 'INFJ', 'ENTP'],
+  alternates: {
+    canonical: 'https://192types.com/types',
+  },
   openGraph: {
     title: 'MBTI 16유형 × 기질 12조합 — 192가지 성격 유형 목록',
     description: 'MBTI 16가지 유형과 히포크라테스 기질 12조합으로 만들어지는 192가지 성격 유형을 모두 확인하세요.',
@@ -82,6 +88,14 @@ const typeGroups = [
 export default function TypesPage() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <JsonLd data={{
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: '홈', item: SITE_URL },
+          { '@type': 'ListItem', position: 2, name: '성격 유형' },
+        ],
+      }} />
       {/* 히어로 섹션 */}
       <div className="bg-white border-b border-gray-100">
         <div className="max-w-5xl mx-auto px-4 py-12 sm:py-16 text-center">

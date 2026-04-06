@@ -1,11 +1,17 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { blogPosts } from '@/data/blog-posts';
+import JsonLd from '@/components/JsonLd';
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://192types.com';
 
 export const metadata: Metadata = {
   title: '성격 유형 블로그 — MBTI × 기질론 인사이트',
   description: 'MBTI 궁합, 연애 스타일, 직업 추천, 기질론 가이드 등 성격 유형에 관한 깊이 있는 콘텐츠를 제공합니다.',
   keywords: ['MBTI 블로그', 'MBTI 궁합', 'MBTI 연애', 'MBTI 직업', '기질론 가이드', '성격 유형 분석'],
+  alternates: {
+    canonical: 'https://192types.com/blog',
+  },
   openGraph: {
     title: '성격 유형 블로그 — MBTI × 기질론 인사이트',
     description: 'MBTI 궁합, 연애 스타일, 직업 추천, 기질론 가이드 등 성격 유형에 관한 깊이 있는 콘텐츠를 제공합니다.',
@@ -25,6 +31,14 @@ const categoryLabels: Record<string, { label: string; color: string }> = {
 export default function BlogIndexPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-12 px-4">
+      <JsonLd data={{
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: '홈', item: SITE_URL },
+          { '@type': 'ListItem', position: 2, name: '블로그' },
+        ],
+      }} />
       <div className="w-full max-w-3xl mx-auto">
 
         {/* 헤더 */}

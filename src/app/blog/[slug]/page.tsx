@@ -22,16 +22,21 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: post.title,
     description: post.description,
     keywords: post.keywords,
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://192types.com'}/blog/${slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.description,
       type: 'article',
       publishedTime: post.publishDate,
+      images: [`/api/og?type=blog&title=${encodeURIComponent(post.title)}&category=${encodeURIComponent(post.category)}`],
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.description,
+      images: [`/api/og?type=blog&title=${encodeURIComponent(post.title)}&category=${encodeURIComponent(post.category)}`],
     },
   };
 }
@@ -82,6 +87,15 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         },
         keywords: post.keywords.join(', '),
         inLanguage: 'ko',
+      }} />
+      <JsonLd data={{
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: '홈', item: SITE_URL },
+          { '@type': 'ListItem', position: 2, name: '블로그', item: `${SITE_URL}/blog` },
+          { '@type': 'ListItem', position: 3, name: post.title },
+        ],
       }} />
       <article className="w-full max-w-2xl mx-auto">
 
