@@ -1,7 +1,10 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { blogPosts } from '@/data/blog-posts';
+import { getAllBlogPosts } from '@/lib/notion';
 import JsonLd from '@/components/JsonLd';
+
+// 1시간마다 자동 갱신 (Notion 새 글 반영)
+export const revalidate = 3600;
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://192types.com';
 
@@ -28,7 +31,8 @@ const categoryLabels: Record<string, { label: string; color: string }> = {
   psychology: { label: '심리학', color: 'bg-rose-100 text-rose-700' },
 };
 
-export default function BlogIndexPage() {
+export default async function BlogIndexPage() {
+  const blogPosts = await getAllBlogPosts();
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-12 px-4">
       <JsonLd data={{

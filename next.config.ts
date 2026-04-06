@@ -1,6 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Notion 이미지 허용 (외부 이미지 도메인)
+  images: {
+    remotePatterns: [
+      { protocol: 'https', hostname: '**.amazonaws.com' },
+      { protocol: 'https', hostname: 'www.notion.so' },
+      { protocol: 'https', hostname: 'images.unsplash.com' },
+    ],
+  },
+
   // 보안: X-Powered-By 헤더 제거
   poweredByHeader: false,
 

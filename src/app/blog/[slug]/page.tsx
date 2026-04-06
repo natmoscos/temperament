@@ -1,21 +1,26 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getBlogPost, getAllSlugs, blogPosts } from '@/data/blog-posts';
+import { blogPosts } from '@/data/blog-posts';
+import { getBlogPostBySlug, getAllSlugsFromNotion } from '@/lib/notion';
 import AdPlaceholder from '@/components/AdPlaceholder';
 import JsonLd from '@/components/JsonLd';
 
+// 1시간마다 자동 갱신 (Notion 콘텐츠 반영)
+export const revalidate = 3600;
+
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://192types.com';
 
-// 정적 경로 생성
-export function generateStaticParams() {
-  return getAllSlugs().map((slug) => ({ slug }));
+// 정적 경로 생성 (빌드 시 로컬 + Notion 글 모두 생성)
+export async function generateStaticParams() {
+  const slugs = await getAllSlugsFromNotion();
+  return slugs.map((slug) => ({ slug }));
 }
 
 // SEO 메타데이터
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const post = getBlogPost(slug);
+  const post = await getBlogPostBySlug(slug);
   if (!post) return { title: '글을 찾을 수 없습니다' };
 
   return {
@@ -51,7 +56,7 @@ const categoryLabels: Record<string, { label: string; color: string }> = {
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const post = getBlogPost(slug);
+  const post = await getBlogPostBySlug(slug);
   if (!post) notFound();
 
   const cat = categoryLabels[post.category] ?? { label: post.category, color: 'bg-gray-100 text-gray-700' };

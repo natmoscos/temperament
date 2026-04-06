@@ -1,9 +1,9 @@
 import { MetadataRoute } from 'next';
-import { getAllSlugs } from '@/data/blog-posts';
+import { getAllSlugsFromNotion } from '@/lib/notion';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://192types.com';
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const mbtiTypes = ['ISTJ','ISFJ','INFJ','INTJ','ISTP','ISFP','INFP','INTP','ESTP','ESFP','ENFP','ENTP','ESTJ','ESFJ','ENFJ','ENTJ'];
   const tempCodes = ['SC','SP','SM','CS','CP','CM','PS','PC','PM','MS','MC','MP'];
 
@@ -20,8 +20,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/privacy`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.3 },
   ];
 
-  // 블로그 글
-  const blogPages: MetadataRoute.Sitemap = getAllSlugs().map((slug) => ({
+  // 블로그 글 (Notion + 로컬 병합)
+  const allSlugs = await getAllSlugsFromNotion();
+  const blogPages: MetadataRoute.Sitemap = allSlugs.map((slug) => ({
     url: `${SITE_URL}/blog/${slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,

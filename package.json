@@ -9,6 +9,8 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@fontsource/nanum-gothic": "^5.2.7",
+    "@notionhq/client": "^5.16.0",
     "@tosspayments/tosspayments-sdk": "^2.6.0",
     "canvg": "^4.0.3",
     "dompurify": "^3.3.3",
