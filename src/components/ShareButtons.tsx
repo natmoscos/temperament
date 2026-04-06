@@ -14,7 +14,7 @@ export default function ShareButtons({ fullCode, mbtiNickname, temperamentNickna
   // 공유 URL: /share/ENFJ-SC 형태 (OG 이미지 포함)
   const shareUrl = typeof window !== 'undefined' ? `${window.location.origin}/share/${fullCode}` : '';
   const shareText = `나는 ${fullCode}! ${mbtiNickname} x ${temperamentNickname}\n너의 숨겨진 성격은? 192가지 유형 중 나만의 유형을 찾아봐!`;
-  const twitterText = `나는 ${fullCode}! ${mbtiNickname} x ${temperamentNickname} 🔮\n너의 숨겨진 성격은? MBTI를 넘어선 192가지 유형 검사`;
+  const twitterText = `나는 ${fullCode}! ${mbtiNickname} x ${temperamentNickname} 🔮\n너의 숨겨진 성격은? 16가지 유형을 넘어선 192가지 성격 검사`;
   const encodedText = encodeURIComponent(shareText);
   const encodedTwitterText = encodeURIComponent(twitterText);
   const encodedUrl = encodeURIComponent(shareUrl);

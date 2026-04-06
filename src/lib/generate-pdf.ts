@@ -326,7 +326,7 @@ export async function generatePremiumPDF(result: TestResult, profile: Integrated
   doc.setFont(FONT, 'normal');
   doc.setFontSize(9);
   doc.setTextColor(...C.textLight);
-  doc.text('MBTI + 히포크라테스 기질론 통합 분석 보고서', cx, 190, { align: 'center' });
+  doc.text('성격 유형 + 히포크라테스 기질론 통합 분석 보고서', cx, 190, { align: 'center' });
 
   doc.setFont(FONT, 'bold');
   doc.setFontSize(10);
@@ -352,7 +352,7 @@ export async function generatePremiumPDF(result: TestResult, profile: Integrated
   drawPageHeader(doc);
   y = MARGIN + 14;
 
-  y = drawSectionHeader(doc, 'MBTI 성향 분석', y);
+  y = drawSectionHeader(doc, '성격 유형 성향 분석', y);
 
   const axisLabels: Record<string, [string, string]> = {
     EI: ['외향 (E)', '내향 (I)'],
@@ -506,7 +506,7 @@ export async function generatePremiumPDF(result: TestResult, profile: Integrated
   doc.setTextColor(...C.textLight);
   doc.text('이 보고서는 192 성격 유형 검사 (192types.com)에서 생성되었습니다.', cx, y, { align: 'center' });
   y += 5;
-  doc.text('MBTI 인지기능 + 히포크라테스 4기질론 기반 통합 분석', cx, y, { align: 'center' });
+  doc.text('16가지 성격 유형 인지기능 + 히포크라테스 4기질론 기반 통합 분석', cx, y, { align: 'center' });
   y += 5;
   doc.setFontSize(7);
   doc.text(`보고서 ID: ${result.fullCode}-${Date.now().toString(36).toUpperCase()}`, cx, y, { align: 'center' });

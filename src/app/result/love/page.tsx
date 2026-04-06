@@ -26,7 +26,7 @@ export default function LovePage() {
         <Paragraph text={profile.loveNarrative} />
         {profile.bestMatch.length > 0 && (
           <div className="mt-5 bg-pink-50 rounded-xl p-4 border border-pink-100">
-            <p className="text-sm font-semibold text-pink-700 mb-2">MBTI 기준 추천 궁합</p>
+            <p className="text-sm font-semibold text-pink-700 mb-2">성격 유형 기준 추천 궁합</p>
             <div className="flex gap-2 flex-wrap">
               {profile.bestMatch.map((m) => (
                 <span key={m} className="px-3 py-1 bg-pink-100 text-pink-800 rounded-lg text-sm font-medium">{m}</span>
@@ -78,7 +78,7 @@ export default function LovePage() {
         <p className="text-3xl mb-3">💘</p>
         <h3 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-pink-600 transition">궁합 검사하기</h3>
         <p className="text-sm text-gray-500 mb-4">
-          나와 상대방의 MBTI + 기질을 비교하여<br />
+          나와 상대방의 성격 유형 + 기질을 비교하여<br />
           관계의 강점, 주의점, 소통법을 분석합니다
         </p>
         <span className="inline-block px-5 py-2.5 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-xl text-sm font-bold shadow-md group-hover:shadow-lg transition">
@@ -90,7 +90,7 @@ export default function LovePage() {
         href="/result/career"
         icon="🚀"
         title="당신만의 커리어 전략"
-        description="MBTI + 기질이 알려주는 당신에게 맞는 일과 환경"
+        description="성격 유형 + 기질이 알려주는 당신에게 맞는 일과 환경"
       />
     </div>
   );

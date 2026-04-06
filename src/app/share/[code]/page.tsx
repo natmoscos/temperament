@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: { params: Promise<{ code: str
   const { fullCode, mbtiInfo, tempNickname } = parseCode(code);
 
   const title = `${fullCode} — ${mbtiInfo.emoji} ${mbtiInfo.nickname} | 192 성격 유형 검사`;
-  const description = `${fullCode} 유형: ${mbtiInfo.nickname} × ${tempNickname}. MBTI와 히포크라테스 기질론을 결합한 192가지 성격 유형 중 당신의 유형을 확인하세요.`;
+  const description = `${fullCode} 유형: ${mbtiInfo.nickname} × ${tempNickname}. 16가지 성격 유형과 히포크라테스 기질론을 결합한 192가지 성격 유형 중 당신의 유형을 확인하세요.`;
 
   return {
     title,
@@ -154,7 +154,7 @@ export default async function SharePage({ params }: { params: Promise<{ code: st
           </div>
           <div className="border-t border-gray-100 pt-4">
             <p className="text-gray-500 text-sm leading-relaxed">
-              MBTI 16가지만으로는 부족했다면?
+              16가지 성격 유형만으로는 부족했다면?
               히포크라테스의 기질론을 결합한 <strong>192가지 성격 유형 검사</strong>로 숨겨진 진짜 나를 발견하세요.
             </p>
           </div>

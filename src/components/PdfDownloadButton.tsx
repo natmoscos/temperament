@@ -91,7 +91,7 @@ function FreePdfDownloadButton({ result, profile }: Props) {
           </li>
           <li className="flex items-start gap-2">
             <span className="text-green-500 mt-0.5">✓</span>
-            MBTI + 기질 성향 분석 차트
+            성격 유형 + 기질 성향 분석 차트
           </li>
           <li className="flex items-start gap-2">
             <span className="text-green-500 mt-0.5">✓</span>

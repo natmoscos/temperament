@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<{ type: str
   return {
     title: `${mbtiType} 성격 유형 — ${info.name} | 기질별 심층 분석`,
     description: info.desc,
-    keywords: [mbtiType, `${mbtiType} 성격`, `${mbtiType} 특징`, `${mbtiType} 연애`, `${mbtiType} 직업`, 'MBTI', '기질론'],
+    keywords: [mbtiType, `${mbtiType} 성격`, `${mbtiType} 특징`, `${mbtiType} 연애`, `${mbtiType} 직업`, '성격 유형', '기질론'],
     alternates: {
       canonical: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://192types.com'}/types/${type}`,
     },

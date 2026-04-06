@@ -17,7 +17,7 @@ export default function Footer() {
           <div>
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">성격 유형</p>
             <div className="space-y-2">
-              <Link href="/types" className="block text-sm text-gray-600 hover:text-indigo-600 transition">MBTI 16유형</Link>
+              <Link href="/types" className="block text-sm text-gray-600 hover:text-indigo-600 transition">16가지 성격 유형</Link>
               <Link href="/temperaments" className="block text-sm text-gray-600 hover:text-indigo-600 transition">기질론 가이드</Link>
               <Link href="/blog" className="block text-sm text-gray-600 hover:text-indigo-600 transition">블로그</Link>
             </div>

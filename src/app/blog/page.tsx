@@ -9,21 +9,21 @@ export const revalidate = 3600;
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://192types.com';
 
 export const metadata: Metadata = {
-  title: '성격 유형 블로그 — MBTI × 기질론 인사이트',
-  description: 'MBTI 궁합, 연애 스타일, 직업 추천, 기질론 가이드 등 성격 유형에 관한 깊이 있는 콘텐츠를 제공합니다.',
-  keywords: ['MBTI 블로그', 'MBTI 궁합', 'MBTI 연애', 'MBTI 직업', '기질론 가이드', '성격 유형 분석'],
+  title: '성격 유형 블로그 — 16가지 성격 × 기질론 인사이트',
+  description: '성격 유형 궁합, 연애 스타일, 직업 추천, 기질론 가이드 등 성격 유형에 관한 깊이 있는 콘텐츠를 제공합니다.',
+  keywords: ['성격 유형 블로그', '성격 유형 궁합', '성격 유형별 연애', '성격 유형별 직업', '기질론 가이드', '성격 유형 분석'],
   alternates: {
     canonical: 'https://192types.com/blog',
   },
   openGraph: {
-    title: '성격 유형 블로그 — MBTI × 기질론 인사이트',
-    description: 'MBTI 궁합, 연애 스타일, 직업 추천, 기질론 가이드 등 성격 유형에 관한 깊이 있는 콘텐츠를 제공합니다.',
+    title: '성격 유형 블로그 — 16가지 성격 × 기질론 인사이트',
+    description: '성격 유형 궁합, 연애 스타일, 직업 추천, 기질론 가이드 등 성격 유형에 관한 깊이 있는 콘텐츠를 제공합니다.',
   },
 };
 
 const categoryLabels: Record<string, { label: string; color: string }> = {
   compatibility: { label: '궁합', color: 'bg-pink-100 text-pink-700' },
-  mbti: { label: 'MBTI', color: 'bg-indigo-100 text-indigo-700' },
+  mbti: { label: '성격 유형', color: 'bg-indigo-100 text-indigo-700' },
   temperament: { label: '기질론', color: 'bg-amber-100 text-amber-700' },
   career: { label: '커리어', color: 'bg-emerald-100 text-emerald-700' },
   guide: { label: '가이드', color: 'bg-purple-100 text-purple-700' },
@@ -57,7 +57,7 @@ export default async function BlogIndexPage() {
             </span>
           </h1>
           <p className="text-gray-500 text-sm leading-relaxed max-w-md mx-auto">
-            MBTI와 기질론에 대한 깊이 있는 인사이트를 만나보세요.
+            성격 유형과 기질론에 대한 깊이 있는 인사이트를 만나보세요.
           </p>
         </div>
 
@@ -117,7 +117,7 @@ export default async function BlogIndexPage() {
         {/* 검사 CTA */}
         <div className="mt-12 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl p-6 sm:p-8 text-center text-white shadow-xl">
           <h3 className="text-xl font-bold mb-2">나의 192가지 성격 유형은?</h3>
-          <p className="text-sm text-indigo-200 mb-5">MBTI + 기질론을 결합한 정밀 분석 검사</p>
+          <p className="text-sm text-indigo-200 mb-5">성격 유형 + 기질론을 결합한 정밀 분석 검사</p>
           <Link
             href="/test"
             className="inline-block px-8 py-3 bg-white text-indigo-700 rounded-xl font-bold hover:bg-indigo-50 transition shadow-lg"

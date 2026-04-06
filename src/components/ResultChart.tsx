@@ -83,7 +83,7 @@ export default function ResultChart({ result }: { result: TestResult }) {
       )}
 
       {/* ━━━ 1. 당신은 이런 사람입니다 ━━━ */}
-      <Section icon="🪞" title="당신은 이런 사람입니다" subtitle="MBTI와 기질론이 만나 그려내는 당신의 초상화">
+      <Section icon="🪞" title="당신은 이런 사람입니다" subtitle="성격 유형과 기질론이 만나 그려내는 당신의 초상화">
         <Paragraph text={profile.personalityNarrative} />
       </Section>
 
@@ -147,9 +147,9 @@ export default function ResultChart({ result }: { result: TestResult }) {
         </div>
       </Section>
 
-      {/* ━━━ 3. MBTI만으로는 설명할 수 없었던 것들 (핵심 차별화) ━━━ */}
+      {/* ━━━ 3. 기존 16가지 유형만으로는 설명할 수 없었던 것들 (핵심 차별화) ━━━ */}
       {profile.contradictionInsights.length > 0 && (
-        <Section icon="🔑" title="MBTI만으로는 설명할 수 없었던 것들" subtitle="기질론이 풀어주는 당신의 모순과 혼란">
+        <Section icon="🔑" title="기존 16가지 유형만으로는 설명할 수 없었던 것들" subtitle="기질론이 풀어주는 당신의 모순과 혼란">
           <div className="space-y-5">
             {profile.contradictionInsights.map((insight, i) => (
               <div key={i} className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-5 border border-indigo-100">
@@ -175,7 +175,7 @@ export default function ResultChart({ result }: { result: TestResult }) {
         <Paragraph text={profile.loveNarrative} />
         {profile.bestMatch.length > 0 && (
           <div className="mt-5 bg-pink-50 rounded-xl p-4 border border-pink-100">
-            <p className="text-sm font-semibold text-pink-700 mb-2">MBTI 기준 추천 궁합</p>
+            <p className="text-sm font-semibold text-pink-700 mb-2">성격 유형 기준 추천 궁합</p>
             <div className="flex gap-2 flex-wrap">
               {profile.bestMatch.map((m) => (
                 <span key={m} className="px-3 py-1 bg-pink-100 text-pink-800 rounded-lg text-sm font-medium">{m}</span>
@@ -191,7 +191,7 @@ export default function ResultChart({ result }: { result: TestResult }) {
       </Section>
 
       {/* ━━━ 8. 당신만의 커리어 전략 ━━━ */}
-      <Section icon="🚀" title="당신만의 커리어 전략" subtitle="MBTI + 기질이 알려주는 당신에게 맞는 일과 환경">
+      <Section icon="🚀" title="당신만의 커리어 전략" subtitle="성격 유형 + 기질이 알려주는 당신에게 맞는 일과 환경">
         <Paragraph text={profile.careerGuide} />
         <div className="mt-5 flex flex-wrap gap-2">
           {profile.careers.map((c, i) => (

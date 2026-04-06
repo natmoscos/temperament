@@ -354,10 +354,10 @@ export default function TemperamentsPage() {
         <div className="bg-white rounded-3xl shadow-sm border border-gray-100 p-8 sm:p-12 text-center mb-12">
           <p className="text-sm text-gray-400 mb-2">내 안에 어떤 기질이 숨어있을까?</p>
           <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3">
-            기질 × MBTI = 192가지 유형
+            기질 × 16가지 성격 유형 = 192가지 유형
           </h2>
           <p className="text-gray-500 mb-6 max-w-md mx-auto">
-            같은 MBTI라도 기질이 다르면 완전히 다른 사람입니다.<br />
+            같은 성격 유형이라도 기질이 다르면 완전히 다른 사람입니다.<br />
             검사를 통해 당신만의 조합을 찾아보세요.
           </p>
           <Link

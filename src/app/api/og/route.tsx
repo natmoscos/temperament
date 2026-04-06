@@ -42,7 +42,7 @@ const tempNicknames: Record<string, string> = {
 // 블로그 카테고리 한글 라벨
 const categoryLabels: Record<string, string> = {
   compatibility: '궁합',
-  mbti: 'MBTI',
+  mbti: '성격 유형',
   temperament: '기질론',
   career: '커리어',
   guide: '가이드',
@@ -264,7 +264,7 @@ export async function GET(req: NextRequest) {
               marginBottom: '40px',
             }}
           >
-            MBTI + 히포크라테스 기질론
+            16가지 성격 × 4가지 기질
           </div>
 
           {/* 정보 태그 */}

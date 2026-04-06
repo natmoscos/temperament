@@ -185,7 +185,7 @@ export default function QuickResultPage() {
         {/* ━━━ 잠긴 콘텐츠 목록 ━━━ */}
         <div className="space-y-3">
           {[
-            { icon: '🔑', title: 'MBTI만으로는 설명할 수 없었던 것들', desc: '기질론이 풀어주는 당신의 모순' },
+            { icon: '🔑', title: '기존 16가지 유형만으로는 설명할 수 없었던 것들', desc: '기질론이 풀어주는 당신의 모순' },
             { icon: '🎭', title: '사람들이 모르는 진짜 당신', desc: '겉과 다른 내면의 이야기' },
             { icon: '❤️', title: '연애할 때 당신은', desc: '사랑의 언어와 궁합 분석' },
             { icon: '🚀', title: '당신만의 커리어 전략', desc: '기질별 최적 업무 환경' },

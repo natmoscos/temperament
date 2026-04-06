@@ -18,7 +18,7 @@ const websiteSchema = {
   '@type': 'WebSite',
   name: '192 성격 유형 검사',
   url: SITE_URL,
-  description: 'MBTI와 히포크라테스 기질론을 결합한 192가지 성격 유형 검사',
+  description: '16가지 성격 유형과 히포크라테스 기질론을 결합한 192가지 성격 유형 검사',
   inLanguage: 'ko',
   potentialAction: {
     '@type': 'SearchAction',
@@ -36,15 +36,15 @@ const faqSchema = {
       name: '192 성격 유형 검사는 무엇인가요?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: '192 성격 유형 검사는 칼 융의 인지기능 이론(MBTI 16유형)과 히포크라테스의 4가지 기질론(12가지 조합)을 과학적으로 결합한 통합 성격 분석 검사입니다. 16 × 12 = 192가지 고유한 성격 유형으로 당신을 분석합니다.',
+        text: '192 성격 유형 검사는 칼 융의 인지기능 이론(흔히 MBTI로 알려진 16가지 성격 유형)과 히포크라테스의 4가지 기질론(12가지 조합)을 과학적으로 결합한 통합 성격 분석 검사입니다. 16 × 12 = 192가지 고유한 성격 유형으로 당신을 분석합니다.',
       },
     },
     {
       '@type': 'Question',
-      name: 'MBTI와 기질론의 차이는 무엇인가요?',
+      name: '16가지 성격 유형과 기질론의 차이는 무엇인가요?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'MBTI는 인지기능(사고·감정·감각·직관의 방향)을 분류하고, 기질론은 감정의 기본 반응 패턴(다혈질·담즙질·점액질·우울질)을 분류합니다. 같은 MBTI 유형이라도 기질에 따라 완전히 다른 성격이 됩니다.',
+        text: '흔히 MBTI로 알려진 16가지 성격 유형은 인지기능(사고·감정·감각·직관의 방향)을 분류하고, 기질론은 감정의 기본 반응 패턴(다혈질·담즙질·점액질·우울질)을 분류합니다. 같은 성격 유형이라도 기질에 따라 완전히 다른 성격이 됩니다.',
       },
     },
     {
@@ -68,7 +68,7 @@ const faqSchema = {
       name: '192가지 유형은 어떻게 나뉘나요?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'MBTI 16가지 유형(ISTJ, ISFJ 등)에 히포크라테스 기질 12가지 조합(다혈담즙, 담즙다혈 등)을 곱하여 16 × 12 = 192가지 고유한 성격 유형이 만들어집니다. 예를 들어 같은 ENFJ라도 담즙질 ENFJ와 우울질 ENFJ는 전혀 다른 성격입니다.',
+        text: '16가지 성격 유형(ISTJ, ISFJ 등)에 히포크라테스 기질 12가지 조합(다혈담즙, 담즙다혈 등)을 곱하여 16 × 12 = 192가지 고유한 성격 유형이 만들어집니다. 예를 들어 같은 ENFJ라도 담즙질 ENFJ와 우울질 ENFJ는 전혀 다른 성격입니다.',
       },
     },
   ],
@@ -85,7 +85,7 @@ export default function Home() {
         {/* 신뢰 배지 */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full mb-8">
           <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-          <span className="text-xs text-indigo-200 font-medium">MBTI 16가지로는 부족했습니다</span>
+          <span className="text-xs text-indigo-200 font-medium">16가지 성격 유형으로는 부족했습니다</span>
         </div>
 
         {/* 헤드카피 */}
@@ -98,10 +98,10 @@ export default function Home() {
 
         {/* 서브카피 */}
         <p className="text-lg sm:text-xl text-indigo-200/90 leading-relaxed max-w-lg mx-auto mb-4">
-          MBTI가 알려주지 않는 <strong className="text-white">나의 숨겨진 성격</strong>을 찾아보세요
+          기존 16가지 유형이 알려주지 않는 <strong className="text-white">나의 숨겨진 성격</strong>을 찾아보세요
         </p>
         <p className="text-sm text-indigo-300/60 mb-10">
-          히포크라테스 기질론 × MBTI = 192가지 유형
+          히포크라테스 기질론 × 16가지 성격 유형 = 192가지 유형
         </p>
 
         {/* 캐릭터 4인 */}
@@ -180,7 +180,7 @@ export default function Home() {
             &ldquo;나 진짜 I야? E야?&rdquo;
           </p>
           <p className="text-sm sm:text-base text-indigo-200/80 leading-relaxed max-w-md mx-auto">
-            그 혼란의 이유는 MBTI에 빠진 한 가지 차원 때문입니다.<br />
+            그 혼란의 이유는 기존 16가지 유형에 빠진 한 가지 차원 때문입니다.<br />
             <strong className="text-amber-300">기질(Temperament)</strong>이 그 답을 알고 있습니다.
           </p>
         </div>
@@ -193,7 +193,7 @@ export default function Home() {
           {/* USP */}
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3">
-              MBTI <span className="text-indigo-600">16가지</span>로는 부족했다
+              <span className="text-indigo-600">16가지</span> 성격 유형으로는 부족했다
             </h2>
             <p className="text-sm text-gray-500">같은 유형이라도 기질에 따라 완전히 달라집니다</p>
           </div>
@@ -224,13 +224,13 @@ export default function Home() {
 
           <div className="text-center mb-10">
             <p className="text-sm text-gray-500 mb-1">같은 ENFJ인데 이렇게 다릅니다</p>
-            <p className="text-sm text-gray-400">MBTI 16유형 × 기질 12조합 = <strong className="text-indigo-600">192가지</strong> 고유한 성격</p>
+            <p className="text-sm text-gray-400">16가지 성격 유형 × 기질 12조합 = <strong className="text-indigo-600">192가지</strong> 고유한 성격</p>
           </div>
 
           {/* Feature Cards */}
           <div className="grid grid-cols-3 gap-3 mb-12">
             {[
-              { icon: '🧩', title: 'MBTI 16유형', desc: '인지기능 분석', color: 'bg-indigo-50 border-indigo-100' },
+              { icon: '🧩', title: '16가지 성격 유형', desc: '인지기능 분석', color: 'bg-indigo-50 border-indigo-100' },
               { icon: '🧬', title: '기질 12조합', desc: '4기질 × 2 조합', color: 'bg-purple-50 border-purple-100' },
               { icon: '📖', title: '인생 공략집', desc: '맞춤형 가이드', color: 'bg-pink-50 border-pink-100' },
             ].map((f) => (
@@ -289,10 +289,10 @@ export default function Home() {
             <h3 className="text-lg font-bold text-gray-800 mb-4 text-center">📖 인기 글</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
-                { href: '/blog/mbti-compatibility-ranking', title: 'MBTI 궁합 순위 TOP 10', tag: '궁합' },
-                { href: '/blog/mbti-love-style-all-types', title: 'MBTI 유형별 연애 스타일 총정리', tag: 'MBTI' },
+                { href: '/blog/mbti-compatibility-ranking', title: '성격 유형 궁합 순위 TOP 10', tag: '궁합' },
+                { href: '/blog/mbti-love-style-all-types', title: '성격 유형별 연애 스타일 총정리', tag: '성격' },
                 { href: '/blog/four-temperaments-guide', title: '다혈질 담즙질 점액질 우울질 완벽 가이드', tag: '기질론' },
-                { href: '/blog/mbti-career-guide', title: 'MBTI 유형별 직업 추천', tag: '커리어' },
+                { href: '/blog/mbti-career-guide', title: '성격 유형별 직업 추천', tag: '커리어' },
               ].map((item) => (
                 <Link
                   key={item.href}
@@ -331,7 +331,7 @@ export default function Home() {
               >
                 <span className="text-2xl block mb-2">🧩</span>
                 <p className="text-sm font-bold text-gray-800 group-hover:text-indigo-700 transition">192가지 유형 목록</p>
-                <p className="text-xs text-gray-400 mt-1">MBTI 16유형 × 기질 12조합</p>
+                <p className="text-xs text-gray-400 mt-1">16가지 성격 유형 × 기질 12조합</p>
               </Link>
               <Link
                 href="/compatibility"
@@ -339,7 +339,7 @@ export default function Home() {
               >
                 <span className="text-2xl block mb-2">💘</span>
                 <p className="text-sm font-bold text-gray-800 group-hover:text-pink-700 transition">궁합 검사</p>
-                <p className="text-xs text-gray-400 mt-1">MBTI + 기질 궁합 분석</p>
+                <p className="text-xs text-gray-400 mt-1">성격 유형 + 기질 궁합 분석</p>
               </Link>
             </div>
           </div>
@@ -351,11 +351,11 @@ export default function Home() {
               {[
                 {
                   q: '192 성격 유형 검사는 무엇인가요?',
-                  a: '칼 융의 인지기능 이론(MBTI 16유형)과 히포크라테스의 4가지 기질론(12가지 조합)을 과학적으로 결합한 통합 성격 분석 검사입니다. 16 × 12 = 192가지 고유한 성격 유형으로 당신을 분석합니다.',
+                  a: '칼 융의 인지기능 이론(흔히 MBTI로 알려진 16가지 성격 유형)과 히포크라테스의 4가지 기질론(12가지 조합)을 과학적으로 결합한 통합 성격 분석 검사입니다. 16 × 12 = 192가지 고유한 성격 유형으로 당신을 분석합니다.',
                 },
                 {
-                  q: 'MBTI와 기질론의 차이는 무엇인가요?',
-                  a: 'MBTI는 인지기능(사고·감정·감각·직관의 방향)을 분류하고, 기질론은 감정의 기본 반응 패턴(다혈질·담즙질·점액질·우울질)을 분류합니다. 같은 MBTI 유형이라도 기질에 따라 완전히 다른 성격이 됩니다.',
+                  q: '16가지 성격 유형과 기질론의 차이는 무엇인가요?',
+                  a: '흔히 MBTI로 알려진 16가지 성격 유형은 인지기능(사고·감정·감각·직관의 방향)을 분류하고, 기질론은 감정의 기본 반응 패턴(다혈질·담즙질·점액질·우울질)을 분류합니다. 같은 성격 유형이라도 기질에 따라 완전히 다른 성격이 됩니다.',
                 },
                 {
                   q: '검사는 무료인가요?',
@@ -367,7 +367,7 @@ export default function Home() {
                 },
                 {
                   q: '192가지 유형은 어떻게 나뉘나요?',
-                  a: 'MBTI 16가지 유형(ISTJ, ISFJ 등)에 히포크라테스 기질 12가지 조합(다혈담즙, 담즙다혈 등)을 곱하여 16 × 12 = 192가지 고유한 성격 유형이 만들어집니다.',
+                  a: '16가지 성격 유형(ISTJ, ISFJ 등)에 히포크라테스 기질 12가지 조합(다혈담즙, 담즙다혈 등)을 곱하여 16 × 12 = 192가지 고유한 성격 유형이 만들어집니다.',
                 },
               ].map((faq) => (
                 <details key={faq.q} className="bg-white rounded-xl border border-gray-100 shadow-sm group">

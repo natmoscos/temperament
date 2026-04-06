@@ -132,7 +132,7 @@ export default function CompatibilityPage() {
       <div className="w-full max-w-3xl mx-auto space-y-5 py-8 px-4">
         <div className="text-center py-4">
           <h1 className="text-2xl font-bold text-gray-800 mt-1">궁합 검사</h1>
-          <p className="text-sm text-gray-500 mt-2">나의 MBTI 유형을 선택하세요</p>
+          <p className="text-sm text-gray-500 mt-2">나의 성격 유형을 선택하세요</p>
         </div>
 
         {/* 이전 검사 결과가 있으면 빠른 선택 안내 */}
@@ -179,7 +179,7 @@ export default function CompatibilityPage() {
     return (
       <div className="w-full max-w-3xl mx-auto space-y-5 py-8 px-4">
         <div className="text-center py-4">
-          <p className="text-sm text-indigo-500 font-medium">나의 MBTI: {myMbti}</p>
+          <p className="text-sm text-indigo-500 font-medium">나의 유형: {myMbti}</p>
           <h1 className="text-2xl font-bold text-gray-800 mt-1">나의 기질 조합을 선택하세요</h1>
           <p className="text-sm text-gray-500 mt-2">주요 기질 + 보조 기질 조합입니다</p>
         </div>
@@ -205,7 +205,7 @@ export default function CompatibilityPage() {
           onClick={() => { setStep('select-my-mbti'); setMyMbti(''); }}
           className="w-full py-3 text-gray-400 text-sm hover:text-gray-600 transition"
         >
-          ← MBTI 다시 선택
+          ← 유형 다시 선택
         </button>
       </div>
     );
@@ -216,7 +216,7 @@ export default function CompatibilityPage() {
     return (
       <div className="w-full max-w-3xl mx-auto space-y-5 py-8 px-4">
         <div className="text-center py-4">
-          <h1 className="text-2xl font-bold text-gray-800 mt-1">상대의 MBTI를 선택하세요</h1>
+          <h1 className="text-2xl font-bold text-gray-800 mt-1">상대의 성격 유형을 선택하세요</h1>
           <p className="text-sm text-gray-500 mt-2">궁합을 확인할 상대의 유형을 골라주세요</p>
         </div>
 
@@ -292,14 +292,14 @@ export default function CompatibilityPage() {
           onClick={() => handlePartnerTempSelect('SC')}
           className="w-full py-3 bg-gray-100 text-gray-500 rounded-xl text-sm font-medium hover:bg-gray-200 transition"
         >
-          기질을 모름 (MBTI만으로 분석)
+          기질을 모름 (성격 유형만으로 분석)
         </button>
 
         <button
           onClick={() => setStep('select-partner-mbti')}
           className="w-full py-3 text-gray-400 text-sm hover:text-gray-600 transition"
         >
-          ← MBTI 다시 선택
+          ← 유형 다시 선택
         </button>
       </div>
     );
@@ -337,7 +337,7 @@ export default function CompatibilityPage() {
       {/* 점수 상세 */}
       <div className="grid grid-cols-2 gap-4">
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 text-center">
-          <p className="text-sm font-semibold text-gray-500 mb-1">🧠 MBTI 호환성</p>
+          <p className="text-sm font-semibold text-gray-500 mb-1">🧠 성격 유형 호환성</p>
           <p className="text-3xl font-black text-indigo-600">{compatibility.mbtiScore}<span className="text-sm text-gray-400">점</span></p>
           <p className="text-xs text-gray-400 mt-1">인지기능 기반</p>
         </div>

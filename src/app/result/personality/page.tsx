@@ -27,7 +27,7 @@ export default function PersonalityPage() {
       </div>
 
       {/* ━━━ 당신은 이런 사람입니다 (FREE) ━━━ */}
-      <Section icon="🪞" title="당신은 이런 사람입니다" subtitle="MBTI와 기질론이 만나 그려내는 당신의 초상화">
+      <Section icon="🪞" title="당신은 이런 사람입니다" subtitle="성격 유형과 기질론이 만나 그려내는 당신의 초상화">
         <Paragraph text={profile.personalityNarrative} />
       </Section>
 
@@ -60,7 +60,7 @@ export default function PersonalityPage() {
 
       {/* ━━━ MBTI만으로는 설명할 수 없었던 것들 (FREE: first 2) ━━━ */}
       {allInsights.length > 0 && (
-        <Section icon="🔑" title="MBTI만으로는 설명할 수 없었던 것들" subtitle="기질론이 풀어주는 당신의 모순과 혼란">
+        <Section icon="🔑" title="기존 16가지 유형만으로는 설명할 수 없었던 것들" subtitle="기질론이 풀어주는 당신의 모순과 혼란">
           <div className="space-y-5">
             {freeInsights.map((insight, i) => (
               <div key={i} className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-5 border border-indigo-100">

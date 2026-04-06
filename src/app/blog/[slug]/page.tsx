@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 const categoryLabels: Record<string, { label: string; color: string }> = {
   compatibility: { label: '궁합', color: 'bg-pink-100 text-pink-700' },
-  mbti: { label: 'MBTI', color: 'bg-indigo-100 text-indigo-700' },
+  mbti: { label: '성격 유형', color: 'bg-indigo-100 text-indigo-700' },
   temperament: { label: '기질론', color: 'bg-amber-100 text-amber-700' },
   career: { label: '커리어', color: 'bg-emerald-100 text-emerald-700' },
   guide: { label: '가이드', color: 'bg-purple-100 text-purple-700' },
@@ -200,7 +200,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <div className="mt-8 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl p-6 sm:p-8 text-center text-white shadow-xl">
           <h3 className="text-xl font-bold mb-2">192가지 중 나는 어떤 유형일까?</h3>
           <p className="text-sm text-indigo-200 mb-4">
-            MBTI + 기질론 통합 검사로 진짜 나를 발견하세요
+            성격 유형 + 기질론 통합 검사로 진짜 나를 발견하세요
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link

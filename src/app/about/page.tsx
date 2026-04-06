@@ -9,7 +9,7 @@ const organizationSchema = {
   '@type': 'Organization',
   name: '192 성격 유형 검사',
   url: SITE_URL,
-  description: 'MBTI와 히포크라테스 기질론을 결합한 192가지 성격 유형 검사 서비스',
+  description: '16가지 성격 유형과 히포크라테스 기질론을 결합한 192가지 성격 유형 검사 서비스',
   email: 'zx.mocz@gmail.com',
   sameAs: [],
   foundingDate: '2026',
@@ -17,14 +17,14 @@ const organizationSchema = {
 
 export const metadata: Metadata = {
   title: '서비스 소개 — 192 성격 유형 검사란?',
-  description: 'MBTI 16유형과 히포크라테스 기질론 12조합을 결합한 192가지 성격 유형 검사 서비스. 칼 융, Eysenck, Helen Fisher 이론 기반.',
-  keywords: ['192 성격 유형 검사', 'MBTI 기질론', '성격 검사 서비스', '히포크라테스 기질론', 'Eysenck', 'Helen Fisher'],
+  description: '16가지 성격 유형과 히포크라테스 기질론 12조합을 결합한 192가지 성격 유형 검사 서비스. 칼 융, Eysenck, Helen Fisher 이론 기반.',
+  keywords: ['192 성격 유형 검사', '성격 유형 기질론', '성격 검사 서비스', '히포크라테스 기질론', 'Eysenck', 'Helen Fisher'],
   alternates: {
     canonical: 'https://192types.com/about',
   },
   openGraph: {
     title: '서비스 소개 — 192 성격 유형 검사란?',
-    description: 'MBTI 16유형과 히포크라테스 기질론 12조합을 결합한 192가지 성격 유형 검사 서비스입니다.',
+    description: '16가지 성격 유형과 히포크라테스 기질론 12조합을 결합한 192가지 성격 유형 검사 서비스입니다.',
   },
 };
 
@@ -50,13 +50,13 @@ export default function AboutPage() {
               </div>
               <div>
                 <h2 className="text-lg font-bold text-gray-800">192 성격 유형 검사</h2>
-                <p className="text-xs text-gray-400">MBTI + Hippocrates Temperament</p>
+                <p className="text-xs text-gray-400">Personality Types + Hippocrates Temperament</p>
               </div>
             </div>
             <p className="text-[15px] text-gray-600 leading-[1.85]">
-              192 성격 유형 검사는 칼 융의 인지기능 이론(MBTI)과 히포크라테스의 4가지 기질론을
+              192 성격 유형 검사는 칼 융의 인지기능 이론(흔히 MBTI로 알려진)과 히포크라테스의 4가지 기질론을
               과학적으로 결합한 통합 성격 분석 서비스입니다.
-              MBTI 16가지 유형에 기질 12가지 조합을 더해, 당신만의 고유한 192가지 성격 유형을 발견할 수 있습니다.
+              16가지 성격 유형에 기질 12가지 조합을 더해, 당신만의 고유한 192가지 성격 유형을 발견할 수 있습니다.
             </p>
           </div>
 
@@ -66,12 +66,12 @@ export default function AboutPage() {
             <div className="text-[15px] text-gray-600 leading-[1.85] space-y-3">
               <p>
                 같은 ENFJ라도 다혈질 ENFJ와 우울질 ENFJ는 완전히 다른 사람입니다.
-                MBTI만으로는 설명할 수 없었던 &ldquo;나의 모순&rdquo;을 기질론이 풀어줍니다.
+                기존 16가지 유형만으로는 설명할 수 없었던 &ldquo;나의 모순&rdquo;을 기질론이 풀어줍니다.
               </p>
               <div className="grid grid-cols-3 gap-3 py-2">
                 <div className="text-center p-3 bg-indigo-50 rounded-xl">
                   <p className="text-2xl font-black text-indigo-600">16</p>
-                  <p className="text-xs text-gray-500 mt-1">MBTI 유형</p>
+                  <p className="text-xs text-gray-500 mt-1">성격 유형</p>
                 </div>
                 <div className="text-center p-3 flex items-center justify-center">
                   <span className="text-2xl text-gray-400">×</span>
@@ -96,7 +96,7 @@ export default function AboutPage() {
               {[
                 {
                   title: 'Carl Jung의 인지기능 이론 (1921)',
-                  desc: 'MBTI의 기반이 되는 8가지 인지기능(Se, Si, Ne, Ni, Te, Ti, Fe, Fi)을 통해 사고와 인식 패턴을 분석합니다.',
+                  desc: '성격 유형의 기반이 되는 8가지 인지기능(Se, Si, Ne, Ni, Te, Ti, Fe, Fi)을 통해 사고와 인식 패턴을 분석합니다.',
                   color: 'border-indigo-200',
                 },
                 {
@@ -131,7 +131,7 @@ export default function AboutPage() {
                 },
                 {
                   title: 'David Keirsey, "Please Understand Me" (1978)',
-                  desc: '히포크라테스의 4기질과 MBTI 16유형을 연결하여, 기질(Temperament)과 성격 유형(Character)의 통합 모델을 구축했습니다.',
+                  desc: '히포크라테스의 4기질과 16가지 성격 유형을 연결하여, 기질(Temperament)과 성격 유형(Character)의 통합 모델을 구축했습니다.',
                   color: 'border-orange-200',
                 },
                 {
@@ -164,7 +164,7 @@ export default function AboutPage() {
               <div className="p-4 bg-indigo-50 rounded-xl">
                 <p className="font-bold text-indigo-700 mb-1">정밀 검사</p>
                 <p className="text-sm text-gray-600">100문항 · 약 12~15분</p>
-                <p className="text-xs text-gray-400 mt-1">MBTI 60문항 + 기질 40문항</p>
+                <p className="text-xs text-gray-400 mt-1">성격 유형 60문항 + 기질 40문항</p>
                 <p className="text-xs text-gray-400">7점 리커트 척도 · 신뢰도 검증 포함</p>
               </div>
               <div className="p-4 bg-amber-50 rounded-xl">
@@ -186,7 +186,7 @@ export default function AboutPage() {
                 { icon: '🚀', title: '커리어 전략', desc: '최적 업무 환경' },
                 { icon: '🌊', title: '스트레스 패턴', desc: 'Grip 상태 · 회복법' },
                 { icon: '🔬', title: '과학적 근거', desc: 'Eysenck · Fisher' },
-                { icon: '💘', title: '궁합 검사', desc: 'MBTI + 기질 궁합' },
+                { icon: '💘', title: '궁합 검사', desc: '성격 유형 + 기질 궁합' },
                 { icon: '📄', title: 'PDF 보고서', desc: '전체 분석 다운로드' },
                 { icon: '📖', title: '인생 공략집', desc: '맞춤 성장 전략' },
               ].map((item) => (

@@ -6,15 +6,15 @@ import JsonLd from '@/components/JsonLd';
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://192types.com';
 
 export const metadata: Metadata = {
-  title: 'MBTI 16유형 × 기질 12조합 — 192가지 성격 유형 목록',
-  description: 'MBTI 16가지 유형과 히포크라테스 기질 12조합으로 만들어지는 192가지 성격 유형을 모두 확인하세요. 각 유형의 특징과 기질 해석을 제공합니다.',
-  keywords: ['MBTI 유형', '성격 유형 목록', '192 성격 유형', 'MBTI 16유형', '기질론 조합', 'INTJ', 'ENFP', 'INFJ', 'ENTP'],
+  title: '16가지 성격 유형 × 기질 12조합 — 192가지 성격 유형 목록',
+  description: '16가지 성격 유형과 히포크라테스 기질 12조합으로 만들어지는 192가지 성격 유형을 모두 확인하세요. 각 유형의 특징과 기질 해석을 제공합니다.',
+  keywords: ['성격 유형', '성격 유형 목록', '192 성격 유형', '16가지 성격 유형', '기질론 조합', 'INTJ', 'ENFP', 'INFJ', 'ENTP'],
   alternates: {
     canonical: 'https://192types.com/types',
   },
   openGraph: {
-    title: 'MBTI 16유형 × 기질 12조합 — 192가지 성격 유형 목록',
-    description: 'MBTI 16가지 유형과 히포크라테스 기질 12조합으로 만들어지는 192가지 성격 유형을 모두 확인하세요.',
+    title: '16가지 성격 유형 × 기질 12조합 — 192가지 성격 유형 목록',
+    description: '16가지 성격 유형과 히포크라테스 기질 12조합으로 만들어지는 192가지 성격 유형을 모두 확인하세요.',
   },
 };
 
@@ -103,7 +103,7 @@ export default function TypesPage() {
             16가지 성격, <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-emerald-500 to-amber-500">192가지 이야기</span>
           </h1>
           <p className="text-gray-500 max-w-xl mx-auto text-base sm:text-lg leading-relaxed">
-            같은 MBTI도 기질이 다르면 완전히 다른 사람입니다.<br className="hidden sm:block" />
+            같은 성격 유형도 기질이 다르면 완전히 다른 사람입니다.<br className="hidden sm:block" />
             당신의 유형을 클릭하고 숨겨진 차이를 발견하세요.
           </p>
         </div>
@@ -164,7 +164,7 @@ export default function TypesPage() {
               5분이면 충분합니다
             </h2>
             <p className="text-gray-500 mb-6 max-w-md mx-auto">
-              100문항으로 MBTI + 기질을 동시에 분석합니다.<br />
+              100문항으로 성격 유형 + 기질을 동시에 분석합니다.<br />
               192가지 중 당신만의 유형을 찾아보세요.
             </p>
             <Link

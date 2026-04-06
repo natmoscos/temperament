@@ -20,7 +20,7 @@ export default function CareerPage() {
       </div>
 
       {/* ━━━ 커리어 가이드 (FREE) ━━━ */}
-      <Section icon="🚀" title="당신만의 커리어 전략" subtitle="MBTI + 기질이 알려주는 당신에게 맞는 일과 환경">
+      <Section icon="🚀" title="당신만의 커리어 전략" subtitle="성격 유형 + 기질이 알려주는 당신에게 맞는 일과 환경">
         <Paragraph text={profile.careerGuide} />
         <div className="mt-5 flex flex-wrap gap-2">
           {profile.careers.map((c, i) => (
@@ -36,7 +36,7 @@ export default function CareerPage() {
         <h3 className="text-xl font-bold text-gray-800 flex items-center gap-2 mb-5">
           <span className="text-2xl">🏢</span>업무 환경 적합도
         </h3>
-        <PremiumTeaser content="당신의 MBTI와 기질 조합을 기반으로 6가지 업무 환경(집중 환경, 팀 협업, 도전적 환경, 안정적 환경, 창의적 환경, 리더십)에 대한 적합도를 분석합니다." maxChars={90} />
+        <PremiumTeaser content="당신의 성격 유형과 기질 조합을 기반으로 6가지 업무 환경(집중 환경, 팀 협업, 도전적 환경, 안정적 환경, 창의적 환경, 리더십)에 대한 적합도를 분석합니다." maxChars={90} />
       </div>
 
       <AdPlaceholder />

@@ -182,7 +182,7 @@ export default function ResultSummaryPage() {
         <p className="text-sm text-gray-500 mb-5">{result.fullCode} 유형을 위한 맞춤 분석이 준비되어 있습니다</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {[
-            { href: '/result/personality', icon: '🪞', title: '성격 심층 분석', desc: 'MBTI만으로는 설명할 수 없었던 것들' },
+            { href: '/result/personality', icon: '🪞', title: '성격 심층 분석', desc: '기존 16가지 유형만으로는 설명할 수 없었던 것들' },
             { href: '/result/love', icon: '❤️', title: '연애 & 궁합', desc: '기질이 만드는 당신만의 사랑 방식' },
             { href: '/result/career', icon: '🚀', title: '커리어 전략', desc: '기질별 최적의 업무 환경과 직업' },
             { href: '/result/stress', icon: '🌱', title: '성장 가이드', desc: '스트레스 패턴과 인생 공략집' },
