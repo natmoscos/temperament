@@ -8,7 +8,8 @@ export interface BlogPost {
   keywords: string[];         // SEO 키워드
   category: 'mbti' | 'temperament' | 'compatibility' | 'career' | 'guide' | 'science' | 'psychology';
   publishDate: string;
-  sections: { heading: string; content: string }[];
+  thumbnail?: string;  // optional thumbnail image path (e.g., '/blog/socrates-mbti.jpg')
+  sections: { heading: string; content: string; image?: string }[];  // optional image per section
   relatedTypes?: string[];    // 관련 MBTI 유형
 }
 
@@ -572,10 +573,12 @@ export const blogPosts: BlogPost[] = [
     keywords: ['MBTI 맹신', 'MBTI 결과 믿어도 되나', 'MBTI 한계', 'MBTI 비판', '너 자신을 알라', '소크라테스 MBTI', 'MBTI 맹신하면 안되는 이유'],
     category: 'psychology',
     publishDate: '2026-04-06',
+    thumbnail: '/blog/socrates-mbti.jpg',
     sections: [
       {
         heading: '"나는 내가 모른다는 것을 안다" — 소크라테스가 MBTI 결과를 본 순간',
-        content: '나는 소크라테스다. 아테네의 광장에서 청년들과 대화하며 평생을 보낸 사람이다. 2,400년 만에 깨어나 보니, 사람들이 네 글자로 자기 자신을 정의하고 있더군. "저는 INFP예요", "나는 ENTJ라서 리더십이 있어요"라고 말하면서.\n\n나는 묻고 싶다. 자네는 정말 네 글자를 알기 전에는 자기가 누구인지 몰랐는가? 그리고 그 네 글자를 안 지금, 정말로 자기 자신을 알게 되었는가?\n\n내가 평생 했던 말, "너 자신을 알라(gnōthi seauton)"는 검사지 48문항에 체크하라는 뜻이 아니었다네.'
+        content: '나는 소크라테스다. 아테네의 광장에서 청년들과 대화하며 평생을 보낸 사람이다. 2,400년 만에 깨어나 보니, 사람들이 네 글자로 자기 자신을 정의하고 있더군. "저는 INFP예요", "나는 ENTJ라서 리더십이 있어요"라고 말하면서.\n\n나는 묻고 싶다. 자네는 정말 네 글자를 알기 전에는 자기가 누구인지 몰랐는가? 그리고 그 네 글자를 안 지금, 정말로 자기 자신을 알게 되었는가?\n\n내가 평생 했던 말, "너 자신을 알라(gnōthi seauton)"는 검사지 48문항에 체크하라는 뜻이 아니었다네.',
+        image: '/blog/socrates-mbti.jpg'
       },
       {
         heading: '"자네가 INFP라고? 그건 자네의 지도일 뿐, 자네의 영토가 아니네"',

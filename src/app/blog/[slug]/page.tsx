@@ -124,6 +124,18 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </p>
         </header>
 
+        {/* 썸네일 히어로 이미지 */}
+        {post.thumbnail && (
+          <div className="relative w-full aspect-[2/1] rounded-2xl overflow-hidden mb-8">
+            <img
+              src={post.thumbnail}
+              alt={post.title}
+              className="w-full h-full object-cover"
+              loading="eager"
+            />
+          </div>
+        )}
+
         {/* 키워드 태그 */}
         <div className="flex flex-wrap gap-2 mb-8">
           {post.keywords.map((kw) => (
@@ -141,6 +153,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 <h2 className="text-lg sm:text-xl font-bold text-gray-800 mb-4 leading-snug">
                   {section.heading}
                 </h2>
+                {section.image && (
+                  <div className="relative w-full rounded-xl overflow-hidden my-4">
+                    <img
+                      src={section.image}
+                      alt={section.heading}
+                      className="w-full h-auto object-cover rounded-xl"
+                      loading="lazy"
+                    />
+                  </div>
+                )}
                 <div className="text-gray-600 text-[15px] leading-[1.9] whitespace-pre-line">
                   {section.content}
                 </div>

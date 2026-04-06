@@ -67,6 +67,16 @@ export default function BlogIndexPage() {
                 href={`/blog/${post.slug}`}
                 className="block bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200 transition-all p-5 sm:p-6 group"
               >
+                {post.thumbnail && (
+                  <div className="w-full aspect-[2/1] overflow-hidden">
+                    <img
+                      src={post.thumbnail}
+                      alt={post.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                    />
+                  </div>
+                )}
                 <div className="flex items-start gap-4">
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-2">
