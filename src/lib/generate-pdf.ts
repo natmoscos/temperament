@@ -9,41 +9,45 @@ import { IntegratedProfile } from '@/data/profiles-integrated';
  * NanumGothic 한글 폰트를 로드하여 한글이 깨지지 않는 PDF 생성
  */
 
-// 폰트 캐시 (한 세션에서 한 번만 로드)
-let fontCacheRegular: ArrayBuffer | null = null;
-let fontCacheBold: ArrayBuffer | null = null;
+// 폰트 캐시 (한 세션에서 한 번만 로드 — base64 문자열로 캐시)
+let fontBase64Regular: string | null = null;
+let fontBase64Bold: string | null = null;
 
-async function loadFont(url: string): Promise<ArrayBuffer> {
+// Google Fonts CDN에서 TTF 직접 로드 (CORS 지원, 안정적)
+const FONT_URL_REGULAR = 'https://fonts.gstatic.com/s/nanumgothic/v26/PN_3Rfi-oW3hYwmKDpxS7F_z_g.ttf';
+const FONT_URL_BOLD = 'https://fonts.gstatic.com/s/nanumgothic/v26/PN_oRfi-oW3hYwmKDpxS7F_LQv37zg.ttf';
+
+async function loadFontAsBase64(url: string): Promise<string> {
   const response = await fetch(url);
-  if (!response.ok) throw new Error(`Failed to load font: ${url}`);
-  return response.arrayBuffer();
-}
-
-function arrayBufferToBase64(buffer: ArrayBuffer): string {
+  if (!response.ok) throw new Error(`Failed to load font: ${url} (${response.status})`);
+  const buffer = await response.arrayBuffer();
   const bytes = new Uint8Array(buffer);
+
+  // 청크 방식 base64 변환 (대용량 폰트 파일 안전 처리)
+  const CHUNK_SIZE = 8192;
   let binary = '';
-  for (let i = 0; i < bytes.byteLength; i++) {
-    binary += String.fromCharCode(bytes[i]);
+  for (let i = 0; i < bytes.length; i += CHUNK_SIZE) {
+    const chunk = bytes.subarray(i, Math.min(i + CHUNK_SIZE, bytes.length));
+    binary += String.fromCharCode(...chunk);
   }
   return btoa(binary);
 }
 
 async function setupKoreanFont(doc: jsPDF): Promise<void> {
-  // 캐시에서 폰트 로드 또는 네트워크에서 다운로드
-  if (!fontCacheRegular) {
-    fontCacheRegular = await loadFont('/fonts/NanumGothic-Regular.ttf');
-  }
-  if (!fontCacheBold) {
-    fontCacheBold = await loadFont('/fonts/NanumGothic-Bold.ttf');
-  }
+  // 병렬로 두 폰트 동시 로드 (캐시된 경우 즉시 반환)
+  const [regular, bold] = await Promise.all([
+    fontBase64Regular ? Promise.resolve(fontBase64Regular) : loadFontAsBase64(FONT_URL_REGULAR),
+    fontBase64Bold ? Promise.resolve(fontBase64Bold) : loadFontAsBase64(FONT_URL_BOLD),
+  ]);
 
-  const regularBase64 = arrayBufferToBase64(fontCacheRegular);
-  const boldBase64 = arrayBufferToBase64(fontCacheBold);
+  // 캐시에 저장
+  fontBase64Regular = regular;
+  fontBase64Bold = bold;
 
-  doc.addFileToVFS('NanumGothic-Regular.ttf', regularBase64);
+  doc.addFileToVFS('NanumGothic-Regular.ttf', regular);
   doc.addFont('NanumGothic-Regular.ttf', 'NanumGothic', 'normal');
 
-  doc.addFileToVFS('NanumGothic-Bold.ttf', boldBase64);
+  doc.addFileToVFS('NanumGothic-Bold.ttf', bold);
   doc.addFont('NanumGothic-Bold.ttf', 'NanumGothic', 'bold');
 
   doc.setFont('NanumGothic', 'normal');

@@ -1,0 +1,15 @@
+# Treat font files as binary (prevent CRLF corruption)
+*.ttf binary
+*.woff binary
+*.woff2 binary
+*.otf binary
+*.eot binary
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.webp binary
