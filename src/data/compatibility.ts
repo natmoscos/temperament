@@ -3,6 +3,8 @@
 // MBTI 인지기능 호환성 + 기질 화학반응
 // ────────────────────────────────────────────
 
+import { expandedChemistry, ExpandedChemistry } from './compatibility-details';
+
 // MBTI 인지기능 스택
 const cognitiveStacks: Record<string, string[]> = {
   ISTJ: ['Si','Te','Fi','Ne'], ISFJ: ['Si','Fe','Ti','Ne'],
@@ -182,11 +184,18 @@ export interface CompatibilityResult {
   emoji: string;
   summary: string;
   temperamentDynamic: string;
-  strengths: string[];
-  challenges: string[];
+  strengths: { title: string; description: string }[];
+  challenges: { title: string; description: string }[];
   communicationGuide: string;
   conflictPattern: string;
   growthTip: string;
+  // 확장 콘텐츠
+  datingStyle: string;
+  communicationDos: string[];
+  communicationDonts: string[];
+  loveLanguage: string;
+  dailyScenario: string;
+  longTermAdvice: string;
 }
 
 export function analyzeCompatibility(
@@ -225,6 +234,18 @@ export function analyzeCompatibility(
 
   const growthTip = `이 관계에서 성장하려면: ${myCode}는 ${partnerTempPrimary === 'S' ? '상대의 밝은 에너지를 즐기되, 깊이 있는 대화도 요청하세요' : partnerTempPrimary === 'C' ? '상대의 추진력을 존중하되, 자신의 속도도 지켜주세요' : partnerTempPrimary === 'P' ? '상대의 침묵이 동의가 아닐 수 있음을 기억하세요' : '상대의 완벽주의를 이해하되, 불완전함도 괜찮다고 말해주세요'}. ${partnerCode}는 ${myTempPrimary === 'S' ? '상대의 활기를 소중히 여기되, 진지한 순간에는 함께 머물러주세요' : myTempPrimary === 'C' ? '상대의 결단력에 감사하되, 부드러운 표현도 요청하세요' : myTempPrimary === 'P' ? '상대의 평화로움을 존중하되, 가끔은 함께 모험도 해보세요' : '상대의 깊이를 이해하되, 가벼운 즐거움도 함께 나눠주세요'}.`;
 
+  // 확장 콘텐츠 가져오기
+  const tempKey = `${myTempPrimary}-${partnerTempPrimary}`;
+  const expanded = expandedChemistry[tempKey];
+
+  // 확장 데이터가 있으면 그걸 사용, 없으면 기존 데이터를 변환
+  const strengths = expanded
+    ? expanded.strengths
+    : tempChem.strengths.map(s => ({ title: s, description: '' }));
+  const challenges = expanded
+    ? expanded.challenges
+    : tempChem.challenges.map(c => ({ title: c, description: '' }));
+
   return {
     overallScore,
     mbtiScore,
@@ -232,11 +253,18 @@ export function analyzeCompatibility(
     label,
     emoji,
     summary,
-    temperamentDynamic: tempChem.dynamic,
-    strengths: tempChem.strengths,
-    challenges: tempChem.challenges,
+    temperamentDynamic: expanded?.dynamic ?? tempChem.dynamic,
+    strengths,
+    challenges,
     communicationGuide,
     conflictPattern,
     growthTip,
+    // 확장 콘텐츠
+    datingStyle: expanded?.datingStyle ?? '',
+    communicationDos: expanded?.communicationDos ?? [],
+    communicationDonts: expanded?.communicationDonts ?? [],
+    loveLanguage: expanded?.loveLanguage ?? '',
+    dailyScenario: expanded?.dailyScenario ?? '',
+    longTermAdvice: expanded?.longTermAdvice ?? '',
   };
 }

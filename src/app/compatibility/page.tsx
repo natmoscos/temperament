@@ -361,20 +361,32 @@ export default function CompatibilityPage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="bg-green-50 rounded-2xl border border-green-100 p-5">
           <h4 className="font-bold text-green-800 flex items-center gap-2 mb-3">💚 이 관계의 강점</h4>
-          <ul className="space-y-2">
+          <ul className="space-y-3">
             {compatibility.strengths.map((s, i) => (
-              <li key={i} className="text-sm text-green-700 flex items-start gap-2">
-                <span className="mt-0.5">✓</span>{s}
+              <li key={i} className="text-sm text-green-700">
+                <div className="flex items-start gap-2">
+                  <span className="mt-0.5 shrink-0">✓</span>
+                  <div>
+                    <span className="font-semibold">{s.title}</span>
+                    {s.description && <p className="text-green-600 mt-0.5">{s.description}</p>}
+                  </div>
+                </div>
               </li>
             ))}
           </ul>
         </div>
         <div className="bg-amber-50 rounded-2xl border border-amber-100 p-5">
           <h4 className="font-bold text-amber-800 flex items-center gap-2 mb-3">⚠️ 주의할 점</h4>
-          <ul className="space-y-2">
+          <ul className="space-y-3">
             {compatibility.challenges.map((c, i) => (
-              <li key={i} className="text-sm text-amber-700 flex items-start gap-2">
-                <span className="mt-0.5">!</span>{c}
+              <li key={i} className="text-sm text-amber-700">
+                <div className="flex items-start gap-2">
+                  <span className="mt-0.5 shrink-0">!</span>
+                  <div>
+                    <span className="font-semibold">{c.title}</span>
+                    {c.description && <p className="text-amber-600 mt-0.5">{c.description}</p>}
+                  </div>
+                </div>
               </li>
             ))}
           </ul>
@@ -387,6 +399,68 @@ export default function CompatibilityPage() {
         <Paragraph text={compatibility.communicationGuide} />
       </Section>
 
+      {/* 이렇게 말해보세요 / 이런 말은 피하세요 */}
+      {(compatibility.communicationDos.length > 0 || compatibility.communicationDonts.length > 0) && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {compatibility.communicationDos.length > 0 && (
+            <div className="bg-blue-50 rounded-2xl border border-blue-100 p-5">
+              <h4 className="font-bold text-blue-800 flex items-center gap-2 mb-3">💙 이렇게 말해보세요</h4>
+              <ul className="space-y-2">
+                {compatibility.communicationDos.map((d, i) => (
+                  <li key={i} className="text-sm text-blue-700 flex items-start gap-2">
+                    <span className="mt-0.5 shrink-0 text-blue-400">💬</span>
+                    <span className="italic">{d}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {compatibility.communicationDonts.length > 0 && (
+            <div className="bg-red-50 rounded-2xl border border-red-100 p-5">
+              <h4 className="font-bold text-red-800 flex items-center gap-2 mb-3">🚫 이런 말은 피하세요</h4>
+              <ul className="space-y-2">
+                {compatibility.communicationDonts.map((d, i) => (
+                  <li key={i} className="text-sm text-red-700 flex items-start gap-2">
+                    <span className="mt-0.5 shrink-0 text-red-400">✕</span>
+                    <span className="italic">{d}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      )}
+
+      <AdPlaceholder />
+
+      {/* 데이트 스타일 */}
+      {compatibility.datingStyle && (
+        <Section icon="💑" title="데이트 스타일" subtitle="이 커플의 연애 패턴">
+          <Paragraph text={compatibility.datingStyle} />
+        </Section>
+      )}
+
+      {/* 사랑의 언어 */}
+      {compatibility.loveLanguage && (
+        <Section icon="💝" title="사랑의 언어" subtitle="서로 다른 사랑 표현법">
+          <Paragraph text={compatibility.loveLanguage} />
+        </Section>
+      )}
+
+      {/* 일상 시나리오 */}
+      {compatibility.dailyScenario && (
+        <div className="bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 rounded-2xl border border-amber-100 p-6 sm:p-8">
+          <h3 className="text-xl font-bold text-gray-800 flex items-center gap-2 mb-4">
+            <span className="text-2xl">🎬</span> 일상 속 시나리오
+          </h3>
+          <div className="text-sm text-gray-700 leading-relaxed whitespace-pre-line bg-white/60 rounded-xl p-4 border border-amber-100">
+            {compatibility.dailyScenario}
+          </div>
+        </div>
+      )}
+
+      <AdPlaceholder />
+
       <Section icon="🌊" title="갈등 패턴" subtitle="충돌이 생겼을 때 예상되는 패턴">
         <Paragraph text={compatibility.conflictPattern} />
       </Section>
@@ -397,6 +471,13 @@ export default function CompatibilityPage() {
         </h3>
         <Paragraph text={compatibility.growthTip} />
       </div>
+
+      {/* 장기 관계 조언 */}
+      {compatibility.longTermAdvice && (
+        <Section icon="💍" title="장기 관계 조언" subtitle="오래 함께하기 위한 지혜">
+          <Paragraph text={compatibility.longTermAdvice} />
+        </Section>
+      )}
 
       <AdPlaceholder />
 
