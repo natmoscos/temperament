@@ -35,12 +35,16 @@ function scoreMBTI(answers: Answer[]): MBTIResult {
     axisScores[question.category.axis].push(score);
   }
 
-  const maxScore = 15 * 7; // 15문항 × 최대7점 = 105
-  const midpoint = 15 * 4; // 15문항 × 중간4점 = 60
+  const numQ = 15; // 축당 문항 수
+  const minScore = numQ * 1; // 최소 점수 (모두 1점) = 15
+  const maxScore = numQ * 7; // 최대 점수 (모두 7점) = 105
+  const midpoint = numQ * 4; // 중간점 (모두 4점) = 60
+  const range = maxScore - minScore; // 실제 점수 범위 = 90
 
   const calcAxis = (axis: MBTIAxis) => {
     const total = axisScores[axis].reduce((a, b) => a + b, 0);
-    const percentage = Math.round((total / maxScore) * 100);
+    // 0~100% 스케일로 변환 (50% = 중간점, >50% = E/N/F/P)
+    const percentage = Math.round(((total - minScore) / range) * 100);
     return { score: total, percentage };
   };
 
@@ -73,12 +77,16 @@ function scoreTemperament(answers: Answer[]): TemperamentResult {
     tempScores[question.category.temperament].push(score);
   }
 
-  const maxScore = 10 * 7; // 10문항 × 최대7점 = 70
+  const numQ = 10; // 기질당 문항 수
+  const minScore = numQ * 1; // 최소 점수 = 10
+  const maxScore = numQ * 7; // 최대 점수 = 70
+  const range = maxScore - minScore; // 실제 범위 = 60
 
   const all = Object.fromEntries(
     (['S', 'C', 'P', 'M'] as TemperamentType[]).map((t) => {
       const total = tempScores[t].reduce((a, b) => a + b, 0);
-      return [t, { score: total, percentage: Math.round((total / maxScore) * 100) }];
+      // 0~100% 스케일로 정규화 (최소=0%, 최대=100%)
+      return [t, { score: total, percentage: Math.round(((total - minScore) / range) * 100) }];
     })
   ) as Record<TemperamentType, { score: number; percentage: number }>;
 
