@@ -82,7 +82,7 @@ export const questions: Question[] = [
   // Q39
   { id: 'TF-06', order: 39, text: '냉정하다는 소리를 듣는 것보다 비논리적이라는 말이 더 싫다.', category: { type: 'mbti', axis: 'TF' }, reversed: true },
   // Q40
-  { id: 'JP-06', order: 40, text: '결정을 빨리 내리고 실행에 옮기는 편이다.', category: { type: 'mbti', axis: 'JP' }, reversed: true },
+  { id: 'JP-06', order: 40, text: '프로젝트를 시작할 때 전체 계획과 단계를 먼저 세우고 순서대로 진행한다.', category: { type: 'mbti', axis: 'JP' }, reversed: true },
   // Q41
   { id: 'TS-05', order: 41, text: '한 가지 일에 오래 집중하는 것보다 여러 일을 번갈아 하는 게 맞다.', category: { type: 'temperament', temperament: 'S' }, reversed: false },
   // Q42
@@ -194,7 +194,7 @@ export const questions: Question[] = [
   // Q95
   { id: 'TF-14', order: 95, text: '토론에서 승패가 중요하지, 상대의 기분까지 신경 쓸 필요는 없다.', category: { type: 'mbti', axis: 'TF' }, reversed: true },
   // Q96 - V(JP-04)
-  { id: 'JP-14', order: 96, text: '작업 공간이 다소 어지러워도 나만의 체계가 있어 불편하지 않다.', category: { type: 'mbti', axis: 'JP' }, reversed: false, validationPairId: 'JP-04' },
+  { id: 'JP-14', order: 96, text: '작업 공간이 좀 어지러워도 크게 신경 쓰이지 않는다.', category: { type: 'mbti', axis: 'JP' }, reversed: false, validationPairId: 'JP-04' },
   // Q97
   { id: 'SN-15', order: 97, text: '영감이나 직감에 따라 결정을 내리는 경우가 많다.', category: { type: 'mbti', axis: 'SN' }, reversed: false },
   // Q98

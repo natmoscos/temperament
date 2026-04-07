@@ -580,6 +580,33 @@ export async function generatePremiumPDF(result: TestResult, profile: Integrated
     doc.line(MARGIN, pageH - 14, pageW - MARGIN, pageH - 14);
   }
 
-  // 다운로드
-  doc.save(`192types-${result.fullCode}-report.pdf`);
+  // 모바일/데스크톱 호환 다운로드
+  const fileName = `192types-${result.fullCode}-report.pdf`;
+  const blob = doc.output('blob');
+  const url = URL.createObjectURL(blob);
+
+  // iOS Safari 감지
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+  if (isIOS || isSafari) {
+    // iOS Safari: 새 탭에서 PDF 열기 (사용자가 직접 저장)
+    const newWindow = window.open(url, '_blank');
+    if (!newWindow) {
+      // 팝업 차단 시 fallback: 현재 탭에서 열기
+      window.location.href = url;
+    }
+  } else {
+    // 일반 브라우저: 다운로드 링크 클릭
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
+  // 메모리 정리 (약간 지연)
+  setTimeout(() => URL.revokeObjectURL(url), 10000);
 }
