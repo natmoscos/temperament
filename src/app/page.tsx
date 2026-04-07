@@ -180,8 +180,8 @@ export default function Home() {
             &ldquo;나 진짜 I야? E야?&rdquo;
           </p>
           <p className="text-sm sm:text-base text-indigo-200/80 leading-relaxed max-w-md mx-auto">
-            그 혼란의 이유는 기존 16가지 유형에 빠진 한 가지 차원 때문입니다.<br />
-            <strong className="text-amber-300">기질(Temperament)</strong>이 그 답을 알고 있습니다.
+            16가지 유형에는 빠진 차원이 있습니다.<br />
+            <strong className="text-amber-300">기질(Temperament)</strong>이 그 답입니다.
           </p>
         </div>
       </div>
@@ -189,47 +189,54 @@ export default function Home() {
       {/* ━━━ 학술 근거 섹션 ━━━ */}
       <div className="w-full max-w-2xl mb-12">
         <div className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-6 sm:p-8">
-          <h2 className="text-xl sm:text-2xl font-black text-white mb-5 text-center leading-snug">
-            왜 16가지 유형 검사<span className="text-amber-300">만으로는</span><br className="sm:hidden" /> 부족할까?
+          <h2 className="text-xl sm:text-2xl font-black text-white mb-6 text-center leading-snug">
+            16가지 유형 검사를<br />
+            <span className="text-amber-300">절대 믿으면 안 되는 이유</span>
           </h2>
 
           <div className="space-y-4 text-sm sm:text-[15px] text-indigo-100/90 leading-[1.85]">
             <p>
-              <strong className="text-white">&ldquo;당신의 성격 유형은 당신을 정의하지 않는다.&rdquo;</strong>{' '}
-              조직심리학 박사 벤저민 하디는 저서 《Personality Isn&apos;t Permanent》에서
-              유형 기반 성격 검사의 근본적 한계를 경고합니다. 그는 성격을 고정된 네 글자 코드에
-              가두는 순간, 자기 인식이 왜곡되고 성장 가능성마저 스스로 제한하게 된다고 주장합니다.
-              &ldquo;나는 원래 이런 사람이야&rdquo;라는 믿음이 오히려 변화를 가로막는 족쇄가 된다는 것입니다.
+              <strong className="text-white">&ldquo;성격 유형은 당신을 정의하지 않는다.&rdquo;</strong>{' '}
+              조직심리학 박사 벤저민 하디는 저서 《Personality Isn&apos;t Permanent》에서 이렇게 단언합니다.
+              네 글자 코드에 자신을 가두는 순간, <strong className="text-amber-300">&ldquo;나는 원래 이런 사람이야&rdquo;라는
+              착각이 시작</strong>됩니다. 그 착각은 성장을 가로막는 족쇄가 됩니다.
+            </p>
+
+            {/* 충격 통계 박스 */}
+            <div className="bg-amber-400/10 border border-amber-400/30 rounded-xl p-4 sm:p-5 my-2">
+              <p className="text-center">
+                <span className="text-3xl sm:text-4xl font-black text-amber-300">50%</span>
+              </p>
+              <p className="text-center text-sm text-amber-200/90 mt-1 font-medium">
+                같은 검사를 5주 뒤 다시 받으면,<br />
+                <strong className="text-white">절반이 다른 유형</strong>을 받습니다.
+              </p>
+              <p className="text-center text-[11px] text-indigo-300/50 mt-2">
+                — 미국 국립과학원(NAS) 1991년 공식 검증 보고서
+              </p>
+            </div>
+
+            <p>
+              &ldquo;분명 I인데 E가 나왔어&rdquo;, &ldquo;T인 줄 알았는데 F래&rdquo;
+              — 이건 당신의 문제가 아닙니다.
+              <strong className="text-amber-300"> 검사 구조 자체의 한계</strong>입니다.
+              인지기능 하나만으로는 감정 반응, 에너지 패턴, 스트레스 행동을 설명할 수 없기 때문입니다.
+              칼 융 본인도 자신의 유형론이 인간 성격의 일부만 다룬다고 인정했습니다.
             </p>
 
             <p>
-              과학도 이를 뒷받침합니다. <strong className="text-white">1991년 미국 국립과학원(National Academy of Sciences)</strong>은
-              16가지 유형 분류 검사에 대해 인사 결정이나 진로 상담에 사용하기에 타당성이 충분하지 않다는
-              공식 결론을 내렸습니다. 더 충격적인 것은 재검사 신뢰도입니다. 여러 후속 연구에 따르면
-              동일한 검사를 <strong className="text-amber-300">5주 후에 다시 받았을 때, 응시자의 약 50%가 이전과 다른 유형</strong>을
-              받았습니다. &ldquo;나는 확실한 I인데 왜 E가 나오지?&rdquo;, &ldquo;T인 줄 알았는데 F래&rdquo;라는 혼란은
-              개인의 문제가 아니라, 검사 구조 자체의 한계에서 비롯된 과학적으로 입증된 현상입니다.
-            </p>
-
-            <p>
-              왜 이런 모순이 발생할까요? 인지기능 분석 하나만으로는 인간의 감정 반응 패턴, 에너지 흐름,
-              스트레스 행동을 설명할 수 없기 때문입니다. 칼 융 본인도 자신의 유형론이 인간 성격의 일부분만
-              다룬다고 명시했습니다.
-            </p>
-
-            <p>
-              이 빈자리를 채우는 열쇠가 바로 <strong className="text-amber-300">2,400년 관찰 역사를 가진 기질론(Temperament Theory)</strong>입니다.
-              캘리포니아 주립대 심리학 교수 <strong className="text-white">데이비드 커시(David Keirsey)</strong>는
-              저서 《Please Understand Me》에서 16가지 성격 유형과 기질 이론을 학술적으로 최초 결합하여,
-              같은 유형 내에서도 행동 양식이 극적으로 달라지는 원인을 규명했습니다.
-              인지기능이 <em>&lsquo;어떻게 생각하는가&rsquo;</em>를 분류한다면,
+              그렇다면 <strong className="text-white">빠진 퍼즐 조각은 무엇일까요?</strong>{' '}
+              캘리포니아 주립대 심리학 교수 <strong className="text-white">데이비드 커시(David Keirsey)</strong>가
+              《Please Understand Me》에서 찾아낸 답은 <strong className="text-amber-300">2,400년 역사의 기질론</strong>이었습니다.
+              16가지 유형이 <em>&lsquo;어떻게 생각하는가&rsquo;</em>를 분류한다면,
               기질은 <em>&lsquo;어떻게 느끼고 반응하는가&rsquo;</em>를 분류합니다.
+              같은 유형이라도 기질이 다르면 <strong className="text-amber-300">완전히 다른 사람</strong>이 됩니다.
             </p>
 
             <p>
-              <strong className="text-white">192 성격 유형 검사</strong>는 이 두 축을 과학적으로 통합한 검사입니다.
+              <strong className="text-white">192 성격 유형 검사</strong>는 이 두 축을 통합합니다.
               16가지 유형이 놓치는 감정의 결과 행동의 온도를 기질이 채워주기에,
-              &ldquo;같은 유형인데 왜 이렇게 다르지?&rdquo;라는 오랜 질문에 비로소 답할 수 있습니다.
+              &ldquo;같은 유형인데 왜 이렇게 다르지?&rdquo;라는 질문에 <strong className="text-amber-300">비로소 답할 수 있습니다.</strong>
             </p>
           </div>
 

@@ -145,6 +145,53 @@ function drawBody(doc: jsPDF, text: string, y: number, contentWidth: number): nu
   return y + 3;
 }
 
+// ═══ 핵심 인사이트 강조 박스 (골드 하이라이트) ═══
+function drawGoldInsight(doc: jsPDF, text: string, y: number, contentWidth: number): number {
+  y = ensureSpace(doc, y, 24);
+
+  // 골드 배경 박스
+  doc.setFillColor(252, 246, 230);        // 밝은 골드 배경
+  doc.setDrawColor(C.gold[0], C.gold[1], C.gold[2]);
+  doc.setLineWidth(0.6);
+
+  const lines = wrapText(doc, text, contentWidth - 24);
+  const boxH = Math.max(16, lines.length * 5.2 + 10);
+  doc.roundedRect(MARGIN, y, contentWidth, boxH, 3, 3, 'FD');
+
+  // 왼쪽 골드 액센트 바
+  doc.setFillColor(...C.gold);
+  doc.rect(MARGIN, y, 3, boxH, 'F');
+
+  // 볼드 텍스트
+  doc.setFont(FONT, 'bold');
+  doc.setFontSize(9.5);
+  doc.setTextColor(C.navy[0], C.navy[1], C.navy[2]);
+  let ty = y + 7;
+  for (const line of lines) {
+    if (line === '') { ty += 3; continue; }
+    doc.text(line, MARGIN + 10, ty);
+    ty += 5.2;
+  }
+
+  return y + boxH + 6;
+}
+
+// ═══ 볼드 핵심 문장 (인라인 강조) ═══
+function drawBoldAccent(doc: jsPDF, text: string, y: number, contentWidth: number): number {
+  y = ensureSpace(doc, y, 8);
+  doc.setFont(FONT, 'bold');
+  doc.setFontSize(10);
+  doc.setTextColor(C.navy[0], C.navy[1], C.navy[2]);
+  const lines = wrapText(doc, text, contentWidth - 4);
+  for (const line of lines) {
+    y = ensureSpace(doc, y, 6);
+    if (line === '') { y += 3; continue; }
+    doc.text(line, MARGIN + 2, y);
+    y += 5.5;
+  }
+  return y + 2;
+}
+
 // ═══ 서브 헤더 ═══
 function drawSubHeader(doc: jsPDF, title: string, y: number): number {
   y = ensureSpace(doc, y, 12);
@@ -404,12 +451,14 @@ export async function generatePremiumPDF(result: TestResult, profile: Integrated
   // 성격 심층 분석
   // ═══════════════════════════════════════════
   y = drawSectionHeader(doc, '성격 심층 분석', y);
+  y = drawBoldAccent(doc, `${result.fullCode} — ${profile.mbtiNickname}, ${profile.temperamentNickname}`, y, contentW);
   y = drawBody(doc, profile.personalityNarrative, y, contentW);
 
   // 모순 인사이트
   if (profile.contradictionInsights.length > 0) {
     y = drawSectionHeader(doc, '숨겨진 모순', y);
-    for (const insight of profile.contradictionInsights) {
+    y = drawGoldInsight(doc, `당신의 핵심 모순: ${profile.contradictionInsights[0]}`, y, contentW);
+    for (const insight of profile.contradictionInsights.slice(1)) {
       y = drawBody(doc, `\u2022  ${insight}`, y, contentW);
     }
   }
@@ -425,7 +474,7 @@ export async function generatePremiumPDF(result: TestResult, profile: Integrated
   y = drawBody(doc, profile.loveNarrative, y, contentW);
 
   if (profile.bestMatch.length > 0) {
-    y = drawSubHeader(doc, '최고 궁합 유형', y);
+    y = drawGoldInsight(doc, `최고의 궁합 유형: ${profile.bestMatch.join(', ')}`, y, contentW);
     y = drawTags(doc, profile.bestMatch, y, 'rose');
   }
 
@@ -436,7 +485,7 @@ export async function generatePremiumPDF(result: TestResult, profile: Integrated
   y = drawBody(doc, profile.careerGuide, y, contentW);
 
   if (profile.careers.length > 0) {
-    y = drawSubHeader(doc, '추천 직업', y);
+    y = drawGoldInsight(doc, `추천 직업군: ${profile.careers.slice(0, 5).join(', ')}`, y, contentW);
     y = drawTags(doc, profile.careers, y, 'teal');
   }
 
@@ -445,11 +494,13 @@ export async function generatePremiumPDF(result: TestResult, profile: Integrated
   // ═══════════════════════════════════════════
   y = drawSectionHeader(doc, '스트레스 패턴 (Grip 상태)', y);
   y = drawBody(doc, profile.gripStressNarrative, y, contentW);
+  y = drawGoldInsight(doc, `핵심: 스트레스 상황에서 평소와 다른 모습이 나타나는 것은 자연스러운 현상입니다. 자신의 패턴을 인식하는 것이 회복의 첫걸음입니다.`, y, contentW);
 
   y = drawSectionHeader(doc, '회복 & 성장 전략', y);
   y = drawBody(doc, profile.stressGuide, y, contentW);
 
   y = drawSectionHeader(doc, '인생 전략', y);
+  y = drawBoldAccent(doc, `${result.fullCode} 유형의 인생 전략 핵심`, y, contentW);
   y = drawBody(doc, profile.lifeStrategy, y, contentW);
 
   // ═══════════════════════════════════════════
@@ -465,6 +516,7 @@ export async function generatePremiumPDF(result: TestResult, profile: Integrated
   // 그림자 & 성장 포인트
   // ═══════════════════════════════════════════
   y = drawSectionHeader(doc, '그림자 & 성장 포인트', y);
+  y = drawGoldInsight(doc, `성장의 핵심: 그림자를 억누르는 것이 아니라, 인식하고 통합하는 것이 진정한 성숙입니다.`, y, contentW);
   y = drawBody(doc, profile.weaknessInsight, y, contentW);
 
   // ═══════════════════════════════════════════
