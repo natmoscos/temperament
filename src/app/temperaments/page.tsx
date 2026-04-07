@@ -129,18 +129,138 @@ const temperaments = [
 ];
 
 const dualCombinations = [
-  { code: 'SC', name: '열정적 리더', primary: '다혈', secondary: '담즙', primaryColor: 'bg-amber-400', secondaryColor: 'bg-rose-400', desc: '카리스마와 추진력을 겸비한 행동형 지도자' },
-  { code: 'SP', name: '온화한 인기인', primary: '다혈', secondary: '점액', primaryColor: 'bg-amber-400', secondaryColor: 'bg-teal-400', desc: '누구와도 편하게 어울리는 분위기 메이커' },
-  { code: 'SM', name: '감성적 표현가', primary: '다혈', secondary: '우울', primaryColor: 'bg-amber-400', secondaryColor: 'bg-indigo-400', desc: '밝은 겉모습 뒤에 깊은 내면을 가진 예술가' },
-  { code: 'CS', name: '카리스마 지휘관', primary: '담즙', secondary: '다혈', primaryColor: 'bg-rose-400', secondaryColor: 'bg-amber-400', desc: '사람을 끌어당기며 목표를 달성하는 통솔자' },
-  { code: 'CP', name: '조용한 전략가', primary: '담즙', secondary: '점액', primaryColor: 'bg-rose-400', secondaryColor: 'bg-teal-400', desc: '차분하지만 결정적 순간에 폭발하는 실행가' },
-  { code: 'CM', name: '완벽한 성취자', primary: '담즙', secondary: '우울', primaryColor: 'bg-rose-400', secondaryColor: 'bg-indigo-400', desc: '최고의 기준과 최강의 의지가 만난 완벽주의자' },
-  { code: 'PS', name: '편안한 친구', primary: '점액', secondary: '다혈', primaryColor: 'bg-teal-400', secondaryColor: 'bg-amber-400', desc: '안정감과 유쾌함을 동시에 선물하는 사람' },
-  { code: 'PC', name: '철벽 참모', primary: '점액', secondary: '담즙', primaryColor: 'bg-teal-400', secondaryColor: 'bg-rose-400', desc: '부드러운 겉모습 속에 강철 같은 의지를 숨긴 사람' },
-  { code: 'PM', name: '사려깊은 관찰자', primary: '점액', secondary: '우울', primaryColor: 'bg-teal-400', secondaryColor: 'bg-indigo-400', desc: '조용히 세상을 읽어내는 통찰력의 소유자' },
-  { code: 'MS', name: '깊은 표현가', primary: '우울', secondary: '다혈', primaryColor: 'bg-indigo-400', secondaryColor: 'bg-amber-400', desc: '깊이 느끼고 생생하게 표현하는 감수성의 달인' },
-  { code: 'MC', name: '철저한 전략가', primary: '우울', secondary: '담즙', primaryColor: 'bg-indigo-400', secondaryColor: 'bg-rose-400', desc: '치밀한 분석에 강한 실행력을 더한 완성형' },
-  { code: 'MP', name: '묵묵한 전문가', primary: '우울', secondary: '점액', primaryColor: 'bg-indigo-400', secondaryColor: 'bg-teal-400', desc: '한 분야를 끝까지 파고드는 깊이의 장인' },
+  {
+    code: 'SC', name: '열정적 리더', primary: '다혈', secondary: '담즙',
+    primaryColor: 'bg-amber-400', secondaryColor: 'bg-rose-400',
+    desc: '카리스마와 추진력을 겸비한 행동형 지도자',
+    hook: '12가지 복합 기질 중 가장 강력한 외향형',
+    fullDescription: `팀 라헤이가 "가장 강력한 외향형"으로 꼽은 조합입니다. 다혈질의 폭발적인 사교성과 담즙질의 목표 지향적 추진력이 합쳐져, 어떤 자리에서든 자연스럽게 중심이 되는 사람입니다. 파티에서는 분위기를 주도하고, 회의에서는 결론을 이끌어냅니다.
+
+이 조합의 가장 큰 강점은 "사람을 움직이는 힘"입니다. 다혈질이 사람들의 마음을 열게 하고, 담즙질이 방향을 제시합니다. 자연스러운 설득력과 행동력이 결합되어 세일즈, 창업, 리더십 분야에서 두각을 나타냅니다.
+
+하지만 주의할 점도 있습니다. 두 기질 모두 참을성이 부족한 편이라, 느린 사람에게 답답함을 느끼고 디테일을 놓치기 쉽습니다. 열정이 과하면 독단적으로 보일 수 있고, 실패했을 때 분노가 급격하게 폭발하기도 합니다. "속도를 줄이는 것도 전략이다"라는 걸 기억한다면, 이 조합은 어떤 목표든 달성할 수 있는 최강의 기질입니다.`,
+  },
+  {
+    code: 'SP', name: '온화한 인기인', primary: '다혈', secondary: '점액',
+    primaryColor: 'bg-amber-400', secondaryColor: 'bg-teal-400',
+    desc: '누구와도 편하게 어울리는 분위기 메이커',
+    hook: '12가지 중 가장 호감도가 높은 기질',
+    fullDescription: `팀 라헤이는 이 조합을 "가장 호감도가 높은 사람"이라고 설명했습니다. 다혈질의 유쾌한 에너지에 점액질의 편안함이 더해져, 만나면 누구나 기분이 좋아지는 타입입니다. 억지스럽지 않은 자연스러운 친화력이 이 사람의 가장 큰 무기입니다.
+
+SC가 "끌어당기는 리더"라면, SP는 "옆에 두고 싶은 사람"입니다. 갈등 상황에서도 감정이 격해지지 않고, 유머와 여유로 분위기를 중화시킵니다. 서비스업, 상담, 교육처럼 사람을 상대하는 직업에서 최고의 성과를 냅니다.
+
+그림자도 있습니다. 두 기질 모두 결단력이 약한 편이라, 중요한 순간에 결정을 미루거나 책임을 회피하려는 경향이 있습니다. "좋은 사람"으로 살다 보면 정작 자신이 원하는 것을 놓칠 수 있어요. 가끔은 불편해지더라도 자기 의견을 분명히 밝히는 연습이 필요합니다.`,
+  },
+  {
+    code: 'SM', name: '감성적 표현가', primary: '다혈', secondary: '우울',
+    primaryColor: 'bg-amber-400', secondaryColor: 'bg-indigo-400',
+    desc: '밝은 겉모습 뒤에 깊은 내면을 가진 예술가',
+    hook: '12가지 중 감정 진폭이 가장 큰 기질',
+    fullDescription: `팀 라헤이가 "가장 감정적인 조합"으로 설명한 기질입니다. 다혈질의 외향적 밝음과 우울질의 깊은 내면이 동시에 존재해서, 한 시간 전에 폭소를 터뜨리다가 갑자기 눈물을 글썽이기도 합니다. 이 극적인 감정 진폭이 바로 SM의 정체성입니다.
+
+이 조합의 진짜 힘은 "표현력"에 있습니다. 다혈질이 꺼내는 이야기에 우울질의 깊이가 더해지면, 사람들의 가슴을 울리는 무언가가 탄생합니다. 예술가, 작가, 배우, 크리에이터 중에 이 조합이 유독 많은 이유입니다. 두 기질 모두 꿈을 꾸는 기질이라, 상상력 또한 남다릅니다.
+
+하지만 두 기질 모두 불안정한 면이 있어, 자존감이 쉽게 흔들립니다. 밝은 모습 뒤에 숨겨진 자기 의심이 크고, 부정적인 생각이 시작되면 끝없이 이어질 수 있습니다. 감정의 파도를 타되, 파도에 휩쓸리지 않는 기술이 이 기질의 평생 과제입니다.`,
+  },
+  {
+    code: 'CS', name: '카리스마 지휘관', primary: '담즙', secondary: '다혈',
+    primaryColor: 'bg-rose-400', secondaryColor: 'bg-amber-400',
+    desc: '사람을 끌어당기며 목표를 달성하는 통솔자',
+    hook: '12가지 중 두 번째로 강한 외향형',
+    fullDescription: `SC를 뒤집어 놓은 조합이지만, 분위기가 확연히 다릅니다. SC가 "파티장의 리더"라면, CS는 "전장의 지휘관"입니다. 담즙질이 주도권을 잡고, 다혈질이 사람들의 사기를 끌어올립니다. 팀 라헤이는 이 조합을 "활동으로 인생 전체가 지배되는 사람"이라고 표현했습니다.
+
+CS의 특징은 "쉬지 않는 추진력"입니다. 하나의 프로젝트가 끝나면 다음 프로젝트를 이미 구상하고 있고, 에너지가 바닥나도 의지로 밀어붙입니다. 다혈질의 사교성 덕분에 사람들이 이 리더를 따르지만, 핵심 동기는 성과에 있습니다.
+
+위험 신호는 "번아웃"입니다. 끝없는 활동을 멈추지 못하고, 성과가 나오지 않으면 주변 사람들을 공격하기 시작합니다. 또한 결과에만 집중하다 보면 과정에서 사람들의 마음을 잃을 수 있습니다. "잠깐 멈추는 것도 용기"라는 걸 아는 CS는 진짜 리더가 됩니다.`,
+  },
+  {
+    code: 'CP', name: '조용한 전략가', primary: '담즙', secondary: '점액',
+    primaryColor: 'bg-rose-400', secondaryColor: 'bg-teal-400',
+    desc: '차분하지만 결정적 순간에 폭발하는 실행가',
+    hook: '12가지 중 가장 체계적인 기질',
+    fullDescription: `팀 라헤이가 "가장 체계적이고 조직적인 조합"으로 꼽은 기질입니다. 담즙질의 결단력에 점액질의 침착함이 더해져, 감정에 휘둘리지 않고 냉정하게 목표를 향해 나아갑니다. 다른 담즙질 조합처럼 시끄럽지 않지만, 결과물의 완성도는 오히려 더 높습니다.
+
+CP의 무기는 "차가운 실행력"입니다. 계획을 세우고, 유연하게 조정하며, 끝까지 밀어붙입니다. 점액질의 유연성 덕분에 다른 담즙질 조합보다 팀워크가 좋고, 갈등을 최소화하면서도 원하는 결과를 이끌어냅니다. 관리자, 경영자, 기획자로서 탁월한 성과를 보입니다.
+
+하지만 점액질이 감정을 억누르고 담즙질이 밀어붙이는 패턴이 반복되면, 겉으로는 괜찮아 보이지만 내면에 스트레스가 쌓여갑니다. 또한 자기 방식에 대한 확신이 너무 강해 다른 사람의 의견을 무시하는 "조용한 독재"가 될 수 있습니다.`,
+  },
+  {
+    code: 'CM', name: '완벽한 성취자', primary: '담즙', secondary: '우울',
+    primaryColor: 'bg-rose-400', secondaryColor: 'bg-indigo-400',
+    desc: '최고의 기준과 최강의 의지가 만난 완벽주의자',
+    hook: '12가지 중 가장 높은 성취를 이끌어내는 기질',
+    fullDescription: `담즙질의 강철 같은 의지에 우울질의 높은 기준이 만나면, 타협이라는 단어를 모르는 사람이 탄생합니다. 팀 라헤이는 이 조합이 "놀라운 결과물을 만들어내지만, 타협이 가장 어려운 사람"이라고 설명했습니다.
+
+CM의 핵심은 "집요한 완성도"입니다. 담즙질이 추진력을 제공하고, 우울질이 품질을 감시합니다. 대충 넘어가는 법이 없고, 남들이 "이 정도면 됐지"라고 할 때 "아직 부족해"라고 합니다. CEO, 외과의사, 엔지니어, 연구자 등 높은 기준과 강한 실행이 동시에 요구되는 분야에서 독보적입니다.
+
+가장 큰 위험은 "자타 모두에 대한 가혹함"입니다. 자신에게도, 상대에게도 완벽을 요구하기 때문에 관계에서 상처를 주고받기 쉽습니다. 두 기질 모두 감정 표현에 서투르기 때문에, 마음속 비판이 쏟아지는데 정작 따뜻한 말은 나오지 않는 패턴이 반복됩니다.`,
+  },
+  {
+    code: 'PS', name: '편안한 친구', primary: '점액', secondary: '다혈',
+    primaryColor: 'bg-teal-400', secondaryColor: 'bg-amber-400',
+    desc: '안정감과 유쾌함을 동시에 선물하는 사람',
+    hook: '12가지 중 가장 사이좋게 지낼 수 있는 기질',
+    fullDescription: `팀 라헤이는 "주어진 시간 동안 가장 사이좋게 지낼 수 있는 사람"으로 이 조합을 꼽았습니다. 점액질의 편안함에 다혈질의 유쾌함이 더해져, 이 사람 곁에 있으면 이유 없이 마음이 놓입니다. 특별히 무언가를 하지 않아도, 함께 있는 것 자체가 좋은 사람입니다.
+
+PS의 매력은 "갈등 없는 유쾌함"입니다. SP가 다혈질 주도의 활발한 친화력이라면, PS는 점액질 주도의 조용한 편안함에 유머가 살짝 얹어진 느낌입니다. 목소리가 크지 않아도 사람들이 자연스럽게 이 사람 주위로 모여듭니다. 상담사, 교사, 간호사, HR 담당자로서 탁월합니다.
+
+그림자는 "지나친 안주"입니다. 현재 상태가 편안하면 변화를 시도하지 않고, 갈등이 예상되면 아예 피해버립니다. 다혈질의 산만함과 점액질의 게으름이 만나면 잠재력을 반도 발휘하지 못한 채 시간이 흘러갈 수 있습니다. 때로는 불편함을 감수하는 용기가 필요합니다.`,
+  },
+  {
+    code: 'PC', name: '철벽 참모', primary: '점액', secondary: '담즙',
+    primaryColor: 'bg-teal-400', secondaryColor: 'bg-rose-400',
+    desc: '부드러운 겉모습 속에 강철 같은 의지를 숨긴 사람',
+    hook: '12가지 중 가장 과소평가되는 기질',
+    fullDescription: `겉보기엔 조용하고 순한 사람처럼 보이지만, 속에는 단단한 의지가 숨어 있습니다. 팀 라헤이는 이 조합을 "훌륭한 그룹 리더가 될 수 있는 가장 활동적인 점액질"로 평가했습니다. 점액질의 부드러움 뒤에 담즙질의 결단력이 받쳐주기 때문입니다.
+
+PC의 가장 놀라운 점은 "과소평가되다가 결정적 순간에 빛난다"는 것입니다. 평소에는 조용히 관찰하고 정보를 모으다가, 결정적 순간에 정확한 판단을 내립니다. 관리자, 부사장, 회계사, 교육자, 기획자 등 안정적이면서도 결단력이 필요한 자리에서 빛을 발합니다.
+
+주의할 점은 "수동적 저항"입니다. 담즙질이 강한 의견을 가지고 있지만, 점액질이 직접적 대립을 피합니다. 결과적으로 겉으로는 동의하면서 속으로 불만을 쌓다가, 어느 순간 갑자기 관계를 끊어버리는 패턴이 나타날 수 있습니다. "부드럽게 말하되, 솔직하게"가 핵심입니다.`,
+  },
+  {
+    code: 'PM', name: '사려깊은 관찰자', primary: '점액', secondary: '우울',
+    primaryColor: 'bg-teal-400', secondaryColor: 'bg-indigo-400',
+    desc: '조용히 세상을 읽어내는 통찰력의 소유자',
+    hook: '12가지 중 가장 온화하고 품위 있는 기질',
+    fullDescription: `팀 라헤이는 "모든 기질 조합 중 가장 온화하고 품위 있는 사람"으로 이 조합을 설명했습니다. 적대적인 모습을 거의 보이지 않고, 사과해야 할 말을 하는 경우가 극히 드뭅니다. 주로 말 자체를 별로 하지 않기 때문이기도 합니다. 하지만 그 침묵 속에 날카로운 관찰력이 숨어 있습니다.
+
+PM은 "보이지 않는 곳에서 빛나는 사람"입니다. 남들이 스쳐 지나가는 디테일을 포착하고, 조용히 문제를 해결합니다. 항상 적절하게 행동하고, 단정하게 차려입으며, 신뢰할 수 있고 정확합니다. 연구자, 분석가, 편집자, 도서관 사서, 학자 등 집중력과 정밀함이 필요한 분야에서 최고의 성과를 냅니다.
+
+가장 큰 과제는 "자기표현의 부재"입니다. 점액질의 회피와 우울질의 내면화가 만나면 감정을 완전히 삼켜버립니다. 밖으로는 아무 문제 없어 보이지만, 안으로 불안과 자기 비하가 조용히 쌓여갑니다. 이 조합에게는 마음을 꺼내놓을 수 있는 안전한 사람 한 명이 생명줄입니다.`,
+  },
+  {
+    code: 'MS', name: '깊은 표현가', primary: '우울', secondary: '다혈',
+    primaryColor: 'bg-indigo-400', secondaryColor: 'bg-amber-400',
+    desc: '깊이 느끼고 생생하게 표현하는 감수성의 달인',
+    hook: '12가지 중 가장 재능이 많은 기질',
+    fullDescription: `팀 라헤이가 "매우 재능 있는 사람"으로 꼽은 조합입니다. 우울질의 깊은 감수성이 다혈질의 표현력과 만나면, 청중의 마음을 훔치는 음악가, 아름다운 작품을 그리면서 직접 파는 화가, 학생들을 사로잡는 명강사가 탄생합니다.
+
+SM이 "밝은 겉에 깊은 속"이라면, MS는 "깊은 속이 밝음으로 터져 나오는" 타입입니다. 우울질이 주도하기 때문에 기본적으로 깊이 사색하고 분석하지만, 다혈질 덕분에 그 깊이를 매력적으로 전달할 수 있습니다. 흥미로운 감정의 기복도 특징입니다. 상황이 좋을 때는 환상적으로 행복하고, 나쁠 때는 극도로 가라앉습니다.
+
+위험은 "감정의 롤러코스터"입니다. 두 기질 모두 감정적이기 때문에 기분 변화가 극적이고, 우울질의 불안감과 다혈질의 충동성이 결합되면 예측할 수 없는 행동이 나올 수 있습니다. 감정을 알아차리되 즉시 반응하지 않는 "한 박자 쉬기"가 핵심 전략입니다.`,
+  },
+  {
+    code: 'MC', name: '철저한 전략가', primary: '우울', secondary: '담즙',
+    primaryColor: 'bg-indigo-400', secondaryColor: 'bg-rose-400',
+    desc: '치밀한 분석에 강한 실행력을 더한 완성형',
+    hook: '12가지 중 가장 독립적이고 주도적인 내향형',
+    fullDescription: `분석력과 실행력을 동시에 갖춘, 내향형 중 가장 강력한 조합입니다. 우울질이 치밀하게 계획을 세우고, 담즙질이 망설임 없이 실행합니다. CM이 "밀어붙이며 다듬는" 타입이라면, MC는 "완벽하게 준비한 뒤 단숨에 끝내는" 타입입니다.
+
+MC의 핵심은 "완벽한 준비 + 결단력 있는 실행"입니다. 이 사람이 움직이기 시작하면 이미 모든 변수를 계산한 뒤입니다. 그래서 실패율이 극도로 낮습니다. 전략 컨설팅, 법률, 의학, 공학, 재무 분석 등 정밀한 판단과 결단이 동시에 요구되는 분야에서 독보적입니다.
+
+그림자는 "완벽주의의 감옥"입니다. 우울질의 높은 기준과 담즙질의 강한 자존심이 만나면, 실수를 용납하지 못하는 극도의 자기 비판이 시작됩니다. 타인에게도 같은 기준을 적용하기 때문에, 비판이 날카롭고 인간관계가 좁아질 수 있습니다. "80%의 완성도도 가치 있다"를 스스로 허락하는 것이 성장의 열쇠입니다.`,
+  },
+  {
+    code: 'MP', name: '묵묵한 전문가', primary: '우울', secondary: '점액',
+    primaryColor: 'bg-indigo-400', secondaryColor: 'bg-teal-400',
+    desc: '한 분야를 끝까지 파고드는 깊이의 장인',
+    hook: '역사상 가장 위대한 학자들의 기질',
+    fullDescription: `팀 라헤이는 "세계 역사상 가장 위대한 학자들이 이 기질"이라고 설명했습니다. 우울질의 분석적 완벽주의와 점액질의 조직적 효율성이 만나, 한 분야를 끝까지 파고들어 독보적인 경지에 도달하는 사람입니다.
+
+MP의 강점은 "조용한 전문성"입니다. 화려한 프레젠테이션이나 설득보다는, 작업의 질로 인정받습니다. 차분하고 인도적이며, 남들과 잘 어울리고, 조용한 환경에서 연구와 작업에 몰입할 때 최고의 성과를 냅니다. 학자, 연구원, 프로그래머, 건축가, 작곡가 등 깊이와 정밀함이 생명인 분야에서 빛납니다.
+
+다만, 가장 큰 과제는 "두려움과 부정적 자기 인식"입니다. 두 기질 모두 내향적이고 소극적인 편이라, 불안에 특히 취약합니다. 능력이 충분한데도 "나는 부족하다"고 느끼고, 기회가 와도 "아직 준비가 안 됐다"며 물러납니다. 이 기질의 성장 열쇠는 "완벽하지 않아도 시작하기"입니다.`,
+  },
 ];
 
 export default function TemperamentsPage() {
@@ -300,29 +420,53 @@ export default function TemperamentsPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {dualCombinations.map((combo) => (
-              <div
+              <details
                 key={combo.code}
-                className="bg-white rounded-xl border border-gray-100 p-4 hover:shadow-md transition-all group"
+                className="bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-md transition-all group"
               >
-                <div className="flex items-center gap-3 mb-2">
-                  {/* 기질 색상 도트 */}
-                  <div className="flex -space-x-1.5">
-                    <div className={`w-5 h-5 rounded-full ${combo.primaryColor} border-2 border-white`} />
-                    <div className={`w-5 h-5 rounded-full ${combo.secondaryColor} border-2 border-white`} />
+                <summary className="p-4 sm:p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      {/* 기질 색상 도트 */}
+                      <div className="flex -space-x-1.5">
+                        <div className={`w-6 h-6 rounded-full ${combo.primaryColor} border-2 border-white shadow-sm`} />
+                        <div className={`w-6 h-6 rounded-full ${combo.secondaryColor} border-2 border-white shadow-sm`} />
+                      </div>
+                      <div>
+                        <span className="text-sm sm:text-base font-black text-gray-800 group-open:text-indigo-600 transition-colors">
+                          {combo.name}
+                        </span>
+                        <span className="text-xs text-gray-400 ml-1.5">
+                          {combo.primary}+{combo.secondary} ({combo.code})
+                        </span>
+                      </div>
+                    </div>
+                    <svg className="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
                   </div>
-                  <div>
-                    <span className="text-sm font-black text-gray-800 group-hover:text-indigo-600 transition-colors">
-                      {combo.name}
-                    </span>
-                    <span className="text-xs text-gray-400 ml-1.5">
-                      {combo.primary}+{combo.secondary} ({combo.code})
-                    </span>
+                  <p className="text-xs text-gray-500 mt-2 ml-9">{combo.desc}</p>
+                  <p className="text-[11px] text-indigo-500 font-semibold mt-1 ml-9">{combo.hook}</p>
+                </summary>
+
+                <div className="px-4 sm:px-5 pb-4 sm:pb-5 border-t border-gray-50">
+                  <div className="text-sm text-gray-600 leading-relaxed mt-4 space-y-3">
+                    {combo.fullDescription.split('\n\n').map((paragraph, i) => (
+                      <p key={i}>{paragraph}</p>
+                    ))}
+                  </div>
+                  <div className="mt-4 pt-3 border-t border-gray-100">
+                    <Link
+                      href="/test"
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 hover:text-indigo-700 transition"
+                    >
+                      내 복합 기질 확인하기 →
+                    </Link>
                   </div>
                 </div>
-                <p className="text-xs text-gray-500 leading-relaxed">{combo.desc}</p>
-              </div>
+              </details>
             ))}
           </div>
         </div>
