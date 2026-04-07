@@ -689,6 +689,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['MBTI 궁합', 'MBTI 궁합표', 'MBTI 궁합 분석', 'MBTI 궁합 순위', '니체', '니체 철학', 'MBTI 연애 궁합', '초인', '영원회귀'],
     category: 'psychology',
     publishDate: '2026-04-08',
+    thumbnail: '/blog/nietzsche-mbti.jpg',
     sections: [
       {
         heading: '"궁합표? 노예의 도구군." — 니체, 첫 반응',
