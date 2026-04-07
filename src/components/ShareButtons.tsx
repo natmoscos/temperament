@@ -1,6 +1,19 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
+
+// Kakao SDK 타입 선언
+declare global {
+  interface Window {
+    Kakao?: {
+      init: (appKey: string) => void;
+      isInitialized: () => boolean;
+      Share: {
+        sendDefault: (settings: Record<string, unknown>) => void;
+      };
+    };
+  }
+}
 
 interface ShareButtonsProps {
   fullCode: string;
@@ -8,8 +21,66 @@ interface ShareButtonsProps {
   temperamentNickname: string;
 }
 
+// Kakao SDK 로드 상태를 전역으로 관리 (중복 로드 방지)
+let kakaoLoadPromise: Promise<void> | null = null;
+
+function loadKakaoSDK(): Promise<void> {
+  if (kakaoLoadPromise) return kakaoLoadPromise;
+
+  kakaoLoadPromise = new Promise((resolve, reject) => {
+    // 이미 로드되어 있는 경우
+    if (window.Kakao) {
+      resolve();
+      return;
+    }
+
+    const script = document.createElement('script');
+    script.src = 'https://t1.kakaocdn.net/kakao_js_sdk/2.7.4/kakao.min.js';
+    script.integrity = 'sha384-DKYJZ8NLiK8MN4/C5P2ezmFnkrysYSTmGLlkGMEVgUaVN8DCpOh6WlZl0JWLnKa';
+    script.crossOrigin = 'anonymous';
+    script.async = true;
+    script.onload = () => resolve();
+    script.onerror = () => {
+      kakaoLoadPromise = null;
+      reject(new Error('Kakao SDK 로드 실패'));
+    };
+    document.head.appendChild(script);
+  });
+
+  return kakaoLoadPromise;
+}
+
+function initKakao() {
+  const appKey = process.env.NEXT_PUBLIC_KAKAO_JS_KEY;
+  if (!appKey) return false;
+  if (window.Kakao && !window.Kakao.isInitialized()) {
+    window.Kakao.init(appKey);
+  }
+  return window.Kakao?.isInitialized() ?? false;
+}
+
 export default function ShareButtons({ fullCode, mbtiNickname, temperamentNickname }: ShareButtonsProps) {
   const [copied, setCopied] = useState(false);
+  const [kakaoReady, setKakaoReady] = useState(false);
+  const initAttempted = useRef(false);
+
+  // Kakao SDK 로드 및 초기화
+  useEffect(() => {
+    if (initAttempted.current) return;
+    initAttempted.current = true;
+
+    const appKey = process.env.NEXT_PUBLIC_KAKAO_JS_KEY;
+    if (!appKey) return; // 앱 키 없으면 SDK 로드 안 함
+
+    loadKakaoSDK()
+      .then(() => {
+        const initialized = initKakao();
+        setKakaoReady(initialized);
+      })
+      .catch(() => {
+        // SDK 로드 실패 — 폴백 사용
+      });
+  }, []);
 
   // 공유 URL: /share/ENFJ-SC 형태 (OG 이미지 포함)
   const shareUrl = typeof window !== 'undefined' ? `${window.location.origin}/share/${fullCode}` : '';
@@ -37,43 +108,50 @@ export default function ShareButtons({ fullCode, mbtiNickname, temperamentNickna
   };
 
   const shareKakao = () => {
-    // Kakao SDK가 로드된 경우 KakaoTalk 공유
-    if (typeof window !== 'undefined' && (window as unknown as Record<string, unknown>).Kakao) {
-      const Kakao = (window as unknown as Record<string, any>).Kakao;
+    // Kakao SDK가 로드 및 초기화된 경우 네이티브 공유
+    if (kakaoReady && window.Kakao) {
       try {
-        Kakao.Share.sendDefault({
+        const origin = typeof window !== 'undefined' ? window.location.origin : 'https://192types.com';
+        window.Kakao.Share.sendDefault({
           objectType: 'feed',
           content: {
             title: `나는 ${fullCode}! ${mbtiNickname}`,
-            description: `${temperamentNickname} - 너의 숨겨진 성격은? 192가지 유형 검사로 확인해봐!`,
-            imageUrl: `${shareUrl.replace(`/share/${fullCode}`, '')}/api/og?code=${fullCode}`,
-            link: { mobileWebUrl: shareUrl, webUrl: shareUrl },
+            description: `${temperamentNickname} — 너의 숨겨진 성격은? 192가지 유형 검사로 확인해봐!`,
+            imageUrl: `${origin}/api/og?code=${fullCode}`,
+            link: {
+              mobileWebUrl: shareUrl,
+              webUrl: shareUrl,
+            },
           },
           buttons: [
-            { title: '나도 검사하기', link: { mobileWebUrl: shareUrl, webUrl: shareUrl } },
+            {
+              title: '나도 검사하기',
+              link: {
+                mobileWebUrl: `${origin}/test`,
+                webUrl: `${origin}/test`,
+              },
+            },
           ],
         });
         return;
       } catch {
-        // SDK 에러시 폴백
+        // SDK 에러시 폴백으로 진행
       }
     }
-    // 폴백: 카카오톡 공유 링크 (모바일에서 카카오톡 앱 열기 시도)
-    const kakaoShareUrl = `https://sharer.kakao.com/talk/friends/picker/link?url=${encodedUrl}&text=${encodedText}`;
-    // 카카오스토리 폴백
-    const kakaoStoryUrl = `https://story.kakao.com/share?url=${encodedUrl}&text=${encodedText}`;
 
-    // 모바일에서는 카카오톡 공유 시도, PC에서는 카카오스토리
-    if (/Android|iPhone|iPad/i.test(navigator.userAgent)) {
-      // 모바일: 클립보드 복사 + 안내
-      navigator.clipboard.writeText(`${shareText}\n${shareUrl}`).then(() => {
-        alert('링크가 복사되었습니다! 카카오톡에서 붙여넣기 해주세요.');
-      }).catch(() => {
-        window.open(kakaoStoryUrl, '_blank', 'width=600,height=400');
-      });
-    } else {
-      window.open(kakaoStoryUrl, '_blank', 'width=600,height=400');
-    }
+    // 폴백: 클립보드 복사 + 안내
+    navigator.clipboard.writeText(`${shareText}\n${shareUrl}`).then(() => {
+      alert('링크가 복사되었습니다!\n카카오톡에서 붙여넣기 해주세요. 💬');
+    }).catch(() => {
+      // clipboard API 실패시 textarea 폴백
+      const textArea = document.createElement('textarea');
+      textArea.value = `${shareText}\n${shareUrl}`;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      alert('링크가 복사되었습니다!\n카카오톡에서 붙여넣기 해주세요. 💬');
+    });
   };
 
   const shareTwitter = () => {
