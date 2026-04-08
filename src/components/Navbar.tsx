@@ -38,7 +38,7 @@ const navItems = [
   },
   { label: '기질론', href: '/temperaments' },
   { label: '궁합', href: '/compatibility' },
-  { label: '커뮤니티', href: '/community' },
+  { label: '수다광장', href: '/community' },
   { label: '블로그', href: '/blog' },
 ];
 

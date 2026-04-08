@@ -58,7 +58,8 @@ export default function CommunityPage() {
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState(true);
   const [showWrite, setShowWrite] = useState(false);
-  const [typeFilter, setTypeFilter] = useState('');
+  const [mbtiFilter, setMbtiFilter] = useState('');
+  const [tempFilter, setTempFilter] = useState('');
   const [sortBy, setSortBy] = useState<'latest' | 'popular'>('latest');
 
   // 글쓰기 폼
@@ -101,8 +102,11 @@ export default function CommunityPage() {
         .order(sortBy === 'popular' ? 'likes' : 'created_at', { ascending: false })
         .limit(50);
 
-      if (typeFilter) {
-        query = query.ilike('type_code', `${typeFilter}%`);
+      if (mbtiFilter) {
+        query = query.ilike('type_code', `${mbtiFilter}%`);
+      }
+      if (tempFilter) {
+        query = query.ilike('type_code', `%-${tempFilter}%`);
       }
 
       const { data, error } = await query;
@@ -119,7 +123,7 @@ export default function CommunityPage() {
       setPosts([]);
     }
     setLoading(false);
-  }, [sortBy, typeFilter]);
+  }, [sortBy, mbtiFilter, tempFilter]);
 
   useEffect(() => {
     fetchPosts();
@@ -225,27 +229,38 @@ export default function CommunityPage() {
             ← 홈으로
           </Link>
           <h1 className="text-3xl sm:text-4xl font-black text-gray-900 mb-2">
-            유형별{' '}
+            🗣️{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">
-              커뮤니티
+              수다광장
             </span>
           </h1>
           <p className="text-gray-500 text-sm">
-            같은 유형, 다른 기질. 당신의 이야기를 익명으로 나눠보세요.
+            같은 유형, 다른 기질. 편하게 떠들어봐요 💬
           </p>
         </div>
 
         {/* 필터 & 정렬 */}
         <div className="flex flex-wrap items-center gap-2 mb-4">
           <select
-            value={typeFilter}
-            onChange={(e) => setTypeFilter(e.target.value)}
+            value={mbtiFilter}
+            onChange={(e) => { setMbtiFilter(e.target.value); }}
             className="px-3 py-2 border border-gray-200 rounded-xl text-sm bg-white focus:outline-none focus:ring-2 focus:ring-indigo-300"
           >
-            <option value="">전체 유형</option>
+            <option value="">MBTI 전체</option>
             {mbtiTypes.map((t) => (
               <option key={t} value={t}>{t}</option>
             ))}
+          </select>
+          <select
+            value={tempFilter}
+            onChange={(e) => setTempFilter(e.target.value)}
+            className="px-3 py-2 border border-gray-200 rounded-xl text-sm bg-white focus:outline-none focus:ring-2 focus:ring-indigo-300"
+          >
+            <option value="">기질 전체</option>
+            <option value="S">🔥 다혈질 (S)</option>
+            <option value="C">⚡ 담즙질 (C)</option>
+            <option value="P">🌊 점액질 (P)</option>
+            <option value="M">🌙 우울질 (M)</option>
           </select>
 
           <div className="flex gap-1 ml-auto">
