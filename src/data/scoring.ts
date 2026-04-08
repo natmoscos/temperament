@@ -90,9 +90,10 @@ function scoreTemperament(answers: Answer[]): TemperamentResult {
     })
   ) as Record<TemperamentType, { score: number; percentage: number }>;
 
-  // 점수 내림차순 정렬
+  // 점수 내림차순 정렬 (동점 시 S>C>P>M 우선순위로 일관된 결과 보장)
+  const priority: Record<TemperamentType, number> = { S: 0, C: 1, P: 2, M: 3 };
   const sorted = (['S', 'C', 'P', 'M'] as TemperamentType[]).sort(
-    (a, b) => all[b].score - all[a].score
+    (a, b) => all[b].score - all[a].score || priority[a] - priority[b]
   );
 
   return {

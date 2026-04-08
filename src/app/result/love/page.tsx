@@ -6,7 +6,7 @@ import { PremiumSectionTeaser } from '@/components/PremiumTeaser';
 import AdPlaceholder from '@/components/AdPlaceholder';
 
 export default function LovePage() {
-  const { result, profile, loading } = useResult();
+  const { result, profile, loading, tone } = useResult();
 
   if (loading || !result || !profile) return <LoadingSpinner />;
 
@@ -22,8 +22,12 @@ export default function LovePage() {
       </div>
 
       {/* ━━━ 연애 스타일 (FREE) ━━━ */}
-      <Section icon="❤️" title="연애할 때 당신은" subtitle="기질과 성격이 만들어내는 당신만의 사랑 방식">
-        <Paragraph text={profile.loveNarrative} />
+      <Section
+        icon={tone === 'spicy' ? '💔' : '❤️'}
+        title={tone === 'spicy' ? '팩폭: 연애에서 당신의 민낯' : '연애할 때 당신은'}
+        subtitle={tone === 'spicy' ? '달콤한 말만 듣고 싶으면 순한맛으로 바꾸세요' : '기질과 성격이 만들어내는 당신만의 사랑 방식'}
+      >
+        <Paragraph text={tone === 'spicy' ? profile.spicy.loveNarrative : profile.loveNarrative} />
         {profile.bestMatch.length > 0 && (
           <div className="mt-5 bg-pink-50 rounded-xl p-4 border border-pink-100">
             <p className="text-sm font-semibold text-pink-700 mb-2">성격 유형 기준 추천 궁합</p>

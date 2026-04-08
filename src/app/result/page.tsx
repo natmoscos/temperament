@@ -21,7 +21,7 @@ const reliabilityInfo: Record<string, { text: string; color: string }> = {
 };
 
 export default function ResultSummaryPage() {
-  const { result, profile, loading } = useResult();
+  const { result, profile, loading, tone, setTone } = useResult();
 
   // 동적 OG 메타 태그 삽입 (클라이언트 컴포넌트이므로 useEffect 사용)
   // 참고: 소셜 크롤러는 JS를 실행하지 않으므로 실제 OG 공유는 /share/[code] 페이지가 담당
@@ -85,6 +85,36 @@ export default function ResultSummaryPage() {
         </div>
       </div>
 
+      {/* ━━━ 매운맛/순한맛 토글 ━━━ */}
+      <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4">
+        <div className="flex items-center justify-center gap-3">
+          <span className="text-sm text-gray-500">결과 말투 선택</span>
+          <div className="flex bg-gray-100 rounded-xl p-1">
+            <button
+              onClick={() => setTone('mild')}
+              className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+                tone === 'mild'
+                  ? 'bg-white shadow-sm text-green-600'
+                  : 'text-gray-400 hover:text-gray-600'
+              }`}
+            >
+              🍀 순한맛
+            </button>
+            <button
+              onClick={() => setTone('spicy')}
+              className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+                tone === 'spicy'
+                  ? 'bg-white shadow-sm text-red-600'
+                  : 'text-gray-400 hover:text-gray-600'
+              }`}
+            >
+              🌶️ 매운맛
+            </button>
+          </div>
+          {tone === 'spicy' && <span className="text-xs text-red-400">팩폭 주의!</span>}
+        </div>
+      </div>
+
       {/* ━━━ PDF 저장 리마인더 ━━━ */}
       <ResultSaveReminder />
 
@@ -129,8 +159,8 @@ export default function ResultSummaryPage() {
             return (
               <div key={axis}>
                 <div className="flex justify-between text-sm mb-1.5">
-                  <span className={l >= 50 ? 'text-indigo-600 font-medium' : 'text-gray-400'}>{lb[0]} {l}%</span>
-                  <span className={r > 50 ? 'text-purple-600 font-medium' : 'text-gray-400'}>{r}% {lb[1]}</span>
+                  <span className={l > 50 ? 'text-indigo-600 font-medium' : l === 50 ? 'text-gray-600 font-medium' : 'text-gray-400'}>{lb[0]} {l}%</span>
+                  <span className={r > 50 ? 'text-purple-600 font-medium' : r === 50 ? 'text-gray-600 font-medium' : 'text-gray-400'}>{r}% {lb[1]}</span>
                 </div>
                 <div className="w-full h-3 bg-gray-100 rounded-full overflow-hidden flex">
                   <div className="h-full bg-gradient-to-r from-indigo-500 to-indigo-400" style={{ width: `${l}%` }} />

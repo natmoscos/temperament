@@ -7,7 +7,7 @@ import AdPlaceholder from '@/components/AdPlaceholder';
 import { temperamentProfiles } from '@/data/profiles-temperament';
 
 export default function PersonalityPage() {
-  const { result, profile, loading } = useResult();
+  const { result, profile, loading, tone } = useResult();
 
   if (loading || !result || !profile) return <LoadingSpinner />;
 
@@ -27,8 +27,12 @@ export default function PersonalityPage() {
       </div>
 
       {/* ━━━ 당신은 이런 사람입니다 (FREE) ━━━ */}
-      <Section icon="🪞" title="당신은 이런 사람입니다" subtitle="성격 유형과 기질론이 만나 그려내는 당신의 초상화">
-        <Paragraph text={profile.personalityNarrative} />
+      <Section
+        icon={tone === 'spicy' ? '🌶️' : '🪞'}
+        title={tone === 'spicy' ? '팩폭: 당신은 이런 사람입니다' : '당신은 이런 사람입니다'}
+        subtitle={tone === 'spicy' ? '뼈 때리는 자기 분석 — 심장이 약하면 순한맛으로 전환하세요' : '성격 유형과 기질론이 만나 그려내는 당신의 초상화'}
+      >
+        <Paragraph text={tone === 'spicy' ? profile.spicy.personalityNarrative : profile.personalityNarrative} />
       </Section>
 
       <AdPlaceholder />
@@ -91,10 +95,10 @@ export default function PersonalityPage() {
 
       {/* ━━━ 사람들이 모르는 진짜 당신 (PREMIUM) ━━━ */}
       <PremiumSectionTeaser
-        icon="🎭"
-        title="사람들이 모르는 진짜 당신"
-        subtitle="밖에서 보이는 모습과 실제 내면 사이의 이야기"
-        content={profile.hiddenSelf}
+        icon={tone === 'spicy' ? '💀' : '🎭'}
+        title={tone === 'spicy' ? '팩폭: 아무도 안 보는 진짜 당신' : '사람들이 모르는 진짜 당신'}
+        subtitle={tone === 'spicy' ? '민낯 주의. 불편할 수 있습니다.' : '밖에서 보이는 모습과 실제 내면 사이의 이야기'}
+        content={tone === 'spicy' ? profile.spicy.hiddenSelf : profile.hiddenSelf}
       />
 
       {/* ━━━ 대화와 소통의 비밀 (PREMIUM) ━━━ */}

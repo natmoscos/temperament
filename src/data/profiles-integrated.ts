@@ -127,6 +127,69 @@ const temperamentCores: Record<string, TemperamentCore> = {
 };
 
 // ────────────────────────────────────────────
+// 매운맛(팩폭) 기질 데이터 — 직설적이고 날카로운 진실
+// ────────────────────────────────────────────
+
+interface SpicyTemperament {
+  roast: string;           // 한 줄 팩폭
+  hiddenSelf: string;      // 숨겨진 모습 (매운맛)
+  loveRoast: string;       // 연애 팩폭
+  weaknessRoast: string;   // 약점 팩폭
+  stressRoast: string;     // 스트레스 팩폭
+}
+
+const spicyTemperaments: Record<string, SpicyTemperament> = {
+  S: {
+    roast: '인생이 뷔페인 줄 아는 사람. 다 맛보겠다고 접시만 쌓이고 하나도 제대로 못 먹음.',
+    hiddenSelf: '인스타에 "오늘도 행복 ✨" 올리면서 속으로는 "왜 이렇게 공허하지..." 하고 있습니다. 주변에 사람은 100명인데, 진짜 속얘기 할 수 있는 사람은 0명에 가깝죠. 파티의 주인공이면서 동시에 가장 외로운 사람 — 그게 당신입니다. 재미없으면 죽을 것 같아서 일정을 빼곡히 채우지만, 정작 그 일정들이 당신을 채워주진 않아요.',
+    loveRoast: '연애 초반엔 세상에서 제일 로맨틱한 사람. 문제는 3개월 뒤에도 그 텐션을 유지할 수 있냐는 것. 새로운 사람한테 설레는 감정이랑 진짜 사랑을 구분 못 하는 경향이 있어요. 한 사람이 채워주지 못하면 바로 다른 곳에서 관심을 찾으려 하는 건 반성 좀 하세요.',
+    weaknessRoast: '시작의 천재, 마무리의 바보. 새로운 거 시작할 때의 그 에너지를 끝까지 가져가본 적이 몇 번이나 되나요? 약속도 쉽게 하고 쉽게 까먹고, "아 맞다!" 가 입버릇이죠. 순진하다는 건 좋게 말하면 그렇고, 솔직히 좀 생각 없는 거예요.',
+    stressRoast: '스트레스 받으면 더 놀러 다니는 타입. 문제를 해결하는 게 아니라 파티로 도피하는 거예요. SNS 업로드 빈도가 늘어나면 그게 바로 SOS 신호인데, 본인만 모름.',
+  },
+  C: {
+    roast: '세상이 자기 뜻대로 안 돌아가면 화내는 사람. 본인은 "추진력"이라고 하지만 주변에선 "독불장군"이라고 함.',
+    hiddenSelf: '"내가 다 해야 해" 가 아니라 "남한테 맡기면 못 미더워서" 가 본심이죠. 겉으로는 자신감 넘치는데, 자기 전에 "오늘 나 괜찮았나?" 하고 복기하는 건 매일 하고 있을 겁니다. 화 한번 불같이 내고 나서 혼자 후회하면서도 절대 먼저 사과는 안 하죠. 그게 약한 모습이라고 생각하니까.',
+    loveRoast: '연애도 프로젝트처럼 관리하려 들어요. "내가 이만큼 해줬으니 너도 이만큼 해"라는 계산이 무의식적으로 돌아갑니다. 감정 표현은 서툴면서 상대한테는 감정 표현을 요구하고, 관계가 안 되면 "다음!" 하고 끊어버리는 그 차가움은 좀 고쳐야 해요.',
+    weaknessRoast: '남의 말을 듣는 척만 하지 실제로는 이미 결론 내려놓고 있죠. "내가 맞고 네가 틀려"가 기본값이에요. 주변에서 사람이 하나둘 떠나는데 "나를 못 따라오는 거지" 라고 합리화하지 말고, 혹시 내가 사람을 밀어내고 있는 건 아닌지 생각해보세요.',
+    stressRoast: '스트레스 받으면 주변 사람들한테 불이 튀어요. 본인은 "문제를 해결하려는 것"이라고 하지만, 주변에서 보면 그냥 화풀이. 일을 더 벌려서 통제감을 되찾으려 하는데, 그러다 몸이 먼저 항복합니다.',
+  },
+  P: {
+    roast: '평화를 사랑하는 게 아니라 갈등이 무서운 사람. "괜찮아~"가 입버릇인데, 정말 괜찮은 적은 한 번도 없음.',
+    hiddenSelf: '속으로는 하고 싶은 말이 산더미인데, "분위기 깨질까 봐" 꾹꾹 눌러담고 있죠. 그렇게 참고 참다가 어느 날 갑자기 폭발하면 주변 사람들은 "얘가 왜 이래?" 하는데, 사실 3년 전부터 쌓아온 거예요. 착한 게 아니라 표현을 못 하는 거고, 편한 게 아니라 포기한 거에 가깝습니다.',
+    loveRoast: '갈등이 생기면 무조건 "알겠어, 네 말이 맞아" 하고 넘어가죠. 그게 사랑인 줄 알겠지만, 상대 입장에선 "이 사람 진짜 속마음이 뭐지?" 답답해요. 너무 맞춰주다가 정작 자기가 원하는 게 뭔지도 모르게 되는 거, 그게 더 문제예요.',
+    weaknessRoast: '솔직히 "느긋한" 이 아니라 "귀찮은" 에 더 가깝지 않나요? 변화가 필요한 걸 알면서도 지금이 편하니까 안 움직이는 거잖아요. "급하지 않아도 결국 도착한다"고 하지만, 가끔은 급해야 할 때도 있거든요.',
+    stressRoast: '스트레스 받으면 이불 속으로 사라지는 타입. 문제를 직면하는 게 아니라, 없는 척하면 사라질 거라고 기도하고 있어요. 수동적 저항이 당신의 무기인데, 그거 맞은 상대는 벽한테 대화하는 기분이에요.',
+  },
+  M: {
+    roast: '완벽하지 않으면 시작도 안 하는 사람. 머릿속에서 100번 시뮬레이션 돌리고 결국 아무것도 안 함.',
+    hiddenSelf: '세상을 비판하는 눈은 날카로운데, 그 칼끝이 결국 자기한테로 돌아오는 게 문제예요. "왜 세상은 이렇게밖에 안 되는 거야" 하면서 속으로는 "왜 나는 이것밖에 안 되는 거야" 하고 있죠. 예술적 감수성이 풍부한 건 좋은데, 그 감수성으로 자기 자신을 찌르는 건 좀 그만하세요.',
+    loveRoast: '이상형이 너무 구체적이어서 현실에 존재하지 않는 사람을 찾고 있어요. 만나면 만날수록 결점이 보여서 실망하고, "역시 사람은 믿을 수 없어"라고 결론 내리는 패턴 반복 중이죠. 상대의 90%가 좋아도 나머지 10%에 집착하는 건 완벽주의가 아니라 관계 공포예요.',
+    weaknessRoast: '분석은 세계 최고인데 실행력은 세계 최하위. "좀 더 준비되면..." 하다가 인생이 지나가고 있어요. 자기 비판이 동기부여가 된다고 착각하는데, 실제로는 자기를 갉아먹고 있는 거예요. 70%짜리를 내놓는 게 100%짜리를 영원히 안 내놓는 것보다 나아요.',
+    stressRoast: '스트레스 받으면 머릿속에서 "내가 뭘 잘못한 거지" 무한반복 재생. 밖에서는 "나 괜찮아" 하면서 속으로는 시나리오 500개를 돌리고 있어요. 완벽주의가 분석 마비로 이어져서 아무것도 못 하면서, 아무것도 못 하는 자기를 또 비판하는 지옥의 루프.',
+  },
+};
+
+// MBTI 유형별 매운맛 한 줄
+const spicyMBTI: Record<string, string> = {
+  ISTJ: '세상에서 제일 재미없다는 소리를 "안정적이다"로 번역하는 달인.',
+  ISFJ: '남 걱정하느라 정작 자기 인생은 뒷전. "괜찮아요, 저는~" 이 말 하루에 몇 번 하세요?',
+  INFJ: '인류를 사랑하지만 정작 옆 사람은 힘들게 하는 모순덩어리. 도어슬램이 자랑은 아닙니다.',
+  INTJ: '자기가 세상에서 제일 똑똑한 줄 아는 사람. 맞을 수도 있는데, 그래서 외로운 거죠.',
+  ISTP: '쿨한 척하면서 속으로는 다 계산하고 있는 사람. 감정? 그게 먹는 건가요?',
+  ISFP: '"난 남들과 달라" 하면서 결국 아무것도 안 하는 낭만주의자.',
+  INFP: '머릿속 이상 세계에서 사느라 현실 세계 출석률이 낮은 사람.',
+  INTP: '논리적으로는 완벽한데 밥은 챙겨 드셨나요? 인간관계도 논문처럼 분석하시죠?',
+  ESTP: '생각보다 행동이 먼저인 사람. 일단 저지르고 수습은 나중에... 근데 수습 안 하는 경우가 더 많음.',
+  ESFP: '인생은 축제! 는 좋은데, 축제 끝나고 치울 사람 생각은 하시나요?',
+  ENFP: '아이디어는 100개인데 끝낸 건 0개. "이번엔 진짜야!" 하면서 또 새로운 거 시작하는 중.',
+  ENTP: '토론에서 이기는 게 인생의 목표인 사람. 옳은 것보다 이기는 게 더 중요하죠?',
+  ESTJ: '규칙이 생명인 사람. 본인 기준에 안 맞으면 세상이 틀린 거라고 생각함.',
+  ESFJ: '칭찬 없으면 산소가 끊긴 것 같은 사람. "나 이거 해줬는데..." 가 은근 많죠?',
+  ENFJ: '구원자 콤플렉스가 있어요. 남을 돕는 게 좋은 건지, 남한테 필요한 사람이 되고 싶은 건지 구분이 되세요?',
+  ENTJ: '세상을 정복하려는 야망은 좋은데, 정복당하는 사람들 기분도 좀 생각해주세요.',
+};
+
+// ────────────────────────────────────────────
 // MBTI 유형별 핵심 키워드 (기질과 결합할 때 사용)
 // ────────────────────────────────────────────
 
@@ -583,15 +646,138 @@ function generateCommunicationGuide(mbtiType: string, tempCode: string): string 
 }
 
 // ────────────────────────────────────────────
+// 매운맛(팩폭) 서사 생성 함수들
+// ────────────────────────────────────────────
+
+function generateSpicyPersonality(mbtiType: string, tempCode: string): string {
+  const mbtiRoast = spicyMBTI[mbtiType] ?? '당신은 참 독특하시네요.';
+  const primary = spicyTemperaments[tempCode[0]];
+  const secondary = spicyTemperaments[tempCode[1]];
+  const primaryName = temperamentCores[tempCode[0]].name;
+  const secondaryName = temperamentCores[tempCode[1]].name;
+
+  return `팩폭 시작합니다. 마음의 준비 되셨죠?
+
+${mbtiType}? ${mbtiRoast}
+
+여기에 ${primaryName} 기질이 더해지면? ${primary.roast}
+
+거기에 ${secondaryName}까지 섞이면? ${secondary.roast}
+
+이 조합이 만들어내는 당신은... 솔직히 장점과 단점이 동전의 양면처럼 붙어 있어요. 장점이 빛나는 만큼 단점도 강렬한 타입입니다.
+
+하지만 이걸 읽고 있다는 것 자체가 자기 객관화의 시작이에요. 대부분의 사람들은 여기까지 오지도 않거든요.`;
+}
+
+function generateSpicyHiddenSelf(mbtiType: string, tempCode: string): string {
+  const primary = spicyTemperaments[tempCode[0]];
+  const secondary = spicyTemperaments[tempCode[1]];
+
+  return `자, 이제 아무도 안 보는 진짜 당신 이야기를 해볼까요.
+
+${primary.hiddenSelf}
+
+${secondary.hiddenSelf}
+
+불편하죠? 근데 불편한 게 정상이에요. 자기 민낯을 마주하는 건 원래 불편한 거니까요. 중요한 건 여기서 뭘 하느냐입니다.`;
+}
+
+function generateSpicyLove(mbtiType: string, tempCode: string): string {
+  const mbti = mbtiCores[mbtiType] ?? mbtiCores['ISTJ'];
+  const primary = spicyTemperaments[tempCode[0]];
+  const secondary = spicyTemperaments[tempCode[1]];
+  const primaryName = temperamentCores[tempCode[0]].name;
+
+  return `연애에서 당신의 민낯, 솔직하게 가봅시다.
+
+${primary.loveRoast}
+
+${secondary.loveRoast}
+
+MBTI 궁합으로는 ${mbti.bestMatch.join(', ')}이 좋다고 하지만, 솔직히 유형보다 중요한 건 당신이 위에서 지적받은 패턴을 인식하고 바꾸려는 의지가 있느냐예요. 아무리 궁합 좋은 유형이 와도, ${primaryName} 기질의 이런 면이 안 고쳐지면 결과는 비슷합니다.
+
+그래도 희망은 있어요 — 이걸 읽고 "아 진짜 그런데..." 하고 있다면, 이미 절반은 된 거예요.`;
+}
+
+function generateSpicyWeakness(mbtiType: string, tempCode: string): string {
+  const primary = spicyTemperaments[tempCode[0]];
+  const secondary = spicyTemperaments[tempCode[1]];
+  const primaryName = temperamentCores[tempCode[0]].name;
+  const secondaryName = temperamentCores[tempCode[1]].name;
+
+  return `여기서부터는 진짜 뼈 때리는 이야기입니다.
+
+【${primaryName}의 팩폭】
+${primary.weaknessRoast}
+
+【${secondaryName}의 팩폭】
+${secondary.weaknessRoast}
+
+이 두 약점이 동시에 작동하면? 축하합니다, 자기 파괴 콤보 완성이에요.
+
+근데요, 이걸 아는 것과 모르는 것의 차이는 어마어마합니다. 아는 순간 패턴이 보이기 시작하고, 패턴이 보이면 끊을 수 있어요. 오늘 이 팩폭이 내일의 성장이 되길 바랍니다.`;
+}
+
+function generateSpicyStress(mbtiType: string, tempCode: string): string {
+  const mbti = mbtiCores[mbtiType] ?? mbtiCores['ISTJ'];
+  const primary = spicyTemperaments[tempCode[0]];
+  const secondary = spicyTemperaments[tempCode[1]];
+  const primaryName = temperamentCores[tempCode[0]].name;
+  const secondaryName = temperamentCores[tempCode[1]].name;
+
+  return `스트레스 받을 때 당신이 보여주는 쇼를 한번 리뷰해볼까요?
+
+${primary.stressRoast}
+
+여기에 ${secondaryName} 기질의 스트레스 반응까지 겹치면:
+${secondary.stressRoast}
+
+${mbtiType}의 열등기능까지 폭주하면? ${mbti.gripStress.split('.')[0]}.
+
+이 세 가지가 동시에 터지면 당신 주변 반경 5미터가 재난 지역이 됩니다.
+
+근데 좋은 소식은, 이 패턴을 알고 있으면 터지기 전에 알아챌 수 있다는 거예요. "아, 내가 지금 그 모드 들어가고 있구나" 하는 자각 — 그게 당신의 안전장치입니다.`;
+}
+
+function generateSpicyLifeStrategy(mbtiType: string, tempCode: string): string {
+  const primaryKey = tempCode[0];
+  const secondaryKey = tempCode[1];
+  const primaryName = temperamentCores[primaryKey].name;
+  const secondaryName = temperamentCores[secondaryKey].name;
+
+  let tip1 = '';
+  if (primaryKey === 'S') tip1 = '제발 하나만 끝내세요. 딱 하나. 시작만 하고 안 끝내는 습관이 당신의 자존감을 갉아먹고 있어요. "재미없어서" 관뒀다고 하지만, 사실 어려워지니까 도망간 거 아닌가요?';
+  else if (primaryKey === 'C') tip1 = '혼자 다 하려다 쓰러지는 그 패턴, 이제 좀 그만하세요. "내가 해야 제대로 되지"라는 생각이 결국 당신을 고립시키고 있어요. 약한 모습을 보여주는 게 진짜 강한 거라는 말, 들었겠지만 실천은 안 하고 있죠?';
+  else if (primaryKey === 'P') tip1 = '편한 게 좋은 거지, 맞아요. 근데 그 편안함 안에서 당신의 꿈이 질식하고 있는 건 아닌지 한 번만 생각해보세요. "나중에" 하다가 "나중"이 안 온 게 몇 개나 되나요?';
+  else tip1 = '완벽해질 때까지 기다리는 건 "영원히 안 한다"의 다른 말이에요. 당신의 70%는 남들의 100%보다 나은 경우가 많은데, 그 70%가 세상에 나오질 않으니 아무도 몰라요. 제발 불완전하더라도 세상에 내놓으세요.';
+
+  let tip2 = '';
+  if (secondaryKey === 'S') tip2 = `${secondaryName} 보조 기질이 가끔 "놀자!" 하고 유혹하겠지만, 그때마다 넘어가지 마세요. 사교성은 전략적으로 쓸 때 무기가 됩니다.`;
+  else if (secondaryKey === 'C') tip2 = `${secondaryName} 보조 기질이 가끔 불을 지피겠지만, 그 불이 파괴가 아닌 추진력이 되도록 방향을 잡아주세요.`;
+  else if (secondaryKey === 'P') tip2 = `${secondaryName} 보조 기질이 "좀 쉬어도 돼" 하고 속삭이겠지만, 편안함에 안주하는 것과 전략적 휴식은 다릅니다.`;
+  else tip2 = `${secondaryName} 보조 기질이 "이건 완벽하지 않아" 하고 브레이크를 걸겠지만, 가끔은 그 브레이크를 무시하고 그냥 달려야 할 때도 있어요.`;
+
+  return `자, 인생 공략집 매운맛 버전입니다.
+
+${tip1}
+
+${tip2}
+
+마지막으로 — ${primaryName}+${secondaryName}+${mbtiType} 조합인 당신, 솔직히 잠재력은 엄청나요. 문제는 그 잠재력을 "잠재" 상태로만 두고 있다는 거. 아는 것과 하는 것 사이의 간극을 좁히세요. 오늘 이 팩폭을 읽은 게 행동의 시작이 되길 바랍니다.`;
+}
+
+// ────────────────────────────────────────────
 // 최종 통합 프로필 생성 함수 (외부에서 호출)
 // ────────────────────────────────────────────
+
+export type ResultTone = 'mild' | 'spicy';
 
 export interface IntegratedProfile {
   fullCode: string;
   mbtiNickname: string;
   mbtiEmoji: string;
   temperamentNickname: string;
-  dualTemperamentDescription: string;  // 12가지 복합 기질 조합 상세 설명
+  dualTemperamentDescription: string;
   cognitiveStack: string;
   population: string;
   personalityNarrative: string;
@@ -605,14 +791,23 @@ export interface IntegratedProfile {
   lifeStrategy: string;
   eysenckInsight: string;
   neuroscienceInsight: string;
-  humorTheoryInsight: string;  // 4체액설 과학적 배경
+  humorTheoryInsight: string;
   parentingInsight: string;
-  weaknessInsight: string;     // 기질적 약점과 성장 포인트
+  weaknessInsight: string;
   careers: string[];
   bestMatch: string[];
   celebrities: string[];
   primaryTemperament: TemperamentCore;
   secondaryTemperament: TemperamentCore;
+  // 매운맛(팩폭) 버전
+  spicy: {
+    personalityNarrative: string;
+    hiddenSelf: string;
+    loveNarrative: string;
+    weaknessInsight: string;
+    gripStressNarrative: string;
+    lifeStrategy: string;
+  };
 }
 
 export function generateIntegratedProfile(
@@ -694,5 +889,14 @@ export function generateIntegratedProfile(
     celebrities: mbti.celebrities,
     primaryTemperament: primaryTemp,
     secondaryTemperament: secondaryTemp,
+    // 매운맛(팩폭) 버전
+    spicy: {
+      personalityNarrative: generateSpicyPersonality(mbtiType, tempCode),
+      hiddenSelf: generateSpicyHiddenSelf(mbtiType, tempCode),
+      loveNarrative: generateSpicyLove(mbtiType, tempCode),
+      weaknessInsight: generateSpicyWeakness(mbtiType, tempCode),
+      gripStressNarrative: generateSpicyStress(mbtiType, tempCode),
+      lifeStrategy: generateSpicyLifeStrategy(mbtiType, tempCode),
+    },
   };
 }

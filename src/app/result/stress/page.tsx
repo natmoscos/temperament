@@ -7,7 +7,7 @@ import PremiumTeaser from '@/components/PremiumTeaser';
 import AdPlaceholder from '@/components/AdPlaceholder';
 
 export default function StressPage() {
-  const { result, profile, loading } = useResult();
+  const { result, profile, loading, tone } = useResult();
 
   if (loading || !result || !profile) return <LoadingSpinner />;
 
@@ -21,8 +21,12 @@ export default function StressPage() {
       </div>
 
       {/* ━━━ Grip 스트레스 (FREE) ━━━ */}
-      <Section icon="🌊" title="극도의 스트레스가 올 때" subtitle="열등기능이 폭주하는 순간 — 평소와 전혀 다른 당신이 나타납니다">
-        <Paragraph text={profile.gripStressNarrative} />
+      <Section
+        icon={tone === 'spicy' ? '💥' : '🌊'}
+        title={tone === 'spicy' ? '팩폭: 스트레스 받을 때 당신의 쇼' : '극도의 스트레스가 올 때'}
+        subtitle={tone === 'spicy' ? '자기 객관화의 시간입니다' : '열등기능이 폭주하는 순간 — 평소와 전혀 다른 당신이 나타납니다'}
+      >
+        <Paragraph text={tone === 'spicy' ? profile.spicy.gripStressNarrative : profile.gripStressNarrative} />
       </Section>
 
       <AdPlaceholder />
@@ -37,23 +41,23 @@ export default function StressPage() {
 
       {/* ━━━ 빛과 그림자 (PREMIUM) ━━━ */}
       <PremiumSectionTeaser
-        icon="⚖️"
-        title="빛과 그림자"
-        subtitle="당신 기질의 약점을 아는 것이 성장의 시작입니다"
-        content={profile.weaknessInsight}
+        icon={tone === 'spicy' ? '🔪' : '⚖️'}
+        title={tone === 'spicy' ? '팩폭: 뼈 때리는 약점 분석' : '빛과 그림자'}
+        subtitle={tone === 'spicy' ? '아픈 만큼 성장합니다' : '당신 기질의 약점을 아는 것이 성장의 시작입니다'}
+        content={tone === 'spicy' ? profile.spicy.weaknessInsight : profile.weaknessInsight}
       />
 
       <AdPlaceholder />
 
       {/* ━━━ 인생 공략집 (PREMIUM) ━━━ */}
-      <div className="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 rounded-2xl shadow-sm border border-indigo-100 p-6 sm:p-8">
+      <div className={`rounded-2xl shadow-sm border p-6 sm:p-8 ${tone === 'spicy' ? 'bg-gradient-to-br from-red-50 via-orange-50 to-amber-50 border-red-100' : 'bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 border-indigo-100'}`}>
         <div className="mb-5">
           <h3 className="text-xl font-bold text-gray-800 flex items-center gap-2">
-            <span className="text-2xl">📖</span> 당신의 인생 공략집
+            <span className="text-2xl">{tone === 'spicy' ? '🔥' : '📖'}</span> {tone === 'spicy' ? '인생 공략집 매운맛' : '당신의 인생 공략집'}
           </h3>
-          <p className="text-sm text-gray-400 mt-1 ml-9">{result.fullCode}로 살아가는 당신을 위한 성장 가이드</p>
+          <p className="text-sm text-gray-400 mt-1 ml-9">{tone === 'spicy' ? '듣기 싫어도 필요한 말들' : `${result.fullCode}로 살아가는 당신을 위한 성장 가이드`}</p>
         </div>
-        <PremiumTeaser content={profile.lifeStrategy} />
+        <PremiumTeaser content={tone === 'spicy' ? profile.spicy.lifeStrategy : profile.lifeStrategy} />
       </div>
 
       {/* ━━━ 부모가 된다면 (PREMIUM) ━━━ */}
