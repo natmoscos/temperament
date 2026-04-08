@@ -25,6 +25,14 @@ export default function ResultSummaryPage() {
 
   // 동적 OG 메타 태그 삽입 (클라이언트 컴포넌트이므로 useEffect 사용)
   // 참고: 소셜 크롤러는 JS를 실행하지 않으므로 실제 OG 공유는 /share/[code] 페이지가 담당
+  // 검사 결과를 localStorage에 저장 (커뮤니티 자동 뱃지용)
+  useEffect(() => {
+    if (!result) return;
+    try {
+      localStorage.setItem('temperament-test-result', JSON.stringify({ fullCode: result.fullCode }));
+    } catch { /* 무시 */ }
+  }, [result]);
+
   useEffect(() => {
     if (!result || !profile) return;
     const code = result.fullCode;

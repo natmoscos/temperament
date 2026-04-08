@@ -158,8 +158,13 @@ export default function CommunityPage() {
 
     const sanitizedTitle = DOMPurify.sanitize(title.trim());
     const sanitizedContent = DOMPurify.sanitize(content.trim());
-    const finalNickname = nickname || '익명의 탐험가';
-    const finalTypeCode = typeCode || '????';
+    if (!typeCode) {
+      setError('검사를 먼저 완료해주세요! 결과 페이지에서 유형이 자동 저장됩니다.');
+      setSubmitting(false);
+      return;
+    }
+    const finalNickname = nickname || generateNickname(typeCode);
+    const finalTypeCode = typeCode;
 
     const sb = getSupabase();
     if (!sb) {
@@ -291,7 +296,11 @@ export default function CommunityPage() {
                   <span className="text-gray-600">{nickname}</span>
                 </>
               ) : (
-                <span className="text-gray-400">검사를 먼저 완료하면 유형 뱃지가 표시됩니다</span>
+                <span className="text-gray-400">
+                  유형 뱃지가 없어요.{' '}
+                  <Link href="/test" className="text-indigo-500 underline hover:text-indigo-700">검사하기</Link>
+                  {' '}후 자동 표시됩니다
+                </span>
               )}
             </div>
 
