@@ -6,7 +6,6 @@ Allow: /
 Disallow: /api/
 Disallow: /result/
 Disallow: /quick-result
-Disallow: /admin/
 
 Sitemap: ${SITE_URL}/sitemap.xml
 
