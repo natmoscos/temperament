@@ -38,6 +38,7 @@ const navItems = [
   },
   { label: '기질론', href: '/temperaments' },
   { label: '궁합', href: '/compatibility' },
+  { label: '커뮤니티', href: '/community' },
   { label: '블로그', href: '/blog' },
 ];
 
@@ -144,6 +145,7 @@ export default function Navbar() {
           ))}
           <Link href="/temperaments" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 rounded-lg">기질론</Link>
           <Link href="/compatibility" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 rounded-lg">궁합</Link>
+          <Link href="/community" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 rounded-lg">커뮤니티</Link>
           <Link href="/blog" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 rounded-lg">블로그</Link>
         </div>
       )}
