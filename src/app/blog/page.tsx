@@ -28,7 +28,7 @@ const categoryLabels: Record<string, { label: string; color: string }> = {
   career: { label: '커리어', color: 'bg-emerald-100 text-emerald-700' },
   guide: { label: '가이드', color: 'bg-purple-100 text-purple-700' },
   science: { label: '과학', color: 'bg-cyan-100 text-cyan-700' },
-  psychology: { label: '심리학', color: 'bg-rose-100 text-rose-700' },
+  psychology: { label: '심리분석', color: 'bg-rose-100 text-rose-700' },
 };
 
 export default async function BlogIndexPage() {
