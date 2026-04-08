@@ -17,8 +17,19 @@ const typeColors: Record<string, string> = {
   P: 'bg-blue-100 text-blue-700',
 };
 
+// 기질 색상 & 한글명
+const tempColors: Record<string, string> = {
+  S: 'bg-amber-500 text-white',
+  C: 'bg-red-500 text-white',
+  P: 'bg-emerald-500 text-white',
+  M: 'bg-blue-500 text-white',
+};
+const tempNames: Record<string, string> = {
+  S: '다혈', C: '담즙', P: '점액', M: '우울',
+};
+
 function TypeBadge({ code }: { code: string }) {
-  // ENFP-SC → "ENFP" + "SC"
+  // ENFP-SC → "ENFP" + "S" + "C"
   const [mbti, temp] = code.split('-');
   if (!mbti) return null;
   return (
@@ -28,9 +39,11 @@ function TypeBadge({ code }: { code: string }) {
           {c}
         </span>
       ))}
-      {temp && (
-        <span className="px-1.5 py-0.5 rounded bg-gray-800 text-white ml-0.5">{temp}</span>
-      )}
+      {temp && temp.split('').map((t, i) => (
+        <span key={`t${i}`} className={`px-1 py-0.5 rounded ml-0.5 ${tempColors[t] ?? 'bg-gray-800 text-white'}`} title={tempNames[t] ? `${tempNames[t]}질` : t}>
+          {tempNames[t] || t}
+        </span>
+      ))}
     </span>
   );
 }
