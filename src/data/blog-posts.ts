@@ -717,7 +717,7 @@ export const blogPosts: BlogPost[] = [
   // ── 트럼프 MBTI 분석 (시사/심리 분석) ──
   {
     slug: 'trump-mbti-estp-temperament',
-    title: '트럼프 MBTI 분석 — 미·이란 사태로 보는 세계에서 가장 MBTI가 선명한 남자',
+    title: '트럼프 MBTI를 알아보자 ㅋㅋ',
     description: '미·이란 사태에서 드러난 트럼프의 행동 패턴을 MBTI 4축과 히포크라테스 기질론으로 분석합니다. ESTP-CS(담즙+다혈) 조합의 전형적인 특징을 살펴보세요.',
     keywords: ['트럼프 MBTI', '트럼프 성격유형', 'ESTP', 'ESTP 유명인', '트럼프 성격분석', '유명인 MBTI 분석'],
     category: 'psychology',
