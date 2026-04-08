@@ -4,9 +4,10 @@ import { useResult } from '@/hooks/useResult';
 import { Section, Paragraph, LoadingSpinner, NextPageCTA } from '@/components/ResultSection';
 import { PremiumSectionTeaser } from '@/components/PremiumTeaser';
 import AdPlaceholder from '@/components/AdPlaceholder';
+import ToneToggle from '@/components/ToneToggle';
 
 export default function LovePage() {
-  const { result, profile, loading, tone } = useResult();
+  const { result, profile, loading, tone, setTone } = useResult();
 
   if (loading || !result || !profile) return <LoadingSpinner />;
 
@@ -17,9 +18,11 @@ export default function LovePage() {
 
       {/* 페이지 타이틀 */}
       <div className="text-center py-4">
-        <p className="text-sm text-indigo-500 font-medium">{result.fullCode}</p>
-        <h1 className="text-2xl font-bold text-gray-800 mt-1">연애 & 궁합</h1>
+        <p className={`text-sm font-medium ${tone === 'spicy' ? 'text-red-500' : 'text-indigo-500'}`}>{result.fullCode}</p>
+        <h1 className="text-2xl font-bold text-gray-800 mt-1">{tone === 'spicy' ? '🌶️ 연애 팩폭' : '연애 & 궁합'}</h1>
       </div>
+
+      <ToneToggle tone={tone} setTone={setTone} />
 
       {/* ━━━ 연애 스타일 (FREE) ━━━ */}
       <Section

@@ -5,9 +5,10 @@ import { Section, Paragraph, LoadingSpinner, NextPageCTA } from '@/components/Re
 import { PremiumSectionTeaser } from '@/components/PremiumTeaser';
 import PremiumTeaser from '@/components/PremiumTeaser';
 import AdPlaceholder from '@/components/AdPlaceholder';
+import ToneToggle from '@/components/ToneToggle';
 
 export default function StressPage() {
-  const { result, profile, loading, tone } = useResult();
+  const { result, profile, loading, tone, setTone } = useResult();
 
   if (loading || !result || !profile) return <LoadingSpinner />;
 
@@ -16,9 +17,11 @@ export default function StressPage() {
 
       {/* 페이지 타이틀 */}
       <div className="text-center py-4">
-        <p className="text-sm text-indigo-500 font-medium">{result.fullCode}</p>
-        <h1 className="text-2xl font-bold text-gray-800 mt-1">스트레스 & 성장 가이드</h1>
+        <p className={`text-sm font-medium ${tone === 'spicy' ? 'text-red-500' : 'text-indigo-500'}`}>{result.fullCode}</p>
+        <h1 className="text-2xl font-bold text-gray-800 mt-1">{tone === 'spicy' ? '🌶️ 스트레스 팩폭' : '스트레스 & 성장 가이드'}</h1>
       </div>
+
+      <ToneToggle tone={tone} setTone={setTone} />
 
       {/* ━━━ Grip 스트레스 (FREE) ━━━ */}
       <Section

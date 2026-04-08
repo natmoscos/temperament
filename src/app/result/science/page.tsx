@@ -8,9 +8,10 @@ import ShareButtons from '@/components/ShareButtons';
 import AdPlaceholder from '@/components/AdPlaceholder';
 import PdfDownloadButton from '@/components/PdfDownloadButton';
 import ResultSaveReminder from '@/components/ResultSaveReminder';
+import ToneToggle from '@/components/ToneToggle';
 
 export default function SciencePage() {
-  const { result, profile, loading } = useResult();
+  const { result, profile, loading, tone, setTone } = useResult();
 
   if (loading || !result || !profile) return <LoadingSpinner />;
 
@@ -19,9 +20,11 @@ export default function SciencePage() {
 
       {/* 페이지 타이틀 */}
       <div className="text-center py-4">
-        <p className="text-sm text-indigo-500 font-medium">{result.fullCode}</p>
+        <p className={`text-sm font-medium ${tone === 'spicy' ? 'text-red-500' : 'text-indigo-500'}`}>{result.fullCode}</p>
         <h1 className="text-2xl font-bold text-gray-800 mt-1">과학적 근거</h1>
       </div>
+
+      <ToneToggle tone={tone} setTone={setTone} />
 
       {/* ━━━ Eysenck (FREE) ━━━ */}
       <Section icon="🔬" title="Eysenck의 2차원 성격 모델" subtitle="당신의 기질이 가진 신경생물학적 기반">

@@ -4,9 +4,10 @@ import { useResult } from '@/hooks/useResult';
 import { Section, Paragraph, LoadingSpinner, NextPageCTA } from '@/components/ResultSection';
 import PremiumTeaser from '@/components/PremiumTeaser';
 import AdPlaceholder from '@/components/AdPlaceholder';
+import ToneToggle from '@/components/ToneToggle';
 
 export default function CareerPage() {
-  const { result, profile, loading } = useResult();
+  const { result, profile, loading, tone, setTone } = useResult();
 
   if (loading || !result || !profile) return <LoadingSpinner />;
 
@@ -15,9 +16,11 @@ export default function CareerPage() {
 
       {/* 페이지 타이틀 */}
       <div className="text-center py-4">
-        <p className="text-sm text-indigo-500 font-medium">{result.fullCode}</p>
+        <p className={`text-sm font-medium ${tone === 'spicy' ? 'text-red-500' : 'text-indigo-500'}`}>{result.fullCode}</p>
         <h1 className="text-2xl font-bold text-gray-800 mt-1">커리어 전략</h1>
       </div>
+
+      <ToneToggle tone={tone} setTone={setTone} />
 
       {/* ━━━ 커리어 가이드 (FREE) ━━━ */}
       <Section icon="🚀" title="당신만의 커리어 전략" subtitle="성격 유형 + 기질이 알려주는 당신에게 맞는 일과 환경">

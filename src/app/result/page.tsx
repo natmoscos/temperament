@@ -8,6 +8,7 @@ import AdPlaceholder from '@/components/AdPlaceholder';
 import PdfDownloadButton from '@/components/PdfDownloadButton';
 import { LoadingSpinner, NextPageCTA } from '@/components/ResultSection';
 import ResultSaveReminder from '@/components/ResultSaveReminder';
+import ToneToggle from '@/components/ToneToggle';
 
 const temperamentNames: Record<string, string> = { S: '다혈질', C: '담즙질', P: '점액질', M: '우울질' };
 const temperamentTextColors: Record<string, string> = { S: 'text-amber-700', C: 'text-red-700', P: 'text-emerald-700', M: 'text-blue-700' };
@@ -65,12 +66,16 @@ export default function ResultSummaryPage() {
     <div className="w-full max-w-3xl mx-auto space-y-5">
 
       {/* ━━━ 메인 결과 카드 ━━━ */}
-      <div className="bg-white rounded-2xl shadow-sm border border-gray-100 text-center py-10 sm:py-14 px-4 sm:px-6">
+      <div className={`rounded-2xl shadow-sm border text-center py-10 sm:py-14 px-4 sm:px-6 ${
+        tone === 'spicy' ? 'bg-gradient-to-b from-red-50 to-white border-red-100' : 'bg-white border-gray-100'
+      }`}>
         <div className="mb-6">
           <HeroCharacter mbtiType={mbti.type} temperamentCode={temperament.code} />
         </div>
-        <p className="text-sm text-gray-400 mb-3">당신의 성격 유형</p>
-        <h1 className="text-4xl sm:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 mb-3 tracking-tight">
+        <p className="text-sm text-gray-400 mb-3">{tone === 'spicy' ? '팩폭 결과' : '당신의 성격 유형'}</p>
+        <h1 className={`text-4xl sm:text-7xl font-black text-transparent bg-clip-text mb-3 tracking-tight ${
+          tone === 'spicy' ? 'bg-gradient-to-r from-red-600 to-orange-500' : 'bg-gradient-to-r from-indigo-600 to-purple-600'
+        }`}>
           {result.fullCode}
         </h1>
         <p className="text-xl text-gray-700 font-semibold">{profile.mbtiEmoji} {profile.mbtiNickname}</p>
@@ -86,49 +91,39 @@ export default function ResultSummaryPage() {
       </div>
 
       {/* ━━━ 매운맛/순한맛 토글 ━━━ */}
-      <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4">
-        <div className="flex items-center justify-center gap-3">
-          <span className="text-sm text-gray-500">결과 말투 선택</span>
-          <div className="flex bg-gray-100 rounded-xl p-1">
-            <button
-              onClick={() => setTone('mild')}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
-                tone === 'mild'
-                  ? 'bg-white shadow-sm text-green-600'
-                  : 'text-gray-400 hover:text-gray-600'
-              }`}
-            >
-              🍀 순한맛
-            </button>
-            <button
-              onClick={() => setTone('spicy')}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
-                tone === 'spicy'
-                  ? 'bg-white shadow-sm text-red-600'
-                  : 'text-gray-400 hover:text-gray-600'
-              }`}
-            >
-              🌶️ 매운맛
-            </button>
+      <ToneToggle tone={tone} setTone={setTone} />
+
+      {/* ━━━ 매운맛: 팩폭 한 줄 요약 ━━━ */}
+      {tone === 'spicy' && (
+        <div className="bg-gradient-to-r from-red-50 to-orange-50 rounded-2xl border border-red-200 p-6">
+          <div className="flex items-start gap-3">
+            <span className="text-3xl">🌶️</span>
+            <div>
+              <h3 className="text-lg font-bold text-red-700 mb-2">한 줄 팩폭</h3>
+              <p className="text-gray-700 leading-[1.85] text-[15px]">{profile.spicy.personalityNarrative.split('\n\n')[1] || profile.spicy.personalityNarrative.split('\n')[0]}</p>
+            </div>
           </div>
-          {tone === 'spicy' && <span className="text-xs text-red-400">팩폭 주의!</span>}
         </div>
-      </div>
+      )}
 
       {/* ━━━ PDF 저장 리마인더 ━━━ */}
       <ResultSaveReminder />
 
       {/* ━━━ 복합 기질 조합 카드 ━━━ */}
       {profile.dualTemperamentDescription && (
-        <div className={`rounded-2xl border p-6 sm:p-8 ${temperamentBgColors[temperament.primary.type]}`}>
+        <div className={`rounded-2xl border p-6 sm:p-8 ${
+          tone === 'spicy' ? 'bg-gradient-to-br from-red-50 to-orange-50 border-red-200' : temperamentBgColors[temperament.primary.type]
+        }`}>
           <div className="flex items-center gap-2 mb-3">
-            <span className="text-2xl">🧬</span>
+            <span className="text-2xl">{tone === 'spicy' ? '🔥' : '🧬'}</span>
             <div>
               <h3 className="text-lg font-bold text-gray-800">{temperament.code} — &ldquo;{profile.temperamentNickname}&rdquo;</h3>
-              <p className="text-xs text-gray-500">히포크라테스 12가지 복합 기질 중 당신의 유형</p>
+              <p className="text-xs text-gray-500">{tone === 'spicy' ? '매운맛으로 보는 당신의 기질 조합' : '히포크라테스 12가지 복합 기질 중 당신의 유형'}</p>
             </div>
           </div>
-          <p className="text-gray-700 leading-[1.85] text-[15px]">{profile.dualTemperamentDescription}</p>
+          <p className="text-gray-700 leading-[1.85] text-[15px]">
+            {tone === 'spicy' ? profile.spicy.personalityNarrative : profile.dualTemperamentDescription}
+          </p>
         </div>
       )}
 
