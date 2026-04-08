@@ -246,7 +246,7 @@ export default function CommunityPage() {
             onChange={(e) => { setMbtiFilter(e.target.value); }}
             className="px-3 py-2 border border-gray-200 rounded-xl text-sm bg-white focus:outline-none focus:ring-2 focus:ring-indigo-300"
           >
-            <option value="">MBTI 전체</option>
+            <option value="">MBTI</option>
             {mbtiTypes.map((t) => (
               <option key={t} value={t}>{t}</option>
             ))}
@@ -256,7 +256,7 @@ export default function CommunityPage() {
             onChange={(e) => setTempFilter(e.target.value)}
             className="px-3 py-2 border border-gray-200 rounded-xl text-sm bg-white focus:outline-none focus:ring-2 focus:ring-indigo-300"
           >
-            <option value="">기질 전체</option>
+            <option value="">기질</option>
             <option value="S">🔥 다혈질 (S)</option>
             <option value="C">⚡ 담즙질 (C)</option>
             <option value="P">🌊 점액질 (P)</option>
