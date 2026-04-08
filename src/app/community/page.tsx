@@ -229,13 +229,13 @@ export default function CommunityPage() {
             ← 홈으로
           </Link>
           <h1 className="text-3xl sm:text-4xl font-black text-gray-900 mb-2">
-            🗣️{' '}
+            💬{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">
-              수다광장
+              오픈채팅
             </span>
           </h1>
           <p className="text-gray-500 text-sm">
-            같은 유형, 다른 기질. 편하게 떠들어봐요 💬
+            같은 유형, 다른 기질. 자유롭게 이야기해봐요!
           </p>
         </div>
 
