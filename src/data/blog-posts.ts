@@ -22,6 +22,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['MBTI 궁합', 'MBTI 궁합 순위', 'MBTI 최고 궁합', 'MBTI 연애 궁합', 'MBTI 커플'],
     category: 'compatibility',
     publishDate: '2026-04-01',
+    relatedTypes: ['INFP', 'ENFJ', 'INTP', 'ENTJ', 'ENFP', 'INTJ'],
     sections: [
       { heading: '성격 유형 궁합, 어떻게 판단할까?',
         content: 'MBTI 궁합은 단순히 "반대끼리 끌린다"가 아닙니다. 칼 융의 인지기능 이론에 따르면, 진정한 호환성은 서로의 인지기능이 얼마나 보완적인지에 달려 있습니다. 주기능과 보조기능의 조합, 그리고 열등기능을 성장시켜줄 수 있는 파트너가 이상적입니다.\n\n하지만 여기서 한 가지 더 중요한 요소가 있습니다. 바로 기질(Temperament)입니다. 같은 ENFJ라도 다혈질 ENFJ와 우울질 ENFJ의 연애 스타일은 완전히 다릅니다. 192가지 유형 분석에서는 이 기질 차이가 궁합에 어떤 영향을 미치는지까지 살펴볼 수 있습니다.' },
@@ -50,6 +51,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['MBTI 연애', 'MBTI 연애 스타일', 'MBTI 유형별 연애', 'MBTI 사랑', 'ENFJ 연애', 'INFP 연애'],
     category: 'mbti',
     publishDate: '2026-04-02',
+    relatedTypes: ['INFJ', 'ENFP', 'ISFP', 'ESTP'],
     sections: [
       { heading: '성격 유형으로 연애 스타일이 정말 달라질까?',
         content: '칼 융의 인지기능 이론에 따르면, 우리가 정보를 처리하고 결정을 내리는 방식이 연애에도 깊이 영향을 미칩니다. 감정형(F)은 파트너의 감정 변화를 섬세하게 감지하고, 사고형(T)은 관계의 문제를 해결하는 것으로 헌신을 보여줍니다. 외향형(E)은 마음을 적극적으로 표현하고, 내향형(I)은 시간을 들여 신뢰를 쌓아갑니다.\n\n하지만 MBTI만으로는 설명되지 않는 부분이 있습니다. 같은 INFP라도 다혈질 INFP는 연애 초반에 상대에게 먼저 다가가는 편이지만, 우울질 INFP는 오랜 시간 상대를 관찰한 후에야 마음의 문을 엽니다. 기질이 연애의 "속도"와 "온도"를 결정짓습니다.' },
@@ -142,6 +144,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['MBTI 직장', 'MBTI 소통', 'MBTI 팀워크', 'MBTI 회사', 'MBTI 상사'],
     category: 'career',
     publishDate: '2026-04-04',
+    relatedTypes: ['ENTJ', 'ISFJ', 'ENTP', 'INFP'],
     sections: [
       { heading: '왜 같은 말을 해도 어떤 동료는 이해하고 어떤 동료는 오해할까?',
         content: '어제 팀 회의에서 있었던 일을 떠올려보세요. 프로젝트 일정을 논의하는데, 어떤 동료는 "일단 해보면서 조정하자"고 하고, 다른 동료는 "구체적인 마일스톤부터 정하자"고 합니다. 둘 다 프로젝트의 성공을 원하지만, 소통 방식이 달라서 서로 답답함을 느낍니다.\n\n이런 어긋남은 능력이나 성의의 문제가 아니라, 인지기능의 차이에서 비롯됩니다. 사고형(T)에게 "기분이 어떠세요?"는 불필요한 질문으로 들리고, 감정형(F)에게 "근거가 뭐예요?"는 자신의 판단을 부정당하는 것처럼 느껴질 수 있습니다. 상대의 소통 방식을 알면, 같은 메시지를 더 효과적으로 전달할 수 있습니다.' },
@@ -166,6 +169,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['INTJ', '기질', '인지기능', '마스터마인드'],
     category: 'mbti',
     publishDate: '2026-04-06',
+    relatedTypes: ['INTJ'],
     sections: [
       { heading: 'INTJ의 인지기능 구조와 기질의 교차점',
         content: 'INTJ의 인지기능 스택은 Ni(내향 직관)-Te(외향 사고)-Fi(내향 감정)-Se(외향 감각)로 구성됩니다. Jung의 심리유형론에서 Ni 주기능은 무의식적 패턴 인식과 장기적 비전 형성에 관여하며, Te 보조기능은 이를 외부 세계에서 체계적으로 실현하는 역할을 합니다. Keirsey는 저서 \'Please Understand Me II\'(1998)에서 INTJ를 "Mastermind"로 명명하며, 전략적 사고와 독립적 실행력을 핵심 특성으로 강조했습니다. 그러나 같은 INTJ라도 기질에 따라 이 인지기능들이 발현되는 양상은 상당히 다릅니다.' },
@@ -214,6 +218,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['직장', 'MBTI 궁합', '팀워크', '업무 스타일'],
     category: 'compatibility',
     publishDate: '2026-04-06',
+    relatedTypes: ['ESTJ', 'INFP', 'ENTJ', 'ISFJ'],
     sections: [
       { heading: '직장 궁합은 연애 궁합과 다르다',
         content: '연애에서의 MBTI 궁합이 정서적 공명과 가치관의 일치를 중시한다면, 직장에서의 궁합은 인지기능의 상호 보완성이 핵심입니다. Isabel Briggs Myers는 \'Gifts Differing\'(1980)에서 효과적인 팀은 다양한 인지기능이 고루 분포된 팀이라고 설명했습니다. 한쪽으로 치우친 팀은 특정 영역에서 강하지만 사각지대가 넓어지기 때문입니다. 따라서 자신과 "맞는" 동료가 아니라 자신의 약점을 보완하는 동료가 업무에서는 더 나은 파트너가 될 수 있습니다.' },
@@ -262,6 +267,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['ENFP', 'INFJ', '궁합', '연애', '인지기능'],
     category: 'compatibility',
     publishDate: '2026-04-07',
+    relatedTypes: ['ENFP', 'INFJ'],
     sections: [
       { heading: 'ENFP-INFJ 궁합의 이론적 배경',
         content: 'ENFP(Ne-Fi-Te-Si)와 INFJ(Ni-Fe-Ti-Se)의 조합은 MBTI 커뮤니티에서 가장 자주 언급되는 궁합 중 하나입니다. 이 조합이 주목받는 이유는 소시오닉스(Socionics) 이론에서 말하는 "이중성(duality)" 관계와 부분적으로 유사한 구조를 갖고 있기 때문입니다. 소시오닉스에서 이중성은 한 유형의 강한 기능이 상대의 약한 기능을 보완하는 관계를 의미하며, 이론적으로 가장 편안한 상호작용을 만들어냅니다.' },
@@ -455,6 +461,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['번아웃', 'MBTI 스트레스', '스트레스 관리', '기질 스트레스', '직장 스트레스', '번아웃 회복'],
     category: 'psychology',
     publishDate: '2026-04-10',
+    relatedTypes: ['INFJ', 'ENFP', 'INTJ', 'ISFP'],
     sections: [
       { heading: '왜 유형마다 번아웃의 모습이 다를까',
         content: 'Christina Maslach와 Susan Jackson이 1981년에 개발한 Maslach Burnout Inventory(MBI)는 번아웃을 정서적 탈진, 비인격화, 성취감 저하라는 세 가지 차원으로 정의합니다. 그런데 이 세 차원 중 어떤 것이 먼저 나타나고 가장 심각하게 경험되는지는 개인의 인지기능과 기질에 따라 상당히 다릅니다. 감정형(F)은 정서적 탈진이 먼저 찾아오고, 사고형(T)은 성취감 저하에서 번아웃이 시작되는 경향이 있습니다. 기질까지 고려하면, 같은 유형 안에서도 번아웃의 속도와 회복 경로가 갈라집니다.' },
@@ -504,6 +511,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['MBTI 직업', 'MBTI 직업 추천', '직업 적성', '기질 직업', '커리어 추천', 'MBTI 진로'],
     category: 'career',
     publishDate: '2026-04-10',
+    relatedTypes: ['ENTJ', 'INFP', 'ISTP', 'ESFJ'],
     sections: [
       { heading: '왜 성격 유형 직업 추천이 항상 맞지는 않을까',
         content: 'MBTI 기반 직업 추천은 "INFP는 작가, ENTJ는 CEO"처럼 단순화되는 경우가 많습니다. 그러나 John Holland이 1959년에 제시한 RIASEC 모델(현실형, 탐구형, 예술형, 사회형, 진취형, 관습형)과 비교해보면, MBTI는 직업 흥미의 한 축만을 설명합니다. 같은 INTJ라도 현실형(R) 흥미가 높은 사람과 예술형(A) 흥미가 높은 사람의 이상적 직업은 전혀 다릅니다. 여기에 기질 변수까지 더하면, 하나의 MBTI 유형에서 파생되는 직업 적성의 스펙트럼은 놀라울 만큼 넓어집니다.' },
@@ -573,6 +581,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['MBTI 맹신', 'MBTI 결과 믿어도 되나', 'MBTI 한계', 'MBTI 비판', '너 자신을 알라', '소크라테스 MBTI', 'MBTI 맹신하면 안되는 이유'],
     category: 'psychology',
     publishDate: '2026-04-06',
+    relatedTypes: ['INTP', 'INFJ'],
     thumbnail: '/blog/socrates-mbti.jpg',
     sections: [
       {
@@ -689,6 +698,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['MBTI 궁합', 'MBTI 궁합표', 'MBTI 궁합 분석', 'MBTI 궁합 순위', '니체', '니체 철학', 'MBTI 연애 궁합', '초인', '영원회귀'],
     category: 'psychology',
     publishDate: '2026-04-08',
+    relatedTypes: ['INTJ', 'ENFP'],
     thumbnail: '/blog/nietzsche-mbti.jpg',
     sections: [
       {
@@ -722,6 +732,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['트럼프 MBTI', '트럼프 성격유형', 'ESTP', 'ESTP 유명인', '트럼프 성격분석', '유명인 MBTI 분석'],
     category: 'psychology',
     publishDate: '2026-04-09',
+    relatedTypes: ['ESTP'],
     thumbnail: '/blog/trump-mbti.jpg',
     sections: [
       {

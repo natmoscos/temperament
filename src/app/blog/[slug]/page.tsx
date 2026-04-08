@@ -5,6 +5,7 @@ import { blogPosts } from '@/data/blog-posts';
 import { getBlogPostBySlug, getAllSlugsFromNotion } from '@/lib/notion';
 import AdPlaceholder from '@/components/AdPlaceholder';
 import JsonLd from '@/components/JsonLd';
+import BlogShareButtons from '@/components/BlogShareButtons';
 
 // 1시간마다 자동 갱신 (Notion 콘텐츠 반영)
 export const revalidate = 3600;
@@ -129,6 +130,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <p className="text-gray-500 text-[15px] leading-relaxed">
             {post.description}
           </p>
+          <div className="mt-4">
+            <BlogShareButtons title={post.title} description={post.description} slug={slug} />
+          </div>
         </header>
 
         {/* 썸네일 히어로 이미지 */}
@@ -197,6 +201,61 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         </div>
 
         <AdPlaceholder />
+
+        {/* 관련 유형 페이지 내부 링크 */}
+        {post.relatedTypes && post.relatedTypes.length > 0 && (
+          <div className="mt-8 bg-white rounded-2xl border border-gray-100 shadow-sm p-5 sm:p-6">
+            <h3 className="text-base font-bold text-gray-800 mb-3 flex items-center gap-2">
+              <span className="text-lg">🔗</span> 관련 성격 유형 알아보기
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {post.relatedTypes.map((type) => (
+                <Link
+                  key={type}
+                  href={`/types/${type.toLowerCase()}`}
+                  className="px-3 py-1.5 bg-indigo-50 text-indigo-700 rounded-lg text-sm font-medium border border-indigo-100 hover:bg-indigo-100 transition"
+                >
+                  {type} 유형 보기 →
+                </Link>
+              ))}
+            </div>
+            <div className="mt-3 pt-3 border-t border-gray-100 flex flex-wrap gap-2">
+              <Link href="/types" className="text-xs text-gray-500 hover:text-indigo-600 transition">
+                전체 192 유형 보기 →
+              </Link>
+              <Link href="/temperaments" className="text-xs text-gray-500 hover:text-indigo-600 transition">
+                4가지 기질론 알아보기 →
+              </Link>
+              <Link href="/compatibility" className="text-xs text-gray-500 hover:text-indigo-600 transition">
+                궁합 검사하기 →
+              </Link>
+            </div>
+          </div>
+        )}
+
+        {/* 항상 표시되는 사이트 내부 링크 */}
+        {(!post.relatedTypes || post.relatedTypes.length === 0) && (
+          <div className="mt-8 bg-gray-50 rounded-2xl p-5 flex flex-wrap gap-3 justify-center">
+            <Link href="/types" className="px-4 py-2 bg-white text-gray-700 rounded-xl text-sm font-medium border border-gray-200 hover:border-indigo-300 hover:text-indigo-600 transition">
+              192 유형 보기
+            </Link>
+            <Link href="/temperaments" className="px-4 py-2 bg-white text-gray-700 rounded-xl text-sm font-medium border border-gray-200 hover:border-indigo-300 hover:text-indigo-600 transition">
+              4가지 기질론
+            </Link>
+            <Link href="/compatibility" className="px-4 py-2 bg-white text-gray-700 rounded-xl text-sm font-medium border border-gray-200 hover:border-indigo-300 hover:text-indigo-600 transition">
+              궁합 검사
+            </Link>
+            <Link href="/blog" className="px-4 py-2 bg-white text-gray-700 rounded-xl text-sm font-medium border border-gray-200 hover:border-indigo-300 hover:text-indigo-600 transition">
+              다른 글 보기
+            </Link>
+          </div>
+        )}
+
+        {/* 하단 공유 버튼 (본문 끝) */}
+        <div className="mt-6 flex items-center justify-center gap-3 py-4 border-t border-gray-100">
+          <span className="text-xs text-gray-400">이 글이 도움이 되셨나요?</span>
+          <BlogShareButtons title={post.title} description={post.description} slug={slug} />
+        </div>
 
         {/* 하단 CTA */}
         <div className="mt-8 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl p-6 sm:p-8 text-center text-white shadow-xl">
