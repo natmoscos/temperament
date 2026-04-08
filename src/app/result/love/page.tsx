@@ -69,9 +69,9 @@ export default function LovePage() {
 
       {/* ━━━ 연애 상세 (PREMIUM) ━━━ */}
       <PremiumSectionTeaser
-        icon="🌹"
-        title="기질이 만드는 연애 패턴"
-        subtitle="히포크라테스 기질론으로 보는 당신의 사랑"
+        icon={tone === 'spicy' ? '🔥' : '🌹'}
+        title={tone === 'spicy' ? '팩폭: 연애에서 반복하는 실수' : '기질이 만드는 연애 패턴'}
+        subtitle={tone === 'spicy' ? '아프지만 알아야 할 패턴' : '히포크라테스 기질론으로 보는 당신의 사랑'}
         content={profile.primaryTemperament.loveDetail}
       />
 

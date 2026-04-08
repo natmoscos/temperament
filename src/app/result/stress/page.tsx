@@ -36,10 +36,10 @@ export default function StressPage() {
 
       {/* ━━━ 스트레스 회복 가이드 (PREMIUM) ━━━ */}
       <PremiumSectionTeaser
-        icon="🧘"
-        title="스트레스 회복 가이드"
-        subtitle="기질에 맞는 당신만의 회복법"
-        content={profile.stressGuide}
+        icon={tone === 'spicy' ? '🚨' : '🧘'}
+        title={tone === 'spicy' ? '팩폭: 당신의 회복법은 진짜 회복이 아닐 수도' : '스트레스 회복 가이드'}
+        subtitle={tone === 'spicy' ? '가짜 회복 패턴을 직시하세요' : '기질에 맞는 당신만의 회복법'}
+        content={tone === 'spicy' ? profile.spicy.stressGuide : profile.stressGuide}
       />
 
       {/* ━━━ 빛과 그림자 (PREMIUM) ━━━ */}
@@ -65,10 +65,10 @@ export default function StressPage() {
 
       {/* ━━━ 부모가 된다면 (PREMIUM) ━━━ */}
       <PremiumSectionTeaser
-        icon="👨‍👩‍👧‍👦"
-        title="부모가 된다면"
-        subtitle="기질과 성격이 만들어내는 당신만의 양육 스타일"
-        content={profile.parentingInsight}
+        icon={tone === 'spicy' ? '😬' : '👨‍👩‍👧‍👦'}
+        title={tone === 'spicy' ? '팩폭: 부모로서 당신의 맹점' : '부모가 된다면'}
+        subtitle={tone === 'spicy' ? '자녀가 말 못 하는 불만을 대신 알려드립니다' : '기질과 성격이 만들어내는 당신만의 양육 스타일'}
+        content={tone === 'spicy' ? profile.spicy.parentingInsight : profile.parentingInsight}
       />
 
       <AdPlaceholder />

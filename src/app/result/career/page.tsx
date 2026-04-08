@@ -23,8 +23,12 @@ export default function CareerPage() {
       <ToneToggle tone={tone} setTone={setTone} />
 
       {/* ━━━ 커리어 가이드 (FREE) ━━━ */}
-      <Section icon="🚀" title="당신만의 커리어 전략" subtitle="성격 유형 + 기질이 알려주는 당신에게 맞는 일과 환경">
-        <Paragraph text={profile.careerGuide} />
+      <Section
+        icon={tone === 'spicy' ? '💼' : '🚀'}
+        title={tone === 'spicy' ? '팩폭: 커리어에서 당신의 맹점' : '당신만의 커리어 전략'}
+        subtitle={tone === 'spicy' ? '잘하는 것만 보지 말고 못하는 것도 직시하세요' : '성격 유형 + 기질이 알려주는 당신에게 맞는 일과 환경'}
+      >
+        <Paragraph text={tone === 'spicy' ? profile.spicy.careerGuide : profile.careerGuide} />
         <div className="mt-5 flex flex-wrap gap-2">
           {profile.careers.map((c, i) => (
             <span key={i} className="px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm border border-blue-100">{c}</span>

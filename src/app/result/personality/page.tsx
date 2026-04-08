@@ -14,7 +14,7 @@ export default function PersonalityPage() {
 
   const temperamentProfile = temperamentProfiles[result.temperament.code];
 
-  const allInsights = profile.contradictionInsights;
+  const allInsights = tone === 'spicy' ? profile.spicy.contradictionInsights : profile.contradictionInsights;
   const freeInsights = allInsights.slice(0, 2);
   const hasMore = allInsights.length > 2;
 
@@ -67,10 +67,14 @@ export default function PersonalityPage() {
 
       {/* ━━━ MBTI만으로는 설명할 수 없었던 것들 (FREE: first 2) ━━━ */}
       {allInsights.length > 0 && (
-        <Section icon="🔑" title="기존 16가지 유형만으로는 설명할 수 없었던 것들" subtitle="기질론이 풀어주는 당신의 모순과 혼란">
+        <Section
+          icon={tone === 'spicy' ? '🎯' : '🔑'}
+          title={tone === 'spicy' ? '팩폭: 당신의 모순을 까발린다' : '기존 16가지 유형만으로는 설명할 수 없었던 것들'}
+          subtitle={tone === 'spicy' ? '불편한 자기 인식의 시간' : '기질론이 풀어주는 당신의 모순과 혼란'}
+        >
           <div className="space-y-5">
             {freeInsights.map((insight, i) => (
-              <div key={i} className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-5 border border-indigo-100">
+              <div key={i} className={`rounded-xl p-5 border ${tone === 'spicy' ? 'bg-gradient-to-r from-red-50 to-orange-50 border-red-100' : 'bg-gradient-to-r from-indigo-50 to-purple-50 border-indigo-100'}`}>
                 <p className="text-gray-700 leading-[1.85] text-[15px]">{insight}</p>
               </div>
             ))}
@@ -106,10 +110,10 @@ export default function PersonalityPage() {
 
       {/* ━━━ 대화와 소통의 비밀 (PREMIUM) ━━━ */}
       <PremiumSectionTeaser
-        icon="💬"
-        title="대화와 소통의 비밀"
-        subtitle="당신이 소통할 때 일어나는 일들"
-        content={profile.communicationGuide}
+        icon={tone === 'spicy' ? '🗣️' : '💬'}
+        title={tone === 'spicy' ? '팩폭: 대화할 때 당신의 민낯' : '대화와 소통의 비밀'}
+        subtitle={tone === 'spicy' ? '듣기 불편해도 알아야 할 진실' : '당신이 소통할 때 일어나는 일들'}
+        content={tone === 'spicy' ? profile.spicy.communicationGuide : profile.communicationGuide}
       />
 
       <AdPlaceholder />

@@ -122,7 +122,7 @@ export default function ResultSummaryPage() {
             </div>
           </div>
           <p className="text-gray-700 leading-[1.85] text-[15px]">
-            {tone === 'spicy' ? profile.spicy.personalityNarrative : profile.dualTemperamentDescription}
+            {tone === 'spicy' ? profile.spicy.dualTemperamentDescription : profile.dualTemperamentDescription}
           </p>
         </div>
       )}
