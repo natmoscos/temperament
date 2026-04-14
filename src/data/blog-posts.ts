@@ -145,6 +145,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['MBTI 직장', 'MBTI 소통', 'MBTI 팀워크', 'MBTI 회사', 'MBTI 상사'],
     category: 'career',
     publishDate: '2026-04-04',
+    thumbnail: '/blog/mbti-at-work-communication.jpg',
     relatedTypes: ['ENTJ', 'ISFJ', 'ENTP', 'INFP'],
     sections: [
       { heading: '왜 같은 말을 해도 어떤 동료는 이해하고 어떤 동료는 오해할까?',
