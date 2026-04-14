@@ -598,6 +598,20 @@ export default function TemperamentsPage() {
             </div>
           </div>
         </details>
+
+        {/* ━━━ 히포크라테스 일러스트 ━━━ */}
+        <div className="mb-8 rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+          <img
+            src="/hippocrates-ancient.jpg"
+            alt="히포크라테스와 4기질론 — 고대 그리스 의학의 성격 분류 철학"
+            className="w-full h-auto"
+            loading="lazy"
+          />
+          <p className="text-center text-xs text-gray-400 py-3 bg-white">
+            히포크라테스 (c. 460–370 BC) — 4체액설과 기질론의 창시자
+          </p>
+        </div>
+
       </div>
     </div>
   );
