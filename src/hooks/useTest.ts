@@ -13,15 +13,14 @@ export function useTest() {
   const [answers, setAnswers] = useState<Answer[]>([]);
   const [result, setResult] = useState<TestResult | null>(null);
 
-  // localStorage에서 진행 상태 복원
-  useEffect(() => {
+  // localStorage에서 진행 상태 복원 (resume 확인 후 이어하기 선택 시 호출)
+  const restoreFromStorage = useCallback(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
         const parsed = JSON.parse(saved) as Answer[];
-        setAnswers(parsed);
-        // 마지막 답변 다음 문항으로 이동
         if (parsed.length > 0 && parsed.length < questions.length) {
+          setAnswers(parsed);
           setCurrentIndex(parsed.length);
         }
       }
@@ -42,7 +41,8 @@ export function useTest() {
 
   const currentQuestion = questions[currentIndex] ?? null;
   const totalQuestions = questions.length;
-  const progress = Math.round((currentIndex / totalQuestions) * 100);
+  // 답변 수 기준으로 진행률 계산 (마지막 문항 답변 시 100%)
+  const progress = Math.round((answers.length / totalQuestions) * 100);
 
   // 현재 문항에 대한 기존 답변 조회
   const currentAnswer = currentQuestion
@@ -63,8 +63,8 @@ export function useTest() {
       const existing = answers.findIndex((a) => a.questionId === currentQuestion.id);
       let newAnswers: Answer[];
       if (existing >= 0) {
-        newAnswers = [...answers];
-        newAnswers[existing] = newAnswer;
+        // 기존 답변 교체 (순서 유지)
+        newAnswers = answers.map((a) => a.questionId === currentQuestion.id ? newAnswer : a);
       } else {
         newAnswers = [...answers, newAnswer];
       }
@@ -135,5 +135,6 @@ export function useTest() {
     goNext,
     reset,
     finishTest,
+    restoreFromStorage,
   };
 }

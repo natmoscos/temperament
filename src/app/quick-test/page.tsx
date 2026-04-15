@@ -1,11 +1,13 @@
 'use client';
 
 import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import { useQuickTest } from '@/hooks/useQuickTest';
 import ProgressBar from '@/components/ProgressBar';
 import QuestionCard from '@/components/QuestionCard';
 
 export default function QuickTestPage() {
+  const router = useRouter();
   const {
     currentIndex,
     currentQuestion,
@@ -19,9 +21,9 @@ export default function QuickTestPage() {
 
   useEffect(() => {
     if (result) {
-      window.location.href = '/quick-result';
+      router.push('/quick-result');
     }
-  }, [result]);
+  }, [result, router]);
 
   if (result) {
     return (

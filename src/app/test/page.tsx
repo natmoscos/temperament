@@ -1,12 +1,15 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback, useRef } from 'react';
+import { useRouter } from 'next/navigation';
 import { useTest } from '@/hooks/useTest';
 import ProgressBar from '@/components/ProgressBar';
 import QuestionCard from '@/components/QuestionCard';
+import SuspenseMessage from '@/components/SuspenseMessage';
 import Link from 'next/link';
 
 export default function TestPage() {
+  const router = useRouter();
   const {
     currentIndex,
     currentQuestion,
@@ -18,9 +21,29 @@ export default function TestPage() {
     submitAnswer,
     goBack,
     reset,
+    restoreFromStorage,
   } = useTest();
 
   const [showResume, setShowResume] = useState<boolean | null>(null);
+  const [activeMilestone, setActiveMilestone] = useState(0);
+  const shownMilestonesRef = useRef<Set<number>>(new Set());
+
+  // 마일스톤 체크 (25%, 50%, 75%)
+  useEffect(() => {
+    const milestones = [25, 50, 75];
+    for (const m of milestones) {
+      const targetIndex = Math.floor((m / 100) * totalQuestions);
+      if (currentIndex === targetIndex && !shownMilestonesRef.current.has(m)) {
+        setActiveMilestone(m);
+        shownMilestonesRef.current.add(m);
+        break;
+      }
+    }
+  }, [currentIndex, totalQuestions]);
+
+  const dismissMilestone = useCallback(() => {
+    setActiveMilestone(0);
+  }, []);
 
   // 최초 마운트 시에만 이전 기록 확인 (한 번만 실행)
   useEffect(() => {
@@ -40,9 +63,9 @@ export default function TestPage() {
   // 결과가 나오면 결과 페이지로 이동
   useEffect(() => {
     if (result) {
-      window.location.href = '/result';
+      router.push('/result');
     }
-  }, [result]);
+  }, [result, router]);
 
   if (result) {
     return (
@@ -79,7 +102,7 @@ export default function TestPage() {
 
             <div className="space-y-3">
               <button
-                onClick={() => setShowResume(false)}
+                onClick={() => { restoreFromStorage(); setShowResume(false); }}
                 className="w-full py-3.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl font-bold hover:opacity-90 transition text-base"
               >
                 이어서 검사하기
@@ -108,6 +131,9 @@ export default function TestPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white flex flex-col items-center justify-center px-4 py-8">
+      {activeMilestone > 0 && (
+        <SuspenseMessage milestone={activeMilestone} onDismiss={dismissMilestone} />
+      )}
       <div className="w-full max-w-2xl">
         <ProgressBar current={currentIndex} total={totalQuestions} percentage={progress} />
         <QuestionCard

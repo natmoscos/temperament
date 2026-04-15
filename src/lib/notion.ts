@@ -165,10 +165,7 @@ export async function getAllBlogPosts(): Promise<BlogPost[]> {
   try {
     const response = await notionFetch(`/databases/${DATABASE_ID}/query`, {
       filter: {
-        or: [
-          { property: 'Status', select: { equals: 'published' } },
-          { property: 'Status', select: { equals: '발행' } },
-        ],
+        property: 'Status', select: { equals: 'published' },
       },
       sorts: [{ property: 'PublishDate', direction: 'descending' }],
     });
@@ -214,12 +211,7 @@ export async function getBlogPostBySlug(slug: string): Promise<BlogPost | undefi
       filter: {
         and: [
           { property: 'Slug', rich_text: { equals: slug } },
-          {
-            or: [
-              { property: 'Status', select: { equals: 'published' } },
-              { property: 'Status', select: { equals: '발행' } },
-            ],
-          },
+          { property: 'Status', select: { equals: 'published' } },
         ],
       },
       page_size: 1,

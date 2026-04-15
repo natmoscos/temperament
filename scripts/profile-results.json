@@ -1,0 +1,130 @@
+{
+  "success": [
+    {
+      "slug": "bill-gates",
+      "license": "CC BY 2.0",
+      "filename": "Bill_Gates_2018.jpg"
+    },
+    {
+      "slug": "donald-trump",
+      "license": "Public Domain (US Government)",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg"
+    },
+    {
+      "slug": "mark-zuckerberg",
+      "license": "CC BY 2.0",
+      "filename": "Mark_Zuckerberg_F8_2019_Keynote_(32830578717)_(cropped).jpg"
+    },
+    {
+      "slug": "sam-altman",
+      "license": "CC BY 2.0",
+      "filename": "Sam_Altman_CropEdit_James_Tamim.jpg"
+    },
+    {
+      "slug": "lebron-james",
+      "license": "CC BY-SA 2.0",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/LeBron_James_%2851959977144%29_%28cropped2%29.jpg"
+    },
+    {
+      "slug": "lionel-messi",
+      "license": "CC BY-SA 3.0",
+      "filename": "Lionel_Messi_20180626.jpg"
+    },
+    {
+      "slug": "son-heung-min",
+      "license": "CC BY-SA 2.0",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/BFA_2023_-2_Heung-Min_Son_%28cropped%29.jpg"
+    },
+    {
+      "slug": "steve-jobs",
+      "license": "CC BY-SA 2.0",
+      "filename": "Steve_Jobs_Headshot_2010-CROP_(cropped_2).jpg"
+    },
+    {
+      "slug": "lee-jung-jae",
+      "license": "CC BY-SA 4.0",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/240305_Lee_Jung-jae_%28cropped%29.jpg"
+    },
+    {
+      "slug": "song-kang-ho",
+      "license": "CC BY-SA 4.0",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Song_Gangho_2016.jpg"
+    },
+    {
+      "slug": "iu",
+      "license": "CC (verify)",
+      "filename": "250718 Lee Ji-eun (이지은).png"
+    },
+    {
+      "slug": "kim-go-eun",
+      "license": "CC BY-SA 4.0",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Kim_Go-eun_at_the_2024_Toronto_International_Film_Festival_2.jpg"
+    },
+    {
+      "slug": "park-seo-joon",
+      "license": "CC BY-SA 4.0",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Park_Seo-joon_in_March_2026.png"
+    },
+    {
+      "slug": "newjeans-hanni",
+      "license": "CC BY-SA 4.0",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Hanni_OLENS_2.jpg"
+    },
+    {
+      "slug": "bts-rm",
+      "license": "CC (verify)",
+      "filename": "BTS RM and V military discharge, 10 June 2025 03.png"
+    },
+    {
+      "slug": "bts-suga",
+      "license": "CC (verify)",
+      "filename": "Min Yoon-gi May 2018.jpg"
+    },
+    {
+      "slug": "blackpink-jennie",
+      "license": "CC (verify)",
+      "filename": "20190518 Blackpink Amsterdam concert 39 Jennie and Jisoo.jpg"
+    },
+    {
+      "slug": "blackpink-rose",
+      "license": "CC BY-SA 4.0",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Blackpink_Ros%C3%A9_Rimowa_1.jpg"
+    },
+    {
+      "slug": "stray-kids-bangchan",
+      "license": "CC BY-SA 4.0",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Bang_Chan_of_Stray_Kids%2C_February_23%2C_2026_%281%29.png"
+    },
+    {
+      "slug": "sherlock-holmes",
+      "license": "Public Domain",
+      "filename": "Sherlock_Holmes_Portrait_Paget.jpg"
+    }
+  ],
+  "failed": [
+    {
+      "slug": "harry-potter",
+      "reason": "Fictional - no CC images available"
+    },
+    {
+      "slug": "hermione-granger",
+      "reason": "Fictional - no CC images available"
+    },
+    {
+      "slug": "joker",
+      "reason": "Fictional - no CC images available"
+    },
+    {
+      "slug": "naruto-uzumaki",
+      "reason": "Fictional - no CC images available"
+    },
+    {
+      "slug": "tony-stark",
+      "reason": "Fictional - no CC images available"
+    },
+    {
+      "slug": "walter-white",
+      "reason": "Fictional - no CC images available"
+    }
+  ]
+}

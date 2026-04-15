@@ -5,6 +5,7 @@ import { analyzeCompatibility, CompatibilityResult } from '@/data/compatibility'
 import { Section, Paragraph } from '@/components/ResultSection';
 import AdPlaceholder from '@/components/AdPlaceholder';
 import ShareButtons from '@/components/ShareButtons';
+import TypeComparison from '@/components/TypeComparison';
 
 const tempCodes = ['SC','SP','SM','CS','CP','CM','PS','PC','PM','MS','MC','MP'] as const;
 
@@ -347,6 +348,11 @@ export default function CompatibilityPage() {
           <p className="text-xs text-gray-400 mt-1">기질 화학 반응</p>
         </div>
       </div>
+
+      {/* 나 vs 상대 비교 분석 */}
+      <TypeComparison myCode={myCode} partnerCode={partnerCode} />
+
+      <AdPlaceholder />
 
       <Section icon="💫" title="궁합 요약">
         <Paragraph text={compatibility.summary} />

@@ -27,6 +27,7 @@ export default function Footer() {
             <div className="space-y-2">
               <Link href="/about" className="block text-sm text-gray-600 hover:text-indigo-600 transition">서비스 소개</Link>
               <Link href="/privacy" className="block text-sm text-gray-600 hover:text-indigo-600 transition">개인정보처리방침</Link>
+              <Link href="/terms" className="block text-sm text-gray-600 hover:text-indigo-600 transition">이용약관</Link>
             </div>
           </div>
           <div>

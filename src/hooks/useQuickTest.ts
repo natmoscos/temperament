@@ -24,10 +24,11 @@ export function useQuickTest() {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
         const parsed: Answer[] = JSON.parse(saved);
-        setAnswers(parsed);
         if (parsed.length >= totalQuestions) {
-          setResult(calculateQuickResult(parsed));
+          // 이미 완료된 경우 바로 결과 페이지로
+          window.location.replace('/quick-result');
         } else {
+          setAnswers(parsed);
           setCurrentIndex(parsed.length);
         }
       }

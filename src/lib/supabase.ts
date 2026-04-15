@@ -42,6 +42,68 @@ export interface Comment {
   created_at: string;
 }
 
+// ── 인물 DB ──
+export interface Profile {
+  id: string;
+  slug: string;
+  name_ko: string;
+  name_en: string;
+  category: ProfileCategory;
+  subcategory?: string | null;
+  thumbnail?: string | null;
+  description?: string | null;
+  consensus_mbti?: string | null;
+  consensus_temp?: string | null;
+  vote_count: number;
+  view_count: number;
+  created_at: string;
+}
+
+export interface ProfileVote {
+  id: string;
+  profile_id: string;
+  voter_fingerprint: string;
+  mbti_type: string;
+  temperament_1: string;
+  temperament_2: string;
+  created_at: string;
+}
+
+export type ProfileCategory =
+  | 'celebrity'
+  | 'kpop'
+  | 'kdrama'
+  | 'tech'
+  | 'athlete'
+  | 'movie'
+  | 'anime'
+  | 'historical';
+
+export const PROFILE_CATEGORIES: { value: ProfileCategory; label: string; emoji: string }[] = [
+  { value: 'celebrity',  label: '셀럽',     emoji: '⭐' },
+  { value: 'kpop',       label: 'K-POP',   emoji: '🎤' },
+  { value: 'kdrama',     label: 'K-드라마', emoji: '🎬' },
+  { value: 'tech',       label: '테크/기업가', emoji: '💡' },
+  { value: 'athlete',    label: '스포츠',   emoji: '⚽' },
+  { value: 'movie',      label: '영화',     emoji: '🎥' },
+  { value: 'anime',      label: '애니/소설', emoji: '📖' },
+  { value: 'historical', label: '역사인물', emoji: '📜' },
+];
+
+// 브라우저 fingerprint (localStorage 기반)
+export function getVoterFingerprint(): string {
+  if (typeof window === 'undefined') return '';
+  const key = 'voter-fp';
+  let fp = localStorage.getItem(key);
+  if (!fp) {
+    fp = Array.from(crypto.getRandomValues(new Uint8Array(16)))
+      .map((b) => b.toString(16).padStart(2, '0'))
+      .join('');
+    localStorage.setItem(key, fp);
+  }
+  return fp;
+}
+
 // ── 닉네임 생성 ──
 const adjectives = [
   '용감한', '조용한', '불꽃', '잔잔한', '날카로운', '따뜻한', '자유로운',

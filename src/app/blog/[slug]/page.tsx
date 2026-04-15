@@ -24,25 +24,31 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = await getBlogPostBySlug(slug);
   if (!post) return { title: '글을 찾을 수 없습니다' };
 
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://192types.com';
+  // 썸네일이 있으면 실제 사진 사용, 없으면 사이트 기본 OG 이미지
+  const ogImage = post.thumbnail
+    ? `${siteUrl}${post.thumbnail}`
+    : `${siteUrl}/og-default.jpg`;
+
   return {
     title: post.title,
     description: post.description,
     keywords: post.keywords,
     alternates: {
-      canonical: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://192types.com'}/blog/${slug}`,
+      canonical: `${siteUrl}/blog/${slug}`,
     },
     openGraph: {
       title: post.title,
       description: post.description,
       type: 'article',
       publishedTime: post.publishDate,
-      images: [`/api/og?type=blog&title=${encodeURIComponent(post.title)}&category=${encodeURIComponent(post.category)}`],
+      images: [{ url: ogImage, width: post.thumbnail ? 900 : 1200, height: post.thumbnail ? 600 : 630, alt: post.title }],
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.description,
-      images: [`/api/og?type=blog&title=${encodeURIComponent(post.title)}&category=${encodeURIComponent(post.category)}`],
+      images: [ogImage],
     },
   };
 }
@@ -135,13 +141,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </div>
         </header>
 
-        {/* 썸네일 히어로 이미지 */}
+        {/* 썸네일 히어로 이미지 — 원본 비율 유지 (크롭 없음, 얼굴 전체 표시) */}
         {post.thumbnail && (
-          <div className="relative w-full aspect-[2/1] rounded-2xl overflow-hidden mb-8">
+          <div className="relative w-full rounded-2xl overflow-hidden mb-8 bg-gray-100">
             <img
               src={post.thumbnail}
               alt={post.title}
-              className="w-full h-full object-cover"
+              className="w-full h-auto rounded-2xl"
               loading="eager"
             />
           </div>
@@ -165,11 +171,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   {section.heading}
                 </h2>
                 {section.image && (
-                  <div className="relative w-full rounded-xl overflow-hidden my-4">
+                  <div className="relative w-full rounded-xl overflow-hidden my-4 bg-gray-100">
                     <img
                       src={section.image}
                       alt={section.heading}
-                      className="w-full h-auto object-cover rounded-xl"
+                      className="w-full h-auto rounded-xl"
                       loading="lazy"
                     />
                   </div>

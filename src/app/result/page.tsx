@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { useResult } from '@/hooks/useResult';
 import { HeroCharacter } from '@/components/CharacterAvatar';
 import ShareButtons from '@/components/ShareButtons';
@@ -9,6 +9,12 @@ import PdfDownloadButton from '@/components/PdfDownloadButton';
 import { LoadingSpinner, NextPageCTA } from '@/components/ResultSection';
 import ResultSaveReminder from '@/components/ResultSaveReminder';
 import ToneToggle from '@/components/ToneToggle';
+import ResultCountdown from '@/components/ResultCountdown';
+import TemperamentRadar from '@/components/TemperamentRadar';
+import CelebrityMatch from '@/components/CelebrityMatch';
+import SituationCards from '@/components/SituationCards';
+import TypePulse from '@/components/TypePulse';
+import ResultTimeline from '@/components/ResultTimeline';
 
 const temperamentNames: Record<string, string> = { S: '다혈질', C: '담즙질', P: '점액질', M: '우울질' };
 const temperamentTextColors: Record<string, string> = { S: 'text-amber-700', C: 'text-red-700', P: 'text-emerald-700', M: 'text-blue-700' };
@@ -23,6 +29,19 @@ const reliabilityInfo: Record<string, { text: string; color: string }> = {
 
 export default function ResultSummaryPage() {
   const { result, profile, loading, tone, setTone } = useResult();
+  // 세션 내 최초 1회만 카운트다운 표시
+  const [showCountdown, setShowCountdown] = useState(() => {
+    try {
+      return !sessionStorage.getItem('countdown-shown');
+    } catch {
+      return true;
+    }
+  });
+
+  const handleCountdownComplete = useCallback(() => {
+    try { sessionStorage.setItem('countdown-shown', '1'); } catch { /* 무시 */ }
+    setShowCountdown(false);
+  }, []);
 
   // 동적 OG 메타 태그 삽입 (클라이언트 컴포넌트이므로 useEffect 사용)
   // 참고: 소셜 크롤러는 JS를 실행하지 않으므로 실제 OG 공유는 /share/[code] 페이지가 담당
@@ -59,6 +78,9 @@ export default function ResultSummaryPage() {
   }, [result, profile]);
 
   if (loading || !result || !profile) return <LoadingSpinner />;
+
+  // 카운트다운 표시 (데이터 로드 완료 후, 첫 방문시만)
+  if (showCountdown) return <ResultCountdown onComplete={handleCountdownComplete} />;
 
   const { mbti, temperament, reliability } = result;
 
@@ -190,6 +212,12 @@ export default function ResultSummaryPage() {
         </div>
       </div>
 
+      {/* ━━━ 기질 밸런스 레이더 차트 ━━━ */}
+      <TemperamentRadar temperamentScores={temperament.all} />
+
+      {/* ━━━ 상황별 반응 카드 ━━━ */}
+      <SituationCards mbtiType={mbti.type} temperamentCode={temperament.code} />
+
       {/* ━━━ 신뢰도 ━━━ */}
       <div className={`rounded-2xl p-4 text-center text-sm font-medium border ${reliabilityInfo[reliability.grade].color}`}>
         검사 신뢰도 {reliability.grade}등급 — {reliabilityInfo[reliability.grade].text}
@@ -208,6 +236,12 @@ export default function ResultSummaryPage() {
       <PdfDownloadButton result={result} profile={profile} />
 
       <AdPlaceholder />
+
+      {/* ━━━ Type Pulse 투표 ━━━ */}
+      <TypePulse typeCode={result.fullCode} />
+
+      {/* ━━━ 같은 유형 유명인 ━━━ */}
+      <CelebrityMatch mbtiType={mbti.type} temperamentCode={temperament.code} />
 
       {/* ━━━ 상세 결과 안내 (페이지뷰 유도) ━━━ */}
       <div className="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 rounded-2xl border border-indigo-100 p-6 sm:p-8">
@@ -235,6 +269,15 @@ export default function ResultSummaryPage() {
           ))}
         </div>
       </div>
+
+      {/* ━━━ 성격 변화 타임라인 ━━━ */}
+      <ResultTimeline
+        fullCode={result.fullCode}
+        eiPct={mbti.axes.EI.percentage}
+        snPct={mbti.axes.SN.percentage}
+        tfPct={mbti.axes.TF.percentage}
+        jpPct={mbti.axes.JP.percentage}
+      />
 
       {/* ━━━ 재검사 ━━━ */}
       <div className="flex justify-center pb-8">

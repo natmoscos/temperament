@@ -39,7 +39,7 @@ export function useResult(): UseResultReturn {
       const saved = localStorage.getItem('temperament-test-answers');
       if (saved) {
         const answers: Answer[] = JSON.parse(saved);
-        if (answers.length === questions.length) {
+        if (answers.length >= questions.length) {
           const r = calculateResult(answers);
           setResult(r);
           setProfile(generateIntegratedProfile(r.mbti, r.temperament));

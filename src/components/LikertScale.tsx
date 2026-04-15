@@ -27,7 +27,7 @@ const shortLabels = [
 
 export default function LikertScale({ value, onChange }: LikertScaleProps) {
   return (
-    <div className="flex justify-between items-end gap-1 sm:gap-3 mt-10 w-full overflow-hidden">
+    <div className="flex justify-between items-end gap-0.5 sm:gap-3 mt-10 w-full overflow-hidden">
       {labels.map((label, index) => {
         const score = index + 1;
         const isSelected = value === score;
@@ -37,13 +37,13 @@ export default function LikertScale({ value, onChange }: LikertScaleProps) {
           <button
             key={score}
             onClick={() => onChange(score)}
-            className="flex flex-col items-center gap-1.5 sm:gap-2 group flex-1 min-w-0"
+            className="flex flex-col items-center gap-1.5 sm:gap-2 group flex-1 min-w-0 py-2 -my-2"
           >
             <div
               className={`
                 rounded-full transition-all duration-200 flex items-center justify-center
                 font-bold cursor-pointer
-                w-8 h-8 text-sm
+                w-10 h-10 text-sm
                 sm:text-lg
                 ${distance === 0 ? 'sm:w-10 sm:h-10' : distance === 1 ? 'sm:w-11 sm:h-11' : distance === 2 ? 'sm:w-12 sm:h-12' : 'sm:w-[58px] sm:h-[58px]'}
                 ${

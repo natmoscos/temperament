@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.88.0",
     "@fontsource/nanum-gothic": "^5.2.7",
     "@notionhq/client": "^5.16.0",
     "@supabase/supabase-js": "^2.102.1",

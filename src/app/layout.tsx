@@ -32,9 +32,11 @@ export const metadata: Metadata = {
     siteName: '192 성격 유형 검사',
     title: '192 성격 유형 검사 | 16가지 성격 × 4가지 기질',
     description: '16가지 성격 유형과 히포크라테스 기질론을 결합한 192가지 성격 유형 검사. 100문항으로 당신의 진짜 성격을 발견하세요.',
+    images: [{ url: '/og-default.jpg', width: 1200, height: 630, alt: '192 성격 유형 검사' }],
   },
   twitter: {
     card: 'summary_large_image',
+    images: ['/og-default.jpg'],
   },
   robots: {
     index: true,

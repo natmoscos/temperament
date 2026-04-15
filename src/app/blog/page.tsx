@@ -72,11 +72,11 @@ export default async function BlogIndexPage() {
                 className="block bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200 transition-all p-5 sm:p-6 group"
               >
                 {post.thumbnail && (
-                  <div className="w-full aspect-[2/1] overflow-hidden">
+                  <div className="w-full rounded-xl overflow-hidden mb-3">
                     <img
                       src={post.thumbnail}
                       alt={post.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-auto rounded-xl group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
                     />
                   </div>

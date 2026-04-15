@@ -1,6 +1,14 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
+import HeroQuizPreview from '@/components/HeroQuizPreview';
+import LiveTestFeed from '@/components/LiveTestFeed';
+import RoastCarousel from '@/components/RoastCarousel';
+import ElementPreview from '@/components/ElementPreview';
+import RarityTeaser from '@/components/RarityTeaser';
+import ScrollReveal from '@/components/ScrollReveal';
+import TonePreview from '@/components/TonePreview';
+import { TodaysDebateHero } from '@/components/TodaysDebateHero';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://192types.com';
 
@@ -79,6 +87,7 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-b from-slate-950 via-indigo-950 to-purple-950 flex flex-col items-center px-4">
       <JsonLd data={websiteSchema} />
       <JsonLd data={faqSchema} />
+      <LiveTestFeed />
       {/* ━━━ Hero Section ━━━ */}
       <div className="text-center max-w-2xl mx-auto pt-12 sm:pt-20 pb-16">
 
@@ -156,6 +165,9 @@ export default function Home() {
           </Link>
         </div>
 
+        {/* 미니 퀴즈 체험 (Zero Friction Hook) */}
+        <HeroQuizPreview />
+
         {/* 사회적 증거 */}
         <div className="mt-8 flex flex-col items-center gap-3">
           <div className="flex items-center gap-3">
@@ -185,6 +197,15 @@ export default function Home() {
           </p>
         </div>
       </div>
+
+      {/* ━━━ 오늘의 토론 인물 ━━━ */}
+      <TodaysDebateHero />
+
+      {/* ━━━ 이모지 원소 선택 위젯 ━━━ */}
+      <ElementPreview />
+
+      {/* ━━━ 한 줄 팩폭 캐러셀 ━━━ */}
+      <RoastCarousel />
 
       {/* ━━━ 학술 근거 섹션 ━━━ */}
       <div className="w-full max-w-2xl mb-12">
@@ -252,6 +273,9 @@ export default function Home() {
         </div>
       </div>
 
+      {/* ━━━ 희귀도 티저 ━━━ */}
+      <RarityTeaser />
+
       {/* ━━━ 비교 카드 (밝은 영역) ━━━ */}
       <div className="w-full bg-white rounded-t-[2.5rem] pt-12 pb-8 px-4">
         <div className="max-w-2xl mx-auto">
@@ -266,26 +290,30 @@ export default function Home() {
 
           {/* 비교 예시 */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
-            <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-5 border border-red-100">
-              <div className="flex items-center gap-2 mb-3">
-                <span className="text-xl">🔥</span>
-                <span className="text-sm font-bold text-red-700 bg-red-100 px-2 py-0.5 rounded-lg">담즙질 ENFJ</span>
+            <ScrollReveal>
+              <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-5 border border-red-100">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="text-xl">🔥</span>
+                  <span className="text-sm font-bold text-red-700 bg-red-100 px-2 py-0.5 rounded-lg">담즙질 ENFJ</span>
+                </div>
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  목표가 생기면 <strong>폭발적으로 외향적</strong>이 됩니다.
+                  팀을 이끌며 결과를 만들어내는 카리스마 리더.
+                </p>
               </div>
-              <p className="text-sm text-gray-700 leading-relaxed">
-                목표가 생기면 <strong>폭발적으로 외향적</strong>이 됩니다.
-                팀을 이끌며 결과를 만들어내는 카리스마 리더.
-              </p>
-            </div>
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-5 border border-blue-100">
-              <div className="flex items-center gap-2 mb-3">
-                <span className="text-xl">🌊</span>
-                <span className="text-sm font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded-lg">우울질 ENFJ</span>
+            </ScrollReveal>
+            <ScrollReveal delay={200}>
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-5 border border-blue-100">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="text-xl">🌊</span>
+                  <span className="text-sm font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded-lg">우울질 ENFJ</span>
+                </div>
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  깊은 공감 속에서 <strong>조용히 이끕니다</strong>.
+                  한 명 한 명의 마음을 움직이는 상담가형 리더.
+                </p>
               </div>
-              <p className="text-sm text-gray-700 leading-relaxed">
-                깊은 공감 속에서 <strong>조용히 이끕니다</strong>.
-                한 명 한 명의 마음을 움직이는 상담가형 리더.
-              </p>
-            </div>
+            </ScrollReveal>
           </div>
 
           <div className="text-center mb-10">
@@ -294,21 +322,24 @@ export default function Home() {
           </div>
 
           {/* Feature Cards */}
-          <div className="grid grid-cols-3 gap-3 mb-12">
-            {[
-              { icon: '🧩', title: '16가지 성격 유형', desc: '인지기능 분석', color: 'bg-indigo-50 border-indigo-100' },
-              { icon: '🧬', title: '기질 12조합', desc: '4기질 × 2 조합', color: 'bg-purple-50 border-purple-100' },
-              { icon: '📖', title: '인생 공략집', desc: '맞춤형 가이드', color: 'bg-pink-50 border-pink-100' },
-            ].map((f) => (
-              <div key={f.title} className={`rounded-2xl p-4 sm:p-5 border text-center ${f.color}`}>
-                <span className="text-2xl block mb-2">{f.icon}</span>
-                <p className="text-sm font-bold text-gray-800">{f.title}</p>
-                <p className="text-xs text-gray-400 mt-0.5">{f.desc}</p>
-              </div>
-            ))}
-          </div>
+          <ScrollReveal>
+            <div className="grid grid-cols-3 gap-3 mb-12">
+              {[
+                { icon: '🧩', title: '16가지 성격 유형', desc: '인지기능 분석', color: 'bg-indigo-50 border-indigo-100' },
+                { icon: '🧬', title: '기질 12조합', desc: '4기질 × 2 조합', color: 'bg-purple-50 border-purple-100' },
+                { icon: '📖', title: '인생 공략집', desc: '맞춤형 가이드', color: 'bg-pink-50 border-pink-100' },
+              ].map((f) => (
+                <div key={f.title} className={`rounded-2xl p-4 sm:p-5 border text-center ${f.color}`}>
+                  <span className="text-2xl block mb-2">{f.icon}</span>
+                  <p className="text-sm font-bold text-gray-800">{f.title}</p>
+                  <p className="text-xs text-gray-400 mt-0.5">{f.desc}</p>
+                </div>
+              ))}
+            </div>
+          </ScrollReveal>
 
           {/* 제공 분석 미리보기 */}
+          <ScrollReveal>
           <div className="bg-gray-50 rounded-2xl p-6 sm:p-8 border border-gray-100 mb-12">
             <h3 className="text-lg font-bold text-gray-800 mb-4 text-center">검사하면 이런 걸 알 수 있어요</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
@@ -327,6 +358,12 @@ export default function Home() {
               ))}
             </div>
           </div>
+          </ScrollReveal>
+
+          {/* 매운맛/순한맛 토글 체험 */}
+          <ScrollReveal>
+            <TonePreview />
+          </ScrollReveal>
 
           {/* 하단 CTA */}
           <div className="bg-gradient-to-br from-indigo-600 to-purple-700 rounded-2xl p-6 sm:p-8 text-center shadow-xl mb-12">
