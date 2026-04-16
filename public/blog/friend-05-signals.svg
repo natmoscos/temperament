@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">손절 시그널 6종 — 너도 느낀 적 있어?</text>
+  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">관계 파손 예고 신호 · MID는 대화 시도, HIGH는 거리 두기 권장</text>
+
+  
+      <g transform="translate(60, 120)">
+        <rect width="540" height="225" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="225" rx="4" fill="#f59e0b"/>
+        <text x="40" y="60" font-size="40">🌊</text>
+        <text x="100" y="55" font-size="20" font-weight="900" fill="#171717">카톡 잠수 7일+</text>
+        <g transform="translate(100, 68)">
+          <rect width="80" height="26" rx="13" fill="#f59e0b"/>
+          <text x="40" y="18" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">MID</text>
+        </g>
+        <text x="40" y="140" font-size="14" font-weight="700" fill="#f59e0b">WHY</text>
+        <text x="40" y="168" font-size="14" font-weight="500" fill="#374151">에너지 고갈 신호일 수도, 관계 재평가 중일 수도</text>
+        <text x="40" y="192" font-size="14" font-weight="500" fill="#374151"></text>
+      </g>
+    
+      <g transform="translate(630, 120)">
+        <rect width="540" height="225" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="225" rx="4" fill="#dc2626"/>
+        <text x="40" y="60" font-size="40">❌</text>
+        <text x="100" y="55" font-size="20" font-weight="900" fill="#171717">약속 3회 연속 취소</text>
+        <g transform="translate(100, 68)">
+          <rect width="80" height="26" rx="13" fill="#dc2626"/>
+          <text x="40" y="18" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">HIGH</text>
+        </g>
+        <text x="40" y="140" font-size="14" font-weight="700" fill="#dc2626">WHY</text>
+        <text x="40" y="168" font-size="14" font-weight="500" fill="#374151">무의식적 회피 시작 — 우선순위에서 밀려나고 있음</text>
+        <text x="40" y="192" font-size="14" font-weight="500" fill="#374151"></text>
+      </g>
+    
+      <g transform="translate(60, 365)">
+        <rect width="540" height="225" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="225" rx="4" fill="#dc2626"/>
+        <text x="40" y="60" font-size="40">🗣</text>
+        <text x="100" y="55" font-size="20" font-weight="900" fill="#171717">내 얘기 다른 사람에 공유</text>
+        <g transform="translate(100, 68)">
+          <rect width="80" height="26" rx="13" fill="#dc2626"/>
+          <text x="40" y="18" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">HIGH</text>
+        </g>
+        <text x="40" y="140" font-size="14" font-weight="700" fill="#dc2626">WHY</text>
+        <text x="40" y="168" font-size="14" font-weight="500" fill="#374151">신뢰 경계 파괴 — 관계의 기본 룰 위반</text>
+        <text x="40" y="192" font-size="14" font-weight="500" fill="#374151"></text>
+      </g>
+    
+      <g transform="translate(630, 365)">
+        <rect width="540" height="225" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="225" rx="4" fill="#f59e0b"/>
+        <text x="40" y="60" font-size="40">🥶</text>
+        <text x="100" y="55" font-size="20" font-weight="900" fill="#171717">성공 말할 때 반응 차가움</text>
+        <g transform="translate(100, 68)">
+          <rect width="80" height="26" rx="13" fill="#f59e0b"/>
+          <text x="40" y="18" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">MID</text>
+        </g>
+        <text x="40" y="140" font-size="14" font-weight="700" fill="#f59e0b">WHY</text>
+        <text x="40" y="168" font-size="14" font-weight="500" fill="#374151">질투·자기 상태 문제, 관계 거리 재조정 필요</text>
+        <text x="40" y="192" font-size="14" font-weight="500" fill="#374151"></text>
+      </g>
+    
+      <g transform="translate(60, 610)">
+        <rect width="540" height="225" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="225" rx="4" fill="#dc2626"/>
+        <text x="40" y="60" font-size="40">🔋</text>
+        <text x="100" y="55" font-size="20" font-weight="900" fill="#171717">만날수록 에너지 고갈</text>
+        <g transform="translate(100, 68)">
+          <rect width="80" height="26" rx="13" fill="#dc2626"/>
+          <text x="40" y="18" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">HIGH</text>
+        </g>
+        <text x="40" y="140" font-size="14" font-weight="700" fill="#dc2626">WHY</text>
+        <text x="40" y="168" font-size="14" font-weight="500" fill="#374151">에너지 뱀파이어 패턴 — 관계의 일방성 확인</text>
+        <text x="40" y="192" font-size="14" font-weight="500" fill="#374151"></text>
+      </g>
+    
+      <g transform="translate(630, 610)">
+        <rect width="540" height="225" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="225" rx="4" fill="#f59e0b"/>
+        <text x="40" y="60" font-size="40">🚪</text>
+        <text x="100" y="55" font-size="20" font-weight="900" fill="#171717">갈등 시 대화 거부</text>
+        <g transform="translate(100, 68)">
+          <rect width="80" height="26" rx="13" fill="#f59e0b"/>
+          <text x="40" y="18" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">MID</text>
+        </g>
+        <text x="40" y="140" font-size="14" font-weight="700" fill="#f59e0b">WHY</text>
+        <text x="40" y="168" font-size="14" font-weight="500" fill="#374151">문제 회피 유형 — 관계 심화는 어려움</text>
+        <text x="40" y="192" font-size="14" font-weight="500" fill="#374151"></text>
+      </g>
+    
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 친구 관계 리포트</text>
+</svg>
