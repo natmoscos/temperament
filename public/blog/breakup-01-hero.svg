@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <defs>
+    <radialGradient id="hG" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#fff"/>
+      <stop offset="100%" stop-color="#fdf2f8"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#hG)"/>
+
+  <!-- Broken hearts scattered -->
+  
+    <g transform="translate(180,220)">
+      <path d="M0,-30 C-24,-60 -60,-40 -60,-10 C-60,30 0,55 0,55 C0,55 60,30 60,-10 C60,-40 24,-60 0,-30 Z" fill="#f59e0b" opacity="0.14"/>
+      <path d="M0,-26 C-20,-52 -52,-35 -52,-8 C-52,26 0,48 0,48 C0,48 52,26 52,-8 C52,-35 20,-52 0,-26 Z" fill="#f59e0b"/>
+      <!-- Crack line -->
+      <path d="M-4,-22 L6,-8 L-8,6 L8,22 L-2,40" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.85"/>
+      <text x="0" y="3" text-anchor="middle" font-size="15" font-weight="800" fill="#fff">ESTP</text>
+      <text x="0" y="72" text-anchor="middle" font-size="13" font-weight="800" fill="#f59e0b">2일</text>
+    </g>
+  
+    <g transform="translate(1020,230)">
+      <path d="M0,-30 C-24,-60 -60,-40 -60,-10 C-60,30 0,55 0,55 C0,55 60,30 60,-10 C60,-40 24,-60 0,-30 Z" fill="#06b6d4" opacity="0.14"/>
+      <path d="M0,-26 C-20,-52 -52,-35 -52,-8 C-52,26 0,48 0,48 C0,48 52,26 52,-8 C52,-35 20,-52 0,-26 Z" fill="#06b6d4"/>
+      <!-- Crack line -->
+      <path d="M-4,-22 L6,-8 L-8,6 L8,22 L-2,40" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.85"/>
+      <text x="0" y="3" text-anchor="middle" font-size="15" font-weight="800" fill="#fff">ENTP</text>
+      <text x="0" y="72" text-anchor="middle" font-size="13" font-weight="800" fill="#06b6d4">4일</text>
+    </g>
+  
+    <g transform="translate(160,490)">
+      <path d="M0,-30 C-24,-60 -60,-40 -60,-10 C-60,30 0,55 0,55 C0,55 60,30 60,-10 C60,-40 24,-60 0,-30 Z" fill="#f43f5e" opacity="0.14"/>
+      <path d="M0,-26 C-20,-52 -52,-35 -52,-8 C-52,26 0,48 0,48 C0,48 52,26 52,-8 C52,-35 20,-52 0,-26 Z" fill="#f43f5e"/>
+      <!-- Crack line -->
+      <path d="M-4,-22 L6,-8 L-8,6 L8,22 L-2,40" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.85"/>
+      <text x="0" y="3" text-anchor="middle" font-size="15" font-weight="800" fill="#fff">ENFP</text>
+      <text x="0" y="72" text-anchor="middle" font-size="13" font-weight="800" fill="#f43f5e">14일</text>
+    </g>
+  
+    <g transform="translate(1040,480)">
+      <path d="M0,-30 C-24,-60 -60,-40 -60,-10 C-60,30 0,55 0,55 C0,55 60,30 60,-10 C60,-40 24,-60 0,-30 Z" fill="#e11d48" opacity="0.14"/>
+      <path d="M0,-26 C-20,-52 -52,-35 -52,-8 C-52,26 0,48 0,48 C0,48 52,26 52,-8 C52,-35 20,-52 0,-26 Z" fill="#e11d48"/>
+      <!-- Crack line -->
+      <path d="M-4,-22 L6,-8 L-8,6 L8,22 L-2,40" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.85"/>
+      <text x="0" y="3" text-anchor="middle" font-size="15" font-weight="800" fill="#fff">INFP</text>
+      <text x="0" y="72" text-anchor="middle" font-size="13" font-weight="800" fill="#e11d48">72일</text>
+    </g>
+  
+    <g transform="translate(200,720)">
+      <path d="M0,-30 C-24,-60 -60,-40 -60,-10 C-60,30 0,55 0,55 C0,55 60,30 60,-10 C60,-40 24,-60 0,-30 Z" fill="#059669" opacity="0.14"/>
+      <path d="M0,-26 C-20,-52 -52,-35 -52,-8 C-52,26 0,48 0,48 C0,48 52,26 52,-8 C52,-35 20,-52 0,-26 Z" fill="#059669"/>
+      <!-- Crack line -->
+      <path d="M-4,-22 L6,-8 L-8,6 L8,22 L-2,40" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.85"/>
+      <text x="0" y="3" text-anchor="middle" font-size="15" font-weight="800" fill="#fff">ISFJ</text>
+      <text x="0" y="72" text-anchor="middle" font-size="13" font-weight="800" fill="#059669">110일</text>
+    </g>
+  
+    <g transform="translate(1010,710)">
+      <path d="M0,-30 C-24,-60 -60,-40 -60,-10 C-60,30 0,55 0,55 C0,55 60,30 60,-10 C60,-40 24,-60 0,-30 Z" fill="#be185d" opacity="0.14"/>
+      <path d="M0,-26 C-20,-52 -52,-35 -52,-8 C-52,26 0,48 0,48 C0,48 52,26 52,-8 C52,-35 20,-52 0,-26 Z" fill="#be185d"/>
+      <!-- Crack line -->
+      <path d="M-4,-22 L6,-8 L-8,6 L8,22 L-2,40" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.85"/>
+      <text x="0" y="3" text-anchor="middle" font-size="15" font-weight="800" fill="#fff">INFJ</text>
+      <text x="0" y="72" text-anchor="middle" font-size="13" font-weight="800" fill="#be185d">180일</text>
+    </g>
+  
+
+  <!-- Center card -->
+  <rect x="290" y="260" width="620" height="360" rx="28" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="600" y="315" text-anchor="middle" font-size="16" font-weight="600" fill="#6b7280" letter-spacing="8">BREAKUP RECOVERY · 2026</text>
+  <text x="600" y="380" text-anchor="middle" font-size="40" font-weight="800" fill="#171717">MBTI 이별 회복 속도 순위</text>
+  <text x="600" y="425" text-anchor="middle" font-size="22" font-weight="700" fill="#be185d">너는 며칠이면 괜찮아져?</text>
+  <line x1="460" y1="455" x2="740" y2="455" stroke="#e5e7eb"/>
+  <text x="600" y="488" text-anchor="middle" font-size="14" font-weight="600" fill="#374151">16유형 × 4가지 이별 반응 × 기질별 회복 공식</text>
+  <text x="600" y="516" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">도어슬램 위험도 · 재결합 확률 · 잠수 vs 분석 vs 새사람 패턴</text>
+  <text x="600" y="556" text-anchor="middle" font-size="13" font-weight="500" fill="#9ca3af">© 192types · 박서연 N=348 리포트</text>
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 이별 회복 리포트</text>
+</svg>
