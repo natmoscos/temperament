@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">4기질별 이혼 위험도 · 주요 원인</text>
+  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">결혼 5~15년차 이혼율 종합 데이터 · 네 기질의 사각지대 확인</text>
+
+  
+      <g transform="translate(60, 120)">
+        <rect width="540" height="350" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="350" rx="4" fill="#f43f5e"/>
+        <text x="30" y="45" font-size="20" font-weight="900" fill="#f43f5e">다혈질 이혼 리스크</text>
+        <text x="30" y="70" font-size="12" font-weight="600" fill="#6b7280">ENFP · ESFP · ESFJ · ENFJ</text>
+
+        <g transform="translate(30, 90)">
+          <rect width="75" height="28" rx="14" fill="#f59e0b"/>
+          <text x="37.5" y="20" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">MID</text>
+          <text x="90" y="20" font-size="16" font-weight="800" fill="#f59e0b">45%</text>
+          <text x="150" y="20" font-size="12" font-weight="600" fill="#6b7280">위험도</text>
+        </g>
+
+        <text x="30" y="150" font-size="13" font-weight="800" fill="#374151">핵심 원인</text>
+        <text x="30" y="175" font-size="13" font-weight="500" fill="#374151">감정 기복 · 권태 · 관계 소진</text>
+
+        <text x="30" y="210" font-size="13" font-weight="800" fill="#374151">위기 트리거</text>
+        
+          <g transform="translate(30, 240)">
+            <circle cx="6" cy="-4" r="5" fill="#f43f5e"/>
+            <text x="20" y="0" font-size="12" font-weight="500" fill="#374151">루틴 권태로 새로운 자극 갈망</text>
+          </g>
+        
+          <g transform="translate(30, 272)">
+            <circle cx="6" cy="-4" r="5" fill="#f43f5e"/>
+            <text x="20" y="0" font-size="12" font-weight="500" fill="#374151">상대 냉담 반응에 급격 상처</text>
+          </g>
+        
+          <g transform="translate(30, 304)">
+            <circle cx="6" cy="-4" r="5" fill="#f43f5e"/>
+            <text x="20" y="0" font-size="12" font-weight="500" fill="#374151">과도한 감정 노출로 피로 누적</text>
+          </g>
+        
+      </g>
+    
+      <g transform="translate(630, 120)">
+        <rect width="540" height="350" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="350" rx="4" fill="#0891b2"/>
+        <text x="30" y="45" font-size="20" font-weight="900" fill="#0891b2">담즙질 이혼 리스크</text>
+        <text x="30" y="70" font-size="12" font-weight="600" fill="#6b7280">ENTJ · ESTJ · ENTP · ESTP</text>
+
+        <g transform="translate(30, 90)">
+          <rect width="75" height="28" rx="14" fill="#dc2626"/>
+          <text x="37.5" y="20" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">HIGH</text>
+          <text x="90" y="20" font-size="16" font-weight="800" fill="#dc2626">58%</text>
+          <text x="150" y="20" font-size="12" font-weight="600" fill="#6b7280">위험도</text>
+        </g>
+
+        <text x="30" y="150" font-size="13" font-weight="800" fill="#374151">핵심 원인</text>
+        <text x="30" y="175" font-size="13" font-weight="500" fill="#374151">감정 표현 부족 · 통제 욕구 · 일 우선</text>
+
+        <text x="30" y="210" font-size="13" font-weight="800" fill="#374151">위기 트리거</text>
+        
+          <g transform="translate(30, 240)">
+            <circle cx="6" cy="-4" r="5" fill="#0891b2"/>
+            <text x="20" y="0" font-size="12" font-weight="500" fill="#374151">감정 대화 거부로 쌓인 벽</text>
+          </g>
+        
+          <g transform="translate(30, 272)">
+            <circle cx="6" cy="-4" r="5" fill="#0891b2"/>
+            <text x="20" y="0" font-size="12" font-weight="500" fill="#374151">가정 운영을 경영처럼 관리</text>
+          </g>
+        
+          <g transform="translate(30, 304)">
+            <circle cx="6" cy="-4" r="5" fill="#0891b2"/>
+            <text x="20" y="0" font-size="12" font-weight="500" fill="#374151">성과 정체기에 결혼 재평가</text>
+          </g>
+        
+      </g>
+    
+      <g transform="translate(60, 490)">
+        <rect width="540" height="350" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="350" rx="4" fill="#059669"/>
+        <text x="30" y="45" font-size="20" font-weight="900" fill="#059669">점액질 이혼 리스크</text>
+        <text x="30" y="70" font-size="12" font-weight="600" fill="#6b7280">ISFJ · ISTJ · INFP · ISFP</text>
+
+        <g transform="translate(30, 90)">
+          <rect width="75" height="28" rx="14" fill="#16a34a"/>
+          <text x="37.5" y="20" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">LOW</text>
+          <text x="90" y="20" font-size="16" font-weight="800" fill="#16a34a">22%</text>
+          <text x="150" y="20" font-size="12" font-weight="600" fill="#6b7280">위험도</text>
+        </g>
+
+        <text x="30" y="150" font-size="13" font-weight="800" fill="#374151">핵심 원인</text>
+        <text x="30" y="175" font-size="13" font-weight="500" fill="#374151">도어슬램 · 참다가 터짐</text>
+
+        <text x="30" y="210" font-size="13" font-weight="800" fill="#374151">위기 트리거</text>
+        
+          <g transform="translate(30, 240)">
+            <circle cx="6" cy="-4" r="5" fill="#059669"/>
+            <text x="20" y="0" font-size="12" font-weight="500" fill="#374151">장기 참음 끝 일방적 결심</text>
+          </g>
+        
+          <g transform="translate(30, 272)">
+            <circle cx="6" cy="-4" r="5" fill="#059669"/>
+            <text x="20" y="0" font-size="12" font-weight="500" fill="#374151">감정 표현 부족으로 누적된 오해</text>
+          </g>
+        
+          <g transform="translate(30, 304)">
+            <circle cx="6" cy="-4" r="5" fill="#059669"/>
+            <text x="20" y="0" font-size="12" font-weight="500" fill="#374151">변화 회피로 관계 정체</text>
+          </g>
+        
+      </g>
+    
+      <g transform="translate(630, 490)">
+        <rect width="540" height="350" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="350" rx="4" fill="#0e7490"/>
+        <text x="30" y="45" font-size="20" font-weight="900" fill="#0e7490">우울질 이혼 리스크</text>
+        <text x="30" y="70" font-size="12" font-weight="600" fill="#6b7280">INTJ · INFJ · INTP · ISTP</text>
+
+        <g transform="translate(30, 90)">
+          <rect width="75" height="28" rx="14" fill="#f59e0b"/>
+          <text x="37.5" y="20" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">MID</text>
+          <text x="90" y="20" font-size="16" font-weight="800" fill="#f59e0b">42%</text>
+          <text x="150" y="20" font-size="12" font-weight="600" fill="#6b7280">위험도</text>
+        </g>
+
+        <text x="30" y="150" font-size="13" font-weight="800" fill="#374151">핵심 원인</text>
+        <text x="30" y="175" font-size="13" font-weight="500" fill="#374151">감정 거리 · 이상 갭 · 독립 욕구</text>
+
+        <text x="30" y="210" font-size="13" font-weight="800" fill="#374151">위기 트리거</text>
+        
+          <g transform="translate(30, 240)">
+            <circle cx="6" cy="-4" r="5" fill="#0e7490"/>
+            <text x="20" y="0" font-size="12" font-weight="500" fill="#374151">감정 연결 부재로 냉전</text>
+          </g>
+        
+          <g transform="translate(30, 272)">
+            <circle cx="6" cy="-4" r="5" fill="#0e7490"/>
+            <text x="20" y="0" font-size="12" font-weight="500" fill="#374151">이상-현실 갭 확대</text>
+          </g>
+        
+          <g transform="translate(30, 304)">
+            <circle cx="6" cy="-4" r="5" fill="#0e7490"/>
+            <text x="20" y="0" font-size="12" font-weight="500" fill="#374151">독립 욕구로 공유 거부</text>
+          </g>
+        
+      </g>
+    
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 결혼 만족도 리포트</text>
+</svg>

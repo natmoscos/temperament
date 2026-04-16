@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">부부 갈등 6대 포인트 지도</text>
+  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">인지기능 · 기질 차이로 발생하는 전형적 갈등 영역 · 미리 알면 60% 예방</text>
+
+  
+      <g transform="translate(60, 120)">
+        <rect width="1080" height="100" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="100" rx="4" fill="#dc2626"/>
+        <text x="40" y="45" font-size="22" font-weight="800" fill="#171717">💰 돈 · 재정</text>
+        <g transform="translate(280, 25)">
+          <rect width="75" height="28" rx="14" fill="#dc2626"/>
+          <text x="37.5" y="20" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">HIGH</text>
+        </g>
+        <text x="40" y="78" font-size="13" font-weight="500" fill="#6b7280">NT vs SP: 장기 투자 vs 현재 소비 / SJ vs NF: 저축 vs 경험 지출</text>
+      </g>
+    
+      <g transform="translate(60, 240)">
+        <rect width="1080" height="100" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="100" rx="4" fill="#dc2626"/>
+        <text x="40" y="45" font-size="22" font-weight="800" fill="#171717">🏡 집안일 분담</text>
+        <g transform="translate(280, 25)">
+          <rect width="75" height="28" rx="14" fill="#dc2626"/>
+          <text x="37.5" y="20" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">HIGH</text>
+        </g>
+        <text x="40" y="78" font-size="13" font-weight="500" fill="#6b7280">SJ(루틴 기대) vs NF/SP(융통성 선호) / J vs P 완벽 기준 차이</text>
+      </g>
+    
+      <g transform="translate(60, 360)">
+        <rect width="1080" height="100" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="100" rx="4" fill="#dc2626"/>
+        <text x="40" y="45" font-size="22" font-weight="800" fill="#171717">👶 자녀 양육</text>
+        <g transform="translate(280, 25)">
+          <rect width="75" height="28" rx="14" fill="#dc2626"/>
+          <text x="37.5" y="20" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">HIGH</text>
+        </g>
+        <text x="40" y="78" font-size="13" font-weight="500" fill="#6b7280">NF(감정 공감) vs NT(독립 훈련) / SJ(규칙) vs SP(자유) 갈등</text>
+      </g>
+    
+      <g transform="translate(60, 480)">
+        <rect width="1080" height="100" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="100" rx="4" fill="#f59e0b"/>
+        <text x="40" y="45" font-size="22" font-weight="800" fill="#171717">💬 감정 표현</text>
+        <g transform="translate(280, 25)">
+          <rect width="75" height="28" rx="14" fill="#f59e0b"/>
+          <text x="37.5" y="20" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">MID</text>
+        </g>
+        <text x="40" y="78" font-size="13" font-weight="500" fill="#6b7280">F 유형(언어화 요구) vs T 유형(행동 증명) 표현 방식 차이</text>
+      </g>
+    
+      <g transform="translate(60, 600)">
+        <rect width="1080" height="100" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="100" rx="4" fill="#f59e0b"/>
+        <text x="40" y="45" font-size="22" font-weight="800" fill="#171717">🛋 휴식 · 여가</text>
+        <g transform="translate(280, 25)">
+          <rect width="75" height="28" rx="14" fill="#f59e0b"/>
+          <text x="37.5" y="20" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">MID</text>
+        </g>
+        <text x="40" y="78" font-size="13" font-weight="500" fill="#6b7280">E(외출 · 사람) vs I(집 · 혼자) 에너지 충전 방식</text>
+      </g>
+    
+      <g transform="translate(60, 720)">
+        <rect width="1080" height="100" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="100" rx="4" fill="#f59e0b"/>
+        <text x="40" y="45" font-size="22" font-weight="800" fill="#171717">👪 시가/친가 관계</text>
+        <g transform="translate(280, 25)">
+          <rect width="75" height="28" rx="14" fill="#f59e0b"/>
+          <text x="37.5" y="20" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">MID</text>
+        </g>
+        <text x="40" y="78" font-size="13" font-weight="500" fill="#6b7280">F(감정 부담) vs T(의무 이행) / J(정기 방문) vs P(필요시)</text>
+      </g>
+    
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 결혼 만족도 리포트</text>
+</svg>
