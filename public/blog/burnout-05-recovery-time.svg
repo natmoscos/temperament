@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="#171717">유형별 번아웃 회복 기간 (평균)</text>
+  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">완전 소진 → 평소 컨디션 복귀까지 · ISTP 3일, ENFJ 58일</text>
+
+  
+      <text x="45" y="143" font-size="14" font-weight="700" fill="#6b7280">01</text>
+      <text x="90" y="143" font-size="16" font-weight="800" fill="#d97706">ISTP</text>
+      <rect x="210" y="125" width="41.5" height="26" rx="13" fill="#16a34a" opacity="0.92"/>
+      <text x="239.5" y="143" text-anchor="end" font-size="13" font-weight="800" fill="#fff">3일</text>
+    
+      <text x="45" y="188" font-size="14" font-weight="700" fill="#6b7280">02</text>
+      <text x="90" y="188" font-size="16" font-weight="800" fill="#0891b2">INTP</text>
+      <rect x="210" y="170" width="69.16666666666666" height="26" rx="13" fill="#16a34a" opacity="0.92"/>
+      <text x="267.16666666666663" y="188" text-anchor="end" font-size="13" font-weight="800" fill="#fff">5일</text>
+    
+      <text x="45" y="233" font-size="14" font-weight="700" fill="#6b7280">03</text>
+      <text x="90" y="233" font-size="16" font-weight="800" fill="#0891b2">ENTP</text>
+      <rect x="210" y="215" width="96.83333333333333" height="26" rx="13" fill="#16a34a" opacity="0.92"/>
+      <text x="294.8333333333333" y="233" text-anchor="end" font-size="13" font-weight="800" fill="#fff">7일</text>
+    
+      <text x="45" y="278" font-size="14" font-weight="700" fill="#6b7280">04</text>
+      <text x="90" y="278" font-size="16" font-weight="800" fill="#d97706">ESTP</text>
+      <rect x="210" y="260" width="110.66666666666667" height="26" rx="13" fill="#84cc16" opacity="0.92"/>
+      <text x="308.6666666666667" y="278" text-anchor="end" font-size="13" font-weight="800" fill="#fff">8일</text>
+    
+      <text x="45" y="323" font-size="14" font-weight="700" fill="#6b7280">05</text>
+      <text x="90" y="323" font-size="16" font-weight="800" fill="#0891b2">INTJ</text>
+      <rect x="210" y="305" width="138.33333333333331" height="26" rx="13" fill="#84cc16" opacity="0.92"/>
+      <text x="336.3333333333333" y="323" text-anchor="end" font-size="13" font-weight="800" fill="#fff">10일</text>
+    
+      <text x="45" y="368" font-size="14" font-weight="700" fill="#6b7280">06</text>
+      <text x="90" y="368" font-size="16" font-weight="800" fill="#0891b2">ENTJ</text>
+      <rect x="210" y="350" width="152.16666666666666" height="26" rx="13" fill="#84cc16" opacity="0.92"/>
+      <text x="350.16666666666663" y="368" text-anchor="end" font-size="13" font-weight="800" fill="#fff">11일</text>
+    
+      <text x="45" y="413" font-size="14" font-weight="700" fill="#6b7280">07</text>
+      <text x="90" y="413" font-size="16" font-weight="800" fill="#d97706">ISFP</text>
+      <rect x="210" y="395" width="166" height="26" rx="13" fill="#84cc16" opacity="0.92"/>
+      <text x="364" y="413" text-anchor="end" font-size="13" font-weight="800" fill="#fff">12일</text>
+    
+      <text x="45" y="458" font-size="14" font-weight="700" fill="#6b7280">08</text>
+      <text x="90" y="458" font-size="16" font-weight="800" fill="#d97706">ESFP</text>
+      <rect x="210" y="440" width="193.66666666666666" height="26" rx="13" fill="#84cc16" opacity="0.92"/>
+      <text x="391.66666666666663" y="458" text-anchor="end" font-size="13" font-weight="800" fill="#fff">14일</text>
+    
+      <text x="45" y="503" font-size="14" font-weight="700" fill="#6b7280">09</text>
+      <text x="90" y="503" font-size="16" font-weight="800" fill="#059669">ISTJ</text>
+      <rect x="210" y="485" width="249" height="26" rx="13" fill="#eab308" opacity="0.92"/>
+      <text x="447" y="503" text-anchor="end" font-size="13" font-weight="800" fill="#fff">18일</text>
+    
+      <text x="45" y="548" font-size="14" font-weight="700" fill="#6b7280">10</text>
+      <text x="90" y="548" font-size="16" font-weight="800" fill="#059669">ESTJ</text>
+      <rect x="210" y="530" width="276.66666666666663" height="26" rx="13" fill="#eab308" opacity="0.92"/>
+      <text x="474.66666666666663" y="548" text-anchor="end" font-size="13" font-weight="800" fill="#fff">20일</text>
+    
+      <text x="45" y="593" font-size="14" font-weight="700" fill="#6b7280">11</text>
+      <text x="90" y="593" font-size="16" font-weight="800" fill="#e11d48">ENFP</text>
+      <rect x="210" y="575" width="332" height="26" rx="13" fill="#eab308" opacity="0.92"/>
+      <text x="530" y="593" text-anchor="end" font-size="13" font-weight="800" fill="#fff">24일</text>
+    
+      <text x="45" y="638" font-size="14" font-weight="700" fill="#6b7280">12</text>
+      <text x="90" y="638" font-size="16" font-weight="800" fill="#e11d48">INFP</text>
+      <rect x="210" y="620" width="442.6666666666667" height="26" rx="13" fill="#f59e0b" opacity="0.92"/>
+      <text x="640.6666666666667" y="638" text-anchor="end" font-size="13" font-weight="800" fill="#fff">32일</text>
+    
+      <text x="45" y="683" font-size="14" font-weight="700" fill="#6b7280">13</text>
+      <text x="90" y="683" font-size="16" font-weight="800" fill="#059669">ESFJ</text>
+      <rect x="210" y="665" width="498" height="26" rx="13" fill="#f59e0b" opacity="0.92"/>
+      <text x="696" y="683" text-anchor="end" font-size="13" font-weight="800" fill="#fff">36일</text>
+    
+      <text x="45" y="728" font-size="14" font-weight="700" fill="#6b7280">14</text>
+      <text x="90" y="728" font-size="16" font-weight="800" fill="#059669">ISFJ</text>
+      <rect x="210" y="710" width="581" height="26" rx="13" fill="#dc2626" opacity="0.92"/>
+      <text x="779" y="728" text-anchor="end" font-size="13" font-weight="800" fill="#fff">42일</text>
+    
+      <text x="45" y="773" font-size="14" font-weight="700" fill="#6b7280">15</text>
+      <text x="90" y="773" font-size="16" font-weight="800" fill="#e11d48">INFJ</text>
+      <rect x="210" y="755" width="719.3333333333334" height="26" rx="13" fill="#dc2626" opacity="0.92"/>
+      <text x="917.3333333333334" y="773" text-anchor="end" font-size="13" font-weight="800" fill="#fff">52일</text>
+    
+      <text x="45" y="818" font-size="14" font-weight="700" fill="#6b7280">16</text>
+      <text x="90" y="818" font-size="16" font-weight="800" fill="#e11d48">ENFJ</text>
+      <rect x="210" y="800" width="802.3333333333334" height="26" rx="13" fill="#dc2626" opacity="0.92"/>
+      <text x="1000.3333333333334" y="818" text-anchor="end" font-size="13" font-weight="800" fill="#fff">58일</text>
+    
+
+  <!-- Legend -->
+  <g transform="translate(280, 830)">
+    
+      <rect x="0" y="0" width="14" height="14" rx="3" fill="#16a34a"/>
+      <text x="22" y="12" font-size="11" font-weight="700" fill="#374151">빠름 ~7일</text>
+    
+      <rect x="130" y="0" width="14" height="14" rx="3" fill="#84cc16"/>
+      <text x="152" y="12" font-size="11" font-weight="700" fill="#374151">보통 8~15일</text>
+    
+      <rect x="260" y="0" width="14" height="14" rx="3" fill="#eab308"/>
+      <text x="282" y="12" font-size="11" font-weight="700" fill="#374151">중간 16~25일</text>
+    
+      <rect x="390" y="0" width="14" height="14" rx="3" fill="#f59e0b"/>
+      <text x="412" y="12" font-size="11" font-weight="700" fill="#374151">느림 26~40일</text>
+    
+      <rect x="520" y="0" width="14" height="14" rx="3" fill="#dc2626"/>
+      <text x="542" y="12" font-size="11" font-weight="700" fill="#374151">매우 느림 40일+</text>
+    
+  </g>
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 번아웃 리포트</text>
+</svg>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <defs>
+    <radialGradient id="hG" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#fff"/>
+      <stop offset="100%" stop-color="#fef2f2"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#hG)"/>
+
+  <!-- Flame/ashes scattered -->
+  
+    <circle cx="180" cy="230" r="58" fill="#dc2626" opacity="0.12"/>
+    <circle cx="180" cy="230" r="46" fill="#dc2626"/>
+    <text x="180" y="236" text-anchor="middle" font-size="18.400000000000002" font-weight="800" fill="#fff">ENFJ</text>
+  
+    <circle cx="1020" cy="210" r="56" fill="#dc2626" opacity="0.12"/>
+    <circle cx="1020" cy="210" r="44" fill="#dc2626"/>
+    <text x="1020" y="216" text-anchor="middle" font-size="17.6" font-weight="800" fill="#fff">INFJ</text>
+  
+    <circle cx="130" cy="490" r="52" fill="#991b1b" opacity="0.12"/>
+    <circle cx="130" cy="490" r="40" fill="#991b1b"/>
+    <text x="130" y="496" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">ISFJ</text>
+  
+    <circle cx="1080" cy="480" r="54" fill="#f59e0b" opacity="0.12"/>
+    <circle cx="1080" cy="480" r="42" fill="#f59e0b"/>
+    <text x="1080" y="486" text-anchor="middle" font-size="16.8" font-weight="800" fill="#fff">INFP</text>
+  
+    <circle cx="200" cy="720" r="58" fill="#f59e0b" opacity="0.12"/>
+    <circle cx="200" cy="720" r="46" fill="#f59e0b"/>
+    <text x="200" y="726" text-anchor="middle" font-size="18.400000000000002" font-weight="800" fill="#fff">ESFJ</text>
+  
+    <circle cx="1010" cy="710" r="56" fill="#16a34a" opacity="0.12"/>
+    <circle cx="1010" cy="710" r="44" fill="#16a34a"/>
+    <text x="1010" y="716" text-anchor="middle" font-size="17.6" font-weight="800" fill="#fff">ISTP</text>
+  
+
+  <!-- Flame emoji scattered -->
+  <text x="380" y="270" font-size="40" opacity="0.25">🔥</text>
+  <text x="820" y="360" font-size="36" opacity="0.22">🔥</text>
+  <text x="440" y="640" font-size="32" opacity="0.2">🔥</text>
+  <text x="780" y="650" font-size="42" opacity="0.22">🔥</text>
+
+  <!-- Center card -->
+  <rect x="290" y="280" width="620" height="340" rx="28" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="600" y="335" text-anchor="middle" font-size="16" font-weight="600" fill="#6b7280" letter-spacing="9">BURNOUT REPORT · 2026</text>
+  <text x="600" y="400" text-anchor="middle" font-size="42" font-weight="800" fill="#171717">MBTI 번아웃 취약도 순위</text>
+  <text x="600" y="442" text-anchor="middle" font-size="22" font-weight="700" fill="#dc2626">네가 무너지는 진짜 포인트</text>
+  <line x1="460" y1="472" x2="740" y2="472" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="600" y="505" text-anchor="middle" font-size="14" font-weight="600" fill="#374151">16유형 × 4기질로 본 번아웃 취약점과 회복 공식</text>
+  <text x="600" y="532" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">ENFJ 93 · ISFJ 88 · ISTP 28 · INTP 34</text>
+  <text x="600" y="572" text-anchor="middle" font-size="13" font-weight="500" fill="#9ca3af">© 192types · 박서연의 현장 리포트</text>
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 번아웃 리포트</text>
+</svg>
