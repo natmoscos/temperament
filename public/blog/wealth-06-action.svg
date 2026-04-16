@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="#171717">기질별 20~60대 부 축적 로드맵</text>
+  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">네 유형에 맞는 연령대별 실행 체크리스트</text>
+
+  
+      <g transform="translate(60,115)">
+        <rect width="520" height="340" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="340" rx="4" fill="#0891b2"/>
+        <text x="28" y="42" font-size="20" font-weight="800" fill="#0891b2">🔬 NT 부 축적 플랜</text>
+        <text x="28" y="66" font-size="12" font-weight="600" fill="#6b7280">INTJ · INTP · ENTJ · ENTP</text>
+        
+          <text x="28" y="115" font-size="13" font-weight="600" fill="#374151">① 20대: 창업·고연봉 전문직 베이스 구축</text>
+        
+          <text x="28" y="167" font-size="13" font-weight="600" fill="#374151">② 30대: 지분/주식 복리 집중 (재투자 70%+)</text>
+        
+          <text x="28" y="219" font-size="13" font-weight="600" fill="#374151">③ 40대: 사업 레버리지 · 인재 영입</text>
+        
+          <text x="28" y="271" font-size="13" font-weight="600" fill="#374151">④ 50대+: 장기 복리 폭발 · 은퇴도 장기 관점</text>
+        
+      </g>
+    
+      <g transform="translate(620,115)">
+        <rect width="520" height="340" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="340" rx="4" fill="#f43f5e"/>
+        <text x="28" y="42" font-size="20" font-weight="800" fill="#f43f5e">✨ NF 부 축적 플랜</text>
+        <text x="28" y="66" font-size="12" font-weight="600" fill="#6b7280">INFJ · INFP · ENFJ · ENFP</text>
+        
+          <text x="28" y="115" font-size="13" font-weight="600" fill="#374151">① 20대: 감정 소비 방지 · 자동이체 시스템</text>
+        
+          <text x="28" y="167" font-size="13" font-weight="600" fill="#374151">② 30대: 브랜드/콘텐츠 구축 · 의미 소득</text>
+        
+          <text x="28" y="219" font-size="13" font-weight="600" fill="#374151">③ 40대: 개인 브랜드 폭발 · 콘텐츠 복리</text>
+        
+          <text x="28" y="271" font-size="13" font-weight="600" fill="#374151">④ 50대+: 저술·강연·멘토 2모작</text>
+        
+      </g>
+    
+      <g transform="translate(60,490)">
+        <rect width="520" height="340" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="340" rx="4" fill="#059669"/>
+        <text x="28" y="42" font-size="20" font-weight="800" fill="#059669">🏦 SJ 부 축적 플랜</text>
+        <text x="28" y="66" font-size="12" font-weight="600" fill="#6b7280">ISTJ · ISFJ · ESTJ · ESFJ</text>
+        
+          <text x="28" y="115" font-size="13" font-weight="600" fill="#374151">① 20대: 안정 본업 + 꾸준 저축 30%+</text>
+        
+          <text x="28" y="167" font-size="13" font-weight="600" fill="#374151">② 30대: 거주 부동산 · 배당주 복리</text>
+        
+          <text x="28" y="219" font-size="13" font-weight="600" fill="#374151">③ 40대: 자산 1순위 · 리밸런싱 루틴</text>
+        
+          <text x="28" y="271" font-size="13" font-weight="600" fill="#374151">④ 50대+: 연금 + 배당 · 안정 은퇴</text>
+        
+      </g>
+    
+      <g transform="translate(620,490)">
+        <rect width="520" height="340" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="340" rx="4" fill="#d97706"/>
+        <text x="28" y="42" font-size="20" font-weight="800" fill="#d97706">🚀 SP 부 축적 플랜</text>
+        <text x="28" y="66" font-size="12" font-weight="600" fill="#6b7280">ISTP · ISFP · ESTP · ESFP</text>
+        
+          <text x="28" y="115" font-size="13" font-weight="600" fill="#374151">① 20대: 현장 경험 축적 + 비상금 확보</text>
+        
+          <text x="28" y="167" font-size="13" font-weight="600" fill="#374151">② 30대: 세일즈·부동산·사업체 기회 포착</text>
+        
+          <text x="28" y="219" font-size="13" font-weight="600" fill="#374151">③ 40대: 실전 자산 복수화 · 부동산 레버리지</text>
+        
+          <text x="28" y="271" font-size="13" font-weight="600" fill="#374151">④ 50대+: 패시브 전환 · 현금흐름 자산</text>
+        
+      </g>
+    
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 경제학 리포트</text>
+</svg>

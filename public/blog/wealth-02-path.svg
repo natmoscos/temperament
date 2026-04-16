@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">16유형 최적 부 축적 경로</text>
+  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">주기능 강점 기반 · 추천 소득 루트 + 자산 포트폴리오</text>
+
+  
+      <g transform="translate(60, 110)">
+        <rect width="540" height="82" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="82" rx="4" fill="#0891b2"/>
+
+        <g transform="translate(25, 20)">
+          <rect width="70" height="40" rx="10" fill="#0891b2"/>
+          <text x="35" y="28" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">INTJ</text>
+        </g>
+
+        <text x="110" y="30" font-size="12" font-weight="800" fill="#0891b2">소득 루트</text>
+        <text x="110" y="50" font-size="12" font-weight="600" fill="#374151">창업 · 지분 · 장기 집중 투자</text>
+
+        <text x="110" y="65" font-size="10" font-weight="800" fill="#0891b2">주 자산</text>
+        <text x="170" y="65" font-size="10" font-weight="500" fill="#6b7280">기업 지분 · 인덱스 · 부동산</text>
+      </g>
+    
+      <g transform="translate(620, 110)">
+        <rect width="540" height="82" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="82" rx="4" fill="#0891b2"/>
+
+        <g transform="translate(25, 20)">
+          <rect width="70" height="40" rx="10" fill="#0891b2"/>
+          <text x="35" y="28" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">INTP</text>
+        </g>
+
+        <text x="110" y="30" font-size="12" font-weight="800" fill="#0891b2">소득 루트</text>
+        <text x="110" y="50" font-size="12" font-weight="600" fill="#374151">전문 프리랜서 · 저작권 · 강의</text>
+
+        <text x="110" y="65" font-size="10" font-weight="800" fill="#0891b2">주 자산</text>
+        <text x="170" y="65" font-size="10" font-weight="500" fill="#6b7280">개인 브랜드 · 저작권 · 주식</text>
+      </g>
+    
+      <g transform="translate(60, 202)">
+        <rect width="540" height="82" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="82" rx="4" fill="#0891b2"/>
+
+        <g transform="translate(25, 20)">
+          <rect width="70" height="40" rx="10" fill="#0891b2"/>
+          <text x="35" y="28" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">ENTJ</text>
+        </g>
+
+        <text x="110" y="30" font-size="12" font-weight="800" fill="#0891b2">소득 루트</text>
+        <text x="110" y="50" font-size="12" font-weight="600" fill="#374151">창업 · CEO · M&amp;A</text>
+
+        <text x="110" y="65" font-size="10" font-weight="800" fill="#0891b2">주 자산</text>
+        <text x="170" y="65" font-size="10" font-weight="500" fill="#6b7280">기업 지분 · 부동산 · 사업체</text>
+      </g>
+    
+      <g transform="translate(620, 202)">
+        <rect width="540" height="82" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="82" rx="4" fill="#0891b2"/>
+
+        <g transform="translate(25, 20)">
+          <rect width="70" height="40" rx="10" fill="#0891b2"/>
+          <text x="35" y="28" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">ENTP</text>
+        </g>
+
+        <text x="110" y="30" font-size="12" font-weight="800" fill="#0891b2">소득 루트</text>
+        <text x="110" y="50" font-size="12" font-weight="600" fill="#374151">시리얼 창업 · 여러 사업</text>
+
+        <text x="110" y="65" font-size="10" font-weight="800" fill="#0891b2">주 자산</text>
+        <text x="170" y="65" font-size="10" font-weight="500" fill="#6b7280">스타트업 지분 · 파트너 투자</text>
+      </g>
+    
+      <g transform="translate(60, 294)">
+        <rect width="540" height="82" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="82" rx="4" fill="#e11d48"/>
+
+        <g transform="translate(25, 20)">
+          <rect width="70" height="40" rx="10" fill="#e11d48"/>
+          <text x="35" y="28" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">INFJ</text>
+        </g>
+
+        <text x="110" y="30" font-size="12" font-weight="800" fill="#e11d48">소득 루트</text>
+        <text x="110" y="50" font-size="12" font-weight="600" fill="#374151">저술 · 상담 · 의미 브랜드</text>
+
+        <text x="110" y="65" font-size="10" font-weight="800" fill="#e11d48">주 자산</text>
+        <text x="170" y="65" font-size="10" font-weight="500" fill="#6b7280">저작권 · 클래스 · 소자본</text>
+      </g>
+    
+      <g transform="translate(620, 294)">
+        <rect width="540" height="82" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="82" rx="4" fill="#e11d48"/>
+
+        <g transform="translate(25, 20)">
+          <rect width="70" height="40" rx="10" fill="#e11d48"/>
+          <text x="35" y="28" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">INFP</text>
+        </g>
+
+        <text x="110" y="30" font-size="12" font-weight="800" fill="#e11d48">소득 루트</text>
+        <text x="110" y="50" font-size="12" font-weight="600" fill="#374151">콘텐츠 · 작가 · 치료사</text>
+
+        <text x="110" y="65" font-size="10" font-weight="800" fill="#e11d48">주 자산</text>
+        <text x="170" y="65" font-size="10" font-weight="500" fill="#6b7280">저작권 · 스트리밍 · 아트</text>
+      </g>
+    
+      <g transform="translate(60, 386)">
+        <rect width="540" height="82" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="82" rx="4" fill="#e11d48"/>
+
+        <g transform="translate(25, 20)">
+          <rect width="70" height="40" rx="10" fill="#e11d48"/>
+          <text x="35" y="28" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">ENFJ</text>
+        </g>
+
+        <text x="110" y="30" font-size="12" font-weight="800" fill="#e11d48">소득 루트</text>
+        <text x="110" y="50" font-size="12" font-weight="600" fill="#374151">HR · 교육 · 강연 · 리더십</text>
+
+        <text x="110" y="65" font-size="10" font-weight="800" fill="#e11d48">주 자산</text>
+        <text x="170" y="65" font-size="10" font-weight="500" fill="#6b7280">브랜드 · 강연료 · 지분</text>
+      </g>
+    
+      <g transform="translate(620, 386)">
+        <rect width="540" height="82" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="82" rx="4" fill="#e11d48"/>
+
+        <g transform="translate(25, 20)">
+          <rect width="70" height="40" rx="10" fill="#e11d48"/>
+          <text x="35" y="28" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">ENFP</text>
+        </g>
+
+        <text x="110" y="30" font-size="12" font-weight="800" fill="#e11d48">소득 루트</text>
+        <text x="110" y="50" font-size="12" font-weight="600" fill="#374151">마케팅 · 크리에이티브 · 미디어</text>
+
+        <text x="110" y="65" font-size="10" font-weight="800" fill="#e11d48">주 자산</text>
+        <text x="170" y="65" font-size="10" font-weight="500" fill="#6b7280">SNS 브랜드 · 광고 · 스타트업</text>
+      </g>
+    
+      <g transform="translate(60, 478)">
+        <rect width="540" height="82" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="82" rx="4" fill="#059669"/>
+
+        <g transform="translate(25, 20)">
+          <rect width="70" height="40" rx="10" fill="#059669"/>
+          <text x="35" y="28" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">ISTJ</text>
+        </g>
+
+        <text x="110" y="30" font-size="12" font-weight="800" fill="#059669">소득 루트</text>
+        <text x="110" y="50" font-size="12" font-weight="600" fill="#374151">전문직 · 꾸준 저축 · 부동산</text>
+
+        <text x="110" y="65" font-size="10" font-weight="800" fill="#059669">주 자산</text>
+        <text x="170" y="65" font-size="10" font-weight="500" fill="#6b7280">예금 · 부동산 · 배당주</text>
+      </g>
+    
+      <g transform="translate(620, 478)">
+        <rect width="540" height="82" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="82" rx="4" fill="#059669"/>
+
+        <g transform="translate(25, 20)">
+          <rect width="70" height="40" rx="10" fill="#059669"/>
+          <text x="35" y="28" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">ISFJ</text>
+        </g>
+
+        <text x="110" y="30" font-size="12" font-weight="800" fill="#059669">소득 루트</text>
+        <text x="110" y="50" font-size="12" font-weight="600" fill="#374151">공무원 · 간호 · 교육 · 안정</text>
+
+        <text x="110" y="65" font-size="10" font-weight="800" fill="#059669">주 자산</text>
+        <text x="170" y="65" font-size="10" font-weight="500" fill="#6b7280">예금 · 연금 · 배당주</text>
+      </g>
+    
+      <g transform="translate(60, 570)">
+        <rect width="540" height="82" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="82" rx="4" fill="#059669"/>
+
+        <g transform="translate(25, 20)">
+          <rect width="70" height="40" rx="10" fill="#059669"/>
+          <text x="35" y="28" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">ESTJ</text>
+        </g>
+
+        <text x="110" y="30" font-size="12" font-weight="800" fill="#059669">소득 루트</text>
+        <text x="110" y="50" font-size="12" font-weight="600" fill="#374151">대기업 임원 · 경영직</text>
+
+        <text x="110" y="65" font-size="10" font-weight="800" fill="#059669">주 자산</text>
+        <text x="170" y="65" font-size="10" font-weight="500" fill="#6b7280">임원 스톡옵션 · 부동산</text>
+      </g>
+    
+      <g transform="translate(620, 570)">
+        <rect width="540" height="82" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="82" rx="4" fill="#059669"/>
+
+        <g transform="translate(25, 20)">
+          <rect width="70" height="40" rx="10" fill="#059669"/>
+          <text x="35" y="28" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">ESFJ</text>
+        </g>
+
+        <text x="110" y="30" font-size="12" font-weight="800" fill="#059669">소득 루트</text>
+        <text x="110" y="50" font-size="12" font-weight="600" fill="#374151">영업 · 서비스 · 팀 리더</text>
+
+        <text x="110" y="65" font-size="10" font-weight="800" fill="#059669">주 자산</text>
+        <text x="170" y="65" font-size="10" font-weight="500" fill="#6b7280">부동산 · 장기 예금 · 배당</text>
+      </g>
+    
+      <g transform="translate(60, 662)">
+        <rect width="540" height="82" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="82" rx="4" fill="#d97706"/>
+
+        <g transform="translate(25, 20)">
+          <rect width="70" height="40" rx="10" fill="#d97706"/>
+          <text x="35" y="28" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">ISTP</text>
+        </g>
+
+        <text x="110" y="30" font-size="12" font-weight="800" fill="#d97706">소득 루트</text>
+        <text x="110" y="50" font-size="12" font-weight="600" fill="#374151">기술직 · 1인 사업 · 프리랜서</text>
+
+        <text x="110" y="65" font-size="10" font-weight="800" fill="#d97706">주 자산</text>
+        <text x="170" y="65" font-size="10" font-weight="500" fill="#6b7280">기술 장비 · 실전 자산</text>
+      </g>
+    
+      <g transform="translate(620, 662)">
+        <rect width="540" height="82" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="82" rx="4" fill="#d97706"/>
+
+        <g transform="translate(25, 20)">
+          <rect width="70" height="40" rx="10" fill="#d97706"/>
+          <text x="35" y="28" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">ISFP</text>
+        </g>
+
+        <text x="110" y="30" font-size="12" font-weight="800" fill="#d97706">소득 루트</text>
+        <text x="110" y="50" font-size="12" font-weight="600" fill="#374151">예술 · 디자인 · 크리에이터</text>
+
+        <text x="110" y="65" font-size="10" font-weight="800" fill="#d97706">주 자산</text>
+        <text x="170" y="65" font-size="10" font-weight="500" fill="#6b7280">아트 · 콘텐츠 · 소자본</text>
+      </g>
+    
+      <g transform="translate(60, 754)">
+        <rect width="540" height="82" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="82" rx="4" fill="#d97706"/>
+
+        <g transform="translate(25, 20)">
+          <rect width="70" height="40" rx="10" fill="#d97706"/>
+          <text x="35" y="28" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">ESTP</text>
+        </g>
+
+        <text x="110" y="30" font-size="12" font-weight="800" fill="#d97706">소득 루트</text>
+        <text x="110" y="50" font-size="12" font-weight="600" fill="#374151">세일즈 · 부동산 · 단기 트레이딩</text>
+
+        <text x="110" y="65" font-size="10" font-weight="800" fill="#d97706">주 자산</text>
+        <text x="170" y="65" font-size="10" font-weight="500" fill="#6b7280">부동산 · 주식 · 사업체</text>
+      </g>
+    
+      <g transform="translate(620, 754)">
+        <rect width="540" height="82" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="82" rx="4" fill="#d97706"/>
+
+        <g transform="translate(25, 20)">
+          <rect width="70" height="40" rx="10" fill="#d97706"/>
+          <text x="35" y="28" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">ESFP</text>
+        </g>
+
+        <text x="110" y="30" font-size="12" font-weight="800" fill="#d97706">소득 루트</text>
+        <text x="110" y="50" font-size="12" font-weight="600" fill="#374151">이벤트 · 엔터 · 서비스</text>
+
+        <text x="110" y="65" font-size="10" font-weight="800" fill="#d97706">주 자산</text>
+        <text x="170" y="65" font-size="10" font-weight="500" fill="#6b7280">현금흐름 사업체 · 예금</text>
+      </g>
+    
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 경제학 리포트</text>
+</svg>
