@@ -29,6 +29,7 @@ const categoryLabels: Record<string, { label: string; color: string }> = {
   guide: { label: '가이드', color: 'bg-purple-100 text-purple-700' },
   science: { label: '과학', color: 'bg-cyan-100 text-cyan-700' },
   psychology: { label: '심리분석', color: 'bg-rose-100 text-rose-700' },
+  'mbti-economics': { label: 'MBTI 경제학', color: 'bg-yellow-100 text-yellow-800' },
 };
 
 export default async function BlogIndexPage() {

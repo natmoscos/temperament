@@ -4,40 +4,54 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 const navItems = [
-  { label: '검사하기', href: '/test' },
-  { label: '빠른 검사', href: '/quick-test' },
+  {
+    label: '검사하기',
+    href: '/test',
+    children: [
+      { group: '성격 검사', items: [
+        { label: '정밀 검사 (100문항)', href: '/test' },
+        { label: '빠른 검사 (30문항)', href: '/quick-test' },
+        { label: '궁합 검사', href: '/compatibility' },
+      ]},
+    ],
+  },
   {
     label: '성격유형',
     href: '/types',
     children: [
-      { group: '분석가형', items: [
+      { group: '분석가형 (NT)', items: [
         { label: 'INTJ 전략의 설계자', href: '/types/intj' },
         { label: 'INTP 논리의 사색가', href: '/types/intp' },
         { label: 'ENTJ 대담한 통솔자', href: '/types/entj' },
         { label: 'ENTP 발명의 토론가', href: '/types/entp' },
       ]},
-      { group: '외교관형', items: [
+      { group: '외교관형 (NF)', items: [
         { label: 'INFJ 통찰의 예언자', href: '/types/infj' },
         { label: 'INFP 이상의 중재자', href: '/types/infp' },
         { label: 'ENFJ 정의의 선도자', href: '/types/enfj' },
         { label: 'ENFP 열정의 캠페이너', href: '/types/enfp' },
       ]},
-      { group: '관리자형', items: [
+      { group: '관리자형 (SJ)', items: [
         { label: 'ISTJ 신뢰의 수호자', href: '/types/istj' },
         { label: 'ISFJ 따뜻한 수호자', href: '/types/isfj' },
         { label: 'ESTJ 엄격한 관리자', href: '/types/estj' },
         { label: 'ESFJ 사교의 외교관', href: '/types/esfj' },
       ]},
-      { group: '탐험가형', items: [
+      { group: '탐험가형 (SP)', items: [
         { label: 'ISTP 냉철한 장인', href: '/types/istp' },
         { label: 'ISFP 호기심 많은 예술가', href: '/types/isfp' },
         { label: 'ESTP 모험의 사업가', href: '/types/estp' },
         { label: 'ESFP 자유로운 연예인', href: '/types/esfp' },
       ]},
+      { group: '4가지 기질론', items: [
+        { label: '히포크라테스 기질론 전체', href: '/temperaments' },
+        { label: '다혈질 (Sanguine)', href: '/temperaments#sanguine' },
+        { label: '담즙질 (Choleric)', href: '/temperaments#choleric' },
+        { label: '우울질 (Melancholic)', href: '/temperaments#melancholic' },
+        { label: '점액질 (Phlegmatic)', href: '/temperaments#phlegmatic' },
+      ]},
     ],
   },
-  { label: '기질론', href: '/temperaments' },
-  { label: '궁합', href: '/compatibility' },
   { label: '인물투표', href: '/profiles' },
   { label: '오픈채팅', href: '/community' },
   { label: '블로그', href: '/blog' },
@@ -45,6 +59,7 @@ const navItems = [
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [testOpen, setTestOpen] = useState(false);
   const [typesOpen, setTypesOpen] = useState(false);
 
   return (
@@ -77,7 +92,13 @@ export default function Navbar() {
               {/* Dropdown */}
               {item.children && (
                 <div className="absolute left-0 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                  <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-4 grid grid-cols-2 gap-4 w-[520px]">
+                  <div
+                    className={`bg-white rounded-2xl shadow-xl border border-gray-100 p-4 gap-4 ${
+                      item.children.length === 1
+                        ? 'flex flex-col w-[260px]'
+                        : 'grid grid-cols-2 w-[560px]'
+                    }`}
+                  >
                     {item.children.map((group) => (
                       <div key={group.group}>
                         <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">{group.group}</p>
@@ -124,12 +145,29 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {mobileOpen && (
         <div className="md:hidden bg-white border-t border-gray-100 px-4 py-3 space-y-1">
-          <Link href="/test" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 rounded-lg">검사하기</Link>
+          <button
+            onClick={() => setTestOpen(!testOpen)}
+            className="w-full text-left px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 rounded-lg flex justify-between items-center"
+          >
+            검사하기
+            <svg className={`w-4 h-4 transition ${testOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          {testOpen && navItems[0].children?.map((group) => (
+            <div key={group.group} className="pl-4">
+              {group.items.map((sub) => (
+                <Link key={sub.href} href={sub.href} onClick={() => setMobileOpen(false)} className="block px-3 py-1.5 text-sm text-gray-600 hover:text-indigo-600">
+                  {sub.label}
+                </Link>
+              ))}
+            </div>
+          ))}
           <button
             onClick={() => setTypesOpen(!typesOpen)}
             className="w-full text-left px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 rounded-lg flex justify-between items-center"
           >
-            성격유형
+            성격유형·기질론
             <svg className={`w-4 h-4 transition ${typesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             </svg>
@@ -144,10 +182,8 @@ export default function Navbar() {
               ))}
             </div>
           ))}
-          <Link href="/temperaments" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 rounded-lg">기질론</Link>
-          <Link href="/compatibility" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 rounded-lg">궁합</Link>
           <Link href="/profiles" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 rounded-lg">인물투표</Link>
-          <Link href="/community" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 rounded-lg">커뮤니티</Link>
+          <Link href="/community" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 rounded-lg">오픈채팅</Link>
           <Link href="/blog" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 rounded-lg">블로그</Link>
         </div>
       )}
