@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">부자 5단계 경로 — 공통 패턴</text>
+  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">TOP 10 부자들의 공통 부 축적 단계 · 인지기능 활용 흐름</text>
+
+  
+      <g transform="translate(60, 130)">
+        <rect width="1080" height="130" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="130" rx="4" fill="#0e7490"/>
+
+        <circle cx="60" cy="65" r="40" fill="#0e7490" opacity="0.15"/>
+        <text x="60" y="78" text-anchor="middle" font-size="32">🔭</text>
+
+        <text x="130" y="45" font-size="20" font-weight="900" fill="#0e7490">1. 비전 설계</text>
+        <g transform="translate(130, 58)">
+          <rect width="65" height="22" rx="11" fill="#0e7490" opacity="0.2"/>
+          <text x="32" y="16" text-anchor="middle" font-size="12" font-weight="900" fill="#0e7490">Ni</text>
+        </g>
+
+        <text x="220" y="74" font-size="15" font-weight="700" fill="#374151">10~20년 후 미래 시나리오 그리기</text>
+        <text x="130" y="105" font-size="13" font-weight="500" fill="#6b7280">👉 3개 시나리오 작성 → 가장 유망한 1개 선택</text>
+      </g>
+    
+      <g transform="translate(60, 280)">
+        <rect width="1080" height="130" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="130" rx="4" fill="#0891b2"/>
+
+        <circle cx="60" cy="65" r="40" fill="#0891b2" opacity="0.15"/>
+        <text x="60" y="78" text-anchor="middle" font-size="32">⚙️</text>
+
+        <text x="130" y="45" font-size="20" font-weight="900" fill="#0891b2">2. 시스템 구축</text>
+        <g transform="translate(130, 58)">
+          <rect width="65" height="22" rx="11" fill="#0891b2" opacity="0.2"/>
+          <text x="32" y="16" text-anchor="middle" font-size="12" font-weight="900" fill="#0891b2">Ti/Te</text>
+        </g>
+
+        <text x="220" y="74" font-size="15" font-weight="700" fill="#374151">아이디어를 확장 가능한 구조로</text>
+        <text x="130" y="105" font-size="13" font-weight="500" fill="#6b7280">👉 수익 모델 · 조직 · 자동화 시스템 설계</text>
+      </g>
+    
+      <g transform="translate(60, 430)">
+        <rect width="1080" height="130" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="130" rx="4" fill="#059669"/>
+
+        <circle cx="60" cy="65" r="40" fill="#059669" opacity="0.15"/>
+        <text x="60" y="78" text-anchor="middle" font-size="32">💼</text>
+
+        <text x="130" y="45" font-size="20" font-weight="900" fill="#059669">3. 자본 레버리지</text>
+        <g transform="translate(130, 58)">
+          <rect width="65" height="22" rx="11" fill="#059669" opacity="0.2"/>
+          <text x="32" y="16" text-anchor="middle" font-size="12" font-weight="900" fill="#059669">Te</text>
+        </g>
+
+        <text x="220" y="74" font-size="15" font-weight="700" fill="#374151">자본 · 인재 · 기술을 규모화</text>
+        <text x="130" y="105" font-size="13" font-weight="500" fill="#6b7280">👉 투자 유치 · 인재 영입 · 제휴 확장</text>
+      </g>
+    
+      <g transform="translate(60, 580)">
+        <rect width="1080" height="130" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="130" rx="4" fill="#047857"/>
+
+        <circle cx="60" cy="65" r="40" fill="#047857" opacity="0.15"/>
+        <text x="60" y="78" text-anchor="middle" font-size="32">🎯</text>
+
+        <text x="130" y="45" font-size="20" font-weight="900" fill="#047857">4. 감정 배제 실행</text>
+        <g transform="translate(130, 58)">
+          <rect width="65" height="22" rx="11" fill="#047857" opacity="0.2"/>
+          <text x="32" y="16" text-anchor="middle" font-size="12" font-weight="900" fill="#047857">Te</text>
+        </g>
+
+        <text x="220" y="74" font-size="15" font-weight="700" fill="#374151">단기 소음 무시하고 계획 고수</text>
+        <text x="130" y="105" font-size="13" font-weight="500" fill="#6b7280">👉 데이터 기반 판단 · 감정 흔들림 차단</text>
+      </g>
+    
+      <g transform="translate(60, 730)">
+        <rect width="1080" height="130" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="130" rx="4" fill="#16a34a"/>
+
+        <circle cx="60" cy="65" r="40" fill="#16a34a" opacity="0.15"/>
+        <text x="60" y="78" text-anchor="middle" font-size="32">📈</text>
+
+        <text x="130" y="45" font-size="20" font-weight="900" fill="#16a34a">5. 장기 복리 신뢰</text>
+        <g transform="translate(130, 58)">
+          <rect width="65" height="22" rx="11" fill="#16a34a" opacity="0.2"/>
+          <text x="32" y="16" text-anchor="middle" font-size="12" font-weight="900" fill="#16a34a">Ni</text>
+        </g>
+
+        <text x="220" y="74" font-size="15" font-weight="700" fill="#374151">10~30년 복리 힘 믿기</text>
+        <text x="130" y="105" font-size="13" font-weight="500" fill="#6b7280">👉 단기 이익 포기 · 지속 재투자</text>
+      </g>
+    
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 경제학 리포트</text>
+</svg>

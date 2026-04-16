@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <defs>
+    <linearGradient id="rBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef9c3"/>
+      <stop offset="100%" stop-color="#fffbeb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#rBg)"/>
+
+  <text x="180" y="200" font-size="55" opacity="0.2">💰</text>
+  <text x="960" y="180" font-size="55" opacity="0.2">🏆</text>
+  <text x="200" y="760" font-size="50" opacity="0.2">📈</text>
+  <text x="940" y="740" font-size="55" opacity="0.2">💎</text>
+
+  <rect x="180" y="300" width="840" height="280" rx="32" fill="#ffffff" stroke="#a16207" stroke-width="3" opacity="0.97"/>
+  <text x="600" y="370" text-anchor="middle" font-size="22" font-weight="700" fill="#a16207">192TYPES · ECONOMICS REPORT 2026</text>
+  <text x="600" y="445" text-anchor="middle" font-size="48" font-weight="900" fill="#171717">세계 부자 TOP 10 MBTI</text>
+  <text x="600" y="495" text-anchor="middle" font-size="28" font-weight="700" fill="#374151">머스크 · 베조스 · 자커버그 · 버핏 · LVMH</text>
+  <text x="600" y="550" text-anchor="middle" font-size="17" font-weight="600" fill="#6b7280">부자들의 MBTI 분포 + 공통 인지기능 패턴 분석</text>
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 경제학 리포트</text>
+</svg>
