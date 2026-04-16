@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <!-- Title band -->
+  <rect x="0" y="0" width="1200" height="110" fill="#ecfeff"/>
+  <text x="80" y="55" font-size="14" font-weight="700" fill="#0891b2" letter-spacing="4">NT · THE RATIONALS</text>
+  <text x="80" y="92" font-size="28" font-weight="800" fill="#171717">NT 분석가형 · 여자 vs 남자</text>
+  <text x="1120" y="75" text-anchor="end" font-size="13" font-weight="500" fill="#6b7280">Ni/Ti 주기능 · 전략 · 분석 · 통찰</text>
+  <line x1="0" y1="110" x2="1200" y2="110" stroke="#0891b2" stroke-width="3"/>
+
+  <!-- 4 row comparison: 유형 | 여자 | 남자 -->
+  <g transform="translate(0, 135)">
+    <!-- Column headers -->
+    <rect x="80" y="0" width="150" height="38" rx="8" fill="#f3f4f6"/>
+    <text x="155" y="24" text-anchor="middle" font-size="13" font-weight="700" fill="#374151">유형</text>
+    <rect x="250" y="0" width="420" height="38" rx="8" fill="#fdf2f8"/>
+    <text x="460" y="24" text-anchor="middle" font-size="14" font-weight="800" fill="#be185d">♀ 여자 특징</text>
+    <rect x="690" y="0" width="420" height="38" rx="8" fill="#eff6ff"/>
+    <text x="900" y="24" text-anchor="middle" font-size="14" font-weight="800" fill="#1d4ed8">♂ 남자 특징</text>
+
+    
+      <!-- Type badge -->
+      <rect x="80" y="60" width="150" height="135" rx="12" fill="#0891b2"/>
+      <text x="155" y="112" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">INTJ</text>
+      <line x1="100" y1="128" x2="210" y2="128" stroke="#fff" stroke-width="1" opacity="0.5"/>
+      <text x="155" y="152" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" opacity="0.9">Ni-Te</text>
+      <text x="155" y="175" text-anchor="middle" font-size="10" font-weight="500" fill="#fff" opacity="0.75">전략적 은둔자</text>
+
+      <!-- Women column -->
+      <rect x="250" y="60" width="420" height="135" rx="12" fill="#fff" stroke="#db2777" stroke-width="1.5"/>
+      <text x="270" y="88" font-size="15" font-weight="800" fill="#be185d">냉정해 보이는 장기 설계자</text>
+      
+        <circle cx="278" cy="116" r="3" fill="#db2777"/>
+        <text x="290" y="120" font-size="12" fill="#374151">에너지를 아껴 쓰는 침묵</text>
+      
+        <circle cx="278" cy="138" r="3" fill="#db2777"/>
+        <text x="290" y="142" font-size="12" fill="#374151">좋아하면 오히려 무뚝뚝</text>
+      
+        <circle cx="278" cy="160" r="3" fill="#db2777"/>
+        <text x="290" y="164" font-size="12" fill="#374151">자기 세계에 초대받는 게 사랑</text>
+      
+      <text x="652" y="185" text-anchor="end" font-size="11" font-style="italic" fill="#db2777">★ 제니 (BLACKPINK)</text>
+
+      <!-- Men column -->
+      <rect x="690" y="60" width="420" height="135" rx="12" fill="#fff" stroke="#2563eb" stroke-width="1.5"/>
+      <text x="710" y="88" font-size="15" font-weight="800" fill="#1d4ed8">소시오패스 오해받는 진심파</text>
+      
+        <circle cx="718" cy="116" r="3" fill="#2563eb"/>
+        <text x="730" y="120" font-size="12" fill="#374151">말 대신 결과로 증명</text>
+      
+        <circle cx="718" cy="138" r="3" fill="#2563eb"/>
+        <text x="730" y="142" font-size="12" fill="#374151">감정 표현은 서툴지만 충실</text>
+      
+        <circle cx="718" cy="160" r="3" fill="#2563eb"/>
+        <text x="730" y="164" font-size="12" fill="#374151">혼자만의 방이 반드시 필요</text>
+      
+      <text x="1092" y="185" text-anchor="end" font-size="11" font-style="italic" fill="#2563eb">★ 유재하</text>
+      
+      <!-- Type badge -->
+      <rect x="80" y="215" width="150" height="135" rx="12" fill="#0891b2"/>
+      <text x="155" y="267" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">INTP</text>
+      <line x1="100" y1="283" x2="210" y2="283" stroke="#fff" stroke-width="1" opacity="0.5"/>
+      <text x="155" y="307" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" opacity="0.9">Ti-Ne</text>
+      <text x="155" y="330" text-anchor="middle" font-size="10" font-weight="500" fill="#fff" opacity="0.75">논리적 탐구자</text>
+
+      <!-- Women column -->
+      <rect x="250" y="215" width="420" height="135" rx="12" fill="#fff" stroke="#db2777" stroke-width="1.5"/>
+      <text x="270" y="243" font-size="15" font-weight="800" fill="#be185d">"여자답지 않다"가 칭찬인 사람</text>
+      
+        <circle cx="278" cy="271" r="3" fill="#db2777"/>
+        <text x="290" y="275" font-size="12" fill="#374151">머릿속이 24시간 돌아감</text>
+      
+        <circle cx="278" cy="293" r="3" fill="#db2777"/>
+        <text x="290" y="297" font-size="12" fill="#374151">감정보다 원리부터 궁금</text>
+      
+        <circle cx="278" cy="315" r="3" fill="#db2777"/>
+        <text x="290" y="319" font-size="12" fill="#374151">혼자 파고드는 걸 사랑</text>
+      
+      <text x="652" y="340" text-anchor="end" font-size="11" font-style="italic" fill="#db2777">★ 아이유</text>
+
+      <!-- Men column -->
+      <rect x="690" y="215" width="420" height="135" rx="12" fill="#fff" stroke="#2563eb" stroke-width="1.5"/>
+      <text x="710" y="243" font-size="15" font-weight="800" fill="#1d4ed8">말보다 생각이 앞서는 사색가</text>
+      
+        <circle cx="718" cy="271" r="3" fill="#2563eb"/>
+        <text x="730" y="275" font-size="12" fill="#374151">답하기 전에 5초 고민</text>
+      
+        <circle cx="718" cy="293" r="3" fill="#2563eb"/>
+        <text x="730" y="297" font-size="12" fill="#374151">확신 없으면 말 안 함</text>
+      
+        <circle cx="718" cy="315" r="3" fill="#2563eb"/>
+        <text x="730" y="319" font-size="12" fill="#374151">논리 허점 보면 못 참음</text>
+      
+      <text x="1092" y="340" text-anchor="end" font-size="11" font-style="italic" fill="#2563eb">★ 빌 게이츠</text>
+      
+      <!-- Type badge -->
+      <rect x="80" y="370" width="150" height="135" rx="12" fill="#0891b2"/>
+      <text x="155" y="422" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">ENTJ</text>
+      <line x1="100" y1="438" x2="210" y2="438" stroke="#fff" stroke-width="1" opacity="0.5"/>
+      <text x="155" y="462" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" opacity="0.9">Te-Ni</text>
+      <text x="155" y="485" text-anchor="middle" font-size="10" font-weight="500" fill="#fff" opacity="0.75">판을 짜는 리더</text>
+
+      <!-- Women column -->
+      <rect x="250" y="370" width="420" height="135" rx="12" fill="#fff" stroke="#db2777" stroke-width="1.5"/>
+      <text x="270" y="398" font-size="15" font-weight="800" fill="#be185d">"무섭다"가 훈장인 카리스마</text>
+      
+        <circle cx="278" cy="426" r="3" fill="#db2777"/>
+        <text x="290" y="430" font-size="12" fill="#374151">방향이 명확한 추진력</text>
+      
+        <circle cx="278" cy="448" r="3" fill="#db2777"/>
+        <text x="290" y="452" font-size="12" fill="#374151">감정보다 결과로 승부</text>
+      
+        <circle cx="278" cy="470" r="3" fill="#db2777"/>
+        <text x="290" y="474" font-size="12" fill="#374151">파트너도 성장 파트너</text>
+      
+      <text x="652" y="495" text-anchor="end" font-size="11" font-style="italic" fill="#db2777">★ 스티브 잡스 스타일</text>
+
+      <!-- Men column -->
+      <rect x="690" y="370" width="420" height="135" rx="12" fill="#fff" stroke="#2563eb" stroke-width="1.5"/>
+      <text x="710" y="398" font-size="15" font-weight="800" fill="#1d4ed8">결과로 말하는 타고난 리더</text>
+      
+        <circle cx="718" cy="426" r="3" fill="#2563eb"/>
+        <text x="730" y="430" font-size="12" fill="#374151">시스템을 짜고 굴림</text>
+      
+        <circle cx="718" cy="448" r="3" fill="#2563eb"/>
+        <text x="730" y="452" font-size="12" fill="#374151">비효율 보이면 지적</text>
+      
+        <circle cx="718" cy="470" r="3" fill="#2563eb"/>
+        <text x="730" y="474" font-size="12" fill="#374151">신뢰 쌓이면 속은 따뜻</text>
+      
+      <text x="1092" y="495" text-anchor="end" font-size="11" font-style="italic" fill="#2563eb">★ 손흥민 오너</text>
+      
+      <!-- Type badge -->
+      <rect x="80" y="525" width="150" height="135" rx="12" fill="#0891b2"/>
+      <text x="155" y="577" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">ENTP</text>
+      <line x1="100" y1="593" x2="210" y2="593" stroke="#fff" stroke-width="1" opacity="0.5"/>
+      <text x="155" y="617" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" opacity="0.9">Ne-Ti</text>
+      <text x="155" y="640" text-anchor="middle" font-size="10" font-weight="500" fill="#fff" opacity="0.75">아이디어 뱅크</text>
+
+      <!-- Women column -->
+      <rect x="250" y="525" width="420" height="135" rx="12" fill="#fff" stroke="#db2777" stroke-width="1.5"/>
+      <text x="270" y="553" font-size="15" font-weight="800" fill="#be185d">연애할 때 조심해야 할 유형?</text>
+      
+        <circle cx="278" cy="581" r="3" fill="#db2777"/>
+        <text x="290" y="585" font-size="12" fill="#374151">재밌고 말 빠르고 기발함</text>
+      
+        <circle cx="278" cy="603" r="3" fill="#db2777"/>
+        <text x="290" y="607" font-size="12" fill="#374151">루틴해지면 금방 지루</text>
+      
+        <circle cx="278" cy="625" r="3" fill="#db2777"/>
+        <text x="290" y="629" font-size="12" fill="#374151">논쟁에서 오히려 끌림</text>
+      
+      <text x="652" y="650" text-anchor="end" font-size="11" font-style="italic" fill="#db2777">★ 전소연 ((G)I-DLE)</text>
+
+      <!-- Men column -->
+      <rect x="690" y="525" width="420" height="135" rx="12" fill="#fff" stroke="#2563eb" stroke-width="1.5"/>
+      <text x="710" y="553" font-size="15" font-weight="800" fill="#1d4ed8">논쟁 좋아하지만 진실파</text>
+      
+        <circle cx="718" cy="581" r="3" fill="#2563eb"/>
+        <text x="730" y="585" font-size="12" fill="#374151">상대 생각을 뒤집는 걸 즐김</text>
+      
+        <circle cx="718" cy="603" r="3" fill="#2563eb"/>
+        <text x="730" y="607" font-size="12" fill="#374151">금방 흥미 잃어 보여도 충실</text>
+      
+        <circle cx="718" cy="625" r="3" fill="#2563eb"/>
+        <text x="730" y="629" font-size="12" fill="#374151">아이디어 공유가 애정 표현</text>
+      
+      <text x="1092" y="650" text-anchor="end" font-size="11" font-style="italic" fill="#2563eb">★ 로버트 다우니 주니어</text>
+      
+  </g>
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · MBTI 성별 특징 가이드</text>
+</svg>

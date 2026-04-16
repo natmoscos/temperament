@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <!-- Title band -->
+  <rect x="0" y="0" width="1200" height="110" fill="#fff1f2"/>
+  <text x="80" y="55" font-size="14" font-weight="700" fill="#e11d48" letter-spacing="4">NF · THE IDEALISTS</text>
+  <text x="80" y="92" font-size="28" font-weight="800" fill="#171717">NF 이상주의형 · 여자 vs 남자</text>
+  <text x="1120" y="75" text-anchor="end" font-size="13" font-weight="500" fill="#6b7280">Fi/Fe 조합 · 가치 · 공감 · 의미</text>
+  <line x1="0" y1="110" x2="1200" y2="110" stroke="#e11d48" stroke-width="3"/>
+
+  <!-- 4 row comparison: 유형 | 여자 | 남자 -->
+  <g transform="translate(0, 135)">
+    <!-- Column headers -->
+    <rect x="80" y="0" width="150" height="38" rx="8" fill="#f3f4f6"/>
+    <text x="155" y="24" text-anchor="middle" font-size="13" font-weight="700" fill="#374151">유형</text>
+    <rect x="250" y="0" width="420" height="38" rx="8" fill="#fdf2f8"/>
+    <text x="460" y="24" text-anchor="middle" font-size="14" font-weight="800" fill="#be185d">♀ 여자 특징</text>
+    <rect x="690" y="0" width="420" height="38" rx="8" fill="#eff6ff"/>
+    <text x="900" y="24" text-anchor="middle" font-size="14" font-weight="800" fill="#1d4ed8">♂ 남자 특징</text>
+
+    
+      <!-- Type badge -->
+      <rect x="80" y="60" width="150" height="135" rx="12" fill="#e11d48"/>
+      <text x="155" y="112" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">INFJ</text>
+      <line x1="100" y1="128" x2="210" y2="128" stroke="#fff" stroke-width="1" opacity="0.5"/>
+      <text x="155" y="152" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" opacity="0.9">Ni-Fe</text>
+      <text x="155" y="175" text-anchor="middle" font-size="10" font-weight="500" fill="#fff" opacity="0.75">깊은 사색가</text>
+
+      <!-- Women column -->
+      <rect x="250" y="60" width="420" height="135" rx="12" fill="#fff" stroke="#db2777" stroke-width="1.5"/>
+      <text x="270" y="88" font-size="15" font-weight="800" fill="#be185d">갑자기 연락 끊는 이유가 있다고</text>
+      
+        <circle cx="278" cy="116" r="3" fill="#db2777"/>
+        <text x="290" y="120" font-size="12" fill="#374151">사람은 좋아하지만 쉽게 지침</text>
+      
+        <circle cx="278" cy="138" r="3" fill="#db2777"/>
+        <text x="290" y="142" font-size="12" fill="#374151">신호를 참고 참다 도어슬램</text>
+      
+        <circle cx="278" cy="160" r="3" fill="#db2777"/>
+        <text x="290" y="164" font-size="12" fill="#374151">진짜 친한 사람은 2명 이하</text>
+      
+      <text x="652" y="185" text-anchor="end" font-size="11" font-style="italic" fill="#db2777">★ 아이유 (감정 표현 측면)</text>
+
+      <!-- Men column -->
+      <rect x="690" y="60" width="420" height="135" rx="12" fill="#fff" stroke="#2563eb" stroke-width="1.5"/>
+      <text x="710" y="88" font-size="15" font-weight="800" fill="#1d4ed8">"알 수 없는 사람" 1위 유형</text>
+      
+        <circle cx="718" cy="116" r="3" fill="#2563eb"/>
+        <text x="730" y="120" font-size="12" fill="#374151">말수 적고 시선이 멀리</text>
+      
+        <circle cx="718" cy="138" r="3" fill="#2563eb"/>
+        <text x="730" y="142" font-size="12" fill="#374151">진심 알아주면 무한히 충실</text>
+      
+        <circle cx="718" cy="160" r="3" fill="#2563eb"/>
+        <text x="730" y="164" font-size="12" fill="#374151">본인도 본인을 잘 모름</text>
+      
+      <text x="1092" y="185" text-anchor="end" font-size="11" font-style="italic" fill="#2563eb">★ 방탄소년단 RM</text>
+      
+      <!-- Type badge -->
+      <rect x="80" y="215" width="150" height="135" rx="12" fill="#e11d48"/>
+      <text x="155" y="267" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">INFP</text>
+      <line x1="100" y1="283" x2="210" y2="283" stroke="#fff" stroke-width="1" opacity="0.5"/>
+      <text x="155" y="307" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" opacity="0.9">Fi-Ne</text>
+      <text x="155" y="330" text-anchor="middle" font-size="10" font-weight="500" fill="#fff" opacity="0.75">상상 속 세계인</text>
+
+      <!-- Women column -->
+      <rect x="250" y="215" width="420" height="135" rx="12" fill="#fff" stroke="#db2777" stroke-width="1.5"/>
+      <text x="270" y="243" font-size="15" font-weight="800" fill="#be185d">착해 보이지만 선 넘으면 끝</text>
+      
+        <circle cx="278" cy="271" r="3" fill="#db2777"/>
+        <text x="290" y="275" font-size="12" fill="#374151">감정에 빠지면 현실 멈춤</text>
+      
+        <circle cx="278" cy="293" r="3" fill="#db2777"/>
+        <text x="290" y="297" font-size="12" fill="#374151">말은 안 해도 속으로 기록</text>
+      
+        <circle cx="278" cy="315" r="3" fill="#db2777"/>
+        <text x="290" y="319" font-size="12" fill="#374151">참다가 예고 없이 사라짐</text>
+      
+      <text x="652" y="340" text-anchor="end" font-size="11" font-style="italic" fill="#db2777">★ 태연 (SNSD)</text>
+
+      <!-- Men column -->
+      <rect x="690" y="215" width="420" height="135" rx="12" fill="#fff" stroke="#2563eb" stroke-width="1.5"/>
+      <text x="710" y="243" font-size="15" font-weight="800" fill="#1d4ed8">"남자답지 않다" 속 단단함</text>
+      
+        <circle cx="718" cy="271" r="3" fill="#2563eb"/>
+        <text x="730" y="275" font-size="12" fill="#374151">감정을 음악·글로 표현</text>
+      
+        <circle cx="718" cy="293" r="3" fill="#2563eb"/>
+        <text x="730" y="297" font-size="12" fill="#374151">자기 가치 건드리면 단호</text>
+      
+        <circle cx="718" cy="315" r="3" fill="#2563eb"/>
+        <text x="730" y="319" font-size="12" fill="#374151">조용하지만 꺾이지 않음</text>
+      
+      <text x="1092" y="340" text-anchor="end" font-size="11" font-style="italic" fill="#2563eb">★ 이상</text>
+      
+      <!-- Type badge -->
+      <rect x="80" y="370" width="150" height="135" rx="12" fill="#e11d48"/>
+      <text x="155" y="422" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">ENFJ</text>
+      <line x1="100" y1="438" x2="210" y2="438" stroke="#fff" stroke-width="1" opacity="0.5"/>
+      <text x="155" y="462" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" opacity="0.9">Fe-Ni</text>
+      <text x="155" y="485" text-anchor="middle" font-size="10" font-weight="500" fill="#fff" opacity="0.75">다정한 멘토</text>
+
+      <!-- Women column -->
+      <rect x="250" y="370" width="420" height="135" rx="12" fill="#fff" stroke="#db2777" stroke-width="1.5"/>
+      <text x="270" y="398" font-size="15" font-weight="800" fill="#be185d">다정해서 제일 먼저 지치는 사람</text>
+      
+        <circle cx="278" cy="426" r="3" fill="#db2777"/>
+        <text x="290" y="430" font-size="12" fill="#374151">남 감정에 공명하며 소진</text>
+      
+        <circle cx="278" cy="448" r="3" fill="#db2777"/>
+        <text x="290" y="452" font-size="12" fill="#374151">분위기 책임감이 과함</text>
+      
+        <circle cx="278" cy="470" r="3" fill="#db2777"/>
+        <text x="290" y="474" font-size="12" fill="#374151">자기 감정 돌보는 법을 배워야</text>
+      
+      <text x="652" y="495" text-anchor="end" font-size="11" font-style="italic" fill="#db2777">★ 박보영 (친절 캐릭터)</text>
+
+      <!-- Men column -->
+      <rect x="690" y="370" width="420" height="135" rx="12" fill="#fff" stroke="#2563eb" stroke-width="1.5"/>
+      <text x="710" y="398" font-size="15" font-weight="800" fill="#1d4ed8">모두의 멘토가 정작 멘토 없음</text>
+      
+        <circle cx="718" cy="426" r="3" fill="#2563eb"/>
+        <text x="730" y="430" font-size="12" fill="#374151">관계 조율이 본능</text>
+      
+        <circle cx="718" cy="448" r="3" fill="#2563eb"/>
+        <text x="730" y="452" font-size="12" fill="#374151">공감 능력 과잉으로 번아웃</text>
+      
+        <circle cx="718" cy="470" r="3" fill="#2563eb"/>
+        <text x="730" y="474" font-size="12" fill="#374151">본인 취약함은 숨김</text>
+      
+      <text x="1092" y="495" text-anchor="end" font-size="11" font-style="italic" fill="#2563eb">★ 버락 오바마</text>
+      
+      <!-- Type badge -->
+      <rect x="80" y="525" width="150" height="135" rx="12" fill="#e11d48"/>
+      <text x="155" y="577" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">ENFP</text>
+      <line x1="100" y1="593" x2="210" y2="593" stroke="#fff" stroke-width="1" opacity="0.5"/>
+      <text x="155" y="617" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" opacity="0.9">Ne-Fi</text>
+      <text x="155" y="640" text-anchor="middle" font-size="10" font-weight="500" fill="#fff" opacity="0.75">매력 폭발러</text>
+
+      <!-- Women column -->
+      <rect x="250" y="525" width="420" height="135" rx="12" fill="#fff" stroke="#db2777" stroke-width="1.5"/>
+      <text x="270" y="553" font-size="15" font-weight="800" fill="#be185d">매력적인데 자꾸 오해받는 사람</text>
+      
+        <circle cx="278" cy="581" r="3" fill="#db2777"/>
+        <text x="290" y="585" font-size="12" fill="#374151">아이디어 점프가 특기</text>
+      
+        <circle cx="278" cy="603" r="3" fill="#db2777"/>
+        <text x="290" y="607" font-size="12" fill="#374151">밝은데 가치관은 단단</text>
+      
+        <circle cx="278" cy="625" r="3" fill="#db2777"/>
+        <text x="290" y="629" font-size="12" fill="#374151">진짜 빠지면 올인</text>
+      
+      <text x="652" y="650" text-anchor="end" font-size="11" font-style="italic" fill="#db2777">★ 전소미</text>
+
+      <!-- Men column -->
+      <rect x="690" y="525" width="420" height="135" rx="12" fill="#fff" stroke="#2563eb" stroke-width="1.5"/>
+      <text x="710" y="553" font-size="15" font-weight="800" fill="#1d4ed8">재밌는데 갑자기 사라지는 이유</text>
+      
+        <circle cx="718" cy="581" r="3" fill="#2563eb"/>
+        <text x="730" y="585" font-size="12" fill="#374151">관계 초반 에너지 폭발</text>
+      
+        <circle cx="718" cy="603" r="3" fill="#2563eb"/>
+        <text x="730" y="607" font-size="12" fill="#374151">루틴 오면 숨이 막힘</text>
+      
+        <circle cx="718" cy="625" r="3" fill="#2563eb"/>
+        <text x="730" y="629" font-size="12" fill="#374151">새로움 함께 만들 사람 선호</text>
+      
+      <text x="1092" y="650" text-anchor="end" font-size="11" font-style="italic" fill="#2563eb">★ 로버트 다우니 주니어(캐주얼)</text>
+      
+  </g>
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · MBTI 성별 특징 가이드</text>
+</svg>

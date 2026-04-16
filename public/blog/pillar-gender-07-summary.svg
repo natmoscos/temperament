@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <text x="600" y="56" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">16유형 × 여자·남자 한눈 요약</text>
+  <text x="600" y="86" text-anchor="middle" font-size="14" font-weight="500" fill="#6b7280">각 유형의 성별별 핵심 매력 포인트</text>
+
+  <!-- Column headers -->
+  <g transform="translate(0, 110)">
+    <rect x="60" y="0" width="100" height="32" rx="6" fill="#f3f4f6"/>
+    <text x="110" y="21" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">유형</text>
+    <rect x="170" y="0" width="480" height="32" rx="6" fill="#fdf2f8"/>
+    <text x="410" y="21" text-anchor="middle" font-size="13" font-weight="800" fill="#be185d">♀ 여자</text>
+    <rect x="660" y="0" width="480" height="32" rx="6" fill="#eff6ff"/>
+    <text x="900" y="21" text-anchor="middle" font-size="13" font-weight="800" fill="#1d4ed8">♂ 남자</text>
+  </g>
+
+  <!-- 16 rows -->
+  
+      <rect x="30" y="139" width="1140" height="40" fill="#ffffff"/>
+      <circle cx="85" cy="159" r="8" fill="#0891b2"/>
+      <text x="110" y="164" font-size="14" font-weight="800" fill="#0891b2">INTJ</text>
+      <text x="180" y="164" font-size="12" fill="#374151">조용히 판 짜는 전략가</text>
+      <text x="670" y="164" font-size="12" fill="#374151">차가워 보이는 장기 설계자</text>
+    
+      <rect x="30" y="181" width="1140" height="40" fill="#f9fafb"/>
+      <circle cx="85" cy="201" r="8" fill="#0891b2"/>
+      <text x="110" y="206" font-size="14" font-weight="800" fill="#0891b2">INTP</text>
+      <text x="180" y="206" font-size="12" fill="#374151">머릿속 세계가 우주인 탐구자</text>
+      <text x="670" y="206" font-size="12" fill="#374151">논쟁보다 진실을 좇는 분석가</text>
+    
+      <rect x="30" y="223" width="1140" height="40" fill="#ffffff"/>
+      <circle cx="85" cy="243" r="8" fill="#0891b2"/>
+      <text x="110" y="248" font-size="14" font-weight="800" fill="#0891b2">ENTJ</text>
+      <text x="180" y="248" font-size="12" fill="#374151">판을 주도하는 카리스마</text>
+      <text x="670" y="248" font-size="12" fill="#374151">결과로 말하는 리더</text>
+    
+      <rect x="30" y="265" width="1140" height="40" fill="#f9fafb"/>
+      <circle cx="85" cy="285" r="8" fill="#0891b2"/>
+      <text x="110" y="290" font-size="14" font-weight="800" fill="#0891b2">ENTP</text>
+      <text x="180" y="290" font-size="12" fill="#374151">말 빠른 아이디어 뱅크</text>
+      <text x="670" y="290" font-size="12" fill="#374151">논쟁 좋아하지만 순수한 진실파</text>
+    
+      <rect x="30" y="307" width="1140" height="40" fill="#ffffff"/>
+      <circle cx="85" cy="327" r="8" fill="#e11d48"/>
+      <text x="110" y="332" font-size="14" font-weight="800" fill="#e11d48">INFJ</text>
+      <text x="180" y="332" font-size="12" fill="#374151">알 수 없는 조용한 통찰자</text>
+      <text x="670" y="332" font-size="12" fill="#374151">읽기 어려운 섬세한 이상주의자</text>
+    
+      <rect x="30" y="349" width="1140" height="40" fill="#f9fafb"/>
+      <circle cx="85" cy="369" r="8" fill="#e11d48"/>
+      <text x="110" y="374" font-size="14" font-weight="800" fill="#e11d48">INFP</text>
+      <text x="180" y="374" font-size="12" fill="#374151">착해 보이지만 선 넘으면 끝</text>
+      <text x="670" y="374" font-size="12" fill="#374151">남자답지 않다는 말 속 단단함</text>
+    
+      <rect x="30" y="391" width="1140" height="40" fill="#ffffff"/>
+      <circle cx="85" cy="411" r="8" fill="#e11d48"/>
+      <text x="110" y="416" font-size="14" font-weight="800" fill="#e11d48">ENFJ</text>
+      <text x="180" y="416" font-size="12" fill="#374151">다정해서 먼저 지치는 사람</text>
+      <text x="670" y="416" font-size="12" fill="#374151">모두의 멘토가 정작 외로움</text>
+    
+      <rect x="30" y="433" width="1140" height="40" fill="#f9fafb"/>
+      <circle cx="85" cy="453" r="8" fill="#e11d48"/>
+      <text x="110" y="458" font-size="14" font-weight="800" fill="#e11d48">ENFP</text>
+      <text x="180" y="458" font-size="12" fill="#374151">밝은데 가치관은 단단함</text>
+      <text x="670" y="458" font-size="12" fill="#374151">재밌는데 갑자기 사라지는 이유</text>
+    
+      <rect x="30" y="475" width="1140" height="40" fill="#ffffff"/>
+      <circle cx="85" cy="495" r="8" fill="#059669"/>
+      <text x="110" y="500" font-size="14" font-weight="800" fill="#059669">ISTJ</text>
+      <text x="180" y="500" font-size="12" fill="#374151">재미없어 보이는 반전 매력</text>
+      <text x="670" y="500" font-size="12" fill="#374151">무뚝뚝하지만 약속은 철저</text>
+    
+      <rect x="30" y="517" width="1140" height="40" fill="#f9fafb"/>
+      <circle cx="85" cy="537" r="8" fill="#059669"/>
+      <text x="110" y="542" font-size="14" font-weight="800" fill="#059669">ISFJ</text>
+      <text x="180" y="542" font-size="12" fill="#374151">챙기는데 정작 본인은 외로움</text>
+      <text x="670" y="542" font-size="12" fill="#374151">조용히 챙기는데 아무도 모름</text>
+    
+      <rect x="30" y="559" width="1140" height="40" fill="#ffffff"/>
+      <circle cx="85" cy="579" r="8" fill="#059669"/>
+      <text x="110" y="584" font-size="14" font-weight="800" fill="#059669">ESTJ</text>
+      <text x="180" y="584" font-size="12" fill="#374151">까칠해 보이는 따뜻한 리더</text>
+      <text x="670" y="584" font-size="12" fill="#374151">딱딱한 듯 제일 책임지는 남자</text>
+    
+      <rect x="30" y="601" width="1140" height="40" fill="#f9fafb"/>
+      <circle cx="85" cy="621" r="8" fill="#059669"/>
+      <text x="110" y="626" font-size="14" font-weight="800" fill="#059669">ESFJ</text>
+      <text x="180" y="626" font-size="12" fill="#374151">착해서 손해 보는 사람</text>
+      <text x="670" y="626" font-size="12" fill="#374151">책임감 강한 다정함의 끝판</text>
+    
+      <rect x="30" y="643" width="1140" height="40" fill="#ffffff"/>
+      <circle cx="85" cy="663" r="8" fill="#d97706"/>
+      <text x="110" y="668" font-size="14" font-weight="800" fill="#d97706">ISTP</text>
+      <text x="180" y="668" font-size="12" fill="#374151">쿨한 척이 아닌 진짜 쿨함</text>
+      <text x="670" y="668" font-size="12" fill="#374151">말 적고 손 바쁜 장인</text>
+    
+      <rect x="30" y="685" width="1140" height="40" fill="#f9fafb"/>
+      <circle cx="85" cy="705" r="8" fill="#d97706"/>
+      <text x="110" y="710" font-size="14" font-weight="800" fill="#d97706">ISFP</text>
+      <text x="180" y="710" font-size="12" fill="#374151">조용한데 자아가 가장 강함</text>
+      <text x="670" y="710" font-size="12" fill="#374151">감각적이고 부드러운 독립러</text>
+    
+      <rect x="30" y="727" width="1140" height="40" fill="#ffffff"/>
+      <circle cx="85" cy="747" r="8" fill="#d97706"/>
+      <text x="110" y="752" font-size="14" font-weight="800" fill="#d97706">ESTP</text>
+      <text x="180" y="752" font-size="12" fill="#374151">첫인상과 실제가 다른 사람</text>
+      <text x="670" y="752" font-size="12" fill="#374151">무모한 듯 계산된 용기의 남자</text>
+    
+      <rect x="30" y="769" width="1140" height="40" fill="#f9fafb"/>
+      <circle cx="85" cy="789" r="8" fill="#d97706"/>
+      <text x="110" y="794" font-size="14" font-weight="800" fill="#d97706">ESFP</text>
+      <text x="180" y="794" font-size="12" fill="#374151">분위기 메이커의 숨은 눈물</text>
+      <text x="670" y="794" font-size="12" fill="#374151">현재를 즐기는 자유로운 영혼</text>
+    
+
+  <!-- Legend -->
+  <g transform="translate(150, 845)">
+    <circle cx="10" cy="12" r="7" fill="#0891b2"/>
+    <text x="24" y="16" font-size="11" font-weight="600" fill="#374151">NT 분석가형</text>
+    <circle cx="160" cy="12" r="7" fill="#e11d48"/>
+    <text x="174" y="16" font-size="11" font-weight="600" fill="#374151">NF 이상주의형</text>
+    <circle cx="325" cy="12" r="7" fill="#059669"/>
+    <text x="339" y="16" font-size="11" font-weight="600" fill="#374151">SJ 관리자형</text>
+    <circle cx="475" cy="12" r="7" fill="#d97706"/>
+    <text x="489" y="16" font-size="11" font-weight="600" fill="#374151">SP 기회포착형</text>
+  </g>
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · MBTI 성별 특징 가이드</text>
+</svg>

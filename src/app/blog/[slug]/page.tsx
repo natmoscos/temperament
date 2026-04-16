@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import React from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { blogPosts } from '@/data/blog-posts';
@@ -51,6 +52,47 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       images: [ogImage],
     },
   };
+}
+
+// 인라인 마크다운 링크 파서: [text](/path) → <Link>, 외부 URL은 <a target="_blank">
+// Pillar-Cluster 내부 링크용. 개행과 공백은 whitespace-pre-line 이 처리.
+function renderContentWithLinks(content: string): React.ReactNode {
+  const pattern = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const nodes: React.ReactNode[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+  let key = 0;
+  while ((match = pattern.exec(content)) !== null) {
+    if (match.index > lastIndex) {
+      nodes.push(content.slice(lastIndex, match.index));
+    }
+    const [, text, href] = match;
+    const isInternal = href.startsWith('/');
+    nodes.push(
+      isInternal ? (
+        <Link
+          key={`l-${key++}`}
+          href={href}
+          className="text-indigo-600 font-semibold underline decoration-indigo-200 decoration-2 underline-offset-2 hover:text-indigo-800 hover:decoration-indigo-500 transition"
+        >
+          {text}
+        </Link>
+      ) : (
+        <a
+          key={`l-${key++}`}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-indigo-600 font-semibold underline decoration-indigo-200 decoration-2 underline-offset-2 hover:text-indigo-800 transition"
+        >
+          {text}
+        </a>
+      )
+    );
+    lastIndex = match.index + match[0].length;
+  }
+  if (lastIndex < content.length) nodes.push(content.slice(lastIndex));
+  return nodes.length > 0 ? nodes : content;
 }
 
 const categoryLabels: Record<string, { label: string; color: string }> = {
@@ -163,6 +205,29 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           ))}
         </div>
 
+        {/* Pillar 배너 — 여자/남자 특징 cluster 글 상단에 노출 */}
+        {(slug.endsWith('-women-characteristics') || slug.endsWith('-men-characteristics')) && (
+          <div className="mb-8 bg-gradient-to-br from-indigo-50 via-rose-50 to-sky-50 border border-indigo-100 rounded-2xl p-4 sm:p-5">
+            <div className="flex items-start gap-3">
+              <span className="text-2xl shrink-0">📌</span>
+              <div className="flex-1 min-w-0">
+                <p className="text-xs font-semibold text-indigo-700 mb-1 tracking-wide">
+                  PILLAR 가이드 · 16유형 × 여자·남자 종합
+                </p>
+                <Link
+                  href="/blog/mbti-women-men-characteristics-guide"
+                  className="block text-[15px] font-bold text-gray-800 hover:text-indigo-600 transition leading-snug"
+                >
+                  MBTI 여자·남자 특징 총정리 — 16유형 × 성별 32가지 한눈에 보기 →
+                </Link>
+                <p className="text-[12px] text-gray-500 mt-1 leading-relaxed">
+                  이 글은 상위 가이드의 유형별 파트야. 다른 유형과 비교하거나 4기질 관점에서 보려면 위 링크로!
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* 본문 섹션 */}
         <div className="space-y-8">
           {post.sections.map((section, idx) => (
@@ -182,7 +247,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   </div>
                 )}
                 <div className="text-gray-600 text-[15px] leading-[1.9] whitespace-pre-line">
-                  {section.content}
+                  {renderContentWithLinks(section.content)}
                 </div>
               </section>
 
