@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">버핏 투자 5계명 — 오늘부터 적용</text>
+  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">ISTJ가 아니어도 따라할 수 있는 실전 규칙</text>
+
+  
+      <g transform="translate(60, 120)">
+        <rect width="1080" height="130" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="130" rx="4" fill="#1e3a8a"/>
+
+        <circle cx="60" cy="65" r="38" fill="#1e3a8a" opacity="0.15"/>
+        <text x="60" y="77" text-anchor="middle" font-size="30" font-weight="900" fill="#1e3a8a">1</text>
+
+        <text x="130" y="45" font-size="20" font-weight="900" fill="#1e3a8a">서클 오브 컴피턴스</text>
+        <text x="130" y="72" font-size="14" font-weight="600" fill="#374151">내가 이해하는 범위 안에서만 투자</text>
+        <text x="130" y="103" font-size="13" font-weight="700" fill="#16a34a">👉 매일 읽는 산업 분석 30분</text>
+      </g>
+    
+      <g transform="translate(60, 265)">
+        <rect width="1080" height="130" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="130" rx="4" fill="#1e3a8a"/>
+
+        <circle cx="60" cy="65" r="38" fill="#1e3a8a" opacity="0.15"/>
+        <text x="60" y="77" text-anchor="middle" font-size="30" font-weight="900" fill="#1e3a8a">2</text>
+
+        <text x="130" y="45" font-size="20" font-weight="900" fill="#1e3a8a">미스터 마켓 활용</text>
+        <text x="130" y="72" font-size="14" font-weight="600" fill="#374151">시장의 감정 변동을 기회로 삼기</text>
+        <text x="130" y="103" font-size="13" font-weight="700" fill="#16a34a">👉 하락장에 추가 매수 여력 확보</text>
+      </g>
+    
+      <g transform="translate(60, 410)">
+        <rect width="1080" height="130" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="130" rx="4" fill="#1e3a8a"/>
+
+        <circle cx="60" cy="65" r="38" fill="#1e3a8a" opacity="0.15"/>
+        <text x="60" y="77" text-anchor="middle" font-size="30" font-weight="900" fill="#1e3a8a">3</text>
+
+        <text x="130" y="45" font-size="20" font-weight="900" fill="#1e3a8a">안전 마진(Margin of Safety)</text>
+        <text x="130" y="72" font-size="14" font-weight="600" fill="#374151">내재 가치보다 30%+ 할인된 가격</text>
+        <text x="130" y="103" font-size="13" font-weight="700" fill="#16a34a">👉 목표가의 70% 이하에서만 매수</text>
+      </g>
+    
+      <g transform="translate(60, 555)">
+        <rect width="1080" height="130" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="130" rx="4" fill="#1e3a8a"/>
+
+        <circle cx="60" cy="65" r="38" fill="#1e3a8a" opacity="0.15"/>
+        <text x="60" y="77" text-anchor="middle" font-size="30" font-weight="900" fill="#1e3a8a">4</text>
+
+        <text x="130" y="45" font-size="20" font-weight="900" fill="#1e3a8a">경제적 해자(Moat)</text>
+        <text x="130" y="72" font-size="14" font-weight="600" fill="#374151">경쟁자가 못 따라잡을 우위</text>
+        <text x="130" y="103" font-size="13" font-weight="700" fill="#16a34a">👉 브랜드 · 네트워크 · 특허 보유 기업</text>
+      </g>
+    
+      <g transform="translate(60, 700)">
+        <rect width="1080" height="130" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="130" rx="4" fill="#1e3a8a"/>
+
+        <circle cx="60" cy="65" r="38" fill="#1e3a8a" opacity="0.15"/>
+        <text x="60" y="77" text-anchor="middle" font-size="30" font-weight="900" fill="#1e3a8a">5</text>
+
+        <text x="130" y="45" font-size="20" font-weight="900" fill="#1e3a8a">복리의 8번째 경이</text>
+        <text x="130" y="72" font-size="14" font-weight="600" fill="#374151">시간이 자산을 키우게 두기</text>
+        <text x="130" y="103" font-size="13" font-weight="700" fill="#16a34a">👉 매매 빈도 최소화 · 배당 재투자</text>
+      </g>
+    
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 경제학 리포트</text>
+</svg>

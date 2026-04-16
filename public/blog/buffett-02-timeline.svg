@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">버핏 투자 70년 연대기</text>
+  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">11세 첫 투자 → 94세 현재까지 · Si의 장기 축적 대표 사례</text>
+
+  <!-- Timeline line -->
+  <line x1="150" y1="420" x2="1050" y2="420" stroke="#1e3a8a" stroke-width="4"/>
+
+  
+      <circle cx="150" cy="420" r="14" fill="#1e3a8a"/>
+      <circle cx="150" cy="420" r="8" fill="#dbeafe"/>
+      <line x1="150" y1="350" x2="150" y2="410" stroke="#1e3a8a" stroke-width="2" stroke-dasharray="4,3"/>
+      <g transform="translate(150, 290)">
+        <rect x="-85" y="-40" width="170" height="80" rx="14" fill="#ffffff" stroke="#1e3a8a"/>
+        <text x="0" y="-15" text-anchor="middle" font-size="16" font-weight="900" fill="#1e3a8a">1941</text>
+        <text x="0" y="5" text-anchor="middle" font-size="11" font-weight="600" fill="#6b7280">11세</text>
+        <text x="0" y="28" text-anchor="middle" font-size="11" font-weight="500" fill="#374151">첫 주식 매수 (Cities Se</text>
+      </g>
+    
+      <circle cx="330" cy="420" r="14" fill="#1e3a8a"/>
+      <circle cx="330" cy="420" r="8" fill="#dbeafe"/>
+      <line x1="330" y1="430" x2="330" y2="490" stroke="#1e3a8a" stroke-width="2" stroke-dasharray="4,3"/>
+      <g transform="translate(330, 560)">
+        <rect x="-85" y="-40" width="170" height="80" rx="14" fill="#ffffff" stroke="#1e3a8a"/>
+        <text x="0" y="-15" text-anchor="middle" font-size="16" font-weight="900" fill="#1e3a8a">1956</text>
+        <text x="0" y="5" text-anchor="middle" font-size="11" font-weight="600" fill="#6b7280">26세</text>
+        <text x="0" y="28" text-anchor="middle" font-size="11" font-weight="500" fill="#374151">Buffett Partnershi</text>
+      </g>
+    
+      <circle cx="510" cy="420" r="14" fill="#1e3a8a"/>
+      <circle cx="510" cy="420" r="8" fill="#dbeafe"/>
+      <line x1="510" y1="350" x2="510" y2="410" stroke="#1e3a8a" stroke-width="2" stroke-dasharray="4,3"/>
+      <g transform="translate(510, 290)">
+        <rect x="-85" y="-40" width="170" height="80" rx="14" fill="#ffffff" stroke="#1e3a8a"/>
+        <text x="0" y="-15" text-anchor="middle" font-size="16" font-weight="900" fill="#1e3a8a">1965</text>
+        <text x="0" y="5" text-anchor="middle" font-size="11" font-weight="600" fill="#6b7280">35세</text>
+        <text x="0" y="28" text-anchor="middle" font-size="11" font-weight="500" fill="#374151">Berkshire Hathaway</text>
+      </g>
+    
+      <circle cx="690" cy="420" r="14" fill="#1e3a8a"/>
+      <circle cx="690" cy="420" r="8" fill="#dbeafe"/>
+      <line x1="690" y1="430" x2="690" y2="490" stroke="#1e3a8a" stroke-width="2" stroke-dasharray="4,3"/>
+      <g transform="translate(690, 560)">
+        <rect x="-85" y="-40" width="170" height="80" rx="14" fill="#ffffff" stroke="#1e3a8a"/>
+        <text x="0" y="-15" text-anchor="middle" font-size="16" font-weight="900" fill="#1e3a8a">1988</text>
+        <text x="0" y="5" text-anchor="middle" font-size="11" font-weight="600" fill="#6b7280">58세</text>
+        <text x="0" y="28" text-anchor="middle" font-size="11" font-weight="500" fill="#374151">Coca-Cola 대량 매수 (I</text>
+      </g>
+    
+      <circle cx="870" cy="420" r="14" fill="#1e3a8a"/>
+      <circle cx="870" cy="420" r="8" fill="#dbeafe"/>
+      <line x1="870" y1="350" x2="870" y2="410" stroke="#1e3a8a" stroke-width="2" stroke-dasharray="4,3"/>
+      <g transform="translate(870, 290)">
+        <rect x="-85" y="-40" width="170" height="80" rx="14" fill="#ffffff" stroke="#1e3a8a"/>
+        <text x="0" y="-15" text-anchor="middle" font-size="16" font-weight="900" fill="#1e3a8a">2008</text>
+        <text x="0" y="5" text-anchor="middle" font-size="11" font-weight="600" fill="#6b7280">78세</text>
+        <text x="0" y="28" text-anchor="middle" font-size="11" font-weight="500" fill="#374151">금융위기 중 Goldman Sac</text>
+      </g>
+    
+      <circle cx="1050" cy="420" r="14" fill="#1e3a8a"/>
+      <circle cx="1050" cy="420" r="8" fill="#dbeafe"/>
+      <line x1="1050" y1="430" x2="1050" y2="490" stroke="#1e3a8a" stroke-width="2" stroke-dasharray="4,3"/>
+      <g transform="translate(1050, 560)">
+        <rect x="-85" y="-40" width="170" height="80" rx="14" fill="#ffffff" stroke="#1e3a8a"/>
+        <text x="0" y="-15" text-anchor="middle" font-size="16" font-weight="900" fill="#1e3a8a">2019</text>
+        <text x="0" y="5" text-anchor="middle" font-size="11" font-weight="600" fill="#6b7280">89세</text>
+        <text x="0" y="28" text-anchor="middle" font-size="11" font-weight="500" fill="#374151">Apple 최대 보유 종목 (Si</text>
+      </g>
+    
+
+  <!-- Bottom insight -->
+  <rect x="200" y="750" width="800" height="80" rx="16" fill="#dbeafe" stroke="#1e3a8a"/>
+  <text x="600" y="785" text-anchor="middle" font-size="15" font-weight="800" fill="#1e3a8a">💡 핵심: 70년간 같은 원칙 유지 — Si 주기능의 장기 일관성</text>
+  <text x="600" y="810" text-anchor="middle" font-size="13" font-weight="500" fill="#171717">단기 유행 무시 · 검증된 기업만 · "평생 보유" 원칙</text>
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 경제학 리포트</text>
+</svg>
