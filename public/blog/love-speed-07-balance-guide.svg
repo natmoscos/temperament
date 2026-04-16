@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <text x="600" y="55" text-anchor="middle" font-size="28" font-weight="800" fill="#171717">기질별 건강한 연애 속도 체크리스트</text>
+  <text x="600" y="82" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">네 기질 유형의 과속/저속 루틴을 잡아줄 실전 4단계</text>
+
+  
+      <g transform="translate(70,115)">
+        <rect width="520" height="320" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="320" rx="4" fill="#f43f5e"/>
+        <text x="28" y="42" font-size="20" font-weight="800" fill="#f43f5e">🔥 다혈질 (Sanguine)</text>
+        <text x="28" y="66" font-size="12" font-weight="600" fill="#6b7280">ENFP · ESFP · ESFJ · ENFJ</text>
+        
+          <text x="28" y="110" font-size="13" font-weight="600" fill="#374151">① 첫 2주 금지 리스트 세팅 — 커플링·여행·SNS 공개</text>
+        
+          <text x="28" y="158" font-size="13" font-weight="600" fill="#374151">② 호감 강도 일기 — 매일 "오늘 상대에 대한 감정" 기록</text>
+        
+          <text x="28" y="206" font-size="13" font-weight="600" fill="#374151">③ 3주 쿨다운 규칙 — 결정적 선언은 3주 뒤로</text>
+        
+          <text x="28" y="254" font-size="13" font-weight="600" fill="#374151">④ 현실 확인 체크리스트 — 상대가 정말 지금 상황에 맞는지</text>
+        
+      </g>
+    
+      <g transform="translate(620,115)">
+        <rect width="520" height="320" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="320" rx="4" fill="#0891b2"/>
+        <text x="28" y="42" font-size="20" font-weight="800" fill="#0891b2">🎯 담즙질 (Choleric)</text>
+        <text x="28" y="66" font-size="12" font-weight="600" fill="#6b7280">ENTJ · ESTJ · ENTP · ESTP</text>
+        
+          <text x="28" y="110" font-size="13" font-weight="600" fill="#374151">① 조건 체크 횟수 제한 — 3번 확인했으면 결정</text>
+        
+          <text x="28" y="158" font-size="13" font-weight="600" fill="#374151">② 효율 함정 경계 — 사랑은 ROI로 재지 않음</text>
+        
+          <text x="28" y="206" font-size="13" font-weight="600" fill="#374151">③ 표현 스케줄링 — 감정 표현도 일정에 넣어야 함</text>
+        
+          <text x="28" y="254" font-size="13" font-weight="600" fill="#374151">④ 상대 페이스 존중 — 내 속도에 끌려오지 않는 사람도 있음</text>
+        
+      </g>
+    
+      <g transform="translate(70,470)">
+        <rect width="520" height="320" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="320" rx="4" fill="#059669"/>
+        <text x="28" y="42" font-size="20" font-weight="800" fill="#059669">🌿 점액질 (Phlegmatic)</text>
+        <text x="28" y="66" font-size="12" font-weight="600" fill="#6b7280">ISFJ · ISTJ · INFP · ISFP</text>
+        
+          <text x="28" y="110" font-size="13" font-weight="600" fill="#374151">① 표현 연습 — "좋다"는 말 입 밖으로 꺼내기</text>
+        
+          <text x="28" y="158" font-size="13" font-weight="600" fill="#374151">② 관계 진도 체크포인트 — 30·60·90일에 상태 업데이트</text>
+        
+          <text x="28" y="206" font-size="13" font-weight="600" fill="#374151">③ 거절/수락 시간 제한 — 2주 내 명확한 의사 표시</text>
+        
+          <text x="28" y="254" font-size="13" font-weight="600" fill="#374151">④ 참고 싫음을 기록 — 쌓이기 전에 공유</text>
+        
+      </g>
+    
+      <g transform="translate(620,470)">
+        <rect width="520" height="320" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="320" rx="4" fill="#0e7490"/>
+        <text x="28" y="42" font-size="20" font-weight="800" fill="#0e7490">🌙 우울질 (Melancholic)</text>
+        <text x="28" y="66" font-size="12" font-weight="600" fill="#6b7280">INTJ · INFJ · INTP · ISTP</text>
+        
+          <text x="28" y="110" font-size="13" font-weight="600" fill="#374151">① 최악 시나리오 점검은 1회만 — 반복은 관계의 독</text>
+        
+          <text x="28" y="158" font-size="13" font-weight="600" fill="#374151">② "확신 없음 = 그만둬야 함" 공식 버리기</text>
+        
+          <text x="28" y="206" font-size="13" font-weight="600" fill="#374151">③ 작은 고백 연습 — "네 말이 좋았어" 수준부터</text>
+        
+          <text x="28" y="254" font-size="13" font-weight="600" fill="#374151">④ 침묵 대신 1문장 공유 — 해석 여지를 줄여라</text>
+        
+      </g>
+    
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · MBTI 연애 시리즈</text>
+</svg>

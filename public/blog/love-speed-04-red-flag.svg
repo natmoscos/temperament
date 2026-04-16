@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <text x="600" y="55" text-anchor="middle" font-size="28" font-weight="800" fill="#171717">연애 속도별 위험 신호 — 금사빠 Zone vs J병 Zone</text>
+  <text x="600" y="82" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">너무 빠른 것도, 너무 느린 것도 각자의 패턴으로 무너져</text>
+
+  <!-- Left: Too fast -->
+  <g transform="translate(60,120)">
+    <rect width="530" height="700" rx="20" fill="#fff1f2" stroke="#f43f5e"/>
+    <text x="28" y="50" font-size="22" font-weight="800" fill="#be123c">⚡ 너무 빠름 — 금사빠 Zone</text>
+    <text x="28" y="78" font-size="13" font-weight="600" fill="#374151">ENFP · ESFP · ENTP · ESTP · ENFJ · ISFP</text>
+
+    
+      <g transform="translate(28, 115)">
+        <text x="0" y="26" font-size="26">💥</text>
+        <text x="46" y="20" font-size="15" font-weight="800" fill="#be123c">즉시 올인</text>
+        <text x="46" y="44" font-size="12" font-weight="500" fill="#374151">3일 안에 "내 평생 사람"이라 말함. 근데 3주 뒤엔 "그냥 우린 </text>
+        <text x="46" y="62" font-size="12" font-weight="500" fill="#374151">안 맞았어".</text>
+      </g>
+    
+      <g transform="translate(28, 205)">
+        <text x="0" y="26" font-size="26">🌀</text>
+        <text x="46" y="20" font-size="15" font-weight="800" fill="#be123c">감정 롤러코스터</text>
+        <text x="46" y="44" font-size="12" font-weight="500" fill="#374151">좋을 때 하루 50번 연락, 식으면 하루 0번. 상대가 롤러코스터 멀</text>
+        <text x="46" y="62" font-size="12" font-weight="500" fill="#374151">미 해.</text>
+      </g>
+    
+      <g transform="translate(28, 295)">
+        <text x="0" y="26" font-size="26">🎭</text>
+        <text x="46" y="20" font-size="15" font-weight="800" fill="#be123c">상대를 이상화</text>
+        <text x="46" y="44" font-size="12" font-weight="500" fill="#374151">상대의 실제 모습보다 "내가 만든 이미지"에 반함. 현실이 보이면 식</text>
+        <text x="46" y="62" font-size="12" font-weight="500" fill="#374151">어.</text>
+      </g>
+    
+      <g transform="translate(28, 385)">
+        <text x="0" y="26" font-size="26">💸</text>
+        <text x="46" y="20" font-size="15" font-weight="800" fill="#be123c">충동적 이벤트</text>
+        <text x="46" y="44" font-size="12" font-weight="500" fill="#374151">첫 주에 1박 여행, 커플템, 커플링. 기반 없는 관계에 투자만 쌓여</text>
+        <text x="46" y="62" font-size="12" font-weight="500" fill="#374151">.</text>
+      </g>
+    
+      <g transform="translate(28, 475)">
+        <text x="0" y="26" font-size="26">📉</text>
+        <text x="46" y="20" font-size="15" font-weight="800" fill="#be123c">빠른 회복 → 또 빠짐</text>
+        <text x="46" y="44" font-size="12" font-weight="500" fill="#374151">이별 1주 뒤 다음 사람. 민지가 제일 걱정하는 패턴이야.</text>
+        <text x="46" y="62" font-size="12" font-weight="500" fill="#374151"></text>
+      </g>
+    
+      <g transform="translate(28, 565)">
+        <text x="0" y="26" font-size="26">🚨</text>
+        <text x="46" y="20" font-size="15" font-weight="800" fill="#be123c">SNS 공개 과속</text>
+        <text x="46" y="44" font-size="12" font-weight="500" fill="#374151">사귄 지 2주차에 커플샷 업로드. 3주차에 비공개 전환 루틴.</text>
+        <text x="46" y="62" font-size="12" font-weight="500" fill="#374151"></text>
+      </g>
+    
+  </g>
+
+  <!-- Right: Too slow -->
+  <g transform="translate(610,120)">
+    <rect width="530" height="700" rx="20" fill="#ecfeff" stroke="#0891b2"/>
+    <text x="28" y="50" font-size="22" font-weight="800" fill="#0e7490">🔒 너무 느림 — J병 Zone</text>
+    <text x="28" y="78" font-size="13" font-weight="600" fill="#374151">INTJ · ISTJ · INFJ · ISFJ · ESTJ · INTP</text>
+
+    
+      <g transform="translate(28, 115)">
+        <text x="0" y="26" font-size="26">🧮</text>
+        <text x="46" y="20" font-size="15" font-weight="800" fill="#0e7490">과도한 조건 검증</text>
+        <text x="46" y="44" font-size="12" font-weight="500" fill="#374151">가치관 · 재정 · 가족관 3번씩 확인. 상대는 "면접 보는 것 같다</text>
+        <text x="46" y="62" font-size="12" font-weight="500" fill="#374151">".</text>
+      </g>
+    
+      <g transform="translate(28, 205)">
+        <text x="0" y="26" font-size="26">⏳</text>
+        <text x="46" y="20" font-size="15" font-weight="800" fill="#0e7490">표현 지연</text>
+        <text x="46" y="44" font-size="12" font-weight="500" fill="#374151">마음 있으면서 100일 넘게 "그냥 친구". 상대는 질려서 떠남.</text>
+        <text x="46" y="62" font-size="12" font-weight="500" fill="#374151"></text>
+      </g>
+    
+      <g transform="translate(28, 295)">
+        <text x="0" y="26" font-size="26">📐</text>
+        <text x="46" y="20" font-size="15" font-weight="800" fill="#0e7490">완벽 타이밍 고집</text>
+        <text x="46" y="44" font-size="12" font-weight="500" fill="#374151">"아직 준비 안 됐어"를 반복. 준비는 영원히 완성 안 돼.</text>
+        <text x="46" y="62" font-size="12" font-weight="500" fill="#374151"></text>
+      </g>
+    
+      <g transform="translate(28, 385)">
+        <text x="0" y="26" font-size="26">🧊</text>
+        <text x="46" y="20" font-size="15" font-weight="800" fill="#0e7490">감정 표현 최소화</text>
+        <text x="46" y="44" font-size="12" font-weight="500" fill="#374151">좋은데 "응, 괜찮은 것 같아"로 표현. 상대는 호감 읽지 못함.</text>
+        <text x="46" y="62" font-size="12" font-weight="500" fill="#374151"></text>
+      </g>
+    
+      <g transform="translate(28, 475)">
+        <text x="0" y="26" font-size="26">🔄</text>
+        <text x="46" y="20" font-size="15" font-weight="800" fill="#0e7490">재확인 루프</text>
+        <text x="46" y="44" font-size="12" font-weight="500" fill="#374151">사귄 뒤에도 "정말 이 사람 맞을까?" 3개월마다 재검토.</text>
+        <text x="46" y="62" font-size="12" font-weight="500" fill="#374151"></text>
+      </g>
+    
+      <g transform="translate(28, 565)">
+        <text x="0" y="26" font-size="26">🗂</text>
+        <text x="46" y="20" font-size="15" font-weight="800" fill="#0e7490">플랜 공유 지연</text>
+        <text x="46" y="44" font-size="12" font-weight="500" fill="#374151">이미 100일인데 부모님 소개·여행 계획 전부 "나중에".</text>
+        <text x="46" y="62" font-size="12" font-weight="500" fill="#374151"></text>
+      </g>
+    
+  </g>
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · MBTI 연애 시리즈</text>
+</svg>
