@@ -2,8 +2,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="58" text-anchor="middle" font-size="32" font-weight="800" fill="#171717">TOP 3 · 혼자 노는 왕들</text>
-  <text x="600" y="90" text-anchor="middle" font-size="15" font-weight="500" fill="#6b7280">금·은·동 메달리스트 상세 프로필</text>
+  <text x="600" y="58" text-anchor="middle" font-size="45" font-weight="800" fill="#171717">TOP 3 · 혼자 노는 왕들</text>
+  <text x="600" y="90" text-anchor="middle" font-size="21" font-weight="500" fill="#6b7280">금·은·동 메달리스트 상세 프로필</text>
   
     <g>
       <rect x="50" y="140" width="340" height="580" rx="20" fill="#ffffff" stroke="#0891b2" stroke-width="3"/>
@@ -12,37 +12,37 @@
       <rect x="50" y="200" width="340" height="20" fill="#ecfeff"/>
       <!-- Medal -->
       <circle cx="110" cy="182" r="26" fill="#f59e0b" stroke="#d97706" stroke-width="3"/>
-      <text x="110" y="190" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">金</text>
-      <text x="150" y="178" font-size="12" font-weight="600" fill="#6b7280" letter-spacing="2">RANK 1</text>
-      <text x="150" y="202" font-size="26" font-weight="800" fill="#0e7490">INTP</text>
+      <text x="110" y="190" text-anchor="middle" font-size="31" font-weight="800" fill="#fff">金</text>
+      <text x="150" y="178" font-size="17" font-weight="600" fill="#6b7280" letter-spacing="2">RANK 1</text>
+      <text x="150" y="202" font-size="36" font-weight="800" fill="#0e7490">INTP</text>
       <!-- Name -->
-      <text x="220" y="270" text-anchor="middle" font-size="18" font-weight="700" fill="#171717">논리적 탐구자</text>
+      <text x="220" y="270" text-anchor="middle" font-size="25" font-weight="700" fill="#171717">논리적 탐구자</text>
       <!-- Score -->
       <text x="220" y="335" text-anchor="middle" font-size="64" font-weight="800" fill="#0891b2">95</text>
-      <text x="220" y="360" text-anchor="middle" font-size="12" font-weight="500" fill="#6b7280">솔로 적응력 점수 / 100</text>
+      <text x="220" y="360" text-anchor="middle" font-size="17" font-weight="500" fill="#6b7280">솔로 적응력 점수 / 100</text>
       <!-- Tags -->
-      <text x="75" y="410" font-size="11" font-weight="700" fill="#6b7280" letter-spacing="2">핵심 성향</text>
+      <text x="75" y="410" font-size="15" font-weight="700" fill="#6b7280" letter-spacing="2">핵심 성향</text>
       
         <rect x="75" y="425" width="290" height="26" rx="13" fill="#ecfeff"/>
-        <text x="220" y="442" text-anchor="middle" font-size="12" font-weight="600" fill="#0e7490">호기심 무한</text>
+        <text x="220" y="442" text-anchor="middle" font-size="17" font-weight="600" fill="#0e7490">호기심 무한</text>
       
         <rect x="75" y="459" width="290" height="26" rx="13" fill="#ecfeff"/>
-        <text x="220" y="476" text-anchor="middle" font-size="12" font-weight="600" fill="#0e7490">혼자 몰입</text>
+        <text x="220" y="476" text-anchor="middle" font-size="17" font-weight="600" fill="#0e7490">혼자 몰입</text>
       
         <rect x="75" y="493" width="290" height="26" rx="13" fill="#ecfeff"/>
-        <text x="220" y="510" text-anchor="middle" font-size="12" font-weight="600" fill="#0e7490">지적 탐험</text>
+        <text x="220" y="510" text-anchor="middle" font-size="17" font-weight="600" fill="#0e7490">지적 탐험</text>
       
       <!-- Activities -->
-      <text x="75" y="570" font-size="11" font-weight="700" fill="#6b7280" letter-spacing="2">추천 혼놀 활동</text>
+      <text x="75" y="570" font-size="15" font-weight="700" fill="#6b7280" letter-spacing="2">추천 혼놀 활동</text>
       
         <circle cx="82" cy="595" r="4" fill="#0891b2"/>
-        <text x="95" y="599" font-size="13" font-weight="500" fill="#374151">위키 서핑 3시간</text>
+        <text x="95" y="599" font-size="18" font-weight="500" fill="#374151">위키 서핑 3시간</text>
       
         <circle cx="82" cy="625" r="4" fill="#0891b2"/>
-        <text x="95" y="629" font-size="13" font-weight="500" fill="#374151">코딩 사이드 프로젝트</text>
+        <text x="95" y="629" font-size="18" font-weight="500" fill="#374151">코딩 사이드 프로젝트</text>
       
         <circle cx="82" cy="655" r="4" fill="#0891b2"/>
-        <text x="95" y="659" font-size="13" font-weight="500" fill="#374151">유튜브 다큐 몰아보기</text>
+        <text x="95" y="659" font-size="18" font-weight="500" fill="#374151">유튜브 다큐 몰아보기</text>
       
     </g>
     <g>
@@ -52,37 +52,37 @@
       <rect x="430" y="200" width="340" height="20" fill="#fff1f2"/>
       <!-- Medal -->
       <circle cx="490" cy="182" r="26" fill="#d1d5db" stroke="#9ca3af" stroke-width="3"/>
-      <text x="490" y="190" text-anchor="middle" font-size="22" font-weight="800" fill="#374151">銀</text>
-      <text x="530" y="178" font-size="12" font-weight="600" fill="#6b7280" letter-spacing="2">RANK 2</text>
-      <text x="530" y="202" font-size="26" font-weight="800" fill="#be123c">INFP</text>
+      <text x="490" y="190" text-anchor="middle" font-size="31" font-weight="800" fill="#374151">銀</text>
+      <text x="530" y="178" font-size="17" font-weight="600" fill="#6b7280" letter-spacing="2">RANK 2</text>
+      <text x="530" y="202" font-size="36" font-weight="800" fill="#be123c">INFP</text>
       <!-- Name -->
-      <text x="600" y="270" text-anchor="middle" font-size="18" font-weight="700" fill="#171717">상상 속 세계인</text>
+      <text x="600" y="270" text-anchor="middle" font-size="25" font-weight="700" fill="#171717">상상 속 세계인</text>
       <!-- Score -->
       <text x="600" y="335" text-anchor="middle" font-size="64" font-weight="800" fill="#e11d48">92</text>
-      <text x="600" y="360" text-anchor="middle" font-size="12" font-weight="500" fill="#6b7280">솔로 적응력 점수 / 100</text>
+      <text x="600" y="360" text-anchor="middle" font-size="17" font-weight="500" fill="#6b7280">솔로 적응력 점수 / 100</text>
       <!-- Tags -->
-      <text x="455" y="410" font-size="11" font-weight="700" fill="#6b7280" letter-spacing="2">핵심 성향</text>
+      <text x="455" y="410" font-size="15" font-weight="700" fill="#6b7280" letter-spacing="2">핵심 성향</text>
       
         <rect x="455" y="425" width="290" height="26" rx="13" fill="#fff1f2"/>
-        <text x="600" y="442" text-anchor="middle" font-size="12" font-weight="600" fill="#be123c">내면 세계</text>
+        <text x="600" y="442" text-anchor="middle" font-size="17" font-weight="600" fill="#be123c">내면 세계</text>
       
         <rect x="455" y="459" width="290" height="26" rx="13" fill="#fff1f2"/>
-        <text x="600" y="476" text-anchor="middle" font-size="12" font-weight="600" fill="#be123c">감수성 깊음</text>
+        <text x="600" y="476" text-anchor="middle" font-size="17" font-weight="600" fill="#be123c">감수성 깊음</text>
       
         <rect x="455" y="493" width="290" height="26" rx="13" fill="#fff1f2"/>
-        <text x="600" y="510" text-anchor="middle" font-size="12" font-weight="600" fill="#be123c">창작 몰입</text>
+        <text x="600" y="510" text-anchor="middle" font-size="17" font-weight="600" fill="#be123c">창작 몰입</text>
       
       <!-- Activities -->
-      <text x="455" y="570" font-size="11" font-weight="700" fill="#6b7280" letter-spacing="2">추천 혼놀 활동</text>
+      <text x="455" y="570" font-size="15" font-weight="700" fill="#6b7280" letter-spacing="2">추천 혼놀 활동</text>
       
         <circle cx="462" cy="595" r="4" fill="#e11d48"/>
-        <text x="475" y="599" font-size="13" font-weight="500" fill="#374151">일기·시 쓰기</text>
+        <text x="475" y="599" font-size="18" font-weight="500" fill="#374151">일기·시 쓰기</text>
       
         <circle cx="462" cy="625" r="4" fill="#e11d48"/>
-        <text x="475" y="629" font-size="13" font-weight="500" fill="#374151">플레이리스트 큐레이션</text>
+        <text x="475" y="629" font-size="18" font-weight="500" fill="#374151">플레이리스트 큐레이션</text>
       
         <circle cx="462" cy="655" r="4" fill="#e11d48"/>
-        <text x="475" y="659" font-size="13" font-weight="500" fill="#374151">혼자 영화관 관람</text>
+        <text x="475" y="659" font-size="18" font-weight="500" fill="#374151">혼자 영화관 관람</text>
       
     </g>
     <g>
@@ -92,37 +92,37 @@
       <rect x="810" y="200" width="340" height="20" fill="#ecfeff"/>
       <!-- Medal -->
       <circle cx="870" cy="182" r="26" fill="#b45309" stroke="#92400e" stroke-width="3"/>
-      <text x="870" y="190" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">銅</text>
-      <text x="910" y="178" font-size="12" font-weight="600" fill="#6b7280" letter-spacing="2">RANK 3</text>
-      <text x="910" y="202" font-size="26" font-weight="800" fill="#0e7490">INTJ</text>
+      <text x="870" y="190" text-anchor="middle" font-size="31" font-weight="800" fill="#fff">銅</text>
+      <text x="910" y="178" font-size="17" font-weight="600" fill="#6b7280" letter-spacing="2">RANK 3</text>
+      <text x="910" y="202" font-size="36" font-weight="800" fill="#0e7490">INTJ</text>
       <!-- Name -->
-      <text x="980" y="270" text-anchor="middle" font-size="18" font-weight="700" fill="#171717">전략적 은둔자</text>
+      <text x="980" y="270" text-anchor="middle" font-size="25" font-weight="700" fill="#171717">전략적 은둔자</text>
       <!-- Score -->
       <text x="980" y="335" text-anchor="middle" font-size="64" font-weight="800" fill="#0891b2">90</text>
-      <text x="980" y="360" text-anchor="middle" font-size="12" font-weight="500" fill="#6b7280">솔로 적응력 점수 / 100</text>
+      <text x="980" y="360" text-anchor="middle" font-size="17" font-weight="500" fill="#6b7280">솔로 적응력 점수 / 100</text>
       <!-- Tags -->
-      <text x="835" y="410" font-size="11" font-weight="700" fill="#6b7280" letter-spacing="2">핵심 성향</text>
+      <text x="835" y="410" font-size="15" font-weight="700" fill="#6b7280" letter-spacing="2">핵심 성향</text>
       
         <rect x="835" y="425" width="290" height="26" rx="13" fill="#ecfeff"/>
-        <text x="980" y="442" text-anchor="middle" font-size="12" font-weight="600" fill="#0e7490">장기 계획</text>
+        <text x="980" y="442" text-anchor="middle" font-size="17" font-weight="600" fill="#0e7490">장기 계획</text>
       
         <rect x="835" y="459" width="290" height="26" rx="13" fill="#ecfeff"/>
-        <text x="980" y="476" text-anchor="middle" font-size="12" font-weight="600" fill="#0e7490">시스템 사고</text>
+        <text x="980" y="476" text-anchor="middle" font-size="17" font-weight="600" fill="#0e7490">시스템 사고</text>
       
         <rect x="835" y="493" width="290" height="26" rx="13" fill="#ecfeff"/>
-        <text x="980" y="510" text-anchor="middle" font-size="12" font-weight="600" fill="#0e7490">효율 추구</text>
+        <text x="980" y="510" text-anchor="middle" font-size="17" font-weight="600" fill="#0e7490">효율 추구</text>
       
       <!-- Activities -->
-      <text x="835" y="570" font-size="11" font-weight="700" fill="#6b7280" letter-spacing="2">추천 혼놀 활동</text>
+      <text x="835" y="570" font-size="15" font-weight="700" fill="#6b7280" letter-spacing="2">추천 혼놀 활동</text>
       
         <circle cx="842" cy="595" r="4" fill="#0891b2"/>
-        <text x="855" y="599" font-size="13" font-weight="500" fill="#374151">독서·자기계발 학습</text>
+        <text x="855" y="599" font-size="18" font-weight="500" fill="#374151">독서·자기계발 학습</text>
       
         <circle cx="842" cy="625" r="4" fill="#0891b2"/>
-        <text x="855" y="629" font-size="13" font-weight="500" fill="#374151">전략 게임·체스</text>
+        <text x="855" y="629" font-size="18" font-weight="500" fill="#374151">전략 게임·체스</text>
       
         <circle cx="842" cy="655" r="4" fill="#0891b2"/>
-        <text x="855" y="659" font-size="13" font-weight="500" fill="#374151">자기 루틴 설계</text>
+        <text x="855" y="659" font-size="18" font-weight="500" fill="#374151">자기 루틴 설계</text>
       
     </g>
   

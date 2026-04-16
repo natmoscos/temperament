@@ -2,16 +2,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="58" text-anchor="middle" font-size="32" font-weight="800" fill="#171717">혼놀 고수 체크리스트 · 10가지</text>
-  <text x="600" y="90" text-anchor="middle" font-size="15" font-weight="500" fill="#6b7280">8개 이상 YES면 당신은 이미 혼놀 상위 10%</text>
+  <text x="600" y="58" text-anchor="middle" font-size="45" font-weight="800" fill="#171717">혼놀 고수 체크리스트 · 10가지</text>
+  <text x="600" y="90" text-anchor="middle" font-size="21" font-weight="500" fill="#6b7280">8개 이상 YES면 당신은 이미 혼놀 상위 10%</text>
   
     <g>
       <rect x="80" y="140" width="500" height="90" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
       <rect x="80" y="140" width="6" height="90" rx="3" fill="#0891b2"/>
       <rect x="102" y="162" width="44" height="44" rx="10" fill="#ecfeff" stroke="#0891b2" stroke-width="1.5"/>
-      <text x="124" y="191" text-anchor="middle" font-size="16" font-weight="800" fill="#0e7490">01</text>
-      <text x="160" y="180" font-size="15" font-weight="700" fill="#171717">정기적으로 스마트폰을 꺼둔다</text>
-      <text x="160" y="204" font-size="12" font-weight="500" fill="#6b7280">하루 30분 이상 완전 차단 시간 확보</text>
+      <text x="124" y="191" text-anchor="middle" font-size="22" font-weight="800" fill="#0e7490">01</text>
+      <text x="160" y="180" font-size="21" font-weight="700" fill="#171717">정기적으로 스마트폰을 꺼둔다</text>
+      <text x="160" y="204" font-size="17" font-weight="500" fill="#6b7280">하루 30분 이상 완전 차단 시간 확보</text>
       <!-- checkbox -->
       <rect x="530" y="170" width="28" height="28" rx="6" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
       <path d="M 537 184 l 5 5 l 10 -12" fill="none" stroke="#0891b2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -20,9 +20,9 @@
       <rect x="620" y="140" width="500" height="90" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
       <rect x="620" y="140" width="6" height="90" rx="3" fill="#0891b2"/>
       <rect x="642" y="162" width="44" height="44" rx="10" fill="#ecfeff" stroke="#0891b2" stroke-width="1.5"/>
-      <text x="664" y="191" text-anchor="middle" font-size="16" font-weight="800" fill="#0e7490">02</text>
-      <text x="700" y="180" font-size="15" font-weight="700" fill="#171717">혼자만의 공간과 루틴이 있다</text>
-      <text x="700" y="204" font-size="12" font-weight="500" fill="#6b7280">카페·책상 등 "내 자리"를 물리적으로 확보</text>
+      <text x="664" y="191" text-anchor="middle" font-size="22" font-weight="800" fill="#0e7490">02</text>
+      <text x="700" y="180" font-size="21" font-weight="700" fill="#171717">혼자만의 공간과 루틴이 있다</text>
+      <text x="700" y="204" font-size="17" font-weight="500" fill="#6b7280">카페·책상 등 "내 자리"를 물리적으로 확보</text>
       <!-- checkbox -->
       <rect x="1070" y="170" width="28" height="28" rx="6" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
       <path d="M 1077 184 l 5 5 l 10 -12" fill="none" stroke="#0891b2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -31,9 +31,9 @@
       <rect x="80" y="244" width="500" height="90" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
       <rect x="80" y="244" width="6" height="90" rx="3" fill="#0891b2"/>
       <rect x="102" y="266" width="44" height="44" rx="10" fill="#ecfeff" stroke="#0891b2" stroke-width="1.5"/>
-      <text x="124" y="295" text-anchor="middle" font-size="16" font-weight="800" fill="#0e7490">03</text>
-      <text x="160" y="284" font-size="15" font-weight="700" fill="#171717">한 번에 하나만 깊게 몰입한다</text>
-      <text x="160" y="308" font-size="12" font-weight="500" fill="#6b7280">멀티태스킹보다 싱글태스킹 선호</text>
+      <text x="124" y="295" text-anchor="middle" font-size="22" font-weight="800" fill="#0e7490">03</text>
+      <text x="160" y="284" font-size="21" font-weight="700" fill="#171717">한 번에 하나만 깊게 몰입한다</text>
+      <text x="160" y="308" font-size="17" font-weight="500" fill="#6b7280">멀티태스킹보다 싱글태스킹 선호</text>
       <!-- checkbox -->
       <rect x="530" y="274" width="28" height="28" rx="6" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
       <path d="M 537 288 l 5 5 l 10 -12" fill="none" stroke="#0891b2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -42,9 +42,9 @@
       <rect x="620" y="244" width="500" height="90" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
       <rect x="620" y="244" width="6" height="90" rx="3" fill="#0891b2"/>
       <rect x="642" y="266" width="44" height="44" rx="10" fill="#ecfeff" stroke="#0891b2" stroke-width="1.5"/>
-      <text x="664" y="295" text-anchor="middle" font-size="16" font-weight="800" fill="#0e7490">04</text>
-      <text x="700" y="284" font-size="15" font-weight="700" fill="#171717">결과물 없이도 과정을 즐긴다</text>
-      <text x="700" y="308" font-size="12" font-weight="500" fill="#6b7280">SNS 업로드 없이 그냥 재미있어서 한다</text>
+      <text x="664" y="295" text-anchor="middle" font-size="22" font-weight="800" fill="#0e7490">04</text>
+      <text x="700" y="284" font-size="21" font-weight="700" fill="#171717">결과물 없이도 과정을 즐긴다</text>
+      <text x="700" y="308" font-size="17" font-weight="500" fill="#6b7280">SNS 업로드 없이 그냥 재미있어서 한다</text>
       <!-- checkbox -->
       <rect x="1070" y="274" width="28" height="28" rx="6" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
       <path d="M 1077 288 l 5 5 l 10 -12" fill="none" stroke="#0891b2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -53,9 +53,9 @@
       <rect x="80" y="348" width="500" height="90" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
       <rect x="80" y="348" width="6" height="90" rx="3" fill="#0891b2"/>
       <rect x="102" y="370" width="44" height="44" rx="10" fill="#ecfeff" stroke="#0891b2" stroke-width="1.5"/>
-      <text x="124" y="399" text-anchor="middle" font-size="16" font-weight="800" fill="#0e7490">05</text>
-      <text x="160" y="388" font-size="15" font-weight="700" fill="#171717">무료함을 불편해하지 않는다</text>
-      <text x="160" y="412" font-size="12" font-weight="500" fill="#6b7280">자극 없이도 5분 이상 편안하게 있을 수 있다</text>
+      <text x="124" y="399" text-anchor="middle" font-size="22" font-weight="800" fill="#0e7490">05</text>
+      <text x="160" y="388" font-size="21" font-weight="700" fill="#171717">무료함을 불편해하지 않는다</text>
+      <text x="160" y="412" font-size="17" font-weight="500" fill="#6b7280">자극 없이도 5분 이상 편안하게 있을 수 있다</text>
       <!-- checkbox -->
       <rect x="530" y="378" width="28" height="28" rx="6" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
       <path d="M 537 392 l 5 5 l 10 -12" fill="none" stroke="#0891b2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -64,9 +64,9 @@
       <rect x="620" y="348" width="500" height="90" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
       <rect x="620" y="348" width="6" height="90" rx="3" fill="#0891b2"/>
       <rect x="642" y="370" width="44" height="44" rx="10" fill="#ecfeff" stroke="#0891b2" stroke-width="1.5"/>
-      <text x="664" y="399" text-anchor="middle" font-size="16" font-weight="800" fill="#0e7490">06</text>
-      <text x="700" y="388" font-size="15" font-weight="700" fill="#171717">나만의 취향을 알고 있다</text>
-      <text x="700" y="412" font-size="12" font-weight="500" fill="#6b7280">추천·유행 없이 내가 좋아하는 것을 고를 수 있다</text>
+      <text x="664" y="399" text-anchor="middle" font-size="22" font-weight="800" fill="#0e7490">06</text>
+      <text x="700" y="388" font-size="21" font-weight="700" fill="#171717">나만의 취향을 알고 있다</text>
+      <text x="700" y="412" font-size="17" font-weight="500" fill="#6b7280">추천·유행 없이 내가 좋아하는 것을 고를 수 있다</text>
       <!-- checkbox -->
       <rect x="1070" y="378" width="28" height="28" rx="6" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
       <path d="M 1077 392 l 5 5 l 10 -12" fill="none" stroke="#0891b2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -75,9 +75,9 @@
       <rect x="80" y="452" width="500" height="90" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
       <rect x="80" y="452" width="6" height="90" rx="3" fill="#0891b2"/>
       <rect x="102" y="474" width="44" height="44" rx="10" fill="#ecfeff" stroke="#0891b2" stroke-width="1.5"/>
-      <text x="124" y="503" text-anchor="middle" font-size="16" font-weight="800" fill="#0e7490">07</text>
-      <text x="160" y="492" font-size="15" font-weight="700" fill="#171717">생각과 감정을 기록한다</text>
-      <text x="160" y="516" font-size="12" font-weight="500" fill="#6b7280">일기·메모·노션 등 어떤 형태든 좋다</text>
+      <text x="124" y="503" text-anchor="middle" font-size="22" font-weight="800" fill="#0e7490">07</text>
+      <text x="160" y="492" font-size="21" font-weight="700" fill="#171717">생각과 감정을 기록한다</text>
+      <text x="160" y="516" font-size="17" font-weight="500" fill="#6b7280">일기·메모·노션 등 어떤 형태든 좋다</text>
       <!-- checkbox -->
       <rect x="530" y="482" width="28" height="28" rx="6" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
       <path d="M 537 496 l 5 5 l 10 -12" fill="none" stroke="#0891b2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -86,9 +86,9 @@
       <rect x="620" y="452" width="500" height="90" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
       <rect x="620" y="452" width="6" height="90" rx="3" fill="#0891b2"/>
       <rect x="642" y="474" width="44" height="44" rx="10" fill="#ecfeff" stroke="#0891b2" stroke-width="1.5"/>
-      <text x="664" y="503" text-anchor="middle" font-size="16" font-weight="800" fill="#0e7490">08</text>
-      <text x="700" y="492" font-size="15" font-weight="700" fill="#171717">혼자 식당·영화관에 갈 수 있다</text>
-      <text x="700" y="516" font-size="12" font-weight="500" fill="#6b7280">타인의 시선을 불편해하지 않는다</text>
+      <text x="664" y="503" text-anchor="middle" font-size="22" font-weight="800" fill="#0e7490">08</text>
+      <text x="700" y="492" font-size="21" font-weight="700" fill="#171717">혼자 식당·영화관에 갈 수 있다</text>
+      <text x="700" y="516" font-size="17" font-weight="500" fill="#6b7280">타인의 시선을 불편해하지 않는다</text>
       <!-- checkbox -->
       <rect x="1070" y="482" width="28" height="28" rx="6" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
       <path d="M 1077 496 l 5 5 l 10 -12" fill="none" stroke="#0891b2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -97,9 +97,9 @@
       <rect x="80" y="556" width="500" height="90" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
       <rect x="80" y="556" width="6" height="90" rx="3" fill="#0891b2"/>
       <rect x="102" y="578" width="44" height="44" rx="10" fill="#ecfeff" stroke="#0891b2" stroke-width="1.5"/>
-      <text x="124" y="607" text-anchor="middle" font-size="16" font-weight="800" fill="#0e7490">09</text>
-      <text x="160" y="596" font-size="15" font-weight="700" fill="#171717">사람을 그리워할 줄도 안다</text>
-      <text x="160" y="620" font-size="12" font-weight="500" fill="#6b7280">혼자를 택하지만 고립은 피하는 균형감</text>
+      <text x="124" y="607" text-anchor="middle" font-size="22" font-weight="800" fill="#0e7490">09</text>
+      <text x="160" y="596" font-size="21" font-weight="700" fill="#171717">사람을 그리워할 줄도 안다</text>
+      <text x="160" y="620" font-size="17" font-weight="500" fill="#6b7280">혼자를 택하지만 고립은 피하는 균형감</text>
       <!-- checkbox -->
       <rect x="530" y="586" width="28" height="28" rx="6" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
       <path d="M 537 600 l 5 5 l 10 -12" fill="none" stroke="#0891b2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -108,9 +108,9 @@
       <rect x="620" y="556" width="500" height="90" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
       <rect x="620" y="556" width="6" height="90" rx="3" fill="#0891b2"/>
       <rect x="642" y="578" width="44" height="44" rx="10" fill="#ecfeff" stroke="#0891b2" stroke-width="1.5"/>
-      <text x="664" y="607" text-anchor="middle" font-size="16" font-weight="800" fill="#0e7490">10</text>
-      <text x="700" y="596" font-size="15" font-weight="700" fill="#171717">창작·학습에 시간을 쓴다</text>
-      <text x="700" y="620" font-size="12" font-weight="500" fill="#6b7280">소비보다 생산의 비중이 절반은 넘는다</text>
+      <text x="664" y="607" text-anchor="middle" font-size="22" font-weight="800" fill="#0e7490">10</text>
+      <text x="700" y="596" font-size="21" font-weight="700" fill="#171717">창작·학습에 시간을 쓴다</text>
+      <text x="700" y="620" font-size="17" font-weight="500" fill="#6b7280">소비보다 생산의 비중이 절반은 넘는다</text>
       <!-- checkbox -->
       <rect x="1070" y="586" width="28" height="28" rx="6" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
       <path d="M 1077 600 l 5 5 l 10 -12" fill="none" stroke="#0891b2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -118,8 +118,8 @@
   <!-- score band -->
   <g transform="translate(160, 790)">
     <rect x="0" y="0" width="880" height="60" rx="12" fill="#ecfeff" stroke="#0891b2" stroke-width="1"/>
-    <text x="30" y="24" font-size="13" font-weight="800" fill="#0e7490">당신의 점수는?</text>
-    <text x="30" y="44" font-size="12" font-weight="500" fill="#374151">0~3 입문자  ·  4~7 중급자  ·  8~9 고수  ·  10 마스터 (INTP 수준)</text>
+    <text x="30" y="24" font-size="18" font-weight="800" fill="#0e7490">당신의 점수는?</text>
+    <text x="30" y="44" font-size="17" font-weight="500" fill="#374151">0~3 입문자  ·  4~7 중급자  ·  8~9 고수  ·  10 마스터 (INTP 수준)</text>
   </g>
   
 <text x="1180" y="890" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.8">192types.co.kr · 2026 MBTI 트렌드 시리즈</text>

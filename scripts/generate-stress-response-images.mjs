@@ -151,8 +151,8 @@ function fourModes() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">스트레스 반응 4가지 모드 — 너는 어느 쪽이야?</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">주기능이 과부하되면 4가지 반응 중 하나로 튀어나와 · 반응 모드 = 대처 전략의 출발점</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">스트레스 반응 4가지 모드 — 너는 어느 쪽이야?</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">주기능이 과부하되면 4가지 반응 중 하나로 튀어나와 · 반응 모드 = 대처 전략의 출발점</text>
 
   ${positions.map((p, i) => {
     const m = modes[i];
@@ -160,14 +160,14 @@ function fourModes() {
       <g transform="translate(${p.x},${p.y})">
         <rect width="${w}" height="${h}" rx="18" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="${h}" rx="4" fill="${m.color}"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="${m.color}">${m.icon} ${m.name}</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="${C.textMuted}">${m.who}</text>
-        <text x="28" y="90" font-size="12" font-weight="700" fill="${C.textSoft}">· ${m.mech}</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="${m.color}">${m.icon} ${m.name}</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="${C.textMuted}">${m.who}</text>
+        <text x="28" y="90" font-size="17" font-weight="700" fill="${C.textSoft}">· ${m.mech}</text>
         ${m.signs.map((s, j) => `
           <g transform="translate(28, ${130 + j * 46})">
             <circle cx="8" cy="0" r="7" fill="${m.color}" opacity="0.25"/>
-            <text x="8" y="4" text-anchor="middle" font-size="10" font-weight="800" fill="${m.color}">${j + 1}</text>
-            <text x="26" y="4" font-size="13" font-weight="600" fill="${C.textSoft}">${s}</text>
+            <text x="8" y="4" text-anchor="middle" font-size="14" font-weight="800" fill="${m.color}">${j + 1}</text>
+            <text x="26" y="4" font-size="18" font-weight="600" fill="${C.textSoft}">${s}</text>
           </g>
         `).join('')}
       </g>
@@ -198,8 +198,8 @@ function gripFunction() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">그립(Grip) 기능 — 네 민낯이 튀어나오는 순간</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">극심한 스트레스에서 열등기능이 폭주하면 "평소의 나"와 정반대 모습이 드러나</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">그립(Grip) 기능 — 네 민낯이 튀어나오는 순간</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">극심한 스트레스에서 열등기능이 폭주하면 "평소의 나"와 정반대 모습이 드러나</text>
 
   ${items.map((it, i) => {
     const col = i % 2;
@@ -210,8 +210,8 @@ function gripFunction() {
     return `
       <rect x="${x}" y="${y}" width="555" height="80" rx="14" fill="${BG_OF[g]}" stroke="${C.border}"/>
       <rect x="${x}" y="${y}" width="7" height="80" rx="3" fill="${COLOR_OF[g]}"/>
-      <text x="${x + 22}" y="${y + 32}" font-size="17" font-weight="800" fill="${COLOR_OF[g]}">${it.t}</text>
-      <text x="${x + 22}" y="${y + 57}" font-size="12" font-weight="600" fill="${C.textSoft}">${it.grip}</text>
+      <text x="${x + 22}" y="${y + 32}" font-size="24" font-weight="800" fill="${COLOR_OF[g]}">${it.t}</text>
+      <text x="${x + 22}" y="${y + 57}" font-size="17" font-weight="600" fill="${C.textSoft}">${it.grip}</text>
     `;
   }).join('')}
   `);
@@ -251,19 +251,19 @@ function intensityRank() {
   };
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">16유형 스트레스 민감도 랭킹</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">동일 압박 자극 대비 반응 강도 · 100점 만점 · 인지기능 + 기질 종합</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">16유형 스트레스 민감도 랭킹</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">동일 압박 자극 대비 반응 강도 · 100점 만점 · 인지기능 + 기질 종합</text>
 
   ${list.map((r, i) => {
     const y = top + i * rowH;
     const w = (r.v / 100) * barW;
     const g = GROUP_OF[r.t];
     return `
-      <text x="45" y="${y + 28}" font-size="14" font-weight="700" fill="${C.textMuted}">${String(i + 1).padStart(2, '0')}</text>
-      <text x="90" y="${y + 28}" font-size="16" font-weight="800" fill="${COLOR_OF[g]}">${r.t}</text>
+      <text x="45" y="${y + 28}" font-size="20" font-weight="700" fill="${C.textMuted}">${String(i + 1).padStart(2, '0')}</text>
+      <text x="90" y="${y + 28}" font-size="22" font-weight="800" fill="${COLOR_OF[g]}">${r.t}</text>
       <rect x="${left}" y="${y + 9}" width="${w}" height="26" rx="13" fill="${colorFor(r.v)}" opacity="0.92"/>
-      <text x="${left + w - 12}" y="${y + 27}" text-anchor="end" font-size="13" font-weight="800" fill="#fff">${r.v}</text>
-      <text x="${left + w + 14}" y="${y + 27}" font-size="12" font-weight="600" fill="${C.textSoft}">${r.note}</text>
+      <text x="${left + w - 12}" y="${y + 27}" text-anchor="end" font-size="18" font-weight="800" fill="#fff">${r.v}</text>
+      <text x="${left + w + 14}" y="${y + 27}" font-size="17" font-weight="600" fill="${C.textSoft}">${r.note}</text>
     `;
   }).join('')}
   `);
@@ -292,8 +292,8 @@ function acuteChronic() {
   const ox = 160, oy = 160, w = 900, h = 600;
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">급성 × 만성 스트레스 반응 4분면</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">가로: 표현 방식(외부 폭발 ↔ 내부 침잠) · 세로: 반응 강도(급성 폭발 ↔ 만성 누적)</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">급성 × 만성 스트레스 반응 4분면</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">가로: 표현 방식(외부 폭발 ↔ 내부 침잠) · 세로: 반응 강도(급성 폭발 ↔ 만성 누적)</text>
 
   <!-- Frame -->
   <rect x="${ox}" y="${oy}" width="${w}" height="${h}" rx="20" fill="#ffffff" stroke="${C.border}"/>
@@ -303,28 +303,28 @@ function acuteChronic() {
   <line x1="${ox}" y1="${oy + h / 2}" x2="${ox + w}" y2="${oy + h / 2}" stroke="${C.divider}" stroke-dasharray="4 6"/>
 
   <!-- Axis labels -->
-  <text x="${ox + w / 2}" y="${oy - 14}" text-anchor="middle" font-size="12" font-weight="700" fill="${C.textMuted}">↑ 급성 폭발</text>
-  <text x="${ox + w / 2}" y="${oy + h + 22}" text-anchor="middle" font-size="12" font-weight="700" fill="${C.textMuted}">↓ 만성 누적</text>
-  <text x="${ox - 10}" y="${oy + h / 2 + 5}" text-anchor="end" font-size="12" font-weight="700" fill="${C.textMuted}">← 내부 침잠</text>
-  <text x="${ox + w + 10}" y="${oy + h / 2 + 5}" font-size="12" font-weight="700" fill="${C.textMuted}">외부 폭발 →</text>
+  <text x="${ox + w / 2}" y="${oy - 14}" text-anchor="middle" font-size="17" font-weight="700" fill="${C.textMuted}">↑ 급성 폭발</text>
+  <text x="${ox + w / 2}" y="${oy + h + 22}" text-anchor="middle" font-size="17" font-weight="700" fill="${C.textMuted}">↓ 만성 누적</text>
+  <text x="${ox - 10}" y="${oy + h / 2 + 5}" text-anchor="end" font-size="17" font-weight="700" fill="${C.textMuted}">← 내부 침잠</text>
+  <text x="${ox + w + 10}" y="${oy + h / 2 + 5}" font-size="17" font-weight="700" fill="${C.textMuted}">외부 폭발 →</text>
 
   <!-- Quadrant labels -->
-  <text x="${ox + 40}" y="${oy + 40}" font-size="13" font-weight="800" fill="${C.textSoft}">급성 + 내부</text>
-  <text x="${ox + 40}" y="${oy + 58}" font-size="11" font-weight="500" fill="${C.textMuted}">감정 폭발 · 울음 / 패닉</text>
+  <text x="${ox + 40}" y="${oy + 40}" font-size="18" font-weight="800" fill="${C.textSoft}">급성 + 내부</text>
+  <text x="${ox + 40}" y="${oy + 58}" font-size="15" font-weight="500" fill="${C.textMuted}">감정 폭발 · 울음 / 패닉</text>
 
-  <text x="${ox + w - 40}" y="${oy + 40}" text-anchor="end" font-size="13" font-weight="800" fill="${C.textSoft}">급성 + 외부</text>
-  <text x="${ox + w - 40}" y="${oy + 58}" text-anchor="end" font-size="11" font-weight="500" fill="${C.textMuted}">공격적 분출 · 대립</text>
+  <text x="${ox + w - 40}" y="${oy + 40}" text-anchor="end" font-size="18" font-weight="800" fill="${C.textSoft}">급성 + 외부</text>
+  <text x="${ox + w - 40}" y="${oy + 58}" text-anchor="end" font-size="15" font-weight="500" fill="${C.textMuted}">공격적 분출 · 대립</text>
 
-  <text x="${ox + 40}" y="${oy + h - 48}" font-size="13" font-weight="800" fill="${C.textSoft}">만성 + 내부</text>
-  <text x="${ox + 40}" y="${oy + h - 30}" font-size="11" font-weight="500" fill="${C.textMuted}">은둔 · 누적 우울</text>
+  <text x="${ox + 40}" y="${oy + h - 48}" font-size="18" font-weight="800" fill="${C.textSoft}">만성 + 내부</text>
+  <text x="${ox + 40}" y="${oy + h - 30}" font-size="15" font-weight="500" fill="${C.textMuted}">은둔 · 누적 우울</text>
 
-  <text x="${ox + w - 40}" y="${oy + h - 48}" text-anchor="end" font-size="13" font-weight="800" fill="${C.textSoft}">만성 + 외부</text>
-  <text x="${ox + w - 40}" y="${oy + h - 30}" text-anchor="end" font-size="11" font-weight="500" fill="${C.textMuted}">과열 번아웃 · 성취 집착</text>
+  <text x="${ox + w - 40}" y="${oy + h - 48}" text-anchor="end" font-size="18" font-weight="800" fill="${C.textSoft}">만성 + 외부</text>
+  <text x="${ox + w - 40}" y="${oy + h - 30}" text-anchor="end" font-size="15" font-weight="500" fill="${C.textMuted}">과열 번아웃 · 성취 집착</text>
 
   ${types.map(t => `
     <g transform="translate(${t.x},${t.y})">
       <circle r="28" fill="${COLOR_OF[t.g]}" opacity="0.9"/>
-      <text y="5" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">${t.t}</text>
+      <text y="5" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">${t.t}</text>
     </g>
   `).join('')}
   `);
@@ -375,8 +375,8 @@ function ritual() {
   const w = 520, h = 340;
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">기질별 스트레스 해소 루틴 체크리스트</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">네 기질에 맞는 4단계 즉시 적용 전략 · 지금 바로 1개 실천</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">기질별 스트레스 해소 루틴 체크리스트</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">네 기질에 맞는 4단계 즉시 적용 전략 · 지금 바로 1개 실천</text>
 
   ${positions.map((p, i) => {
     const g = groups[i];
@@ -384,10 +384,10 @@ function ritual() {
       <g transform="translate(${p.x},${p.y})">
         <rect width="${w}" height="${h}" rx="18" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="${h}" rx="4" fill="${g.color}"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="${C.textMuted}">${g.types}</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="${C.textMuted}">${g.types}</text>
         ${g.items.map((it, j) => `
-          <text x="28" y="${115 + j * 52}" font-size="13" font-weight="600" fill="${C.textSoft}">${it}</text>
+          <text x="28" y="${115 + j * 52}" font-size="18" font-weight="600" fill="${C.textSoft}">${it}</text>
         `).join('')}
       </g>
     `;

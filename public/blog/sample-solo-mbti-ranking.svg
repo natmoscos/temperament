@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="900" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="600" y="58" text-anchor="middle" font-size="34" font-weight="800" fill="#171717">
+    혼자 잘 노는 MBTI 순위
+  </text>
+  <text x="600" y="90" text-anchor="middle" font-size="15" font-weight="500" fill="#6b7280">
+    내향성 · 몰입력 · 자기완결성 기준 · 16유형 솔로 적응력 점수
+  </text>
+
+  <!-- Axis guides -->
+  <g stroke="#e5e7eb" stroke-width="1" stroke-dasharray="3 3">
+    <line x1="350" y1="130" x2="350" y2="790"/>
+    <line x1="500" y1="130" x2="500" y2="790"/>
+    <line x1="650" y1="130" x2="650" y2="790"/>
+    <line x1="800" y1="130" x2="800" y2="790"/>
+    <line x1="950" y1="130" x2="950" y2="790"/>
+    <line x1="1100" y1="130" x2="1100" y2="790"/>
+  </g>
+  <g font-size="10" fill="#9ca3af" font-weight="500">
+    <text x="350" y="125" text-anchor="middle">20</text>
+    <text x="500" y="125" text-anchor="middle">40</text>
+    <text x="650" y="125" text-anchor="middle">60</text>
+    <text x="800" y="125" text-anchor="middle">80</text>
+    <text x="950" y="125" text-anchor="middle">100</text>
+  </g>
+
+  <!-- ============ Rankings ============ -->
+  <!-- Row template: rank(45) | medal(35) | type(100) | bar | score -->
+  <!-- Row positions: y=150, each +40 -->
+
+  <!-- 1. INTP — 95 (NT cyan) + gold -->
+  <g>
+    <text x="50" y="176" font-size="18" font-weight="800" fill="#171717">1</text>
+    <circle cx="100" cy="170" r="14" fill="#f59e0b" stroke="#d97706" stroke-width="2"/>
+    <text x="100" y="175" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">金</text>
+    <text x="135" y="176" font-size="16" font-weight="700" fill="#0e7490">INTP</text>
+    <text x="200" y="176" font-size="11" fill="#6b7280">논리적 탐구자</text>
+    <rect x="300" y="155" width="600" height="30" rx="15" fill="#0891b2"/>
+    <rect x="300" y="155" width="612.5" height="30" rx="15" fill="#0891b2"/>
+    <text x="920" y="176" font-size="16" font-weight="800" fill="#0e7490">95</text>
+  </g>
+
+  <!-- 2. INFP — 92 (NF rose) + silver -->
+  <g>
+    <text x="50" y="216" font-size="18" font-weight="800" fill="#171717">2</text>
+    <circle cx="100" cy="210" r="14" fill="#d1d5db" stroke="#9ca3af" stroke-width="2"/>
+    <text x="100" y="215" text-anchor="middle" font-size="12" font-weight="800" fill="#374151">銀</text>
+    <text x="135" y="216" font-size="16" font-weight="700" fill="#be123c">INFP</text>
+    <text x="200" y="216" font-size="11" fill="#6b7280">상상 속 세계인</text>
+    <rect x="300" y="195" width="590" height="30" rx="15" fill="#e11d48"/>
+    <text x="898" y="216" font-size="16" font-weight="800" fill="#be123c">92</text>
+  </g>
+
+  <!-- 3. INTJ — 90 (NT cyan) + bronze -->
+  <g>
+    <text x="50" y="256" font-size="18" font-weight="800" fill="#171717">3</text>
+    <circle cx="100" cy="250" r="14" fill="#d97706" stroke="#92400e" stroke-width="2"/>
+    <text x="100" y="255" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">銅</text>
+    <text x="135" y="256" font-size="16" font-weight="700" fill="#0e7490">INTJ</text>
+    <text x="200" y="256" font-size="11" fill="#6b7280">전략적 은둔자</text>
+    <rect x="300" y="235" width="575" height="30" rx="15" fill="#0891b2"/>
+    <text x="883" y="256" font-size="16" font-weight="800" fill="#0e7490">90</text>
+  </g>
+
+  <!-- 4. INFJ — 86 (NF) -->
+  <g>
+    <text x="50" y="296" font-size="16" font-weight="700" fill="#4b5563">4</text>
+    <text x="135" y="296" font-size="15" font-weight="700" fill="#be123c">INFJ</text>
+    <text x="200" y="296" font-size="11" fill="#6b7280">깊은 사색가</text>
+    <rect x="300" y="278" width="545" height="26" rx="13" fill="#e11d48"/>
+    <text x="853" y="296" font-size="14" font-weight="700" fill="#be123c">86</text>
+  </g>
+
+  <!-- 5. ISTP — 82 (SP amber) -->
+  <g>
+    <text x="50" y="336" font-size="16" font-weight="700" fill="#4b5563">5</text>
+    <text x="135" y="336" font-size="15" font-weight="700" fill="#b45309">ISTP</text>
+    <text x="200" y="336" font-size="11" fill="#6b7280">기계 만지는 장인</text>
+    <rect x="300" y="318" width="515" height="26" rx="13" fill="#d97706"/>
+    <text x="823" y="336" font-size="14" font-weight="700" fill="#b45309">82</text>
+  </g>
+
+  <!-- 6. ISFP — 78 (SP) -->
+  <g>
+    <text x="50" y="376" font-size="16" font-weight="700" fill="#4b5563">6</text>
+    <text x="135" y="376" font-size="15" font-weight="700" fill="#b45309">ISFP</text>
+    <text x="200" y="376" font-size="11" fill="#6b7280">감각적 예술가</text>
+    <rect x="300" y="358" width="485" height="26" rx="13" fill="#d97706"/>
+    <text x="793" y="376" font-size="14" font-weight="700" fill="#b45309">78</text>
+  </g>
+
+  <!-- 7. ISTJ — 72 (SJ emerald) -->
+  <g>
+    <text x="50" y="416" font-size="16" font-weight="700" fill="#4b5563">7</text>
+    <text x="135" y="416" font-size="15" font-weight="700" fill="#047857">ISTJ</text>
+    <text x="200" y="416" font-size="11" fill="#6b7280">루틴의 완성자</text>
+    <rect x="300" y="398" width="440" height="26" rx="13" fill="#059669"/>
+    <text x="748" y="416" font-size="14" font-weight="700" fill="#047857">72</text>
+  </g>
+
+  <!-- 8. ISFJ — 68 (SJ) -->
+  <g>
+    <text x="50" y="456" font-size="16" font-weight="700" fill="#4b5563">8</text>
+    <text x="135" y="456" font-size="15" font-weight="700" fill="#047857">ISFJ</text>
+    <text x="200" y="456" font-size="11" fill="#6b7280">조용한 돌봄이</text>
+    <rect x="300" y="438" width="410" height="26" rx="13" fill="#059669"/>
+    <text x="718" y="456" font-size="14" font-weight="700" fill="#047857">68</text>
+  </g>
+
+  <!-- Divider: 내향 vs 외향 -->
+  <line x1="30" y1="475" x2="1170" y2="475" stroke="#d1d5db" stroke-width="1" stroke-dasharray="6 4"/>
+  <text x="60" y="470" font-size="10" font-weight="600" fill="#6b7280">▲ 내향형 (I) · 혼자도 충전되는 유형</text>
+  <text x="60" y="492" font-size="10" font-weight="600" fill="#9ca3af">▼ 외향형 (E) · 혼자 있으면 방전되는 유형</text>
+
+  <!-- 9. ENTP — 58 (NT) -->
+  <g>
+    <text x="50" y="516" font-size="16" font-weight="700" fill="#4b5563">9</text>
+    <text x="135" y="516" font-size="15" font-weight="700" fill="#0e7490">ENTP</text>
+    <text x="200" y="516" font-size="11" fill="#6b7280">아이디어 외톨이</text>
+    <rect x="300" y="500" width="350" height="24" rx="12" fill="#06b6d4"/>
+    <text x="658" y="516" font-size="14" font-weight="700" fill="#0e7490">58</text>
+  </g>
+
+  <!-- 10. ENTJ — 54 (NT) -->
+  <g>
+    <text x="50" y="556" font-size="16" font-weight="700" fill="#4b5563">10</text>
+    <text x="135" y="556" font-size="15" font-weight="700" fill="#0e7490">ENTJ</text>
+    <text x="200" y="556" font-size="11" fill="#6b7280">프로젝트 몰입형</text>
+    <rect x="300" y="540" width="320" height="24" rx="12" fill="#06b6d4"/>
+    <text x="628" y="556" font-size="14" font-weight="700" fill="#0e7490">54</text>
+  </g>
+
+  <!-- 11. ENFP — 48 (NF) -->
+  <g>
+    <text x="50" y="596" font-size="16" font-weight="700" fill="#4b5563">11</text>
+    <text x="135" y="596" font-size="15" font-weight="700" fill="#be123c">ENFP</text>
+    <text x="200" y="596" font-size="11" fill="#6b7280">금방 외로워짐</text>
+    <rect x="300" y="580" width="270" height="24" rx="12" fill="#f43f5e"/>
+    <text x="578" y="596" font-size="14" font-weight="700" fill="#be123c">48</text>
+  </g>
+
+  <!-- 12. ESTP — 42 (SP) -->
+  <g>
+    <text x="50" y="636" font-size="16" font-weight="700" fill="#4b5563">12</text>
+    <text x="135" y="636" font-size="15" font-weight="700" fill="#b45309">ESTP</text>
+    <text x="200" y="636" font-size="11" fill="#6b7280">활동 없으면 지루</text>
+    <rect x="300" y="620" width="225" height="24" rx="12" fill="#f59e0b"/>
+    <text x="533" y="636" font-size="14" font-weight="700" fill="#b45309">42</text>
+  </g>
+
+  <!-- 13. ENFJ — 38 (NF) -->
+  <g>
+    <text x="50" y="676" font-size="16" font-weight="700" fill="#4b5563">13</text>
+    <text x="135" y="676" font-size="15" font-weight="700" fill="#be123c">ENFJ</text>
+    <text x="200" y="676" font-size="11" fill="#6b7280">관계 없인 공허</text>
+    <rect x="300" y="660" width="195" height="24" rx="12" fill="#f43f5e"/>
+    <text x="503" y="676" font-size="14" font-weight="700" fill="#be123c">38</text>
+  </g>
+
+  <!-- 14. ESTJ — 32 (SJ) -->
+  <g>
+    <text x="50" y="716" font-size="16" font-weight="700" fill="#4b5563">14</text>
+    <text x="135" y="716" font-size="15" font-weight="700" fill="#047857">ESTJ</text>
+    <text x="200" y="716" font-size="11" fill="#6b7280">일 없으면 불안</text>
+    <rect x="300" y="700" width="160" height="24" rx="12" fill="#10b981"/>
+    <text x="468" y="716" font-size="14" font-weight="700" fill="#047857">32</text>
+  </g>
+
+  <!-- 15. ESFP — 26 (SP) -->
+  <g>
+    <text x="50" y="756" font-size="16" font-weight="700" fill="#4b5563">15</text>
+    <text x="135" y="756" font-size="15" font-weight="700" fill="#b45309">ESFP</text>
+    <text x="200" y="756" font-size="11" fill="#6b7280">주목받아야 충전</text>
+    <rect x="300" y="740" width="125" height="24" rx="12" fill="#f59e0b"/>
+    <text x="433" y="756" font-size="14" font-weight="700" fill="#b45309">26</text>
+  </g>
+
+  <!-- 16. ESFJ — 22 (SJ) -->
+  <g>
+    <text x="50" y="796" font-size="16" font-weight="700" fill="#4b5563">16</text>
+    <text x="135" y="796" font-size="15" font-weight="700" fill="#047857">ESFJ</text>
+    <text x="200" y="796" font-size="11" fill="#6b7280">혼자 = 우울 신호</text>
+    <rect x="300" y="780" width="100" height="24" rx="12" fill="#10b981"/>
+    <text x="408" y="796" font-size="14" font-weight="700" fill="#047857">22</text>
+  </g>
+
+  <!-- ============ Legend ============ -->
+  <g transform="translate(150, 822)">
+    <rect x="0" y="0" width="900" height="56" fill="#fff" stroke="#e5e7eb" stroke-width="1" rx="8"/>
+
+    <circle cx="35" cy="28" r="9" fill="#0891b2"/>
+    <text x="52" y="32" font-size="12" font-weight="600" fill="#374151">NT · 분석가형</text>
+
+    <circle cx="215" cy="28" r="9" fill="#e11d48"/>
+    <text x="232" y="32" font-size="12" font-weight="600" fill="#374151">NF · 이상주의형</text>
+
+    <circle cx="410" cy="28" r="9" fill="#059669"/>
+    <text x="427" y="32" font-size="12" font-weight="600" fill="#374151">SJ · 관리자형</text>
+
+    <circle cx="595" cy="28" r="9" fill="#d97706"/>
+    <text x="612" y="32" font-size="12" font-weight="600" fill="#374151">SP · 기회포착형</text>
+
+    <text x="870" y="32" text-anchor="end" font-size="11" font-style="italic" fill="#9ca3af">점수 = 내향성 + 몰입력 + 자기완결성</text>
+  </g>
+
+  <!-- Watermark -->
+  <text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.8">
+    192types.co.kr · 2026 MBTI 트렌드 시리즈
+  </text>
+</svg>

@@ -2,8 +2,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">4기질별 집중력 곡선</text>
-  <text x="600" y="80" text-anchor="middle" font-size="14" font-weight="500" fill="#6b7280">공부 시작 후 시간별 집중도 변화 · 네 기질에 맞는 타이머 설정</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="#171717">4기질별 집중력 곡선</text>
+  <text x="600" y="80" text-anchor="middle" font-size="20" font-weight="500" fill="#6b7280">공부 시작 후 시간별 집중도 변화 · 네 기질에 맞는 타이머 설정</text>
 
   <!-- Axes -->
   <line x1="100" y1="640" x2="1120" y2="640" stroke="#6b7280" stroke-width="2"/>
@@ -12,22 +12,22 @@
   <!-- X labels (minutes) -->
   
       <line x1="100" y1="640" x2="100" y2="646" stroke="#6b7280" stroke-width="2"/>
-      <text x="100" y="664" text-anchor="middle" font-size="12" font-weight="700" fill="#6b7280">0분</text>
+      <text x="100" y="664" text-anchor="middle" font-size="17" font-weight="700" fill="#6b7280">0분</text>
     
       <line x1="355" y1="640" x2="355" y2="646" stroke="#6b7280" stroke-width="2"/>
-      <text x="355" y="664" text-anchor="middle" font-size="12" font-weight="700" fill="#6b7280">30분</text>
+      <text x="355" y="664" text-anchor="middle" font-size="17" font-weight="700" fill="#6b7280">30분</text>
     
       <line x1="610" y1="640" x2="610" y2="646" stroke="#6b7280" stroke-width="2"/>
-      <text x="610" y="664" text-anchor="middle" font-size="12" font-weight="700" fill="#6b7280">60분</text>
+      <text x="610" y="664" text-anchor="middle" font-size="17" font-weight="700" fill="#6b7280">60분</text>
     
       <line x1="865" y1="640" x2="865" y2="646" stroke="#6b7280" stroke-width="2"/>
-      <text x="865" y="664" text-anchor="middle" font-size="12" font-weight="700" fill="#6b7280">90분</text>
+      <text x="865" y="664" text-anchor="middle" font-size="17" font-weight="700" fill="#6b7280">90분</text>
     
       <line x1="1120" y1="640" x2="1120" y2="646" stroke="#6b7280" stroke-width="2"/>
-      <text x="1120" y="664" text-anchor="middle" font-size="12" font-weight="700" fill="#6b7280">120분</text>
+      <text x="1120" y="664" text-anchor="middle" font-size="17" font-weight="700" fill="#6b7280">120분</text>
     
 
-  <text x="90" y="130" text-anchor="end" font-size="12" font-weight="700" fill="#6b7280">집중도</text>
+  <text x="90" y="130" text-anchor="end" font-size="17" font-weight="700" fill="#6b7280">집중도</text>
 
   <!-- Curves -->
   
@@ -44,26 +44,26 @@
   
     <g transform="translate(80, 700)">
       <rect width="14" height="14" rx="3" fill="#0891b2"/>
-      <text x="24" y="12" font-size="14" font-weight="800" fill="#0891b2">담즙질</text>
-      <text x="100" y="12" font-size="12" font-weight="500" fill="#374151">15분 폭발 → 45분 후 급감 → 짧은 재시작</text>
+      <text x="24" y="12" font-size="20" font-weight="800" fill="#0891b2">담즙질</text>
+      <text x="100" y="12" font-size="17" font-weight="500" fill="#374151">15분 폭발 → 45분 후 급감 → 짧은 재시작</text>
     </g>
   
     <g transform="translate(640, 700)">
       <rect width="14" height="14" rx="3" fill="#0e7490"/>
-      <text x="24" y="12" font-size="14" font-weight="800" fill="#0e7490">우울질</text>
-      <text x="100" y="12" font-size="12" font-weight="500" fill="#374151">60분 피크 → 120분까지 완만 감소</text>
+      <text x="24" y="12" font-size="20" font-weight="800" fill="#0e7490">우울질</text>
+      <text x="100" y="12" font-size="17" font-weight="500" fill="#374151">60분 피크 → 120분까지 완만 감소</text>
     </g>
   
     <g transform="translate(80, 750)">
       <rect width="14" height="14" rx="3" fill="#059669"/>
-      <text x="24" y="12" font-size="14" font-weight="800" fill="#059669">점액질</text>
-      <text x="100" y="12" font-size="12" font-weight="500" fill="#374151">45분 피크 → 2시간+ 장시간 유지</text>
+      <text x="24" y="12" font-size="20" font-weight="800" fill="#059669">점액질</text>
+      <text x="100" y="12" font-size="17" font-weight="500" fill="#374151">45분 피크 → 2시간+ 장시간 유지</text>
     </g>
   
     <g transform="translate(640, 750)">
       <rect width="14" height="14" rx="3" fill="#f43f5e"/>
-      <text x="24" y="12" font-size="14" font-weight="800" fill="#f43f5e">다혈질</text>
-      <text x="100" y="12" font-size="12" font-weight="500" fill="#374151">10분 폭발 → 30분 후 급감 → 자극 필요</text>
+      <text x="24" y="12" font-size="20" font-weight="800" fill="#f43f5e">다혈질</text>
+      <text x="100" y="12" font-size="17" font-weight="500" fill="#374151">10분 폭발 → 30분 후 급감 → 자극 필요</text>
     </g>
   
   

@@ -2,71 +2,71 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="#171717">기질별 카톡 대응 체크리스트</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">오늘부터 네 카톡 관계가 달라지는 4단계 실전 가이드</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="#171717">기질별 카톡 대응 체크리스트</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="#6b7280">오늘부터 네 카톡 관계가 달라지는 4단계 실전 가이드</text>
 
   
       <g transform="translate(60,115)">
         <rect width="520" height="340" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="340" rx="4" fill="#f43f5e"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="#f43f5e">🌟 다혈질 카톡 가이드</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="#6b7280">ENFP · ESFP · ESFJ · ENFJ</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="#f43f5e">🌟 다혈질 카톡 가이드</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="#6b7280">ENFP · ESFP · ESFJ · ENFJ</text>
         
-          <text x="28" y="115" font-size="13" font-weight="600" fill="#374151">① 답장 즉시 못하면 "이따 답장" 1줄 보내기</text>
+          <text x="28" y="115" font-size="18" font-weight="600" fill="#374151">① 답장 즉시 못하면 "이따 답장" 1줄 보내기</text>
         
-          <text x="28" y="167" font-size="13" font-weight="600" fill="#374151">② 감정 이모지는 상대 유형에 맞춰 조절</text>
+          <text x="28" y="167" font-size="18" font-weight="600" fill="#374151">② 감정 이모지는 상대 유형에 맞춰 조절</text>
         
-          <text x="28" y="219" font-size="13" font-weight="600" fill="#374151">③ 긴 답장 대신 음성 메시지 활용</text>
+          <text x="28" y="219" font-size="18" font-weight="600" fill="#374151">③ 긴 답장 대신 음성 메시지 활용</text>
         
-          <text x="28" y="271" font-size="13" font-weight="600" fill="#374151">④ 주 1회 "디지털 디톡스" 알림 끄기</text>
+          <text x="28" y="271" font-size="18" font-weight="600" fill="#374151">④ 주 1회 "디지털 디톡스" 알림 끄기</text>
         
       </g>
     
       <g transform="translate(620,115)">
         <rect width="520" height="340" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="340" rx="4" fill="#0891b2"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="#0891b2">⚡ 담즙질 카톡 가이드</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="#6b7280">ENTJ · ESTJ · ENTP · ESTP</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="#0891b2">⚡ 담즙질 카톡 가이드</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="#6b7280">ENTJ · ESTJ · ENTP · ESTP</text>
         
-          <text x="28" y="115" font-size="13" font-weight="600" fill="#374151">① 업무 톡은 24시간 내 답장 원칙</text>
+          <text x="28" y="115" font-size="18" font-weight="600" fill="#374151">① 업무 톡은 24시간 내 답장 원칙</text>
         
-          <text x="28" y="167" font-size="13" font-weight="600" fill="#374151">② "ㅇㅋ"만 쓰면 차가워 보임, 이모지 1개</text>
+          <text x="28" y="167" font-size="18" font-weight="600" fill="#374151">② "ㅇㅋ"만 쓰면 차가워 보임, 이모지 1개</text>
         
-          <text x="28" y="219" font-size="13" font-weight="600" fill="#374151">③ 감정 상담 톡엔 "전화 가능?"로 전환</text>
+          <text x="28" y="219" font-size="18" font-weight="600" fill="#374151">③ 감정 상담 톡엔 "전화 가능?"로 전환</text>
         
-          <text x="28" y="271" font-size="13" font-weight="600" fill="#374151">④ 단체톡엔 불필요한 댓글 지양</text>
+          <text x="28" y="271" font-size="18" font-weight="600" fill="#374151">④ 단체톡엔 불필요한 댓글 지양</text>
         
       </g>
     
       <g transform="translate(60,490)">
         <rect width="520" height="340" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="340" rx="4" fill="#059669"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="#059669">🌾 점액질 카톡 가이드</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="#6b7280">ISFJ · ISTJ · INFP · ISFP</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="#059669">🌾 점액질 카톡 가이드</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="#6b7280">ISFJ · ISTJ · INFP · ISFP</text>
         
-          <text x="28" y="115" font-size="13" font-weight="600" fill="#374151">① 답장 완벽주의 내려놓기 — "ㅇㅇ"도 충분</text>
+          <text x="28" y="115" font-size="18" font-weight="600" fill="#374151">① 답장 완벽주의 내려놓기 — "ㅇㅇ"도 충분</text>
         
-          <text x="28" y="167" font-size="13" font-weight="600" fill="#374151">② 감정 소진되면 "답장 늦어져 미안" 한 줄</text>
+          <text x="28" y="167" font-size="18" font-weight="600" fill="#374151">② 감정 소진되면 "답장 늦어져 미안" 한 줄</text>
         
-          <text x="28" y="219" font-size="13" font-weight="600" fill="#374151">③ 단체톡 무음 + 중요한 1:1만 알림</text>
+          <text x="28" y="219" font-size="18" font-weight="600" fill="#374151">③ 단체톡 무음 + 중요한 1:1만 알림</text>
         
-          <text x="28" y="271" font-size="13" font-weight="600" fill="#374151">④ 주말 하루 "알림 OFF 데이" 고정</text>
+          <text x="28" y="271" font-size="18" font-weight="600" fill="#374151">④ 주말 하루 "알림 OFF 데이" 고정</text>
         
       </g>
     
       <g transform="translate(620,490)">
         <rect width="520" height="340" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="340" rx="4" fill="#0e7490"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="#0e7490">🌙 우울질 카톡 가이드</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="#6b7280">INTJ · INFJ · INTP · ISTP</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="#0e7490">🌙 우울질 카톡 가이드</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="#6b7280">INTJ · INFJ · INTP · ISTP</text>
         
-          <text x="28" y="115" font-size="13" font-weight="600" fill="#374151">① 긴 답장 → 3줄 이내로 축약 연습</text>
+          <text x="28" y="115" font-size="18" font-weight="600" fill="#374151">① 긴 답장 → 3줄 이내로 축약 연습</text>
         
-          <text x="28" y="167" font-size="13" font-weight="600" fill="#374151">② 답장 잊음 대비 "3일마다 체크" 알림</text>
+          <text x="28" y="167" font-size="18" font-weight="600" fill="#374151">② 답장 잊음 대비 "3일마다 체크" 알림</text>
         
-          <text x="28" y="219" font-size="13" font-weight="600" fill="#374151">③ 관계 유지형 톡에 이모지 1개 추가</text>
+          <text x="28" y="219" font-size="18" font-weight="600" fill="#374151">③ 관계 유지형 톡에 이모지 1개 추가</text>
         
-          <text x="28" y="271" font-size="13" font-weight="600" fill="#374151">④ 중요한 사람에겐 "읽음" 후 빠른 한 줄</text>
+          <text x="28" y="271" font-size="18" font-weight="600" fill="#374151">④ 중요한 사람에겐 "읽음" 후 빠른 한 줄</text>
         
       </g>
     

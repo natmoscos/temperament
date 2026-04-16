@@ -61,8 +61,8 @@ function timeline() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">버핏 투자 70년 연대기</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">11세 첫 투자 → 94세 현재까지 · Si의 장기 축적 대표 사례</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">버핏 투자 70년 연대기</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">11세 첫 투자 → 94세 현재까지 · Si의 장기 축적 대표 사례</text>
 
   <!-- Timeline line -->
   <line x1="150" y1="420" x2="1050" y2="420" stroke="${C.bufDeep}" stroke-width="4"/>
@@ -79,17 +79,17 @@ function timeline() {
       <line x1="${x}" y1="${lineY1}" x2="${x}" y2="${lineY2}" stroke="${C.bufDeep}" stroke-width="2" stroke-dasharray="4,3"/>
       <g transform="translate(${x}, ${labelY})">
         <rect x="-85" y="-40" width="170" height="80" rx="14" fill="#ffffff" stroke="${C.bufDeep}"/>
-        <text x="0" y="-15" text-anchor="middle" font-size="16" font-weight="900" fill="${C.bufDeep}">${e.year}</text>
-        <text x="0" y="5" text-anchor="middle" font-size="11" font-weight="600" fill="${C.textMuted}">${e.age}세</text>
-        <text x="0" y="28" text-anchor="middle" font-size="11" font-weight="500" fill="${C.textSoft}">${e.event.slice(0, 18)}</text>
+        <text x="0" y="-15" text-anchor="middle" font-size="22" font-weight="900" fill="${C.bufDeep}">${e.year}</text>
+        <text x="0" y="5" text-anchor="middle" font-size="15" font-weight="600" fill="${C.textMuted}">${e.age}세</text>
+        <text x="0" y="28" text-anchor="middle" font-size="15" font-weight="500" fill="${C.textSoft}">${e.event.slice(0, 18)}</text>
       </g>
     `;
   }).join('')}
 
   <!-- Bottom insight -->
   <rect x="200" y="750" width="800" height="80" rx="16" fill="${C.bufSoft}" stroke="${C.bufDeep}"/>
-  <text x="600" y="785" text-anchor="middle" font-size="15" font-weight="800" fill="${C.bufDeep}">💡 핵심: 70년간 같은 원칙 유지 — Si 주기능의 장기 일관성</text>
-  <text x="600" y="810" text-anchor="middle" font-size="13" font-weight="500" fill="${C.text}">단기 유행 무시 · 검증된 기업만 · "평생 보유" 원칙</text>
+  <text x="600" y="785" text-anchor="middle" font-size="21" font-weight="800" fill="${C.bufDeep}">💡 핵심: 70년간 같은 원칙 유지 — Si 주기능의 장기 일관성</text>
+  <text x="600" y="810" text-anchor="middle" font-size="18" font-weight="500" fill="${C.text}">단기 유행 무시 · 검증된 기업만 · "평생 보유" 원칙</text>
   `);
 }
 
@@ -108,8 +108,8 @@ function istjPrinciples() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">ISTJ 버핏의 투자 10원칙</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">Si(검증) + Te(실행) 조합의 교과서 · 70년간 변하지 않은 철칙</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">ISTJ 버핏의 투자 10원칙</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">Si(검증) + Te(실행) 조합의 교과서 · 70년간 변하지 않은 철칙</text>
 
   ${principles.map((p, i) => {
     const col = i % 2;
@@ -121,12 +121,12 @@ function istjPrinciples() {
         <rect width="540" height="130" rx="18" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="130" rx="4" fill="${C.bufDeep}"/>
 
-        <text x="30" y="50" font-size="26" font-weight="900" fill="${C.gold}">${p.num}</text>
-        <text x="90" y="50" font-size="16" font-weight="800" fill="${C.text}">${p.rule}</text>
+        <text x="30" y="50" font-size="36" font-weight="900" fill="${C.gold}">${p.num}</text>
+        <text x="90" y="50" font-size="22" font-weight="800" fill="${C.text}">${p.rule}</text>
 
         <g transform="translate(90, 75)">
           <rect width="80" height="26" rx="13" fill="${C.bufDeep}" opacity="0.15"/>
-          <text x="40" y="18" text-anchor="middle" font-size="13" font-weight="900" fill="${C.bufDeep}">${p.func}</text>
+          <text x="40" y="18" text-anchor="middle" font-size="18" font-weight="900" fill="${C.bufDeep}">${p.func}</text>
         </g>
       </g>
     `;
@@ -136,22 +136,22 @@ function istjPrinciples() {
 
 function compareBuffett() {
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">INTJ 머스크 vs ISTJ 버핏 — 부의 두 길</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">같은 부자인데 투자 DNA는 정반대 · 너는 어느 쪽이야?</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">INTJ 머스크 vs ISTJ 버핏 — 부의 두 길</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">같은 부자인데 투자 DNA는 정반대 · 너는 어느 쪽이야?</text>
 
   <!-- Left: Musk -->
   <g transform="translate(60, 120)">
     <rect width="520" height="720" rx="22" fill="#ffffff" stroke="${C.nt700}" stroke-width="2"/>
     <rect width="8" height="720" rx="4" fill="${C.nt700}"/>
 
-    <text x="30" y="45" font-size="24" font-weight="900" fill="${C.nt700}">일론 머스크</text>
+    <text x="30" y="45" font-size="34" font-weight="900" fill="${C.nt700}">일론 머스크</text>
     <g transform="translate(30, 60)">
       <rect width="70" height="26" rx="13" fill="${C.nt700}"/>
-      <text x="35" y="19" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">INTJ</text>
+      <text x="35" y="19" text-anchor="middle" font-size="18" font-weight="900" fill="#fff">INTJ</text>
     </g>
-    <text x="110" y="80" font-size="14" font-weight="700" fill="${C.textMuted}">Ni + Te 주·보조</text>
+    <text x="110" y="80" font-size="20" font-weight="700" fill="${C.textMuted}">Ni + Te 주·보조</text>
 
-    <text x="30" y="130" font-size="18" font-weight="900" fill="${C.nt700}">🚀 부의 공식</text>
+    <text x="30" y="130" font-size="25" font-weight="900" fill="${C.nt700}">🚀 부의 공식</text>
 
     ${[
       { t: '비전 기반 점프', d: '10년 후 세계 설계 → 지금 실행' },
@@ -163,9 +163,9 @@ function compareBuffett() {
     ].map((x, i) => `
       <g transform="translate(30, ${170 + i * 85})">
         <circle cx="10" cy="0" r="12" fill="${C.nt700}" opacity="0.2"/>
-        <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="${C.nt700}">${i + 1}</text>
-        <text x="32" y="3" font-size="14" font-weight="800" fill="${C.text}">${x.t}</text>
-        <text x="32" y="26" font-size="12" font-weight="500" fill="${C.textMuted}">${x.d}</text>
+        <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="${C.nt700}">${i + 1}</text>
+        <text x="32" y="3" font-size="20" font-weight="800" fill="${C.text}">${x.t}</text>
+        <text x="32" y="26" font-size="17" font-weight="500" fill="${C.textMuted}">${x.d}</text>
       </g>
     `).join('')}
   </g>
@@ -175,14 +175,14 @@ function compareBuffett() {
     <rect width="520" height="720" rx="22" fill="#ffffff" stroke="${C.bufDeep}" stroke-width="2"/>
     <rect width="8" height="720" rx="4" fill="${C.bufDeep}"/>
 
-    <text x="30" y="45" font-size="24" font-weight="900" fill="${C.bufDeep}">워런 버핏</text>
+    <text x="30" y="45" font-size="34" font-weight="900" fill="${C.bufDeep}">워런 버핏</text>
     <g transform="translate(30, 60)">
       <rect width="70" height="26" rx="13" fill="${C.bufDeep}"/>
-      <text x="35" y="19" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">ISTJ</text>
+      <text x="35" y="19" text-anchor="middle" font-size="18" font-weight="900" fill="#fff">ISTJ</text>
     </g>
-    <text x="110" y="80" font-size="14" font-weight="700" fill="${C.textMuted}">Si + Te 주·보조</text>
+    <text x="110" y="80" font-size="20" font-weight="700" fill="${C.textMuted}">Si + Te 주·보조</text>
 
-    <text x="30" y="130" font-size="18" font-weight="900" fill="${C.bufDeep}">📈 부의 공식</text>
+    <text x="30" y="130" font-size="25" font-weight="900" fill="${C.bufDeep}">📈 부의 공식</text>
 
     ${[
       { t: '검증 기반 누적', d: '이해한 사업만 매수' },
@@ -194,9 +194,9 @@ function compareBuffett() {
     ].map((x, i) => `
       <g transform="translate(30, ${170 + i * 85})">
         <circle cx="10" cy="0" r="12" fill="${C.bufDeep}" opacity="0.2"/>
-        <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="${C.bufDeep}">${i + 1}</text>
-        <text x="32" y="3" font-size="14" font-weight="800" fill="${C.text}">${x.t}</text>
-        <text x="32" y="26" font-size="12" font-weight="500" fill="${C.textMuted}">${x.d}</text>
+        <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="${C.bufDeep}">${i + 1}</text>
+        <text x="32" y="3" font-size="20" font-weight="800" fill="${C.text}">${x.t}</text>
+        <text x="32" y="26" font-size="17" font-weight="500" fill="${C.textMuted}">${x.d}</text>
       </g>
     `).join('')}
   </g>
@@ -213,8 +213,8 @@ function buffettStrategies() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">버핏 투자 5계명 — 오늘부터 적용</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">ISTJ가 아니어도 따라할 수 있는 실전 규칙</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">버핏 투자 5계명 — 오늘부터 적용</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">ISTJ가 아니어도 따라할 수 있는 실전 규칙</text>
 
   ${strats.map((s, i) => {
     const y = 120 + i * 145;
@@ -224,11 +224,11 @@ function buffettStrategies() {
         <rect width="8" height="130" rx="4" fill="${C.bufDeep}"/>
 
         <circle cx="60" cy="65" r="38" fill="${C.bufDeep}" opacity="0.15"/>
-        <text x="60" y="77" text-anchor="middle" font-size="30" font-weight="900" fill="${C.bufDeep}">${s.n}</text>
+        <text x="60" y="77" text-anchor="middle" font-size="42" font-weight="900" fill="${C.bufDeep}">${s.n}</text>
 
-        <text x="130" y="45" font-size="20" font-weight="900" fill="${C.bufDeep}">${s.t}</text>
-        <text x="130" y="72" font-size="14" font-weight="600" fill="${C.textSoft}">${s.desc}</text>
-        <text x="130" y="103" font-size="13" font-weight="700" fill="${C.money}">👉 ${s.action}</text>
+        <text x="130" y="45" font-size="28" font-weight="900" fill="${C.bufDeep}">${s.t}</text>
+        <text x="130" y="72" font-size="20" font-weight="600" fill="${C.textSoft}">${s.desc}</text>
+        <text x="130" y="103" font-size="18" font-weight="700" fill="${C.money}">👉 ${s.action}</text>
       </g>
     `;
   }).join('')}
@@ -277,8 +277,8 @@ function ritual() {
   const w = 520, h = 340;
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">기질별 "버핏 방식" 적용 가이드</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">ISTJ가 아니어도 적용 가능한 4단계 루틴</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">기질별 "버핏 방식" 적용 가이드</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">ISTJ가 아니어도 적용 가능한 4단계 루틴</text>
 
   ${positions.map((p, i) => {
     const g = groups[i];
@@ -286,10 +286,10 @@ function ritual() {
       <g transform="translate(${p.x},${p.y})">
         <rect width="${w}" height="${h}" rx="18" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="${h}" rx="4" fill="${g.color}"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="${C.textMuted}">${g.types}</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="${C.textMuted}">${g.types}</text>
         ${g.items.map((it, j) => `
-          <text x="28" y="${115 + j * 52}" font-size="13" font-weight="600" fill="${C.textSoft}">${it}</text>
+          <text x="28" y="${115 + j * 52}" font-size="18" font-weight="600" fill="${C.textSoft}">${it}</text>
         `).join('')}
       </g>
     `;

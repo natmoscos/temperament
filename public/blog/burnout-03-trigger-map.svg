@@ -2,89 +2,89 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="#171717">16유형 번아웃 트리거 매트릭스</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">네가 정확히 어떤 상황에서 무너지는지 · 유형별 1순위 트리거 지도</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="#171717">16유형 번아웃 트리거 매트릭스</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="#6b7280">네가 정확히 어떤 상황에서 무너지는지 · 유형별 1순위 트리거 지도</text>
 
   
       <rect x="60" y="115" width="555" height="80" rx="14" fill="#ecfeff" stroke="#e5e7eb"/>
       <rect x="60" y="115" width="7" height="80" rx="3" fill="#0891b2"/>
-      <text x="82" y="147" font-size="17" font-weight="800" fill="#0891b2">INTJ</text>
-      <text x="82" y="172" font-size="12" font-weight="600" fill="#374151">장기 계획 붕괴 / 무의미한 반복 업무</text>
+      <text x="82" y="147" font-size="24" font-weight="800" fill="#0891b2">INTJ</text>
+      <text x="82" y="172" font-size="17" font-weight="600" fill="#374151">장기 계획 붕괴 / 무의미한 반복 업무</text>
     
       <rect x="640" y="115" width="555" height="80" rx="14" fill="#ecfeff" stroke="#e5e7eb"/>
       <rect x="640" y="115" width="7" height="80" rx="3" fill="#0891b2"/>
-      <text x="662" y="147" font-size="17" font-weight="800" fill="#0891b2">INTP</text>
-      <text x="662" y="172" font-size="12" font-weight="600" fill="#374151">비합리적 지시 / 의미 없는 회의 연속</text>
+      <text x="662" y="147" font-size="24" font-weight="800" fill="#0891b2">INTP</text>
+      <text x="662" y="172" font-size="17" font-weight="600" fill="#374151">비합리적 지시 / 의미 없는 회의 연속</text>
     
       <rect x="60" y="210" width="555" height="80" rx="14" fill="#ecfeff" stroke="#e5e7eb"/>
       <rect x="60" y="210" width="7" height="80" rx="3" fill="#0891b2"/>
-      <text x="82" y="242" font-size="17" font-weight="800" fill="#0891b2">ENTJ</text>
-      <text x="82" y="267" font-size="12" font-weight="600" fill="#374151">성과 좌절 / 팀원 역량 부족</text>
+      <text x="82" y="242" font-size="24" font-weight="800" fill="#0891b2">ENTJ</text>
+      <text x="82" y="267" font-size="17" font-weight="600" fill="#374151">성과 좌절 / 팀원 역량 부족</text>
     
       <rect x="640" y="210" width="555" height="80" rx="14" fill="#ecfeff" stroke="#e5e7eb"/>
       <rect x="640" y="210" width="7" height="80" rx="3" fill="#0891b2"/>
-      <text x="662" y="242" font-size="17" font-weight="800" fill="#0891b2">ENTP</text>
-      <text x="662" y="267" font-size="12" font-weight="600" fill="#374151">루틴화 / 새로움 차단</text>
+      <text x="662" y="242" font-size="24" font-weight="800" fill="#0891b2">ENTP</text>
+      <text x="662" y="267" font-size="17" font-weight="600" fill="#374151">루틴화 / 새로움 차단</text>
     
       <rect x="60" y="305" width="555" height="80" rx="14" fill="#fff1f2" stroke="#e5e7eb"/>
       <rect x="60" y="305" width="7" height="80" rx="3" fill="#e11d48"/>
-      <text x="82" y="337" font-size="17" font-weight="800" fill="#e11d48">INFJ</text>
-      <text x="82" y="362" font-size="12" font-weight="600" fill="#374151">가치 배신 / 이상과 현실 격차</text>
+      <text x="82" y="337" font-size="24" font-weight="800" fill="#e11d48">INFJ</text>
+      <text x="82" y="362" font-size="17" font-weight="600" fill="#374151">가치 배신 / 이상과 현실 격차</text>
     
       <rect x="640" y="305" width="555" height="80" rx="14" fill="#fff1f2" stroke="#e5e7eb"/>
       <rect x="640" y="305" width="7" height="80" rx="3" fill="#e11d48"/>
-      <text x="662" y="337" font-size="17" font-weight="800" fill="#e11d48">INFP</text>
-      <text x="662" y="362" font-size="12" font-weight="600" fill="#374151">위선적 환경 / 정체성 강요</text>
+      <text x="662" y="337" font-size="24" font-weight="800" fill="#e11d48">INFP</text>
+      <text x="662" y="362" font-size="17" font-weight="600" fill="#374151">위선적 환경 / 정체성 강요</text>
     
       <rect x="60" y="400" width="555" height="80" rx="14" fill="#fff1f2" stroke="#e5e7eb"/>
       <rect x="60" y="400" width="7" height="80" rx="3" fill="#e11d48"/>
-      <text x="82" y="432" font-size="17" font-weight="800" fill="#e11d48">ENFJ</text>
-      <text x="82" y="457" font-size="12" font-weight="600" fill="#374151">돌봄 일방 지속 / 인정 없음</text>
+      <text x="82" y="432" font-size="24" font-weight="800" fill="#e11d48">ENFJ</text>
+      <text x="82" y="457" font-size="17" font-weight="600" fill="#374151">돌봄 일방 지속 / 인정 없음</text>
     
       <rect x="640" y="400" width="555" height="80" rx="14" fill="#fff1f2" stroke="#e5e7eb"/>
       <rect x="640" y="400" width="7" height="80" rx="3" fill="#e11d48"/>
-      <text x="662" y="432" font-size="17" font-weight="800" fill="#e11d48">ENFP</text>
-      <text x="662" y="457" font-size="12" font-weight="600" fill="#374151">자유 제한 / 감정 차단</text>
+      <text x="662" y="432" font-size="24" font-weight="800" fill="#e11d48">ENFP</text>
+      <text x="662" y="457" font-size="17" font-weight="600" fill="#374151">자유 제한 / 감정 차단</text>
     
       <rect x="60" y="495" width="555" height="80" rx="14" fill="#ecfdf5" stroke="#e5e7eb"/>
       <rect x="60" y="495" width="7" height="80" rx="3" fill="#059669"/>
-      <text x="82" y="527" font-size="17" font-weight="800" fill="#059669">ISTJ</text>
-      <text x="82" y="552" font-size="12" font-weight="600" fill="#374151">규칙 붕괴 / 예측 불가</text>
+      <text x="82" y="527" font-size="24" font-weight="800" fill="#059669">ISTJ</text>
+      <text x="82" y="552" font-size="17" font-weight="600" fill="#374151">규칙 붕괴 / 예측 불가</text>
     
       <rect x="640" y="495" width="555" height="80" rx="14" fill="#ecfdf5" stroke="#e5e7eb"/>
       <rect x="640" y="495" width="7" height="80" rx="3" fill="#059669"/>
-      <text x="662" y="527" font-size="17" font-weight="800" fill="#059669">ISFJ</text>
-      <text x="662" y="552" font-size="12" font-weight="600" fill="#374151">본인 돌봄 방치 / 감사 없는 헌신</text>
+      <text x="662" y="527" font-size="24" font-weight="800" fill="#059669">ISFJ</text>
+      <text x="662" y="552" font-size="17" font-weight="600" fill="#374151">본인 돌봄 방치 / 감사 없는 헌신</text>
     
       <rect x="60" y="590" width="555" height="80" rx="14" fill="#ecfdf5" stroke="#e5e7eb"/>
       <rect x="60" y="590" width="7" height="80" rx="3" fill="#059669"/>
-      <text x="82" y="622" font-size="17" font-weight="800" fill="#059669">ESTJ</text>
-      <text x="82" y="647" font-size="12" font-weight="600" fill="#374151">통제 불가 상황 / 혼돈 지속</text>
+      <text x="82" y="622" font-size="24" font-weight="800" fill="#059669">ESTJ</text>
+      <text x="82" y="647" font-size="17" font-weight="600" fill="#374151">통제 불가 상황 / 혼돈 지속</text>
     
       <rect x="640" y="590" width="555" height="80" rx="14" fill="#ecfdf5" stroke="#e5e7eb"/>
       <rect x="640" y="590" width="7" height="80" rx="3" fill="#059669"/>
-      <text x="662" y="622" font-size="17" font-weight="800" fill="#059669">ESFJ</text>
-      <text x="662" y="647" font-size="12" font-weight="600" fill="#374151">관계 갈등 지속 / 소외감</text>
+      <text x="662" y="622" font-size="24" font-weight="800" fill="#059669">ESFJ</text>
+      <text x="662" y="647" font-size="17" font-weight="600" fill="#374151">관계 갈등 지속 / 소외감</text>
     
       <rect x="60" y="685" width="555" height="80" rx="14" fill="#fffbeb" stroke="#e5e7eb"/>
       <rect x="60" y="685" width="7" height="80" rx="3" fill="#d97706"/>
-      <text x="82" y="717" font-size="17" font-weight="800" fill="#d97706">ISTP</text>
-      <text x="82" y="742" font-size="12" font-weight="600" fill="#374151">자율성 박탈 / 관계 과밀도</text>
+      <text x="82" y="717" font-size="24" font-weight="800" fill="#d97706">ISTP</text>
+      <text x="82" y="742" font-size="17" font-weight="600" fill="#374151">자율성 박탈 / 관계 과밀도</text>
     
       <rect x="640" y="685" width="555" height="80" rx="14" fill="#fffbeb" stroke="#e5e7eb"/>
       <rect x="640" y="685" width="7" height="80" rx="3" fill="#d97706"/>
-      <text x="662" y="717" font-size="17" font-weight="800" fill="#d97706">ISFP</text>
-      <text x="662" y="742" font-size="12" font-weight="600" fill="#374151">감각 과부하 / 가치관 충돌</text>
+      <text x="662" y="717" font-size="24" font-weight="800" fill="#d97706">ISFP</text>
+      <text x="662" y="742" font-size="17" font-weight="600" fill="#374151">감각 과부하 / 가치관 충돌</text>
     
       <rect x="60" y="780" width="555" height="80" rx="14" fill="#fffbeb" stroke="#e5e7eb"/>
       <rect x="60" y="780" width="7" height="80" rx="3" fill="#d97706"/>
-      <text x="82" y="812" font-size="17" font-weight="800" fill="#d97706">ESTP</text>
-      <text x="82" y="837" font-size="12" font-weight="600" fill="#374151">자극 없는 지루함 / 갇힌 환경</text>
+      <text x="82" y="812" font-size="24" font-weight="800" fill="#d97706">ESTP</text>
+      <text x="82" y="837" font-size="17" font-weight="600" fill="#374151">자극 없는 지루함 / 갇힌 환경</text>
     
       <rect x="640" y="780" width="555" height="80" rx="14" fill="#fffbeb" stroke="#e5e7eb"/>
       <rect x="640" y="780" width="7" height="80" rx="3" fill="#d97706"/>
-      <text x="662" y="812" font-size="17" font-weight="800" fill="#d97706">ESFP</text>
-      <text x="662" y="837" font-size="12" font-weight="600" fill="#374151">외로움 / 분위기 악화</text>
+      <text x="662" y="812" font-size="24" font-weight="800" fill="#d97706">ESFP</text>
+      <text x="662" y="837" font-size="17" font-weight="600" fill="#374151">외로움 / 분위기 악화</text>
     
   
 <text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 번아웃 리포트</text>

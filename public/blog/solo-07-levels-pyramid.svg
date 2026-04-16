@@ -2,36 +2,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="58" text-anchor="middle" font-size="32" font-weight="800" fill="#171717">혼놀 레벨 피라미드</text>
-  <text x="600" y="90" text-anchor="middle" font-size="15" font-weight="500" fill="#6b7280">수동 소비 → 능동 창작으로 올라갈수록 삶의 질이 달라진다</text>
+  <text x="600" y="58" text-anchor="middle" font-size="45" font-weight="800" fill="#171717">혼놀 레벨 피라미드</text>
+  <text x="600" y="90" text-anchor="middle" font-size="21" font-weight="500" fill="#6b7280">수동 소비 → 능동 창작으로 올라갈수록 삶의 질이 달라진다</text>
   
     <path d="M 470 150 L 730 150 L 836.6666666666666 310 L 363.33333333333337 310 Z" fill="#ecfeff" stroke="#0891b2" stroke-width="2.5"/>
-    <text x="440" y="220" text-anchor="end" font-size="22" font-weight="800" fill="#0e7490">Lv.3</text>
-    <text x="440" y="244" text-anchor="end" font-size="14" font-weight="600" fill="#0e7490">혼놀 마스터</text>
-    <text x="600" y="216" text-anchor="middle" font-size="14" font-weight="600" fill="#0e7490">INTP · INFP · INTJ · INFJ</text>
-    <text x="600" y="240" text-anchor="middle" font-size="12" font-weight="500" fill="#374151">창작·학습·자기성찰로 에너지를 생산</text>
-    <text x="600" y="262" text-anchor="middle" font-size="11" font-weight="500" fill="#6b7280">예: 장편 소설 집필 · 독학으로 새 언어 · 철학·명상 수련</text>
+    <text x="440" y="220" text-anchor="end" font-size="31" font-weight="800" fill="#0e7490">Lv.3</text>
+    <text x="440" y="244" text-anchor="end" font-size="20" font-weight="600" fill="#0e7490">혼놀 마스터</text>
+    <text x="600" y="216" text-anchor="middle" font-size="20" font-weight="600" fill="#0e7490">INTP · INFP · INTJ · INFJ</text>
+    <text x="600" y="240" text-anchor="middle" font-size="17" font-weight="500" fill="#374151">창작·학습·자기성찰로 에너지를 생산</text>
+    <text x="600" y="262" text-anchor="middle" font-size="15" font-weight="500" fill="#6b7280">예: 장편 소설 집필 · 독학으로 새 언어 · 철학·명상 수련</text>
     
     <path d="M 363.33333333333337 310 L 836.6666666666666 310 L 943.3333333333333 470 L 256.6666666666667 470 Z" fill="#ecfdf5" stroke="#059669" stroke-width="2.5"/>
-    <text x="333.33333333333337" y="380" text-anchor="end" font-size="22" font-weight="800" fill="#047857">Lv.2</text>
-    <text x="333.33333333333337" y="404" text-anchor="end" font-size="14" font-weight="600" fill="#047857">혼놀 중급자</text>
-    <text x="600" y="376" text-anchor="middle" font-size="14" font-weight="600" fill="#047857">ISTP · ISFP · ISTJ · ISFJ</text>
-    <text x="600" y="400" text-anchor="middle" font-size="12" font-weight="500" fill="#374151">취미·운동·독서로 루틴 유지</text>
-    <text x="600" y="422" text-anchor="middle" font-size="11" font-weight="500" fill="#6b7280">예: 독서 기록 앱 · 혼자 등산·러닝 · DIY·원예 취미</text>
+    <text x="333.33333333333337" y="380" text-anchor="end" font-size="31" font-weight="800" fill="#047857">Lv.2</text>
+    <text x="333.33333333333337" y="404" text-anchor="end" font-size="20" font-weight="600" fill="#047857">혼놀 중급자</text>
+    <text x="600" y="376" text-anchor="middle" font-size="20" font-weight="600" fill="#047857">ISTP · ISFP · ISTJ · ISFJ</text>
+    <text x="600" y="400" text-anchor="middle" font-size="17" font-weight="500" fill="#374151">취미·운동·독서로 루틴 유지</text>
+    <text x="600" y="422" text-anchor="middle" font-size="15" font-weight="500" fill="#6b7280">예: 독서 기록 앱 · 혼자 등산·러닝 · DIY·원예 취미</text>
     
     <path d="M 256.6666666666667 470 L 943.3333333333333 470 L 1050 630 L 150 630 Z" fill="#fffbeb" stroke="#d97706" stroke-width="2.5"/>
-    <text x="226.66666666666669" y="540" text-anchor="end" font-size="22" font-weight="800" fill="#b45309">Lv.1</text>
-    <text x="226.66666666666669" y="564" text-anchor="end" font-size="14" font-weight="600" fill="#b45309">혼놀 입문자</text>
-    <text x="600" y="536" text-anchor="middle" font-size="14" font-weight="600" fill="#b45309">ENTP · ENFP · ESTP · 기타</text>
-    <text x="600" y="560" text-anchor="middle" font-size="12" font-weight="500" fill="#374151">넷플릭스·SNS·게임 등 수동 소비</text>
-    <text x="600" y="582" text-anchor="middle" font-size="11" font-weight="500" fill="#6b7280">예: 넷플릭스 몰아보기 · SNS 무한 스크롤 · 모바일 게임</text>
+    <text x="226.66666666666669" y="540" text-anchor="end" font-size="31" font-weight="800" fill="#b45309">Lv.1</text>
+    <text x="226.66666666666669" y="564" text-anchor="end" font-size="20" font-weight="600" fill="#b45309">혼놀 입문자</text>
+    <text x="600" y="536" text-anchor="middle" font-size="20" font-weight="600" fill="#b45309">ENTP · ENFP · ESTP · 기타</text>
+    <text x="600" y="560" text-anchor="middle" font-size="17" font-weight="500" fill="#374151">넷플릭스·SNS·게임 등 수동 소비</text>
+    <text x="600" y="582" text-anchor="middle" font-size="15" font-weight="500" fill="#6b7280">예: 넷플릭스 몰아보기 · SNS 무한 스크롤 · 모바일 게임</text>
     
   <!-- Arrow up -->
   <g transform="translate(1080, 150)">
     <line x1="20" y1="480" x2="20" y2="20" stroke="#9ca3af" stroke-width="2"/>
     <polygon points="20,0 12,18 28,18" fill="#9ca3af"/>
-    <text x="50" y="480" font-size="11" font-weight="600" fill="#6b7280">수동</text>
-    <text x="50" y="20" font-size="11" font-weight="600" fill="#6b7280">능동</text>
+    <text x="50" y="480" font-size="15" font-weight="600" fill="#6b7280">수동</text>
+    <text x="50" y="20" font-size="15" font-weight="600" fill="#6b7280">능동</text>
   </g>
   
 <text x="1180" y="890" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.8">192types.co.kr · 2026 MBTI 트렌드 시리즈</text>

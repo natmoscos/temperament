@@ -128,19 +128,19 @@ function ranking() {
   };
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">16유형 번아웃 취약도 랭킹</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">100점 만점 · 감정 흡수 + 내적 과부하 + 회복 지연 종합 · 높을수록 무너지기 쉬움</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">16유형 번아웃 취약도 랭킹</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">100점 만점 · 감정 흡수 + 내적 과부하 + 회복 지연 종합 · 높을수록 무너지기 쉬움</text>
 
   ${list.map((r, i) => {
     const y = top + i * rowH;
     const w = (r.v / 100) * barW;
     const g = GROUP_OF[r.t];
     return `
-      <text x="45" y="${y + 28}" font-size="14" font-weight="700" fill="${C.textMuted}">${String(i + 1).padStart(2, '0')}</text>
-      <text x="90" y="${y + 28}" font-size="16" font-weight="800" fill="${COLOR_OF[g]}">${r.t}</text>
+      <text x="45" y="${y + 28}" font-size="20" font-weight="700" fill="${C.textMuted}">${String(i + 1).padStart(2, '0')}</text>
+      <text x="90" y="${y + 28}" font-size="22" font-weight="800" fill="${COLOR_OF[g]}">${r.t}</text>
       <rect x="${left}" y="${y + 9}" width="${w}" height="26" rx="13" fill="${colorFor(r.v)}" opacity="0.92"/>
-      <text x="${left + w - 12}" y="${y + 27}" text-anchor="end" font-size="13" font-weight="800" fill="#fff">${r.v}</text>
-      <text x="${left + w + 14}" y="${y + 27}" font-size="12" font-weight="600" fill="${C.textSoft}">${r.note}</text>
+      <text x="${left + w - 12}" y="${y + 27}" text-anchor="end" font-size="18" font-weight="800" fill="#fff">${r.v}</text>
+      <text x="${left + w + 14}" y="${y + 27}" font-size="17" font-weight="600" fill="${C.textSoft}">${r.note}</text>
     `;
   }).join('')}
 
@@ -154,7 +154,7 @@ function ranking() {
       { c: C.recover, label: '강함 ~39' },
     ].map((t, i) => `
       <rect x="${i * 180}" y="0" width="14" height="14" rx="3" fill="${t.c}"/>
-      <text x="${i * 180 + 22}" y="12" font-size="12" font-weight="700" fill="${C.textSoft}">${t.label}</text>
+      <text x="${i * 180 + 22}" y="12" font-size="17" font-weight="700" fill="${C.textSoft}">${t.label}</text>
     `).join('')}
   </g>
   `);
@@ -182,8 +182,8 @@ function triggerMap() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">16유형 번아웃 트리거 매트릭스</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">네가 정확히 어떤 상황에서 무너지는지 · 유형별 1순위 트리거 지도</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">16유형 번아웃 트리거 매트릭스</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">네가 정확히 어떤 상황에서 무너지는지 · 유형별 1순위 트리거 지도</text>
 
   ${items.map((it, i) => {
     const col = i % 2;
@@ -194,8 +194,8 @@ function triggerMap() {
     return `
       <rect x="${x}" y="${y}" width="555" height="80" rx="14" fill="${BG_OF[g]}" stroke="${C.border}"/>
       <rect x="${x}" y="${y}" width="7" height="80" rx="3" fill="${COLOR_OF[g]}"/>
-      <text x="${x + 22}" y="${y + 32}" font-size="17" font-weight="800" fill="${COLOR_OF[g]}">${it.t}</text>
-      <text x="${x + 22}" y="${y + 57}" font-size="12" font-weight="600" fill="${C.textSoft}">${it.trigger}</text>
+      <text x="${x + 22}" y="${y + 32}" font-size="24" font-weight="800" fill="${COLOR_OF[g]}">${it.t}</text>
+      <text x="${x + 22}" y="${y + 57}" font-size="17" font-weight="600" fill="${C.textSoft}">${it.trigger}</text>
     `;
   }).join('')}
   `);
@@ -246,8 +246,8 @@ function warningSigns() {
   const w = 520, h = 340;
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">4기질별 번아웃 전조 증상</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">네 기질에서 가장 먼저 나타나는 4가지 신호 · 3개 이상이면 회복 모드 필수</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">4기질별 번아웃 전조 증상</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">네 기질에서 가장 먼저 나타나는 4가지 신호 · 3개 이상이면 회복 모드 필수</text>
 
   ${positions.map((p, i) => {
     const g = groups[i];
@@ -255,13 +255,13 @@ function warningSigns() {
       <g transform="translate(${p.x},${p.y})">
         <rect width="${w}" height="${h}" rx="18" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="${h}" rx="4" fill="${g.color}"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="${C.textMuted}">${g.types}</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="${C.textMuted}">${g.types}</text>
         ${g.signs.map((s, j) => `
           <g transform="translate(28, ${110 + j * 52})">
             <circle cx="10" cy="0" r="8" fill="${g.color}" opacity="0.25"/>
-            <text x="10" y="4" text-anchor="middle" font-size="10" font-weight="800" fill="${g.color}">${j + 1}</text>
-            <text x="28" y="5" font-size="13" font-weight="600" fill="${C.textSoft}">${s}</text>
+            <text x="10" y="4" text-anchor="middle" font-size="14" font-weight="800" fill="${g.color}">${j + 1}</text>
+            <text x="28" y="5" font-size="18" font-weight="600" fill="${C.textSoft}">${s}</text>
           </g>
         `).join('')}
       </g>
@@ -306,18 +306,18 @@ function recoveryTime() {
   };
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">유형별 번아웃 회복 기간 (평균)</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">완전 소진 → 평소 컨디션 복귀까지 · ISTP 3일, ENFJ 58일</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">유형별 번아웃 회복 기간 (평균)</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">완전 소진 → 평소 컨디션 복귀까지 · ISTP 3일, ENFJ 58일</text>
 
   ${list.map((r, i) => {
     const y = top + i * rowH;
     const w = Math.max(35, (r.d / MAX) * barW);
     const g = GROUP_OF[r.t];
     return `
-      <text x="45" y="${y + 28}" font-size="14" font-weight="700" fill="${C.textMuted}">${String(i + 1).padStart(2, '0')}</text>
-      <text x="90" y="${y + 28}" font-size="16" font-weight="800" fill="${COLOR_OF[g]}">${r.t}</text>
+      <text x="45" y="${y + 28}" font-size="20" font-weight="700" fill="${C.textMuted}">${String(i + 1).padStart(2, '0')}</text>
+      <text x="90" y="${y + 28}" font-size="22" font-weight="800" fill="${COLOR_OF[g]}">${r.t}</text>
       <rect x="${left}" y="${y + 10}" width="${w}" height="26" rx="13" fill="${colorFor(r.d)}" opacity="0.92"/>
-      <text x="${left + w - 12}" y="${y + 28}" text-anchor="end" font-size="13" font-weight="800" fill="#fff">${r.d}일</text>
+      <text x="${left + w - 12}" y="${y + 28}" text-anchor="end" font-size="18" font-weight="800" fill="#fff">${r.d}일</text>
     `;
   }).join('')}
 
@@ -331,7 +331,7 @@ function recoveryTime() {
       { c: C.burn, label: '매우 느림 40일+' },
     ].map((t, i) => `
       <rect x="${i * 130}" y="0" width="14" height="14" rx="3" fill="${t.c}"/>
-      <text x="${i * 130 + 22}" y="12" font-size="11" font-weight="700" fill="${C.textSoft}">${t.label}</text>
+      <text x="${i * 130 + 22}" y="12" font-size="15" font-weight="700" fill="${C.textSoft}">${t.label}</text>
     `).join('')}
   </g>
   `);
@@ -382,8 +382,8 @@ function recoveryRitual() {
   const w = 520, h = 340;
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">기질별 번아웃 회복 루틴 체크리스트</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">네 기질에 맞는 4단계 회복 프로토콜 · 오늘부터 1개씩 실천</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">기질별 번아웃 회복 루틴 체크리스트</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">네 기질에 맞는 4단계 회복 프로토콜 · 오늘부터 1개씩 실천</text>
 
   ${positions.map((p, i) => {
     const g = groups[i];
@@ -391,10 +391,10 @@ function recoveryRitual() {
       <g transform="translate(${p.x},${p.y})">
         <rect width="${w}" height="${h}" rx="18" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="${h}" rx="4" fill="${g.color}"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="${C.textMuted}">${g.types}</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="${C.textMuted}">${g.types}</text>
         ${g.items.map((it, j) => `
-          <text x="28" y="${115 + j * 52}" font-size="13" font-weight="600" fill="${C.textSoft}">${it}</text>
+          <text x="28" y="${115 + j * 52}" font-size="18" font-weight="600" fill="${C.textSoft}">${it}</text>
         `).join('')}
       </g>
     `;

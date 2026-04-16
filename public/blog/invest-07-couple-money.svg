@@ -2,117 +2,117 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="56" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">커플 돈 궁합 히트맵</text>
-  <text x="600" y="86" text-anchor="middle" font-size="14" font-weight="500" fill="#6b7280">4기질 조합별 재무 가치관 호환성 (100점 만점)</text>
-  <text x="600" y="110" text-anchor="middle" font-size="11" font-weight="500" fill="#9ca3af">같은 기질끼리 맞는 듯해도 실제론 SJ×NT가 의외의 최고</text>
+  <text x="600" y="56" text-anchor="middle" font-size="42" font-weight="800" fill="#171717">커플 돈 궁합 히트맵</text>
+  <text x="600" y="86" text-anchor="middle" font-size="20" font-weight="500" fill="#6b7280">4기질 조합별 재무 가치관 호환성 (100점 만점)</text>
+  <text x="600" y="110" text-anchor="middle" font-size="15" font-weight="500" fill="#9ca3af">같은 기질끼리 맞는 듯해도 실제론 SJ×NT가 의외의 최고</text>
 
   <!-- Row labels -->
   
-    <text x="240" y="276" text-anchor="end" font-size="15" font-weight="800" fill="#0891b2">NT</text>
+    <text x="240" y="276" text-anchor="end" font-size="21" font-weight="800" fill="#0891b2">NT</text>
     <circle cx="220" cy="270" r="10" fill="#0891b2"/>
   
-    <text x="240" y="416" text-anchor="end" font-size="15" font-weight="800" fill="#e11d48">NF</text>
+    <text x="240" y="416" text-anchor="end" font-size="21" font-weight="800" fill="#e11d48">NF</text>
     <circle cx="220" cy="410" r="10" fill="#e11d48"/>
   
-    <text x="240" y="556" text-anchor="end" font-size="15" font-weight="800" fill="#059669">SJ</text>
+    <text x="240" y="556" text-anchor="end" font-size="21" font-weight="800" fill="#059669">SJ</text>
     <circle cx="220" cy="550" r="10" fill="#059669"/>
   
-    <text x="240" y="696" text-anchor="end" font-size="15" font-weight="800" fill="#d97706">SP</text>
+    <text x="240" y="696" text-anchor="end" font-size="21" font-weight="800" fill="#d97706">SP</text>
     <circle cx="220" cy="690" r="10" fill="#d97706"/>
   
 
   <!-- Column labels -->
   
-    <text x="330" y="180" text-anchor="middle" font-size="15" font-weight="800" fill="#0891b2">NT</text>
+    <text x="330" y="180" text-anchor="middle" font-size="21" font-weight="800" fill="#0891b2">NT</text>
   
-    <text x="470" y="180" text-anchor="middle" font-size="15" font-weight="800" fill="#e11d48">NF</text>
+    <text x="470" y="180" text-anchor="middle" font-size="21" font-weight="800" fill="#e11d48">NF</text>
   
-    <text x="610" y="180" text-anchor="middle" font-size="15" font-weight="800" fill="#059669">SJ</text>
+    <text x="610" y="180" text-anchor="middle" font-size="21" font-weight="800" fill="#059669">SJ</text>
   
-    <text x="750" y="180" text-anchor="middle" font-size="15" font-weight="800" fill="#d97706">SP</text>
+    <text x="750" y="180" text-anchor="middle" font-size="21" font-weight="800" fill="#d97706">SP</text>
   
 
   <!-- Heatmap cells -->
   
       <rect x="260" y="200" width="132" height="132" rx="10" fill="#10b981" stroke="#fff" stroke-width="2"/>
-      <text x="326" y="271" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">85</text>
-      <text x="326" y="296" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" opacity="0.85">최고</text>
+      <text x="326" y="271" text-anchor="middle" font-size="34" font-weight="800" fill="#fff">85</text>
+      <text x="326" y="296" text-anchor="middle" font-size="15" font-weight="600" fill="#fff" opacity="0.85">최고</text>
     
       <rect x="400" y="200" width="132" height="132" rx="10" fill="#facc15" stroke="#fff" stroke-width="2"/>
-      <text x="466" y="271" text-anchor="middle" font-size="24" font-weight="800" fill="#171717">58</text>
-      <text x="466" y="296" text-anchor="middle" font-size="11" font-weight="600" fill="#171717" opacity="0.85">보통</text>
+      <text x="466" y="271" text-anchor="middle" font-size="34" font-weight="800" fill="#171717">58</text>
+      <text x="466" y="296" text-anchor="middle" font-size="15" font-weight="600" fill="#171717" opacity="0.85">보통</text>
     
       <rect x="540" y="200" width="132" height="132" rx="10" fill="#10b981" stroke="#fff" stroke-width="2"/>
-      <text x="606" y="271" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">82</text>
-      <text x="606" y="296" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" opacity="0.85">최고</text>
+      <text x="606" y="271" text-anchor="middle" font-size="34" font-weight="800" fill="#fff">82</text>
+      <text x="606" y="296" text-anchor="middle" font-size="15" font-weight="600" fill="#fff" opacity="0.85">최고</text>
     
       <rect x="680" y="200" width="132" height="132" rx="10" fill="#facc15" stroke="#fff" stroke-width="2"/>
-      <text x="746" y="271" text-anchor="middle" font-size="24" font-weight="800" fill="#171717">55</text>
-      <text x="746" y="296" text-anchor="middle" font-size="11" font-weight="600" fill="#171717" opacity="0.85">보통</text>
+      <text x="746" y="271" text-anchor="middle" font-size="34" font-weight="800" fill="#171717">55</text>
+      <text x="746" y="296" text-anchor="middle" font-size="15" font-weight="600" fill="#171717" opacity="0.85">보통</text>
     
       <rect x="260" y="340" width="132" height="132" rx="10" fill="#facc15" stroke="#fff" stroke-width="2"/>
-      <text x="326" y="411" text-anchor="middle" font-size="24" font-weight="800" fill="#171717">58</text>
-      <text x="326" y="436" text-anchor="middle" font-size="11" font-weight="600" fill="#171717" opacity="0.85">보통</text>
+      <text x="326" y="411" text-anchor="middle" font-size="34" font-weight="800" fill="#171717">58</text>
+      <text x="326" y="436" text-anchor="middle" font-size="15" font-weight="600" fill="#171717" opacity="0.85">보통</text>
     
       <rect x="400" y="340" width="132" height="132" rx="10" fill="#facc15" stroke="#fff" stroke-width="2"/>
-      <text x="466" y="411" text-anchor="middle" font-size="24" font-weight="800" fill="#171717">62</text>
-      <text x="466" y="436" text-anchor="middle" font-size="11" font-weight="600" fill="#171717" opacity="0.85">보통</text>
+      <text x="466" y="411" text-anchor="middle" font-size="34" font-weight="800" fill="#171717">62</text>
+      <text x="466" y="436" text-anchor="middle" font-size="15" font-weight="600" fill="#171717" opacity="0.85">보통</text>
     
       <rect x="540" y="340" width="132" height="132" rx="10" fill="#84cc16" stroke="#fff" stroke-width="2"/>
-      <text x="606" y="411" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">68</text>
-      <text x="606" y="436" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" opacity="0.85">좋음</text>
+      <text x="606" y="411" text-anchor="middle" font-size="34" font-weight="800" fill="#fff">68</text>
+      <text x="606" y="436" text-anchor="middle" font-size="15" font-weight="600" fill="#fff" opacity="0.85">좋음</text>
     
       <rect x="680" y="340" width="132" height="132" rx="10" fill="#f87171" stroke="#fff" stroke-width="2"/>
-      <text x="746" y="411" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">48</text>
-      <text x="746" y="436" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" opacity="0.85">주의</text>
+      <text x="746" y="411" text-anchor="middle" font-size="34" font-weight="800" fill="#fff">48</text>
+      <text x="746" y="436" text-anchor="middle" font-size="15" font-weight="600" fill="#fff" opacity="0.85">주의</text>
     
       <rect x="260" y="480" width="132" height="132" rx="10" fill="#10b981" stroke="#fff" stroke-width="2"/>
-      <text x="326" y="551" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">82</text>
-      <text x="326" y="576" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" opacity="0.85">최고</text>
+      <text x="326" y="551" text-anchor="middle" font-size="34" font-weight="800" fill="#fff">82</text>
+      <text x="326" y="576" text-anchor="middle" font-size="15" font-weight="600" fill="#fff" opacity="0.85">최고</text>
     
       <rect x="400" y="480" width="132" height="132" rx="10" fill="#84cc16" stroke="#fff" stroke-width="2"/>
-      <text x="466" y="551" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">68</text>
-      <text x="466" y="576" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" opacity="0.85">좋음</text>
+      <text x="466" y="551" text-anchor="middle" font-size="34" font-weight="800" fill="#fff">68</text>
+      <text x="466" y="576" text-anchor="middle" font-size="15" font-weight="600" fill="#fff" opacity="0.85">좋음</text>
     
       <rect x="540" y="480" width="132" height="132" rx="10" fill="#10b981" stroke="#fff" stroke-width="2"/>
-      <text x="606" y="551" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">95</text>
-      <text x="606" y="576" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" opacity="0.85">최고</text>
+      <text x="606" y="551" text-anchor="middle" font-size="34" font-weight="800" fill="#fff">95</text>
+      <text x="606" y="576" text-anchor="middle" font-size="15" font-weight="600" fill="#fff" opacity="0.85">최고</text>
     
       <rect x="680" y="480" width="132" height="132" rx="10" fill="#f87171" stroke="#fff" stroke-width="2"/>
-      <text x="746" y="551" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">42</text>
-      <text x="746" y="576" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" opacity="0.85">주의</text>
+      <text x="746" y="551" text-anchor="middle" font-size="34" font-weight="800" fill="#fff">42</text>
+      <text x="746" y="576" text-anchor="middle" font-size="15" font-weight="600" fill="#fff" opacity="0.85">주의</text>
     
       <rect x="260" y="620" width="132" height="132" rx="10" fill="#facc15" stroke="#fff" stroke-width="2"/>
-      <text x="326" y="691" text-anchor="middle" font-size="24" font-weight="800" fill="#171717">55</text>
-      <text x="326" y="716" text-anchor="middle" font-size="11" font-weight="600" fill="#171717" opacity="0.85">보통</text>
+      <text x="326" y="691" text-anchor="middle" font-size="34" font-weight="800" fill="#171717">55</text>
+      <text x="326" y="716" text-anchor="middle" font-size="15" font-weight="600" fill="#171717" opacity="0.85">보통</text>
     
       <rect x="400" y="620" width="132" height="132" rx="10" fill="#f87171" stroke="#fff" stroke-width="2"/>
-      <text x="466" y="691" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">48</text>
-      <text x="466" y="716" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" opacity="0.85">주의</text>
+      <text x="466" y="691" text-anchor="middle" font-size="34" font-weight="800" fill="#fff">48</text>
+      <text x="466" y="716" text-anchor="middle" font-size="15" font-weight="600" fill="#fff" opacity="0.85">주의</text>
     
       <rect x="540" y="620" width="132" height="132" rx="10" fill="#f87171" stroke="#fff" stroke-width="2"/>
-      <text x="606" y="691" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">42</text>
-      <text x="606" y="716" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" opacity="0.85">주의</text>
+      <text x="606" y="691" text-anchor="middle" font-size="34" font-weight="800" fill="#fff">42</text>
+      <text x="606" y="716" text-anchor="middle" font-size="15" font-weight="600" fill="#fff" opacity="0.85">주의</text>
     
       <rect x="680" y="620" width="132" height="132" rx="10" fill="#facc15" stroke="#fff" stroke-width="2"/>
-      <text x="746" y="691" text-anchor="middle" font-size="24" font-weight="800" fill="#171717">52</text>
-      <text x="746" y="716" text-anchor="middle" font-size="11" font-weight="600" fill="#171717" opacity="0.85">보통</text>
+      <text x="746" y="691" text-anchor="middle" font-size="34" font-weight="800" fill="#171717">52</text>
+      <text x="746" y="716" text-anchor="middle" font-size="15" font-weight="600" fill="#171717" opacity="0.85">보통</text>
     
 
   <!-- Legend -->
   <g transform="translate(270, 790)">
     
       <rect x="0" y="0" width="20" height="20" rx="4" fill="#10b981"/>
-      <text x="28" y="15" font-size="12" font-weight="600" fill="#374151">80+ 최고 궁합</text>
+      <text x="28" y="15" font-size="17" font-weight="600" fill="#374151">80+ 최고 궁합</text>
     
       <rect x="180" y="0" width="20" height="20" rx="4" fill="#84cc16"/>
-      <text x="208" y="15" font-size="12" font-weight="600" fill="#374151">65~79 좋음</text>
+      <text x="208" y="15" font-size="17" font-weight="600" fill="#374151">65~79 좋음</text>
     
       <rect x="320" y="0" width="20" height="20" rx="4" fill="#facc15"/>
-      <text x="348" y="15" font-size="12" font-weight="600" fill="#374151">50~64 보통</text>
+      <text x="348" y="15" font-size="17" font-weight="600" fill="#374151">50~64 보통</text>
     
       <rect x="460" y="0" width="20" height="20" rx="4" fill="#f87171"/>
-      <text x="488" y="15" font-size="12" font-weight="600" fill="#374151">~49 주의 필요</text>
+      <text x="488" y="15" font-size="17" font-weight="600" fill="#374151">~49 주의 필요</text>
     
   </g>
   

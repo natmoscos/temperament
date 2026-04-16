@@ -80,8 +80,8 @@ function pathTable() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">16유형 최적 부 축적 경로</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">주기능 강점 기반 · 추천 소득 루트 + 자산 포트폴리오</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">16유형 최적 부 축적 경로</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">주기능 강점 기반 · 추천 소득 루트 + 자산 포트폴리오</text>
 
   ${data.map((d, i) => {
     const col = i % 2;
@@ -96,14 +96,14 @@ function pathTable() {
 
         <g transform="translate(25, 20)">
           <rect width="70" height="40" rx="10" fill="${color}"/>
-          <text x="35" y="28" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">${d.type}</text>
+          <text x="35" y="28" text-anchor="middle" font-size="24" font-weight="900" fill="#fff">${d.type}</text>
         </g>
 
-        <text x="110" y="30" font-size="12" font-weight="800" fill="${color}">소득 루트</text>
-        <text x="110" y="50" font-size="12" font-weight="600" fill="${C.textSoft}">${d.path}</text>
+        <text x="110" y="30" font-size="17" font-weight="800" fill="${color}">소득 루트</text>
+        <text x="110" y="50" font-size="17" font-weight="600" fill="${C.textSoft}">${d.path}</text>
 
-        <text x="110" y="65" font-size="10" font-weight="800" fill="${color}">주 자산</text>
-        <text x="170" y="65" font-size="10" font-weight="500" fill="${C.textMuted}">${d.asset.slice(0, 36)}</text>
+        <text x="110" y="65" font-size="14" font-weight="800" fill="${color}">주 자산</text>
+        <text x="170" y="65" font-size="14" font-weight="500" fill="${C.textMuted}">${d.asset.slice(0, 36)}</text>
       </g>
     `;
   }).join('')}
@@ -152,8 +152,8 @@ function tempAssetMix() {
   const w = 520, h = 360;
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">4기질별 자산 배분 모델</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">기질 DNA에 맞는 최적 포트폴리오 믹스 · 30~40대 기준</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">4기질별 자산 배분 모델</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">기질 DNA에 맞는 최적 포트폴리오 믹스 · 30~40대 기준</text>
 
   ${positions.map((p, i) => {
     const m = groups[i];
@@ -161,17 +161,17 @@ function tempAssetMix() {
       <g transform="translate(${p.x}, ${p.y})">
         <rect width="${w}" height="${h}" rx="20" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="${h}" rx="4" fill="${m.color}"/>
-        <text x="30" y="45" font-size="22" font-weight="900" fill="${m.color}">${m.icon} ${m.name}</text>
-        <text x="30" y="72" font-size="12" font-weight="700" fill="${C.textMuted}">${m.types}</text>
+        <text x="30" y="45" font-size="31" font-weight="900" fill="${m.color}">${m.icon} ${m.name}</text>
+        <text x="30" y="72" font-size="17" font-weight="700" fill="${C.textMuted}">${m.types}</text>
 
         ${m.mix.map((mx, j) => {
           const y = 110 + j * 60;
           const barW = mx.pct * 4.2;
           return `
-            <text x="30" y="${y}" font-size="13" font-weight="700" fill="${C.text}">${mx.label}</text>
+            <text x="30" y="${y}" font-size="18" font-weight="700" fill="${C.text}">${mx.label}</text>
             <rect x="30" y="${y + 8}" width="${barW}" height="20" rx="10" fill="${m.color}" opacity="0.25"/>
             <rect x="30" y="${y + 8}" width="${barW}" height="20" rx="10" fill="${m.color}" opacity="0.85"/>
-            <text x="${45 + barW}" y="${y + 23}" font-size="12" font-weight="900" fill="${m.color}">${mx.pct}%</text>
+            <text x="${45 + barW}" y="${y + 23}" font-size="17" font-weight="900" fill="${m.color}">${mx.pct}%</text>
           `;
         }).join('')}
       </g>
@@ -195,8 +195,8 @@ function ageTimeline() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">20대 → 60대 자산 설계 로드맵</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">연령대별 부 축적 단계 · 모든 유형 공통 타임라인</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">20대 → 60대 자산 설계 로드맵</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">연령대별 부 축적 단계 · 모든 유형 공통 타임라인</text>
 
   ${stages.map((s, i) => {
     const y = 120 + i * 145;
@@ -206,14 +206,14 @@ function ageTimeline() {
         <rect width="8" height="130" rx="4" fill="${s.color}"/>
 
         <circle cx="60" cy="65" r="40" fill="${s.color}" opacity="0.15"/>
-        <text x="60" y="76" text-anchor="middle" font-size="22" font-weight="900" fill="${s.color}">${s.age}</text>
+        <text x="60" y="76" text-anchor="middle" font-size="31" font-weight="900" fill="${s.color}">${s.age}</text>
 
-        <text x="130" y="45" font-size="19" font-weight="900" fill="${s.color}">${s.focus}</text>
+        <text x="130" y="45" font-size="27" font-weight="900" fill="${s.color}">${s.focus}</text>
 
         ${s.todo.map((t, j) => `
           <g transform="translate(${130 + (j % 2) * 430}, ${75 + Math.floor(j / 2) * 28})">
             <circle cx="6" cy="-4" r="5" fill="${s.color}"/>
-            <text x="20" y="0" font-size="13" font-weight="600" fill="${C.textSoft}">${t}</text>
+            <text x="20" y="0" font-size="18" font-weight="600" fill="${C.textSoft}">${t}</text>
           </g>
         `).join('')}
       </g>
@@ -244,17 +244,17 @@ function riskMap() {
   const rColor = { HIGH: '#dc2626', MID: '#f59e0b', 'LOW-MID': '#84cc16', LOW: '#16a34a' };
 
   return wrap(`
-  <text x="600" y="45" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">16유형 재정 리스크 매트릭스</text>
-  <text x="600" y="72" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">가로 = 감정(좌) vs 논리(우), 세로 = 직관(상) vs 감각(하)</text>
+  <text x="600" y="45" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">16유형 재정 리스크 매트릭스</text>
+  <text x="600" y="72" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">가로 = 감정(좌) vs 논리(우), 세로 = 직관(상) vs 감각(하)</text>
 
   <!-- Axes -->
   <line x1="600" y1="110" x2="600" y2="780" stroke="${C.divider}" stroke-width="2" stroke-dasharray="8,6"/>
   <line x1="120" y1="445" x2="1080" y2="445" stroke="${C.divider}" stroke-width="2" stroke-dasharray="8,6"/>
 
-  <text x="600" y="100" text-anchor="middle" font-size="13" font-weight="800" fill="${C.nt600}">직관 N (미래)</text>
-  <text x="600" y="800" text-anchor="middle" font-size="13" font-weight="800" fill="${C.nt600}">감각 S (현재)</text>
-  <text x="130" y="450" font-size="13" font-weight="800" fill="${C.nf600}">감정 F</text>
-  <text x="1015" y="450" font-size="13" font-weight="800" fill="${C.nt600}">논리 T</text>
+  <text x="600" y="100" text-anchor="middle" font-size="18" font-weight="800" fill="${C.nt600}">직관 N (미래)</text>
+  <text x="600" y="800" text-anchor="middle" font-size="18" font-weight="800" fill="${C.nt600}">감각 S (현재)</text>
+  <text x="130" y="450" font-size="18" font-weight="800" fill="${C.nf600}">감정 F</text>
+  <text x="1015" y="450" font-size="18" font-weight="800" fill="${C.nt600}">논리 T</text>
 
   <!-- Quadrant backgrounds -->
   <rect x="120" y="110" width="480" height="335" fill="${C.nf50}" opacity="0.35"/>
@@ -267,23 +267,23 @@ function riskMap() {
     return `
       <circle cx="${r.pos.x}" cy="${r.pos.y}" r="28" fill="${color}" opacity="0.2"/>
       <circle cx="${r.pos.x}" cy="${r.pos.y}" r="22" fill="${color}" opacity="0.85" stroke="#fff" stroke-width="2"/>
-      <text x="${r.pos.x}" y="${r.pos.y + 4}" text-anchor="middle" font-size="10" font-weight="900" fill="#fff">${r.type}</text>
+      <text x="${r.pos.x}" y="${r.pos.y + 4}" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">${r.type}</text>
     `;
   }).join('')}
 
   <!-- Legend -->
   <g transform="translate(120, 810)">
     <circle cx="15" cy="12" r="10" fill="${rColor.LOW}"/>
-    <text x="35" y="17" font-size="12" font-weight="700" fill="${C.textSoft}">LOW · 재정 안정 DNA</text>
+    <text x="35" y="17" font-size="17" font-weight="700" fill="${C.textSoft}">LOW · 재정 안정 DNA</text>
 
     <circle cx="240" cy="12" r="10" fill="${rColor['LOW-MID']}"/>
-    <text x="260" y="17" font-size="12" font-weight="700" fill="${C.textSoft}">LOW-MID · 안정형</text>
+    <text x="260" y="17" font-size="17" font-weight="700" fill="${C.textSoft}">LOW-MID · 안정형</text>
 
     <circle cx="460" cy="12" r="10" fill="${rColor.MID}"/>
-    <text x="480" y="17" font-size="12" font-weight="700" fill="${C.textSoft}">MID · 관리 필요</text>
+    <text x="480" y="17" font-size="17" font-weight="700" fill="${C.textSoft}">MID · 관리 필요</text>
 
     <circle cx="670" cy="12" r="10" fill="${rColor.HIGH}"/>
-    <text x="690" y="17" font-size="12" font-weight="700" fill="${C.textSoft}">HIGH · 시스템 필수</text>
+    <text x="690" y="17" font-size="17" font-weight="700" fill="${C.textSoft}">HIGH · 시스템 필수</text>
   </g>
   `);
 }
@@ -330,8 +330,8 @@ function actionPlan() {
   const w = 520, h = 340;
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">기질별 20~60대 부 축적 로드맵</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">네 유형에 맞는 연령대별 실행 체크리스트</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">기질별 20~60대 부 축적 로드맵</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">네 유형에 맞는 연령대별 실행 체크리스트</text>
 
   ${positions.map((p, i) => {
     const g = groups[i];
@@ -339,10 +339,10 @@ function actionPlan() {
       <g transform="translate(${p.x},${p.y})">
         <rect width="${w}" height="${h}" rx="18" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="${h}" rx="4" fill="${g.color}"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="${C.textMuted}">${g.types}</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="${C.textMuted}">${g.types}</text>
         ${g.items.map((it, j) => `
-          <text x="28" y="${115 + j * 52}" font-size="13" font-weight="600" fill="${C.textSoft}">${it}</text>
+          <text x="28" y="${115 + j * 52}" font-size="18" font-weight="600" fill="${C.textSoft}">${it}</text>
         `).join('')}
       </g>
     `;

@@ -60,16 +60,16 @@ function compareCard() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">INTJ vs INTJ — 어디가 다를까?</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">둘 다 INTJ 추정 · Te vs Ti 보조기능 차이가 180도 경영 스타일 만듦</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">INTJ vs INTJ — 어디가 다를까?</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">둘 다 INTJ 추정 · Te vs Ti 보조기능 차이가 180도 경영 스타일 만듦</text>
 
   <!-- Column headers -->
   <g transform="translate(60, 110)">
     <rect x="300" width="360" height="60" rx="14" fill="${C.musk}"/>
-    <text x="480" y="38" text-anchor="middle" font-size="22" font-weight="900" fill="#fff">일론 머스크</text>
+    <text x="480" y="38" text-anchor="middle" font-size="31" font-weight="900" fill="#fff">일론 머스크</text>
 
     <rect x="720" width="360" height="60" rx="14" fill="${C.zuck}"/>
-    <text x="900" y="38" text-anchor="middle" font-size="22" font-weight="900" fill="#fff">마크 저커버그</text>
+    <text x="900" y="38" text-anchor="middle" font-size="31" font-weight="900" fill="#fff">마크 저커버그</text>
   </g>
 
   ${specs.map((s, i) => {
@@ -77,13 +77,13 @@ function compareCard() {
     return `
       <g transform="translate(60, ${y})">
         <rect width="280" height="50" rx="10" fill="${C.border}" opacity="0.4"/>
-        <text x="20" y="32" font-size="14" font-weight="800" fill="${C.textSoft}">${s.field}</text>
+        <text x="20" y="32" font-size="20" font-weight="800" fill="${C.textSoft}">${s.field}</text>
 
         <rect x="300" width="360" height="50" rx="10" fill="${C.muskSoft}"/>
-        <text x="480" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="${C.musk}">${s.m}</text>
+        <text x="480" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="${C.musk}">${s.m}</text>
 
         <rect x="720" width="360" height="50" rx="10" fill="${C.zuckSoft}"/>
-        <text x="900" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="${C.zuck}">${s.z}</text>
+        <text x="900" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="${C.zuck}">${s.z}</text>
       </g>
     `;
   }).join('')}
@@ -92,18 +92,18 @@ function compareCard() {
 
 function decisionStyle() {
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">의사결정 스타일 — Te vs Ti</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">같은 Ni 비전 · 다른 보조기능이 만드는 정반대 경로</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">의사결정 스타일 — Te vs Ti</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">같은 Ni 비전 · 다른 보조기능이 만드는 정반대 경로</text>
 
   <!-- Musk: Te -->
   <g transform="translate(60, 140)">
     <rect width="520" height="680" rx="22" fill="#ffffff" stroke="${C.musk}" stroke-width="2"/>
     <rect width="8" height="680" rx="4" fill="${C.musk}"/>
 
-    <text x="30" y="45" font-size="24" font-weight="900" fill="${C.musk}">머스크 (Ni + Te)</text>
-    <text x="30" y="75" font-size="14" font-weight="700" fill="${C.textMuted}">외향 사고: 효율 · 실행 · 감정 배제</text>
+    <text x="30" y="45" font-size="34" font-weight="900" fill="${C.musk}">머스크 (Ni + Te)</text>
+    <text x="30" y="75" font-size="20" font-weight="700" fill="${C.textMuted}">외향 사고: 효율 · 실행 · 감정 배제</text>
 
-    <text x="30" y="130" font-size="18" font-weight="900" fill="${C.musk}">⚡ 결정 프로세스</text>
+    <text x="30" y="130" font-size="25" font-weight="900" fill="${C.musk}">⚡ 결정 프로세스</text>
 
     ${[
       { t: 'Step 1 — 비전 설정', d: '"화성에 인간 정착" 같은 10년+ 목표' },
@@ -114,9 +114,9 @@ function decisionStyle() {
     ].map((x, i) => `
       <g transform="translate(30, ${175 + i * 95})">
         <circle cx="10" cy="5" r="12" fill="${C.musk}" opacity="0.2"/>
-        <text x="10" y="10" text-anchor="middle" font-size="12" font-weight="900" fill="${C.musk}">${i + 1}</text>
-        <text x="32" y="7" font-size="14" font-weight="800" fill="${C.text}">${x.t}</text>
-        <text x="32" y="30" font-size="12" font-weight="500" fill="${C.textMuted}">${x.d}</text>
+        <text x="10" y="10" text-anchor="middle" font-size="17" font-weight="900" fill="${C.musk}">${i + 1}</text>
+        <text x="32" y="7" font-size="20" font-weight="800" fill="${C.text}">${x.t}</text>
+        <text x="32" y="30" font-size="17" font-weight="500" fill="${C.textMuted}">${x.d}</text>
       </g>
     `).join('')}
   </g>
@@ -126,10 +126,10 @@ function decisionStyle() {
     <rect width="520" height="680" rx="22" fill="#ffffff" stroke="${C.zuck}" stroke-width="2"/>
     <rect width="8" height="680" rx="4" fill="${C.zuck}"/>
 
-    <text x="30" y="45" font-size="24" font-weight="900" fill="${C.zuck}">저커버그 (Ni + Ti)</text>
-    <text x="30" y="75" font-size="14" font-weight="700" fill="${C.textMuted}">내향 사고: 분석 · 구조 · 정확성</text>
+    <text x="30" y="45" font-size="34" font-weight="900" fill="${C.zuck}">저커버그 (Ni + Ti)</text>
+    <text x="30" y="75" font-size="20" font-weight="700" fill="${C.textMuted}">내향 사고: 분석 · 구조 · 정확성</text>
 
-    <text x="30" y="130" font-size="18" font-weight="900" fill="${C.zuck}">🧠 결정 프로세스</text>
+    <text x="30" y="130" font-size="25" font-weight="900" fill="${C.zuck}">🧠 결정 프로세스</text>
 
     ${[
       { t: 'Step 1 — 비전 설정', d: '"세계 연결 · Metaverse" 같은 장기 비전' },
@@ -140,9 +140,9 @@ function decisionStyle() {
     ].map((x, i) => `
       <g transform="translate(30, ${175 + i * 95})">
         <circle cx="10" cy="5" r="12" fill="${C.zuck}" opacity="0.2"/>
-        <text x="10" y="10" text-anchor="middle" font-size="12" font-weight="900" fill="${C.zuck}">${i + 1}</text>
-        <text x="32" y="7" font-size="14" font-weight="800" fill="${C.text}">${x.t}</text>
-        <text x="32" y="30" font-size="12" font-weight="500" fill="${C.textMuted}">${x.d}</text>
+        <text x="10" y="10" text-anchor="middle" font-size="17" font-weight="900" fill="${C.zuck}">${i + 1}</text>
+        <text x="32" y="7" font-size="20" font-weight="800" fill="${C.text}">${x.t}</text>
+        <text x="32" y="30" font-size="17" font-weight="500" fill="${C.textMuted}">${x.d}</text>
       </g>
     `).join('')}
   </g>
@@ -151,36 +151,36 @@ function decisionStyle() {
 
 function riskProfile() {
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">리스크 허용도 · 실패 대응</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">Te는 "다 던지고 해결", Ti는 "단계별 실험" 스타일</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">리스크 허용도 · 실패 대응</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">Te는 "다 던지고 해결", Ti는 "단계별 실험" 스타일</text>
 
   <!-- Risk scale -->
   <g transform="translate(100, 160)">
-    <text x="0" y="0" font-size="16" font-weight="800" fill="${C.text}">총 자산 대비 단일 투자 비율</text>
+    <text x="0" y="0" font-size="22" font-weight="800" fill="${C.text}">총 자산 대비 단일 투자 비율</text>
 
     <rect x="0" y="20" width="1000" height="40" rx="20" fill="${C.border}" opacity="0.3"/>
 
     <!-- Zuck marker (30%) -->
     <rect x="0" y="20" width="300" height="40" rx="20" fill="${C.zuck}" opacity="0.85"/>
     <circle cx="300" cy="40" r="14" fill="${C.zuck}" stroke="#fff" stroke-width="3"/>
-    <text x="300" y="85" text-anchor="middle" font-size="13" font-weight="900" fill="${C.zuck}">저커버그</text>
-    <text x="300" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="${C.textMuted}">점진 확장 30%</text>
+    <text x="300" y="85" text-anchor="middle" font-size="18" font-weight="900" fill="${C.zuck}">저커버그</text>
+    <text x="300" y="105" text-anchor="middle" font-size="17" font-weight="700" fill="${C.textMuted}">점진 확장 30%</text>
 
     <!-- Musk marker (95%) -->
     <rect x="300" y="20" width="650" height="40" rx="0" fill="${C.musk}" opacity="0.85"/>
     <circle cx="950" cy="40" r="14" fill="${C.musk}" stroke="#fff" stroke-width="3"/>
-    <text x="950" y="85" text-anchor="middle" font-size="13" font-weight="900" fill="${C.musk}">머스크</text>
-    <text x="950" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="${C.textMuted}">극단 95%</text>
+    <text x="950" y="85" text-anchor="middle" font-size="18" font-weight="900" fill="${C.musk}">머스크</text>
+    <text x="950" y="105" text-anchor="middle" font-size="17" font-weight="700" fill="${C.textMuted}">극단 95%</text>
   </g>
 
   <!-- Failure response -->
   <g transform="translate(60, 350)">
-    <text x="540" y="0" text-anchor="middle" font-size="22" font-weight="800" fill="${C.text}">실패 대응 방식</text>
+    <text x="540" y="0" text-anchor="middle" font-size="31" font-weight="800" fill="${C.text}">실패 대응 방식</text>
 
     <rect x="60" y="40" width="460" height="220" rx="20" fill="#ffffff" stroke="${C.musk}"/>
     <rect x="60" y="40" width="8" height="220" rx="4" fill="${C.musk}"/>
-    <text x="90" y="80" font-size="20" font-weight="900" fill="${C.musk}">🚀 머스크 방식</text>
-    <text x="90" y="115" font-size="13" font-weight="700" fill="${C.text}">실패 공개 + 즉시 재시도</text>
+    <text x="90" y="80" font-size="28" font-weight="900" fill="${C.musk}">🚀 머스크 방식</text>
+    <text x="90" y="115" font-size="18" font-weight="700" fill="${C.text}">실패 공개 + 즉시 재시도</text>
 
     ${[
       '• SpaceX 로켓 4번 폭발 공개',
@@ -188,13 +188,13 @@ function riskProfile() {
       '• Twitter (X) 인수 후 공개 혼란',
       '• 실패를 학습 데이터로',
     ].map((t, i) => `
-      <text x="90" y="${150 + i * 25}" font-size="12" font-weight="500" fill="${C.textSoft}">${t}</text>
+      <text x="90" y="${150 + i * 25}" font-size="17" font-weight="500" fill="${C.textSoft}">${t}</text>
     `).join('')}
 
     <rect x="560" y="40" width="460" height="220" rx="20" fill="#ffffff" stroke="${C.zuck}"/>
     <rect x="560" y="40" width="8" height="220" rx="4" fill="${C.zuck}"/>
-    <text x="590" y="80" font-size="20" font-weight="900" fill="${C.zuck}">🌐 저커버그 방식</text>
-    <text x="590" y="115" font-size="13" font-weight="700" fill="${C.text}">조용히 수정 + 장기 전환</text>
+    <text x="590" y="80" font-size="28" font-weight="900" fill="${C.zuck}">🌐 저커버그 방식</text>
+    <text x="590" y="115" font-size="18" font-weight="700" fill="${C.text}">조용히 수정 + 장기 전환</text>
 
     ${[
       '• Meta 이름 변경 조용히 진행',
@@ -202,7 +202,7 @@ function riskProfile() {
       '• 알고리즘 변경 사용자 모르게',
       '• 공개 갈등 회피',
     ].map((t, i) => `
-      <text x="590" y="${150 + i * 25}" font-size="12" font-weight="500" fill="${C.textSoft}">${t}</text>
+      <text x="590" y="${150 + i * 25}" font-size="17" font-weight="500" fill="${C.textSoft}">${t}</text>
     `).join('')}
   </g>
   `);
@@ -210,45 +210,45 @@ function riskProfile() {
 
 function strengths() {
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">너는 Te형 INTJ? Ti형 INTJ?</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">INTJ · INTP · ENTJ · ENTP 유형 모두 참고 · 네 방식 선택</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">너는 Te형 INTJ? Ti형 INTJ?</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">INTJ · INTP · ENTJ · ENTP 유형 모두 참고 · 네 방식 선택</text>
 
   <!-- Left: Te -->
   <g transform="translate(60, 130)">
     <rect width="520" height="700" rx="22" fill="#ffffff" stroke="${C.musk}" stroke-width="2"/>
     <rect width="8" height="700" rx="4" fill="${C.musk}"/>
 
-    <text x="30" y="50" font-size="22" font-weight="900" fill="${C.musk}">Te 강화형 (머스크 방식)</text>
-    <text x="30" y="80" font-size="13" font-weight="700" fill="${C.textMuted}">효율 · 실행 · 공개 경쟁</text>
+    <text x="30" y="50" font-size="31" font-weight="900" fill="${C.musk}">Te 강화형 (머스크 방식)</text>
+    <text x="30" y="80" font-size="18" font-weight="700" fill="${C.textMuted}">효율 · 실행 · 공개 경쟁</text>
 
-    <text x="30" y="140" font-size="16" font-weight="900" fill="${C.musk}">✅ 강점</text>
+    <text x="30" y="140" font-size="22" font-weight="900" fill="${C.musk}">✅ 강점</text>
     ${[
       '빠른 실행 속도',
       '큰 판 짜기 능력',
       '위기 시 돌파력',
       '논쟁 뚫고 가는 힘',
     ].map((t, i) => `
-      <text x="50" y="${170 + i * 30}" font-size="13" font-weight="600" fill="${C.safe}">• ${t}</text>
+      <text x="50" y="${170 + i * 30}" font-size="18" font-weight="600" fill="${C.safe}">• ${t}</text>
     `).join('')}
 
-    <text x="30" y="320" font-size="16" font-weight="900" fill="${C.musk}">⚠️ 약점</text>
+    <text x="30" y="320" font-size="22" font-weight="900" fill="${C.musk}">⚠️ 약점</text>
     ${[
       '주변 갈등 · 관계 소진',
       '번아웃 · 건강 악화',
       '감정 공감 부족',
       '충동적 결정 리스크',
     ].map((t, i) => `
-      <text x="50" y="${350 + i * 30}" font-size="13" font-weight="600" fill="${C.danger}">• ${t}</text>
+      <text x="50" y="${350 + i * 30}" font-size="18" font-weight="600" fill="${C.danger}">• ${t}</text>
     `).join('')}
 
-    <text x="30" y="500" font-size="16" font-weight="900" fill="${C.musk}">💼 적합 직무</text>
+    <text x="30" y="500" font-size="22" font-weight="900" fill="${C.musk}">💼 적합 직무</text>
     ${[
       '창업 · CEO 포지션',
       '영업 · 세일즈 · 협상',
       '프로덕트 매니저',
       'M&amp;A · 투자은행',
     ].map((t, i) => `
-      <text x="50" y="${530 + i * 30}" font-size="13" font-weight="600" fill="${C.textSoft}">• ${t}</text>
+      <text x="50" y="${530 + i * 30}" font-size="18" font-weight="600" fill="${C.textSoft}">• ${t}</text>
     `).join('')}
   </g>
 
@@ -257,37 +257,37 @@ function strengths() {
     <rect width="520" height="700" rx="22" fill="#ffffff" stroke="${C.zuck}" stroke-width="2"/>
     <rect width="8" height="700" rx="4" fill="${C.zuck}"/>
 
-    <text x="30" y="50" font-size="22" font-weight="900" fill="${C.zuck}">Ti 강화형 (저커버그 방식)</text>
-    <text x="30" y="80" font-size="13" font-weight="700" fill="${C.textMuted}">분석 · 시스템 · 조용한 확장</text>
+    <text x="30" y="50" font-size="31" font-weight="900" fill="${C.zuck}">Ti 강화형 (저커버그 방식)</text>
+    <text x="30" y="80" font-size="18" font-weight="700" fill="${C.textMuted}">분석 · 시스템 · 조용한 확장</text>
 
-    <text x="30" y="140" font-size="16" font-weight="900" fill="${C.zuck}">✅ 강점</text>
+    <text x="30" y="140" font-size="22" font-weight="900" fill="${C.zuck}">✅ 강점</text>
     ${[
       '깊은 분석 · 구조 파악',
       '알고리즘 · 시스템 설계',
       '장기 실험 가능',
       '조용히 꾸준한 확장',
     ].map((t, i) => `
-      <text x="50" y="${170 + i * 30}" font-size="13" font-weight="600" fill="${C.safe}">• ${t}</text>
+      <text x="50" y="${170 + i * 30}" font-size="18" font-weight="600" fill="${C.safe}">• ${t}</text>
     `).join('')}
 
-    <text x="30" y="320" font-size="16" font-weight="900" fill="${C.zuck}">⚠️ 약점</text>
+    <text x="30" y="320" font-size="22" font-weight="900" fill="${C.zuck}">⚠️ 약점</text>
     ${[
       '결정 느림 · 분석 마비',
       '커뮤니케이션 약점',
       '위기 순간 망설임',
       '감정 표현 어려움',
     ].map((t, i) => `
-      <text x="50" y="${350 + i * 30}" font-size="13" font-weight="600" fill="${C.danger}">• ${t}</text>
+      <text x="50" y="${350 + i * 30}" font-size="18" font-weight="600" fill="${C.danger}">• ${t}</text>
     `).join('')}
 
-    <text x="30" y="500" font-size="16" font-weight="900" fill="${C.zuck}">💼 적합 직무</text>
+    <text x="30" y="500" font-size="22" font-weight="900" fill="${C.zuck}">💼 적합 직무</text>
     ${[
       '연구 · R&amp;D 리더',
       '소프트웨어 아키텍트',
       '데이터 사이언스',
       '전략 컨설팅',
     ].map((t, i) => `
-      <text x="50" y="${530 + i * 30}" font-size="13" font-weight="600" fill="${C.textSoft}">• ${t}</text>
+      <text x="50" y="${530 + i * 30}" font-size="18" font-weight="600" fill="${C.textSoft}">• ${t}</text>
     `).join('')}
   </g>
   `);
@@ -331,8 +331,8 @@ function ritual() {
   const w = 520, h = 340;
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">NT 유형 적용 가이드 — 너의 방식 선택</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">머스크형 vs 저커버그형 · 통합형 · NT 공통 체크리스트</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">NT 유형 적용 가이드 — 너의 방식 선택</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">머스크형 vs 저커버그형 · 통합형 · NT 공통 체크리스트</text>
 
   ${positions.map((p, i) => {
     const g = groups[i];
@@ -340,9 +340,9 @@ function ritual() {
       <g transform="translate(${p.x},${p.y})">
         <rect width="${w}" height="${h}" rx="18" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="${h}" rx="4" fill="${g.color}"/>
-        <text x="28" y="42" font-size="18" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
+        <text x="28" y="42" font-size="25" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
         ${g.items.map((it, j) => `
-          <text x="28" y="${95 + j * 52}" font-size="13" font-weight="600" fill="${C.textSoft}">${it}</text>
+          <text x="28" y="${95 + j * 52}" font-size="18" font-weight="600" fill="${C.textSoft}">${it}</text>
         `).join('')}
       </g>
     `;

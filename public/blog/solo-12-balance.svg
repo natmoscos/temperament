@@ -2,23 +2,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="58" text-anchor="middle" font-size="32" font-weight="800" fill="#171717">혼자도 · 같이도 잘 노는 3단계</text>
-  <text x="600" y="90" text-anchor="middle" font-size="15" font-weight="500" fill="#6b7280">고립도 의존도 아닌, 건강한 관계 설계법</text>
+  <text x="600" y="58" text-anchor="middle" font-size="45" font-weight="800" fill="#171717">혼자도 · 같이도 잘 노는 3단계</text>
+  <text x="600" y="90" text-anchor="middle" font-size="21" font-weight="500" fill="#6b7280">고립도 의존도 아닌, 건강한 관계 설계법</text>
   
     <g>
       <rect x="90" y="190" width="300" height="320" rx="20" fill="#ecfeff" stroke="#0891b2" stroke-width="2.5"/>
       <!-- step number circle -->
       <circle cx="240" cy="185" r="40" fill="#0891b2"/>
-      <text x="240" y="200" text-anchor="middle" font-size="26" font-weight="800" fill="#fff">01</text>
+      <text x="240" y="200" text-anchor="middle" font-size="36" font-weight="800" fill="#fff">01</text>
       <!-- content -->
-      <text x="240" y="285" text-anchor="middle" font-size="12" font-weight="600" fill="#0e7490" letter-spacing="3">STEP 01</text>
-      <text x="240" y="330" text-anchor="middle" font-size="24" font-weight="800" fill="#0e7490">혼자 시간 확보</text>
-      <text x="240" y="360" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280" font-style="italic">Self-recovery</text>
+      <text x="240" y="285" text-anchor="middle" font-size="17" font-weight="600" fill="#0e7490" letter-spacing="3">STEP 01</text>
+      <text x="240" y="330" text-anchor="middle" font-size="34" font-weight="800" fill="#0e7490">혼자 시간 확보</text>
+      <text x="240" y="360" text-anchor="middle" font-size="18" font-weight="500" fill="#6b7280" font-style="italic">Self-recovery</text>
       <!-- description (2 lines) -->
       
-        <text x="240" y="420" text-anchor="middle" font-size="15" font-weight="600" fill="#374151">I 주기능 회복</text>
+        <text x="240" y="420" text-anchor="middle" font-size="21" font-weight="600" fill="#374151">I 주기능 회복</text>
       
-        <text x="240" y="448" text-anchor="middle" font-size="15" font-weight="600" fill="#374151">에너지 재충전</text>
+        <text x="240" y="448" text-anchor="middle" font-size="21" font-weight="600" fill="#374151">에너지 재충전</text>
       
     </g>
     
@@ -33,16 +33,16 @@
       <rect x="450" y="190" width="300" height="320" rx="20" fill="#ecfdf5" stroke="#059669" stroke-width="2.5"/>
       <!-- step number circle -->
       <circle cx="600" cy="185" r="40" fill="#059669"/>
-      <text x="600" y="200" text-anchor="middle" font-size="26" font-weight="800" fill="#fff">02</text>
+      <text x="600" y="200" text-anchor="middle" font-size="36" font-weight="800" fill="#fff">02</text>
       <!-- content -->
-      <text x="600" y="285" text-anchor="middle" font-size="12" font-weight="600" fill="#047857" letter-spacing="3">STEP 02</text>
-      <text x="600" y="330" text-anchor="middle" font-size="24" font-weight="800" fill="#047857">핵심 관계만 선별</text>
-      <text x="600" y="360" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280" font-style="italic">Curated-social</text>
+      <text x="600" y="285" text-anchor="middle" font-size="17" font-weight="600" fill="#047857" letter-spacing="3">STEP 02</text>
+      <text x="600" y="330" text-anchor="middle" font-size="34" font-weight="800" fill="#047857">핵심 관계만 선별</text>
+      <text x="600" y="360" text-anchor="middle" font-size="18" font-weight="500" fill="#6b7280" font-style="italic">Curated-social</text>
       <!-- description (2 lines) -->
       
-        <text x="600" y="420" text-anchor="middle" font-size="15" font-weight="600" fill="#374151">신뢰 가능한</text>
+        <text x="600" y="420" text-anchor="middle" font-size="21" font-weight="600" fill="#374151">신뢰 가능한</text>
       
-        <text x="600" y="448" text-anchor="middle" font-size="15" font-weight="600" fill="#374151">소수와의 깊은 교류</text>
+        <text x="600" y="448" text-anchor="middle" font-size="21" font-weight="600" fill="#374151">소수와의 깊은 교류</text>
       
     </g>
     
@@ -57,16 +57,16 @@
       <rect x="810" y="190" width="300" height="320" rx="20" fill="#fffbeb" stroke="#d97706" stroke-width="2.5"/>
       <!-- step number circle -->
       <circle cx="960" cy="185" r="40" fill="#d97706"/>
-      <text x="960" y="200" text-anchor="middle" font-size="26" font-weight="800" fill="#fff">03</text>
+      <text x="960" y="200" text-anchor="middle" font-size="36" font-weight="800" fill="#fff">03</text>
       <!-- content -->
-      <text x="960" y="285" text-anchor="middle" font-size="12" font-weight="600" fill="#b45309" letter-spacing="3">STEP 03</text>
-      <text x="960" y="330" text-anchor="middle" font-size="24" font-weight="800" fill="#b45309">유연한 전환</text>
-      <text x="960" y="360" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280" font-style="italic">Flexible-switch</text>
+      <text x="960" y="285" text-anchor="middle" font-size="17" font-weight="600" fill="#b45309" letter-spacing="3">STEP 03</text>
+      <text x="960" y="330" text-anchor="middle" font-size="34" font-weight="800" fill="#b45309">유연한 전환</text>
+      <text x="960" y="360" text-anchor="middle" font-size="18" font-weight="500" fill="#6b7280" font-style="italic">Flexible-switch</text>
       <!-- description (2 lines) -->
       
-        <text x="960" y="420" text-anchor="middle" font-size="15" font-weight="600" fill="#374151">에너지 상태 따라</text>
+        <text x="960" y="420" text-anchor="middle" font-size="21" font-weight="600" fill="#374151">에너지 상태 따라</text>
       
-        <text x="960" y="448" text-anchor="middle" font-size="15" font-weight="600" fill="#374151">혼자 ↔ 같이 자유 전환</text>
+        <text x="960" y="448" text-anchor="middle" font-size="21" font-weight="600" fill="#374151">혼자 ↔ 같이 자유 전환</text>
       
     </g>
     
@@ -74,10 +74,10 @@
   <!-- bottom insight -->
   <g transform="translate(150, 720)">
     <rect x="0" y="0" width="900" height="120" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
-    <text x="30" y="35" font-size="14" font-weight="800" fill="#171717">핵심 원칙 · Solo 70 : Social 30</text>
-    <text x="30" y="62" font-size="13" font-weight="500" fill="#374151">혼놀 고수일수록 혼자 시간 70%, 타인과 시간 30%의 비율을 유지한다.</text>
-    <text x="30" y="82" font-size="13" font-weight="500" fill="#374151">이 균형이 깨지면 외로움(혼자 &gt;90%) 또는 에너지 고갈(혼자 &lt;40%)로 이어진다.</text>
-    <text x="30" y="104" font-size="12" font-weight="600" fill="#0e7490">▶ 자기 에너지를 관찰하는 습관 = 메타센싱(2026 메가트렌드)</text>
+    <text x="30" y="35" font-size="20" font-weight="800" fill="#171717">핵심 원칙 · Solo 70 : Social 30</text>
+    <text x="30" y="62" font-size="18" font-weight="500" fill="#374151">혼놀 고수일수록 혼자 시간 70%, 타인과 시간 30%의 비율을 유지한다.</text>
+    <text x="30" y="82" font-size="18" font-weight="500" fill="#374151">이 균형이 깨지면 외로움(혼자 &gt;90%) 또는 에너지 고갈(혼자 &lt;40%)로 이어진다.</text>
+    <text x="30" y="104" font-size="17" font-weight="600" fill="#0e7490">▶ 자기 에너지를 관찰하는 습관 = 메타센싱(2026 메가트렌드)</text>
   </g>
   
 <text x="1180" y="890" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.8">192types.co.kr · 2026 MBTI 트렌드 시리즈</text>

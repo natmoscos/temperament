@@ -2,89 +2,89 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="55" text-anchor="middle" font-size="28" font-weight="800" fill="#171717">유형별 호감 표현 언어 사전</text>
-  <text x="600" y="82" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">"이거 관심 있다는 뜻이야" 16가지 모드 · 놓치지 말고 해석해</text>
+  <text x="600" y="55" text-anchor="middle" font-size="39" font-weight="800" fill="#171717">유형별 호감 표현 언어 사전</text>
+  <text x="600" y="82" text-anchor="middle" font-size="18" font-weight="500" fill="#6b7280">"이거 관심 있다는 뜻이야" 16가지 모드 · 놓치지 말고 해석해</text>
 
   
       <rect x="60" y="115" width="555" height="66" rx="12" fill="#ecfeff" stroke="#e5e7eb"/>
       <rect x="60" y="115" width="6" height="66" rx="3" fill="#0891b2"/>
-      <text x="82" y="143" font-size="16" font-weight="800" fill="#0891b2">INTJ</text>
-      <text x="82" y="166" font-size="12" font-weight="600" fill="#374151">"같이 5년 계획 짜볼래?" · 미래 시뮬레이션 초대</text>
+      <text x="82" y="143" font-size="22" font-weight="800" fill="#0891b2">INTJ</text>
+      <text x="82" y="166" font-size="17" font-weight="600" fill="#374151">"같이 5년 계획 짜볼래?" · 미래 시뮬레이션 초대</text>
     
       <rect x="60" y="193" width="555" height="66" rx="12" fill="#ecfeff" stroke="#e5e7eb"/>
       <rect x="60" y="193" width="6" height="66" rx="3" fill="#0891b2"/>
-      <text x="82" y="221" font-size="16" font-weight="800" fill="#0891b2">INTP</text>
-      <text x="82" y="244" font-size="12" font-weight="600" fill="#374151">"이 이론 어떻게 생각해?" · 지적 공명 확인</text>
+      <text x="82" y="221" font-size="22" font-weight="800" fill="#0891b2">INTP</text>
+      <text x="82" y="244" font-size="17" font-weight="600" fill="#374151">"이 이론 어떻게 생각해?" · 지적 공명 확인</text>
     
       <rect x="60" y="271" width="555" height="66" rx="12" fill="#ecfeff" stroke="#e5e7eb"/>
       <rect x="60" y="271" width="6" height="66" rx="3" fill="#0891b2"/>
-      <text x="82" y="299" font-size="16" font-weight="800" fill="#0891b2">ENTJ</text>
-      <text x="82" y="322" font-size="12" font-weight="600" fill="#374151">"너 스펙 좋네. 식사 한번 하자." · 효율적 직진</text>
+      <text x="82" y="299" font-size="22" font-weight="800" fill="#0891b2">ENTJ</text>
+      <text x="82" y="322" font-size="17" font-weight="600" fill="#374151">"너 스펙 좋네. 식사 한번 하자." · 효율적 직진</text>
     
       <rect x="60" y="349" width="555" height="66" rx="12" fill="#ecfeff" stroke="#e5e7eb"/>
       <rect x="60" y="349" width="6" height="66" rx="3" fill="#0891b2"/>
-      <text x="82" y="377" font-size="16" font-weight="800" fill="#0891b2">ENTP</text>
-      <text x="82" y="400" font-size="12" font-weight="600" fill="#374151">"너 말하는 거 재밌어" · 뇌풀이 공유</text>
+      <text x="82" y="377" font-size="22" font-weight="800" fill="#0891b2">ENTP</text>
+      <text x="82" y="400" font-size="17" font-weight="600" fill="#374151">"너 말하는 거 재밌어" · 뇌풀이 공유</text>
     
       <rect x="60" y="427" width="555" height="66" rx="12" fill="#fff1f2" stroke="#e5e7eb"/>
       <rect x="60" y="427" width="6" height="66" rx="3" fill="#e11d48"/>
-      <text x="82" y="455" font-size="16" font-weight="800" fill="#e11d48">INFJ</text>
-      <text x="82" y="478" font-size="12" font-weight="600" fill="#374151">"너 왜 그때 그렇게 말했어?" · 영혼 해독</text>
+      <text x="82" y="455" font-size="22" font-weight="800" fill="#e11d48">INFJ</text>
+      <text x="82" y="478" font-size="17" font-weight="600" fill="#374151">"너 왜 그때 그렇게 말했어?" · 영혼 해독</text>
     
       <rect x="60" y="505" width="555" height="66" rx="12" fill="#fff1f2" stroke="#e5e7eb"/>
       <rect x="60" y="505" width="6" height="66" rx="3" fill="#e11d48"/>
-      <text x="82" y="533" font-size="16" font-weight="800" fill="#e11d48">INFP</text>
-      <text x="82" y="556" font-size="12" font-weight="600" fill="#374151">"너 덕분에 이 노래가 달라졌어" · 감정 각인</text>
+      <text x="82" y="533" font-size="22" font-weight="800" fill="#e11d48">INFP</text>
+      <text x="82" y="556" font-size="17" font-weight="600" fill="#374151">"너 덕분에 이 노래가 달라졌어" · 감정 각인</text>
     
       <rect x="60" y="583" width="555" height="66" rx="12" fill="#fff1f2" stroke="#e5e7eb"/>
       <rect x="60" y="583" width="6" height="66" rx="3" fill="#e11d48"/>
-      <text x="82" y="611" font-size="16" font-weight="800" fill="#e11d48">ENFJ</text>
-      <text x="82" y="634" font-size="12" font-weight="600" fill="#374151">"넌 어떤 사람이 되고 싶어?" · 성장 동반자 제안</text>
+      <text x="82" y="611" font-size="22" font-weight="800" fill="#e11d48">ENFJ</text>
+      <text x="82" y="634" font-size="17" font-weight="600" fill="#374151">"넌 어떤 사람이 되고 싶어?" · 성장 동반자 제안</text>
     
       <rect x="60" y="661" width="555" height="66" rx="12" fill="#fff1f2" stroke="#e5e7eb"/>
       <rect x="60" y="661" width="6" height="66" rx="3" fill="#e11d48"/>
-      <text x="82" y="689" font-size="16" font-weight="800" fill="#e11d48">ENFP</text>
-      <text x="82" y="712" font-size="12" font-weight="600" fill="#374151">"이거 봤어? 너 생각났어" · 세상의 모든 걸 너로 연결</text>
+      <text x="82" y="689" font-size="22" font-weight="800" fill="#e11d48">ENFP</text>
+      <text x="82" y="712" font-size="17" font-weight="600" fill="#374151">"이거 봤어? 너 생각났어" · 세상의 모든 걸 너로 연결</text>
     
       <rect x="640" y="115" width="555" height="66" rx="12" fill="#ecfdf5" stroke="#e5e7eb"/>
       <rect x="640" y="115" width="6" height="66" rx="3" fill="#059669"/>
-      <text x="662" y="143" font-size="16" font-weight="800" fill="#059669">ISTJ</text>
-      <text x="662" y="166" font-size="12" font-weight="600" fill="#374151">"이번 달 일정표 공유할게" · 루틴 안에 자리 마련</text>
+      <text x="662" y="143" font-size="22" font-weight="800" fill="#059669">ISTJ</text>
+      <text x="662" y="166" font-size="17" font-weight="600" fill="#374151">"이번 달 일정표 공유할게" · 루틴 안에 자리 마련</text>
     
       <rect x="640" y="193" width="555" height="66" rx="12" fill="#ecfdf5" stroke="#e5e7eb"/>
       <rect x="640" y="193" width="6" height="66" rx="3" fill="#059669"/>
-      <text x="662" y="221" font-size="16" font-weight="800" fill="#059669">ISFJ</text>
-      <text x="662" y="244" font-size="12" font-weight="600" fill="#374151">"너 감기 걸릴 것 같아" · 돌봄의 촉</text>
+      <text x="662" y="221" font-size="22" font-weight="800" fill="#059669">ISFJ</text>
+      <text x="662" y="244" font-size="17" font-weight="600" fill="#374151">"너 감기 걸릴 것 같아" · 돌봄의 촉</text>
     
       <rect x="640" y="271" width="555" height="66" rx="12" fill="#ecfdf5" stroke="#e5e7eb"/>
       <rect x="640" y="271" width="6" height="66" rx="3" fill="#059669"/>
-      <text x="662" y="299" font-size="16" font-weight="800" fill="#059669">ESTJ</text>
-      <text x="662" y="322" font-size="12" font-weight="600" fill="#374151">"우리 3개월 후에 이거 같이 하자" · 계획 공유</text>
+      <text x="662" y="299" font-size="22" font-weight="800" fill="#059669">ESTJ</text>
+      <text x="662" y="322" font-size="17" font-weight="600" fill="#374151">"우리 3개월 후에 이거 같이 하자" · 계획 공유</text>
     
       <rect x="640" y="349" width="555" height="66" rx="12" fill="#ecfdf5" stroke="#e5e7eb"/>
       <rect x="640" y="349" width="6" height="66" rx="3" fill="#059669"/>
-      <text x="662" y="377" font-size="16" font-weight="800" fill="#059669">ESFJ</text>
-      <text x="662" y="400" font-size="12" font-weight="600" fill="#374151">"네 친구들도 다 초대할게" · 관계망 통합</text>
+      <text x="662" y="377" font-size="22" font-weight="800" fill="#059669">ESFJ</text>
+      <text x="662" y="400" font-size="17" font-weight="600" fill="#374151">"네 친구들도 다 초대할게" · 관계망 통합</text>
     
       <rect x="640" y="427" width="555" height="66" rx="12" fill="#fffbeb" stroke="#e5e7eb"/>
       <rect x="640" y="427" width="6" height="66" rx="3" fill="#d97706"/>
-      <text x="662" y="455" font-size="16" font-weight="800" fill="#d97706">ISTP</text>
-      <text x="662" y="478" font-size="12" font-weight="600" fill="#374151">(차 고쳐줌, 짐 들어줌) · 행동이 곧 고백</text>
+      <text x="662" y="455" font-size="22" font-weight="800" fill="#d97706">ISTP</text>
+      <text x="662" y="478" font-size="17" font-weight="600" fill="#374151">(차 고쳐줌, 짐 들어줌) · 행동이 곧 고백</text>
     
       <rect x="640" y="505" width="555" height="66" rx="12" fill="#fffbeb" stroke="#e5e7eb"/>
       <rect x="640" y="505" width="6" height="66" rx="3" fill="#d97706"/>
-      <text x="662" y="533" font-size="16" font-weight="800" fill="#d97706">ISFP</text>
-      <text x="662" y="556" font-size="12" font-weight="600" fill="#374151">"네 사진 찍어도 돼?" · 감각적 기록 요청</text>
+      <text x="662" y="533" font-size="22" font-weight="800" fill="#d97706">ISFP</text>
+      <text x="662" y="556" font-size="17" font-weight="600" fill="#374151">"네 사진 찍어도 돼?" · 감각적 기록 요청</text>
     
       <rect x="640" y="583" width="555" height="66" rx="12" fill="#fffbeb" stroke="#e5e7eb"/>
       <rect x="640" y="583" width="6" height="66" rx="3" fill="#d97706"/>
-      <text x="662" y="611" font-size="16" font-weight="800" fill="#d97706">ESTP</text>
-      <text x="662" y="634" font-size="12" font-weight="600" fill="#374151">"지금 나올래?" · 즉흥 만남 제안</text>
+      <text x="662" y="611" font-size="22" font-weight="800" fill="#d97706">ESTP</text>
+      <text x="662" y="634" font-size="17" font-weight="600" fill="#374151">"지금 나올래?" · 즉흥 만남 제안</text>
     
       <rect x="640" y="661" width="555" height="66" rx="12" fill="#fffbeb" stroke="#e5e7eb"/>
       <rect x="640" y="661" width="6" height="66" rx="3" fill="#d97706"/>
-      <text x="662" y="689" font-size="16" font-weight="800" fill="#d97706">ESFP</text>
-      <text x="662" y="712" font-size="12" font-weight="600" fill="#374151">"야 나 오늘 너무 재밌어" · 감정 즉시 방출</text>
+      <text x="662" y="689" font-size="22" font-weight="800" fill="#d97706">ESFP</text>
+      <text x="662" y="712" font-size="17" font-weight="600" fill="#374151">"야 나 오늘 너무 재밌어" · 감정 즉시 방출</text>
     
   
 <text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · MBTI 연애 시리즈</text>

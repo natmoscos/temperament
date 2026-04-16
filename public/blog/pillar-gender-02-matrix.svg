@@ -2,200 +2,200 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="58" text-anchor="middle" font-size="32" font-weight="800" fill="#171717">16유형 × 4기질 매트릭스</text>
-  <text x="600" y="92" text-anchor="middle" font-size="15" font-weight="500" fill="#6b7280">어떤 기질에 속하는지에 따라 여자·남자 특징이 달라져</text>
+  <text x="600" y="58" text-anchor="middle" font-size="45" font-weight="800" fill="#171717">16유형 × 4기질 매트릭스</text>
+  <text x="600" y="92" text-anchor="middle" font-size="21" font-weight="500" fill="#6b7280">어떤 기질에 속하는지에 따라 여자·남자 특징이 달라져</text>
 
   <!-- Column headers: I/E + S/N split not needed; just 4 groups -->
   <g>
     
-      <text x="280" y="175" text-anchor="middle" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">내향 판단(IxxJ)</text>
+      <text x="280" y="175" text-anchor="middle" font-size="17" font-weight="700" fill="#6b7280" letter-spacing="1">내향 판단(IxxJ)</text>
     
-      <text x="480" y="175" text-anchor="middle" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">내향 인식(IxxP)</text>
+      <text x="480" y="175" text-anchor="middle" font-size="17" font-weight="700" fill="#6b7280" letter-spacing="1">내향 인식(IxxP)</text>
     
-      <text x="680" y="175" text-anchor="middle" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">외향 판단(ExxJ)</text>
+      <text x="680" y="175" text-anchor="middle" font-size="17" font-weight="700" fill="#6b7280" letter-spacing="1">외향 판단(ExxJ)</text>
     
-      <text x="880" y="175" text-anchor="middle" font-size="12" font-weight="700" fill="#6b7280" letter-spacing="1">외향 인식(ExxP)</text>
+      <text x="880" y="175" text-anchor="middle" font-size="17" font-weight="700" fill="#6b7280" letter-spacing="1">외향 인식(ExxP)</text>
     
   </g>
 
   
     <!-- Row label -->
     <rect x="40" y="160" width="200" height="110" rx="12" fill="#ecfeff" stroke="#0891b2" stroke-width="1"/>
-    <text x="140" y="193" text-anchor="middle" font-size="16" font-weight="800" fill="#0891b2">NT · 분석가형</text>
-    <text x="140" y="220" text-anchor="middle" font-size="12" font-weight="500" fill="#374151">전략 · 논리 · 통찰</text>
-    <text x="140" y="248" text-anchor="middle" font-size="11" font-weight="600" fill="#0891b2" opacity="0.7">4 TYPES</text>
+    <text x="140" y="193" text-anchor="middle" font-size="22" font-weight="800" fill="#0891b2">NT · 분석가형</text>
+    <text x="140" y="220" text-anchor="middle" font-size="17" font-weight="500" fill="#374151">전략 · 논리 · 통찰</text>
+    <text x="140" y="248" text-anchor="middle" font-size="15" font-weight="600" fill="#0891b2" opacity="0.7">4 TYPES</text>
 
     <!-- Type badges -->
     
       <circle cx="280" cy="210" r="44" fill="#0891b2"/>
-      <text x="280" y="216" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">INTJ</text>
+      <text x="280" y="216" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">INTJ</text>
       <g transform="translate(244, 260)">
         <rect x="0" y="0" width="32" height="20" rx="10" fill="#fdf2f8" stroke="#db2777" stroke-width="1"/>
-        <text x="16" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#be185d">♀</text>
+        <text x="16" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#be185d">♀</text>
         <rect x="40" y="0" width="32" height="20" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
-        <text x="56" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">♂</text>
+        <text x="56" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">♂</text>
       </g>
     
       <circle cx="480" cy="210" r="44" fill="#0891b2"/>
-      <text x="480" y="216" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">INTP</text>
+      <text x="480" y="216" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">INTP</text>
       <g transform="translate(444, 260)">
         <rect x="0" y="0" width="32" height="20" rx="10" fill="#fdf2f8" stroke="#db2777" stroke-width="1"/>
-        <text x="16" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#be185d">♀</text>
+        <text x="16" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#be185d">♀</text>
         <rect x="40" y="0" width="32" height="20" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
-        <text x="56" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">♂</text>
+        <text x="56" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">♂</text>
       </g>
     
       <circle cx="680" cy="210" r="44" fill="#0891b2"/>
-      <text x="680" y="216" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">ENTJ</text>
+      <text x="680" y="216" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">ENTJ</text>
       <g transform="translate(644, 260)">
         <rect x="0" y="0" width="32" height="20" rx="10" fill="#fdf2f8" stroke="#db2777" stroke-width="1"/>
-        <text x="16" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#be185d">♀</text>
+        <text x="16" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#be185d">♀</text>
         <rect x="40" y="0" width="32" height="20" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
-        <text x="56" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">♂</text>
+        <text x="56" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">♂</text>
       </g>
     
       <circle cx="880" cy="210" r="44" fill="#0891b2"/>
-      <text x="880" y="216" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">ENTP</text>
+      <text x="880" y="216" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">ENTP</text>
       <g transform="translate(844, 260)">
         <rect x="0" y="0" width="32" height="20" rx="10" fill="#fdf2f8" stroke="#db2777" stroke-width="1"/>
-        <text x="16" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#be185d">♀</text>
+        <text x="16" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#be185d">♀</text>
         <rect x="40" y="0" width="32" height="20" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
-        <text x="56" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">♂</text>
+        <text x="56" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">♂</text>
       </g>
     
   
     <!-- Row label -->
     <rect x="40" y="310" width="200" height="110" rx="12" fill="#fff1f2" stroke="#e11d48" stroke-width="1"/>
-    <text x="140" y="343" text-anchor="middle" font-size="16" font-weight="800" fill="#e11d48">NF · 이상주의형</text>
-    <text x="140" y="370" text-anchor="middle" font-size="12" font-weight="500" fill="#374151">가치 · 공감 · 의미</text>
-    <text x="140" y="398" text-anchor="middle" font-size="11" font-weight="600" fill="#e11d48" opacity="0.7">4 TYPES</text>
+    <text x="140" y="343" text-anchor="middle" font-size="22" font-weight="800" fill="#e11d48">NF · 이상주의형</text>
+    <text x="140" y="370" text-anchor="middle" font-size="17" font-weight="500" fill="#374151">가치 · 공감 · 의미</text>
+    <text x="140" y="398" text-anchor="middle" font-size="15" font-weight="600" fill="#e11d48" opacity="0.7">4 TYPES</text>
 
     <!-- Type badges -->
     
       <circle cx="280" cy="360" r="44" fill="#e11d48"/>
-      <text x="280" y="366" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">INFJ</text>
+      <text x="280" y="366" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">INFJ</text>
       <g transform="translate(244, 410)">
         <rect x="0" y="0" width="32" height="20" rx="10" fill="#fdf2f8" stroke="#db2777" stroke-width="1"/>
-        <text x="16" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#be185d">♀</text>
+        <text x="16" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#be185d">♀</text>
         <rect x="40" y="0" width="32" height="20" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
-        <text x="56" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">♂</text>
+        <text x="56" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">♂</text>
       </g>
     
       <circle cx="480" cy="360" r="44" fill="#e11d48"/>
-      <text x="480" y="366" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">INFP</text>
+      <text x="480" y="366" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">INFP</text>
       <g transform="translate(444, 410)">
         <rect x="0" y="0" width="32" height="20" rx="10" fill="#fdf2f8" stroke="#db2777" stroke-width="1"/>
-        <text x="16" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#be185d">♀</text>
+        <text x="16" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#be185d">♀</text>
         <rect x="40" y="0" width="32" height="20" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
-        <text x="56" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">♂</text>
+        <text x="56" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">♂</text>
       </g>
     
       <circle cx="680" cy="360" r="44" fill="#e11d48"/>
-      <text x="680" y="366" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">ENFJ</text>
+      <text x="680" y="366" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">ENFJ</text>
       <g transform="translate(644, 410)">
         <rect x="0" y="0" width="32" height="20" rx="10" fill="#fdf2f8" stroke="#db2777" stroke-width="1"/>
-        <text x="16" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#be185d">♀</text>
+        <text x="16" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#be185d">♀</text>
         <rect x="40" y="0" width="32" height="20" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
-        <text x="56" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">♂</text>
+        <text x="56" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">♂</text>
       </g>
     
       <circle cx="880" cy="360" r="44" fill="#e11d48"/>
-      <text x="880" y="366" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">ENFP</text>
+      <text x="880" y="366" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">ENFP</text>
       <g transform="translate(844, 410)">
         <rect x="0" y="0" width="32" height="20" rx="10" fill="#fdf2f8" stroke="#db2777" stroke-width="1"/>
-        <text x="16" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#be185d">♀</text>
+        <text x="16" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#be185d">♀</text>
         <rect x="40" y="0" width="32" height="20" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
-        <text x="56" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">♂</text>
+        <text x="56" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">♂</text>
       </g>
     
   
     <!-- Row label -->
     <rect x="40" y="460" width="200" height="110" rx="12" fill="#ecfdf5" stroke="#059669" stroke-width="1"/>
-    <text x="140" y="493" text-anchor="middle" font-size="16" font-weight="800" fill="#059669">SJ · 관리자형</text>
-    <text x="140" y="520" text-anchor="middle" font-size="12" font-weight="500" fill="#374151">책임 · 안정 · 전통</text>
-    <text x="140" y="548" text-anchor="middle" font-size="11" font-weight="600" fill="#059669" opacity="0.7">4 TYPES</text>
+    <text x="140" y="493" text-anchor="middle" font-size="22" font-weight="800" fill="#059669">SJ · 관리자형</text>
+    <text x="140" y="520" text-anchor="middle" font-size="17" font-weight="500" fill="#374151">책임 · 안정 · 전통</text>
+    <text x="140" y="548" text-anchor="middle" font-size="15" font-weight="600" fill="#059669" opacity="0.7">4 TYPES</text>
 
     <!-- Type badges -->
     
       <circle cx="280" cy="510" r="44" fill="#059669"/>
-      <text x="280" y="516" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">ISTJ</text>
+      <text x="280" y="516" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">ISTJ</text>
       <g transform="translate(244, 560)">
         <rect x="0" y="0" width="32" height="20" rx="10" fill="#fdf2f8" stroke="#db2777" stroke-width="1"/>
-        <text x="16" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#be185d">♀</text>
+        <text x="16" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#be185d">♀</text>
         <rect x="40" y="0" width="32" height="20" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
-        <text x="56" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">♂</text>
+        <text x="56" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">♂</text>
       </g>
     
       <circle cx="480" cy="510" r="44" fill="#059669"/>
-      <text x="480" y="516" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">ISFJ</text>
+      <text x="480" y="516" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">ISFJ</text>
       <g transform="translate(444, 560)">
         <rect x="0" y="0" width="32" height="20" rx="10" fill="#fdf2f8" stroke="#db2777" stroke-width="1"/>
-        <text x="16" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#be185d">♀</text>
+        <text x="16" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#be185d">♀</text>
         <rect x="40" y="0" width="32" height="20" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
-        <text x="56" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">♂</text>
+        <text x="56" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">♂</text>
       </g>
     
       <circle cx="680" cy="510" r="44" fill="#059669"/>
-      <text x="680" y="516" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">ESTJ</text>
+      <text x="680" y="516" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">ESTJ</text>
       <g transform="translate(644, 560)">
         <rect x="0" y="0" width="32" height="20" rx="10" fill="#fdf2f8" stroke="#db2777" stroke-width="1"/>
-        <text x="16" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#be185d">♀</text>
+        <text x="16" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#be185d">♀</text>
         <rect x="40" y="0" width="32" height="20" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
-        <text x="56" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">♂</text>
+        <text x="56" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">♂</text>
       </g>
     
       <circle cx="880" cy="510" r="44" fill="#059669"/>
-      <text x="880" y="516" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">ESFJ</text>
+      <text x="880" y="516" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">ESFJ</text>
       <g transform="translate(844, 560)">
         <rect x="0" y="0" width="32" height="20" rx="10" fill="#fdf2f8" stroke="#db2777" stroke-width="1"/>
-        <text x="16" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#be185d">♀</text>
+        <text x="16" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#be185d">♀</text>
         <rect x="40" y="0" width="32" height="20" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
-        <text x="56" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">♂</text>
+        <text x="56" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">♂</text>
       </g>
     
   
     <!-- Row label -->
     <rect x="40" y="610" width="200" height="110" rx="12" fill="#fffbeb" stroke="#d97706" stroke-width="1"/>
-    <text x="140" y="643" text-anchor="middle" font-size="16" font-weight="800" fill="#d97706">SP · 기회포착형</text>
-    <text x="140" y="670" text-anchor="middle" font-size="12" font-weight="500" fill="#374151">실전 · 감각 · 현재</text>
-    <text x="140" y="698" text-anchor="middle" font-size="11" font-weight="600" fill="#d97706" opacity="0.7">4 TYPES</text>
+    <text x="140" y="643" text-anchor="middle" font-size="22" font-weight="800" fill="#d97706">SP · 기회포착형</text>
+    <text x="140" y="670" text-anchor="middle" font-size="17" font-weight="500" fill="#374151">실전 · 감각 · 현재</text>
+    <text x="140" y="698" text-anchor="middle" font-size="15" font-weight="600" fill="#d97706" opacity="0.7">4 TYPES</text>
 
     <!-- Type badges -->
     
       <circle cx="280" cy="660" r="44" fill="#d97706"/>
-      <text x="280" y="666" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">ISTP</text>
+      <text x="280" y="666" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">ISTP</text>
       <g transform="translate(244, 710)">
         <rect x="0" y="0" width="32" height="20" rx="10" fill="#fdf2f8" stroke="#db2777" stroke-width="1"/>
-        <text x="16" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#be185d">♀</text>
+        <text x="16" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#be185d">♀</text>
         <rect x="40" y="0" width="32" height="20" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
-        <text x="56" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">♂</text>
+        <text x="56" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">♂</text>
       </g>
     
       <circle cx="480" cy="660" r="44" fill="#d97706"/>
-      <text x="480" y="666" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">ISFP</text>
+      <text x="480" y="666" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">ISFP</text>
       <g transform="translate(444, 710)">
         <rect x="0" y="0" width="32" height="20" rx="10" fill="#fdf2f8" stroke="#db2777" stroke-width="1"/>
-        <text x="16" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#be185d">♀</text>
+        <text x="16" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#be185d">♀</text>
         <rect x="40" y="0" width="32" height="20" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
-        <text x="56" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">♂</text>
+        <text x="56" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">♂</text>
       </g>
     
       <circle cx="680" cy="660" r="44" fill="#d97706"/>
-      <text x="680" y="666" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">ESTP</text>
+      <text x="680" y="666" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">ESTP</text>
       <g transform="translate(644, 710)">
         <rect x="0" y="0" width="32" height="20" rx="10" fill="#fdf2f8" stroke="#db2777" stroke-width="1"/>
-        <text x="16" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#be185d">♀</text>
+        <text x="16" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#be185d">♀</text>
         <rect x="40" y="0" width="32" height="20" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
-        <text x="56" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">♂</text>
+        <text x="56" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">♂</text>
       </g>
     
       <circle cx="880" cy="660" r="44" fill="#d97706"/>
-      <text x="880" y="666" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">ESFP</text>
+      <text x="880" y="666" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">ESFP</text>
       <g transform="translate(844, 710)">
         <rect x="0" y="0" width="32" height="20" rx="10" fill="#fdf2f8" stroke="#db2777" stroke-width="1"/>
-        <text x="16" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#be185d">♀</text>
+        <text x="16" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#be185d">♀</text>
         <rect x="40" y="0" width="32" height="20" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="1"/>
-        <text x="56" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="#1d4ed8">♂</text>
+        <text x="56" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">♂</text>
       </g>
     
   
@@ -203,8 +203,8 @@
   <!-- Legend -->
   <g transform="translate(180, 800)">
     <rect x="0" y="0" width="840" height="56" fill="#fff" stroke="#e5e7eb" stroke-width="1" rx="10"/>
-    <text x="24" y="25" font-size="12" font-weight="700" fill="#374151">읽는 법</text>
-    <text x="24" y="44" font-size="11" fill="#6b7280">행 = 4가지 기질 · 열 = 인지 태도(I/E × 판단/인식) · 각 유형 아래 ♀/♂ 탭이 여자/남자 특징 글로 연결</text>
+    <text x="24" y="25" font-size="17" font-weight="700" fill="#374151">읽는 법</text>
+    <text x="24" y="44" font-size="15" fill="#6b7280">행 = 4가지 기질 · 열 = 인지 태도(I/E × 판단/인식) · 각 유형 아래 ♀/♂ 탭이 여자/남자 특징 글로 연결</text>
   </g>
   
 <text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · MBTI 성별 특징 가이드</text>

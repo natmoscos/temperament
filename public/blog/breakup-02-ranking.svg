@@ -2,124 +2,124 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="#171717">16유형 이별 회복 기간 랭킹 — 평균 며칠이면 괜찮아져?</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">이별 당일 → 일상 컨디션 복귀까지 · 192types 설문 N=348 + 인지기능 보정</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="#171717">16유형 이별 회복 기간 랭킹 — 평균 며칠이면 괜찮아져?</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="#6b7280">이별 당일 → 일상 컨디션 복귀까지 · 192types 설문 N=348 + 인지기능 보정</text>
 
   
-      <text x="45" y="133" font-size="14" font-weight="700" fill="#6b7280">01</text>
-      <text x="90" y="133" font-size="16" font-weight="800" fill="#d97706">ESTP</text>
+      <text x="45" y="133" font-size="20" font-weight="700" fill="#6b7280">01</text>
+      <text x="90" y="133" font-size="22" font-weight="800" fill="#d97706">ESTP</text>
       <rect x="210" y="115" width="45" height="26" rx="13" fill="#16a34a" opacity="0.92"/>
-      <text x="243" y="133" text-anchor="end" font-size="13" font-weight="800" fill="#fff">2일</text>
-      <text x="269" y="133" font-size="12" font-weight="600" fill="#374151">다음 파티에서 새 사람</text>
+      <text x="243" y="133" text-anchor="end" font-size="18" font-weight="800" fill="#fff">2일</text>
+      <text x="269" y="133" font-size="17" font-weight="600" fill="#374151">다음 파티에서 새 사람</text>
     
-      <text x="45" y="178" font-size="14" font-weight="700" fill="#6b7280">02</text>
-      <text x="90" y="178" font-size="16" font-weight="800" fill="#0891b2">ENTP</text>
+      <text x="45" y="178" font-size="20" font-weight="700" fill="#6b7280">02</text>
+      <text x="90" y="178" font-size="22" font-weight="800" fill="#0891b2">ENTP</text>
       <rect x="210" y="160" width="45" height="26" rx="13" fill="#16a34a" opacity="0.92"/>
-      <text x="243" y="178" text-anchor="end" font-size="13" font-weight="800" fill="#fff">4일</text>
-      <text x="269" y="178" font-size="12" font-weight="600" fill="#374151">2일 울고 3일차 새 프로젝트</text>
+      <text x="243" y="178" text-anchor="end" font-size="18" font-weight="800" fill="#fff">4일</text>
+      <text x="269" y="178" font-size="17" font-weight="600" fill="#374151">2일 울고 3일차 새 프로젝트</text>
     
-      <text x="45" y="223" font-size="14" font-weight="700" fill="#6b7280">03</text>
-      <text x="90" y="223" font-size="16" font-weight="800" fill="#d97706">ISTP</text>
+      <text x="45" y="223" font-size="20" font-weight="700" fill="#6b7280">03</text>
+      <text x="90" y="223" font-size="22" font-weight="800" fill="#d97706">ISTP</text>
       <rect x="210" y="205" width="45" height="26" rx="13" fill="#16a34a" opacity="0.92"/>
-      <text x="243" y="223" text-anchor="end" font-size="13" font-weight="800" fill="#fff">5일</text>
-      <text x="269" y="223" font-size="12" font-weight="600" fill="#374151">말없이 일상 복귀</text>
+      <text x="243" y="223" text-anchor="end" font-size="18" font-weight="800" fill="#fff">5일</text>
+      <text x="269" y="223" font-size="17" font-weight="600" fill="#374151">말없이 일상 복귀</text>
     
-      <text x="45" y="268" font-size="14" font-weight="700" fill="#6b7280">04</text>
-      <text x="90" y="268" font-size="16" font-weight="800" fill="#0891b2">ENTJ</text>
+      <text x="45" y="268" font-size="20" font-weight="700" fill="#6b7280">04</text>
+      <text x="90" y="268" font-size="22" font-weight="800" fill="#0891b2">ENTJ</text>
       <rect x="210" y="250" width="45" height="26" rx="13" fill="#16a34a" opacity="0.92"/>
-      <text x="243" y="268" text-anchor="end" font-size="13" font-weight="800" fill="#fff">7일</text>
-      <text x="269" y="268" font-size="12" font-weight="600" fill="#374151">감정 정리 후 성장 목표로 전환</text>
+      <text x="243" y="268" text-anchor="end" font-size="18" font-weight="800" fill="#fff">7일</text>
+      <text x="269" y="268" font-size="17" font-weight="600" fill="#374151">감정 정리 후 성장 목표로 전환</text>
     
-      <text x="45" y="313" font-size="14" font-weight="700" fill="#6b7280">05</text>
-      <text x="90" y="313" font-size="16" font-weight="800" fill="#d97706">ESFP</text>
+      <text x="45" y="313" font-size="20" font-weight="700" fill="#6b7280">05</text>
+      <text x="90" y="313" font-size="22" font-weight="800" fill="#d97706">ESFP</text>
       <rect x="210" y="295" width="45" height="26" rx="13" fill="#84cc16" opacity="0.92"/>
-      <text x="243" y="313" text-anchor="end" font-size="13" font-weight="800" fill="#fff">10일</text>
-      <text x="269" y="313" font-size="12" font-weight="600" fill="#374151">친구와 술 → 새 사람으로 덮기</text>
+      <text x="243" y="313" text-anchor="end" font-size="18" font-weight="800" fill="#fff">10일</text>
+      <text x="269" y="313" font-size="17" font-weight="600" fill="#374151">친구와 술 → 새 사람으로 덮기</text>
     
-      <text x="45" y="358" font-size="14" font-weight="700" fill="#6b7280">06</text>
-      <text x="90" y="358" font-size="16" font-weight="800" fill="#0891b2">INTP</text>
+      <text x="45" y="358" font-size="20" font-weight="700" fill="#6b7280">06</text>
+      <text x="90" y="358" font-size="22" font-weight="800" fill="#0891b2">INTP</text>
       <rect x="210" y="340" width="49.8" height="26" rx="13" fill="#84cc16" opacity="0.92"/>
-      <text x="247.8" y="358" text-anchor="end" font-size="13" font-weight="800" fill="#fff">12일</text>
-      <text x="273.8" y="358" font-size="12" font-weight="600" fill="#374151">원인 분석 완료 후 종결</text>
+      <text x="247.8" y="358" text-anchor="end" font-size="18" font-weight="800" fill="#fff">12일</text>
+      <text x="273.8" y="358" font-size="17" font-weight="600" fill="#374151">원인 분석 완료 후 종결</text>
     
-      <text x="45" y="403" font-size="14" font-weight="700" fill="#6b7280">07</text>
-      <text x="90" y="403" font-size="16" font-weight="800" fill="#e11d48">ENFP</text>
+      <text x="45" y="403" font-size="20" font-weight="700" fill="#6b7280">07</text>
+      <text x="90" y="403" font-size="22" font-weight="800" fill="#e11d48">ENFP</text>
       <rect x="210" y="385" width="58.10000000000001" height="26" rx="13" fill="#84cc16" opacity="0.92"/>
-      <text x="256.1" y="403" text-anchor="end" font-size="13" font-weight="800" fill="#fff">14일</text>
-      <text x="282.1" y="403" font-size="12" font-weight="600" fill="#374151">민지랑 술 → 새 설렘 찾아 떠남</text>
+      <text x="256.1" y="403" text-anchor="end" font-size="18" font-weight="800" fill="#fff">14일</text>
+      <text x="282.1" y="403" font-size="17" font-weight="600" fill="#374151">민지랑 술 → 새 설렘 찾아 떠남</text>
     
-      <text x="45" y="448" font-size="14" font-weight="700" fill="#6b7280">08</text>
-      <text x="90" y="448" font-size="16" font-weight="800" fill="#0891b2">INTJ</text>
+      <text x="45" y="448" font-size="20" font-weight="700" fill="#6b7280">08</text>
+      <text x="90" y="448" font-size="22" font-weight="800" fill="#0891b2">INTJ</text>
       <rect x="210" y="430" width="74.7" height="26" rx="13" fill="#84cc16" opacity="0.92"/>
-      <text x="272.7" y="448" text-anchor="end" font-size="13" font-weight="800" fill="#fff">18일</text>
-      <text x="298.7" y="448" font-size="12" font-weight="600" fill="#374151">10년 계획에서 상대 삭제</text>
+      <text x="272.7" y="448" text-anchor="end" font-size="18" font-weight="800" fill="#fff">18일</text>
+      <text x="298.7" y="448" font-size="17" font-weight="600" fill="#374151">10년 계획에서 상대 삭제</text>
     
-      <text x="45" y="493" font-size="14" font-weight="700" fill="#6b7280">09</text>
-      <text x="90" y="493" font-size="16" font-weight="800" fill="#059669">ESTJ</text>
+      <text x="45" y="493" font-size="20" font-weight="700" fill="#6b7280">09</text>
+      <text x="90" y="493" font-size="22" font-weight="800" fill="#059669">ESTJ</text>
       <rect x="210" y="475" width="91.3" height="26" rx="13" fill="#f59e0b" opacity="0.92"/>
-      <text x="289.3" y="493" text-anchor="end" font-size="13" font-weight="800" fill="#fff">22일</text>
-      <text x="315.3" y="493" font-size="12" font-weight="600" fill="#374151">감정 처리 후 루틴 재건</text>
+      <text x="289.3" y="493" text-anchor="end" font-size="18" font-weight="800" fill="#fff">22일</text>
+      <text x="315.3" y="493" font-size="17" font-weight="600" fill="#374151">감정 처리 후 루틴 재건</text>
     
-      <text x="45" y="538" font-size="14" font-weight="700" fill="#6b7280">10</text>
-      <text x="90" y="538" font-size="16" font-weight="800" fill="#d97706">ISFP</text>
+      <text x="45" y="538" font-size="20" font-weight="700" fill="#6b7280">10</text>
+      <text x="90" y="538" font-size="22" font-weight="800" fill="#d97706">ISFP</text>
       <rect x="210" y="520" width="107.9" height="26" rx="13" fill="#f59e0b" opacity="0.92"/>
-      <text x="305.9" y="538" text-anchor="end" font-size="13" font-weight="800" fill="#fff">26일</text>
-      <text x="331.9" y="538" font-size="12" font-weight="600" fill="#374151">감각적으로 앓고 조용히 회복</text>
+      <text x="305.9" y="538" text-anchor="end" font-size="18" font-weight="800" fill="#fff">26일</text>
+      <text x="331.9" y="538" font-size="17" font-weight="600" fill="#374151">감각적으로 앓고 조용히 회복</text>
     
-      <text x="45" y="583" font-size="14" font-weight="700" fill="#6b7280">11</text>
-      <text x="90" y="583" font-size="16" font-weight="800" fill="#059669">ESFJ</text>
+      <text x="45" y="583" font-size="20" font-weight="700" fill="#6b7280">11</text>
+      <text x="90" y="583" font-size="22" font-weight="800" fill="#059669">ESFJ</text>
       <rect x="210" y="565" width="145.25" height="26" rx="13" fill="#f59e0b" opacity="0.92"/>
-      <text x="343.25" y="583" text-anchor="end" font-size="13" font-weight="800" fill="#fff">35일</text>
-      <text x="369.25" y="583" font-size="12" font-weight="600" fill="#374151">주변에 털어놓으며 서서히 복구</text>
+      <text x="343.25" y="583" text-anchor="end" font-size="18" font-weight="800" fill="#fff">35일</text>
+      <text x="369.25" y="583" font-size="17" font-weight="600" fill="#374151">주변에 털어놓으며 서서히 복구</text>
     
-      <text x="45" y="628" font-size="14" font-weight="700" fill="#6b7280">12</text>
-      <text x="90" y="628" font-size="16" font-weight="800" fill="#059669">ISTJ</text>
+      <text x="45" y="628" font-size="20" font-weight="700" fill="#6b7280">12</text>
+      <text x="90" y="628" font-size="22" font-weight="800" fill="#059669">ISTJ</text>
       <rect x="210" y="610" width="199.2" height="26" rx="13" fill="#ea580c" opacity="0.92"/>
-      <text x="397.2" y="628" text-anchor="end" font-size="13" font-weight="800" fill="#fff">48일</text>
-      <text x="423.2" y="628" font-size="12" font-weight="600" fill="#374151">일상 루틴 무너진 만큼 복구 오래</text>
+      <text x="397.2" y="628" text-anchor="end" font-size="18" font-weight="800" fill="#fff">48일</text>
+      <text x="423.2" y="628" font-size="17" font-weight="600" fill="#374151">일상 루틴 무너진 만큼 복구 오래</text>
     
-      <text x="45" y="673" font-size="14" font-weight="700" fill="#6b7280">13</text>
-      <text x="90" y="673" font-size="16" font-weight="800" fill="#e11d48">ENFJ</text>
+      <text x="45" y="673" font-size="20" font-weight="700" fill="#6b7280">13</text>
+      <text x="90" y="673" font-size="22" font-weight="800" fill="#e11d48">ENFJ</text>
       <rect x="210" y="655" width="257.3" height="26" rx="13" fill="#ea580c" opacity="0.92"/>
-      <text x="455.3" y="673" text-anchor="end" font-size="13" font-weight="800" fill="#fff">62일</text>
-      <text x="481.3" y="673" font-size="12" font-weight="600" fill="#374151">상대 걱정 + 자기 회복 이중 부담</text>
+      <text x="455.3" y="673" text-anchor="end" font-size="18" font-weight="800" fill="#fff">62일</text>
+      <text x="481.3" y="673" font-size="17" font-weight="600" fill="#374151">상대 걱정 + 자기 회복 이중 부담</text>
     
-      <text x="45" y="718" font-size="14" font-weight="700" fill="#6b7280">14</text>
-      <text x="90" y="718" font-size="16" font-weight="800" fill="#e11d48">INFP</text>
+      <text x="45" y="718" font-size="20" font-weight="700" fill="#6b7280">14</text>
+      <text x="90" y="718" font-size="22" font-weight="800" fill="#e11d48">INFP</text>
       <rect x="210" y="700" width="298.8" height="26" rx="13" fill="#ea580c" opacity="0.92"/>
-      <text x="496.8" y="718" text-anchor="end" font-size="13" font-weight="800" fill="#fff">72일</text>
-      <text x="522.8" y="718" font-size="12" font-weight="600" fill="#374151">내면 세계에 상대가 여전히 살아</text>
+      <text x="496.8" y="718" text-anchor="end" font-size="18" font-weight="800" fill="#fff">72일</text>
+      <text x="522.8" y="718" font-size="17" font-weight="600" fill="#374151">내면 세계에 상대가 여전히 살아</text>
     
-      <text x="45" y="763" font-size="14" font-weight="700" fill="#6b7280">15</text>
-      <text x="90" y="763" font-size="16" font-weight="800" fill="#059669">ISFJ</text>
+      <text x="45" y="763" font-size="20" font-weight="700" fill="#6b7280">15</text>
+      <text x="90" y="763" font-size="22" font-weight="800" fill="#059669">ISFJ</text>
       <rect x="210" y="745" width="456.50000000000006" height="26" rx="13" fill="#be185d" opacity="0.92"/>
-      <text x="654.5" y="763" text-anchor="end" font-size="13" font-weight="800" fill="#fff">110일</text>
-      <text x="680.5" y="763" font-size="12" font-weight="600" fill="#374151">기억과 일상에 상대 흔적이 많음</text>
+      <text x="654.5" y="763" text-anchor="end" font-size="18" font-weight="800" fill="#fff">110일</text>
+      <text x="680.5" y="763" font-size="17" font-weight="600" fill="#374151">기억과 일상에 상대 흔적이 많음</text>
     
-      <text x="45" y="808" font-size="14" font-weight="700" fill="#6b7280">16</text>
-      <text x="90" y="808" font-size="16" font-weight="800" fill="#e11d48">INFJ</text>
+      <text x="45" y="808" font-size="20" font-weight="700" fill="#6b7280">16</text>
+      <text x="90" y="808" font-size="22" font-weight="800" fill="#e11d48">INFJ</text>
       <rect x="210" y="790" width="747" height="26" rx="13" fill="#be185d" opacity="0.92"/>
-      <text x="945" y="808" text-anchor="end" font-size="13" font-weight="800" fill="#fff">180일</text>
-      <text x="971" y="808" font-size="12" font-weight="600" fill="#374151">영혼이 기억하는 잔상 6개월 이상</text>
+      <text x="945" y="808" text-anchor="end" font-size="18" font-weight="800" fill="#fff">180일</text>
+      <text x="971" y="808" font-size="17" font-weight="600" fill="#374151">영혼이 기억하는 잔상 6개월 이상</text>
     
 
   <!-- Legend -->
   <g transform="translate(220, 830)">
     
       <rect x="0" y="0" width="14" height="14" rx="3" fill="#16a34a"/>
-      <text x="22" y="12" font-size="11" font-weight="700" fill="#374151">빠름 ~7일</text>
+      <text x="22" y="12" font-size="15" font-weight="700" fill="#374151">빠름 ~7일</text>
     
       <rect x="150" y="0" width="14" height="14" rx="3" fill="#84cc16"/>
-      <text x="172" y="12" font-size="11" font-weight="700" fill="#374151">보통 8~20일</text>
+      <text x="172" y="12" font-size="15" font-weight="700" fill="#374151">보통 8~20일</text>
     
       <rect x="300" y="0" width="14" height="14" rx="3" fill="#f59e0b"/>
-      <text x="322" y="12" font-size="11" font-weight="700" fill="#374151">중간 21~45일</text>
+      <text x="322" y="12" font-size="15" font-weight="700" fill="#374151">중간 21~45일</text>
     
       <rect x="450" y="0" width="14" height="14" rx="3" fill="#ea580c"/>
-      <text x="472" y="12" font-size="11" font-weight="700" fill="#374151">느림 46~80일</text>
+      <text x="472" y="12" font-size="15" font-weight="700" fill="#374151">느림 46~80일</text>
     
       <rect x="600" y="0" width="14" height="14" rx="3" fill="#be185d"/>
-      <text x="622" y="12" font-size="11" font-weight="700" fill="#374151">여운 80일+</text>
+      <text x="622" y="12" font-size="15" font-weight="700" fill="#374151">여운 80일+</text>
     
   </g>
   

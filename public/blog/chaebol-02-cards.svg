@@ -2,112 +2,112 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">한국 4대 재벌 총수 MBTI 추정</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">공개 인터뷰 · 행보 · 의사결정 패턴 기반 · 2026년 기준</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="#171717">한국 4대 재벌 총수 MBTI 추정</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="#6b7280">공개 인터뷰 · 행보 · 의사결정 패턴 기반 · 2026년 기준</text>
 
   
       <g transform="translate(60, 120)">
         <rect width="540" height="350" rx="22" fill="#ffffff" stroke="#1428a0" stroke-width="2"/>
         <rect width="8" height="350" rx="4" fill="#1428a0"/>
 
-        <text x="30" y="50" font-size="28" font-weight="900" fill="#1428a0">이재용</text>
-        <text x="30" y="78" font-size="14" font-weight="700" fill="#6b7280">삼성전자</text>
+        <text x="30" y="50" font-size="39" font-weight="900" fill="#1428a0">이재용</text>
+        <text x="30" y="78" font-size="20" font-weight="700" fill="#6b7280">삼성전자</text>
 
         <g transform="translate(400, 25)">
           <rect width="110" height="40" rx="20" fill="#1428a0"/>
-          <text x="55" y="28" text-anchor="middle" font-size="18" font-weight="900" fill="#fff">INTJ</text>
+          <text x="55" y="28" text-anchor="middle" font-size="25" font-weight="900" fill="#fff">INTJ</text>
         </g>
-        <text x="455" y="78" text-anchor="middle" font-size="12" font-weight="600" fill="#6b7280">Ni + Te</text>
+        <text x="455" y="78" text-anchor="middle" font-size="17" font-weight="600" fill="#6b7280">Ni + Te</text>
 
-        <text x="30" y="130" font-size="13" font-weight="800" fill="#1428a0">경영 스타일</text>
-        <text x="30" y="155" font-size="14" font-weight="600" fill="#374151">신중 · 장기 · 글로벌</text>
+        <text x="30" y="130" font-size="18" font-weight="800" fill="#1428a0">경영 스타일</text>
+        <text x="30" y="155" font-size="20" font-weight="600" fill="#374151">신중 · 장기 · 글로벌</text>
 
-        <text x="30" y="195" font-size="13" font-weight="800" fill="#1428a0">대표 특징</text>
-        <text x="30" y="220" font-size="14" font-weight="600" fill="#374151">반도체 비전 · 조용한 리더십</text>
+        <text x="30" y="195" font-size="18" font-weight="800" fill="#1428a0">대표 특징</text>
+        <text x="30" y="220" font-size="20" font-weight="600" fill="#374151">반도체 비전 · 조용한 리더십</text>
 
-        <text x="30" y="260" font-size="13" font-weight="800" fill="#1428a0">전략 포커스</text>
-        <text x="30" y="285" font-size="14" font-weight="600" fill="#374151">10년 R&amp;D 투자 · 글로벌 파트너십</text>
+        <text x="30" y="260" font-size="18" font-weight="800" fill="#1428a0">전략 포커스</text>
+        <text x="30" y="285" font-size="20" font-weight="600" fill="#374151">10년 R&amp;D 투자 · 글로벌 파트너십</text>
 
         <rect x="20" y="310" width="500" height="25" rx="10" fill="#1428a0" opacity="0.08"/>
-        <text x="270" y="327" text-anchor="middle" font-size="11" font-weight="700" fill="#1428a0">💡 한국 재벌 = NT 중심(INTJ·ENTJ·ENTP)</text>
+        <text x="270" y="327" text-anchor="middle" font-size="15" font-weight="700" fill="#1428a0">💡 한국 재벌 = NT 중심(INTJ·ENTJ·ENTP)</text>
       </g>
     
       <g transform="translate(630, 120)">
         <rect width="540" height="350" rx="22" fill="#ffffff" stroke="#002c5f" stroke-width="2"/>
         <rect width="8" height="350" rx="4" fill="#002c5f"/>
 
-        <text x="30" y="50" font-size="28" font-weight="900" fill="#002c5f">정의선</text>
-        <text x="30" y="78" font-size="14" font-weight="700" fill="#6b7280">현대자동차</text>
+        <text x="30" y="50" font-size="39" font-weight="900" fill="#002c5f">정의선</text>
+        <text x="30" y="78" font-size="20" font-weight="700" fill="#6b7280">현대자동차</text>
 
         <g transform="translate(400, 25)">
           <rect width="110" height="40" rx="20" fill="#002c5f"/>
-          <text x="55" y="28" text-anchor="middle" font-size="18" font-weight="900" fill="#fff">ENTJ</text>
+          <text x="55" y="28" text-anchor="middle" font-size="25" font-weight="900" fill="#fff">ENTJ</text>
         </g>
-        <text x="455" y="78" text-anchor="middle" font-size="12" font-weight="600" fill="#6b7280">Te + Ni</text>
+        <text x="455" y="78" text-anchor="middle" font-size="17" font-weight="600" fill="#6b7280">Te + Ni</text>
 
-        <text x="30" y="130" font-size="13" font-weight="800" fill="#002c5f">경영 스타일</text>
-        <text x="30" y="155" font-size="14" font-weight="600" fill="#374151">추진력 · 대담 · 선제 투자</text>
+        <text x="30" y="130" font-size="18" font-weight="800" fill="#002c5f">경영 스타일</text>
+        <text x="30" y="155" font-size="20" font-weight="600" fill="#374151">추진력 · 대담 · 선제 투자</text>
 
-        <text x="30" y="195" font-size="13" font-weight="800" fill="#002c5f">대표 특징</text>
-        <text x="30" y="220" font-size="14" font-weight="600" fill="#374151">전기차 전환 · 수소 선제 투자</text>
+        <text x="30" y="195" font-size="18" font-weight="800" fill="#002c5f">대표 특징</text>
+        <text x="30" y="220" font-size="20" font-weight="600" fill="#374151">전기차 전환 · 수소 선제 투자</text>
 
-        <text x="30" y="260" font-size="13" font-weight="800" fill="#002c5f">전략 포커스</text>
-        <text x="30" y="285" font-size="14" font-weight="600" fill="#374151">EV 대전환 · UAM(도심항공)</text>
+        <text x="30" y="260" font-size="18" font-weight="800" fill="#002c5f">전략 포커스</text>
+        <text x="30" y="285" font-size="20" font-weight="600" fill="#374151">EV 대전환 · UAM(도심항공)</text>
 
         <rect x="20" y="310" width="500" height="25" rx="10" fill="#002c5f" opacity="0.08"/>
-        <text x="270" y="327" text-anchor="middle" font-size="11" font-weight="700" fill="#002c5f">💡 한국 재벌 = NT 중심(INTJ·ENTJ·ENTP)</text>
+        <text x="270" y="327" text-anchor="middle" font-size="15" font-weight="700" fill="#002c5f">💡 한국 재벌 = NT 중심(INTJ·ENTJ·ENTP)</text>
       </g>
     
       <g transform="translate(60, 490)">
         <rect width="540" height="350" rx="22" fill="#ffffff" stroke="#ea002c" stroke-width="2"/>
         <rect width="8" height="350" rx="4" fill="#ea002c"/>
 
-        <text x="30" y="50" font-size="28" font-weight="900" fill="#ea002c">최태원</text>
-        <text x="30" y="78" font-size="14" font-weight="700" fill="#6b7280">SK그룹</text>
+        <text x="30" y="50" font-size="39" font-weight="900" fill="#ea002c">최태원</text>
+        <text x="30" y="78" font-size="20" font-weight="700" fill="#6b7280">SK그룹</text>
 
         <g transform="translate(400, 25)">
           <rect width="110" height="40" rx="20" fill="#ea002c"/>
-          <text x="55" y="28" text-anchor="middle" font-size="18" font-weight="900" fill="#fff">ENTP</text>
+          <text x="55" y="28" text-anchor="middle" font-size="25" font-weight="900" fill="#fff">ENTP</text>
         </g>
-        <text x="455" y="78" text-anchor="middle" font-size="12" font-weight="600" fill="#6b7280">Ne + Ti</text>
+        <text x="455" y="78" text-anchor="middle" font-size="17" font-weight="600" fill="#6b7280">Ne + Ti</text>
 
-        <text x="30" y="130" font-size="13" font-weight="800" fill="#ea002c">경영 스타일</text>
-        <text x="30" y="155" font-size="14" font-weight="600" fill="#374151">혁신 · 유연 · 외교형</text>
+        <text x="30" y="130" font-size="18" font-weight="800" fill="#ea002c">경영 스타일</text>
+        <text x="30" y="155" font-size="20" font-weight="600" fill="#374151">혁신 · 유연 · 외교형</text>
 
-        <text x="30" y="195" font-size="13" font-weight="800" fill="#ea002c">대표 특징</text>
-        <text x="30" y="220" font-size="14" font-weight="600" fill="#374151">딥체인지 슬로건 · 대외 활발</text>
+        <text x="30" y="195" font-size="18" font-weight="800" fill="#ea002c">대표 특징</text>
+        <text x="30" y="220" font-size="20" font-weight="600" fill="#374151">딥체인지 슬로건 · 대외 활발</text>
 
-        <text x="30" y="260" font-size="13" font-weight="800" fill="#ea002c">전략 포커스</text>
-        <text x="30" y="285" font-size="14" font-weight="600" fill="#374151">바이오 · ESG · 에너지 전환</text>
+        <text x="30" y="260" font-size="18" font-weight="800" fill="#ea002c">전략 포커스</text>
+        <text x="30" y="285" font-size="20" font-weight="600" fill="#374151">바이오 · ESG · 에너지 전환</text>
 
         <rect x="20" y="310" width="500" height="25" rx="10" fill="#ea002c" opacity="0.08"/>
-        <text x="270" y="327" text-anchor="middle" font-size="11" font-weight="700" fill="#ea002c">💡 한국 재벌 = NT 중심(INTJ·ENTJ·ENTP)</text>
+        <text x="270" y="327" text-anchor="middle" font-size="15" font-weight="700" fill="#ea002c">💡 한국 재벌 = NT 중심(INTJ·ENTJ·ENTP)</text>
       </g>
     
       <g transform="translate(630, 490)">
         <rect width="540" height="350" rx="22" fill="#ffffff" stroke="#a50034" stroke-width="2"/>
         <rect width="8" height="350" rx="4" fill="#a50034"/>
 
-        <text x="30" y="50" font-size="28" font-weight="900" fill="#a50034">구광모</text>
-        <text x="30" y="78" font-size="14" font-weight="700" fill="#6b7280">LG그룹</text>
+        <text x="30" y="50" font-size="39" font-weight="900" fill="#a50034">구광모</text>
+        <text x="30" y="78" font-size="20" font-weight="700" fill="#6b7280">LG그룹</text>
 
         <g transform="translate(400, 25)">
           <rect width="110" height="40" rx="20" fill="#a50034"/>
-          <text x="55" y="28" text-anchor="middle" font-size="18" font-weight="900" fill="#fff">INTJ</text>
+          <text x="55" y="28" text-anchor="middle" font-size="25" font-weight="900" fill="#fff">INTJ</text>
         </g>
-        <text x="455" y="78" text-anchor="middle" font-size="12" font-weight="600" fill="#6b7280">Ni + Te</text>
+        <text x="455" y="78" text-anchor="middle" font-size="17" font-weight="600" fill="#6b7280">Ni + Te</text>
 
-        <text x="30" y="130" font-size="13" font-weight="800" fill="#a50034">경영 스타일</text>
-        <text x="30" y="155" font-size="14" font-weight="600" fill="#374151">데이터 · 체계 · 조용</text>
+        <text x="30" y="130" font-size="18" font-weight="800" fill="#a50034">경영 스타일</text>
+        <text x="30" y="155" font-size="20" font-weight="600" fill="#374151">데이터 · 체계 · 조용</text>
 
-        <text x="30" y="195" font-size="13" font-weight="800" fill="#a50034">대표 특징</text>
-        <text x="30" y="220" font-size="14" font-weight="600" fill="#374151">계열 정리 · 전기차 부품 집중</text>
+        <text x="30" y="195" font-size="18" font-weight="800" fill="#a50034">대표 특징</text>
+        <text x="30" y="220" font-size="20" font-weight="600" fill="#374151">계열 정리 · 전기차 부품 집중</text>
 
-        <text x="30" y="260" font-size="13" font-weight="800" fill="#a50034">전략 포커스</text>
-        <text x="30" y="285" font-size="14" font-weight="600" fill="#374151">미래 모빌리티 · 배터리</text>
+        <text x="30" y="260" font-size="18" font-weight="800" fill="#a50034">전략 포커스</text>
+        <text x="30" y="285" font-size="20" font-weight="600" fill="#374151">미래 모빌리티 · 배터리</text>
 
         <rect x="20" y="310" width="500" height="25" rx="10" fill="#a50034" opacity="0.08"/>
-        <text x="270" y="327" text-anchor="middle" font-size="11" font-weight="700" fill="#a50034">💡 한국 재벌 = NT 중심(INTJ·ENTJ·ENTP)</text>
+        <text x="270" y="327" text-anchor="middle" font-size="15" font-weight="700" fill="#a50034">💡 한국 재벌 = NT 중심(INTJ·ENTJ·ENTP)</text>
       </g>
     
   

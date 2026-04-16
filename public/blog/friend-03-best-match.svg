@@ -2,88 +2,88 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">절친 궁합 BEST 8 — 평생 우정 조합</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">같은 기질 × 다른 강도 조합이 가장 오래 가는 절친 공식</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="#171717">절친 궁합 BEST 8 — 평생 우정 조합</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="#6b7280">같은 기질 × 다른 강도 조합이 가장 오래 가는 절친 공식</text>
 
   
       <g transform="translate(60, 120)">
         <rect width="540" height="165" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="165" rx="4" fill="#e11d48"/>
-        <text x="30" y="45" font-size="22" font-weight="900" fill="#e11d48">ENFJ × INFP</text>
-        <text x="30" y="70" font-size="13" font-weight="700" fill="#6b7280">돌봄 × 진정성</text>
+        <text x="30" y="45" font-size="31" font-weight="900" fill="#e11d48">ENFJ × INFP</text>
+        <text x="30" y="70" font-size="18" font-weight="700" fill="#6b7280">돌봄 × 진정성</text>
         <rect x="30" y="85" width="480" height="62" rx="12" fill="#e11d48" opacity="0.08"/>
-        <text x="45" y="110" font-size="13" font-weight="700" fill="#e11d48">WHY</text>
-        <text x="45" y="130" font-size="13" font-weight="500" fill="#374151">ENFJ의 따뜻함이 INFP의 내면 치유와 만나 평생 단짝</text>
+        <text x="45" y="110" font-size="18" font-weight="700" fill="#e11d48">WHY</text>
+        <text x="45" y="130" font-size="18" font-weight="500" fill="#374151">ENFJ의 따뜻함이 INFP의 내면 치유와 만나 평생 단짝</text>
       </g>
     
       <g transform="translate(630, 120)">
         <rect width="540" height="165" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="165" rx="4" fill="#f43f5e"/>
-        <text x="30" y="45" font-size="22" font-weight="900" fill="#f43f5e">ENFP × INFJ</text>
-        <text x="30" y="70" font-size="13" font-weight="700" fill="#6b7280">에너지 × 깊이</text>
+        <text x="30" y="45" font-size="31" font-weight="900" fill="#f43f5e">ENFP × INFJ</text>
+        <text x="30" y="70" font-size="18" font-weight="700" fill="#6b7280">에너지 × 깊이</text>
         <rect x="30" y="85" width="480" height="62" rx="12" fill="#f43f5e" opacity="0.08"/>
-        <text x="45" y="110" font-size="13" font-weight="700" fill="#f43f5e">WHY</text>
-        <text x="45" y="130" font-size="13" font-weight="500" fill="#374151">ENFP가 INFJ를 세상에 꺼내고, INFJ는 ENFP에게 깊이를 줌</text>
+        <text x="45" y="110" font-size="18" font-weight="700" fill="#f43f5e">WHY</text>
+        <text x="45" y="130" font-size="18" font-weight="500" fill="#374151">ENFP가 INFJ를 세상에 꺼내고, INFJ는 ENFP에게 깊이를 줌</text>
       </g>
     
       <g transform="translate(60, 305)">
         <rect width="540" height="165" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="165" rx="4" fill="#059669"/>
-        <text x="30" y="45" font-size="22" font-weight="900" fill="#059669">ESFJ × ISFJ</text>
-        <text x="30" y="70" font-size="13" font-weight="700" fill="#6b7280">케어 × 케어</text>
+        <text x="30" y="45" font-size="31" font-weight="900" fill="#059669">ESFJ × ISFJ</text>
+        <text x="30" y="70" font-size="18" font-weight="700" fill="#6b7280">케어 × 케어</text>
         <rect x="30" y="85" width="480" height="62" rx="12" fill="#059669" opacity="0.08"/>
-        <text x="45" y="110" font-size="13" font-weight="700" fill="#059669">WHY</text>
-        <text x="45" y="130" font-size="13" font-weight="500" fill="#374151">서로의 디테일을 서로 챙겨주는 최고의 감정 동맹</text>
+        <text x="45" y="110" font-size="18" font-weight="700" fill="#059669">WHY</text>
+        <text x="45" y="130" font-size="18" font-weight="500" fill="#374151">서로의 디테일을 서로 챙겨주는 최고의 감정 동맹</text>
       </g>
     
       <g transform="translate(630, 305)">
         <rect width="540" height="165" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="165" rx="4" fill="#d97706"/>
-        <text x="30" y="45" font-size="22" font-weight="900" fill="#d97706">ESFP × ISFP</text>
-        <text x="30" y="70" font-size="13" font-weight="700" fill="#6b7280">분위기 × 감각</text>
+        <text x="30" y="45" font-size="31" font-weight="900" fill="#d97706">ESFP × ISFP</text>
+        <text x="30" y="70" font-size="18" font-weight="700" fill="#6b7280">분위기 × 감각</text>
         <rect x="30" y="85" width="480" height="62" rx="12" fill="#d97706" opacity="0.08"/>
-        <text x="45" y="110" font-size="13" font-weight="700" fill="#d97706">WHY</text>
-        <text x="45" y="130" font-size="13" font-weight="500" fill="#374151">지금 이 순간을 같이 즐기는 현재주의자 콤비</text>
+        <text x="45" y="110" font-size="18" font-weight="700" fill="#d97706">WHY</text>
+        <text x="45" y="130" font-size="18" font-weight="500" fill="#374151">지금 이 순간을 같이 즐기는 현재주의자 콤비</text>
       </g>
     
       <g transform="translate(60, 490)">
         <rect width="540" height="165" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="165" rx="4" fill="#0891b2"/>
-        <text x="30" y="45" font-size="22" font-weight="900" fill="#0891b2">ENTJ × INTJ</text>
-        <text x="30" y="70" font-size="13" font-weight="700" fill="#6b7280">전략 × 비전</text>
+        <text x="30" y="45" font-size="31" font-weight="900" fill="#0891b2">ENTJ × INTJ</text>
+        <text x="30" y="70" font-size="18" font-weight="700" fill="#6b7280">전략 × 비전</text>
         <rect x="30" y="85" width="480" height="62" rx="12" fill="#0891b2" opacity="0.08"/>
-        <text x="45" y="110" font-size="13" font-weight="700" fill="#0891b2">WHY</text>
-        <text x="45" y="130" font-size="13" font-weight="500" fill="#374151">같은 목표 공유, 서로 도전하며 커리어 파트너로 진화</text>
+        <text x="45" y="110" font-size="18" font-weight="700" fill="#0891b2">WHY</text>
+        <text x="45" y="130" font-size="18" font-weight="500" fill="#374151">같은 목표 공유, 서로 도전하며 커리어 파트너로 진화</text>
       </g>
     
       <g transform="translate(630, 490)">
         <rect width="540" height="165" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="165" rx="4" fill="#06b6d4"/>
-        <text x="30" y="45" font-size="22" font-weight="900" fill="#06b6d4">ENTP × INTP</text>
-        <text x="30" y="70" font-size="13" font-weight="700" fill="#6b7280">발산 × 분석</text>
+        <text x="30" y="45" font-size="31" font-weight="900" fill="#06b6d4">ENTP × INTP</text>
+        <text x="30" y="70" font-size="18" font-weight="700" fill="#6b7280">발산 × 분석</text>
         <rect x="30" y="85" width="480" height="62" rx="12" fill="#06b6d4" opacity="0.08"/>
-        <text x="45" y="110" font-size="13" font-weight="700" fill="#06b6d4">WHY</text>
-        <text x="45" y="130" font-size="13" font-weight="500" fill="#374151">아이디어 캐치볼로 몇 시간 수다 떨어도 지치지 않음</text>
+        <text x="45" y="110" font-size="18" font-weight="700" fill="#06b6d4">WHY</text>
+        <text x="45" y="130" font-size="18" font-weight="500" fill="#374151">아이디어 캐치볼로 몇 시간 수다 떨어도 지치지 않음</text>
       </g>
     
       <g transform="translate(60, 675)">
         <rect width="540" height="165" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="165" rx="4" fill="#047857"/>
-        <text x="30" y="45" font-size="22" font-weight="900" fill="#047857">ESTJ × ISTJ</text>
-        <text x="30" y="70" font-size="13" font-weight="700" fill="#6b7280">실행 × 검증</text>
+        <text x="30" y="45" font-size="31" font-weight="900" fill="#047857">ESTJ × ISTJ</text>
+        <text x="30" y="70" font-size="18" font-weight="700" fill="#6b7280">실행 × 검증</text>
         <rect x="30" y="85" width="480" height="62" rx="12" fill="#047857" opacity="0.08"/>
-        <text x="45" y="110" font-size="13" font-weight="700" fill="#047857">WHY</text>
-        <text x="45" y="130" font-size="13" font-weight="500" fill="#374151">원칙 공유, 약속 지키기로 20년 넘는 우정 가능</text>
+        <text x="45" y="110" font-size="18" font-weight="700" fill="#047857">WHY</text>
+        <text x="45" y="130" font-size="18" font-weight="500" fill="#374151">원칙 공유, 약속 지키기로 20년 넘는 우정 가능</text>
       </g>
     
       <g transform="translate(630, 675)">
         <rect width="540" height="165" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="165" rx="4" fill="#b45309"/>
-        <text x="30" y="45" font-size="22" font-weight="900" fill="#b45309">ESTP × ISTP</text>
-        <text x="30" y="70" font-size="13" font-weight="700" fill="#6b7280">도전 × 장인</text>
+        <text x="30" y="45" font-size="31" font-weight="900" fill="#b45309">ESTP × ISTP</text>
+        <text x="30" y="70" font-size="18" font-weight="700" fill="#6b7280">도전 × 장인</text>
         <rect x="30" y="85" width="480" height="62" rx="12" fill="#b45309" opacity="0.08"/>
-        <text x="45" y="110" font-size="13" font-weight="700" fill="#b45309">WHY</text>
-        <text x="45" y="130" font-size="13" font-weight="500" fill="#374151">말 많이 안 해도 같이 움직이는 것만으로 통하는 사이</text>
+        <text x="45" y="110" font-size="18" font-weight="700" fill="#b45309">WHY</text>
+        <text x="45" y="130" font-size="18" font-weight="500" fill="#374151">말 많이 안 해도 같이 움직이는 것만으로 통하는 사이</text>
       </g>
     
   

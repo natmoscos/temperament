@@ -2,123 +2,123 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">4기질별 자산 배분 모델</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">기질 DNA에 맞는 최적 포트폴리오 믹스 · 30~40대 기준</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="#171717">4기질별 자산 배분 모델</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="#6b7280">기질 DNA에 맞는 최적 포트폴리오 믹스 · 30~40대 기준</text>
 
   
       <g transform="translate(60, 115)">
         <rect width="520" height="360" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="360" rx="4" fill="#0891b2"/>
-        <text x="30" y="45" font-size="22" font-weight="900" fill="#0891b2">🔬 NT 분석가형 포트폴리오</text>
-        <text x="30" y="72" font-size="12" font-weight="700" fill="#6b7280">INTJ · INTP · ENTJ · ENTP</text>
+        <text x="30" y="45" font-size="31" font-weight="900" fill="#0891b2">🔬 NT 분석가형 포트폴리오</text>
+        <text x="30" y="72" font-size="17" font-weight="700" fill="#6b7280">INTJ · INTP · ENTJ · ENTP</text>
 
         
-            <text x="30" y="110" font-size="13" font-weight="700" fill="#171717">주식 (집중 투자 · 성장주)</text>
+            <text x="30" y="110" font-size="18" font-weight="700" fill="#171717">주식 (집중 투자 · 성장주)</text>
             <rect x="30" y="118" width="210" height="20" rx="10" fill="#0891b2" opacity="0.25"/>
             <rect x="30" y="118" width="210" height="20" rx="10" fill="#0891b2" opacity="0.85"/>
-            <text x="255" y="133" font-size="12" font-weight="900" fill="#0891b2">50%</text>
+            <text x="255" y="133" font-size="17" font-weight="900" fill="#0891b2">50%</text>
           
-            <text x="30" y="170" font-size="13" font-weight="700" fill="#171717">사업/지분 (창업 · 스타트업)</text>
+            <text x="30" y="170" font-size="18" font-weight="700" fill="#171717">사업/지분 (창업 · 스타트업)</text>
             <rect x="30" y="178" width="105" height="20" rx="10" fill="#0891b2" opacity="0.25"/>
             <rect x="30" y="178" width="105" height="20" rx="10" fill="#0891b2" opacity="0.85"/>
-            <text x="150" y="193" font-size="12" font-weight="900" fill="#0891b2">25%</text>
+            <text x="150" y="193" font-size="17" font-weight="900" fill="#0891b2">25%</text>
           
-            <text x="30" y="230" font-size="13" font-weight="700" fill="#171717">부동산</text>
+            <text x="30" y="230" font-size="18" font-weight="700" fill="#171717">부동산</text>
             <rect x="30" y="238" width="63" height="20" rx="10" fill="#0891b2" opacity="0.25"/>
             <rect x="30" y="238" width="63" height="20" rx="10" fill="#0891b2" opacity="0.85"/>
-            <text x="108" y="253" font-size="12" font-weight="900" fill="#0891b2">15%</text>
+            <text x="108" y="253" font-size="17" font-weight="900" fill="#0891b2">15%</text>
           
-            <text x="30" y="290" font-size="13" font-weight="700" fill="#171717">현금 · 비상금</text>
+            <text x="30" y="290" font-size="18" font-weight="700" fill="#171717">현금 · 비상금</text>
             <rect x="30" y="298" width="42" height="20" rx="10" fill="#0891b2" opacity="0.25"/>
             <rect x="30" y="298" width="42" height="20" rx="10" fill="#0891b2" opacity="0.85"/>
-            <text x="87" y="313" font-size="12" font-weight="900" fill="#0891b2">10%</text>
+            <text x="87" y="313" font-size="17" font-weight="900" fill="#0891b2">10%</text>
           
       </g>
     
       <g transform="translate(620, 115)">
         <rect width="520" height="360" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="360" rx="4" fill="#f43f5e"/>
-        <text x="30" y="45" font-size="22" font-weight="900" fill="#f43f5e">✨ NF 이상주의형 포트폴리오</text>
-        <text x="30" y="72" font-size="12" font-weight="700" fill="#6b7280">INFJ · INFP · ENFJ · ENFP</text>
+        <text x="30" y="45" font-size="31" font-weight="900" fill="#f43f5e">✨ NF 이상주의형 포트폴리오</text>
+        <text x="30" y="72" font-size="17" font-weight="700" fill="#6b7280">INFJ · INFP · ENFJ · ENFP</text>
 
         
-            <text x="30" y="110" font-size="13" font-weight="700" fill="#171717">인덱스 · ESG 펀드</text>
+            <text x="30" y="110" font-size="18" font-weight="700" fill="#171717">인덱스 · ESG 펀드</text>
             <rect x="30" y="118" width="189" height="20" rx="10" fill="#f43f5e" opacity="0.25"/>
             <rect x="30" y="118" width="189" height="20" rx="10" fill="#f43f5e" opacity="0.85"/>
-            <text x="234" y="133" font-size="12" font-weight="900" fill="#f43f5e">45%</text>
+            <text x="234" y="133" font-size="17" font-weight="900" fill="#f43f5e">45%</text>
           
-            <text x="30" y="170" font-size="13" font-weight="700" fill="#171717">개인 브랜드 · 콘텐츠</text>
+            <text x="30" y="170" font-size="18" font-weight="700" fill="#171717">개인 브랜드 · 콘텐츠</text>
             <rect x="30" y="178" width="84" height="20" rx="10" fill="#f43f5e" opacity="0.25"/>
             <rect x="30" y="178" width="84" height="20" rx="10" fill="#f43f5e" opacity="0.85"/>
-            <text x="129" y="193" font-size="12" font-weight="900" fill="#f43f5e">20%</text>
+            <text x="129" y="193" font-size="17" font-weight="900" fill="#f43f5e">20%</text>
           
-            <text x="30" y="230" font-size="13" font-weight="700" fill="#171717">부동산</text>
+            <text x="30" y="230" font-size="18" font-weight="700" fill="#171717">부동산</text>
             <rect x="30" y="238" width="84" height="20" rx="10" fill="#f43f5e" opacity="0.25"/>
             <rect x="30" y="238" width="84" height="20" rx="10" fill="#f43f5e" opacity="0.85"/>
-            <text x="129" y="253" font-size="12" font-weight="900" fill="#f43f5e">20%</text>
+            <text x="129" y="253" font-size="17" font-weight="900" fill="#f43f5e">20%</text>
           
-            <text x="30" y="290" font-size="13" font-weight="700" fill="#171717">현금</text>
+            <text x="30" y="290" font-size="18" font-weight="700" fill="#171717">현금</text>
             <rect x="30" y="298" width="63" height="20" rx="10" fill="#f43f5e" opacity="0.25"/>
             <rect x="30" y="298" width="63" height="20" rx="10" fill="#f43f5e" opacity="0.85"/>
-            <text x="108" y="313" font-size="12" font-weight="900" fill="#f43f5e">15%</text>
+            <text x="108" y="313" font-size="17" font-weight="900" fill="#f43f5e">15%</text>
           
       </g>
     
       <g transform="translate(60, 510)">
         <rect width="520" height="360" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="360" rx="4" fill="#059669"/>
-        <text x="30" y="45" font-size="22" font-weight="900" fill="#059669">🏦 SJ 관리자형 포트폴리오</text>
-        <text x="30" y="72" font-size="12" font-weight="700" fill="#6b7280">ISTJ · ISFJ · ESTJ · ESFJ</text>
+        <text x="30" y="45" font-size="31" font-weight="900" fill="#059669">🏦 SJ 관리자형 포트폴리오</text>
+        <text x="30" y="72" font-size="17" font-weight="700" fill="#6b7280">ISTJ · ISFJ · ESTJ · ESFJ</text>
 
         
-            <text x="30" y="110" font-size="13" font-weight="700" fill="#171717">부동산 (거주 + 수익)</text>
+            <text x="30" y="110" font-size="18" font-weight="700" fill="#171717">부동산 (거주 + 수익)</text>
             <rect x="30" y="118" width="168" height="20" rx="10" fill="#059669" opacity="0.25"/>
             <rect x="30" y="118" width="168" height="20" rx="10" fill="#059669" opacity="0.85"/>
-            <text x="213" y="133" font-size="12" font-weight="900" fill="#059669">40%</text>
+            <text x="213" y="133" font-size="17" font-weight="900" fill="#059669">40%</text>
           
-            <text x="30" y="170" font-size="13" font-weight="700" fill="#171717">배당주 · 인덱스</text>
+            <text x="30" y="170" font-size="18" font-weight="700" fill="#171717">배당주 · 인덱스</text>
             <rect x="30" y="178" width="126" height="20" rx="10" fill="#059669" opacity="0.25"/>
             <rect x="30" y="178" width="126" height="20" rx="10" fill="#059669" opacity="0.85"/>
-            <text x="171" y="193" font-size="12" font-weight="900" fill="#059669">30%</text>
+            <text x="171" y="193" font-size="17" font-weight="900" fill="#059669">30%</text>
           
-            <text x="30" y="230" font-size="13" font-weight="700" fill="#171717">예금 · 연금</text>
+            <text x="30" y="230" font-size="18" font-weight="700" fill="#171717">예금 · 연금</text>
             <rect x="30" y="238" width="84" height="20" rx="10" fill="#059669" opacity="0.25"/>
             <rect x="30" y="238" width="84" height="20" rx="10" fill="#059669" opacity="0.85"/>
-            <text x="129" y="253" font-size="12" font-weight="900" fill="#059669">20%</text>
+            <text x="129" y="253" font-size="17" font-weight="900" fill="#059669">20%</text>
           
-            <text x="30" y="290" font-size="13" font-weight="700" fill="#171717">현금</text>
+            <text x="30" y="290" font-size="18" font-weight="700" fill="#171717">현금</text>
             <rect x="30" y="298" width="42" height="20" rx="10" fill="#059669" opacity="0.25"/>
             <rect x="30" y="298" width="42" height="20" rx="10" fill="#059669" opacity="0.85"/>
-            <text x="87" y="313" font-size="12" font-weight="900" fill="#059669">10%</text>
+            <text x="87" y="313" font-size="17" font-weight="900" fill="#059669">10%</text>
           
       </g>
     
       <g transform="translate(620, 510)">
         <rect width="520" height="360" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="360" rx="4" fill="#d97706"/>
-        <text x="30" y="45" font-size="22" font-weight="900" fill="#d97706">🚀 SP 기회포착형 포트폴리오</text>
-        <text x="30" y="72" font-size="12" font-weight="700" fill="#6b7280">ISTP · ISFP · ESTP · ESFP</text>
+        <text x="30" y="45" font-size="31" font-weight="900" fill="#d97706">🚀 SP 기회포착형 포트폴리오</text>
+        <text x="30" y="72" font-size="17" font-weight="700" fill="#6b7280">ISTP · ISFP · ESTP · ESFP</text>
 
         
-            <text x="30" y="110" font-size="13" font-weight="700" fill="#171717">부동산 (실거주 + 투자)</text>
+            <text x="30" y="110" font-size="18" font-weight="700" fill="#171717">부동산 (실거주 + 투자)</text>
             <rect x="30" y="118" width="147" height="20" rx="10" fill="#d97706" opacity="0.25"/>
             <rect x="30" y="118" width="147" height="20" rx="10" fill="#d97706" opacity="0.85"/>
-            <text x="192" y="133" font-size="12" font-weight="900" fill="#d97706">35%</text>
+            <text x="192" y="133" font-size="17" font-weight="900" fill="#d97706">35%</text>
           
-            <text x="30" y="170" font-size="13" font-weight="700" fill="#171717">사업체 · 사이드 소득</text>
+            <text x="30" y="170" font-size="18" font-weight="700" fill="#171717">사업체 · 사이드 소득</text>
             <rect x="30" y="178" width="105" height="20" rx="10" fill="#d97706" opacity="0.25"/>
             <rect x="30" y="178" width="105" height="20" rx="10" fill="#d97706" opacity="0.85"/>
-            <text x="150" y="193" font-size="12" font-weight="900" fill="#d97706">25%</text>
+            <text x="150" y="193" font-size="17" font-weight="900" fill="#d97706">25%</text>
           
-            <text x="30" y="230" font-size="13" font-weight="700" fill="#171717">주식 (중단기)</text>
+            <text x="30" y="230" font-size="18" font-weight="700" fill="#171717">주식 (중단기)</text>
             <rect x="30" y="238" width="84" height="20" rx="10" fill="#d97706" opacity="0.25"/>
             <rect x="30" y="238" width="84" height="20" rx="10" fill="#d97706" opacity="0.85"/>
-            <text x="129" y="253" font-size="12" font-weight="900" fill="#d97706">20%</text>
+            <text x="129" y="253" font-size="17" font-weight="900" fill="#d97706">20%</text>
           
-            <text x="30" y="290" font-size="13" font-weight="700" fill="#171717">비상금 6개월+</text>
+            <text x="30" y="290" font-size="18" font-weight="700" fill="#171717">비상금 6개월+</text>
             <rect x="30" y="298" width="84" height="20" rx="10" fill="#d97706" opacity="0.25"/>
             <rect x="30" y="298" width="84" height="20" rx="10" fill="#d97706" opacity="0.85"/>
-            <text x="129" y="313" font-size="12" font-weight="900" fill="#d97706">20%</text>
+            <text x="129" y="313" font-size="17" font-weight="900" fill="#d97706">20%</text>
           
       </g>
     

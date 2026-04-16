@@ -2,39 +2,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">4가지 우정 DNA — 네 스타일은?</text>
-  <text x="600" y="80" text-anchor="middle" font-size="14" font-weight="500" fill="#6b7280">기질별 친구 관계 접근법 · 돌봄 / 성장 / 신뢰 / 현재</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="#171717">4가지 우정 DNA — 네 스타일은?</text>
+  <text x="600" y="80" text-anchor="middle" font-size="20" font-weight="500" fill="#6b7280">기질별 친구 관계 접근법 · 돌봄 / 성장 / 신뢰 / 현재</text>
 
   
       <g transform="translate(60, 115)">
         <rect width="520" height="360" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="360" rx="4" fill="#f43f5e"/>
-        <text x="30" y="45" font-size="24" font-weight="900" fill="#f43f5e">🤗 돌봄형 우정</text>
-        <text x="30" y="72" font-size="13" font-weight="700" fill="#6b7280">ENFJ · ESFJ · ISFJ · ENFP</text>
+        <text x="30" y="45" font-size="34" font-weight="900" fill="#f43f5e">🤗 돌봄형 우정</text>
+        <text x="30" y="72" font-size="18" font-weight="700" fill="#6b7280">ENFJ · ESFJ · ISFJ · ENFP</text>
 
         
           <g transform="translate(30, 125)">
             <circle cx="10" cy="0" r="12" fill="#f43f5e" opacity="0.2"/>
-            <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#f43f5e">1</text>
-            <text x="32" y="5" font-size="14" font-weight="600" fill="#374151">상대 기분 살피는 게 본능</text>
+            <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#f43f5e">1</text>
+            <text x="32" y="5" font-size="20" font-weight="600" fill="#374151">상대 기분 살피는 게 본능</text>
           </g>
         
           <g transform="translate(30, 173)">
             <circle cx="10" cy="0" r="12" fill="#f43f5e" opacity="0.2"/>
-            <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#f43f5e">2</text>
-            <text x="32" y="5" font-size="14" font-weight="600" fill="#374151">생일·기념일 놓치지 않음</text>
+            <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#f43f5e">2</text>
+            <text x="32" y="5" font-size="20" font-weight="600" fill="#374151">생일·기념일 놓치지 않음</text>
           </g>
         
           <g transform="translate(30, 221)">
             <circle cx="10" cy="0" r="12" fill="#f43f5e" opacity="0.2"/>
-            <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#f43f5e">3</text>
-            <text x="32" y="5" font-size="14" font-weight="600" fill="#374151">힘든 일 있으면 먼저 연락</text>
+            <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#f43f5e">3</text>
+            <text x="32" y="5" font-size="20" font-weight="600" fill="#374151">힘든 일 있으면 먼저 연락</text>
           </g>
         
           <g transform="translate(30, 269)">
             <circle cx="10" cy="0" r="12" fill="#f43f5e" opacity="0.2"/>
-            <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#f43f5e">4</text>
-            <text x="32" y="5" font-size="14" font-weight="600" fill="#374151">관계가 삶의 의미</text>
+            <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#f43f5e">4</text>
+            <text x="32" y="5" font-size="20" font-weight="600" fill="#374151">관계가 삶의 의미</text>
           </g>
         
       </g>
@@ -42,32 +42,32 @@
       <g transform="translate(620, 115)">
         <rect width="520" height="360" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="360" rx="4" fill="#0891b2"/>
-        <text x="30" y="45" font-size="24" font-weight="900" fill="#0891b2">🚀 성장형 우정</text>
-        <text x="30" y="72" font-size="13" font-weight="700" fill="#6b7280">ENTJ · INTJ · ENTP · INTP</text>
+        <text x="30" y="45" font-size="34" font-weight="900" fill="#0891b2">🚀 성장형 우정</text>
+        <text x="30" y="72" font-size="18" font-weight="700" fill="#6b7280">ENTJ · INTJ · ENTP · INTP</text>
 
         
           <g transform="translate(30, 125)">
             <circle cx="10" cy="0" r="12" fill="#0891b2" opacity="0.2"/>
-            <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#0891b2">1</text>
-            <text x="32" y="5" font-size="14" font-weight="600" fill="#374151">배울 점 있는 친구 선호</text>
+            <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#0891b2">1</text>
+            <text x="32" y="5" font-size="20" font-weight="600" fill="#374151">배울 점 있는 친구 선호</text>
           </g>
         
           <g transform="translate(30, 173)">
             <circle cx="10" cy="0" r="12" fill="#0891b2" opacity="0.2"/>
-            <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#0891b2">2</text>
-            <text x="32" y="5" font-size="14" font-weight="600" fill="#374151">감정 위로보다 해결책 선호</text>
+            <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#0891b2">2</text>
+            <text x="32" y="5" font-size="20" font-weight="600" fill="#374151">감정 위로보다 해결책 선호</text>
           </g>
         
           <g transform="translate(30, 221)">
             <circle cx="10" cy="0" r="12" fill="#0891b2" opacity="0.2"/>
-            <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#0891b2">3</text>
-            <text x="32" y="5" font-size="14" font-weight="600" fill="#374151">깊이 통하는 소수만</text>
+            <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#0891b2">3</text>
+            <text x="32" y="5" font-size="20" font-weight="600" fill="#374151">깊이 통하는 소수만</text>
           </g>
         
           <g transform="translate(30, 269)">
             <circle cx="10" cy="0" r="12" fill="#0891b2" opacity="0.2"/>
-            <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#0891b2">4</text>
-            <text x="32" y="5" font-size="14" font-weight="600" fill="#374151">친구도 레벨업의 도구</text>
+            <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#0891b2">4</text>
+            <text x="32" y="5" font-size="20" font-weight="600" fill="#374151">친구도 레벨업의 도구</text>
           </g>
         
       </g>
@@ -75,32 +75,32 @@
       <g transform="translate(60, 510)">
         <rect width="520" height="360" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="360" rx="4" fill="#059669"/>
-        <text x="30" y="45" font-size="24" font-weight="900" fill="#059669">🤝 신뢰형 우정</text>
-        <text x="30" y="72" font-size="13" font-weight="700" fill="#6b7280">ISTJ · ESTJ · ISFJ · ESFJ</text>
+        <text x="30" y="45" font-size="34" font-weight="900" fill="#059669">🤝 신뢰형 우정</text>
+        <text x="30" y="72" font-size="18" font-weight="700" fill="#6b7280">ISTJ · ESTJ · ISFJ · ESFJ</text>
 
         
           <g transform="translate(30, 125)">
             <circle cx="10" cy="0" r="12" fill="#059669" opacity="0.2"/>
-            <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#059669">1</text>
-            <text x="32" y="5" font-size="14" font-weight="600" fill="#374151">약속·시간 엄수</text>
+            <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#059669">1</text>
+            <text x="32" y="5" font-size="20" font-weight="600" fill="#374151">약속·시간 엄수</text>
           </g>
         
           <g transform="translate(30, 173)">
             <circle cx="10" cy="0" r="12" fill="#059669" opacity="0.2"/>
-            <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#059669">2</text>
-            <text x="32" y="5" font-size="14" font-weight="600" fill="#374151">관계 일관성 최우선</text>
+            <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#059669">2</text>
+            <text x="32" y="5" font-size="20" font-weight="600" fill="#374151">관계 일관성 최우선</text>
           </g>
         
           <g transform="translate(30, 221)">
             <circle cx="10" cy="0" r="12" fill="#059669" opacity="0.2"/>
-            <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#059669">3</text>
-            <text x="32" y="5" font-size="14" font-weight="600" fill="#374151">10년 넘는 장기 우정 많음</text>
+            <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#059669">3</text>
+            <text x="32" y="5" font-size="20" font-weight="600" fill="#374151">10년 넘는 장기 우정 많음</text>
           </g>
         
           <g transform="translate(30, 269)">
             <circle cx="10" cy="0" r="12" fill="#059669" opacity="0.2"/>
-            <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#059669">4</text>
-            <text x="32" y="5" font-size="14" font-weight="600" fill="#374151">갈등 회피, 직접 대화 선호</text>
+            <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#059669">4</text>
+            <text x="32" y="5" font-size="20" font-weight="600" fill="#374151">갈등 회피, 직접 대화 선호</text>
           </g>
         
       </g>
@@ -108,32 +108,32 @@
       <g transform="translate(620, 510)">
         <rect width="520" height="360" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="360" rx="4" fill="#d97706"/>
-        <text x="30" y="45" font-size="24" font-weight="900" fill="#d97706">🎉 현재형 우정</text>
-        <text x="30" y="72" font-size="13" font-weight="700" fill="#6b7280">ESTP · ESFP · ISTP · ISFP</text>
+        <text x="30" y="45" font-size="34" font-weight="900" fill="#d97706">🎉 현재형 우정</text>
+        <text x="30" y="72" font-size="18" font-weight="700" fill="#6b7280">ESTP · ESFP · ISTP · ISFP</text>
 
         
           <g transform="translate(30, 125)">
             <circle cx="10" cy="0" r="12" fill="#d97706" opacity="0.2"/>
-            <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#d97706">1</text>
-            <text x="32" y="5" font-size="14" font-weight="600" fill="#374151">지금 같이 노는 게 핵심</text>
+            <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#d97706">1</text>
+            <text x="32" y="5" font-size="20" font-weight="600" fill="#374151">지금 같이 노는 게 핵심</text>
           </g>
         
           <g transform="translate(30, 173)">
             <circle cx="10" cy="0" r="12" fill="#d97706" opacity="0.2"/>
-            <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#d97706">2</text>
-            <text x="32" y="5" font-size="14" font-weight="600" fill="#374151">말보다 함께하는 경험</text>
+            <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#d97706">2</text>
+            <text x="32" y="5" font-size="20" font-weight="600" fill="#374151">말보다 함께하는 경험</text>
           </g>
         
           <g transform="translate(30, 221)">
             <circle cx="10" cy="0" r="12" fill="#d97706" opacity="0.2"/>
-            <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#d97706">3</text>
-            <text x="32" y="5" font-size="14" font-weight="600" fill="#374151">가벼운 듯 깊은 진심</text>
+            <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#d97706">3</text>
+            <text x="32" y="5" font-size="20" font-weight="600" fill="#374151">가벼운 듯 깊은 진심</text>
           </g>
         
           <g transform="translate(30, 269)">
             <circle cx="10" cy="0" r="12" fill="#d97706" opacity="0.2"/>
-            <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#d97706">4</text>
-            <text x="32" y="5" font-size="14" font-weight="600" fill="#374151">손절도 빠르고 복구도 빠름</text>
+            <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#d97706">4</text>
+            <text x="32" y="5" font-size="20" font-weight="600" fill="#374151">손절도 빠르고 복구도 빠름</text>
           </g>
         
       </g>

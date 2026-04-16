@@ -2,8 +2,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">20대 → 60대 자산 설계 로드맵</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">연령대별 부 축적 단계 · 모든 유형 공통 타임라인</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="#171717">20대 → 60대 자산 설계 로드맵</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="#6b7280">연령대별 부 축적 단계 · 모든 유형 공통 타임라인</text>
 
   
       <g transform="translate(60, 120)">
@@ -11,29 +11,29 @@
         <rect width="8" height="130" rx="4" fill="#06b6d4"/>
 
         <circle cx="60" cy="65" r="40" fill="#06b6d4" opacity="0.15"/>
-        <text x="60" y="76" text-anchor="middle" font-size="22" font-weight="900" fill="#06b6d4">20대</text>
+        <text x="60" y="76" text-anchor="middle" font-size="31" font-weight="900" fill="#06b6d4">20대</text>
 
-        <text x="130" y="45" font-size="19" font-weight="900" fill="#06b6d4">소득 극대 + 기본 저축</text>
+        <text x="130" y="45" font-size="27" font-weight="900" fill="#06b6d4">소득 극대 + 기본 저축</text>
 
         
           <g transform="translate(130, 75)">
             <circle cx="6" cy="-4" r="5" fill="#06b6d4"/>
-            <text x="20" y="0" font-size="13" font-weight="600" fill="#374151">첫 자산 1억 목표</text>
+            <text x="20" y="0" font-size="18" font-weight="600" fill="#374151">첫 자산 1억 목표</text>
           </g>
         
           <g transform="translate(560, 75)">
             <circle cx="6" cy="-4" r="5" fill="#06b6d4"/>
-            <text x="20" y="0" font-size="13" font-weight="600" fill="#374151">인덱스 · ETF 자동 적립</text>
+            <text x="20" y="0" font-size="18" font-weight="600" fill="#374151">인덱스 · ETF 자동 적립</text>
           </g>
         
           <g transform="translate(130, 103)">
             <circle cx="6" cy="-4" r="5" fill="#06b6d4"/>
-            <text x="20" y="0" font-size="13" font-weight="600" fill="#374151">비상금 6개월분</text>
+            <text x="20" y="0" font-size="18" font-weight="600" fill="#374151">비상금 6개월분</text>
           </g>
         
           <g transform="translate(560, 103)">
             <circle cx="6" cy="-4" r="5" fill="#06b6d4"/>
-            <text x="20" y="0" font-size="13" font-weight="600" fill="#374151">커리어 투자(자격·교육)</text>
+            <text x="20" y="0" font-size="18" font-weight="600" fill="#374151">커리어 투자(자격·교육)</text>
           </g>
         
       </g>
@@ -43,29 +43,29 @@
         <rect width="8" height="130" rx="4" fill="#0891b2"/>
 
         <circle cx="60" cy="65" r="40" fill="#0891b2" opacity="0.15"/>
-        <text x="60" y="76" text-anchor="middle" font-size="22" font-weight="900" fill="#0891b2">30대</text>
+        <text x="60" y="76" text-anchor="middle" font-size="31" font-weight="900" fill="#0891b2">30대</text>
 
-        <text x="130" y="45" font-size="19" font-weight="900" fill="#0891b2">자산 복리 본격화</text>
+        <text x="130" y="45" font-size="27" font-weight="900" fill="#0891b2">자산 복리 본격화</text>
 
         
           <g transform="translate(130, 75)">
             <circle cx="6" cy="-4" r="5" fill="#0891b2"/>
-            <text x="20" y="0" font-size="13" font-weight="600" fill="#374151">부동산 · 주식 비율 설정</text>
+            <text x="20" y="0" font-size="18" font-weight="600" fill="#374151">부동산 · 주식 비율 설정</text>
           </g>
         
           <g transform="translate(560, 75)">
             <circle cx="6" cy="-4" r="5" fill="#0891b2"/>
-            <text x="20" y="0" font-size="13" font-weight="600" fill="#374151">사이드 소득 1개</text>
+            <text x="20" y="0" font-size="18" font-weight="600" fill="#374151">사이드 소득 1개</text>
           </g>
         
           <g transform="translate(130, 103)">
             <circle cx="6" cy="-4" r="5" fill="#0891b2"/>
-            <text x="20" y="0" font-size="13" font-weight="600" fill="#374151">월 50만+ 재투자</text>
+            <text x="20" y="0" font-size="18" font-weight="600" fill="#374151">월 50만+ 재투자</text>
           </g>
         
           <g transform="translate(560, 103)">
             <circle cx="6" cy="-4" r="5" fill="#0891b2"/>
-            <text x="20" y="0" font-size="13" font-weight="600" fill="#374151">장기 연금 시작</text>
+            <text x="20" y="0" font-size="18" font-weight="600" fill="#374151">장기 연금 시작</text>
           </g>
         
       </g>
@@ -75,29 +75,29 @@
         <rect width="8" height="130" rx="4" fill="#059669"/>
 
         <circle cx="60" cy="65" r="40" fill="#059669" opacity="0.15"/>
-        <text x="60" y="76" text-anchor="middle" font-size="22" font-weight="900" fill="#059669">40대</text>
+        <text x="60" y="76" text-anchor="middle" font-size="31" font-weight="900" fill="#059669">40대</text>
 
-        <text x="130" y="45" font-size="19" font-weight="900" fill="#059669">피크 소득 · 자산 레버리지</text>
+        <text x="130" y="45" font-size="27" font-weight="900" fill="#059669">피크 소득 · 자산 레버리지</text>
 
         
           <g transform="translate(130, 75)">
             <circle cx="6" cy="-4" r="5" fill="#059669"/>
-            <text x="20" y="0" font-size="13" font-weight="600" fill="#374151">자산 10억 목표</text>
+            <text x="20" y="0" font-size="18" font-weight="600" fill="#374151">자산 10억 목표</text>
           </g>
         
           <g transform="translate(560, 75)">
             <circle cx="6" cy="-4" r="5" fill="#059669"/>
-            <text x="20" y="0" font-size="13" font-weight="600" fill="#374151">창업/투자 실행</text>
+            <text x="20" y="0" font-size="18" font-weight="600" fill="#374151">창업/투자 실행</text>
           </g>
         
           <g transform="translate(130, 103)">
             <circle cx="6" cy="-4" r="5" fill="#059669"/>
-            <text x="20" y="0" font-size="13" font-weight="600" fill="#374151">자녀 교육 재정 분리</text>
+            <text x="20" y="0" font-size="18" font-weight="600" fill="#374151">자녀 교육 재정 분리</text>
           </g>
         
           <g transform="translate(560, 103)">
             <circle cx="6" cy="-4" r="5" fill="#059669"/>
-            <text x="20" y="0" font-size="13" font-weight="600" fill="#374151">건강 투자 필수</text>
+            <text x="20" y="0" font-size="18" font-weight="600" fill="#374151">건강 투자 필수</text>
           </g>
         
       </g>
@@ -107,29 +107,29 @@
         <rect width="8" height="130" rx="4" fill="#eab308"/>
 
         <circle cx="60" cy="65" r="40" fill="#eab308" opacity="0.15"/>
-        <text x="60" y="76" text-anchor="middle" font-size="22" font-weight="900" fill="#eab308">50대</text>
+        <text x="60" y="76" text-anchor="middle" font-size="31" font-weight="900" fill="#eab308">50대</text>
 
-        <text x="130" y="45" font-size="19" font-weight="900" fill="#eab308">자산 보존 + 은퇴 준비</text>
+        <text x="130" y="45" font-size="27" font-weight="900" fill="#eab308">자산 보존 + 은퇴 준비</text>
 
         
           <g transform="translate(130, 75)">
             <circle cx="6" cy="-4" r="5" fill="#eab308"/>
-            <text x="20" y="0" font-size="13" font-weight="600" fill="#374151">리스크 자산 비중 감소</text>
+            <text x="20" y="0" font-size="18" font-weight="600" fill="#374151">리스크 자산 비중 감소</text>
           </g>
         
           <g transform="translate(560, 75)">
             <circle cx="6" cy="-4" r="5" fill="#eab308"/>
-            <text x="20" y="0" font-size="13" font-weight="600" fill="#374151">배당 수익 전환</text>
+            <text x="20" y="0" font-size="18" font-weight="600" fill="#374151">배당 수익 전환</text>
           </g>
         
           <g transform="translate(130, 103)">
             <circle cx="6" cy="-4" r="5" fill="#eab308"/>
-            <text x="20" y="0" font-size="13" font-weight="600" fill="#374151">독립 옵션 마련</text>
+            <text x="20" y="0" font-size="18" font-weight="600" fill="#374151">독립 옵션 마련</text>
           </g>
         
           <g transform="translate(560, 103)">
             <circle cx="6" cy="-4" r="5" fill="#eab308"/>
-            <text x="20" y="0" font-size="13" font-weight="600" fill="#374151">현금흐름 자산 구축</text>
+            <text x="20" y="0" font-size="18" font-weight="600" fill="#374151">현금흐름 자산 구축</text>
           </g>
         
       </g>
@@ -139,29 +139,29 @@
         <rect width="8" height="130" rx="4" fill="#a16207"/>
 
         <circle cx="60" cy="65" r="40" fill="#a16207" opacity="0.15"/>
-        <text x="60" y="76" text-anchor="middle" font-size="22" font-weight="900" fill="#a16207">60대+</text>
+        <text x="60" y="76" text-anchor="middle" font-size="31" font-weight="900" fill="#a16207">60대+</text>
 
-        <text x="130" y="45" font-size="19" font-weight="900" fill="#a16207">은퇴 · 패시브 소득</text>
+        <text x="130" y="45" font-size="27" font-weight="900" fill="#a16207">은퇴 · 패시브 소득</text>
 
         
           <g transform="translate(130, 75)">
             <circle cx="6" cy="-4" r="5" fill="#a16207"/>
-            <text x="20" y="0" font-size="13" font-weight="600" fill="#374151">월 400만+ 패시브 목표</text>
+            <text x="20" y="0" font-size="18" font-weight="600" fill="#374151">월 400만+ 패시브 목표</text>
           </g>
         
           <g transform="translate(560, 75)">
             <circle cx="6" cy="-4" r="5" fill="#a16207"/>
-            <text x="20" y="0" font-size="13" font-weight="600" fill="#374151">자산 분산 (예금·부동산·주식)</text>
+            <text x="20" y="0" font-size="18" font-weight="600" fill="#374151">자산 분산 (예금·부동산·주식)</text>
           </g>
         
           <g transform="translate(130, 103)">
             <circle cx="6" cy="-4" r="5" fill="#a16207"/>
-            <text x="20" y="0" font-size="13" font-weight="600" fill="#374151">상속 계획</text>
+            <text x="20" y="0" font-size="18" font-weight="600" fill="#374151">상속 계획</text>
           </g>
         
           <g transform="translate(560, 103)">
             <circle cx="6" cy="-4" r="5" fill="#a16207"/>
-            <text x="20" y="0" font-size="13" font-weight="600" fill="#374151">의미 있는 지출</text>
+            <text x="20" y="0" font-size="18" font-weight="600" fill="#374151">의미 있는 지출</text>
           </g>
         
       </g>

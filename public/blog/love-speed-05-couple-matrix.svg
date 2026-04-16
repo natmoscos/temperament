@@ -2,112 +2,112 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="55" text-anchor="middle" font-size="28" font-weight="800" fill="#171717">연애 속도 × 속도 커플 궁합 히트맵</text>
-  <text x="600" y="82" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">4가지 속도 × 4가지 속도 = 16가지 커플 케미 (100점 만점)</text>
+  <text x="600" y="55" text-anchor="middle" font-size="39" font-weight="800" fill="#171717">연애 속도 × 속도 커플 궁합 히트맵</text>
+  <text x="600" y="82" text-anchor="middle" font-size="18" font-weight="500" fill="#6b7280">4가지 속도 × 4가지 속도 = 16가지 커플 케미 (100점 만점)</text>
 
   <!-- Axes -->
-  <text x="110" y="190" font-size="14" font-weight="700" fill="#6b7280">상대 →</text>
-  <text x="180" y="180" font-size="14" font-weight="700" fill="#6b7280" text-anchor="end">↓ 나</text>
+  <text x="110" y="190" font-size="20" font-weight="700" fill="#6b7280">상대 →</text>
+  <text x="180" y="180" font-size="20" font-weight="700" fill="#6b7280" text-anchor="end">↓ 나</text>
 
   
-    <text x="290" y="190" text-anchor="middle" font-size="14" font-weight="700" fill="#374151">금사빠</text>
-    <text x="194" y="285" text-anchor="end" font-size="14" font-weight="700" fill="#374151">금사빠</text>
+    <text x="290" y="190" text-anchor="middle" font-size="20" font-weight="700" fill="#374151">금사빠</text>
+    <text x="194" y="285" text-anchor="end" font-size="20" font-weight="700" fill="#374151">금사빠</text>
   
-    <text x="450" y="190" text-anchor="middle" font-size="14" font-weight="700" fill="#374151">빠름</text>
-    <text x="194" y="445" text-anchor="end" font-size="14" font-weight="700" fill="#374151">빠름</text>
+    <text x="450" y="190" text-anchor="middle" font-size="20" font-weight="700" fill="#374151">빠름</text>
+    <text x="194" y="445" text-anchor="end" font-size="20" font-weight="700" fill="#374151">빠름</text>
   
-    <text x="610" y="190" text-anchor="middle" font-size="14" font-weight="700" fill="#374151">균형</text>
-    <text x="194" y="605" text-anchor="end" font-size="14" font-weight="700" fill="#374151">균형</text>
+    <text x="610" y="190" text-anchor="middle" font-size="20" font-weight="700" fill="#374151">균형</text>
+    <text x="194" y="605" text-anchor="end" font-size="20" font-weight="700" fill="#374151">균형</text>
   
-    <text x="770" y="190" text-anchor="middle" font-size="14" font-weight="700" fill="#374151">신중</text>
-    <text x="194" y="765" text-anchor="end" font-size="14" font-weight="700" fill="#374151">신중</text>
+    <text x="770" y="190" text-anchor="middle" font-size="20" font-weight="700" fill="#374151">신중</text>
+    <text x="194" y="765" text-anchor="end" font-size="20" font-weight="700" fill="#374151">신중</text>
   
 
   
     <rect x="210" y="200" width="154" height="154" rx="12" fill="#dc2626" opacity="0.9"/>
-    <text x="287" y="252" text-anchor="middle" font-size="32" font-weight="800" fill="#fff">42</text>
-    <text x="287" y="282" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">폭풍→번아웃</text>
-    <text x="287" y="300" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="287" y="252" text-anchor="middle" font-size="45" font-weight="800" fill="#fff">42</text>
+    <text x="287" y="282" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">폭풍→번아웃</text>
+    <text x="287" y="300" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="370" y="200" width="154" height="154" rx="12" fill="#84cc16" opacity="0.9"/>
-    <text x="447" y="252" text-anchor="middle" font-size="32" font-weight="800" fill="#fff">68</text>
-    <text x="447" y="282" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">단기 스파크</text>
-    <text x="447" y="300" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="447" y="252" text-anchor="middle" font-size="45" font-weight="800" fill="#fff">68</text>
+    <text x="447" y="282" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">단기 스파크</text>
+    <text x="447" y="300" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="530" y="200" width="154" height="154" rx="12" fill="#22c55e" opacity="0.9"/>
-    <text x="607" y="252" text-anchor="middle" font-size="32" font-weight="800" fill="#fff">82</text>
-    <text x="607" y="282" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">베스트</text>
-    <text x="607" y="300" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="607" y="252" text-anchor="middle" font-size="45" font-weight="800" fill="#fff">82</text>
+    <text x="607" y="282" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">베스트</text>
+    <text x="607" y="300" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="690" y="200" width="154" height="154" rx="12" fill="#dc2626" opacity="0.9"/>
-    <text x="767" y="252" text-anchor="middle" font-size="32" font-weight="800" fill="#fff">52</text>
-    <text x="767" y="282" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">케미 기대</text>
-    <text x="767" y="300" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="767" y="252" text-anchor="middle" font-size="45" font-weight="800" fill="#fff">52</text>
+    <text x="767" y="282" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">케미 기대</text>
+    <text x="767" y="300" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="210" y="360" width="154" height="154" rx="12" fill="#84cc16" opacity="0.9"/>
-    <text x="287" y="412" text-anchor="middle" font-size="32" font-weight="800" fill="#fff">70</text>
-    <text x="287" y="442" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">단기 스파크</text>
-    <text x="287" y="460" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="287" y="412" text-anchor="middle" font-size="45" font-weight="800" fill="#fff">70</text>
+    <text x="287" y="442" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">단기 스파크</text>
+    <text x="287" y="460" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="370" y="360" width="154" height="154" rx="12" fill="#22c55e" opacity="0.9"/>
-    <text x="447" y="412" text-anchor="middle" font-size="32" font-weight="800" fill="#fff">78</text>
-    <text x="447" y="442" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">균형의 재미</text>
-    <text x="447" y="460" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="447" y="412" text-anchor="middle" font-size="45" font-weight="800" fill="#fff">78</text>
+    <text x="447" y="442" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">균형의 재미</text>
+    <text x="447" y="460" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="530" y="360" width="154" height="154" rx="12" fill="#22c55e" opacity="0.9"/>
-    <text x="607" y="412" text-anchor="middle" font-size="32" font-weight="800" fill="#fff">84</text>
-    <text x="607" y="442" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">상위 궁합</text>
-    <text x="607" y="460" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="607" y="412" text-anchor="middle" font-size="45" font-weight="800" fill="#fff">84</text>
+    <text x="607" y="442" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">상위 궁합</text>
+    <text x="607" y="460" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="690" y="360" width="154" height="154" rx="12" fill="#84cc16" opacity="0.9"/>
-    <text x="767" y="412" text-anchor="middle" font-size="32" font-weight="800" fill="#fff">70</text>
-    <text x="767" y="442" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">성장 페어</text>
-    <text x="767" y="460" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="767" y="412" text-anchor="middle" font-size="45" font-weight="800" fill="#fff">70</text>
+    <text x="767" y="442" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">성장 페어</text>
+    <text x="767" y="460" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="210" y="520" width="154" height="154" rx="12" fill="#22c55e" opacity="0.9"/>
-    <text x="287" y="572" text-anchor="middle" font-size="32" font-weight="800" fill="#fff">84</text>
-    <text x="287" y="602" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">베스트</text>
-    <text x="287" y="620" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="287" y="572" text-anchor="middle" font-size="45" font-weight="800" fill="#fff">84</text>
+    <text x="287" y="602" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">베스트</text>
+    <text x="287" y="620" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="370" y="520" width="154" height="154" rx="12" fill="#16a34a" opacity="0.9"/>
-    <text x="447" y="572" text-anchor="middle" font-size="32" font-weight="800" fill="#fff">86</text>
-    <text x="447" y="602" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">상위 궁합</text>
-    <text x="447" y="620" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="447" y="572" text-anchor="middle" font-size="45" font-weight="800" fill="#fff">86</text>
+    <text x="447" y="602" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">상위 궁합</text>
+    <text x="447" y="620" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="530" y="520" width="154" height="154" rx="12" fill="#16a34a" opacity="0.9"/>
-    <text x="607" y="572" text-anchor="middle" font-size="32" font-weight="800" fill="#fff">90</text>
-    <text x="607" y="602" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">이상적 조합</text>
-    <text x="607" y="620" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="607" y="572" text-anchor="middle" font-size="45" font-weight="800" fill="#fff">90</text>
+    <text x="607" y="602" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">이상적 조합</text>
+    <text x="607" y="620" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="690" y="520" width="154" height="154" rx="12" fill="#22c55e" opacity="0.9"/>
-    <text x="767" y="572" text-anchor="middle" font-size="32" font-weight="800" fill="#fff">78</text>
-    <text x="767" y="602" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">장기 파트너</text>
-    <text x="767" y="620" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="767" y="572" text-anchor="middle" font-size="45" font-weight="800" fill="#fff">78</text>
+    <text x="767" y="602" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">장기 파트너</text>
+    <text x="767" y="620" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="210" y="680" width="154" height="154" rx="12" fill="#dc2626" opacity="0.9"/>
-    <text x="287" y="732" text-anchor="middle" font-size="32" font-weight="800" fill="#fff">54</text>
-    <text x="287" y="762" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">케미 기대</text>
-    <text x="287" y="780" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="287" y="732" text-anchor="middle" font-size="45" font-weight="800" fill="#fff">54</text>
+    <text x="287" y="762" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">케미 기대</text>
+    <text x="287" y="780" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="370" y="680" width="154" height="154" rx="12" fill="#84cc16" opacity="0.9"/>
-    <text x="447" y="732" text-anchor="middle" font-size="32" font-weight="800" fill="#fff">72</text>
-    <text x="447" y="762" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">성장 페어</text>
-    <text x="447" y="780" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="447" y="732" text-anchor="middle" font-size="45" font-weight="800" fill="#fff">72</text>
+    <text x="447" y="762" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">성장 페어</text>
+    <text x="447" y="780" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="530" y="680" width="154" height="154" rx="12" fill="#22c55e" opacity="0.9"/>
-    <text x="607" y="732" text-anchor="middle" font-size="32" font-weight="800" fill="#fff">80</text>
-    <text x="607" y="762" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">장기 파트너</text>
-    <text x="607" y="780" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="607" y="732" text-anchor="middle" font-size="45" font-weight="800" fill="#fff">80</text>
+    <text x="607" y="762" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">장기 파트너</text>
+    <text x="607" y="780" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="690" y="680" width="154" height="154" rx="12" fill="#84cc16" opacity="0.9"/>
-    <text x="767" y="732" text-anchor="middle" font-size="32" font-weight="800" fill="#fff">66</text>
-    <text x="767" y="762" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">안정 루틴</text>
-    <text x="767" y="780" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="767" y="732" text-anchor="middle" font-size="45" font-weight="800" fill="#fff">66</text>
+    <text x="767" y="762" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">안정 루틴</text>
+    <text x="767" y="780" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
 
   <!-- Bottom description -->
   <g transform="translate(210, 860)">
-    <text x="0" y="12" font-size="12" font-weight="600" fill="#374151">· 균형 × 균형 (90점) 최고 · 신중 × 신중 (66점) 안정 · 금사빠 × 금사빠 (42점) 위험</text>
+    <text x="0" y="12" font-size="17" font-weight="600" fill="#374151">· 균형 × 균형 (90점) 최고 · 신중 × 신중 (66점) 안정 · 금사빠 × 금사빠 (42점) 위험</text>
   </g>
   
 <text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · MBTI 연애 시리즈</text>

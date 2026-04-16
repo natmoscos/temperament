@@ -107,8 +107,8 @@ function tier() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">16유형 절친 가능성 랭킹</text>
-  <text x="600" y="80" text-anchor="middle" font-size="14" font-weight="500" fill="${C.textMuted}">관계 유지력 · 공감 능력 · 장기 연결 지속성 종합 100점 만점</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">16유형 절친 가능성 랭킹</text>
+  <text x="600" y="80" text-anchor="middle" font-size="20" font-weight="500" fill="${C.textMuted}">관계 유지력 · 공감 능력 · 장기 연결 지속성 종합 100점 만점</text>
 
   ${data.map((d, i) => {
     const y = 120 + i * 47;
@@ -116,12 +116,12 @@ function tier() {
     const grp = GROUP_OF[d.type];
     const color = COLOR_OF[grp];
     return `
-      <text x="50" y="${y + 22}" font-size="14" font-weight="800" fill="${C.textFaint}">${String(i + 1).padStart(2, '0')}</text>
-      <text x="95" y="${y + 22}" font-size="18" font-weight="800" fill="${color}">${d.type}</text>
+      <text x="50" y="${y + 22}" font-size="20" font-weight="800" fill="${C.textFaint}">${String(i + 1).padStart(2, '0')}</text>
+      <text x="95" y="${y + 22}" font-size="25" font-weight="800" fill="${color}">${d.type}</text>
       <rect x="170" y="${y + 5}" width="${barW}" height="30" rx="15" fill="${color}" opacity="0.25"/>
       <rect x="170" y="${y + 5}" width="${barW}" height="30" rx="15" fill="${color}" opacity="0.85"/>
-      <text x="${180 + barW}" y="${y + 25}" font-size="14" font-weight="800" fill="${color}">${d.score}</text>
-      <text x="930" y="${y + 27}" font-size="13" font-weight="600" fill="${C.textMuted}">${d.note}</text>
+      <text x="${180 + barW}" y="${y + 25}" font-size="20" font-weight="800" fill="${color}">${d.score}</text>
+      <text x="930" y="${y + 27}" font-size="18" font-weight="600" fill="${C.textMuted}">${d.note}</text>
     `;
   }).join('')}
   `);
@@ -149,8 +149,8 @@ function bestMatch() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">절친 궁합 BEST 8 — 평생 우정 조합</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">같은 기질 × 다른 강도 조합이 가장 오래 가는 절친 공식</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">절친 궁합 BEST 8 — 평생 우정 조합</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">같은 기질 × 다른 강도 조합이 가장 오래 가는 절친 공식</text>
 
   ${matches.map((m, i) => {
     const col = i % 2;
@@ -161,11 +161,11 @@ function bestMatch() {
       <g transform="translate(${x}, ${y})">
         <rect width="540" height="165" rx="20" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="165" rx="4" fill="${m.color}"/>
-        <text x="30" y="45" font-size="22" font-weight="900" fill="${m.color}">${m.pair}</text>
-        <text x="30" y="70" font-size="13" font-weight="700" fill="${C.textMuted}">${m.desc}</text>
+        <text x="30" y="45" font-size="31" font-weight="900" fill="${m.color}">${m.pair}</text>
+        <text x="30" y="70" font-size="18" font-weight="700" fill="${C.textMuted}">${m.desc}</text>
         <rect x="30" y="85" width="${540 - 60}" height="62" rx="12" fill="${m.color}" opacity="0.08"/>
-        <text x="45" y="110" font-size="13" font-weight="700" fill="${m.color}">WHY</text>
-        <text x="45" y="130" font-size="13" font-weight="500" fill="${C.textSoft}">${m.why}</text>
+        <text x="45" y="110" font-size="18" font-weight="700" fill="${m.color}">WHY</text>
+        <text x="45" y="130" font-size="18" font-weight="500" fill="${C.textSoft}">${m.why}</text>
       </g>
     `;
   }).join('')}
@@ -218,8 +218,8 @@ function pattern() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">4가지 우정 DNA — 네 스타일은?</text>
-  <text x="600" y="80" text-anchor="middle" font-size="14" font-weight="500" fill="${C.textMuted}">기질별 친구 관계 접근법 · 돌봄 / 성장 / 신뢰 / 현재</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">4가지 우정 DNA — 네 스타일은?</text>
+  <text x="600" y="80" text-anchor="middle" font-size="20" font-weight="500" fill="${C.textMuted}">기질별 친구 관계 접근법 · 돌봄 / 성장 / 신뢰 / 현재</text>
 
   ${positions.map((p, i) => {
     const m = modes[i];
@@ -227,14 +227,14 @@ function pattern() {
       <g transform="translate(${p.x}, ${p.y})">
         <rect width="${w}" height="${h}" rx="20" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="${h}" rx="4" fill="${m.color}"/>
-        <text x="30" y="45" font-size="24" font-weight="900" fill="${m.color}">${m.icon} ${m.name}</text>
-        <text x="30" y="72" font-size="13" font-weight="700" fill="${C.textMuted}">${m.types}</text>
+        <text x="30" y="45" font-size="34" font-weight="900" fill="${m.color}">${m.icon} ${m.name}</text>
+        <text x="30" y="72" font-size="18" font-weight="700" fill="${C.textMuted}">${m.types}</text>
 
         ${m.traits.map((t, j) => `
           <g transform="translate(30, ${125 + j * 48})">
             <circle cx="10" cy="0" r="12" fill="${m.color}" opacity="0.2"/>
-            <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="${m.color}">${j + 1}</text>
-            <text x="32" y="5" font-size="14" font-weight="600" fill="${C.textSoft}">${t}</text>
+            <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="${m.color}">${j + 1}</text>
+            <text x="32" y="5" font-size="20" font-weight="600" fill="${C.textSoft}">${t}</text>
           </g>
         `).join('')}
       </g>
@@ -262,8 +262,8 @@ function signals() {
   const lvColor = { LOW: C.safe, MID: C.warn, HIGH: C.danger };
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">손절 시그널 6종 — 너도 느낀 적 있어?</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">관계 파손 예고 신호 · MID는 대화 시도, HIGH는 거리 두기 권장</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">손절 시그널 6종 — 너도 느낀 적 있어?</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">관계 파손 예고 신호 · MID는 대화 시도, HIGH는 거리 두기 권장</text>
 
   ${sigs.map((s, i) => {
     const col = i % 2;
@@ -276,14 +276,14 @@ function signals() {
         <rect width="540" height="225" rx="20" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="225" rx="4" fill="${color}"/>
         <text x="40" y="60" font-size="40">${s.icon}</text>
-        <text x="100" y="55" font-size="20" font-weight="900" fill="${C.text}">${s.name}</text>
+        <text x="100" y="55" font-size="28" font-weight="900" fill="${C.text}">${s.name}</text>
         <g transform="translate(100, 68)">
           <rect width="80" height="26" rx="13" fill="${color}"/>
-          <text x="40" y="18" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">${s.level}</text>
+          <text x="40" y="18" text-anchor="middle" font-size="18" font-weight="900" fill="#fff">${s.level}</text>
         </g>
-        <text x="40" y="140" font-size="14" font-weight="700" fill="${color}">WHY</text>
-        <text x="40" y="168" font-size="14" font-weight="500" fill="${C.textSoft}">${s.why.length > 30 ? s.why.slice(0, 30) : s.why}</text>
-        <text x="40" y="192" font-size="14" font-weight="500" fill="${C.textSoft}">${s.why.length > 30 ? s.why.slice(30) : ''}</text>
+        <text x="40" y="140" font-size="20" font-weight="700" fill="${color}">WHY</text>
+        <text x="40" y="168" font-size="20" font-weight="500" fill="${C.textSoft}">${s.why.length > 30 ? s.why.slice(0, 30) : s.why}</text>
+        <text x="40" y="192" font-size="20" font-weight="500" fill="${C.textSoft}">${s.why.length > 30 ? s.why.slice(30) : ''}</text>
       </g>
     `;
   }).join('')}
@@ -335,8 +335,8 @@ function ritual() {
   const w = 520, h = 340;
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">기질별 우정 유지 체크리스트</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">네 기질 최적화된 4단계 실전 가이드 · 오늘부터 1개씩</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">기질별 우정 유지 체크리스트</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">네 기질 최적화된 4단계 실전 가이드 · 오늘부터 1개씩</text>
 
   ${positions.map((p, i) => {
     const g = groups[i];
@@ -344,10 +344,10 @@ function ritual() {
       <g transform="translate(${p.x},${p.y})">
         <rect width="${w}" height="${h}" rx="18" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="${h}" rx="4" fill="${g.color}"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="${C.textMuted}">${g.types}</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="${C.textMuted}">${g.types}</text>
         ${g.items.map((it, j) => `
-          <text x="28" y="${115 + j * 52}" font-size="13" font-weight="600" fill="${C.textSoft}">${it}</text>
+          <text x="28" y="${115 + j * 52}" font-size="18" font-weight="600" fill="${C.textSoft}">${it}</text>
         `).join('')}
       </g>
     `;

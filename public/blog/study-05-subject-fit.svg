@@ -2,83 +2,83 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">4기질 × 과목 적합성</text>
-  <text x="600" y="80" text-anchor="middle" font-size="14" font-weight="500" fill="#6b7280">네 기질의 강점 과목 vs 약점 과목 · 전략 짤 때 참고</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="#171717">4기질 × 과목 적합성</text>
+  <text x="600" y="80" text-anchor="middle" font-size="20" font-weight="500" fill="#6b7280">네 기질의 강점 과목 vs 약점 과목 · 전략 짤 때 참고</text>
 
   
       <g transform="translate(60, 120)">
         <rect width="1080" height="160" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="160" rx="4" fill="#0891b2"/>
-        <text x="30" y="45" font-size="24" font-weight="900" fill="#0891b2">NT 분석가형</text>
-        <text x="30" y="68" font-size="13" font-weight="700" fill="#6b7280">INTJ · INTP · ENTJ · ENTP</text>
+        <text x="30" y="45" font-size="34" font-weight="900" fill="#0891b2">NT 분석가형</text>
+        <text x="30" y="68" font-size="18" font-weight="700" fill="#6b7280">INTJ · INTP · ENTJ · ENTP</text>
 
         <g transform="translate(30, 85)">
           <rect width="90" height="28" rx="14" fill="#16a34a" opacity="0.2"/>
-          <text x="45" y="20" text-anchor="middle" font-size="13" font-weight="900" fill="#16a34a">강점</text>
-          <text x="110" y="20" font-size="14" font-weight="700" fill="#374151">수학 · 물리 · 공학 · 프로그래밍 · 철학</text>
+          <text x="45" y="20" text-anchor="middle" font-size="18" font-weight="900" fill="#16a34a">강점</text>
+          <text x="110" y="20" font-size="20" font-weight="700" fill="#374151">수학 · 물리 · 공학 · 프로그래밍 · 철학</text>
         </g>
 
         <g transform="translate(30, 125)">
           <rect width="90" height="28" rx="14" fill="#dc2626" opacity="0.2"/>
-          <text x="45" y="20" text-anchor="middle" font-size="13" font-weight="900" fill="#dc2626">약점</text>
-          <text x="110" y="20" font-size="14" font-weight="700" fill="#374151">암기 문과 · 루틴 반복</text>
+          <text x="45" y="20" text-anchor="middle" font-size="18" font-weight="900" fill="#dc2626">약점</text>
+          <text x="110" y="20" font-size="20" font-weight="700" fill="#374151">암기 문과 · 루틴 반복</text>
         </g>
       </g>
     
       <g transform="translate(60, 300)">
         <rect width="1080" height="160" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="160" rx="4" fill="#e11d48"/>
-        <text x="30" y="45" font-size="24" font-weight="900" fill="#e11d48">NF 이상주의형</text>
-        <text x="30" y="68" font-size="13" font-weight="700" fill="#6b7280">INFJ · INFP · ENFJ · ENFP</text>
+        <text x="30" y="45" font-size="34" font-weight="900" fill="#e11d48">NF 이상주의형</text>
+        <text x="30" y="68" font-size="18" font-weight="700" fill="#6b7280">INFJ · INFP · ENFJ · ENFP</text>
 
         <g transform="translate(30, 85)">
           <rect width="90" height="28" rx="14" fill="#16a34a" opacity="0.2"/>
-          <text x="45" y="20" text-anchor="middle" font-size="13" font-weight="900" fill="#16a34a">강점</text>
-          <text x="110" y="20" font-size="14" font-weight="700" fill="#374151">국어 · 문학 · 심리 · 외국어 · 예술사</text>
+          <text x="45" y="20" text-anchor="middle" font-size="18" font-weight="900" fill="#16a34a">강점</text>
+          <text x="110" y="20" font-size="20" font-weight="700" fill="#374151">국어 · 문학 · 심리 · 외국어 · 예술사</text>
         </g>
 
         <g transform="translate(30, 125)">
           <rect width="90" height="28" rx="14" fill="#dc2626" opacity="0.2"/>
-          <text x="45" y="20" text-anchor="middle" font-size="13" font-weight="900" fill="#dc2626">약점</text>
-          <text x="110" y="20" font-size="14" font-weight="700" fill="#374151">암기 수학 · 기계적 반복</text>
+          <text x="45" y="20" text-anchor="middle" font-size="18" font-weight="900" fill="#dc2626">약점</text>
+          <text x="110" y="20" font-size="20" font-weight="700" fill="#374151">암기 수학 · 기계적 반복</text>
         </g>
       </g>
     
       <g transform="translate(60, 480)">
         <rect width="1080" height="160" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="160" rx="4" fill="#059669"/>
-        <text x="30" y="45" font-size="24" font-weight="900" fill="#059669">SJ 관리자형</text>
-        <text x="30" y="68" font-size="13" font-weight="700" fill="#6b7280">ISTJ · ISFJ · ESTJ · ESFJ</text>
+        <text x="30" y="45" font-size="34" font-weight="900" fill="#059669">SJ 관리자형</text>
+        <text x="30" y="68" font-size="18" font-weight="700" fill="#6b7280">ISTJ · ISFJ · ESTJ · ESFJ</text>
 
         <g transform="translate(30, 85)">
           <rect width="90" height="28" rx="14" fill="#16a34a" opacity="0.2"/>
-          <text x="45" y="20" text-anchor="middle" font-size="13" font-weight="900" fill="#16a34a">강점</text>
-          <text x="110" y="20" font-size="14" font-weight="700" fill="#374151">법학 · 회계 · 역사 · 외국어 · 의학</text>
+          <text x="45" y="20" text-anchor="middle" font-size="18" font-weight="900" fill="#16a34a">강점</text>
+          <text x="110" y="20" font-size="20" font-weight="700" fill="#374151">법학 · 회계 · 역사 · 외국어 · 의학</text>
         </g>
 
         <g transform="translate(30, 125)">
           <rect width="90" height="28" rx="14" fill="#dc2626" opacity="0.2"/>
-          <text x="45" y="20" text-anchor="middle" font-size="13" font-weight="900" fill="#dc2626">약점</text>
-          <text x="110" y="20" font-size="14" font-weight="700" fill="#374151">추상 이론 · 창의 서술</text>
+          <text x="45" y="20" text-anchor="middle" font-size="18" font-weight="900" fill="#dc2626">약점</text>
+          <text x="110" y="20" font-size="20" font-weight="700" fill="#374151">추상 이론 · 창의 서술</text>
         </g>
       </g>
     
       <g transform="translate(60, 660)">
         <rect width="1080" height="160" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="160" rx="4" fill="#d97706"/>
-        <text x="30" y="45" font-size="24" font-weight="900" fill="#d97706">SP 기회포착형</text>
-        <text x="30" y="68" font-size="13" font-weight="700" fill="#6b7280">ISTP · ISFP · ESTP · ESFP</text>
+        <text x="30" y="45" font-size="34" font-weight="900" fill="#d97706">SP 기회포착형</text>
+        <text x="30" y="68" font-size="18" font-weight="700" fill="#6b7280">ISTP · ISFP · ESTP · ESFP</text>
 
         <g transform="translate(30, 85)">
           <rect width="90" height="28" rx="14" fill="#16a34a" opacity="0.2"/>
-          <text x="45" y="20" text-anchor="middle" font-size="13" font-weight="900" fill="#16a34a">강점</text>
-          <text x="110" y="20" font-size="14" font-weight="700" fill="#374151">실기 · 미술 · 체육 · 기술 · 실험</text>
+          <text x="45" y="20" text-anchor="middle" font-size="18" font-weight="900" fill="#16a34a">강점</text>
+          <text x="110" y="20" font-size="20" font-weight="700" fill="#374151">실기 · 미술 · 체육 · 기술 · 실험</text>
         </g>
 
         <g transform="translate(30, 125)">
           <rect width="90" height="28" rx="14" fill="#dc2626" opacity="0.2"/>
-          <text x="45" y="20" text-anchor="middle" font-size="13" font-weight="900" fill="#dc2626">약점</text>
-          <text x="110" y="20" font-size="14" font-weight="700" fill="#374151">장기 이론 · 단순 암기</text>
+          <text x="45" y="20" text-anchor="middle" font-size="18" font-weight="900" fill="#dc2626">약점</text>
+          <text x="110" y="20" font-size="20" font-weight="700" fill="#374151">장기 이론 · 단순 암기</text>
         </g>
       </g>
     

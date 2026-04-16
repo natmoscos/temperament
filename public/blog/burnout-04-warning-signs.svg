@@ -2,38 +2,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="#171717">4기질별 번아웃 전조 증상</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">네 기질에서 가장 먼저 나타나는 4가지 신호 · 3개 이상이면 회복 모드 필수</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="#171717">4기질별 번아웃 전조 증상</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="#6b7280">네 기질에서 가장 먼저 나타나는 4가지 신호 · 3개 이상이면 회복 모드 필수</text>
 
   
       <g transform="translate(60,115)">
         <rect width="520" height="340" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="340" rx="4" fill="#f43f5e"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="#f43f5e">🔥 다혈질 (Sanguine)</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="#6b7280">ENFP · ESFP · ESFJ · ENFJ</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="#f43f5e">🔥 다혈질 (Sanguine)</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="#6b7280">ENFP · ESFP · ESFJ · ENFJ</text>
         
           <g transform="translate(28, 110)">
             <circle cx="10" cy="0" r="8" fill="#f43f5e" opacity="0.25"/>
-            <text x="10" y="4" text-anchor="middle" font-size="10" font-weight="800" fill="#f43f5e">1</text>
-            <text x="28" y="5" font-size="13" font-weight="600" fill="#374151">예전엔 매일 인스타 스토리였는데 최근 7일 업로드 0개</text>
+            <text x="10" y="4" text-anchor="middle" font-size="14" font-weight="800" fill="#f43f5e">1</text>
+            <text x="28" y="5" font-size="18" font-weight="600" fill="#374151">예전엔 매일 인스타 스토리였는데 최근 7일 업로드 0개</text>
           </g>
         
           <g transform="translate(28, 162)">
             <circle cx="10" cy="0" r="8" fill="#f43f5e" opacity="0.25"/>
-            <text x="10" y="4" text-anchor="middle" font-size="10" font-weight="800" fill="#f43f5e">2</text>
-            <text x="28" y="5" font-size="13" font-weight="600" fill="#374151">친구 만나고도 "재미없었어" 반복 (전조 1순위)</text>
+            <text x="10" y="4" text-anchor="middle" font-size="14" font-weight="800" fill="#f43f5e">2</text>
+            <text x="28" y="5" font-size="18" font-weight="600" fill="#374151">친구 만나고도 "재미없었어" 반복 (전조 1순위)</text>
           </g>
         
           <g transform="translate(28, 214)">
             <circle cx="10" cy="0" r="8" fill="#f43f5e" opacity="0.25"/>
-            <text x="10" y="4" text-anchor="middle" font-size="10" font-weight="800" fill="#f43f5e">3</text>
-            <text x="28" y="5" font-size="13" font-weight="600" fill="#374151">웃음 텐션이 확 낮아지고 연락이 뜸해짐</text>
+            <text x="10" y="4" text-anchor="middle" font-size="14" font-weight="800" fill="#f43f5e">3</text>
+            <text x="28" y="5" font-size="18" font-weight="600" fill="#374151">웃음 텐션이 확 낮아지고 연락이 뜸해짐</text>
           </g>
         
           <g transform="translate(28, 266)">
             <circle cx="10" cy="0" r="8" fill="#f43f5e" opacity="0.25"/>
-            <text x="10" y="4" text-anchor="middle" font-size="10" font-weight="800" fill="#f43f5e">4</text>
-            <text x="28" y="5" font-size="13" font-weight="600" fill="#374151">카페·외식 지출이 갑자기 감소 → 방에만 있음</text>
+            <text x="10" y="4" text-anchor="middle" font-size="14" font-weight="800" fill="#f43f5e">4</text>
+            <text x="28" y="5" font-size="18" font-weight="600" fill="#374151">카페·외식 지출이 갑자기 감소 → 방에만 있음</text>
           </g>
         
       </g>
@@ -41,31 +41,31 @@
       <g transform="translate(620,115)">
         <rect width="520" height="340" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="340" rx="4" fill="#0891b2"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="#0891b2">🎯 담즙질 (Choleric)</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="#6b7280">ENTJ · ESTJ · ENTP · ESTP</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="#0891b2">🎯 담즙질 (Choleric)</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="#6b7280">ENTJ · ESTJ · ENTP · ESTP</text>
         
           <g transform="translate(28, 110)">
             <circle cx="10" cy="0" r="8" fill="#0891b2" opacity="0.25"/>
-            <text x="10" y="4" text-anchor="middle" font-size="10" font-weight="800" fill="#0891b2">1</text>
-            <text x="28" y="5" font-size="13" font-weight="600" fill="#374151">목표 체크리스트를 갑자기 미루기 시작</text>
+            <text x="10" y="4" text-anchor="middle" font-size="14" font-weight="800" fill="#0891b2">1</text>
+            <text x="28" y="5" font-size="18" font-weight="600" fill="#374151">목표 체크리스트를 갑자기 미루기 시작</text>
           </g>
         
           <g transform="translate(28, 162)">
             <circle cx="10" cy="0" r="8" fill="#0891b2" opacity="0.25"/>
-            <text x="10" y="4" text-anchor="middle" font-size="10" font-weight="800" fill="#0891b2">2</text>
-            <text x="28" y="5" font-size="13" font-weight="600" fill="#374151">팀원에게 예민해지고 말투가 공격적으로 변함</text>
+            <text x="10" y="4" text-anchor="middle" font-size="14" font-weight="800" fill="#0891b2">2</text>
+            <text x="28" y="5" font-size="18" font-weight="600" fill="#374151">팀원에게 예민해지고 말투가 공격적으로 변함</text>
           </g>
         
           <g transform="translate(28, 214)">
             <circle cx="10" cy="0" r="8" fill="#0891b2" opacity="0.25"/>
-            <text x="10" y="4" text-anchor="middle" font-size="10" font-weight="800" fill="#0891b2">3</text>
-            <text x="28" y="5" font-size="13" font-weight="600" fill="#374151">수면 4시간 이하가 일주일 지속</text>
+            <text x="10" y="4" text-anchor="middle" font-size="14" font-weight="800" fill="#0891b2">3</text>
+            <text x="28" y="5" font-size="18" font-weight="600" fill="#374151">수면 4시간 이하가 일주일 지속</text>
           </g>
         
           <g transform="translate(28, 266)">
             <circle cx="10" cy="0" r="8" fill="#0891b2" opacity="0.25"/>
-            <text x="10" y="4" text-anchor="middle" font-size="10" font-weight="800" fill="#0891b2">4</text>
-            <text x="28" y="5" font-size="13" font-weight="600" fill="#374151">성과가 나와도 만족 없음 → 공허감 호소</text>
+            <text x="10" y="4" text-anchor="middle" font-size="14" font-weight="800" fill="#0891b2">4</text>
+            <text x="28" y="5" font-size="18" font-weight="600" fill="#374151">성과가 나와도 만족 없음 → 공허감 호소</text>
           </g>
         
       </g>
@@ -73,31 +73,31 @@
       <g transform="translate(60,490)">
         <rect width="520" height="340" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="340" rx="4" fill="#059669"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="#059669">🌿 점액질 (Phlegmatic)</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="#6b7280">ISFJ · ISTJ · INFP · ISFP</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="#059669">🌿 점액질 (Phlegmatic)</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="#6b7280">ISFJ · ISTJ · INFP · ISFP</text>
         
           <g transform="translate(28, 110)">
             <circle cx="10" cy="0" r="8" fill="#059669" opacity="0.25"/>
-            <text x="10" y="4" text-anchor="middle" font-size="10" font-weight="800" fill="#059669">1</text>
-            <text x="28" y="5" font-size="13" font-weight="600" fill="#374151">루틴이 갑자기 무너짐 (식사·수면·운동)</text>
+            <text x="10" y="4" text-anchor="middle" font-size="14" font-weight="800" fill="#059669">1</text>
+            <text x="28" y="5" font-size="18" font-weight="600" fill="#374151">루틴이 갑자기 무너짐 (식사·수면·운동)</text>
           </g>
         
           <g transform="translate(28, 162)">
             <circle cx="10" cy="0" r="8" fill="#059669" opacity="0.25"/>
-            <text x="10" y="4" text-anchor="middle" font-size="10" font-weight="800" fill="#059669">2</text>
-            <text x="28" y="5" font-size="13" font-weight="600" fill="#374151">말수가 더 줄고 "괜찮아"만 반복</text>
+            <text x="10" y="4" text-anchor="middle" font-size="14" font-weight="800" fill="#059669">2</text>
+            <text x="28" y="5" font-size="18" font-weight="600" fill="#374151">말수가 더 줄고 "괜찮아"만 반복</text>
           </g>
         
           <g transform="translate(28, 214)">
             <circle cx="10" cy="0" r="8" fill="#059669" opacity="0.25"/>
-            <text x="10" y="4" text-anchor="middle" font-size="10" font-weight="800" fill="#059669">3</text>
-            <text x="28" y="5" font-size="13" font-weight="600" fill="#374151">가족 연락 응답 시간이 길어짐</text>
+            <text x="10" y="4" text-anchor="middle" font-size="14" font-weight="800" fill="#059669">3</text>
+            <text x="28" y="5" font-size="18" font-weight="600" fill="#374151">가족 연락 응답 시간이 길어짐</text>
           </g>
         
           <g transform="translate(28, 266)">
             <circle cx="10" cy="0" r="8" fill="#059669" opacity="0.25"/>
-            <text x="10" y="4" text-anchor="middle" font-size="10" font-weight="800" fill="#059669">4</text>
-            <text x="28" y="5" font-size="13" font-weight="600" fill="#374151">좋아하던 루틴(드라마·운동)에도 흥미 0</text>
+            <text x="10" y="4" text-anchor="middle" font-size="14" font-weight="800" fill="#059669">4</text>
+            <text x="28" y="5" font-size="18" font-weight="600" fill="#374151">좋아하던 루틴(드라마·운동)에도 흥미 0</text>
           </g>
         
       </g>
@@ -105,31 +105,31 @@
       <g transform="translate(620,490)">
         <rect width="520" height="340" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="340" rx="4" fill="#0e7490"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="#0e7490">🌙 우울질 (Melancholic)</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="#6b7280">INTJ · INFJ · INTP · ISTP</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="#0e7490">🌙 우울질 (Melancholic)</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="#6b7280">INTJ · INFJ · INTP · ISTP</text>
         
           <g transform="translate(28, 110)">
             <circle cx="10" cy="0" r="8" fill="#0e7490" opacity="0.25"/>
-            <text x="10" y="4" text-anchor="middle" font-size="10" font-weight="800" fill="#0e7490">1</text>
-            <text x="28" y="5" font-size="13" font-weight="600" fill="#374151">부정적 시나리오를 반복해서 곱씹음</text>
+            <text x="10" y="4" text-anchor="middle" font-size="14" font-weight="800" fill="#0e7490">1</text>
+            <text x="28" y="5" font-size="18" font-weight="600" fill="#374151">부정적 시나리오를 반복해서 곱씹음</text>
           </g>
         
           <g transform="translate(28, 162)">
             <circle cx="10" cy="0" r="8" fill="#0e7490" opacity="0.25"/>
-            <text x="10" y="4" text-anchor="middle" font-size="10" font-weight="800" fill="#0e7490">2</text>
-            <text x="28" y="5" font-size="13" font-weight="600" fill="#374151">혼자 있는 시간이 2주 이상 극단적으로 길어짐</text>
+            <text x="10" y="4" text-anchor="middle" font-size="14" font-weight="800" fill="#0e7490">2</text>
+            <text x="28" y="5" font-size="18" font-weight="600" fill="#374151">혼자 있는 시간이 2주 이상 극단적으로 길어짐</text>
           </g>
         
           <g transform="translate(28, 214)">
             <circle cx="10" cy="0" r="8" fill="#0e7490" opacity="0.25"/>
-            <text x="10" y="4" text-anchor="middle" font-size="10" font-weight="800" fill="#0e7490">3</text>
-            <text x="28" y="5" font-size="13" font-weight="600" fill="#374151">감각 무뎌짐: 음식 맛·음악·날씨에 무반응</text>
+            <text x="10" y="4" text-anchor="middle" font-size="14" font-weight="800" fill="#0e7490">3</text>
+            <text x="28" y="5" font-size="18" font-weight="600" fill="#374151">감각 무뎌짐: 음식 맛·음악·날씨에 무반응</text>
           </g>
         
           <g transform="translate(28, 266)">
             <circle cx="10" cy="0" r="8" fill="#0e7490" opacity="0.25"/>
-            <text x="10" y="4" text-anchor="middle" font-size="10" font-weight="800" fill="#0e7490">4</text>
-            <text x="28" y="5" font-size="13" font-weight="600" fill="#374151">"아무것도 하기 싫다" 대신 "아무것도 의미 없다"</text>
+            <text x="10" y="4" text-anchor="middle" font-size="14" font-weight="800" fill="#0e7490">4</text>
+            <text x="28" y="5" font-size="18" font-weight="600" fill="#374151">"아무것도 하기 싫다" 대신 "아무것도 의미 없다"</text>
           </g>
         
       </g>

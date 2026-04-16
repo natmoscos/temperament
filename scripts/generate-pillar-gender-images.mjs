@@ -129,32 +129,32 @@ function matrix() {
   const colX = [280, 480, 680, 880];
   const rowY = [210, 360, 510, 660];
   return wrap(`
-  <text x="600" y="58" text-anchor="middle" font-size="32" font-weight="800" fill="${C.text}">16유형 × 4기질 매트릭스</text>
-  <text x="600" y="92" text-anchor="middle" font-size="15" font-weight="500" fill="${C.textMuted}">어떤 기질에 속하는지에 따라 여자·남자 특징이 달라져</text>
+  <text x="600" y="58" text-anchor="middle" font-size="45" font-weight="800" fill="${C.text}">16유형 × 4기질 매트릭스</text>
+  <text x="600" y="92" text-anchor="middle" font-size="21" font-weight="500" fill="${C.textMuted}">어떤 기질에 속하는지에 따라 여자·남자 특징이 달라져</text>
 
   <!-- Column headers: I/E + S/N split not needed; just 4 groups -->
   <g>
     ${['내향 판단(IxxJ)', '내향 인식(IxxP)', '외향 판단(ExxJ)', '외향 인식(ExxP)'].map((l, i) => `
-      <text x="${colX[i]}" y="175" text-anchor="middle" font-size="12" font-weight="700" fill="${C.textMuted}" letter-spacing="1">${l}</text>
+      <text x="${colX[i]}" y="175" text-anchor="middle" font-size="17" font-weight="700" fill="${C.textMuted}" letter-spacing="1">${l}</text>
     `).join('')}
   </g>
 
   ${rows.map((r, ri) => `
     <!-- Row label -->
     <rect x="40" y="${rowY[ri] - 50}" width="200" height="110" rx="12" fill="${r.bg}" stroke="${r.color}" stroke-width="1"/>
-    <text x="140" y="${rowY[ri] - 17}" text-anchor="middle" font-size="16" font-weight="800" fill="${r.color}">${r.label}</text>
-    <text x="140" y="${rowY[ri] + 10}" text-anchor="middle" font-size="12" font-weight="500" fill="${C.textSoft}">${r.desc}</text>
-    <text x="140" y="${rowY[ri] + 38}" text-anchor="middle" font-size="11" font-weight="600" fill="${r.color}" opacity="0.7">4 TYPES</text>
+    <text x="140" y="${rowY[ri] - 17}" text-anchor="middle" font-size="22" font-weight="800" fill="${r.color}">${r.label}</text>
+    <text x="140" y="${rowY[ri] + 10}" text-anchor="middle" font-size="17" font-weight="500" fill="${C.textSoft}">${r.desc}</text>
+    <text x="140" y="${rowY[ri] + 38}" text-anchor="middle" font-size="15" font-weight="600" fill="${r.color}" opacity="0.7">4 TYPES</text>
 
     <!-- Type badges -->
     ${r.types.map((t, ti) => `
       <circle cx="${colX[ti]}" cy="${rowY[ri]}" r="44" fill="${r.color}"/>
-      <text x="${colX[ti]}" y="${rowY[ri] + 6}" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">${t}</text>
+      <text x="${colX[ti]}" y="${rowY[ri] + 6}" text-anchor="middle" font-size="24" font-weight="800" fill="#fff">${t}</text>
       <g transform="translate(${colX[ti] - 36}, ${rowY[ri] + 50})">
         <rect x="0" y="0" width="32" height="20" rx="10" fill="${C.pinkBg}" stroke="${C.pink600}" stroke-width="1"/>
-        <text x="16" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="${C.pink700}">♀</text>
+        <text x="16" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="${C.pink700}">♀</text>
         <rect x="40" y="0" width="32" height="20" rx="10" fill="${C.blueBg}" stroke="${C.blue600}" stroke-width="1"/>
-        <text x="56" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="${C.blue700}">♂</text>
+        <text x="56" y="14" text-anchor="middle" font-size="14" font-weight="700" fill="${C.blue700}">♂</text>
       </g>
     `).join('')}
   `).join('')}
@@ -162,8 +162,8 @@ function matrix() {
   <!-- Legend -->
   <g transform="translate(180, 800)">
     <rect x="0" y="0" width="840" height="56" fill="#fff" stroke="${C.border}" stroke-width="1" rx="10"/>
-    <text x="24" y="25" font-size="12" font-weight="700" fill="${C.textSoft}">읽는 법</text>
-    <text x="24" y="44" font-size="11" fill="${C.textMuted}">행 = 4가지 기질 · 열 = 인지 태도(I/E × 판단/인식) · 각 유형 아래 ♀/♂ 탭이 여자/남자 특징 글로 연결</text>
+    <text x="24" y="25" font-size="17" font-weight="700" fill="${C.textSoft}">읽는 법</text>
+    <text x="24" y="44" font-size="15" fill="${C.textMuted}">행 = 4가지 기질 · 열 = 인지 태도(I/E × 판단/인식) · 각 유형 아래 ♀/♂ 탭이 여자/남자 특징 글로 연결</text>
   </g>
   `);
 }
@@ -174,48 +174,48 @@ function genderCard({ title, subtitle, groupLabel, color, bg, types }) {
   return wrap(`
   <!-- Title band -->
   <rect x="0" y="0" width="1200" height="110" fill="${bg}"/>
-  <text x="80" y="55" font-size="14" font-weight="700" fill="${color}" letter-spacing="4">${groupLabel}</text>
-  <text x="80" y="92" font-size="28" font-weight="800" fill="${C.text}">${title}</text>
-  <text x="1120" y="75" text-anchor="end" font-size="13" font-weight="500" fill="${C.textMuted}">${subtitle}</text>
+  <text x="80" y="55" font-size="20" font-weight="700" fill="${color}" letter-spacing="4">${groupLabel}</text>
+  <text x="80" y="92" font-size="39" font-weight="800" fill="${C.text}">${title}</text>
+  <text x="1120" y="75" text-anchor="end" font-size="18" font-weight="500" fill="${C.textMuted}">${subtitle}</text>
   <line x1="0" y1="110" x2="1200" y2="110" stroke="${color}" stroke-width="3"/>
 
   <!-- 4 row comparison: 유형 | 여자 | 남자 -->
   <g transform="translate(0, 135)">
     <!-- Column headers -->
     <rect x="80" y="0" width="150" height="38" rx="8" fill="${C.bgSoft}"/>
-    <text x="155" y="24" text-anchor="middle" font-size="13" font-weight="700" fill="${C.textSoft}">유형</text>
+    <text x="155" y="24" text-anchor="middle" font-size="18" font-weight="700" fill="${C.textSoft}">유형</text>
     <rect x="250" y="0" width="420" height="38" rx="8" fill="${C.pinkBg}"/>
-    <text x="460" y="24" text-anchor="middle" font-size="14" font-weight="800" fill="${C.pink700}">♀ 여자 특징</text>
+    <text x="460" y="24" text-anchor="middle" font-size="20" font-weight="800" fill="${C.pink700}">♀ 여자 특징</text>
     <rect x="690" y="0" width="420" height="38" rx="8" fill="${C.blueBg}"/>
-    <text x="900" y="24" text-anchor="middle" font-size="14" font-weight="800" fill="${C.blue700}">♂ 남자 특징</text>
+    <text x="900" y="24" text-anchor="middle" font-size="20" font-weight="800" fill="${C.blue700}">♂ 남자 특징</text>
 
     ${types.map((row, i) => {
       const y = 60 + i * 155;
       return `
       <!-- Type badge -->
       <rect x="80" y="${y}" width="150" height="135" rx="12" fill="${color}"/>
-      <text x="155" y="${y + 52}" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">${row.t}</text>
+      <text x="155" y="${y + 52}" text-anchor="middle" font-size="31" font-weight="800" fill="#fff">${row.t}</text>
       <line x1="100" y1="${y + 68}" x2="210" y2="${y + 68}" stroke="#fff" stroke-width="1" opacity="0.5"/>
-      <text x="155" y="${y + 92}" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" opacity="0.9">${row.code}</text>
-      <text x="155" y="${y + 115}" text-anchor="middle" font-size="10" font-weight="500" fill="#fff" opacity="0.75">${row.label}</text>
+      <text x="155" y="${y + 92}" text-anchor="middle" font-size="15" font-weight="600" fill="#fff" opacity="0.9">${row.code}</text>
+      <text x="155" y="${y + 115}" text-anchor="middle" font-size="14" font-weight="500" fill="#fff" opacity="0.75">${row.label}</text>
 
       <!-- Women column -->
       <rect x="250" y="${y}" width="420" height="135" rx="12" fill="#fff" stroke="${C.pink600}" stroke-width="1.5"/>
-      <text x="270" y="${y + 28}" font-size="15" font-weight="800" fill="${C.pink700}">${row.w.title}</text>
+      <text x="270" y="${y + 28}" font-size="21" font-weight="800" fill="${C.pink700}">${row.w.title}</text>
       ${row.w.traits.map((tr, ti) => `
         <circle cx="278" cy="${y + 56 + ti * 22}" r="3" fill="${C.pink600}"/>
-        <text x="290" y="${y + 60 + ti * 22}" font-size="12" fill="${C.textSoft}">${tr}</text>
+        <text x="290" y="${y + 60 + ti * 22}" font-size="17" fill="${C.textSoft}">${tr}</text>
       `).join('')}
-      <text x="652" y="${y + 125}" text-anchor="end" font-size="11" font-style="italic" fill="${C.pink600}">★ ${row.w.celeb}</text>
+      <text x="652" y="${y + 125}" text-anchor="end" font-size="15" font-style="italic" fill="${C.pink600}">★ ${row.w.celeb}</text>
 
       <!-- Men column -->
       <rect x="690" y="${y}" width="420" height="135" rx="12" fill="#fff" stroke="${C.blue600}" stroke-width="1.5"/>
-      <text x="710" y="${y + 28}" font-size="15" font-weight="800" fill="${C.blue700}">${row.m.title}</text>
+      <text x="710" y="${y + 28}" font-size="21" font-weight="800" fill="${C.blue700}">${row.m.title}</text>
       ${row.m.traits.map((tr, ti) => `
         <circle cx="718" cy="${y + 56 + ti * 22}" r="3" fill="${C.blue600}"/>
-        <text x="730" y="${y + 60 + ti * 22}" font-size="12" fill="${C.textSoft}">${tr}</text>
+        <text x="730" y="${y + 60 + ti * 22}" font-size="17" fill="${C.textSoft}">${tr}</text>
       `).join('')}
-      <text x="1092" y="${y + 125}" text-anchor="end" font-size="11" font-style="italic" fill="${C.blue600}">★ ${row.m.celeb}</text>
+      <text x="1092" y="${y + 125}" text-anchor="end" font-size="15" font-style="italic" fill="${C.blue600}">★ ${row.m.celeb}</text>
       `;
     }).join('')}
   </g>
@@ -246,17 +246,17 @@ function summary() {
   const colorMap = { NT: C.nt600, NF: C.nf600, SJ: C.sj600, SP: C.sp600 };
   const bgMap = { NT: C.nt50, NF: C.nf50, SJ: C.sj50, SP: C.sp50 };
   return wrap(`
-  <text x="600" y="56" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">16유형 × 여자·남자 한눈 요약</text>
-  <text x="600" y="86" text-anchor="middle" font-size="14" font-weight="500" fill="${C.textMuted}">각 유형의 성별별 핵심 매력 포인트</text>
+  <text x="600" y="56" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">16유형 × 여자·남자 한눈 요약</text>
+  <text x="600" y="86" text-anchor="middle" font-size="20" font-weight="500" fill="${C.textMuted}">각 유형의 성별별 핵심 매력 포인트</text>
 
   <!-- Column headers -->
   <g transform="translate(0, 110)">
     <rect x="60" y="0" width="100" height="32" rx="6" fill="${C.bgSoft}"/>
-    <text x="110" y="21" text-anchor="middle" font-size="12" font-weight="700" fill="${C.textSoft}">유형</text>
+    <text x="110" y="21" text-anchor="middle" font-size="17" font-weight="700" fill="${C.textSoft}">유형</text>
     <rect x="170" y="0" width="480" height="32" rx="6" fill="${C.pinkBg}"/>
-    <text x="410" y="21" text-anchor="middle" font-size="13" font-weight="800" fill="${C.pink700}">♀ 여자</text>
+    <text x="410" y="21" text-anchor="middle" font-size="18" font-weight="800" fill="${C.pink700}">♀ 여자</text>
     <rect x="660" y="0" width="480" height="32" rx="6" fill="${C.blueBg}"/>
-    <text x="900" y="21" text-anchor="middle" font-size="13" font-weight="800" fill="${C.blue700}">♂ 남자</text>
+    <text x="900" y="21" text-anchor="middle" font-size="18" font-weight="800" fill="${C.blue700}">♂ 남자</text>
   </g>
 
   <!-- 16 rows -->
@@ -266,22 +266,22 @@ function summary() {
     return `
       <rect x="30" y="${y - 21}" width="1140" height="40" fill="${stripe}"/>
       <circle cx="85" cy="${y - 1}" r="8" fill="${colorMap[d.g]}"/>
-      <text x="110" y="${y + 4}" font-size="14" font-weight="800" fill="${colorMap[d.g]}">${d.t}</text>
-      <text x="180" y="${y + 4}" font-size="12" fill="${C.textSoft}">${d.w}</text>
-      <text x="670" y="${y + 4}" font-size="12" fill="${C.textSoft}">${d.m}</text>
+      <text x="110" y="${y + 4}" font-size="20" font-weight="800" fill="${colorMap[d.g]}">${d.t}</text>
+      <text x="180" y="${y + 4}" font-size="17" fill="${C.textSoft}">${d.w}</text>
+      <text x="670" y="${y + 4}" font-size="17" fill="${C.textSoft}">${d.m}</text>
     `;
   }).join('')}
 
   <!-- Legend -->
   <g transform="translate(150, 845)">
     <circle cx="10" cy="12" r="7" fill="${C.nt600}"/>
-    <text x="24" y="16" font-size="11" font-weight="600" fill="${C.textSoft}">NT 분석가형</text>
+    <text x="24" y="16" font-size="15" font-weight="600" fill="${C.textSoft}">NT 분석가형</text>
     <circle cx="160" cy="12" r="7" fill="${C.nf600}"/>
-    <text x="174" y="16" font-size="11" font-weight="600" fill="${C.textSoft}">NF 이상주의형</text>
+    <text x="174" y="16" font-size="15" font-weight="600" fill="${C.textSoft}">NF 이상주의형</text>
     <circle cx="325" cy="12" r="7" fill="${C.sj600}"/>
-    <text x="339" y="16" font-size="11" font-weight="600" fill="${C.textSoft}">SJ 관리자형</text>
+    <text x="339" y="16" font-size="15" font-weight="600" fill="${C.textSoft}">SJ 관리자형</text>
     <circle cx="475" cy="12" r="7" fill="${C.sp600}"/>
-    <text x="489" y="16" font-size="11" font-weight="600" fill="${C.textSoft}">SP 기회포착형</text>
+    <text x="489" y="16" font-size="15" font-weight="600" fill="${C.textSoft}">SP 기회포착형</text>
   </g>
   `);
 }

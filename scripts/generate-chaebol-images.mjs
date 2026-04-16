@@ -92,8 +92,8 @@ function chaebolCards() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">한국 4대 재벌 총수 MBTI 추정</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">공개 인터뷰 · 행보 · 의사결정 패턴 기반 · 2026년 기준</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">한국 4대 재벌 총수 MBTI 추정</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">공개 인터뷰 · 행보 · 의사결정 패턴 기반 · 2026년 기준</text>
 
   ${ceos.map((c, i) => {
     const col = i % 2;
@@ -105,26 +105,26 @@ function chaebolCards() {
         <rect width="540" height="350" rx="22" fill="#ffffff" stroke="${c.color}" stroke-width="2"/>
         <rect width="8" height="350" rx="4" fill="${c.color}"/>
 
-        <text x="30" y="50" font-size="28" font-weight="900" fill="${c.color}">${c.name}</text>
-        <text x="30" y="78" font-size="14" font-weight="700" fill="${C.textMuted}">${c.company}</text>
+        <text x="30" y="50" font-size="39" font-weight="900" fill="${c.color}">${c.name}</text>
+        <text x="30" y="78" font-size="20" font-weight="700" fill="${C.textMuted}">${c.company}</text>
 
         <g transform="translate(400, 25)">
           <rect width="110" height="40" rx="20" fill="${c.color}"/>
-          <text x="55" y="28" text-anchor="middle" font-size="18" font-weight="900" fill="#fff">${c.mbti}</text>
+          <text x="55" y="28" text-anchor="middle" font-size="25" font-weight="900" fill="#fff">${c.mbti}</text>
         </g>
-        <text x="455" y="78" text-anchor="middle" font-size="12" font-weight="600" fill="${C.textMuted}">${c.func}</text>
+        <text x="455" y="78" text-anchor="middle" font-size="17" font-weight="600" fill="${C.textMuted}">${c.func}</text>
 
-        <text x="30" y="130" font-size="13" font-weight="800" fill="${c.color}">경영 스타일</text>
-        <text x="30" y="155" font-size="14" font-weight="600" fill="${C.textSoft}">${c.style}</text>
+        <text x="30" y="130" font-size="18" font-weight="800" fill="${c.color}">경영 스타일</text>
+        <text x="30" y="155" font-size="20" font-weight="600" fill="${C.textSoft}">${c.style}</text>
 
-        <text x="30" y="195" font-size="13" font-weight="800" fill="${c.color}">대표 특징</text>
-        <text x="30" y="220" font-size="14" font-weight="600" fill="${C.textSoft}">${c.known}</text>
+        <text x="30" y="195" font-size="18" font-weight="800" fill="${c.color}">대표 특징</text>
+        <text x="30" y="220" font-size="20" font-weight="600" fill="${C.textSoft}">${c.known}</text>
 
-        <text x="30" y="260" font-size="13" font-weight="800" fill="${c.color}">전략 포커스</text>
-        <text x="30" y="285" font-size="14" font-weight="600" fill="${C.textSoft}">${c.strategy}</text>
+        <text x="30" y="260" font-size="18" font-weight="800" fill="${c.color}">전략 포커스</text>
+        <text x="30" y="285" font-size="20" font-weight="600" fill="${C.textSoft}">${c.strategy}</text>
 
         <rect x="20" y="310" width="500" height="25" rx="10" fill="${c.color}" opacity="0.08"/>
-        <text x="270" y="327" text-anchor="middle" font-size="11" font-weight="700" fill="${c.color}">💡 한국 재벌 = NT 중심(INTJ·ENTJ·ENTP)</text>
+        <text x="270" y="327" text-anchor="middle" font-size="15" font-weight="700" fill="${c.color}">💡 한국 재벌 = NT 중심(INTJ·ENTJ·ENTP)</text>
       </g>
     `;
   }).join('')}
@@ -139,41 +139,41 @@ function koreaDistribution() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">한국 재벌 MBTI 분포 (4대 그룹)</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">100% NT 분석가형 · 세계 부자 80% NT와 동일한 패턴</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">한국 재벌 MBTI 분포 (4대 그룹)</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">100% NT 분석가형 · 세계 부자 80% NT와 동일한 패턴</text>
 
   ${dist.map((d, i) => {
     const y = 180 + i * 180;
     const barW = (d.count / 2) * 600;
     return `
       <g transform="translate(200, ${y})">
-        <text x="0" y="50" font-size="28" font-weight="900" fill="${d.color}">${d.mbti}</text>
+        <text x="0" y="50" font-size="39" font-weight="900" fill="${d.color}">${d.mbti}</text>
         <rect x="140" y="22" width="${barW}" height="60" rx="30" fill="${d.color}" opacity="0.25"/>
         <rect x="140" y="22" width="${barW}" height="60" rx="30" fill="${d.color}" opacity="0.85"/>
-        <text x="${150 + barW}" y="60" font-size="24" font-weight="900" fill="${d.color}">${d.count}명</text>
-        <text x="${150 + barW + 70}" y="60" font-size="16" font-weight="700" fill="${C.textMuted}">${d.pct}%</text>
+        <text x="${150 + barW}" y="60" font-size="34" font-weight="900" fill="${d.color}">${d.count}명</text>
+        <text x="${150 + barW + 70}" y="60" font-size="22" font-weight="700" fill="${C.textMuted}">${d.pct}%</text>
       </g>
     `;
   }).join('')}
 
   <rect x="100" y="770" width="1000" height="90" rx="16" fill="${C.koreaSoft}" stroke="${C.korea}"/>
-  <text x="600" y="805" text-anchor="middle" font-size="15" font-weight="900" fill="${C.korea}">🔥 한국 재벌 공통 인지기능</text>
-  <text x="600" y="830" text-anchor="middle" font-size="14" font-weight="700" fill="${C.text}">Ni(장기 비전) + Te(효율 실행) → 세계 부자 TOP 10과 동일 공식</text>
-  <text x="600" y="852" text-anchor="middle" font-size="12" font-weight="500" fill="${C.textMuted}">단, 한국 특유 "가족 경영 승계 + 집단 조직 문화"가 변수로 추가</text>
+  <text x="600" y="805" text-anchor="middle" font-size="21" font-weight="900" fill="${C.korea}">🔥 한국 재벌 공통 인지기능</text>
+  <text x="600" y="830" text-anchor="middle" font-size="20" font-weight="700" fill="${C.text}">Ni(장기 비전) + Te(효율 실행) → 세계 부자 TOP 10과 동일 공식</text>
+  <text x="600" y="852" text-anchor="middle" font-size="17" font-weight="500" fill="${C.textMuted}">단, 한국 특유 "가족 경영 승계 + 집단 조직 문화"가 변수로 추가</text>
   `);
 }
 
 function globalVsKorea() {
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">글로벌 부자 vs 한국 재벌 — 차이점</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">둘 다 NT 공통이지만 환경 변수가 완전 다른 행동 유도</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">글로벌 부자 vs 한국 재벌 — 차이점</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">둘 다 NT 공통이지만 환경 변수가 완전 다른 행동 유도</text>
 
   <!-- Left: Global -->
   <g transform="translate(60, 130)">
     <rect width="520" height="700" rx="22" fill="#ffffff" stroke="#6b7280" stroke-width="2"/>
     <rect width="8" height="700" rx="4" fill="#6b7280"/>
-    <text x="30" y="50" font-size="24" font-weight="900" fill="#374151">글로벌 부자 (머스크·베조스)</text>
-    <text x="30" y="80" font-size="13" font-weight="700" fill="${C.textMuted}">1세대 창업 · 개인 카리스마 · 공격적 공개 소통</text>
+    <text x="30" y="50" font-size="34" font-weight="900" fill="#374151">글로벌 부자 (머스크·베조스)</text>
+    <text x="30" y="80" font-size="18" font-weight="700" fill="${C.textMuted}">1세대 창업 · 개인 카리스마 · 공격적 공개 소통</text>
 
     ${[
       { t: '📍 시작점', d: '0에서 창업 · 개인 리스크 100%' },
@@ -185,8 +185,8 @@ function globalVsKorea() {
       { t: '⚠️ 리스크', d: '개인 번아웃 · 관계 악화' },
     ].map((x, i) => `
       <g transform="translate(30, ${130 + i * 80})">
-        <text x="0" y="0" font-size="15" font-weight="800" fill="${C.text}">${x.t}</text>
-        <text x="0" y="28" font-size="13" font-weight="500" fill="${C.textSoft}">${x.d}</text>
+        <text x="0" y="0" font-size="21" font-weight="800" fill="${C.text}">${x.t}</text>
+        <text x="0" y="28" font-size="18" font-weight="500" fill="${C.textSoft}">${x.d}</text>
       </g>
     `).join('')}
   </g>
@@ -195,8 +195,8 @@ function globalVsKorea() {
   <g transform="translate(620, 130)">
     <rect width="520" height="700" rx="22" fill="#ffffff" stroke="${C.korea}" stroke-width="2"/>
     <rect width="8" height="700" rx="4" fill="${C.korea}"/>
-    <text x="30" y="50" font-size="24" font-weight="900" fill="${C.korea}">한국 재벌 (이재용·정의선)</text>
-    <text x="30" y="80" font-size="13" font-weight="700" fill="${C.textMuted}">3~4세대 승계 · 집단 조직 · 신중 공개 소통</text>
+    <text x="30" y="50" font-size="34" font-weight="900" fill="${C.korea}">한국 재벌 (이재용·정의선)</text>
+    <text x="30" y="80" font-size="18" font-weight="700" fill="${C.textMuted}">3~4세대 승계 · 집단 조직 · 신중 공개 소통</text>
 
     ${[
       { t: '📍 시작점', d: '그룹 승계 · 1조+ 자산 상속' },
@@ -208,8 +208,8 @@ function globalVsKorea() {
       { t: '⚠️ 리스크', d: '승계 논란 · 사법 리스크 · 세대 차이' },
     ].map((x, i) => `
       <g transform="translate(30, ${130 + i * 80})">
-        <text x="0" y="0" font-size="15" font-weight="800" fill="${C.text}">${x.t}</text>
-        <text x="0" y="28" font-size="13" font-weight="500" fill="${C.textSoft}">${x.d}</text>
+        <text x="0" y="0" font-size="21" font-weight="800" fill="${C.text}">${x.t}</text>
+        <text x="0" y="28" font-size="18" font-weight="500" fill="${C.textSoft}">${x.d}</text>
       </g>
     `).join('')}
   </g>
@@ -234,8 +234,8 @@ function koreaContext() {
   const lvColor = { LOW: '#16a34a', MID: '#f59e0b', HIGH: '#dc2626' };
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">한국 재벌의 특수 환경 변수</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">글로벌 부자와 다른 6가지 변수 · 같은 NT여도 행동 달라지는 이유</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">한국 재벌의 특수 환경 변수</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">글로벌 부자와 다른 6가지 변수 · 같은 NT여도 행동 달라지는 이유</text>
 
   ${factors.map((f, i) => {
     const y = 120 + i * 120;
@@ -244,14 +244,14 @@ function koreaContext() {
         <rect width="1080" height="105" rx="18" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="105" rx="4" fill="${f.color}"/>
 
-        <text x="40" y="35" font-size="18" font-weight="900" fill="${f.color}">${f.name}</text>
+        <text x="40" y="35" font-size="25" font-weight="900" fill="${f.color}">${f.name}</text>
         <g transform="translate(40, 48)">
           <rect width="65" height="24" rx="12" fill="${lvColor[f.level]}"/>
-          <text x="32" y="17" text-anchor="middle" font-size="12" font-weight="900" fill="#fff">${f.level}</text>
+          <text x="32" y="17" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">${f.level}</text>
         </g>
 
-        <text x="130" y="65" font-size="14" font-weight="700" fill="${C.textSoft}">${f.what}</text>
-        <text x="130" y="88" font-size="12" font-weight="500" fill="${C.textMuted}">→ ${f.impact}</text>
+        <text x="130" y="65" font-size="20" font-weight="700" fill="${C.textSoft}">${f.what}</text>
+        <text x="130" y="88" font-size="17" font-weight="500" fill="${C.textMuted}">→ ${f.impact}</text>
       </g>
     `;
   }).join('')}
@@ -300,8 +300,8 @@ function applyGuide() {
   const w = 520, h = 340;
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">한국 사회 맞춤 유형별 커리어 가이드</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">글로벌 공식과 다른 한국 특수 환경에 맞는 전략</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">한국 사회 맞춤 유형별 커리어 가이드</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">글로벌 공식과 다른 한국 특수 환경에 맞는 전략</text>
 
   ${positions.map((p, i) => {
     const g = groups[i];
@@ -309,10 +309,10 @@ function applyGuide() {
       <g transform="translate(${p.x},${p.y})">
         <rect width="${w}" height="${h}" rx="18" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="${h}" rx="4" fill="${g.color}"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="${C.textMuted}">${g.types}</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="${C.textMuted}">${g.types}</text>
         ${g.items.map((it, j) => `
-          <text x="28" y="${115 + j * 52}" font-size="13" font-weight="600" fill="${C.textSoft}">${it}</text>
+          <text x="28" y="${115 + j * 52}" font-size="18" font-weight="600" fill="${C.textSoft}">${it}</text>
         `).join('')}
       </g>
     `;

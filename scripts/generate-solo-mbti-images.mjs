@@ -95,12 +95,12 @@ function ranking() {
   const rowH = 40;
   const rowY = (r) => 150 + (r - 1) * rowH;
   return wrap(`
-  <text x="600" y="58" text-anchor="middle" font-size="34" font-weight="800" fill="${C.text}">혼자 잘 노는 MBTI 순위</text>
-  <text x="600" y="90" text-anchor="middle" font-size="15" font-weight="500" fill="${C.textMuted}">16유형 솔로 적응력 점수 · 내향성 × 몰입력 × 자기완결성</text>
+  <text x="600" y="58" text-anchor="middle" font-size="48" font-weight="800" fill="${C.text}">혼자 잘 노는 MBTI 순위</text>
+  <text x="600" y="90" text-anchor="middle" font-size="21" font-weight="500" fill="${C.textMuted}">16유형 솔로 적응력 점수 · 내향성 × 몰입력 × 자기완결성</text>
   <!-- grid -->
   ${[20, 40, 60, 80, 100].map(v => `
     <line x1="${barX + (v * barMax / 100)}" y1="130" x2="${barX + (v * barMax / 100)}" y2="790" stroke="${C.border}" stroke-width="1" stroke-dasharray="3 3"/>
-    <text x="${barX + (v * barMax / 100)}" y="125" text-anchor="middle" font-size="10" fill="${C.textFaint}" font-weight="500">${v}</text>
+    <text x="${barX + (v * barMax / 100)}" y="125" text-anchor="middle" font-size="14" fill="${C.textFaint}" font-weight="500">${v}</text>
   `).join('')}
   ${data.map(d => {
     const w = d.s * barMax / 100;
@@ -110,26 +110,26 @@ function ranking() {
     return `
     <g>
       <text x="50" y="${rowY(d.r) + 6}" font-size="${isTop3 ? 18 : 16}" font-weight="${isTop3 ? 800 : 700}" fill="${C.text}">${d.r}</text>
-      ${d.r === 1 ? `<circle cx="100" cy="${rowY(d.r)}" r="14" fill="${C.gold}" stroke="#d97706" stroke-width="2"/><text x="100" y="${rowY(d.r) + 5}" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">金</text>` : ''}
-      ${d.r === 2 ? `<circle cx="100" cy="${rowY(d.r)}" r="14" fill="#d1d5db" stroke="${C.silver}" stroke-width="2"/><text x="100" y="${rowY(d.r) + 5}" text-anchor="middle" font-size="12" font-weight="800" fill="#374151">銀</text>` : ''}
-      ${d.r === 3 ? `<circle cx="100" cy="${rowY(d.r)}" r="14" fill="${C.bronze}" stroke="#92400e" stroke-width="2"/><text x="100" y="${rowY(d.r) + 5}" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">銅</text>` : ''}
+      ${d.r === 1 ? `<circle cx="100" cy="${rowY(d.r)}" r="14" fill="${C.gold}" stroke="#d97706" stroke-width="2"/><text x="100" y="${rowY(d.r) + 5}" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">金</text>` : ''}
+      ${d.r === 2 ? `<circle cx="100" cy="${rowY(d.r)}" r="14" fill="#d1d5db" stroke="${C.silver}" stroke-width="2"/><text x="100" y="${rowY(d.r) + 5}" text-anchor="middle" font-size="17" font-weight="800" fill="#374151">銀</text>` : ''}
+      ${d.r === 3 ? `<circle cx="100" cy="${rowY(d.r)}" r="14" fill="${C.bronze}" stroke="#92400e" stroke-width="2"/><text x="100" y="${rowY(d.r) + 5}" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">銅</text>` : ''}
       <text x="135" y="${rowY(d.r) + 6}" font-size="${isTop3 ? 16 : 15}" font-weight="700" fill="${d.c}">${d.t}</text>
-      <text x="200" y="${rowY(d.r) + 6}" font-size="11" fill="${C.textMuted}">${d.d}</text>
+      <text x="200" y="${rowY(d.r) + 6}" font-size="15" fill="${C.textMuted}">${d.d}</text>
       <rect x="${barX}" y="${rowY(d.r) - yOff}" width="${w}" height="${h}" rx="${h/2}" fill="${d.c}"/>
       <text x="${barX + w + 18}" y="${rowY(d.r) + 6}" font-size="${isTop3 ? 16 : 14}" font-weight="${isTop3 ? 800 : 700}" fill="${d.c}">${d.s}</text>
     </g>`;
   }).join('')}
   <!-- Divider I/E -->
   <line x1="30" y1="475" x2="1170" y2="475" stroke="${C.textFaint}" stroke-width="1" stroke-dasharray="6 4"/>
-  <text x="60" y="470" font-size="10" font-weight="600" fill="${C.textMuted}">▲ 내향형(I) · 혼자도 충전되는 유형</text>
-  <text x="60" y="492" font-size="10" font-weight="600" fill="${C.textFaint}">▼ 외향형(E) · 혼자 있으면 방전되는 유형</text>
+  <text x="60" y="470" font-size="14" font-weight="600" fill="${C.textMuted}">▲ 내향형(I) · 혼자도 충전되는 유형</text>
+  <text x="60" y="492" font-size="14" font-weight="600" fill="${C.textFaint}">▼ 외향형(E) · 혼자 있으면 방전되는 유형</text>
   <!-- Legend -->
   <g transform="translate(150, 822)">
     <rect x="0" y="0" width="900" height="56" fill="${C.card}" stroke="${C.border}" stroke-width="1" rx="8"/>
-    <circle cx="35" cy="28" r="9" fill="${C.nt600}"/><text x="52" y="32" font-size="12" font-weight="600" fill="${C.textSoft}">NT · 분석가형</text>
-    <circle cx="215" cy="28" r="9" fill="${C.nf600}"/><text x="232" y="32" font-size="12" font-weight="600" fill="${C.textSoft}">NF · 이상주의형</text>
-    <circle cx="410" cy="28" r="9" fill="${C.sj600}"/><text x="427" y="32" font-size="12" font-weight="600" fill="${C.textSoft}">SJ · 관리자형</text>
-    <circle cx="595" cy="28" r="9" fill="${C.sp600}"/><text x="612" y="32" font-size="12" font-weight="600" fill="${C.textSoft}">SP · 기회포착형</text>
+    <circle cx="35" cy="28" r="9" fill="${C.nt600}"/><text x="52" y="32" font-size="17" font-weight="600" fill="${C.textSoft}">NT · 분석가형</text>
+    <circle cx="215" cy="28" r="9" fill="${C.nf600}"/><text x="232" y="32" font-size="17" font-weight="600" fill="${C.textSoft}">NF · 이상주의형</text>
+    <circle cx="410" cy="28" r="9" fill="${C.sj600}"/><text x="427" y="32" font-size="17" font-weight="600" fill="${C.textSoft}">SJ · 관리자형</text>
+    <circle cx="595" cy="28" r="9" fill="${C.sp600}"/><text x="612" y="32" font-size="17" font-weight="600" fill="${C.textSoft}">SP · 기회포착형</text>
   </g>
   `);
 }
@@ -161,8 +161,8 @@ function top3Cards() {
   const cardW = 340, cardH = 580, gap = 40;
   const startX = (1200 - (cardW * 3 + gap * 2)) / 2;
   return wrap(`
-  <text x="600" y="58" text-anchor="middle" font-size="32" font-weight="800" fill="${C.text}">TOP 3 · 혼자 노는 왕들</text>
-  <text x="600" y="90" text-anchor="middle" font-size="15" font-weight="500" fill="${C.textMuted}">금·은·동 메달리스트 상세 프로필</text>
+  <text x="600" y="58" text-anchor="middle" font-size="45" font-weight="800" fill="${C.text}">TOP 3 · 혼자 노는 왕들</text>
+  <text x="600" y="90" text-anchor="middle" font-size="21" font-weight="500" fill="${C.textMuted}">금·은·동 메달리스트 상세 프로필</text>
   ${cards.map((k, i) => {
     const x = startX + i * (cardW + gap);
     const y = 140;
@@ -174,25 +174,25 @@ function top3Cards() {
       <rect x="${x}" y="${y + 60}" width="${cardW}" height="20" fill="${k.cSoft}"/>
       <!-- Medal -->
       <circle cx="${x + 60}" cy="${y + 42}" r="26" fill="${k.medalColor}" stroke="${k.medalStroke}" stroke-width="3"/>
-      <text x="${x + 60}" y="${y + 50}" text-anchor="middle" font-size="22" font-weight="800" fill="${k.medalTextColor}">${k.medal}</text>
-      <text x="${x + 100}" y="${y + 38}" font-size="12" font-weight="600" fill="${C.textMuted}" letter-spacing="2">RANK ${k.rank}</text>
-      <text x="${x + 100}" y="${y + 62}" font-size="26" font-weight="800" fill="${k.cDeep}">${k.type}</text>
+      <text x="${x + 60}" y="${y + 50}" text-anchor="middle" font-size="31" font-weight="800" fill="${k.medalTextColor}">${k.medal}</text>
+      <text x="${x + 100}" y="${y + 38}" font-size="17" font-weight="600" fill="${C.textMuted}" letter-spacing="2">RANK ${k.rank}</text>
+      <text x="${x + 100}" y="${y + 62}" font-size="36" font-weight="800" fill="${k.cDeep}">${k.type}</text>
       <!-- Name -->
-      <text x="${x + cardW/2}" y="${y + 130}" text-anchor="middle" font-size="18" font-weight="700" fill="${C.text}">${k.name}</text>
+      <text x="${x + cardW/2}" y="${y + 130}" text-anchor="middle" font-size="25" font-weight="700" fill="${C.text}">${k.name}</text>
       <!-- Score -->
       <text x="${x + cardW/2}" y="${y + 195}" text-anchor="middle" font-size="64" font-weight="800" fill="${k.c}">${k.score}</text>
-      <text x="${x + cardW/2}" y="${y + 220}" text-anchor="middle" font-size="12" font-weight="500" fill="${C.textMuted}">솔로 적응력 점수 / 100</text>
+      <text x="${x + cardW/2}" y="${y + 220}" text-anchor="middle" font-size="17" font-weight="500" fill="${C.textMuted}">솔로 적응력 점수 / 100</text>
       <!-- Tags -->
-      <text x="${x + 25}" y="${y + 270}" font-size="11" font-weight="700" fill="${C.textMuted}" letter-spacing="2">핵심 성향</text>
+      <text x="${x + 25}" y="${y + 270}" font-size="15" font-weight="700" fill="${C.textMuted}" letter-spacing="2">핵심 성향</text>
       ${k.tags.map((tag, j) => `
         <rect x="${x + 25}" y="${y + 285 + j * 34}" width="${cardW - 50}" height="26" rx="13" fill="${k.cSoft}"/>
-        <text x="${x + cardW/2}" y="${y + 302 + j * 34}" text-anchor="middle" font-size="12" font-weight="600" fill="${k.cDeep}">${tag}</text>
+        <text x="${x + cardW/2}" y="${y + 302 + j * 34}" text-anchor="middle" font-size="17" font-weight="600" fill="${k.cDeep}">${tag}</text>
       `).join('')}
       <!-- Activities -->
-      <text x="${x + 25}" y="${y + 430}" font-size="11" font-weight="700" fill="${C.textMuted}" letter-spacing="2">추천 혼놀 활동</text>
+      <text x="${x + 25}" y="${y + 430}" font-size="15" font-weight="700" fill="${C.textMuted}" letter-spacing="2">추천 혼놀 활동</text>
       ${k.activities.map((act, j) => `
         <circle cx="${x + 32}" cy="${y + 455 + j * 30}" r="4" fill="${k.c}"/>
-        <text x="${x + 45}" y="${y + 459 + j * 30}" font-size="13" font-weight="500" fill="${C.textSoft}">${act}</text>
+        <text x="${x + 45}" y="${y + 459 + j * 30}" font-size="18" font-weight="500" fill="${C.textSoft}">${act}</text>
       `).join('')}
     </g>`;
   }).join('')}
@@ -226,31 +226,31 @@ function temperamentDonut() {
     return { ...d, path: `M ${x1} ${y1} A ${r} ${r} 0 ${large} 1 ${x2} ${y2}`, labelX, labelY, pct: Math.round(frac * 100) };
   });
   return wrap(`
-  <text x="600" y="58" text-anchor="middle" font-size="32" font-weight="800" fill="${C.text}">4기질별 평균 점수</text>
-  <text x="600" y="90" text-anchor="middle" font-size="15" font-weight="500" fill="${C.textMuted}">혼자 놀기 능력은 기질마다 뚜렷하게 갈린다</text>
+  <text x="600" y="58" text-anchor="middle" font-size="45" font-weight="800" fill="${C.text}">4기질별 평균 점수</text>
+  <text x="600" y="90" text-anchor="middle" font-size="21" font-weight="500" fill="${C.textMuted}">혼자 놀기 능력은 기질마다 뚜렷하게 갈린다</text>
   ${segs.map(s => `
     <path d="${s.path}" fill="none" stroke="${s.c}" stroke-width="${stroke}" stroke-linecap="butt"/>
   `).join('')}
   <!-- center text -->
-  <text x="${cx}" y="${cy - 10}" text-anchor="middle" font-size="15" font-weight="600" fill="${C.textMuted}">16유형 평균</text>
+  <text x="${cx}" y="${cy - 10}" text-anchor="middle" font-size="21" font-weight="600" fill="${C.textMuted}">16유형 평균</text>
   <text x="${cx}" y="${cy + 30}" text-anchor="middle" font-size="56" font-weight="800" fill="${C.text}">61</text>
-  <text x="${cx}" y="${cy + 55}" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textFaint}">/ 100점</text>
+  <text x="${cx}" y="${cy + 55}" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textFaint}">/ 100점</text>
   <!-- labels -->
   ${segs.map(s => `
-    <text x="${s.labelX}" y="${s.labelY - 8}" text-anchor="middle" font-size="18" font-weight="800" fill="${s.c}">${s.g}</text>
-    <text x="${s.labelX}" y="${s.labelY + 12}" text-anchor="middle" font-size="11" font-weight="600" fill="${C.textSoft}">${s.label}</text>
-    <text x="${s.labelX}" y="${s.labelY + 30}" text-anchor="middle" font-size="20" font-weight="800" fill="${C.text}">${s.avg}</text>
+    <text x="${s.labelX}" y="${s.labelY - 8}" text-anchor="middle" font-size="25" font-weight="800" fill="${s.c}">${s.g}</text>
+    <text x="${s.labelX}" y="${s.labelY + 12}" text-anchor="middle" font-size="15" font-weight="600" fill="${C.textSoft}">${s.label}</text>
+    <text x="${s.labelX}" y="${s.labelY + 30}" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">${s.avg}</text>
   `).join('')}
   <!-- bottom ranking bar -->
   <g transform="translate(240, 770)">
     <rect x="0" y="0" width="720" height="80" rx="12" fill="${C.card}" stroke="${C.border}"/>
-    <text x="360" y="25" text-anchor="middle" font-size="12" font-weight="700" fill="${C.textMuted}" letter-spacing="3">혼자 놀기 기질 순위</text>
+    <text x="360" y="25" text-anchor="middle" font-size="17" font-weight="700" fill="${C.textMuted}" letter-spacing="3">혼자 놀기 기질 순위</text>
     ${segs.sort((a,b) => b.avg - a.avg).map((s, i) => `
       <g transform="translate(${60 + i * 150}, 40)">
-        <text x="0" y="0" font-size="16" font-weight="800" fill="${C.textFaint}">${i + 1}</text>
+        <text x="0" y="0" font-size="22" font-weight="800" fill="${C.textFaint}">${i + 1}</text>
         <circle cx="25" cy="-5" r="8" fill="${s.c}"/>
-        <text x="40" y="0" font-size="14" font-weight="700" fill="${s.c}">${s.g}</text>
-        <text x="75" y="0" font-size="14" font-weight="700" fill="${C.text}">${s.avg}점</text>
+        <text x="40" y="0" font-size="20" font-weight="700" fill="${s.c}">${s.g}</text>
+        <text x="75" y="0" font-size="20" font-weight="700" fill="${C.text}">${s.avg}점</text>
       </g>
     `).join('')}
   </g>
@@ -277,19 +277,19 @@ function energyCurve() {
   }
   const path = (pts) => pts.map((p, i) => `${i === 0 ? 'M' : 'L'} ${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(' ');
   return wrap(`
-  <text x="600" y="58" text-anchor="middle" font-size="32" font-weight="800" fill="${C.text}">I형 vs E형 · 혼자 있을 때 에너지 변화</text>
-  <text x="600" y="90" text-anchor="middle" font-size="15" font-weight="500" fill="${C.textMuted}">시간이 지날수록 완전히 반대로 가는 에너지 곡선</text>
+  <text x="600" y="58" text-anchor="middle" font-size="45" font-weight="800" fill="${C.text}">I형 vs E형 · 혼자 있을 때 에너지 변화</text>
+  <text x="600" y="90" text-anchor="middle" font-size="21" font-weight="500" fill="${C.textMuted}">시간이 지날수록 완전히 반대로 가는 에너지 곡선</text>
   <!-- grid -->
   ${[0, 25, 50, 75, 100].map(v => `
     <line x1="${ox}" y1="${oy + h - (v/100) * h}" x2="${ox + w}" y2="${oy + h - (v/100) * h}" stroke="${C.border}" stroke-dasharray="3 3"/>
-    <text x="${ox - 12}" y="${oy + h - (v/100) * h + 4}" text-anchor="end" font-size="11" fill="${C.textFaint}" font-weight="500">${v}%</text>
+    <text x="${ox - 12}" y="${oy + h - (v/100) * h + 4}" text-anchor="end" font-size="15" fill="${C.textFaint}" font-weight="500">${v}%</text>
   `).join('')}
   ${[0, 6, 12, 18, 24].map(t => `
-    <text x="${ox + (t/24) * w}" y="${oy + h + 24}" text-anchor="middle" font-size="11" fill="${C.textFaint}" font-weight="500">${t}h</text>
+    <text x="${ox + (t/24) * w}" y="${oy + h + 24}" text-anchor="middle" font-size="15" fill="${C.textFaint}" font-weight="500">${t}h</text>
   `).join('')}
   <!-- axis labels -->
-  <text x="${ox - 55}" y="${oy + h/2}" text-anchor="middle" font-size="12" font-weight="600" fill="${C.textSoft}" transform="rotate(-90 ${ox - 55} ${oy + h/2})">에너지 레벨</text>
-  <text x="${ox + w/2}" y="${oy + h + 50}" text-anchor="middle" font-size="12" font-weight="600" fill="${C.textSoft}">혼자 있는 시간 (hour)</text>
+  <text x="${ox - 55}" y="${oy + h/2}" text-anchor="middle" font-size="17" font-weight="600" fill="${C.textSoft}" transform="rotate(-90 ${ox - 55} ${oy + h/2})">에너지 레벨</text>
+  <text x="${ox + w/2}" y="${oy + h + 50}" text-anchor="middle" font-size="17" font-weight="600" fill="${C.textSoft}">혼자 있는 시간 (hour)</text>
   <!-- axis lines -->
   <line x1="${ox}" y1="${oy}" x2="${ox}" y2="${oy + h}" stroke="${C.textFaint}" stroke-width="1.5"/>
   <line x1="${ox}" y1="${oy + h}" x2="${ox + w}" y2="${oy + h}" stroke="${C.textFaint}" stroke-width="1.5"/>
@@ -306,23 +306,23 @@ function energyCurve() {
   <circle cx="${ePoints[ePoints.length-1].x}" cy="${ePoints[ePoints.length-1].y}" r="8" fill="${C.nf600}"/>
   <!-- labels on curves -->
   <rect x="${iPoints[iPoints.length-1].x - 90}" y="${iPoints[iPoints.length-1].y - 48}" width="85" height="32" rx="6" fill="${C.nt600}"/>
-  <text x="${iPoints[iPoints.length-1].x - 47}" y="${iPoints[iPoints.length-1].y - 27}" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">I형 95%</text>
+  <text x="${iPoints[iPoints.length-1].x - 47}" y="${iPoints[iPoints.length-1].y - 27}" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">I형 95%</text>
   <rect x="${ePoints[ePoints.length-1].x - 90}" y="${ePoints[ePoints.length-1].y + 16}" width="85" height="32" rx="6" fill="${C.nf600}"/>
-  <text x="${ePoints[ePoints.length-1].x - 47}" y="${ePoints[ePoints.length-1].y + 37}" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">E형 20%</text>
+  <text x="${ePoints[ePoints.length-1].x - 47}" y="${ePoints[ePoints.length-1].y + 37}" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">E형 20%</text>
   <!-- annotation -->
   <g transform="translate(200, 740)">
     <rect x="0" y="0" width="380" height="120" rx="12" fill="${C.nt50}" stroke="${C.nt600}" stroke-width="1"/>
-    <text x="20" y="30" font-size="14" font-weight="800" fill="${C.nt700}">I형: 혼자 있을수록 충전된다</text>
-    <text x="20" y="54" font-size="12" fill="${C.textSoft}">사색·집중·몰입으로 에너지가 오히려 증가.</text>
-    <text x="20" y="74" font-size="12" fill="${C.textSoft}">8시간 이후 평정 상태 진입.</text>
-    <text x="20" y="100" font-size="11" font-weight="600" fill="${C.nt600}">▶ 혼자놀기 고수 영역</text>
+    <text x="20" y="30" font-size="20" font-weight="800" fill="${C.nt700}">I형: 혼자 있을수록 충전된다</text>
+    <text x="20" y="54" font-size="17" fill="${C.textSoft}">사색·집중·몰입으로 에너지가 오히려 증가.</text>
+    <text x="20" y="74" font-size="17" fill="${C.textSoft}">8시간 이후 평정 상태 진입.</text>
+    <text x="20" y="100" font-size="15" font-weight="600" fill="${C.nt600}">▶ 혼자놀기 고수 영역</text>
   </g>
   <g transform="translate(620, 740)">
     <rect x="0" y="0" width="380" height="120" rx="12" fill="${C.nf50}" stroke="${C.nf600}" stroke-width="1"/>
-    <text x="20" y="30" font-size="14" font-weight="800" fill="${C.nf700}">E형: 혼자 있을수록 방전된다</text>
-    <text x="20" y="54" font-size="12" fill="${C.textSoft}">외부 자극 차단 시 에너지 급격히 감소.</text>
-    <text x="20" y="74" font-size="12" fill="${C.textSoft}">6시간 넘으면 우울감·무기력 발생.</text>
-    <text x="20" y="100" font-size="11" font-weight="600" fill="${C.nf600}">▶ 사교 필수 영역</text>
+    <text x="20" y="30" font-size="20" font-weight="800" fill="${C.nf700}">E형: 혼자 있을수록 방전된다</text>
+    <text x="20" y="54" font-size="17" fill="${C.textSoft}">외부 자극 차단 시 에너지 급격히 감소.</text>
+    <text x="20" y="74" font-size="17" fill="${C.textSoft}">6시간 넘으면 우울감·무기력 발생.</text>
+    <text x="20" y="100" font-size="15" font-weight="600" fill="${C.nf600}">▶ 사교 필수 영역</text>
   </g>
   `);
 }
@@ -345,12 +345,12 @@ function radarChart() {
     return `${i === 0 ? 'M' : 'L'} ${p.x.toFixed(1)} ${p.y.toFixed(1)}`;
   }).join(' ') + ' Z';
   return wrap(`
-  <text x="600" y="58" text-anchor="middle" font-size="32" font-weight="800" fill="${C.text}">솔로 적응력 · 4대 요소 분석</text>
-  <text x="600" y="90" text-anchor="middle" font-size="15" font-weight="500" fill="${C.textMuted}">1위 INTP vs 16위 ESFJ · 모든 축에서 정반대</text>
+  <text x="600" y="58" text-anchor="middle" font-size="45" font-weight="800" fill="${C.text}">솔로 적응력 · 4대 요소 분석</text>
+  <text x="600" y="90" text-anchor="middle" font-size="21" font-weight="500" fill="${C.textMuted}">1위 INTP vs 16위 ESFJ · 모든 축에서 정반대</text>
   <!-- grid circles -->
   ${[25, 50, 75, 100].map(v => `
     <circle cx="${cx}" cy="${cy}" r="${r * v / 100}" fill="none" stroke="${C.border}" stroke-width="1" stroke-dasharray="2 4"/>
-    <text x="${cx + 4}" y="${cy - r * v / 100 + 4}" font-size="10" fill="${C.textFaint}" font-weight="500">${v}</text>
+    <text x="${cx + 4}" y="${cy - r * v / 100 + 4}" font-size="14" fill="${C.textFaint}" font-weight="500">${v}</text>
   `).join('')}
   <!-- axes -->
   ${axes.map((_, i) => {
@@ -372,23 +372,23 @@ function radarChart() {
   <!-- axis labels -->
   ${axes.map((label, i) => {
     const p = pt(i, 128);
-    return `<text x="${p.x}" y="${p.y + 4}" text-anchor="middle" font-size="16" font-weight="800" fill="${C.text}">${label}</text>`;
+    return `<text x="${p.x}" y="${p.y + 4}" text-anchor="middle" font-size="22" font-weight="800" fill="${C.text}">${label}</text>`;
   }).join('')}
   <!-- value labels for INTP -->
   ${intp.map((v, i) => {
     const p = pt(i, v);
     const offset = i === 0 ? -18 : i === 2 ? 18 : 0;
-    return `<text x="${p.x}" y="${p.y + offset}" text-anchor="middle" font-size="12" font-weight="700" fill="${C.nt700}">${v}</text>`;
+    return `<text x="${p.x}" y="${p.y + offset}" text-anchor="middle" font-size="17" font-weight="700" fill="${C.nt700}">${v}</text>`;
   }).join('')}
   <!-- Legend -->
   <g transform="translate(240, 790)">
     <rect x="0" y="0" width="720" height="70" rx="12" fill="${C.card}" stroke="${C.border}"/>
     <rect x="30" y="25" width="30" height="18" fill="${C.nt600}" fill-opacity="0.22" stroke="${C.nt600}" stroke-width="2"/>
-    <text x="75" y="30" font-size="14" font-weight="800" fill="${C.nt700}">INTP</text>
-    <text x="75" y="52" font-size="11" font-weight="500" fill="${C.textMuted}">혼자놀기 1위 · 평균 94점</text>
+    <text x="75" y="30" font-size="20" font-weight="800" fill="${C.nt700}">INTP</text>
+    <text x="75" y="52" font-size="15" font-weight="500" fill="${C.textMuted}">혼자놀기 1위 · 평균 94점</text>
     <rect x="400" y="25" width="30" height="18" fill="${C.nf600}" fill-opacity="0.18" stroke="${C.nf600}" stroke-width="2" stroke-dasharray="4 2"/>
-    <text x="445" y="30" font-size="14" font-weight="800" fill="${C.nf700}">ESFJ</text>
-    <text x="445" y="52" font-size="11" font-weight="500" fill="${C.textMuted}">혼자놀기 16위 · 평균 29점</text>
+    <text x="445" y="30" font-size="20" font-weight="800" fill="${C.nf700}">ESFJ</text>
+    <text x="445" y="52" font-size="15" font-weight="500" fill="${C.textMuted}">혼자놀기 16위 · 평균 29점</text>
   </g>
   `);
 }
@@ -417,25 +417,25 @@ function levelsPyramid() {
     return { ...l, yTop, yBot, wTop, wBot };
   });
   return wrap(`
-  <text x="600" y="58" text-anchor="middle" font-size="32" font-weight="800" fill="${C.text}">혼놀 레벨 피라미드</text>
-  <text x="600" y="90" text-anchor="middle" font-size="15" font-weight="500" fill="${C.textMuted}">수동 소비 → 능동 창작으로 올라갈수록 삶의 질이 달라진다</text>
+  <text x="600" y="58" text-anchor="middle" font-size="45" font-weight="800" fill="${C.text}">혼놀 레벨 피라미드</text>
+  <text x="600" y="90" text-anchor="middle" font-size="21" font-weight="500" fill="${C.textMuted}">수동 소비 → 능동 창작으로 올라갈수록 삶의 질이 달라진다</text>
   ${layers.map((l, i) => {
     const path = `M ${cx - l.wTop/2} ${l.yTop} L ${cx + l.wTop/2} ${l.yTop} L ${cx + l.wBot/2} ${l.yBot} L ${cx - l.wBot/2} ${l.yBot} Z`;
     return `
     <path d="${path}" fill="${l.cSoft}" stroke="${l.c}" stroke-width="2.5"/>
-    <text x="${cx - l.wTop/2 - 30}" y="${(l.yTop + l.yBot)/2 - 10}" text-anchor="end" font-size="22" font-weight="800" fill="${l.cDeep}">${l.lv}</text>
-    <text x="${cx - l.wTop/2 - 30}" y="${(l.yTop + l.yBot)/2 + 14}" text-anchor="end" font-size="14" font-weight="600" fill="${l.cDeep}">${l.name}</text>
-    <text x="${cx}" y="${(l.yTop + l.yBot)/2 - 14}" text-anchor="middle" font-size="14" font-weight="600" fill="${l.cDeep}">${l.types}</text>
-    <text x="${cx}" y="${(l.yTop + l.yBot)/2 + 10}" text-anchor="middle" font-size="12" font-weight="500" fill="${C.textSoft}">${l.desc}</text>
-    <text x="${cx}" y="${(l.yTop + l.yBot)/2 + 32}" text-anchor="middle" font-size="11" font-weight="500" fill="${C.textMuted}">예: ${l.examples.join(' · ')}</text>
+    <text x="${cx - l.wTop/2 - 30}" y="${(l.yTop + l.yBot)/2 - 10}" text-anchor="end" font-size="31" font-weight="800" fill="${l.cDeep}">${l.lv}</text>
+    <text x="${cx - l.wTop/2 - 30}" y="${(l.yTop + l.yBot)/2 + 14}" text-anchor="end" font-size="20" font-weight="600" fill="${l.cDeep}">${l.name}</text>
+    <text x="${cx}" y="${(l.yTop + l.yBot)/2 - 14}" text-anchor="middle" font-size="20" font-weight="600" fill="${l.cDeep}">${l.types}</text>
+    <text x="${cx}" y="${(l.yTop + l.yBot)/2 + 10}" text-anchor="middle" font-size="17" font-weight="500" fill="${C.textSoft}">${l.desc}</text>
+    <text x="${cx}" y="${(l.yTop + l.yBot)/2 + 32}" text-anchor="middle" font-size="15" font-weight="500" fill="${C.textMuted}">예: ${l.examples.join(' · ')}</text>
     `;
   }).join('')}
   <!-- Arrow up -->
   <g transform="translate(1080, 150)">
     <line x1="20" y1="480" x2="20" y2="20" stroke="${C.textFaint}" stroke-width="2"/>
     <polygon points="20,0 12,18 28,18" fill="${C.textFaint}"/>
-    <text x="50" y="480" font-size="11" font-weight="600" fill="${C.textMuted}">수동</text>
-    <text x="50" y="20" font-size="11" font-weight="600" fill="${C.textMuted}">능동</text>
+    <text x="50" y="480" font-size="15" font-weight="600" fill="${C.textMuted}">수동</text>
+    <text x="50" y="20" font-size="15" font-weight="600" fill="${C.textMuted}">능동</text>
   </g>
   `);
 }
@@ -470,8 +470,8 @@ function koreaTrend() {
     { y: 2026, label: '메타센싱 · 필코노미', offset: -60 },
   ];
   return wrap(`
-  <text x="600" y="58" text-anchor="middle" font-size="32" font-weight="800" fill="${C.text}">한국 '혼자 문화' 성장 추이 2015–2026</text>
-  <text x="600" y="90" text-anchor="middle" font-size="15" font-weight="500" fill="${C.textMuted}">1인 가구 비율 (%) · 통계청 · 10년 새 2.7배 증가</text>
+  <text x="600" y="58" text-anchor="middle" font-size="45" font-weight="800" fill="${C.text}">한국 '혼자 문화' 성장 추이 2015–2026</text>
+  <text x="600" y="90" text-anchor="middle" font-size="21" font-weight="500" fill="${C.textMuted}">1인 가구 비율 (%) · 통계청 · 10년 새 2.7배 증가</text>
   <defs>
     <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="${C.nt600}" stop-opacity="0.45"/>
@@ -481,9 +481,9 @@ function koreaTrend() {
   <!-- grid -->
   ${[0, 20, 40, 60, 80].map(v => `
     <line x1="${ox}" y1="${yAt(v)}" x2="${ox + w}" y2="${yAt(v)}" stroke="${C.border}" stroke-dasharray="3 3"/>
-    <text x="${ox - 12}" y="${yAt(v) + 4}" text-anchor="end" font-size="11" fill="${C.textFaint}" font-weight="500">${v}%</text>
+    <text x="${ox - 12}" y="${yAt(v) + 4}" text-anchor="end" font-size="15" fill="${C.textFaint}" font-weight="500">${v}%</text>
   `).join('')}
-  ${data.map((d, i) => i % 1 === 0 ? `<text x="${xAt(i)}" y="${oy + h + 24}" text-anchor="middle" font-size="11" fill="${C.textMuted}" font-weight="500">${d.y}</text>` : '').join('')}
+  ${data.map((d, i) => i % 1 === 0 ? `<text x="${xAt(i)}" y="${oy + h + 24}" text-anchor="middle" font-size="15" fill="${C.textMuted}" font-weight="500">${d.y}</text>` : '').join('')}
   <!-- axis -->
   <line x1="${ox}" y1="${oy}" x2="${ox}" y2="${oy + h}" stroke="${C.textFaint}" stroke-width="1.5"/>
   <line x1="${ox}" y1="${oy + h}" x2="${ox + w}" y2="${oy + h}" stroke="${C.textFaint}" stroke-width="1.5"/>
@@ -500,18 +500,18 @@ function koreaTrend() {
     return `
       <line x1="${xAt(i)}" y1="${yAt(d.v) - 8}" x2="${xAt(i)}" y2="${yAt(d.v) + e.offset}" stroke="${C.nf600}" stroke-width="1.5" stroke-dasharray="3 2"/>
       <rect x="${xAt(i) - 75}" y="${yAt(d.v) + e.offset - 30}" width="150" height="28" rx="6" fill="${C.nf600}"/>
-      <text x="${xAt(i)}" y="${yAt(d.v) + e.offset - 11}" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">${e.label}</text>
+      <text x="${xAt(i)}" y="${yAt(d.v) + e.offset - 11}" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">${e.label}</text>
     `;
   }).join('')}
   <!-- highlight 2026 -->
   <circle cx="${xAt(11)}" cy="${yAt(74)}" r="10" fill="${C.nt600}"/>
-  <text x="${xAt(11) + 24}" y="${yAt(74) + 5}" font-size="18" font-weight="800" fill="${C.nt700}">74%</text>
+  <text x="${xAt(11) + 24}" y="${yAt(74) + 5}" font-size="25" font-weight="800" fill="${C.nt700}">74%</text>
   <!-- insight box -->
   <g transform="translate(130, 760)">
     <rect x="0" y="0" width="940" height="90" rx="12" fill="${C.nt50}" stroke="${C.nt600}" stroke-width="1"/>
-    <text x="20" y="30" font-size="14" font-weight="800" fill="${C.nt700}">▶ 통찰: '혼자 놀기'는 이제 소수 취향이 아니라 주류 라이프스타일</text>
-    <text x="20" y="54" font-size="13" font-weight="500" fill="${C.textSoft}">2015년 27% → 2026년 74%. 한국은 OECD 1인 가구 증가율 1위.</text>
-    <text x="20" y="76" font-size="13" font-weight="500" fill="${C.textSoft}">혼자서도 잘 노는 능력은 이제 선택이 아닌 필수 생존 스킬이 됐다.</text>
+    <text x="20" y="30" font-size="20" font-weight="800" fill="${C.nt700}">▶ 통찰: '혼자 놀기'는 이제 소수 취향이 아니라 주류 라이프스타일</text>
+    <text x="20" y="54" font-size="18" font-weight="500" fill="${C.textSoft}">2015년 27% → 2026년 74%. 한국은 OECD 1인 가구 증가율 1위.</text>
+    <text x="20" y="76" font-size="18" font-weight="500" fill="${C.textSoft}">혼자서도 잘 노는 능력은 이제 선택이 아닌 필수 생존 스킬이 됐다.</text>
   </g>
   `);
 }
@@ -550,8 +550,8 @@ function isolationVsSolitude() {
   const cards = [iso, sol];
   const startX = (1200 - (cardW * 2 + gap)) / 2;
   return wrap(`
-  <text x="600" y="58" text-anchor="middle" font-size="32" font-weight="800" fill="${C.text}">혼자 = 외로움? 천만에</text>
-  <text x="600" y="90" text-anchor="middle" font-size="15" font-weight="500" fill="${C.textMuted}">'고립'과 '독립'은 같은 혼자라도 정반대의 상태</text>
+  <text x="600" y="58" text-anchor="middle" font-size="45" font-weight="800" fill="${C.text}">혼자 = 외로움? 천만에</text>
+  <text x="600" y="90" text-anchor="middle" font-size="21" font-weight="500" fill="${C.textMuted}">'고립'과 '독립'은 같은 혼자라도 정반대의 상태</text>
   ${cards.map((k, i) => {
     const x = startX + i * (cardW + gap);
     const y = 135;
@@ -560,22 +560,22 @@ function isolationVsSolitude() {
       <rect x="${x}" y="${y}" width="${cardW}" height="${cardH}" rx="20" fill="${k.soft}" stroke="${k.color}" stroke-width="2.5"/>
       <rect x="${x}" y="${y}" width="${cardW}" height="100" rx="20" fill="${k.color}"/>
       <rect x="${x}" y="${y + 80}" width="${cardW}" height="20" fill="${k.color}"/>
-      <text x="${x + cardW/2}" y="${y + 45}" text-anchor="middle" font-size="28" font-weight="800" fill="#fff">${k.title}</text>
-      <text x="${x + cardW/2}" y="${y + 75}" text-anchor="middle" font-size="14" font-weight="500" fill="#fff" opacity="0.9">${k.subtitle}</text>
+      <text x="${x + cardW/2}" y="${y + 45}" text-anchor="middle" font-size="39" font-weight="800" fill="#fff">${k.title}</text>
+      <text x="${x + cardW/2}" y="${y + 75}" text-anchor="middle" font-size="20" font-weight="500" fill="#fff" opacity="0.9">${k.subtitle}</text>
       ${k.traits.map((tr, j) => `
         <g transform="translate(${x + 30}, ${y + 140 + j * 60})">
           <circle cx="18" cy="20" r="18" fill="${k.color}"/>
-          <text x="18" y="27" text-anchor="middle" font-size="20" font-weight="800" fill="#fff">${tr.emoji}</text>
-          <text x="52" y="27" font-size="15" font-weight="600" fill="${C.text}">${tr.text}</text>
+          <text x="18" y="27" text-anchor="middle" font-size="28" font-weight="800" fill="#fff">${tr.emoji}</text>
+          <text x="52" y="27" font-size="21" font-weight="600" fill="${C.text}">${tr.text}</text>
         </g>
       `).join('')}
       <rect x="${x + 25}" y="${y + cardH - 80}" width="${cardW - 50}" height="58" rx="10" fill="${k.color}" fill-opacity="0.12" stroke="${k.color}" stroke-width="1" stroke-dasharray="4 3"/>
-      <text x="${x + cardW/2}" y="${y + cardH - 45}" text-anchor="middle" font-size="13" font-weight="700" fill="${k.deep}">${k.signal}</text>
+      <text x="${x + cardW/2}" y="${y + cardH - 45}" text-anchor="middle" font-size="18" font-weight="700" fill="${k.deep}">${k.signal}</text>
     </g>`;
   }).join('')}
   <!-- VS divider -->
   <circle cx="600" cy="445" r="36" fill="${C.card}" stroke="${C.textFaint}" stroke-width="2"/>
-  <text x="600" y="454" text-anchor="middle" font-size="20" font-weight="800" fill="${C.textSoft}">VS</text>
+  <text x="600" y="454" text-anchor="middle" font-size="28" font-weight="800" fill="${C.textSoft}">VS</text>
   `);
 }
 
@@ -606,38 +606,38 @@ function activitiesMatrix() {
   const cellW = 100, cellH = 36;
   const startX = 200, startY = 160;
   return wrap(`
-  <text x="600" y="58" text-anchor="middle" font-size="32" font-weight="800" fill="${C.text}">유형별 혼놀 활동 선호도</text>
-  <text x="600" y="90" text-anchor="middle" font-size="15" font-weight="500" fill="${C.textMuted}">진할수록 해당 활동에 깊게 빠지는 유형 (1~5점)</text>
+  <text x="600" y="58" text-anchor="middle" font-size="45" font-weight="800" fill="${C.text}">유형별 혼놀 활동 선호도</text>
+  <text x="600" y="90" text-anchor="middle" font-size="21" font-weight="500" fill="${C.textMuted}">진할수록 해당 활동에 깊게 빠지는 유형 (1~5점)</text>
   <!-- column headers -->
   ${activities.map((a, i) => `
-    <text x="${startX + cellW * (i + 0.5)}" y="${startY - 10}" text-anchor="middle" font-size="12" font-weight="700" fill="${C.textSoft}">${a}</text>
+    <text x="${startX + cellW * (i + 0.5)}" y="${startY - 10}" text-anchor="middle" font-size="17" font-weight="700" fill="${C.textSoft}">${a}</text>
   `).join('')}
   <!-- rows -->
   ${types.map((t, rowI) => `
     <g>
       <rect x="${startX - 90}" y="${startY + rowI * cellH}" width="80" height="${cellH - 4}" rx="6" fill="${colorByGroup[t.g]}" fill-opacity="0.12"/>
-      <text x="${startX - 50}" y="${startY + rowI * cellH + 22}" text-anchor="middle" font-size="13" font-weight="700" fill="${colorByGroup[t.g]}">${t.t}</text>
+      <text x="${startX - 50}" y="${startY + rowI * cellH + 22}" text-anchor="middle" font-size="18" font-weight="700" fill="${colorByGroup[t.g]}">${t.t}</text>
       ${t.scores.map((s, colI) => {
         const opacity = 0.15 + (s / 5) * 0.85;
         return `
           <rect x="${startX + colI * cellW + 4}" y="${startY + rowI * cellH + 2}" width="${cellW - 8}" height="${cellH - 8}" rx="4" fill="${colorByGroup[t.g]}" fill-opacity="${opacity}"/>
-          <text x="${startX + colI * cellW + cellW/2}" y="${startY + rowI * cellH + 22}" text-anchor="middle" font-size="12" font-weight="700" fill="${s >= 4 ? '#fff' : C.textSoft}">${s}</text>
+          <text x="${startX + colI * cellW + cellW/2}" y="${startY + rowI * cellH + 22}" text-anchor="middle" font-size="17" font-weight="700" fill="${s >= 4 ? '#fff' : C.textSoft}">${s}</text>
         `;
       }).join('')}
     </g>
   `).join('')}
   <!-- legend -->
   <g transform="translate(200, 785)">
-    <text x="0" y="15" font-size="11" font-weight="700" fill="${C.textMuted}" letter-spacing="2">선호도 스케일</text>
+    <text x="0" y="15" font-size="15" font-weight="700" fill="${C.textMuted}" letter-spacing="2">선호도 스케일</text>
     ${[1, 2, 3, 4, 5].map(n => `
       <rect x="${100 + (n - 1) * 40}" y="0" width="36" height="22" rx="4" fill="${C.nt600}" fill-opacity="${0.15 + (n / 5) * 0.85}"/>
-      <text x="${100 + (n - 1) * 40 + 18}" y="16" text-anchor="middle" font-size="11" font-weight="700" fill="${n >= 4 ? '#fff' : C.textSoft}">${n}</text>
+      <text x="${100 + (n - 1) * 40 + 18}" y="16" text-anchor="middle" font-size="15" font-weight="700" fill="${n >= 4 ? '#fff' : C.textSoft}">${n}</text>
     `).join('')}
-    <text x="320" y="15" font-size="11" font-weight="500" fill="${C.textMuted}">1=관심 없음 · 5=깊이 몰입</text>
-    <circle cx="600" cy="11" r="7" fill="${C.nt600}"/><text x="615" y="15" font-size="11" font-weight="600" fill="${C.textSoft}">NT</text>
-    <circle cx="655" cy="11" r="7" fill="${C.nf600}"/><text x="670" y="15" font-size="11" font-weight="600" fill="${C.textSoft}">NF</text>
-    <circle cx="710" cy="11" r="7" fill="${C.sj600}"/><text x="725" y="15" font-size="11" font-weight="600" fill="${C.textSoft}">SJ</text>
-    <circle cx="765" cy="11" r="7" fill="${C.sp600}"/><text x="780" y="15" font-size="11" font-weight="600" fill="${C.textSoft}">SP</text>
+    <text x="320" y="15" font-size="15" font-weight="500" fill="${C.textMuted}">1=관심 없음 · 5=깊이 몰입</text>
+    <circle cx="600" cy="11" r="7" fill="${C.nt600}"/><text x="615" y="15" font-size="15" font-weight="600" fill="${C.textSoft}">NT</text>
+    <circle cx="655" cy="11" r="7" fill="${C.nf600}"/><text x="670" y="15" font-size="15" font-weight="600" fill="${C.textSoft}">NF</text>
+    <circle cx="710" cy="11" r="7" fill="${C.sj600}"/><text x="725" y="15" font-size="15" font-weight="600" fill="${C.textSoft}">SJ</text>
+    <circle cx="765" cy="11" r="7" fill="${C.sp600}"/><text x="780" y="15" font-size="15" font-weight="600" fill="${C.textSoft}">SP</text>
   </g>
   `);
 }
@@ -660,8 +660,8 @@ function checklist() {
   ];
   const cardW = 500, cardH = 90, gap = 14;
   return wrap(`
-  <text x="600" y="58" text-anchor="middle" font-size="32" font-weight="800" fill="${C.text}">혼놀 고수 체크리스트 · 10가지</text>
-  <text x="600" y="90" text-anchor="middle" font-size="15" font-weight="500" fill="${C.textMuted}">8개 이상 YES면 당신은 이미 혼놀 상위 10%</text>
+  <text x="600" y="58" text-anchor="middle" font-size="45" font-weight="800" fill="${C.text}">혼놀 고수 체크리스트 · 10가지</text>
+  <text x="600" y="90" text-anchor="middle" font-size="21" font-weight="500" fill="${C.textMuted}">8개 이상 YES면 당신은 이미 혼놀 상위 10%</text>
   ${items.map((it, i) => {
     const col = i % 2;
     const row = Math.floor(i / 2);
@@ -672,9 +672,9 @@ function checklist() {
       <rect x="${x}" y="${y}" width="${cardW}" height="${cardH}" rx="12" fill="${C.card}" stroke="${C.border}" stroke-width="1.5"/>
       <rect x="${x}" y="${y}" width="6" height="${cardH}" rx="3" fill="${C.nt600}"/>
       <rect x="${x + 22}" y="${y + 22}" width="44" height="44" rx="10" fill="${C.nt50}" stroke="${C.nt600}" stroke-width="1.5"/>
-      <text x="${x + 44}" y="${y + 51}" text-anchor="middle" font-size="16" font-weight="800" fill="${C.nt700}">${it.n}</text>
-      <text x="${x + 80}" y="${y + 40}" font-size="15" font-weight="700" fill="${C.text}">${it.title}</text>
-      <text x="${x + 80}" y="${y + 64}" font-size="12" font-weight="500" fill="${C.textMuted}">${it.desc}</text>
+      <text x="${x + 44}" y="${y + 51}" text-anchor="middle" font-size="22" font-weight="800" fill="${C.nt700}">${it.n}</text>
+      <text x="${x + 80}" y="${y + 40}" font-size="21" font-weight="700" fill="${C.text}">${it.title}</text>
+      <text x="${x + 80}" y="${y + 64}" font-size="17" font-weight="500" fill="${C.textMuted}">${it.desc}</text>
       <!-- checkbox -->
       <rect x="${x + cardW - 50}" y="${y + 30}" width="28" height="28" rx="6" fill="${C.nt50}" stroke="${C.nt600}" stroke-width="2"/>
       <path d="M ${x + cardW - 43} ${y + 44} l 5 5 l 10 -12" fill="none" stroke="${C.nt600}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -683,8 +683,8 @@ function checklist() {
   <!-- score band -->
   <g transform="translate(160, 790)">
     <rect x="0" y="0" width="880" height="60" rx="12" fill="${C.nt50}" stroke="${C.nt600}" stroke-width="1"/>
-    <text x="30" y="24" font-size="13" font-weight="800" fill="${C.nt700}">당신의 점수는?</text>
-    <text x="30" y="44" font-size="12" font-weight="500" fill="${C.textSoft}">0~3 입문자  ·  4~7 중급자  ·  8~9 고수  ·  10 마스터 (INTP 수준)</text>
+    <text x="30" y="24" font-size="18" font-weight="800" fill="${C.nt700}">당신의 점수는?</text>
+    <text x="30" y="44" font-size="17" font-weight="500" fill="${C.textSoft}">0~3 입문자  ·  4~7 중급자  ·  8~9 고수  ·  10 마스터 (INTP 수준)</text>
   </g>
   `);
 }
@@ -701,8 +701,8 @@ function balanceFlow() {
   const boxW = 300, boxH = 320, gap = 60;
   const startX = (1200 - (boxW * 3 + gap * 2)) / 2;
   return wrap(`
-  <text x="600" y="58" text-anchor="middle" font-size="32" font-weight="800" fill="${C.text}">혼자도 · 같이도 잘 노는 3단계</text>
-  <text x="600" y="90" text-anchor="middle" font-size="15" font-weight="500" fill="${C.textMuted}">고립도 의존도 아닌, 건강한 관계 설계법</text>
+  <text x="600" y="58" text-anchor="middle" font-size="45" font-weight="800" fill="${C.text}">혼자도 · 같이도 잘 노는 3단계</text>
+  <text x="600" y="90" text-anchor="middle" font-size="21" font-weight="500" fill="${C.textMuted}">고립도 의존도 아닌, 건강한 관계 설계법</text>
   ${steps.map((s, i) => {
     const x = startX + i * (boxW + gap);
     const y = 190;
@@ -711,14 +711,14 @@ function balanceFlow() {
       <rect x="${x}" y="${y}" width="${boxW}" height="${boxH}" rx="20" fill="${s.cSoft}" stroke="${s.c}" stroke-width="2.5"/>
       <!-- step number circle -->
       <circle cx="${x + boxW/2}" cy="${y - 5}" r="40" fill="${s.c}"/>
-      <text x="${x + boxW/2}" y="${y + 10}" text-anchor="middle" font-size="26" font-weight="800" fill="#fff">${s.n}</text>
+      <text x="${x + boxW/2}" y="${y + 10}" text-anchor="middle" font-size="36" font-weight="800" fill="#fff">${s.n}</text>
       <!-- content -->
-      <text x="${x + boxW/2}" y="${y + 95}" text-anchor="middle" font-size="12" font-weight="600" fill="${s.cDeep}" letter-spacing="3">STEP ${s.n}</text>
-      <text x="${x + boxW/2}" y="${y + 140}" text-anchor="middle" font-size="24" font-weight="800" fill="${s.cDeep}">${s.title}</text>
-      <text x="${x + boxW/2}" y="${y + 170}" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}" font-style="italic">${s.sub}</text>
+      <text x="${x + boxW/2}" y="${y + 95}" text-anchor="middle" font-size="17" font-weight="600" fill="${s.cDeep}" letter-spacing="3">STEP ${s.n}</text>
+      <text x="${x + boxW/2}" y="${y + 140}" text-anchor="middle" font-size="34" font-weight="800" fill="${s.cDeep}">${s.title}</text>
+      <text x="${x + boxW/2}" y="${y + 170}" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}" font-style="italic">${s.sub}</text>
       <!-- description (2 lines) -->
       ${s.desc.split('\n').map((line, j) => `
-        <text x="${x + boxW/2}" y="${y + 230 + j * 28}" text-anchor="middle" font-size="15" font-weight="600" fill="${C.textSoft}">${line}</text>
+        <text x="${x + boxW/2}" y="${y + 230 + j * 28}" text-anchor="middle" font-size="21" font-weight="600" fill="${C.textSoft}">${line}</text>
       `).join('')}
     </g>
     ${i < steps.length - 1 ? `
@@ -733,10 +733,10 @@ function balanceFlow() {
   <!-- bottom insight -->
   <g transform="translate(150, 720)">
     <rect x="0" y="0" width="900" height="120" rx="16" fill="${C.card}" stroke="${C.border}" stroke-width="1.5"/>
-    <text x="30" y="35" font-size="14" font-weight="800" fill="${C.text}">핵심 원칙 · Solo 70 : Social 30</text>
-    <text x="30" y="62" font-size="13" font-weight="500" fill="${C.textSoft}">혼놀 고수일수록 혼자 시간 70%, 타인과 시간 30%의 비율을 유지한다.</text>
-    <text x="30" y="82" font-size="13" font-weight="500" fill="${C.textSoft}">이 균형이 깨지면 외로움(혼자 &gt;90%) 또는 에너지 고갈(혼자 &lt;40%)로 이어진다.</text>
-    <text x="30" y="104" font-size="12" font-weight="600" fill="${C.nt700}">▶ 자기 에너지를 관찰하는 습관 = 메타센싱(2026 메가트렌드)</text>
+    <text x="30" y="35" font-size="20" font-weight="800" fill="${C.text}">핵심 원칙 · Solo 70 : Social 30</text>
+    <text x="30" y="62" font-size="18" font-weight="500" fill="${C.textSoft}">혼놀 고수일수록 혼자 시간 70%, 타인과 시간 30%의 비율을 유지한다.</text>
+    <text x="30" y="82" font-size="18" font-weight="500" fill="${C.textSoft}">이 균형이 깨지면 외로움(혼자 &gt;90%) 또는 에너지 고갈(혼자 &lt;40%)로 이어진다.</text>
+    <text x="30" y="104" font-size="17" font-weight="600" fill="${C.nt700}">▶ 자기 에너지를 관찰하는 습관 = 메타센싱(2026 메가트렌드)</text>
   </g>
   `);
 }

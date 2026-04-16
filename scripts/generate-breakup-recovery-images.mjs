@@ -131,19 +131,19 @@ function ranking() {
   };
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">16유형 이별 회복 기간 랭킹 — 평균 며칠이면 괜찮아져?</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">이별 당일 → 일상 컨디션 복귀까지 · 192types 설문 N=348 + 인지기능 보정</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">16유형 이별 회복 기간 랭킹 — 평균 며칠이면 괜찮아져?</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">이별 당일 → 일상 컨디션 복귀까지 · 192types 설문 N=348 + 인지기능 보정</text>
 
   ${list.map((r, i) => {
     const y = top + i * rowH;
     const w = Math.max(45, (r.d / MAX) * barW);
     const g = GROUP_OF[r.t];
     return `
-      <text x="45" y="${y + 28}" font-size="14" font-weight="700" fill="${C.textMuted}">${String(i + 1).padStart(2, '0')}</text>
-      <text x="90" y="${y + 28}" font-size="16" font-weight="800" fill="${COLOR_OF[g]}">${r.t}</text>
+      <text x="45" y="${y + 28}" font-size="20" font-weight="700" fill="${C.textMuted}">${String(i + 1).padStart(2, '0')}</text>
+      <text x="90" y="${y + 28}" font-size="22" font-weight="800" fill="${COLOR_OF[g]}">${r.t}</text>
       <rect x="${left}" y="${y + 10}" width="${w}" height="26" rx="13" fill="${colorFor(r.d)}" opacity="0.92"/>
-      <text x="${left + w - 12}" y="${y + 28}" text-anchor="end" font-size="13" font-weight="800" fill="#fff">${r.d}일</text>
-      <text x="${left + w + 14}" y="${y + 28}" font-size="12" font-weight="600" fill="${C.textSoft}">${r.note}</text>
+      <text x="${left + w - 12}" y="${y + 28}" text-anchor="end" font-size="18" font-weight="800" fill="#fff">${r.d}일</text>
+      <text x="${left + w + 14}" y="${y + 28}" font-size="17" font-weight="600" fill="${C.textSoft}">${r.note}</text>
     `;
   }).join('')}
 
@@ -157,7 +157,7 @@ function ranking() {
       { c: C.pain, label: '여운 80일+' },
     ].map((t, i) => `
       <rect x="${i * 150}" y="0" width="14" height="14" rx="3" fill="${t.c}"/>
-      <text x="${i * 150 + 22}" y="12" font-size="11" font-weight="700" fill="${C.textSoft}">${t.label}</text>
+      <text x="${i * 150 + 22}" y="12" font-size="15" font-weight="700" fill="${C.textSoft}">${t.label}</text>
     `).join('')}
   </g>
   `);
@@ -213,8 +213,8 @@ function reactionTypes() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">4가지 이별 반응 유형 — 너는 어떤 방식으로 앓아?</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">Fi 폭발 · Ti/Te 분석 · Si/Ni 침잠 · Se 전환 · 네 주기능이 결정해</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">4가지 이별 반응 유형 — 너는 어떤 방식으로 앓아?</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">Fi 폭발 · Ti/Te 분석 · Si/Ni 침잠 · Se 전환 · 네 주기능이 결정해</text>
 
   ${positions.map((p, i) => {
     const t = types[i];
@@ -222,14 +222,14 @@ function reactionTypes() {
       <g transform="translate(${p.x},${p.y})">
         <rect width="${w}" height="${h}" rx="18" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="${h}" rx="4" fill="${t.color}"/>
-        <text x="28" y="44" font-size="22" font-weight="800" fill="${t.color}">${t.icon} ${t.name}</text>
-        <text x="28" y="68" font-size="12" font-weight="600" fill="${C.textMuted}">${t.who}</text>
-        <text x="28" y="92" font-size="13" font-weight="700" fill="${C.textSoft}">· ${t.desc}</text>
+        <text x="28" y="44" font-size="31" font-weight="800" fill="${t.color}">${t.icon} ${t.name}</text>
+        <text x="28" y="68" font-size="17" font-weight="600" fill="${C.textMuted}">${t.who}</text>
+        <text x="28" y="92" font-size="18" font-weight="700" fill="${C.textSoft}">· ${t.desc}</text>
         ${t.details.map((d, j) => `
           <g transform="translate(28, ${135 + j * 44})">
             <circle cx="7" cy="0" r="6" fill="${t.color}" opacity="0.25"/>
             <text x="7" y="3" text-anchor="middle" font-size="9" font-weight="800" fill="${t.color}">${j + 1}</text>
-            <text x="22" y="4" font-size="13" font-weight="600" fill="${C.textSoft}">${d}</text>
+            <text x="22" y="4" font-size="18" font-weight="600" fill="${C.textSoft}">${d}</text>
           </g>
         `).join('')}
       </g>
@@ -273,19 +273,19 @@ function doorslamMap() {
   };
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">도어슬램 위험도 — 한 번 차단하면 영원한 유형 TOP 16</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">"연락 차단 + 기억 삭제 + 재접촉 거부" 강도 100점 만점</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">도어슬램 위험도 — 한 번 차단하면 영원한 유형 TOP 16</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">"연락 차단 + 기억 삭제 + 재접촉 거부" 강도 100점 만점</text>
 
   ${list.map((r, i) => {
     const y = top + i * rowH;
     const w = (r.v / 100) * barW;
     const g = GROUP_OF[r.t];
     return `
-      <text x="45" y="${y + 28}" font-size="14" font-weight="700" fill="${C.textMuted}">${String(i + 1).padStart(2, '0')}</text>
-      <text x="90" y="${y + 28}" font-size="16" font-weight="800" fill="${COLOR_OF[g]}">${r.t}</text>
+      <text x="45" y="${y + 28}" font-size="20" font-weight="700" fill="${C.textMuted}">${String(i + 1).padStart(2, '0')}</text>
+      <text x="90" y="${y + 28}" font-size="22" font-weight="800" fill="${COLOR_OF[g]}">${r.t}</text>
       <rect x="${left}" y="${y + 9}" width="${w}" height="26" rx="13" fill="${colorFor(r.v)}" opacity="0.92"/>
-      <text x="${left + w - 12}" y="${y + 27}" text-anchor="end" font-size="13" font-weight="800" fill="#fff">${r.v}</text>
-      <text x="${left + w + 14}" y="${y + 27}" font-size="12" font-weight="600" fill="${C.textSoft}">${r.note}</text>
+      <text x="${left + w - 12}" y="${y + 27}" text-anchor="end" font-size="18" font-weight="800" fill="#fff">${r.v}</text>
+      <text x="${left + w + 14}" y="${y + 27}" font-size="17" font-weight="600" fill="${C.textSoft}">${r.note}</text>
     `;
   }).join('')}
 
@@ -298,7 +298,7 @@ function doorslamMap() {
       { c: C.safe, label: '재연결형 ~24' },
     ].map((t, i) => `
       <rect x="${i * 160}" y="0" width="14" height="14" rx="3" fill="${t.c}"/>
-      <text x="${i * 160 + 22}" y="12" font-size="11" font-weight="700" fill="${C.textSoft}">${t.label}</text>
+      <text x="${i * 160 + 22}" y="12" font-size="15" font-weight="700" fill="${C.textSoft}">${t.label}</text>
     `).join('')}
   </g>
   `);
@@ -333,15 +333,15 @@ function reconnectHeat() {
   };
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">재결합 확률 × 회복 단계 히트맵</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">4기질별 · 회복 단계에 따라 "다시 만날 수 있을까?" 확률 (%)</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">재결합 확률 × 회복 단계 히트맵</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">4기질별 · 회복 단계에 따라 "다시 만날 수 있을까?" 확률 (%)</text>
 
   <!-- Column headers -->
   ${stages.map((s, i) => {
     const lines = s.split('\n');
     return `
-      <text x="${ox + i * cell + cell / 2}" y="${oy - 30}" text-anchor="middle" font-size="13" font-weight="700" fill="${C.textSoft}">${lines[0]}</text>
-      <text x="${ox + i * cell + cell / 2}" y="${oy - 12}" text-anchor="middle" font-size="11" font-weight="600" fill="${C.textMuted}">${lines[1]}</text>
+      <text x="${ox + i * cell + cell / 2}" y="${oy - 30}" text-anchor="middle" font-size="18" font-weight="700" fill="${C.textSoft}">${lines[0]}</text>
+      <text x="${ox + i * cell + cell / 2}" y="${oy - 12}" text-anchor="middle" font-size="15" font-weight="600" fill="${C.textMuted}">${lines[1]}</text>
     `;
   }).join('')}
 
@@ -349,20 +349,20 @@ function reconnectHeat() {
   ${groups.map((g, i) => {
     const lines = g.split('\n');
     return `
-      <text x="${ox - 18}" y="${oy + i * cell + cell / 2 - 6}" text-anchor="end" font-size="13" font-weight="700" fill="${C.textSoft}">${lines[0]}</text>
-      <text x="${ox - 18}" y="${oy + i * cell + cell / 2 + 12}" text-anchor="end" font-size="11" font-weight="600" fill="${C.textMuted}">${lines[1]}</text>
+      <text x="${ox - 18}" y="${oy + i * cell + cell / 2 - 6}" text-anchor="end" font-size="18" font-weight="700" fill="${C.textSoft}">${lines[0]}</text>
+      <text x="${ox - 18}" y="${oy + i * cell + cell / 2 + 12}" text-anchor="end" font-size="15" font-weight="600" fill="${C.textMuted}">${lines[1]}</text>
     `;
   }).join('')}
 
   ${matrix.map((row, r) => row.map((v, c) => `
     <rect x="${ox + c * cell}" y="${oy + r * cell}" width="${cell - 6}" height="${cell - 6}" rx="12" fill="${colorFor(v)}" opacity="0.9"/>
-    <text x="${ox + c * cell + (cell - 6) / 2}" y="${oy + r * cell + 52}" text-anchor="middle" font-size="30" font-weight="800" fill="#fff">${v}%</text>
-    <text x="${ox + c * cell + (cell - 6) / 2}" y="${oy + r * cell + 85}" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">${labels[r][c].slice(0, 8)}</text>
-    <text x="${ox + c * cell + (cell - 6) / 2}" y="${oy + r * cell + 102}" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">${labels[r][c].slice(8)}</text>
+    <text x="${ox + c * cell + (cell - 6) / 2}" y="${oy + r * cell + 52}" text-anchor="middle" font-size="42" font-weight="800" fill="#fff">${v}%</text>
+    <text x="${ox + c * cell + (cell - 6) / 2}" y="${oy + r * cell + 85}" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">${labels[r][c].slice(0, 8)}</text>
+    <text x="${ox + c * cell + (cell - 6) / 2}" y="${oy + r * cell + 102}" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">${labels[r][c].slice(8)}</text>
   `).join('')).join('')}
 
   <g transform="translate(220, 860)">
-    <text x="0" y="12" font-size="12" font-weight="600" fill="${C.textSoft}">· 다혈질: 초기 재연결이 쉽지만 같은 패턴 반복 · 우울질: 초기 재접촉은 거의 불가 · 점액질: 시간이 답</text>
+    <text x="0" y="12" font-size="17" font-weight="600" fill="${C.textSoft}">· 다혈질: 초기 재연결이 쉽지만 같은 패턴 반복 · 우울질: 초기 재접촉은 거의 불가 · 점액질: 시간이 답</text>
   </g>
   `);
 }
@@ -412,8 +412,8 @@ function ritual() {
   const w = 520, h = 340;
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">기질별 이별 극복 루틴 체크리스트</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">네 기질에 맞는 4단계 회복 프로토콜 · 지금 바로 1개 시작</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">기질별 이별 극복 루틴 체크리스트</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">네 기질에 맞는 4단계 회복 프로토콜 · 지금 바로 1개 시작</text>
 
   ${positions.map((p, i) => {
     const g = groups[i];
@@ -421,10 +421,10 @@ function ritual() {
       <g transform="translate(${p.x},${p.y})">
         <rect width="${w}" height="${h}" rx="18" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="${h}" rx="4" fill="${g.color}"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="${C.textMuted}">${g.types}</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="${C.textMuted}">${g.types}</text>
         ${g.items.map((it, j) => `
-          <text x="28" y="${115 + j * 52}" font-size="13" font-weight="600" fill="${C.textSoft}">${it}</text>
+          <text x="28" y="${115 + j * 52}" font-size="18" font-weight="600" fill="${C.textSoft}">${it}</text>
         `).join('')}
       </g>
     `;

@@ -105,8 +105,8 @@ function replySpeed() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">MBTI 답장 속도 랭킹 TOP 16</text>
-  <text x="600" y="80" text-anchor="middle" font-size="14" font-weight="500" fill="${C.textMuted}">친구끼리 평소 카톡 답장 평균 속도 기준 · 100점 만점</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">MBTI 답장 속도 랭킹 TOP 16</text>
+  <text x="600" y="80" text-anchor="middle" font-size="20" font-weight="500" fill="${C.textMuted}">친구끼리 평소 카톡 답장 평균 속도 기준 · 100점 만점</text>
 
   ${data.map((d, i) => {
     const y = 120 + i * 47;
@@ -114,13 +114,13 @@ function replySpeed() {
     const grp = GROUP_OF[d.type];
     const color = COLOR_OF[grp];
     return `
-      <text x="50" y="${y + 22}" font-size="14" font-weight="800" fill="${C.textFaint}">${String(i + 1).padStart(2, '0')}</text>
-      <text x="95" y="${y + 22}" font-size="18" font-weight="800" fill="${color}">${d.type}</text>
+      <text x="50" y="${y + 22}" font-size="20" font-weight="800" fill="${C.textFaint}">${String(i + 1).padStart(2, '0')}</text>
+      <text x="95" y="${y + 22}" font-size="25" font-weight="800" fill="${color}">${d.type}</text>
       <rect x="170" y="${y + 5}" width="${barW}" height="30" rx="15" fill="${color}" opacity="0.25"/>
       <rect x="170" y="${y + 5}" width="${barW}" height="30" rx="15" fill="${color}" opacity="0.85"/>
-      <text x="${180 + barW}" y="${y + 25}" font-size="14" font-weight="800" fill="${color}">${d.score}</text>
-      <text x="930" y="${y + 18}" font-size="12" font-weight="700" fill="${C.textSoft}">${d.avg}</text>
-      <text x="930" y="${y + 35}" font-size="11" font-weight="500" fill="${C.textMuted}">${d.note}</text>
+      <text x="${180 + barW}" y="${y + 25}" font-size="20" font-weight="800" fill="${color}">${d.score}</text>
+      <text x="930" y="${y + 18}" font-size="17" font-weight="700" fill="${C.textSoft}">${d.avg}</text>
+      <text x="930" y="${y + 35}" font-size="15" font-weight="500" fill="${C.textMuted}">${d.note}</text>
     `;
   }).join('')}
   `);
@@ -152,8 +152,8 @@ function emojiUsage() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">16유형 이모티콘 사용 패턴</text>
-  <text x="600" y="80" text-anchor="middle" font-size="14" font-weight="500" fill="${C.textMuted}">4기질별 카톡 이모지·이모티콘 사용 공식 · 네 유형 확인해봐</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">16유형 이모티콘 사용 패턴</text>
+  <text x="600" y="80" text-anchor="middle" font-size="20" font-weight="500" fill="${C.textMuted}">4기질별 카톡 이모지·이모티콘 사용 공식 · 네 유형 확인해봐</text>
 
   ${rows.map((r, i) => {
     const y = 120 + i * 185;
@@ -161,19 +161,19 @@ function emojiUsage() {
       <g transform="translate(60, ${y})">
         <rect width="1080" height="165" rx="20" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="165" rx="4" fill="${r.color}"/>
-        <text x="32" y="40" font-size="24" font-weight="900" fill="${r.color}">${r.label}</text>
-        <text x="32" y="68" font-size="13" font-weight="700" fill="${C.textMuted}">${r.types}</text>
+        <text x="32" y="40" font-size="34" font-weight="900" fill="${r.color}">${r.label}</text>
+        <text x="32" y="68" font-size="18" font-weight="700" fill="${C.textMuted}">${r.types}</text>
 
         <!-- Emoji samples -->
         ${r.emoji.map((e, j) => `
           <g transform="translate(${32 + j * 110}, 90)">
             <rect width="95" height="50" rx="12" fill="${r.color}" opacity="0.1"/>
-            <text x="47" y="34" text-anchor="middle" font-size="22" font-weight="800" fill="${r.color}">${e}</text>
+            <text x="47" y="34" text-anchor="middle" font-size="31" font-weight="800" fill="${r.color}">${e}</text>
           </g>
         `).join('')}
 
-        <text x="620" y="105" font-size="15" font-weight="800" fill="${C.textSoft}">${r.style}</text>
-        <text x="620" y="135" font-size="13" font-weight="500" fill="${C.textMuted}">${r.desc}</text>
+        <text x="620" y="105" font-size="21" font-weight="800" fill="${C.textSoft}">${r.style}</text>
+        <text x="620" y="135" font-size="18" font-weight="500" fill="${C.textMuted}">${r.desc}</text>
       </g>
     `;
   }).join('')}
@@ -230,8 +230,8 @@ function messagePattern() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">카톡 대화 4대 모드 — 네 유형은?</text>
-  <text x="600" y="80" text-anchor="middle" font-size="14" font-weight="500" fill="${C.textMuted}">인지기능별 카톡 대응 스타일 · 즉답 / 생각 / 잠수 / 답정너</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">카톡 대화 4대 모드 — 네 유형은?</text>
+  <text x="600" y="80" text-anchor="middle" font-size="20" font-weight="500" fill="${C.textMuted}">인지기능별 카톡 대응 스타일 · 즉답 / 생각 / 잠수 / 답정너</text>
 
   ${positions.map((p, i) => {
     const m = modes[i];
@@ -239,18 +239,18 @@ function messagePattern() {
       <g transform="translate(${p.x}, ${p.y})">
         <rect width="${w}" height="${h}" rx="20" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="${h}" rx="4" fill="${m.color}"/>
-        <text x="30" y="45" font-size="24" font-weight="900" fill="${m.color}">${m.icon} ${m.name}</text>
-        <text x="30" y="72" font-size="13" font-weight="700" fill="${C.textMuted}">${m.types}</text>
+        <text x="30" y="45" font-size="34" font-weight="900" fill="${m.color}">${m.icon} ${m.name}</text>
+        <text x="30" y="72" font-size="18" font-weight="700" fill="${C.textMuted}">${m.types}</text>
 
         <rect x="30" y="90" width="${w - 60}" height="55" rx="12" fill="${m.color}" opacity="0.08"/>
-        <text x="45" y="120" font-size="13" font-weight="700" fill="${m.color}">예시 대화</text>
-        <text x="45" y="138" font-size="12" font-weight="500" fill="${C.textSoft}">${m.sample}</text>
+        <text x="45" y="120" font-size="18" font-weight="700" fill="${m.color}">예시 대화</text>
+        <text x="45" y="138" font-size="17" font-weight="500" fill="${C.textSoft}">${m.sample}</text>
 
         ${m.traits.map((t, j) => `
           <g transform="translate(30, ${175 + j * 42})">
             <circle cx="10" cy="0" r="10" fill="${m.color}" opacity="0.2"/>
-            <text x="10" y="5" text-anchor="middle" font-size="11" font-weight="900" fill="${m.color}">${j + 1}</text>
-            <text x="32" y="5" font-size="13" font-weight="600" fill="${C.textSoft}">${t}</text>
+            <text x="10" y="5" text-anchor="middle" font-size="15" font-weight="900" fill="${m.color}">${j + 1}</text>
+            <text x="32" y="5" font-size="18" font-weight="600" fill="${C.textSoft}">${t}</text>
           </g>
         `).join('')}
       </g>
@@ -283,18 +283,18 @@ function ghostRisk() {
   const riskColor = { LOW: C.safe, MID: C.warn, HIGH: C.danger };
 
   return wrap(`
-  <text x="600" y="45" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">읽씹 · 잠수 위험도 매트릭스</text>
-  <text x="600" y="72" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">가로 = 에너지 방향(I↔E), 세로 = 판단 기준(F↑T↓) · 색상 = 잠수 리스크</text>
+  <text x="600" y="45" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">읽씹 · 잠수 위험도 매트릭스</text>
+  <text x="600" y="72" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">가로 = 에너지 방향(I↔E), 세로 = 판단 기준(F↑T↓) · 색상 = 잠수 리스크</text>
 
   <!-- Axes -->
   <line x1="600" y1="110" x2="600" y2="820" stroke="${C.divider}" stroke-width="2" stroke-dasharray="8,6"/>
   <line x1="120" y1="470" x2="1080" y2="470" stroke="${C.divider}" stroke-width="2" stroke-dasharray="8,6"/>
 
   <!-- Axis labels -->
-  <text x="600" y="100" text-anchor="middle" font-size="14" font-weight="800" fill="${C.nf600}">감정 중심 F</text>
-  <text x="600" y="840" text-anchor="middle" font-size="14" font-weight="800" fill="${C.nt600}">논리 중심 T</text>
-  <text x="130" y="475" font-size="14" font-weight="800" fill="${C.textMuted}">내향 I</text>
-  <text x="1010" y="475" font-size="14" font-weight="800" fill="${C.textMuted}">외향 E</text>
+  <text x="600" y="100" text-anchor="middle" font-size="20" font-weight="800" fill="${C.nf600}">감정 중심 F</text>
+  <text x="600" y="840" text-anchor="middle" font-size="20" font-weight="800" fill="${C.nt600}">논리 중심 T</text>
+  <text x="130" y="475" font-size="20" font-weight="800" fill="${C.textMuted}">내향 I</text>
+  <text x="1010" y="475" font-size="20" font-weight="800" fill="${C.textMuted}">외향 E</text>
 
   <!-- Quadrant background -->
   <rect x="120" y="110" width="480" height="360" fill="${C.nf50}" opacity="0.3"/>
@@ -306,19 +306,19 @@ function ghostRisk() {
   ${points.map(p => `
     <circle cx="${p.x}" cy="${p.y}" r="30" fill="${riskColor[p.risk]}" opacity="0.18"/>
     <circle cx="${p.x}" cy="${p.y}" r="24" fill="${riskColor[p.risk]}" opacity="0.85" stroke="#fff" stroke-width="2"/>
-    <text x="${p.x}" y="${p.y + 4}" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">${p.t}</text>
+    <text x="${p.x}" y="${p.y + 4}" text-anchor="middle" font-size="15" font-weight="900" fill="#fff">${p.t}</text>
   `).join('')}
 
   <!-- Legend -->
   <g transform="translate(120, 850)">
     <circle cx="15" cy="12" r="10" fill="${C.safe}"/>
-    <text x="35" y="17" font-size="13" font-weight="700" fill="${C.textSoft}">LOW · 빠른 답장</text>
+    <text x="35" y="17" font-size="18" font-weight="700" fill="${C.textSoft}">LOW · 빠른 답장</text>
 
     <circle cx="270" cy="12" r="10" fill="${C.warn}"/>
-    <text x="290" y="17" font-size="13" font-weight="700" fill="${C.textSoft}">MID · 가끔 늦음</text>
+    <text x="290" y="17" font-size="18" font-weight="700" fill="${C.textSoft}">MID · 가끔 늦음</text>
 
     <circle cx="520" cy="12" r="10" fill="${C.danger}"/>
-    <text x="540" y="17" font-size="13" font-weight="700" fill="${C.textSoft}">HIGH · 잠수 빈도 높음</text>
+    <text x="540" y="17" font-size="18" font-weight="700" fill="${C.textSoft}">HIGH · 잠수 빈도 높음</text>
   </g>
   `);
 }
@@ -368,8 +368,8 @@ function ritual() {
   const w = 520, h = 340;
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">기질별 카톡 대응 체크리스트</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">오늘부터 네 카톡 관계가 달라지는 4단계 실전 가이드</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">기질별 카톡 대응 체크리스트</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">오늘부터 네 카톡 관계가 달라지는 4단계 실전 가이드</text>
 
   ${positions.map((p, i) => {
     const g = groups[i];
@@ -377,10 +377,10 @@ function ritual() {
       <g transform="translate(${p.x},${p.y})">
         <rect width="${w}" height="${h}" rx="18" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="${h}" rx="4" fill="${g.color}"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="${C.textMuted}">${g.types}</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="${C.textMuted}">${g.types}</text>
         ${g.items.map((it, j) => `
-          <text x="28" y="${115 + j * 52}" font-size="13" font-weight="600" fill="${C.textSoft}">${it}</text>
+          <text x="28" y="${115 + j * 52}" font-size="18" font-weight="600" fill="${C.textSoft}">${it}</text>
         `).join('')}
       </g>
     `;

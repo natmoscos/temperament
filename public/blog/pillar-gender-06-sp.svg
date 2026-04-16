@@ -4,169 +4,169 @@
 
   <!-- Title band -->
   <rect x="0" y="0" width="1200" height="110" fill="#fffbeb"/>
-  <text x="80" y="55" font-size="14" font-weight="700" fill="#d97706" letter-spacing="4">SP · THE EXPLORERS</text>
-  <text x="80" y="92" font-size="28" font-weight="800" fill="#171717">SP 기회포착형 · 여자 vs 남자</text>
-  <text x="1120" y="75" text-anchor="end" font-size="13" font-weight="500" fill="#6b7280">Se-Ti/Fi · 실전 · 감각 · 현재</text>
+  <text x="80" y="55" font-size="20" font-weight="700" fill="#d97706" letter-spacing="4">SP · THE EXPLORERS</text>
+  <text x="80" y="92" font-size="39" font-weight="800" fill="#171717">SP 기회포착형 · 여자 vs 남자</text>
+  <text x="1120" y="75" text-anchor="end" font-size="18" font-weight="500" fill="#6b7280">Se-Ti/Fi · 실전 · 감각 · 현재</text>
   <line x1="0" y1="110" x2="1200" y2="110" stroke="#d97706" stroke-width="3"/>
 
   <!-- 4 row comparison: 유형 | 여자 | 남자 -->
   <g transform="translate(0, 135)">
     <!-- Column headers -->
     <rect x="80" y="0" width="150" height="38" rx="8" fill="#f3f4f6"/>
-    <text x="155" y="24" text-anchor="middle" font-size="13" font-weight="700" fill="#374151">유형</text>
+    <text x="155" y="24" text-anchor="middle" font-size="18" font-weight="700" fill="#374151">유형</text>
     <rect x="250" y="0" width="420" height="38" rx="8" fill="#fdf2f8"/>
-    <text x="460" y="24" text-anchor="middle" font-size="14" font-weight="800" fill="#be185d">♀ 여자 특징</text>
+    <text x="460" y="24" text-anchor="middle" font-size="20" font-weight="800" fill="#be185d">♀ 여자 특징</text>
     <rect x="690" y="0" width="420" height="38" rx="8" fill="#eff6ff"/>
-    <text x="900" y="24" text-anchor="middle" font-size="14" font-weight="800" fill="#1d4ed8">♂ 남자 특징</text>
+    <text x="900" y="24" text-anchor="middle" font-size="20" font-weight="800" fill="#1d4ed8">♂ 남자 특징</text>
 
     
       <!-- Type badge -->
       <rect x="80" y="60" width="150" height="135" rx="12" fill="#d97706"/>
-      <text x="155" y="112" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">ISTP</text>
+      <text x="155" y="112" text-anchor="middle" font-size="31" font-weight="800" fill="#fff">ISTP</text>
       <line x1="100" y1="128" x2="210" y2="128" stroke="#fff" stroke-width="1" opacity="0.5"/>
-      <text x="155" y="152" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" opacity="0.9">Ti-Se</text>
-      <text x="155" y="175" text-anchor="middle" font-size="10" font-weight="500" fill="#fff" opacity="0.75">기계 만지는 장인</text>
+      <text x="155" y="152" text-anchor="middle" font-size="15" font-weight="600" fill="#fff" opacity="0.9">Ti-Se</text>
+      <text x="155" y="175" text-anchor="middle" font-size="14" font-weight="500" fill="#fff" opacity="0.75">기계 만지는 장인</text>
 
       <!-- Women column -->
       <rect x="250" y="60" width="420" height="135" rx="12" fill="#fff" stroke="#db2777" stroke-width="1.5"/>
-      <text x="270" y="88" font-size="15" font-weight="800" fill="#be185d">쿨한 척이 아닌 진짜 쿨함</text>
+      <text x="270" y="88" font-size="21" font-weight="800" fill="#be185d">쿨한 척이 아닌 진짜 쿨함</text>
       
         <circle cx="278" cy="116" r="3" fill="#db2777"/>
-        <text x="290" y="120" font-size="12" fill="#374151">말은 적고 행동은 빠름</text>
+        <text x="290" y="120" font-size="17" fill="#374151">말은 적고 행동은 빠름</text>
       
         <circle cx="278" cy="138" r="3" fill="#db2777"/>
-        <text x="290" y="142" font-size="12" fill="#374151">관심 없으면 진짜 안 봄</text>
+        <text x="290" y="142" font-size="17" fill="#374151">관심 없으면 진짜 안 봄</text>
       
         <circle cx="278" cy="160" r="3" fill="#db2777"/>
-        <text x="290" y="164" font-size="12" fill="#374151">필요할 때 정확히 도움</text>
+        <text x="290" y="164" font-size="17" fill="#374151">필요할 때 정확히 도움</text>
       
-      <text x="652" y="185" text-anchor="end" font-size="11" font-style="italic" fill="#db2777">★ 크리스틴 스튜어트 (쿨톤)</text>
+      <text x="652" y="185" text-anchor="end" font-size="15" font-style="italic" fill="#db2777">★ 크리스틴 스튜어트 (쿨톤)</text>
 
       <!-- Men column -->
       <rect x="690" y="60" width="420" height="135" rx="12" fill="#fff" stroke="#2563eb" stroke-width="1.5"/>
-      <text x="710" y="88" font-size="15" font-weight="800" fill="#1d4ed8">말 적고 손 바쁜 장인형 남자</text>
+      <text x="710" y="88" font-size="21" font-weight="800" fill="#1d4ed8">말 적고 손 바쁜 장인형 남자</text>
       
         <circle cx="718" cy="116" r="3" fill="#2563eb"/>
-        <text x="730" y="120" font-size="12" fill="#374151">도구·스킬에 몰입</text>
+        <text x="730" y="120" font-size="17" fill="#374151">도구·스킬에 몰입</text>
       
         <circle cx="718" cy="138" r="3" fill="#2563eb"/>
-        <text x="730" y="142" font-size="12" fill="#374151">감정보다 실전</text>
+        <text x="730" y="142" font-size="17" fill="#374151">감정보다 실전</text>
       
         <circle cx="718" cy="160" r="3" fill="#2563eb"/>
-        <text x="730" y="164" font-size="12" fill="#374151">위기 때 의외로 듬직</text>
+        <text x="730" y="164" font-size="17" fill="#374151">위기 때 의외로 듬직</text>
       
-      <text x="1092" y="185" text-anchor="end" font-size="11" font-style="italic" fill="#2563eb">★ 키아누 리브스</text>
+      <text x="1092" y="185" text-anchor="end" font-size="15" font-style="italic" fill="#2563eb">★ 키아누 리브스</text>
       
       <!-- Type badge -->
       <rect x="80" y="215" width="150" height="135" rx="12" fill="#d97706"/>
-      <text x="155" y="267" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">ISFP</text>
+      <text x="155" y="267" text-anchor="middle" font-size="31" font-weight="800" fill="#fff">ISFP</text>
       <line x1="100" y1="283" x2="210" y2="283" stroke="#fff" stroke-width="1" opacity="0.5"/>
-      <text x="155" y="307" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" opacity="0.9">Fi-Se</text>
-      <text x="155" y="330" text-anchor="middle" font-size="10" font-weight="500" fill="#fff" opacity="0.75">감각적 예술가</text>
+      <text x="155" y="307" text-anchor="middle" font-size="15" font-weight="600" fill="#fff" opacity="0.9">Fi-Se</text>
+      <text x="155" y="330" text-anchor="middle" font-size="14" font-weight="500" fill="#fff" opacity="0.75">감각적 예술가</text>
 
       <!-- Women column -->
       <rect x="250" y="215" width="420" height="135" rx="12" fill="#fff" stroke="#db2777" stroke-width="1.5"/>
-      <text x="270" y="243" font-size="15" font-weight="800" fill="#be185d">조용한데 자아가 가장 강한 사람</text>
+      <text x="270" y="243" font-size="21" font-weight="800" fill="#be185d">조용한데 자아가 가장 강한 사람</text>
       
         <circle cx="278" cy="271" r="3" fill="#db2777"/>
-        <text x="290" y="275" font-size="12" fill="#374151">자기 가치 건드리면 움직임</text>
+        <text x="290" y="275" font-size="17" fill="#374151">자기 가치 건드리면 움직임</text>
       
         <circle cx="278" cy="293" r="3" fill="#db2777"/>
-        <text x="290" y="297" font-size="12" fill="#374151">감각적인 취향이 뚜렷</text>
+        <text x="290" y="297" font-size="17" fill="#374151">감각적인 취향이 뚜렷</text>
       
         <circle cx="278" cy="315" r="3" fill="#db2777"/>
-        <text x="290" y="319" font-size="12" fill="#374151">강요받으면 침묵으로 저항</text>
+        <text x="290" y="319" font-size="17" fill="#374151">강요받으면 침묵으로 저항</text>
       
-      <text x="652" y="340" text-anchor="end" font-size="11" font-style="italic" fill="#db2777">★ 문채원 (잔잔한 결</text>
+      <text x="652" y="340" text-anchor="end" font-size="15" font-style="italic" fill="#db2777">★ 문채원 (잔잔한 결</text>
 
       <!-- Men column -->
       <rect x="690" y="215" width="420" height="135" rx="12" fill="#fff" stroke="#2563eb" stroke-width="1.5"/>
-      <text x="710" y="243" font-size="15" font-weight="800" fill="#1d4ed8">감각적이고 부드러운 독립러</text>
+      <text x="710" y="243" font-size="21" font-weight="800" fill="#1d4ed8">감각적이고 부드러운 독립러</text>
       
         <circle cx="718" cy="271" r="3" fill="#2563eb"/>
-        <text x="730" y="275" font-size="12" fill="#374151">말보다 취향과 스타일</text>
+        <text x="730" y="275" font-size="17" fill="#374151">말보다 취향과 스타일</text>
       
         <circle cx="718" cy="293" r="3" fill="#2563eb"/>
-        <text x="730" y="297" font-size="12" fill="#374151">자기 페이스가 생명</text>
+        <text x="730" y="297" font-size="17" fill="#374151">자기 페이스가 생명</text>
       
         <circle cx="718" cy="315" r="3" fill="#2563eb"/>
-        <text x="730" y="319" font-size="12" fill="#374151">감정 공유는 가까운 사이만</text>
+        <text x="730" y="319" font-size="17" fill="#374151">감정 공유는 가까운 사이만</text>
       
-      <text x="1092" y="340" text-anchor="end" font-size="11" font-style="italic" fill="#2563eb">★ 차은우 (분위기형)</text>
+      <text x="1092" y="340" text-anchor="end" font-size="15" font-style="italic" fill="#2563eb">★ 차은우 (분위기형)</text>
       
       <!-- Type badge -->
       <rect x="80" y="370" width="150" height="135" rx="12" fill="#d97706"/>
-      <text x="155" y="422" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">ESTP</text>
+      <text x="155" y="422" text-anchor="middle" font-size="31" font-weight="800" fill="#fff">ESTP</text>
       <line x1="100" y1="438" x2="210" y2="438" stroke="#fff" stroke-width="1" opacity="0.5"/>
-      <text x="155" y="462" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" opacity="0.9">Se-Ti</text>
-      <text x="155" y="485" text-anchor="middle" font-size="10" font-weight="500" fill="#fff" opacity="0.75">현장의 해결사</text>
+      <text x="155" y="462" text-anchor="middle" font-size="15" font-weight="600" fill="#fff" opacity="0.9">Se-Ti</text>
+      <text x="155" y="485" text-anchor="middle" font-size="14" font-weight="500" fill="#fff" opacity="0.75">현장의 해결사</text>
 
       <!-- Women column -->
       <rect x="250" y="370" width="420" height="135" rx="12" fill="#fff" stroke="#db2777" stroke-width="1.5"/>
-      <text x="270" y="398" font-size="15" font-weight="800" fill="#be185d">첫인상과 실제가 다른 사람</text>
+      <text x="270" y="398" font-size="21" font-weight="800" fill="#be185d">첫인상과 실제가 다른 사람</text>
       
         <circle cx="278" cy="426" r="3" fill="#db2777"/>
-        <text x="290" y="430" font-size="12" fill="#374151">텐션 높은데 속은 현실주의</text>
+        <text x="290" y="430" font-size="17" fill="#374151">텐션 높은데 속은 현실주의</text>
       
         <circle cx="278" cy="448" r="3" fill="#db2777"/>
-        <text x="290" y="452" font-size="12" fill="#374151">즉각적 반응이 매력</text>
+        <text x="290" y="452" font-size="17" fill="#374151">즉각적 반응이 매력</text>
       
         <circle cx="278" cy="470" r="3" fill="#db2777"/>
-        <text x="290" y="474" font-size="12" fill="#374151">지루함을 못 견딤</text>
+        <text x="290" y="474" font-size="17" fill="#374151">지루함을 못 견딤</text>
       
-      <text x="652" y="495" text-anchor="end" font-size="11" font-style="italic" fill="#db2777">★ 제니 (무대 퍼포먼스 측면)</text>
+      <text x="652" y="495" text-anchor="end" font-size="15" font-style="italic" fill="#db2777">★ 제니 (무대 퍼포먼스 측면)</text>
 
       <!-- Men column -->
       <rect x="690" y="370" width="420" height="135" rx="12" fill="#fff" stroke="#2563eb" stroke-width="1.5"/>
-      <text x="710" y="398" font-size="15" font-weight="800" fill="#1d4ed8">무모한 듯 계산된 용기의 남자</text>
+      <text x="710" y="398" font-size="21" font-weight="800" fill="#1d4ed8">무모한 듯 계산된 용기의 남자</text>
       
         <circle cx="718" cy="426" r="3" fill="#2563eb"/>
-        <text x="730" y="430" font-size="12" fill="#374151">리스크 계산 후 돌진</text>
+        <text x="730" y="430" font-size="17" fill="#374151">리스크 계산 후 돌진</text>
       
         <circle cx="718" cy="448" r="3" fill="#2563eb"/>
-        <text x="730" y="452" font-size="12" fill="#374151">말보다 움직임이 먼저</text>
+        <text x="730" y="452" font-size="17" fill="#374151">말보다 움직임이 먼저</text>
       
         <circle cx="718" cy="470" r="3" fill="#2563eb"/>
-        <text x="730" y="474" font-size="12" fill="#374151">감정 표현은 행동으로</text>
+        <text x="730" y="474" font-size="17" fill="#374151">감정 표현은 행동으로</text>
       
-      <text x="1092" y="495" text-anchor="end" font-size="11" font-style="italic" fill="#2563eb">★ 마동석 (실전파)</text>
+      <text x="1092" y="495" text-anchor="end" font-size="15" font-style="italic" fill="#2563eb">★ 마동석 (실전파)</text>
       
       <!-- Type badge -->
       <rect x="80" y="525" width="150" height="135" rx="12" fill="#d97706"/>
-      <text x="155" y="577" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">ESFP</text>
+      <text x="155" y="577" text-anchor="middle" font-size="31" font-weight="800" fill="#fff">ESFP</text>
       <line x1="100" y1="593" x2="210" y2="593" stroke="#fff" stroke-width="1" opacity="0.5"/>
-      <text x="155" y="617" text-anchor="middle" font-size="11" font-weight="600" fill="#fff" opacity="0.9">Se-Fi</text>
-      <text x="155" y="640" text-anchor="middle" font-size="10" font-weight="500" fill="#fff" opacity="0.75">분위기 메이커</text>
+      <text x="155" y="617" text-anchor="middle" font-size="15" font-weight="600" fill="#fff" opacity="0.9">Se-Fi</text>
+      <text x="155" y="640" text-anchor="middle" font-size="14" font-weight="500" fill="#fff" opacity="0.75">분위기 메이커</text>
 
       <!-- Women column -->
       <rect x="250" y="525" width="420" height="135" rx="12" fill="#fff" stroke="#db2777" stroke-width="1.5"/>
-      <text x="270" y="553" font-size="15" font-weight="800" fill="#be185d">분위기 메이커의 숨은 눈물</text>
+      <text x="270" y="553" font-size="21" font-weight="800" fill="#be185d">분위기 메이커의 숨은 눈물</text>
       
         <circle cx="278" cy="581" r="3" fill="#db2777"/>
-        <text x="290" y="585" font-size="12" fill="#374151">밝은 겉과 섬세한 속</text>
+        <text x="290" y="585" font-size="17" fill="#374151">밝은 겉과 섬세한 속</text>
       
         <circle cx="278" cy="603" r="3" fill="#db2777"/>
-        <text x="290" y="607" font-size="12" fill="#374151">혼자 있으면 급 우울</text>
+        <text x="290" y="607" font-size="17" fill="#374151">혼자 있으면 급 우울</text>
       
         <circle cx="278" cy="625" r="3" fill="#db2777"/>
-        <text x="290" y="629" font-size="12" fill="#374151">사람으로 충전</text>
+        <text x="290" y="629" font-size="17" fill="#374151">사람으로 충전</text>
       
-      <text x="652" y="650" text-anchor="end" font-size="11" font-style="italic" fill="#db2777">★ 혜리 (밝은 캐릭터)</text>
+      <text x="652" y="650" text-anchor="end" font-size="15" font-style="italic" fill="#db2777">★ 혜리 (밝은 캐릭터)</text>
 
       <!-- Men column -->
       <rect x="690" y="525" width="420" height="135" rx="12" fill="#fff" stroke="#2563eb" stroke-width="1.5"/>
-      <text x="710" y="553" font-size="15" font-weight="800" fill="#1d4ed8">현재를 즐기는 자유로운 영혼</text>
+      <text x="710" y="553" font-size="21" font-weight="800" fill="#1d4ed8">현재를 즐기는 자유로운 영혼</text>
       
         <circle cx="718" cy="581" r="3" fill="#2563eb"/>
-        <text x="730" y="585" font-size="12" fill="#374151">즉흥적 감성 폭발</text>
+        <text x="730" y="585" font-size="17" fill="#374151">즉흥적 감성 폭발</text>
       
         <circle cx="718" cy="603" r="3" fill="#2563eb"/>
-        <text x="730" y="607" font-size="12" fill="#374151">미래 계획은 약함</text>
+        <text x="730" y="607" font-size="17" fill="#374151">미래 계획은 약함</text>
       
         <circle cx="718" cy="625" r="3" fill="#2563eb"/>
-        <text x="730" y="629" font-size="12" fill="#374151">함께 노는 파트너를 사랑</text>
+        <text x="730" y="629" font-size="17" fill="#374151">함께 노는 파트너를 사랑</text>
       
-      <text x="1092" y="650" text-anchor="end" font-size="11" font-style="italic" fill="#2563eb">★ 지드래곤</text>
+      <text x="1092" y="650" text-anchor="end" font-size="15" font-style="italic" fill="#2563eb">★ 지드래곤</text>
       
   </g>
   

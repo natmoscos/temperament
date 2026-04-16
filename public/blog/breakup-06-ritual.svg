@@ -2,71 +2,71 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="#171717">기질별 이별 극복 루틴 체크리스트</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">네 기질에 맞는 4단계 회복 프로토콜 · 지금 바로 1개 시작</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="#171717">기질별 이별 극복 루틴 체크리스트</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="#6b7280">네 기질에 맞는 4단계 회복 프로토콜 · 지금 바로 1개 시작</text>
 
   
       <g transform="translate(60,115)">
         <rect width="520" height="340" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="340" rx="4" fill="#f43f5e"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="#f43f5e">🌸 다혈질 이별 회복</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="#6b7280">ENFP · ESFP · ESFJ · ENFJ · (평균 14~62일)</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="#f43f5e">🌸 다혈질 이별 회복</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="#6b7280">ENFP · ESFP · ESFJ · ENFJ · (평균 14~62일)</text>
         
-          <text x="28" y="115" font-size="13" font-weight="600" fill="#374151">① 절친 1명과 3시간 감정 배출 (민지 같은 안전지대)</text>
+          <text x="28" y="115" font-size="18" font-weight="600" fill="#374151">① 절친 1명과 3시간 감정 배출 (민지 같은 안전지대)</text>
         
-          <text x="28" y="167" font-size="13" font-weight="600" fill="#374151">② SNS 상대 계정 2주 뮤트 → 1달 언팔</text>
+          <text x="28" y="167" font-size="18" font-weight="600" fill="#374151">② SNS 상대 계정 2주 뮤트 → 1달 언팔</text>
         
-          <text x="28" y="219" font-size="13" font-weight="600" fill="#374151">③ "새 만남" 대신 "새 장소" 탐험 (리바운드 회피)</text>
+          <text x="28" y="219" font-size="18" font-weight="600" fill="#374151">③ "새 만남" 대신 "새 장소" 탐험 (리바운드 회피)</text>
         
-          <text x="28" y="271" font-size="13" font-weight="600" fill="#374151">④ 이별 일기 30일 쓰고 태우기 세리머니</text>
+          <text x="28" y="271" font-size="18" font-weight="600" fill="#374151">④ 이별 일기 30일 쓰고 태우기 세리머니</text>
         
       </g>
     
       <g transform="translate(620,115)">
         <rect width="520" height="340" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="340" rx="4" fill="#0891b2"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="#0891b2">📊 담즙질 이별 회복</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="#6b7280">ENTJ · ESTJ · ENTP · ESTP · (평균 2~22일)</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="#0891b2">📊 담즙질 이별 회복</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="#6b7280">ENTJ · ESTJ · ENTP · ESTP · (평균 2~22일)</text>
         
-          <text x="28" y="115" font-size="13" font-weight="600" fill="#374151">① 이별 사유 1페이지로 요약 후 종결 선언</text>
+          <text x="28" y="115" font-size="18" font-weight="600" fill="#374151">① 이별 사유 1페이지로 요약 후 종결 선언</text>
         
-          <text x="28" y="167" font-size="13" font-weight="600" fill="#374151">② 자기개발 목표 1개로 에너지 전환</text>
+          <text x="28" y="167" font-size="18" font-weight="600" fill="#374151">② 자기개발 목표 1개로 에너지 전환</text>
         
-          <text x="28" y="219" font-size="13" font-weight="600" fill="#374151">③ 감정 무시 금지 — 하루 10분 "슬픔 시간" 확보</text>
+          <text x="28" y="219" font-size="18" font-weight="600" fill="#374151">③ 감정 무시 금지 — 하루 10분 "슬픔 시간" 확보</text>
         
-          <text x="28" y="271" font-size="13" font-weight="600" fill="#374151">④ 새 관계는 2개월 이후 시작</text>
+          <text x="28" y="271" font-size="18" font-weight="600" fill="#374151">④ 새 관계는 2개월 이후 시작</text>
         
       </g>
     
       <g transform="translate(60,490)">
         <rect width="520" height="340" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="340" rx="4" fill="#059669"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="#059669">🌾 점액질 이별 회복</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="#6b7280">ISFJ · ISTJ · INFP · ISFP · (평균 26~110일)</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="#059669">🌾 점액질 이별 회복</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="#6b7280">ISFJ · ISTJ · INFP · ISFP · (평균 26~110일)</text>
         
-          <text x="28" y="115" font-size="13" font-weight="600" fill="#374151">① 일상 루틴 복구 먼저 (식사·수면)</text>
+          <text x="28" y="115" font-size="18" font-weight="600" fill="#374151">① 일상 루틴 복구 먼저 (식사·수면)</text>
         
-          <text x="28" y="167" font-size="13" font-weight="600" fill="#374151">② 집 안 상대 흔적 정리 — 물건 박스 포장</text>
+          <text x="28" y="167" font-size="18" font-weight="600" fill="#374151">② 집 안 상대 흔적 정리 — 물건 박스 포장</text>
         
-          <text x="28" y="219" font-size="13" font-weight="600" fill="#374151">③ 믿을 만한 1명과 주 1회 감정 체크인</text>
+          <text x="28" y="219" font-size="18" font-weight="600" fill="#374151">③ 믿을 만한 1명과 주 1회 감정 체크인</text>
         
-          <text x="28" y="271" font-size="13" font-weight="600" fill="#374151">④ 급하게 회복 안 해도 됨 — 시간이 치유</text>
+          <text x="28" y="271" font-size="18" font-weight="600" fill="#374151">④ 급하게 회복 안 해도 됨 — 시간이 치유</text>
         
       </g>
     
       <g transform="translate(620,490)">
         <rect width="520" height="340" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
         <rect width="8" height="340" rx="4" fill="#0e7490"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="#0e7490">🌙 우울질 이별 회복</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="#6b7280">INTJ · INFJ · INTP · ISTP · (평균 5~180일)</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="#0e7490">🌙 우울질 이별 회복</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="#6b7280">INTJ · INFJ · INTP · ISTP · (평균 5~180일)</text>
         
-          <text x="28" y="115" font-size="13" font-weight="600" fill="#374151">① "도어슬램 전" 1문장으로 마음 정리 기록</text>
+          <text x="28" y="115" font-size="18" font-weight="600" fill="#374151">① "도어슬램 전" 1문장으로 마음 정리 기록</text>
         
-          <text x="28" y="167" font-size="13" font-weight="600" fill="#374151">② 상대 시나리오 반복 인식 → 종이에 쓰고 덮기</text>
+          <text x="28" y="167" font-size="18" font-weight="600" fill="#374151">② 상대 시나리오 반복 인식 → 종이에 쓰고 덮기</text>
         
-          <text x="28" y="219" font-size="13" font-weight="600" fill="#374151">③ 몸을 움직이는 활동 (산책 · 수영 · 스트레칭)</text>
+          <text x="28" y="219" font-size="18" font-weight="600" fill="#374151">③ 몸을 움직이는 활동 (산책 · 수영 · 스트레칭)</text>
         
-          <text x="28" y="271" font-size="13" font-weight="600" fill="#374151">④ 의미 찾기 금지 — "그냥 끝났다"로 마무리</text>
+          <text x="28" y="271" font-size="18" font-weight="600" fill="#374151">④ 의미 찾기 금지 — "그냥 끝났다"로 마무리</text>
         
       </g>
     

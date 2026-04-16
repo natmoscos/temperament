@@ -2,39 +2,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">한국 재벌 MBTI 분포 (4대 그룹)</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">100% NT 분석가형 · 세계 부자 80% NT와 동일한 패턴</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="#171717">한국 재벌 MBTI 분포 (4대 그룹)</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="#6b7280">100% NT 분석가형 · 세계 부자 80% NT와 동일한 패턴</text>
 
   
       <g transform="translate(200, 180)">
-        <text x="0" y="50" font-size="28" font-weight="900" fill="#0e7490">INTJ</text>
+        <text x="0" y="50" font-size="39" font-weight="900" fill="#0e7490">INTJ</text>
         <rect x="140" y="22" width="600" height="60" rx="30" fill="#0e7490" opacity="0.25"/>
         <rect x="140" y="22" width="600" height="60" rx="30" fill="#0e7490" opacity="0.85"/>
-        <text x="750" y="60" font-size="24" font-weight="900" fill="#0e7490">2명</text>
-        <text x="820" y="60" font-size="16" font-weight="700" fill="#6b7280">50%</text>
+        <text x="750" y="60" font-size="34" font-weight="900" fill="#0e7490">2명</text>
+        <text x="820" y="60" font-size="22" font-weight="700" fill="#6b7280">50%</text>
       </g>
     
       <g transform="translate(200, 360)">
-        <text x="0" y="50" font-size="28" font-weight="900" fill="#0891b2">ENTJ</text>
+        <text x="0" y="50" font-size="39" font-weight="900" fill="#0891b2">ENTJ</text>
         <rect x="140" y="22" width="300" height="60" rx="30" fill="#0891b2" opacity="0.25"/>
         <rect x="140" y="22" width="300" height="60" rx="30" fill="#0891b2" opacity="0.85"/>
-        <text x="450" y="60" font-size="24" font-weight="900" fill="#0891b2">1명</text>
-        <text x="520" y="60" font-size="16" font-weight="700" fill="#6b7280">25%</text>
+        <text x="450" y="60" font-size="34" font-weight="900" fill="#0891b2">1명</text>
+        <text x="520" y="60" font-size="22" font-weight="700" fill="#6b7280">25%</text>
       </g>
     
       <g transform="translate(200, 540)">
-        <text x="0" y="50" font-size="28" font-weight="900" fill="#06b6d4">ENTP</text>
+        <text x="0" y="50" font-size="39" font-weight="900" fill="#06b6d4">ENTP</text>
         <rect x="140" y="22" width="300" height="60" rx="30" fill="#06b6d4" opacity="0.25"/>
         <rect x="140" y="22" width="300" height="60" rx="30" fill="#06b6d4" opacity="0.85"/>
-        <text x="450" y="60" font-size="24" font-weight="900" fill="#06b6d4">1명</text>
-        <text x="520" y="60" font-size="16" font-weight="700" fill="#6b7280">25%</text>
+        <text x="450" y="60" font-size="34" font-weight="900" fill="#06b6d4">1명</text>
+        <text x="520" y="60" font-size="22" font-weight="700" fill="#6b7280">25%</text>
       </g>
     
 
   <rect x="100" y="770" width="1000" height="90" rx="16" fill="#fde8e8" stroke="#c0392b"/>
-  <text x="600" y="805" text-anchor="middle" font-size="15" font-weight="900" fill="#c0392b">🔥 한국 재벌 공통 인지기능</text>
-  <text x="600" y="830" text-anchor="middle" font-size="14" font-weight="700" fill="#171717">Ni(장기 비전) + Te(효율 실행) → 세계 부자 TOP 10과 동일 공식</text>
-  <text x="600" y="852" text-anchor="middle" font-size="12" font-weight="500" fill="#6b7280">단, 한국 특유 "가족 경영 승계 + 집단 조직 문화"가 변수로 추가</text>
+  <text x="600" y="805" text-anchor="middle" font-size="21" font-weight="900" fill="#c0392b">🔥 한국 재벌 공통 인지기능</text>
+  <text x="600" y="830" text-anchor="middle" font-size="20" font-weight="700" fill="#171717">Ni(장기 비전) + Te(효율 실행) → 세계 부자 TOP 10과 동일 공식</text>
+  <text x="600" y="852" text-anchor="middle" font-size="17" font-weight="500" fill="#6b7280">단, 한국 특유 "가족 경영 승계 + 집단 조직 문화"가 변수로 추가</text>
   
 <text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 경제학 리포트</text>
 </svg>

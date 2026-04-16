@@ -133,8 +133,8 @@ function matrix() {
     { t: 'ESFP', g: 'SP', x: 960, y: 700 },
   ];
   return wrap(`
-  <text x="600" y="56" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">리스크 × 투자 시야 매트릭스</text>
-  <text x="600" y="86" text-anchor="middle" font-size="14" font-weight="500" fill="${C.textMuted}">16유형을 감수성과 시간지평으로 펼쳐본 맵</text>
+  <text x="600" y="56" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">리스크 × 투자 시야 매트릭스</text>
+  <text x="600" y="86" text-anchor="middle" font-size="20" font-weight="500" fill="${C.textMuted}">16유형을 감수성과 시간지평으로 펼쳐본 맵</text>
 
   <!-- Quadrant backgrounds -->
   <rect x="150" y="140" width="450" height="310" fill="${C.sj50}" opacity="0.55"/>
@@ -143,17 +143,17 @@ function matrix() {
   <rect x="600" y="450" width="450" height="310" fill="${C.sp50}" opacity="0.55"/>
 
   <!-- Quadrant labels -->
-  <text x="170" y="170" font-size="13" font-weight="700" fill="${C.sj700}" letter-spacing="2">SJ · 보수적 저축가</text>
-  <text x="170" y="188" font-size="11" fill="${C.sj700}" opacity="0.8">연금·예적금·장기운용</text>
+  <text x="170" y="170" font-size="18" font-weight="700" fill="${C.sj700}" letter-spacing="2">SJ · 보수적 저축가</text>
+  <text x="170" y="188" font-size="15" fill="${C.sj700}" opacity="0.8">연금·예적금·장기운용</text>
 
-  <text x="1030" y="170" text-anchor="end" font-size="13" font-weight="700" fill="${C.nt700}" letter-spacing="2">NT · 전략 투자가</text>
-  <text x="1030" y="188" text-anchor="end" font-size="11" fill="${C.nt700}" opacity="0.8">가치투자·레버리지·포트폴리오</text>
+  <text x="1030" y="170" text-anchor="end" font-size="18" font-weight="700" fill="${C.nt700}" letter-spacing="2">NT · 전략 투자가</text>
+  <text x="1030" y="188" text-anchor="end" font-size="15" fill="${C.nt700}" opacity="0.8">가치투자·레버리지·포트폴리오</text>
 
-  <text x="170" y="480" font-size="13" font-weight="700" fill="${C.nf700}" letter-spacing="2">NF · 가치기반 소비자</text>
-  <text x="170" y="498" font-size="11" fill="${C.nf700}" opacity="0.8">ESG·후원·경험 중심 지출</text>
+  <text x="170" y="480" font-size="18" font-weight="700" fill="${C.nf700}" letter-spacing="2">NF · 가치기반 소비자</text>
+  <text x="170" y="498" font-size="15" fill="${C.nf700}" opacity="0.8">ESG·후원·경험 중심 지출</text>
 
-  <text x="1030" y="480" text-anchor="end" font-size="13" font-weight="700" fill="${C.sp700}" letter-spacing="2">SP · 기회포착형</text>
-  <text x="1030" y="498" text-anchor="end" font-size="11" fill="${C.sp700}" opacity="0.8">단타·스윙·사이드잡·즉흥소비</text>
+  <text x="1030" y="480" text-anchor="end" font-size="18" font-weight="700" fill="${C.sp700}" letter-spacing="2">SP · 기회포착형</text>
+  <text x="1030" y="498" text-anchor="end" font-size="15" fill="${C.sp700}" opacity="0.8">단타·스윙·사이드잡·즉흥소비</text>
 
   <!-- Axes -->
   <line x1="150" y1="450" x2="1050" y2="450" stroke="${C.divider}" stroke-width="1.5"/>
@@ -163,14 +163,14 @@ function matrix() {
   <polygon points="150,450 160,445 160,455" fill="${C.divider}"/>
   <polygon points="600,760 595,750 605,750" fill="${C.divider}"/>
 
-  <text x="140" y="455" text-anchor="end" font-size="13" font-weight="600" fill="${C.textSoft}">리스크 회피</text>
-  <text x="1060" y="455" font-size="13" font-weight="600" fill="${C.textSoft}">리스크 추구</text>
-  <text x="600" y="128" text-anchor="middle" font-size="13" font-weight="600" fill="${C.textSoft}">장기 시야</text>
-  <text x="600" y="780" text-anchor="middle" font-size="13" font-weight="600" fill="${C.textSoft}">단기 시야</text>
+  <text x="140" y="455" text-anchor="end" font-size="18" font-weight="600" fill="${C.textSoft}">리스크 회피</text>
+  <text x="1060" y="455" font-size="18" font-weight="600" fill="${C.textSoft}">리스크 추구</text>
+  <text x="600" y="128" text-anchor="middle" font-size="18" font-weight="600" fill="${C.textSoft}">장기 시야</text>
+  <text x="600" y="780" text-anchor="middle" font-size="18" font-weight="600" fill="${C.textSoft}">단기 시야</text>
 
   ${types.map(t => `
     <circle cx="${t.x}" cy="${t.y}" r="30" fill="${COLOR_OF[t.g]}"/>
-    <text x="${t.x}" y="${t.y + 5}" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">${t.t}</text>
+    <text x="${t.x}" y="${t.y + 5}" text-anchor="middle" font-size="18" font-weight="800" fill="#fff">${t.t}</text>
   `).join('')}
 
   <!-- Legend -->
@@ -183,8 +183,8 @@ function matrix() {
       { c: C.sp600, l: 'SP · 기회형', d: '실전·즉흥', x: 690 },
     ].map(({ c, l, d, x }) => `
       <circle cx="${x}" cy="28" r="8" fill="${c}"/>
-      <text x="${x + 15}" y="24" font-size="12" font-weight="700" fill="${C.textSoft}">${l}</text>
-      <text x="${x + 15}" y="42" font-size="10" fill="${C.textMuted}">${d}</text>
+      <text x="${x + 15}" y="24" font-size="17" font-weight="700" fill="${C.textSoft}">${l}</text>
+      <text x="${x + 15}" y="42" font-size="14" fill="${C.textMuted}">${d}</text>
     `).join('')}
   </g>
   `);
@@ -203,21 +203,21 @@ function spendingMap() {
     { c: '✈ 여행·모험', types: ['ENFP', 'ENTP', 'ESFP'], color: C.sj500, x: 625, y: 620, w: 300, h: 160 },
   ];
   return wrap(`
-  <text x="600" y="56" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">16유형 지출 카테고리 TOP 8</text>
-  <text x="600" y="86" text-anchor="middle" font-size="14" font-weight="500" fill="${C.textMuted}">각 카테고리에 돈을 제일 많이 쓰는 유형 상위 3</text>
-  <text x="600" y="112" text-anchor="middle" font-size="12" font-weight="500" fill="${C.textFaint}">"나 이거 맞아..." 싶으면 카드 명세서 한 번 보기</text>
+  <text x="600" y="56" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">16유형 지출 카테고리 TOP 8</text>
+  <text x="600" y="86" text-anchor="middle" font-size="20" font-weight="500" fill="${C.textMuted}">각 카테고리에 돈을 제일 많이 쓰는 유형 상위 3</text>
+  <text x="600" y="112" text-anchor="middle" font-size="17" font-weight="500" fill="${C.textFaint}">"나 이거 맞아..." 싶으면 카드 명세서 한 번 보기</text>
 
   ${cats.map(cat => `
     <rect x="${cat.x}" y="${cat.y}" width="${cat.w}" height="${cat.h}" rx="14" fill="#fff" stroke="${cat.color}" stroke-width="2"/>
     <rect x="${cat.x}" y="${cat.y}" width="${cat.w}" height="42" rx="14" fill="${cat.color}"/>
     <rect x="${cat.x}" y="${cat.y + 28}" width="${cat.w}" height="14" fill="${cat.color}"/>
-    <text x="${cat.x + cat.w / 2}" y="${cat.y + 28}" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">${cat.c}</text>
+    <text x="${cat.x + cat.w / 2}" y="${cat.y + 28}" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">${cat.c}</text>
 
     ${cat.types.map((t, i) => `
       <g transform="translate(${cat.x + 20 + i * 90}, ${cat.y + 70})">
         <rect x="0" y="0" width="76" height="60" rx="10" fill="${cat.color}" opacity="0.12"/>
-        <text x="38" y="22" text-anchor="middle" font-size="10" font-weight="600" fill="${cat.color}">${['TOP 1', 'TOP 2', 'TOP 3'][i]}</text>
-        <text x="38" y="46" text-anchor="middle" font-size="15" font-weight="800" fill="${cat.color}">${t}</text>
+        <text x="38" y="22" text-anchor="middle" font-size="14" font-weight="600" fill="${cat.color}">${['TOP 1', 'TOP 2', 'TOP 3'][i]}</text>
+        <text x="38" y="46" text-anchor="middle" font-size="21" font-weight="800" fill="${cat.color}">${t}</text>
       </g>
     `).join('')}
   `).join('')}
@@ -245,8 +245,8 @@ function riskRanking() {
     { r: 16, t: 'ISFJ', g: 'SJ', s: 14, d: '원금 보장이 최우선' },
   ];
   return wrap(`
-  <text x="600" y="52" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">리스크 감수성 16유형 순위</text>
-  <text x="600" y="82" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">얼마나 큰 리스크를 감당할 수 있는지 · 100점 만점</text>
+  <text x="600" y="52" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">리스크 감수성 16유형 순위</text>
+  <text x="600" y="82" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">얼마나 큰 리스크를 감당할 수 있는지 · 100점 만점</text>
 
   ${data.map((d, i) => {
     const y = 120 + i * 44;
@@ -256,9 +256,9 @@ function riskRanking() {
       <text x="45" y="${y + 26}" font-size="${d.r <= 3 ? 16 : 13}" font-weight="${d.r <= 3 ? 800 : 600}" fill="${medal || C.textSoft}">${d.r}</text>
       <circle cx="95" cy="${y + 21}" r="12" fill="${COLOR_OF[d.g]}"/>
       <text x="115" y="${y + 26}" font-size="${d.r <= 3 ? 15 : 13}" font-weight="${d.r <= 3 ? 800 : 700}" fill="${COLOR_OF[d.g]}">${d.t}</text>
-      <text x="170" y="${y + 26}" font-size="11" fill="${C.textMuted}">${d.d}</text>
+      <text x="170" y="${y + 26}" font-size="15" fill="${C.textMuted}">${d.d}</text>
       <rect x="430" y="${y + 10}" width="${barW}" height="22" rx="11" fill="${COLOR_OF[d.g]}" opacity="${d.r <= 8 ? 1 : 0.55}"/>
-      <text x="${430 + barW + 10}" y="${y + 26}" font-size="12" font-weight="800" fill="${COLOR_OF[d.g]}">${d.s}</text>
+      <text x="${430 + barW + 10}" y="${y + 26}" font-size="17" font-weight="800" fill="${COLOR_OF[d.g]}">${d.s}</text>
     `;
   }).join('')}
   `);
@@ -285,8 +285,8 @@ function savingRanking() {
     { r: 16, t: 'ESFP', g: 'SP', s: 16, d: '지금의 즐거움 우선' },
   ];
   return wrap(`
-  <text x="600" y="52" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">저축률 16유형 순위</text>
-  <text x="600" y="82" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">소득 대비 저축 비율 · 100점 만점</text>
+  <text x="600" y="52" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">저축률 16유형 순위</text>
+  <text x="600" y="82" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">소득 대비 저축 비율 · 100점 만점</text>
 
   ${data.map((d, i) => {
     const y = 120 + i * 44;
@@ -296,9 +296,9 @@ function savingRanking() {
       <text x="45" y="${y + 26}" font-size="${d.r <= 3 ? 16 : 13}" font-weight="${d.r <= 3 ? 800 : 600}" fill="${medal || C.textSoft}">${d.r}</text>
       <circle cx="95" cy="${y + 21}" r="12" fill="${COLOR_OF[d.g]}"/>
       <text x="115" y="${y + 26}" font-size="${d.r <= 3 ? 15 : 13}" font-weight="${d.r <= 3 ? 800 : 700}" fill="${COLOR_OF[d.g]}">${d.t}</text>
-      <text x="170" y="${y + 26}" font-size="11" fill="${C.textMuted}">${d.d}</text>
+      <text x="170" y="${y + 26}" font-size="15" fill="${C.textMuted}">${d.d}</text>
       <rect x="430" y="${y + 10}" width="${barW}" height="22" rx="11" fill="${COLOR_OF[d.g]}" opacity="${d.r <= 8 ? 1 : 0.55}"/>
-      <text x="${430 + barW + 10}" y="${y + 26}" font-size="12" font-weight="800" fill="${COLOR_OF[d.g]}">${d.s}</text>
+      <text x="${430 + barW + 10}" y="${y + 26}" font-size="17" font-weight="800" fill="${COLOR_OF[d.g]}">${d.s}</text>
     `;
   }).join('')}
   `);
@@ -313,8 +313,8 @@ function temperamentMoney() {
     { g: '우울질 (Melancholic)', color: '#7c3aed', desc: '치밀 분석 · 과도한 대비', strong: '리스크 관리', weak: '분석마비', tip: '실행 데드라인 설정' },
   ];
   return wrap(`
-  <text x="600" y="56" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">4기질 × 돈 관리 핵심 차이</text>
-  <text x="600" y="86" text-anchor="middle" font-size="14" font-weight="500" fill="${C.textMuted}">MBTI 같아도 기질 다르면 지출·저축 패턴 완전히 달라</text>
+  <text x="600" y="56" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">4기질 × 돈 관리 핵심 차이</text>
+  <text x="600" y="86" text-anchor="middle" font-size="20" font-weight="500" fill="${C.textMuted}">MBTI 같아도 기질 다르면 지출·저축 패턴 완전히 달라</text>
 
   ${items.map((it, i) => {
     const x = 60 + (i % 2) * 560;
@@ -323,21 +323,21 @@ function temperamentMoney() {
       <rect x="${x}" y="${y}" width="540" height="310" rx="16" fill="#fff" stroke="${it.color}" stroke-width="2"/>
       <rect x="${x}" y="${y}" width="540" height="72" rx="16" fill="${it.color}"/>
       <rect x="${x}" y="${y + 56}" width="540" height="16" fill="${it.color}"/>
-      <text x="${x + 30}" y="${y + 35}" font-size="22" font-weight="800" fill="#fff">${it.g}</text>
-      <text x="${x + 30}" y="${y + 58}" font-size="13" font-weight="500" fill="#fff" opacity="0.9">${it.desc}</text>
+      <text x="${x + 30}" y="${y + 35}" font-size="31" font-weight="800" fill="#fff">${it.g}</text>
+      <text x="${x + 30}" y="${y + 58}" font-size="18" font-weight="500" fill="#fff" opacity="0.9">${it.desc}</text>
 
       <g transform="translate(${x + 30}, ${y + 105})">
-        <text x="0" y="0" font-size="12" font-weight="700" fill="${C.money}">✓ 강점</text>
-        <text x="60" y="0" font-size="14" font-weight="600" fill="${C.textSoft}">${it.strong}</text>
+        <text x="0" y="0" font-size="17" font-weight="700" fill="${C.money}">✓ 강점</text>
+        <text x="60" y="0" font-size="20" font-weight="600" fill="${C.textSoft}">${it.strong}</text>
       </g>
       <g transform="translate(${x + 30}, ${y + 150})">
-        <text x="0" y="0" font-size="12" font-weight="700" fill="${C.nf600}">⚠ 약점</text>
-        <text x="60" y="0" font-size="14" font-weight="600" fill="${C.textSoft}">${it.weak}</text>
+        <text x="0" y="0" font-size="17" font-weight="700" fill="${C.nf600}">⚠ 약점</text>
+        <text x="60" y="0" font-size="20" font-weight="600" fill="${C.textSoft}">${it.weak}</text>
       </g>
       <g transform="translate(${x + 30}, ${y + 200})">
         <rect x="-10" y="-22" width="490" height="70" rx="10" fill="${it.color}" opacity="0.08"/>
-        <text x="0" y="0" font-size="12" font-weight="700" fill="${it.color}">💡 실전 팁</text>
-        <text x="0" y="22" font-size="14" font-weight="600" fill="${it.color}">${it.tip}</text>
+        <text x="0" y="0" font-size="17" font-weight="700" fill="${it.color}">💡 실전 팁</text>
+        <text x="0" y="22" font-size="20" font-weight="600" fill="${it.color}">${it.tip}</text>
       </g>
     `;
   }).join('')}
@@ -366,19 +366,19 @@ function coupleMoney() {
   }
 
   return wrap(`
-  <text x="600" y="56" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">커플 돈 궁합 히트맵</text>
-  <text x="600" y="86" text-anchor="middle" font-size="14" font-weight="500" fill="${C.textMuted}">4기질 조합별 재무 가치관 호환성 (100점 만점)</text>
-  <text x="600" y="110" text-anchor="middle" font-size="11" font-weight="500" fill="${C.textFaint}">같은 기질끼리 맞는 듯해도 실제론 SJ×NT가 의외의 최고</text>
+  <text x="600" y="56" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">커플 돈 궁합 히트맵</text>
+  <text x="600" y="86" text-anchor="middle" font-size="20" font-weight="500" fill="${C.textMuted}">4기질 조합별 재무 가치관 호환성 (100점 만점)</text>
+  <text x="600" y="110" text-anchor="middle" font-size="15" font-weight="500" fill="${C.textFaint}">같은 기질끼리 맞는 듯해도 실제론 SJ×NT가 의외의 최고</text>
 
   <!-- Row labels -->
   ${groups.map((g, i) => `
-    <text x="240" y="${startY + cell/2 + i * cell + 6}" text-anchor="end" font-size="15" font-weight="800" fill="${COLOR_OF[g]}">${g}</text>
+    <text x="240" y="${startY + cell/2 + i * cell + 6}" text-anchor="end" font-size="21" font-weight="800" fill="${COLOR_OF[g]}">${g}</text>
     <circle cx="220" cy="${startY + cell/2 + i * cell}" r="10" fill="${COLOR_OF[g]}"/>
   `).join('')}
 
   <!-- Column labels -->
   ${groups.map((g, i) => `
-    <text x="${startX + cell/2 + i * cell}" y="180" text-anchor="middle" font-size="15" font-weight="800" fill="${COLOR_OF[g]}">${g}</text>
+    <text x="${startX + cell/2 + i * cell}" y="180" text-anchor="middle" font-size="21" font-weight="800" fill="${COLOR_OF[g]}">${g}</text>
   `).join('')}
 
   <!-- Heatmap cells -->
@@ -389,8 +389,8 @@ function coupleMoney() {
     const y = startY + ri * cell;
     return `
       <rect x="${x}" y="${y}" width="${cell - 8}" height="${cell - 8}" rx="10" fill="${col.bg}" stroke="#fff" stroke-width="2"/>
-      <text x="${x + (cell-8)/2}" y="${y + (cell-8)/2 + 5}" text-anchor="middle" font-size="24" font-weight="800" fill="${col.text}">${v}</text>
-      <text x="${x + (cell-8)/2}" y="${y + (cell-8)/2 + 30}" text-anchor="middle" font-size="11" font-weight="600" fill="${col.text}" opacity="0.85">${col.label}</text>
+      <text x="${x + (cell-8)/2}" y="${y + (cell-8)/2 + 5}" text-anchor="middle" font-size="34" font-weight="800" fill="${col.text}">${v}</text>
+      <text x="${x + (cell-8)/2}" y="${y + (cell-8)/2 + 30}" text-anchor="middle" font-size="15" font-weight="600" fill="${col.text}" opacity="0.85">${col.label}</text>
     `;
   }).join('')).join('')}
 
@@ -403,7 +403,7 @@ function coupleMoney() {
       { c: '#f87171', l: '~49 주의 필요', x: 460 },
     ].map(({ c, l, x }) => `
       <rect x="${x}" y="0" width="20" height="20" rx="4" fill="${c}"/>
-      <text x="${x + 28}" y="15" font-size="12" font-weight="600" fill="${C.textSoft}">${l}</text>
+      <text x="${x + 28}" y="15" font-size="17" font-weight="600" fill="${C.textSoft}">${l}</text>
     `).join('')}
   </g>
   `);
@@ -438,8 +438,8 @@ function actionChecklist() {
     ] },
   ];
   return wrap(`
-  <text x="600" y="56" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">유형별 재테크 액션 체크리스트</text>
-  <text x="600" y="86" text-anchor="middle" font-size="14" font-weight="500" fill="${C.textMuted}">오늘 당장 시작할 수 있는 4가지</text>
+  <text x="600" y="56" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">유형별 재테크 액션 체크리스트</text>
+  <text x="600" y="86" text-anchor="middle" font-size="20" font-weight="500" fill="${C.textMuted}">오늘 당장 시작할 수 있는 4가지</text>
 
   ${groups.map((g, i) => {
     const x = 60 + (i % 2) * 560;
@@ -448,14 +448,14 @@ function actionChecklist() {
       <rect x="${x}" y="${y}" width="540" height="310" rx="16" fill="#fff" stroke="${g.color}" stroke-width="2"/>
       <rect x="${x}" y="${y}" width="540" height="60" rx="16" fill="${g.color}"/>
       <rect x="${x}" y="${y + 44}" width="540" height="16" fill="${g.color}"/>
-      <text x="${x + 30}" y="${y + 38}" font-size="20" font-weight="800" fill="#fff">${g.t}</text>
+      <text x="${x + 30}" y="${y + 38}" font-size="28" font-weight="800" fill="#fff">${g.t}</text>
 
       ${g.items.map((it, j) => `
         <g transform="translate(${x + 30}, ${y + 90 + j * 54})">
           <rect x="-5" y="-20" width="500" height="46" rx="8" fill="${g.color}" opacity="0.06"/>
           <rect x="5" y="-10" width="24" height="24" rx="5" fill="none" stroke="${g.color}" stroke-width="2"/>
-          <text x="15" y="6" text-anchor="middle" font-size="14" font-weight="800" fill="${g.color}">${j + 1}</text>
-          <text x="42" y="6" font-size="13" font-weight="600" fill="${C.textSoft}">${it}</text>
+          <text x="15" y="6" text-anchor="middle" font-size="20" font-weight="800" fill="${g.color}">${j + 1}</text>
+          <text x="42" y="6" font-size="18" font-weight="600" fill="${C.textSoft}">${it}</text>
         </g>
       `).join('')}
     `;

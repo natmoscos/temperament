@@ -131,8 +131,8 @@ function speedRanking() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">16유형 연애 속도 랭킹 — 첫 만남 → 연애 확정까지 평균 일수</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">낮을수록 금사빠, 높을수록 신중 · 박서연 데이터 리포트 N=412 + 인지기능 보정</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">16유형 연애 속도 랭킹 — 첫 만남 → 연애 확정까지 평균 일수</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">낮을수록 금사빠, 높을수록 신중 · 박서연 데이터 리포트 N=412 + 인지기능 보정</text>
 
   ${ranking.map((r, i) => {
     const y = top + i * rowH;
@@ -140,11 +140,11 @@ function speedRanking() {
     const tier = tiers.find(t => i >= t.from && i <= t.to);
     const g = GROUP_OF[r.t];
     return `
-      <text x="45" y="${y + 28}" font-size="14" font-weight="700" fill="${C.textMuted}">${String(i + 1).padStart(2, '0')}</text>
-      <text x="85" y="${y + 28}" font-size="16" font-weight="800" fill="${COLOR_OF[g]}">${r.t}</text>
+      <text x="45" y="${y + 28}" font-size="20" font-weight="700" fill="${C.textMuted}">${String(i + 1).padStart(2, '0')}</text>
+      <text x="85" y="${y + 28}" font-size="22" font-weight="800" fill="${COLOR_OF[g]}">${r.t}</text>
       <rect x="${left}" y="${y + 10}" width="${w}" height="26" rx="13" fill="${tier.color}" opacity="0.88"/>
-      <text x="${left + w - 10}" y="${y + 28}" text-anchor="end" font-size="13" font-weight="800" fill="#fff">${r.d}일</text>
-      <text x="${left + w + 14}" y="${y + 28}" font-size="12" font-weight="600" fill="${C.textSoft}">${r.desc}</text>
+      <text x="${left + w - 10}" y="${y + 28}" text-anchor="end" font-size="18" font-weight="800" fill="#fff">${r.d}일</text>
+      <text x="${left + w + 14}" y="${y + 28}" font-size="17" font-weight="600" fill="${C.textSoft}">${r.desc}</text>
     `;
   }).join('')}
 
@@ -152,7 +152,7 @@ function speedRanking() {
   <g transform="translate(280, 830)">
     ${tiers.map((t, i) => `
       <rect x="${i * 210}" y="0" width="14" height="14" rx="3" fill="${t.color}"/>
-      <text x="${i * 210 + 22}" y="12" font-size="12" font-weight="700" fill="${C.textSoft}">${t.name}</text>
+      <text x="${i * 210 + 22}" y="12" font-size="17" font-weight="700" fill="${C.textSoft}">${t.name}</text>
     `).join('')}
   </g>
   `);
@@ -202,22 +202,22 @@ function fallCurve() {
   };
 
   return wrap(`
-  <text x="600" y="55" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">4기질별 "호감 → 사랑" 감정 곡선</text>
-  <text x="600" y="82" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">같은 MBTI여도 기질에 따라 빠지는 속도와 모양이 완전히 달라져</text>
+  <text x="600" y="55" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">4기질별 "호감 → 사랑" 감정 곡선</text>
+  <text x="600" y="82" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">같은 MBTI여도 기질에 따라 빠지는 속도와 모양이 완전히 달라져</text>
 
   ${positions.map((p, i) => {
     const g = groups[i];
     return `
       <g transform="translate(${p.x},${p.y})">
         <rect width="${cardW}" height="${cardH}" rx="18" fill="#ffffff" stroke="${C.border}"/>
-        <text x="28" y="40" font-size="17" font-weight="800" fill="${g.color}">${g.name}</text>
-        <text x="28" y="65" font-size="12" font-weight="500" fill="${C.textMuted}">${g.desc}</text>
+        <text x="28" y="40" font-size="24" font-weight="800" fill="${g.color}">${g.name}</text>
+        <text x="28" y="65" font-size="17" font-weight="500" fill="${C.textMuted}">${g.desc}</text>
         <!-- Chart axes -->
         <g transform="translate(28, 95)">
           <line x1="0" y1="180" x2="470" y2="180" stroke="${C.divider}"/>
           <line x1="0" y1="0" x2="0" y2="180" stroke="${C.divider}"/>
-          <text x="-8" y="8" text-anchor="end" font-size="10" fill="${C.textFaint}">몰입</text>
-          <text x="465" y="198" text-anchor="end" font-size="10" fill="${C.textFaint}">시간 →</text>
+          <text x="-8" y="8" text-anchor="end" font-size="14" fill="${C.textFaint}">몰입</text>
+          <text x="465" y="198" text-anchor="end" font-size="14" fill="${C.textFaint}">시간 →</text>
           <!-- grid -->
           <line x1="0" y1="45" x2="470" y2="45" stroke="${C.bgSoft}"/>
           <line x1="0" y1="90" x2="470" y2="90" stroke="${C.bgSoft}"/>
@@ -233,14 +233,14 @@ function fallCurve() {
 // ---------- 04 RED FLAG ZONES ----------
 function redFlag() {
   return wrap(`
-  <text x="600" y="55" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">연애 속도별 위험 신호 — 금사빠 Zone vs J병 Zone</text>
-  <text x="600" y="82" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">너무 빠른 것도, 너무 느린 것도 각자의 패턴으로 무너져</text>
+  <text x="600" y="55" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">연애 속도별 위험 신호 — 금사빠 Zone vs J병 Zone</text>
+  <text x="600" y="82" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">너무 빠른 것도, 너무 느린 것도 각자의 패턴으로 무너져</text>
 
   <!-- Left: Too fast -->
   <g transform="translate(60,120)">
     <rect width="530" height="700" rx="20" fill="${C.nf50}" stroke="${C.nf500}"/>
-    <text x="28" y="50" font-size="22" font-weight="800" fill="${C.nf700}">⚡ 너무 빠름 — 금사빠 Zone</text>
-    <text x="28" y="78" font-size="13" font-weight="600" fill="${C.textSoft}">ENFP · ESFP · ENTP · ESTP · ENFJ · ISFP</text>
+    <text x="28" y="50" font-size="31" font-weight="800" fill="${C.nf700}">⚡ 너무 빠름 — 금사빠 Zone</text>
+    <text x="28" y="78" font-size="18" font-weight="600" fill="${C.textSoft}">ENFP · ESFP · ENTP · ESTP · ENFJ · ISFP</text>
 
     ${[
       { icon: '💥', title: '즉시 올인', desc: '3일 안에 "내 평생 사람"이라 말함. 근데 3주 뒤엔 "그냥 우린 안 맞았어".' },
@@ -251,10 +251,10 @@ function redFlag() {
       { icon: '🚨', title: 'SNS 공개 과속', desc: '사귄 지 2주차에 커플샷 업로드. 3주차에 비공개 전환 루틴.' },
     ].map((d, i) => `
       <g transform="translate(28, ${115 + i * 90})">
-        <text x="0" y="26" font-size="26">${d.icon}</text>
-        <text x="46" y="20" font-size="15" font-weight="800" fill="${C.nf700}">${d.title}</text>
-        <text x="46" y="44" font-size="12" font-weight="500" fill="${C.textSoft}">${d.desc.slice(0, 38)}</text>
-        <text x="46" y="62" font-size="12" font-weight="500" fill="${C.textSoft}">${d.desc.slice(38)}</text>
+        <text x="0" y="26" font-size="36">${d.icon}</text>
+        <text x="46" y="20" font-size="21" font-weight="800" fill="${C.nf700}">${d.title}</text>
+        <text x="46" y="44" font-size="17" font-weight="500" fill="${C.textSoft}">${d.desc.slice(0, 38)}</text>
+        <text x="46" y="62" font-size="17" font-weight="500" fill="${C.textSoft}">${d.desc.slice(38)}</text>
       </g>
     `).join('')}
   </g>
@@ -262,8 +262,8 @@ function redFlag() {
   <!-- Right: Too slow -->
   <g transform="translate(610,120)">
     <rect width="530" height="700" rx="20" fill="${C.nt50}" stroke="${C.nt600}"/>
-    <text x="28" y="50" font-size="22" font-weight="800" fill="${C.nt700}">🔒 너무 느림 — J병 Zone</text>
-    <text x="28" y="78" font-size="13" font-weight="600" fill="${C.textSoft}">INTJ · ISTJ · INFJ · ISFJ · ESTJ · INTP</text>
+    <text x="28" y="50" font-size="31" font-weight="800" fill="${C.nt700}">🔒 너무 느림 — J병 Zone</text>
+    <text x="28" y="78" font-size="18" font-weight="600" fill="${C.textSoft}">INTJ · ISTJ · INFJ · ISFJ · ESTJ · INTP</text>
 
     ${[
       { icon: '🧮', title: '과도한 조건 검증', desc: '가치관 · 재정 · 가족관 3번씩 확인. 상대는 "면접 보는 것 같다".' },
@@ -274,10 +274,10 @@ function redFlag() {
       { icon: '🗂', title: '플랜 공유 지연', desc: '이미 100일인데 부모님 소개·여행 계획 전부 "나중에".' },
     ].map((d, i) => `
       <g transform="translate(28, ${115 + i * 90})">
-        <text x="0" y="26" font-size="26">${d.icon}</text>
-        <text x="46" y="20" font-size="15" font-weight="800" fill="${C.nt700}">${d.title}</text>
-        <text x="46" y="44" font-size="12" font-weight="500" fill="${C.textSoft}">${d.desc.slice(0, 38)}</text>
-        <text x="46" y="62" font-size="12" font-weight="500" fill="${C.textSoft}">${d.desc.slice(38)}</text>
+        <text x="0" y="26" font-size="36">${d.icon}</text>
+        <text x="46" y="20" font-size="21" font-weight="800" fill="${C.nt700}">${d.title}</text>
+        <text x="46" y="44" font-size="17" font-weight="500" fill="${C.textSoft}">${d.desc.slice(0, 38)}</text>
+        <text x="46" y="62" font-size="17" font-weight="500" fill="${C.textSoft}">${d.desc.slice(38)}</text>
       </g>
     `).join('')}
   </g>
@@ -317,28 +317,28 @@ function coupleMatrix() {
   };
 
   return wrap(`
-  <text x="600" y="55" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">연애 속도 × 속도 커플 궁합 히트맵</text>
-  <text x="600" y="82" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">4가지 속도 × 4가지 속도 = 16가지 커플 케미 (100점 만점)</text>
+  <text x="600" y="55" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">연애 속도 × 속도 커플 궁합 히트맵</text>
+  <text x="600" y="82" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">4가지 속도 × 4가지 속도 = 16가지 커플 케미 (100점 만점)</text>
 
   <!-- Axes -->
-  <text x="110" y="190" font-size="14" font-weight="700" fill="${C.textMuted}">상대 →</text>
-  <text x="${originX - 30}" y="180" font-size="14" font-weight="700" fill="${C.textMuted}" text-anchor="end">↓ 나</text>
+  <text x="110" y="190" font-size="20" font-weight="700" fill="${C.textMuted}">상대 →</text>
+  <text x="${originX - 30}" y="180" font-size="20" font-weight="700" fill="${C.textMuted}" text-anchor="end">↓ 나</text>
 
   ${speeds.map((s, i) => `
-    <text x="${originX + i * cell + cell / 2}" y="190" text-anchor="middle" font-size="14" font-weight="700" fill="${C.textSoft}">${s}</text>
-    <text x="${originX - 16}" y="${originY + i * cell + cell / 2 + 5}" text-anchor="end" font-size="14" font-weight="700" fill="${C.textSoft}">${s}</text>
+    <text x="${originX + i * cell + cell / 2}" y="190" text-anchor="middle" font-size="20" font-weight="700" fill="${C.textSoft}">${s}</text>
+    <text x="${originX - 16}" y="${originY + i * cell + cell / 2 + 5}" text-anchor="end" font-size="20" font-weight="700" fill="${C.textSoft}">${s}</text>
   `).join('')}
 
   ${matrix.map((row, r) => row.map((v, c) => `
     <rect x="${originX + c * cell}" y="${originY + r * cell}" width="${cell - 6}" height="${cell - 6}" rx="12" fill="${colorFor(v)}" opacity="0.9"/>
-    <text x="${originX + c * cell + (cell - 6) / 2}" y="${originY + r * cell + 52}" text-anchor="middle" font-size="32" font-weight="800" fill="#fff">${v}</text>
-    <text x="${originX + c * cell + (cell - 6) / 2}" y="${originY + r * cell + 82}" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">${labels[r][c].slice(0, 8)}</text>
-    <text x="${originX + c * cell + (cell - 6) / 2}" y="${originY + r * cell + 100}" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">${labels[r][c].slice(8)}</text>
+    <text x="${originX + c * cell + (cell - 6) / 2}" y="${originY + r * cell + 52}" text-anchor="middle" font-size="45" font-weight="800" fill="#fff">${v}</text>
+    <text x="${originX + c * cell + (cell - 6) / 2}" y="${originY + r * cell + 82}" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">${labels[r][c].slice(0, 8)}</text>
+    <text x="${originX + c * cell + (cell - 6) / 2}" y="${originY + r * cell + 100}" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">${labels[r][c].slice(8)}</text>
   `).join('')).join('')}
 
   <!-- Bottom description -->
   <g transform="translate(210, 860)">
-    <text x="0" y="12" font-size="12" font-weight="600" fill="${C.textSoft}">· 균형 × 균형 (90점) 최고 · 신중 × 신중 (66점) 안정 · 금사빠 × 금사빠 (42점) 위험</text>
+    <text x="0" y="12" font-size="17" font-weight="600" fill="${C.textSoft}">· 균형 × 균형 (90점) 최고 · 신중 × 신중 (66점) 안정 · 금사빠 × 금사빠 (42점) 위험</text>
   </g>
   `);
 }
@@ -367,8 +367,8 @@ function languageMap() {
   const rowH = 78;
 
   return wrap(`
-  <text x="600" y="55" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">유형별 호감 표현 언어 사전</text>
-  <text x="600" y="82" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">"이거 관심 있다는 뜻이야" 16가지 모드 · 놓치지 말고 해석해</text>
+  <text x="600" y="55" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">유형별 호감 표현 언어 사전</text>
+  <text x="600" y="82" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">"이거 관심 있다는 뜻이야" 16가지 모드 · 놓치지 말고 해석해</text>
 
   ${items.map((it, i) => {
     const r = i % 8;
@@ -378,8 +378,8 @@ function languageMap() {
     return `
       <rect x="${x}" y="${y}" width="555" height="66" rx="12" fill="${BG_OF[it.g]}" stroke="${C.border}"/>
       <rect x="${x}" y="${y}" width="6" height="66" rx="3" fill="${COLOR_OF[it.g]}"/>
-      <text x="${x + 22}" y="${y + 28}" font-size="16" font-weight="800" fill="${COLOR_OF[it.g]}">${it.t}</text>
-      <text x="${x + 22}" y="${y + 51}" font-size="12" font-weight="600" fill="${C.textSoft}">${it.lang}</text>
+      <text x="${x + 22}" y="${y + 28}" font-size="22" font-weight="800" fill="${COLOR_OF[it.g]}">${it.t}</text>
+      <text x="${x + 22}" y="${y + 51}" font-size="17" font-weight="600" fill="${C.textSoft}">${it.lang}</text>
     `;
   }).join('')}
   `);
@@ -423,8 +423,8 @@ function balanceGuide() {
   ];
 
   return wrap(`
-  <text x="600" y="55" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">기질별 건강한 연애 속도 체크리스트</text>
-  <text x="600" y="82" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">네 기질 유형의 과속/저속 루틴을 잡아줄 실전 4단계</text>
+  <text x="600" y="55" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">기질별 건강한 연애 속도 체크리스트</text>
+  <text x="600" y="82" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">네 기질 유형의 과속/저속 루틴을 잡아줄 실전 4단계</text>
 
   ${positions.map((p, i) => {
     const t = tips[i];
@@ -432,10 +432,10 @@ function balanceGuide() {
       <g transform="translate(${p.x},${p.y})">
         <rect width="${posW}" height="${posH}" rx="18" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="${posH}" rx="4" fill="${t.color}"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="${t.color}">${t.icon} ${t.name}</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="${C.textMuted}">${t.types}</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="${t.color}">${t.icon} ${t.name}</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="${C.textMuted}">${t.types}</text>
         ${t.items.map((it, j) => `
-          <text x="28" y="${110 + j * 48}" font-size="13" font-weight="600" fill="${C.textSoft}">${it}</text>
+          <text x="28" y="${110 + j * 48}" font-size="18" font-weight="600" fill="${C.textSoft}">${it}</text>
         `).join('')}
       </g>
     `;

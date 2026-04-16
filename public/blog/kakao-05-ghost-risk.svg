@@ -2,18 +2,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="45" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">읽씹 · 잠수 위험도 매트릭스</text>
-  <text x="600" y="72" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">가로 = 에너지 방향(I↔E), 세로 = 판단 기준(F↑T↓) · 색상 = 잠수 리스크</text>
+  <text x="600" y="45" text-anchor="middle" font-size="42" font-weight="800" fill="#171717">읽씹 · 잠수 위험도 매트릭스</text>
+  <text x="600" y="72" text-anchor="middle" font-size="18" font-weight="500" fill="#6b7280">가로 = 에너지 방향(I↔E), 세로 = 판단 기준(F↑T↓) · 색상 = 잠수 리스크</text>
 
   <!-- Axes -->
   <line x1="600" y1="110" x2="600" y2="820" stroke="#d1d5db" stroke-width="2" stroke-dasharray="8,6"/>
   <line x1="120" y1="470" x2="1080" y2="470" stroke="#d1d5db" stroke-width="2" stroke-dasharray="8,6"/>
 
   <!-- Axis labels -->
-  <text x="600" y="100" text-anchor="middle" font-size="14" font-weight="800" fill="#e11d48">감정 중심 F</text>
-  <text x="600" y="840" text-anchor="middle" font-size="14" font-weight="800" fill="#0891b2">논리 중심 T</text>
-  <text x="130" y="475" font-size="14" font-weight="800" fill="#6b7280">내향 I</text>
-  <text x="1010" y="475" font-size="14" font-weight="800" fill="#6b7280">외향 E</text>
+  <text x="600" y="100" text-anchor="middle" font-size="20" font-weight="800" fill="#e11d48">감정 중심 F</text>
+  <text x="600" y="840" text-anchor="middle" font-size="20" font-weight="800" fill="#0891b2">논리 중심 T</text>
+  <text x="130" y="475" font-size="20" font-weight="800" fill="#6b7280">내향 I</text>
+  <text x="1010" y="475" font-size="20" font-weight="800" fill="#6b7280">외향 E</text>
 
   <!-- Quadrant background -->
   <rect x="120" y="110" width="480" height="360" fill="#fff1f2" opacity="0.3"/>
@@ -25,79 +25,79 @@
   
     <circle cx="220" cy="680" r="30" fill="#dc2626" opacity="0.18"/>
     <circle cx="220" cy="680" r="24" fill="#dc2626" opacity="0.85" stroke="#fff" stroke-width="2"/>
-    <text x="220" y="684" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">INTJ</text>
+    <text x="220" y="684" text-anchor="middle" font-size="15" font-weight="900" fill="#fff">INTJ</text>
   
     <circle cx="280" cy="720" r="30" fill="#dc2626" opacity="0.18"/>
     <circle cx="280" cy="720" r="24" fill="#dc2626" opacity="0.85" stroke="#fff" stroke-width="2"/>
-    <text x="280" y="724" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">INTP</text>
+    <text x="280" y="724" text-anchor="middle" font-size="15" font-weight="900" fill="#fff">INTP</text>
   
     <circle cx="240" cy="250" r="30" fill="#f59e0b" opacity="0.18"/>
     <circle cx="240" cy="250" r="24" fill="#f59e0b" opacity="0.85" stroke="#fff" stroke-width="2"/>
-    <text x="240" y="254" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">INFJ</text>
+    <text x="240" y="254" text-anchor="middle" font-size="15" font-weight="900" fill="#fff">INFJ</text>
   
     <circle cx="310" cy="300" r="30" fill="#dc2626" opacity="0.18"/>
     <circle cx="310" cy="300" r="24" fill="#dc2626" opacity="0.85" stroke="#fff" stroke-width="2"/>
-    <text x="310" y="304" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">INFP</text>
+    <text x="310" y="304" text-anchor="middle" font-size="15" font-weight="900" fill="#fff">INFP</text>
   
     <circle cx="370" cy="640" r="30" fill="#f59e0b" opacity="0.18"/>
     <circle cx="370" cy="640" r="24" fill="#f59e0b" opacity="0.85" stroke="#fff" stroke-width="2"/>
-    <text x="370" y="644" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">ISTJ</text>
+    <text x="370" y="644" text-anchor="middle" font-size="15" font-weight="900" fill="#fff">ISTJ</text>
   
     <circle cx="350" cy="340" r="30" fill="#16a34a" opacity="0.18"/>
     <circle cx="350" cy="340" r="24" fill="#16a34a" opacity="0.85" stroke="#fff" stroke-width="2"/>
-    <text x="350" y="344" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">ISFJ</text>
+    <text x="350" y="344" text-anchor="middle" font-size="15" font-weight="900" fill="#fff">ISFJ</text>
   
     <circle cx="420" cy="700" r="30" fill="#dc2626" opacity="0.18"/>
     <circle cx="420" cy="700" r="24" fill="#dc2626" opacity="0.85" stroke="#fff" stroke-width="2"/>
-    <text x="420" y="704" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">ISTP</text>
+    <text x="420" y="704" text-anchor="middle" font-size="15" font-weight="900" fill="#fff">ISTP</text>
   
     <circle cx="450" cy="350" r="30" fill="#f59e0b" opacity="0.18"/>
     <circle cx="450" cy="350" r="24" fill="#f59e0b" opacity="0.85" stroke="#fff" stroke-width="2"/>
-    <text x="450" y="354" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">ISFP</text>
+    <text x="450" y="354" text-anchor="middle" font-size="15" font-weight="900" fill="#fff">ISFP</text>
   
     <circle cx="820" cy="680" r="30" fill="#f59e0b" opacity="0.18"/>
     <circle cx="820" cy="680" r="24" fill="#f59e0b" opacity="0.85" stroke="#fff" stroke-width="2"/>
-    <text x="820" y="684" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">ENTJ</text>
+    <text x="820" y="684" text-anchor="middle" font-size="15" font-weight="900" fill="#fff">ENTJ</text>
   
     <circle cx="870" cy="700" r="30" fill="#f59e0b" opacity="0.18"/>
     <circle cx="870" cy="700" r="24" fill="#f59e0b" opacity="0.85" stroke="#fff" stroke-width="2"/>
-    <text x="870" y="704" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">ENTP</text>
+    <text x="870" y="704" text-anchor="middle" font-size="15" font-weight="900" fill="#fff">ENTP</text>
   
     <circle cx="810" cy="280" r="30" fill="#16a34a" opacity="0.18"/>
     <circle cx="810" cy="280" r="24" fill="#16a34a" opacity="0.85" stroke="#fff" stroke-width="2"/>
-    <text x="810" y="284" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">ENFJ</text>
+    <text x="810" y="284" text-anchor="middle" font-size="15" font-weight="900" fill="#fff">ENFJ</text>
   
     <circle cx="880" cy="340" r="30" fill="#f59e0b" opacity="0.18"/>
     <circle cx="880" cy="340" r="24" fill="#f59e0b" opacity="0.85" stroke="#fff" stroke-width="2"/>
-    <text x="880" y="344" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">ENFP</text>
+    <text x="880" y="344" text-anchor="middle" font-size="15" font-weight="900" fill="#fff">ENFP</text>
   
     <circle cx="940" cy="640" r="30" fill="#16a34a" opacity="0.18"/>
     <circle cx="940" cy="640" r="24" fill="#16a34a" opacity="0.85" stroke="#fff" stroke-width="2"/>
-    <text x="940" y="644" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">ESTJ</text>
+    <text x="940" y="644" text-anchor="middle" font-size="15" font-weight="900" fill="#fff">ESTJ</text>
   
     <circle cx="920" cy="260" r="30" fill="#16a34a" opacity="0.18"/>
     <circle cx="920" cy="260" r="24" fill="#16a34a" opacity="0.85" stroke="#fff" stroke-width="2"/>
-    <text x="920" y="264" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">ESFJ</text>
+    <text x="920" y="264" text-anchor="middle" font-size="15" font-weight="900" fill="#fff">ESFJ</text>
   
     <circle cx="990" cy="690" r="30" fill="#f59e0b" opacity="0.18"/>
     <circle cx="990" cy="690" r="24" fill="#f59e0b" opacity="0.85" stroke="#fff" stroke-width="2"/>
-    <text x="990" y="694" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">ESTP</text>
+    <text x="990" y="694" text-anchor="middle" font-size="15" font-weight="900" fill="#fff">ESTP</text>
   
     <circle cx="970" cy="320" r="30" fill="#16a34a" opacity="0.18"/>
     <circle cx="970" cy="320" r="24" fill="#16a34a" opacity="0.85" stroke="#fff" stroke-width="2"/>
-    <text x="970" y="324" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">ESFP</text>
+    <text x="970" y="324" text-anchor="middle" font-size="15" font-weight="900" fill="#fff">ESFP</text>
   
 
   <!-- Legend -->
   <g transform="translate(120, 850)">
     <circle cx="15" cy="12" r="10" fill="#16a34a"/>
-    <text x="35" y="17" font-size="13" font-weight="700" fill="#374151">LOW · 빠른 답장</text>
+    <text x="35" y="17" font-size="18" font-weight="700" fill="#374151">LOW · 빠른 답장</text>
 
     <circle cx="270" cy="12" r="10" fill="#f59e0b"/>
-    <text x="290" y="17" font-size="13" font-weight="700" fill="#374151">MID · 가끔 늦음</text>
+    <text x="290" y="17" font-size="18" font-weight="700" fill="#374151">MID · 가끔 늦음</text>
 
     <circle cx="520" cy="12" r="10" fill="#dc2626"/>
-    <text x="540" y="17" font-size="13" font-weight="700" fill="#374151">HIGH · 잠수 빈도 높음</text>
+    <text x="540" y="17" font-size="18" font-weight="700" fill="#374151">HIGH · 잠수 빈도 높음</text>
   </g>
   
 <text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 카톡 스타일 리포트</text>

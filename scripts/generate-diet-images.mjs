@@ -80,20 +80,20 @@ function successRank() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">16유형 다이어트 성공률 랭킹</text>
-  <text x="600" y="80" text-anchor="middle" font-size="14" font-weight="500" fill="${C.textMuted}">6개월 감량 목표 달성률 + 유지력 종합 100점</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">16유형 다이어트 성공률 랭킹</text>
+  <text x="600" y="80" text-anchor="middle" font-size="20" font-weight="500" fill="${C.textMuted}">6개월 감량 목표 달성률 + 유지력 종합 100점</text>
 
   ${data.map((d, i) => {
     const y = 120 + i * 47;
     const barW = d.score * 7.5;
     const color = COLOR_OF[GROUP_OF[d.type]];
     return `
-      <text x="50" y="${y + 22}" font-size="14" font-weight="800" fill="${C.textFaint}">${String(i + 1).padStart(2, '0')}</text>
-      <text x="95" y="${y + 22}" font-size="18" font-weight="800" fill="${color}">${d.type}</text>
+      <text x="50" y="${y + 22}" font-size="20" font-weight="800" fill="${C.textFaint}">${String(i + 1).padStart(2, '0')}</text>
+      <text x="95" y="${y + 22}" font-size="25" font-weight="800" fill="${color}">${d.type}</text>
       <rect x="170" y="${y + 5}" width="${barW}" height="30" rx="15" fill="${color}" opacity="0.25"/>
       <rect x="170" y="${y + 5}" width="${barW}" height="30" rx="15" fill="${color}" opacity="0.85"/>
-      <text x="${180 + barW}" y="${y + 25}" font-size="14" font-weight="800" fill="${color}">${d.score}</text>
-      <text x="920" y="${y + 27}" font-size="13" font-weight="600" fill="${C.textMuted}">${d.note}</text>
+      <text x="${180 + barW}" y="${y + 25}" font-size="20" font-weight="800" fill="${color}">${d.score}</text>
+      <text x="920" y="${y + 27}" font-size="18" font-weight="600" fill="${C.textMuted}">${d.note}</text>
     `;
   }).join('')}
   `);
@@ -110,8 +110,8 @@ function yoyoRisk() {
   const lvColor = { LOW: C.safe, MID: C.warn, HIGH: C.danger };
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">요요 위험도 랭킹 — 감량 후 6개월 재증가</text>
-  <text x="600" y="80" text-anchor="middle" font-size="14" font-weight="500" fill="${C.textMuted}">감량 성공 후 체중 원복 확률 · 높을수록 위험</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">요요 위험도 랭킹 — 감량 후 6개월 재증가</text>
+  <text x="600" y="80" text-anchor="middle" font-size="20" font-weight="500" fill="${C.textMuted}">감량 성공 후 체중 원복 확률 · 높을수록 위험</text>
 
   ${data.map((d, i) => {
     const col = i % 2;
@@ -123,13 +123,13 @@ function yoyoRisk() {
     const typeColor = COLOR_OF[GROUP_OF[d.type]];
     return `
       <g transform="translate(${x}, ${y})">
-        <text x="0" y="20" font-size="16" font-weight="900" fill="${C.textFaint}">${String(i + 1).padStart(2, '0')}</text>
-        <text x="35" y="20" font-size="18" font-weight="800" fill="${typeColor}">${d.type}</text>
+        <text x="0" y="20" font-size="22" font-weight="900" fill="${C.textFaint}">${String(i + 1).padStart(2, '0')}</text>
+        <text x="35" y="20" font-size="25" font-weight="800" fill="${typeColor}">${d.type}</text>
         <rect x="110" y="5" width="${barW}" height="24" rx="12" fill="${color}" opacity="0.25"/>
         <rect x="110" y="5" width="${barW}" height="24" rx="12" fill="${color}" opacity="0.85"/>
-        <text x="${120 + barW}" y="22" font-size="13" font-weight="800" fill="${color}">${d.yoyo}%</text>
+        <text x="${120 + barW}" y="22" font-size="18" font-weight="800" fill="${color}">${d.yoyo}%</text>
         <rect x="460" y="5" width="56" height="24" rx="12" fill="${color}"/>
-        <text x="488" y="21" text-anchor="middle" font-size="12" font-weight="900" fill="#fff">${lv(d.yoyo)}</text>
+        <text x="488" y="21" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">${lv(d.yoyo)}</text>
       </g>
     `;
   }).join('')}
@@ -183,8 +183,8 @@ function dietPattern() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">4가지 다이어트 DNA — 네 유형 접근법</text>
-  <text x="600" y="80" text-anchor="middle" font-size="14" font-weight="500" fill="${C.textMuted}">기질별 다이어트 최적화 전략 · 스프린트 / 루틴 / 게임 / 의미</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">4가지 다이어트 DNA — 네 유형 접근법</text>
+  <text x="600" y="80" text-anchor="middle" font-size="20" font-weight="500" fill="${C.textMuted}">기질별 다이어트 최적화 전략 · 스프린트 / 루틴 / 게임 / 의미</text>
 
   ${positions.map((p, i) => {
     const m = modes[i];
@@ -192,17 +192,17 @@ function dietPattern() {
       <g transform="translate(${p.x}, ${p.y})">
         <rect width="${w}" height="${h}" rx="20" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="${h}" rx="4" fill="${m.color}"/>
-        <text x="30" y="45" font-size="24" font-weight="900" fill="${m.color}">${m.icon} ${m.name}</text>
-        <text x="30" y="72" font-size="13" font-weight="700" fill="${C.textMuted}">${m.types}</text>
+        <text x="30" y="45" font-size="34" font-weight="900" fill="${m.color}">${m.icon} ${m.name}</text>
+        <text x="30" y="72" font-size="18" font-weight="700" fill="${C.textMuted}">${m.types}</text>
 
         <rect x="30" y="88" width="${w - 60}" height="40" rx="12" fill="${m.color}" opacity="0.1"/>
-        <text x="45" y="113" font-size="13" font-weight="700" fill="${m.color}">${m.style}</text>
+        <text x="45" y="113" font-size="18" font-weight="700" fill="${m.color}">${m.style}</text>
 
         ${m.method.map((t, j) => `
           <g transform="translate(30, ${160 + j * 45})">
             <circle cx="10" cy="0" r="11" fill="${m.color}" opacity="0.2"/>
-            <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="${m.color}">${j + 1}</text>
-            <text x="32" y="5" font-size="13" font-weight="600" fill="${C.textSoft}">${t}</text>
+            <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="${m.color}">${j + 1}</text>
+            <text x="32" y="5" font-size="18" font-weight="600" fill="${C.textSoft}">${t}</text>
           </g>
         `).join('')}
       </g>
@@ -225,16 +225,16 @@ function motivationMap() {
   ];
 
   return wrap(`
-  <text x="600" y="45" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">다이어트 동기부여 4분면</text>
-  <text x="600" y="72" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">가로 = 보상 시점(내부 ↔ 외부), 세로 = 동기원(즉시 ↔ 장기)</text>
+  <text x="600" y="45" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">다이어트 동기부여 4분면</text>
+  <text x="600" y="72" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">가로 = 보상 시점(내부 ↔ 외부), 세로 = 동기원(즉시 ↔ 장기)</text>
 
   <line x1="600" y1="100" x2="600" y2="800" stroke="${C.divider}" stroke-width="2" stroke-dasharray="8,6"/>
   <line x1="120" y1="450" x2="1080" y2="450" stroke="${C.divider}" stroke-width="2" stroke-dasharray="8,6"/>
 
-  <text x="600" y="93" text-anchor="middle" font-size="14" font-weight="800" fill="${C.nt600}">즉시 보상 (3일~1주)</text>
-  <text x="600" y="820" text-anchor="middle" font-size="14" font-weight="800" fill="${C.nt600}">장기 보상 (3~6개월)</text>
-  <text x="130" y="455" font-size="14" font-weight="800" fill="${C.textMuted}">내부 동기</text>
-  <text x="970" y="455" font-size="14" font-weight="800" fill="${C.textMuted}">외부 동기</text>
+  <text x="600" y="93" text-anchor="middle" font-size="20" font-weight="800" fill="${C.nt600}">즉시 보상 (3일~1주)</text>
+  <text x="600" y="820" text-anchor="middle" font-size="20" font-weight="800" fill="${C.nt600}">장기 보상 (3~6개월)</text>
+  <text x="130" y="455" font-size="20" font-weight="800" fill="${C.textMuted}">내부 동기</text>
+  <text x="970" y="455" font-size="20" font-weight="800" fill="${C.textMuted}">외부 동기</text>
 
   <rect x="120" y="100" width="480" height="350" fill="${C.nf50}" opacity="0.3"/>
   <rect x="600" y="100" width="480" height="350" fill="${C.sp50}" opacity="0.3"/>
@@ -246,15 +246,15 @@ function motivationMap() {
     return `
       <circle cx="${p.x}" cy="${p.y}" r="30" fill="${color}" opacity="0.18"/>
       <circle cx="${p.x}" cy="${p.y}" r="24" fill="${color}" opacity="0.85" stroke="#fff" stroke-width="2"/>
-      <text x="${p.x}" y="${p.y + 4}" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">${p.t}</text>
+      <text x="${p.x}" y="${p.y + 4}" text-anchor="middle" font-size="15" font-weight="900" fill="#fff">${p.t}</text>
     `;
   }).join('')}
 
   <!-- Quadrant labels -->
-  <text x="240" y="150" font-size="13" font-weight="800" fill="${C.nf600}">감정 · 기분 즉시 보상</text>
-  <text x="720" y="150" font-size="13" font-weight="800" fill="${C.sp600}">사회적 인정 · SNS</text>
-  <text x="240" y="790" font-size="13" font-weight="800" fill="${C.nt600}">건강 · 자기성장</text>
-  <text x="720" y="790" font-size="13" font-weight="800" fill="${C.sj600}">목표 달성 · 수치</text>
+  <text x="240" y="150" font-size="18" font-weight="800" fill="${C.nf600}">감정 · 기분 즉시 보상</text>
+  <text x="720" y="150" font-size="18" font-weight="800" fill="${C.sp600}">사회적 인정 · SNS</text>
+  <text x="240" y="790" font-size="18" font-weight="800" fill="${C.nt600}">건강 · 자기성장</text>
+  <text x="720" y="790" font-size="18" font-weight="800" fill="${C.sj600}">목표 달성 · 수치</text>
   `);
 }
 
@@ -300,8 +300,8 @@ function ritual() {
   const w = 520, h = 340;
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">기질별 다이어트 체크리스트</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">네 기질 최적화된 4단계 · 오늘부터 1개씩</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">기질별 다이어트 체크리스트</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">네 기질 최적화된 4단계 · 오늘부터 1개씩</text>
 
   ${positions.map((p, i) => {
     const g = groups[i];
@@ -309,10 +309,10 @@ function ritual() {
       <g transform="translate(${p.x},${p.y})">
         <rect width="${w}" height="${h}" rx="18" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="${h}" rx="4" fill="${g.color}"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="${C.textMuted}">${g.types}</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="${C.textMuted}">${g.types}</text>
         ${g.items.map((it, j) => `
-          <text x="28" y="${115 + j * 52}" font-size="13" font-weight="600" fill="${C.textSoft}">${it}</text>
+          <text x="28" y="${115 + j * 52}" font-size="18" font-weight="600" fill="${C.textSoft}">${it}</text>
         `).join('')}
       </g>
     `;

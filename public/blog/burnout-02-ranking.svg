@@ -2,124 +2,124 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="#171717">16유형 번아웃 취약도 랭킹</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">100점 만점 · 감정 흡수 + 내적 과부하 + 회복 지연 종합 · 높을수록 무너지기 쉬움</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="#171717">16유형 번아웃 취약도 랭킹</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="#6b7280">100점 만점 · 감정 흡수 + 내적 과부하 + 회복 지연 종합 · 높을수록 무너지기 쉬움</text>
 
   
-      <text x="45" y="138" font-size="14" font-weight="700" fill="#6b7280">01</text>
-      <text x="90" y="138" font-size="16" font-weight="800" fill="#e11d48">ENFJ</text>
+      <text x="45" y="138" font-size="20" font-weight="700" fill="#6b7280">01</text>
+      <text x="90" y="138" font-size="22" font-weight="800" fill="#e11d48">ENFJ</text>
       <rect x="210" y="119" width="762.6" height="26" rx="13" fill="#dc2626" opacity="0.92"/>
-      <text x="960.6" y="137" text-anchor="end" font-size="13" font-weight="800" fill="#fff">93</text>
-      <text x="986.6" y="137" font-size="12" font-weight="600" fill="#374151">남의 감정 다 흡수해서 본인이 소진</text>
+      <text x="960.6" y="137" text-anchor="end" font-size="18" font-weight="800" fill="#fff">93</text>
+      <text x="986.6" y="137" font-size="17" font-weight="600" fill="#374151">남의 감정 다 흡수해서 본인이 소진</text>
     
-      <text x="45" y="182" font-size="14" font-weight="700" fill="#6b7280">02</text>
-      <text x="90" y="182" font-size="16" font-weight="800" fill="#e11d48">INFJ</text>
+      <text x="45" y="182" font-size="20" font-weight="700" fill="#6b7280">02</text>
+      <text x="90" y="182" font-size="22" font-weight="800" fill="#e11d48">INFJ</text>
       <rect x="210" y="163" width="738" height="26" rx="13" fill="#dc2626" opacity="0.92"/>
-      <text x="936" y="181" text-anchor="end" font-size="13" font-weight="800" fill="#fff">90</text>
-      <text x="962" y="181" font-size="12" font-weight="600" fill="#374151">이상 vs 현실 갭에서 쌓이는 회의감</text>
+      <text x="936" y="181" text-anchor="end" font-size="18" font-weight="800" fill="#fff">90</text>
+      <text x="962" y="181" font-size="17" font-weight="600" fill="#374151">이상 vs 현실 갭에서 쌓이는 회의감</text>
     
-      <text x="45" y="226" font-size="14" font-weight="700" fill="#6b7280">03</text>
-      <text x="90" y="226" font-size="16" font-weight="800" fill="#059669">ISFJ</text>
+      <text x="45" y="226" font-size="20" font-weight="700" fill="#6b7280">03</text>
+      <text x="90" y="226" font-size="22" font-weight="800" fill="#059669">ISFJ</text>
       <rect x="210" y="207" width="721.6" height="26" rx="13" fill="#dc2626" opacity="0.92"/>
-      <text x="919.6" y="225" text-anchor="end" font-size="13" font-weight="800" fill="#fff">88</text>
-      <text x="945.6" y="225" font-size="12" font-weight="600" fill="#374151">말없이 다 챙기다 스스로 방치</text>
+      <text x="919.6" y="225" text-anchor="end" font-size="18" font-weight="800" fill="#fff">88</text>
+      <text x="945.6" y="225" font-size="17" font-weight="600" fill="#374151">말없이 다 챙기다 스스로 방치</text>
     
-      <text x="45" y="270" font-size="14" font-weight="700" fill="#6b7280">04</text>
-      <text x="90" y="270" font-size="16" font-weight="800" fill="#e11d48">INFP</text>
+      <text x="45" y="270" font-size="20" font-weight="700" fill="#6b7280">04</text>
+      <text x="90" y="270" font-size="22" font-weight="800" fill="#e11d48">INFP</text>
       <rect x="210" y="251" width="697" height="26" rx="13" fill="#dc2626" opacity="0.92"/>
-      <text x="895" y="269" text-anchor="end" font-size="13" font-weight="800" fill="#fff">85</text>
-      <text x="921" y="269" font-size="12" font-weight="600" fill="#374151">의미 없는 일에 급속 탈진</text>
+      <text x="895" y="269" text-anchor="end" font-size="18" font-weight="800" fill="#fff">85</text>
+      <text x="921" y="269" font-size="17" font-weight="600" fill="#374151">의미 없는 일에 급속 탈진</text>
     
-      <text x="45" y="314" font-size="14" font-weight="700" fill="#6b7280">05</text>
-      <text x="90" y="314" font-size="16" font-weight="800" fill="#059669">ESFJ</text>
+      <text x="45" y="314" font-size="20" font-weight="700" fill="#6b7280">05</text>
+      <text x="90" y="314" font-size="22" font-weight="800" fill="#059669">ESFJ</text>
       <rect x="210" y="295" width="672.4" height="26" rx="13" fill="#f59e0b" opacity="0.92"/>
-      <text x="870.4" y="313" text-anchor="end" font-size="13" font-weight="800" fill="#fff">82</text>
-      <text x="896.4" y="313" font-size="12" font-weight="600" fill="#374151">그룹 갈등 떠안다 탈진</text>
+      <text x="870.4" y="313" text-anchor="end" font-size="18" font-weight="800" fill="#fff">82</text>
+      <text x="896.4" y="313" font-size="17" font-weight="600" fill="#374151">그룹 갈등 떠안다 탈진</text>
     
-      <text x="45" y="358" font-size="14" font-weight="700" fill="#6b7280">06</text>
-      <text x="90" y="358" font-size="16" font-weight="800" fill="#e11d48">ENFP</text>
+      <text x="45" y="358" font-size="20" font-weight="700" fill="#6b7280">06</text>
+      <text x="90" y="358" font-size="22" font-weight="800" fill="#e11d48">ENFP</text>
       <rect x="210" y="339" width="623.2" height="26" rx="13" fill="#f59e0b" opacity="0.92"/>
-      <text x="821.2" y="357" text-anchor="end" font-size="13" font-weight="800" fill="#fff">76</text>
-      <text x="847.2" y="357" font-size="12" font-weight="600" fill="#374151">설렘 떨어지면 의욕 0</text>
+      <text x="821.2" y="357" text-anchor="end" font-size="18" font-weight="800" fill="#fff">76</text>
+      <text x="847.2" y="357" font-size="17" font-weight="600" fill="#374151">설렘 떨어지면 의욕 0</text>
     
-      <text x="45" y="402" font-size="14" font-weight="700" fill="#6b7280">07</text>
-      <text x="90" y="402" font-size="16" font-weight="800" fill="#059669">ISTJ</text>
+      <text x="45" y="402" font-size="20" font-weight="700" fill="#6b7280">07</text>
+      <text x="90" y="402" font-size="22" font-weight="800" fill="#059669">ISTJ</text>
       <rect x="210" y="383" width="557.6" height="26" rx="13" fill="#eab308" opacity="0.92"/>
-      <text x="755.6" y="401" text-anchor="end" font-size="13" font-weight="800" fill="#fff">68</text>
-      <text x="781.6" y="401" font-size="12" font-weight="600" fill="#374151">과부하 누적을 말 안 해서</text>
+      <text x="755.6" y="401" text-anchor="end" font-size="18" font-weight="800" fill="#fff">68</text>
+      <text x="781.6" y="401" font-size="17" font-weight="600" fill="#374151">과부하 누적을 말 안 해서</text>
     
-      <text x="45" y="446" font-size="14" font-weight="700" fill="#6b7280">08</text>
-      <text x="90" y="446" font-size="16" font-weight="800" fill="#059669">ESTJ</text>
+      <text x="45" y="446" font-size="20" font-weight="700" fill="#6b7280">08</text>
+      <text x="90" y="446" font-size="22" font-weight="800" fill="#059669">ESTJ</text>
       <rect x="210" y="427" width="524.8" height="26" rx="13" fill="#eab308" opacity="0.92"/>
-      <text x="722.8" y="445" text-anchor="end" font-size="13" font-weight="800" fill="#fff">64</text>
-      <text x="748.8" y="445" font-size="12" font-weight="600" fill="#374151">완벽주의 강박 + 자기검열</text>
+      <text x="722.8" y="445" text-anchor="end" font-size="18" font-weight="800" fill="#fff">64</text>
+      <text x="748.8" y="445" font-size="17" font-weight="600" fill="#374151">완벽주의 강박 + 자기검열</text>
     
-      <text x="45" y="490" font-size="14" font-weight="700" fill="#6b7280">09</text>
-      <text x="90" y="490" font-size="16" font-weight="800" fill="#0891b2">ENTJ</text>
+      <text x="45" y="490" font-size="20" font-weight="700" fill="#6b7280">09</text>
+      <text x="90" y="490" font-size="22" font-weight="800" fill="#0891b2">ENTJ</text>
       <rect x="210" y="471" width="475.59999999999997" height="26" rx="13" fill="#eab308" opacity="0.92"/>
-      <text x="673.5999999999999" y="489" text-anchor="end" font-size="13" font-weight="800" fill="#fff">58</text>
-      <text x="699.5999999999999" y="489" font-size="12" font-weight="600" fill="#374151">성과 압박에 본인 갈아넣음</text>
+      <text x="673.5999999999999" y="489" text-anchor="end" font-size="18" font-weight="800" fill="#fff">58</text>
+      <text x="699.5999999999999" y="489" font-size="17" font-weight="600" fill="#374151">성과 압박에 본인 갈아넣음</text>
     
-      <text x="45" y="534" font-size="14" font-weight="700" fill="#6b7280">10</text>
-      <text x="90" y="534" font-size="16" font-weight="800" fill="#0891b2">INTJ</text>
+      <text x="45" y="534" font-size="20" font-weight="700" fill="#6b7280">10</text>
+      <text x="90" y="534" font-size="22" font-weight="800" fill="#0891b2">INTJ</text>
       <rect x="210" y="515" width="442.8" height="26" rx="13" fill="#84cc16" opacity="0.92"/>
-      <text x="640.8" y="533" text-anchor="end" font-size="13" font-weight="800" fill="#fff">54</text>
-      <text x="666.8" y="533" font-size="12" font-weight="600" fill="#374151">장기 플랜 실패 시 허탈감</text>
+      <text x="640.8" y="533" text-anchor="end" font-size="18" font-weight="800" fill="#fff">54</text>
+      <text x="666.8" y="533" font-size="17" font-weight="600" fill="#374151">장기 플랜 실패 시 허탈감</text>
     
-      <text x="45" y="578" font-size="14" font-weight="700" fill="#6b7280">11</text>
-      <text x="90" y="578" font-size="16" font-weight="800" fill="#d97706">ISFP</text>
+      <text x="45" y="578" font-size="20" font-weight="700" fill="#6b7280">11</text>
+      <text x="90" y="578" font-size="22" font-weight="800" fill="#d97706">ISFP</text>
       <rect x="210" y="559" width="393.59999999999997" height="26" rx="13" fill="#84cc16" opacity="0.92"/>
-      <text x="591.5999999999999" y="577" text-anchor="end" font-size="13" font-weight="800" fill="#fff">48</text>
-      <text x="617.5999999999999" y="577" font-size="12" font-weight="600" fill="#374151">감각 자극 과다 노출</text>
+      <text x="591.5999999999999" y="577" text-anchor="end" font-size="18" font-weight="800" fill="#fff">48</text>
+      <text x="617.5999999999999" y="577" font-size="17" font-weight="600" fill="#374151">감각 자극 과다 노출</text>
     
-      <text x="45" y="622" font-size="14" font-weight="700" fill="#6b7280">12</text>
-      <text x="90" y="622" font-size="16" font-weight="800" fill="#d97706">ESFP</text>
+      <text x="45" y="622" font-size="20" font-weight="700" fill="#6b7280">12</text>
+      <text x="90" y="622" font-size="22" font-weight="800" fill="#d97706">ESFP</text>
       <rect x="210" y="603" width="344.4" height="26" rx="13" fill="#84cc16" opacity="0.92"/>
-      <text x="542.4" y="621" text-anchor="end" font-size="13" font-weight="800" fill="#fff">42</text>
-      <text x="568.4" y="621" font-size="12" font-weight="600" fill="#374151">혼자 있는 시간 지속 시</text>
+      <text x="542.4" y="621" text-anchor="end" font-size="18" font-weight="800" fill="#fff">42</text>
+      <text x="568.4" y="621" font-size="17" font-weight="600" fill="#374151">혼자 있는 시간 지속 시</text>
     
-      <text x="45" y="666" font-size="14" font-weight="700" fill="#6b7280">13</text>
-      <text x="90" y="666" font-size="16" font-weight="800" fill="#0891b2">ENTP</text>
+      <text x="45" y="666" font-size="20" font-weight="700" fill="#6b7280">13</text>
+      <text x="90" y="666" font-size="22" font-weight="800" fill="#0891b2">ENTP</text>
       <rect x="210" y="647" width="311.6" height="26" rx="13" fill="#16a34a" opacity="0.92"/>
-      <text x="509.6" y="665" text-anchor="end" font-size="13" font-weight="800" fill="#fff">38</text>
-      <text x="535.6" y="665" font-size="12" font-weight="600" fill="#374151">반복 루틴에서 의욕 소멸</text>
+      <text x="509.6" y="665" text-anchor="end" font-size="18" font-weight="800" fill="#fff">38</text>
+      <text x="535.6" y="665" font-size="17" font-weight="600" fill="#374151">반복 루틴에서 의욕 소멸</text>
     
-      <text x="45" y="710" font-size="14" font-weight="700" fill="#6b7280">14</text>
-      <text x="90" y="710" font-size="16" font-weight="800" fill="#d97706">ESTP</text>
+      <text x="45" y="710" font-size="20" font-weight="700" fill="#6b7280">14</text>
+      <text x="90" y="710" font-size="22" font-weight="800" fill="#d97706">ESTP</text>
       <rect x="210" y="691" width="295.2" height="26" rx="13" fill="#16a34a" opacity="0.92"/>
-      <text x="493.2" y="709" text-anchor="end" font-size="13" font-weight="800" fill="#fff">36</text>
-      <text x="519.2" y="709" font-size="12" font-weight="600" fill="#374151">동력 잃으면 급격한 무기력</text>
+      <text x="493.2" y="709" text-anchor="end" font-size="18" font-weight="800" fill="#fff">36</text>
+      <text x="519.2" y="709" font-size="17" font-weight="600" fill="#374151">동력 잃으면 급격한 무기력</text>
     
-      <text x="45" y="754" font-size="14" font-weight="700" fill="#6b7280">15</text>
-      <text x="90" y="754" font-size="16" font-weight="800" fill="#0891b2">INTP</text>
+      <text x="45" y="754" font-size="20" font-weight="700" fill="#6b7280">15</text>
+      <text x="90" y="754" font-size="22" font-weight="800" fill="#0891b2">INTP</text>
       <rect x="210" y="735" width="278.8" height="26" rx="13" fill="#16a34a" opacity="0.92"/>
-      <text x="476.8" y="753" text-anchor="end" font-size="13" font-weight="800" fill="#fff">34</text>
-      <text x="502.8" y="753" font-size="12" font-weight="600" fill="#374151">외부 압박이 클 때만</text>
+      <text x="476.8" y="753" text-anchor="end" font-size="18" font-weight="800" fill="#fff">34</text>
+      <text x="502.8" y="753" font-size="17" font-weight="600" fill="#374151">외부 압박이 클 때만</text>
     
-      <text x="45" y="798" font-size="14" font-weight="700" fill="#6b7280">16</text>
-      <text x="90" y="798" font-size="16" font-weight="800" fill="#d97706">ISTP</text>
+      <text x="45" y="798" font-size="20" font-weight="700" fill="#6b7280">16</text>
+      <text x="90" y="798" font-size="22" font-weight="800" fill="#d97706">ISTP</text>
       <rect x="210" y="779" width="229.60000000000002" height="26" rx="13" fill="#16a34a" opacity="0.92"/>
-      <text x="427.6" y="797" text-anchor="end" font-size="13" font-weight="800" fill="#fff">28</text>
-      <text x="453.6" y="797" font-size="12" font-weight="600" fill="#374151">거리두기 능력으로 방어</text>
+      <text x="427.6" y="797" text-anchor="end" font-size="18" font-weight="800" fill="#fff">28</text>
+      <text x="453.6" y="797" font-size="17" font-weight="600" fill="#374151">거리두기 능력으로 방어</text>
     
 
   <!-- Legend -->
   <g transform="translate(180, 820)">
     
       <rect x="0" y="0" width="14" height="14" rx="3" fill="#dc2626"/>
-      <text x="22" y="12" font-size="12" font-weight="700" fill="#374151">매우 취약 85+</text>
+      <text x="22" y="12" font-size="17" font-weight="700" fill="#374151">매우 취약 85+</text>
     
       <rect x="180" y="0" width="14" height="14" rx="3" fill="#f59e0b"/>
-      <text x="202" y="12" font-size="12" font-weight="700" fill="#374151">취약 70~84</text>
+      <text x="202" y="12" font-size="17" font-weight="700" fill="#374151">취약 70~84</text>
     
       <rect x="360" y="0" width="14" height="14" rx="3" fill="#eab308"/>
-      <text x="382" y="12" font-size="12" font-weight="700" fill="#374151">중간 55~69</text>
+      <text x="382" y="12" font-size="17" font-weight="700" fill="#374151">중간 55~69</text>
     
       <rect x="540" y="0" width="14" height="14" rx="3" fill="#84cc16"/>
-      <text x="562" y="12" font-size="12" font-weight="700" fill="#374151">비교적 강함 40~54</text>
+      <text x="562" y="12" font-size="17" font-weight="700" fill="#374151">비교적 강함 40~54</text>
     
       <rect x="720" y="0" width="14" height="14" rx="3" fill="#16a34a"/>
-      <text x="742" y="12" font-size="12" font-weight="700" fill="#374151">강함 ~39</text>
+      <text x="742" y="12" font-size="17" font-weight="700" fill="#374151">강함 ~39</text>
     
   </g>
   

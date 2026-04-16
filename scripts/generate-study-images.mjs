@@ -80,20 +80,20 @@ function efficiency() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">16유형 공부 효율 랭킹</text>
-  <text x="600" y="80" text-anchor="middle" font-size="14" font-weight="500" fill="${C.textMuted}">학습 지속력 + 이해도 + 시험 성적 종합 100점</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">16유형 공부 효율 랭킹</text>
+  <text x="600" y="80" text-anchor="middle" font-size="20" font-weight="500" fill="${C.textMuted}">학습 지속력 + 이해도 + 시험 성적 종합 100점</text>
 
   ${data.map((d, i) => {
     const y = 120 + i * 47;
     const barW = d.score * 7.5;
     const color = COLOR_OF[GROUP_OF[d.type]];
     return `
-      <text x="50" y="${y + 22}" font-size="14" font-weight="800" fill="${C.textFaint}">${String(i + 1).padStart(2, '0')}</text>
-      <text x="95" y="${y + 22}" font-size="18" font-weight="800" fill="${color}">${d.type}</text>
+      <text x="50" y="${y + 22}" font-size="20" font-weight="800" fill="${C.textFaint}">${String(i + 1).padStart(2, '0')}</text>
+      <text x="95" y="${y + 22}" font-size="25" font-weight="800" fill="${color}">${d.type}</text>
       <rect x="170" y="${y + 5}" width="${barW}" height="30" rx="15" fill="${color}" opacity="0.25"/>
       <rect x="170" y="${y + 5}" width="${barW}" height="30" rx="15" fill="${color}" opacity="0.85"/>
-      <text x="${180 + barW}" y="${y + 25}" font-size="14" font-weight="800" fill="${color}">${d.score}</text>
-      <text x="920" y="${y + 27}" font-size="13" font-weight="600" fill="${C.textMuted}">${d.note}</text>
+      <text x="${180 + barW}" y="${y + 25}" font-size="20" font-weight="800" fill="${color}">${d.score}</text>
+      <text x="920" y="${y + 27}" font-size="18" font-weight="600" fill="${C.textMuted}">${d.note}</text>
     `;
   }).join('')}
   `);
@@ -130,8 +130,8 @@ function focusCurve() {
   };
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">4기질별 집중력 곡선</text>
-  <text x="600" y="80" text-anchor="middle" font-size="14" font-weight="500" fill="${C.textMuted}">공부 시작 후 시간별 집중도 변화 · 네 기질에 맞는 타이머 설정</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">4기질별 집중력 곡선</text>
+  <text x="600" y="80" text-anchor="middle" font-size="20" font-weight="500" fill="${C.textMuted}">공부 시작 후 시간별 집중도 변화 · 네 기질에 맞는 타이머 설정</text>
 
   <!-- Axes -->
   <line x1="${leftPad}" y1="${axisY}" x2="${1200 - rightPad}" y2="${axisY}" stroke="${C.textMuted}" stroke-width="2"/>
@@ -142,11 +142,11 @@ function focusCurve() {
     const px = leftPad + (x / 120) * gW;
     return `
       <line x1="${px}" y1="${axisY}" x2="${px}" y2="${axisY + 6}" stroke="${C.textMuted}" stroke-width="2"/>
-      <text x="${px}" y="${axisY + 24}" text-anchor="middle" font-size="12" font-weight="700" fill="${C.textMuted}">${x}분</text>
+      <text x="${px}" y="${axisY + 24}" text-anchor="middle" font-size="17" font-weight="700" fill="${C.textMuted}">${x}분</text>
     `;
   }).join('')}
 
-  <text x="${leftPad - 10}" y="${topPad - 10}" text-anchor="end" font-size="12" font-weight="700" fill="${C.textMuted}">집중도</text>
+  <text x="${leftPad - 10}" y="${topPad - 10}" text-anchor="end" font-size="17" font-weight="700" fill="${C.textMuted}">집중도</text>
 
   <!-- Curves -->
   ${curves.map(c => `
@@ -157,8 +157,8 @@ function focusCurve() {
   ${curves.map((c, i) => `
     <g transform="translate(${80 + (i % 2) * 560}, ${axisY + 60 + Math.floor(i / 2) * 50})">
       <rect width="14" height="14" rx="3" fill="${c.color}"/>
-      <text x="24" y="12" font-size="14" font-weight="800" fill="${c.color}">${c.group}</text>
-      <text x="100" y="12" font-size="12" font-weight="500" fill="${C.textSoft}">${c.note}</text>
+      <text x="24" y="12" font-size="20" font-weight="800" fill="${c.color}">${c.group}</text>
+      <text x="100" y="12" font-size="17" font-weight="500" fill="${C.textSoft}">${c.note}</text>
     </g>
   `).join('')}
   `);
@@ -211,8 +211,8 @@ function methodMatrix() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">4가지 공부 DNA — 네 방법은?</text>
-  <text x="600" y="80" text-anchor="middle" font-size="14" font-weight="500" fill="${C.textMuted}">인지기능별 최적 공부법 · 암기 / 이해 / 적용 / 토론</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">4가지 공부 DNA — 네 방법은?</text>
+  <text x="600" y="80" text-anchor="middle" font-size="20" font-weight="500" fill="${C.textMuted}">인지기능별 최적 공부법 · 암기 / 이해 / 적용 / 토론</text>
 
   ${positions.map((p, i) => {
     const m = methods[i];
@@ -220,17 +220,17 @@ function methodMatrix() {
       <g transform="translate(${p.x}, ${p.y})">
         <rect width="${w}" height="${h}" rx="20" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="${h}" rx="4" fill="${m.color}"/>
-        <text x="30" y="45" font-size="24" font-weight="900" fill="${m.color}">${m.icon} ${m.name}</text>
-        <text x="30" y="72" font-size="13" font-weight="700" fill="${C.textMuted}">${m.types}</text>
+        <text x="30" y="45" font-size="34" font-weight="900" fill="${m.color}">${m.icon} ${m.name}</text>
+        <text x="30" y="72" font-size="18" font-weight="700" fill="${C.textMuted}">${m.types}</text>
 
         <rect x="30" y="88" width="${w - 60}" height="40" rx="12" fill="${m.color}" opacity="0.1"/>
-        <text x="45" y="113" font-size="13" font-weight="700" fill="${m.color}">${m.core}</text>
+        <text x="45" y="113" font-size="18" font-weight="700" fill="${m.color}">${m.core}</text>
 
         ${m.how.map((t, j) => `
           <g transform="translate(30, ${160 + j * 45})">
             <circle cx="10" cy="0" r="11" fill="${m.color}" opacity="0.2"/>
-            <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="${m.color}">${j + 1}</text>
-            <text x="32" y="5" font-size="13" font-weight="600" fill="${C.textSoft}">${t}</text>
+            <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="${m.color}">${j + 1}</text>
+            <text x="32" y="5" font-size="18" font-weight="600" fill="${C.textSoft}">${t}</text>
           </g>
         `).join('')}
       </g>
@@ -260,8 +260,8 @@ function subjectFit() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">4기질 × 과목 적합성</text>
-  <text x="600" y="80" text-anchor="middle" font-size="14" font-weight="500" fill="${C.textMuted}">네 기질의 강점 과목 vs 약점 과목 · 전략 짤 때 참고</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">4기질 × 과목 적합성</text>
+  <text x="600" y="80" text-anchor="middle" font-size="20" font-weight="500" fill="${C.textMuted}">네 기질의 강점 과목 vs 약점 과목 · 전략 짤 때 참고</text>
 
   ${rows.map((r, i) => {
     const y = 120 + i * 180;
@@ -269,19 +269,19 @@ function subjectFit() {
       <g transform="translate(60, ${y})">
         <rect width="1080" height="160" rx="20" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="160" rx="4" fill="${r.color}"/>
-        <text x="30" y="45" font-size="24" font-weight="900" fill="${r.color}">${r.label}</text>
-        <text x="30" y="68" font-size="13" font-weight="700" fill="${C.textMuted}">${r.types}</text>
+        <text x="30" y="45" font-size="34" font-weight="900" fill="${r.color}">${r.label}</text>
+        <text x="30" y="68" font-size="18" font-weight="700" fill="${C.textMuted}">${r.types}</text>
 
         <g transform="translate(30, 85)">
           <rect width="90" height="28" rx="14" fill="${C.safe}" opacity="0.2"/>
-          <text x="45" y="20" text-anchor="middle" font-size="13" font-weight="900" fill="${C.safe}">강점</text>
-          <text x="110" y="20" font-size="14" font-weight="700" fill="${C.textSoft}">${r.strong}</text>
+          <text x="45" y="20" text-anchor="middle" font-size="18" font-weight="900" fill="${C.safe}">강점</text>
+          <text x="110" y="20" font-size="20" font-weight="700" fill="${C.textSoft}">${r.strong}</text>
         </g>
 
         <g transform="translate(30, 125)">
           <rect width="90" height="28" rx="14" fill="${C.danger}" opacity="0.2"/>
-          <text x="45" y="20" text-anchor="middle" font-size="13" font-weight="900" fill="${C.danger}">약점</text>
-          <text x="110" y="20" font-size="14" font-weight="700" fill="${C.textSoft}">${r.weak}</text>
+          <text x="45" y="20" text-anchor="middle" font-size="18" font-weight="900" fill="${C.danger}">약점</text>
+          <text x="110" y="20" font-size="20" font-weight="700" fill="${C.textSoft}">${r.weak}</text>
         </g>
       </g>
     `;
@@ -331,8 +331,8 @@ function ritual() {
   const w = 520, h = 340;
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">기질별 공부 체크리스트</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">시험 D-30부터 적용 가능 · 기질 최적화 4단계</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">기질별 공부 체크리스트</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">시험 D-30부터 적용 가능 · 기질 최적화 4단계</text>
 
   ${positions.map((p, i) => {
     const g = groups[i];
@@ -340,10 +340,10 @@ function ritual() {
       <g transform="translate(${p.x},${p.y})">
         <rect width="${w}" height="${h}" rx="18" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="${h}" rx="4" fill="${g.color}"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="${C.textMuted}">${g.types}</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="${C.textMuted}">${g.types}</text>
         ${g.items.map((it, j) => `
-          <text x="28" y="${115 + j * 52}" font-size="13" font-weight="600" fill="${C.textSoft}">${it}</text>
+          <text x="28" y="${115 + j * 52}" font-size="18" font-weight="600" fill="${C.textSoft}">${it}</text>
         `).join('')}
       </g>
     `;

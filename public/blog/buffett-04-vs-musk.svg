@@ -2,64 +2,64 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">INTJ 머스크 vs ISTJ 버핏 — 부의 두 길</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">같은 부자인데 투자 DNA는 정반대 · 너는 어느 쪽이야?</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="#171717">INTJ 머스크 vs ISTJ 버핏 — 부의 두 길</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="#6b7280">같은 부자인데 투자 DNA는 정반대 · 너는 어느 쪽이야?</text>
 
   <!-- Left: Musk -->
   <g transform="translate(60, 120)">
     <rect width="520" height="720" rx="22" fill="#ffffff" stroke="#0e7490" stroke-width="2"/>
     <rect width="8" height="720" rx="4" fill="#0e7490"/>
 
-    <text x="30" y="45" font-size="24" font-weight="900" fill="#0e7490">일론 머스크</text>
+    <text x="30" y="45" font-size="34" font-weight="900" fill="#0e7490">일론 머스크</text>
     <g transform="translate(30, 60)">
       <rect width="70" height="26" rx="13" fill="#0e7490"/>
-      <text x="35" y="19" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">INTJ</text>
+      <text x="35" y="19" text-anchor="middle" font-size="18" font-weight="900" fill="#fff">INTJ</text>
     </g>
-    <text x="110" y="80" font-size="14" font-weight="700" fill="#6b7280">Ni + Te 주·보조</text>
+    <text x="110" y="80" font-size="20" font-weight="700" fill="#6b7280">Ni + Te 주·보조</text>
 
-    <text x="30" y="130" font-size="18" font-weight="900" fill="#0e7490">🚀 부의 공식</text>
+    <text x="30" y="130" font-size="25" font-weight="900" fill="#0e7490">🚀 부의 공식</text>
 
     
       <g transform="translate(30, 170)">
         <circle cx="10" cy="0" r="12" fill="#0e7490" opacity="0.2"/>
-        <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#0e7490">1</text>
-        <text x="32" y="3" font-size="14" font-weight="800" fill="#171717">비전 기반 점프</text>
-        <text x="32" y="26" font-size="12" font-weight="500" fill="#6b7280">10년 후 세계 설계 → 지금 실행</text>
+        <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#0e7490">1</text>
+        <text x="32" y="3" font-size="20" font-weight="800" fill="#171717">비전 기반 점프</text>
+        <text x="32" y="26" font-size="17" font-weight="500" fill="#6b7280">10년 후 세계 설계 → 지금 실행</text>
       </g>
     
       <g transform="translate(30, 255)">
         <circle cx="10" cy="0" r="12" fill="#0e7490" opacity="0.2"/>
-        <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#0e7490">2</text>
-        <text x="32" y="3" font-size="14" font-weight="800" fill="#171717">리스크 극대</text>
-        <text x="32" y="26" font-size="12" font-weight="500" fill="#6b7280">총 자산 재투입 가능</text>
+        <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#0e7490">2</text>
+        <text x="32" y="3" font-size="20" font-weight="800" fill="#171717">리스크 극대</text>
+        <text x="32" y="26" font-size="17" font-weight="500" fill="#6b7280">총 자산 재투입 가능</text>
       </g>
     
       <g transform="translate(30, 340)">
         <circle cx="10" cy="0" r="12" fill="#0e7490" opacity="0.2"/>
-        <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#0e7490">3</text>
-        <text x="32" y="3" font-size="14" font-weight="800" fill="#171717">신사업 창조</text>
-        <text x="32" y="26" font-size="12" font-weight="500" fill="#6b7280">없는 시장을 만든다</text>
+        <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#0e7490">3</text>
+        <text x="32" y="3" font-size="20" font-weight="800" fill="#171717">신사업 창조</text>
+        <text x="32" y="26" font-size="17" font-weight="500" fill="#6b7280">없는 시장을 만든다</text>
       </g>
     
       <g transform="translate(30, 425)">
         <circle cx="10" cy="0" r="12" fill="#0e7490" opacity="0.2"/>
-        <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#0e7490">4</text>
-        <text x="32" y="3" font-size="14" font-weight="800" fill="#171717">단기 손실 무시</text>
-        <text x="32" y="26" font-size="12" font-weight="500" fill="#6b7280">장기 비전 고수</text>
+        <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#0e7490">4</text>
+        <text x="32" y="3" font-size="20" font-weight="800" fill="#171717">단기 손실 무시</text>
+        <text x="32" y="26" font-size="17" font-weight="500" fill="#6b7280">장기 비전 고수</text>
       </g>
     
       <g transform="translate(30, 510)">
         <circle cx="10" cy="0" r="12" fill="#0e7490" opacity="0.2"/>
-        <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#0e7490">5</text>
-        <text x="32" y="3" font-size="14" font-weight="800" fill="#171717">기술 레버리지</text>
-        <text x="32" y="26" font-size="12" font-weight="500" fill="#6b7280">AI · 로봇 · 우주</text>
+        <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#0e7490">5</text>
+        <text x="32" y="3" font-size="20" font-weight="800" fill="#171717">기술 레버리지</text>
+        <text x="32" y="26" font-size="17" font-weight="500" fill="#6b7280">AI · 로봇 · 우주</text>
       </g>
     
       <g transform="translate(30, 595)">
         <circle cx="10" cy="0" r="12" fill="#0e7490" opacity="0.2"/>
-        <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#0e7490">6</text>
-        <text x="32" y="3" font-size="14" font-weight="800" fill="#171717">5억 → 4천억 달러</text>
-        <text x="32" y="26" font-size="12" font-weight="500" fill="#6b7280">25년 만에 800배</text>
+        <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#0e7490">6</text>
+        <text x="32" y="3" font-size="20" font-weight="800" fill="#171717">5억 → 4천억 달러</text>
+        <text x="32" y="26" font-size="17" font-weight="500" fill="#6b7280">25년 만에 800배</text>
       </g>
     
   </g>
@@ -69,56 +69,56 @@
     <rect width="520" height="720" rx="22" fill="#ffffff" stroke="#1e3a8a" stroke-width="2"/>
     <rect width="8" height="720" rx="4" fill="#1e3a8a"/>
 
-    <text x="30" y="45" font-size="24" font-weight="900" fill="#1e3a8a">워런 버핏</text>
+    <text x="30" y="45" font-size="34" font-weight="900" fill="#1e3a8a">워런 버핏</text>
     <g transform="translate(30, 60)">
       <rect width="70" height="26" rx="13" fill="#1e3a8a"/>
-      <text x="35" y="19" text-anchor="middle" font-size="13" font-weight="900" fill="#fff">ISTJ</text>
+      <text x="35" y="19" text-anchor="middle" font-size="18" font-weight="900" fill="#fff">ISTJ</text>
     </g>
-    <text x="110" y="80" font-size="14" font-weight="700" fill="#6b7280">Si + Te 주·보조</text>
+    <text x="110" y="80" font-size="20" font-weight="700" fill="#6b7280">Si + Te 주·보조</text>
 
-    <text x="30" y="130" font-size="18" font-weight="900" fill="#1e3a8a">📈 부의 공식</text>
+    <text x="30" y="130" font-size="25" font-weight="900" fill="#1e3a8a">📈 부의 공식</text>
 
     
       <g transform="translate(30, 170)">
         <circle cx="10" cy="0" r="12" fill="#1e3a8a" opacity="0.2"/>
-        <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#1e3a8a">1</text>
-        <text x="32" y="3" font-size="14" font-weight="800" fill="#171717">검증 기반 누적</text>
-        <text x="32" y="26" font-size="12" font-weight="500" fill="#6b7280">이해한 사업만 매수</text>
+        <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#1e3a8a">1</text>
+        <text x="32" y="3" font-size="20" font-weight="800" fill="#171717">검증 기반 누적</text>
+        <text x="32" y="26" font-size="17" font-weight="500" fill="#6b7280">이해한 사업만 매수</text>
       </g>
     
       <g transform="translate(30, 255)">
         <circle cx="10" cy="0" r="12" fill="#1e3a8a" opacity="0.2"/>
-        <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#1e3a8a">2</text>
-        <text x="32" y="3" font-size="14" font-weight="800" fill="#171717">리스크 최소</text>
-        <text x="32" y="26" font-size="12" font-weight="500" fill="#6b7280">원금 보존 최우선</text>
+        <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#1e3a8a">2</text>
+        <text x="32" y="3" font-size="20" font-weight="800" fill="#171717">리스크 최소</text>
+        <text x="32" y="26" font-size="17" font-weight="500" fill="#6b7280">원금 보존 최우선</text>
       </g>
     
       <g transform="translate(30, 340)">
         <circle cx="10" cy="0" r="12" fill="#1e3a8a" opacity="0.2"/>
-        <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#1e3a8a">3</text>
-        <text x="32" y="3" font-size="14" font-weight="800" fill="#171717">기존 시장 점유</text>
-        <text x="32" y="26" font-size="12" font-weight="500" fill="#6b7280">있는 기업 가치 발굴</text>
+        <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#1e3a8a">3</text>
+        <text x="32" y="3" font-size="20" font-weight="800" fill="#171717">기존 시장 점유</text>
+        <text x="32" y="26" font-size="17" font-weight="500" fill="#6b7280">있는 기업 가치 발굴</text>
       </g>
     
       <g transform="translate(30, 425)">
         <circle cx="10" cy="0" r="12" fill="#1e3a8a" opacity="0.2"/>
-        <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#1e3a8a">4</text>
-        <text x="32" y="3" font-size="14" font-weight="800" fill="#171717">단기 시장 무시</text>
-        <text x="32" y="26" font-size="12" font-weight="500" fill="#6b7280">10년+ 장기 보유</text>
+        <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#1e3a8a">4</text>
+        <text x="32" y="3" font-size="20" font-weight="800" fill="#171717">단기 시장 무시</text>
+        <text x="32" y="26" font-size="17" font-weight="500" fill="#6b7280">10년+ 장기 보유</text>
       </g>
     
       <g transform="translate(30, 510)">
         <circle cx="10" cy="0" r="12" fill="#1e3a8a" opacity="0.2"/>
-        <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#1e3a8a">5</text>
-        <text x="32" y="3" font-size="14" font-weight="800" fill="#171717">내수·소비 레버리지</text>
-        <text x="32" y="26" font-size="12" font-weight="500" fill="#6b7280">코카콜라 · 애플</text>
+        <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#1e3a8a">5</text>
+        <text x="32" y="3" font-size="20" font-weight="800" fill="#171717">내수·소비 레버리지</text>
+        <text x="32" y="26" font-size="17" font-weight="500" fill="#6b7280">코카콜라 · 애플</text>
       </g>
     
       <g transform="translate(30, 595)">
         <circle cx="10" cy="0" r="12" fill="#1e3a8a" opacity="0.2"/>
-        <text x="10" y="5" text-anchor="middle" font-size="12" font-weight="900" fill="#1e3a8a">6</text>
-        <text x="32" y="3" font-size="14" font-weight="800" fill="#171717">초기 1만불 → 1.5천억</text>
-        <text x="32" y="26" font-size="12" font-weight="500" fill="#6b7280">70년 만에 1500만배</text>
+        <text x="10" y="5" text-anchor="middle" font-size="17" font-weight="900" fill="#1e3a8a">6</text>
+        <text x="32" y="3" font-size="20" font-weight="800" fill="#171717">초기 1만불 → 1.5천억</text>
+        <text x="32" y="26" font-size="17" font-weight="500" fill="#6b7280">70년 만에 1500만배</text>
       </g>
     
   </g>

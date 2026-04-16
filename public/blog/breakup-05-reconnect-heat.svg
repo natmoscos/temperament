@@ -2,123 +2,123 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="#171717">재결합 확률 × 회복 단계 히트맵</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">4기질별 · 회복 단계에 따라 "다시 만날 수 있을까?" 확률 (%)</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="#171717">재결합 확률 × 회복 단계 히트맵</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="#6b7280">4기질별 · 회복 단계에 따라 "다시 만날 수 있을까?" 확률 (%)</text>
 
   <!-- Column headers -->
   
-      <text x="290" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#374151">회복 초기</text>
-      <text x="290" y="208" text-anchor="middle" font-size="11" font-weight="600" fill="#6b7280">(1~7일)</text>
+      <text x="290" y="190" text-anchor="middle" font-size="18" font-weight="700" fill="#374151">회복 초기</text>
+      <text x="290" y="208" text-anchor="middle" font-size="15" font-weight="600" fill="#6b7280">(1~7일)</text>
     
-      <text x="450" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#374151">중기</text>
-      <text x="450" y="208" text-anchor="middle" font-size="11" font-weight="600" fill="#6b7280">(8~30일)</text>
+      <text x="450" y="190" text-anchor="middle" font-size="18" font-weight="700" fill="#374151">중기</text>
+      <text x="450" y="208" text-anchor="middle" font-size="15" font-weight="600" fill="#6b7280">(8~30일)</text>
     
-      <text x="610" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#374151">후기</text>
-      <text x="610" y="208" text-anchor="middle" font-size="11" font-weight="600" fill="#6b7280">(31~90일)</text>
+      <text x="610" y="190" text-anchor="middle" font-size="18" font-weight="700" fill="#374151">후기</text>
+      <text x="610" y="208" text-anchor="middle" font-size="15" font-weight="600" fill="#6b7280">(31~90일)</text>
     
-      <text x="770" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#374151">완전 회복</text>
-      <text x="770" y="208" text-anchor="middle" font-size="11" font-weight="600" fill="#6b7280">(90일+)</text>
+      <text x="770" y="190" text-anchor="middle" font-size="18" font-weight="700" fill="#374151">완전 회복</text>
+      <text x="770" y="208" text-anchor="middle" font-size="15" font-weight="600" fill="#6b7280">(90일+)</text>
     
 
   <!-- Row headers -->
   
-      <text x="192" y="294" text-anchor="end" font-size="13" font-weight="700" fill="#374151">다혈질</text>
-      <text x="192" y="312" text-anchor="end" font-size="11" font-weight="600" fill="#6b7280">(Sanguine)</text>
+      <text x="192" y="294" text-anchor="end" font-size="18" font-weight="700" fill="#374151">다혈질</text>
+      <text x="192" y="312" text-anchor="end" font-size="15" font-weight="600" fill="#6b7280">(Sanguine)</text>
     
-      <text x="192" y="454" text-anchor="end" font-size="13" font-weight="700" fill="#374151">담즙질</text>
-      <text x="192" y="472" text-anchor="end" font-size="11" font-weight="600" fill="#6b7280">(Choleric)</text>
+      <text x="192" y="454" text-anchor="end" font-size="18" font-weight="700" fill="#374151">담즙질</text>
+      <text x="192" y="472" text-anchor="end" font-size="15" font-weight="600" fill="#6b7280">(Choleric)</text>
     
-      <text x="192" y="614" text-anchor="end" font-size="13" font-weight="700" fill="#374151">점액질</text>
-      <text x="192" y="632" text-anchor="end" font-size="11" font-weight="600" fill="#6b7280">(Phlegmatic)</text>
+      <text x="192" y="614" text-anchor="end" font-size="18" font-weight="700" fill="#374151">점액질</text>
+      <text x="192" y="632" text-anchor="end" font-size="15" font-weight="600" fill="#6b7280">(Phlegmatic)</text>
     
-      <text x="192" y="774" text-anchor="end" font-size="13" font-weight="700" fill="#374151">우울질</text>
-      <text x="192" y="792" text-anchor="end" font-size="11" font-weight="600" fill="#6b7280">(Melancholic)</text>
+      <text x="192" y="774" text-anchor="end" font-size="18" font-weight="700" fill="#374151">우울질</text>
+      <text x="192" y="792" text-anchor="end" font-size="15" font-weight="600" fill="#6b7280">(Melancholic)</text>
     
 
   
     <rect x="210" y="220" width="154" height="154" rx="12" fill="#f59e0b" opacity="0.9"/>
-    <text x="287" y="272" text-anchor="middle" font-size="30" font-weight="800" fill="#fff">62%</text>
-    <text x="287" y="305" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">열정 재점화</text>
-    <text x="287" y="322" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="287" y="272" text-anchor="middle" font-size="42" font-weight="800" fill="#fff">62%</text>
+    <text x="287" y="305" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">열정 재점화</text>
+    <text x="287" y="322" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="370" y="220" width="154" height="154" rx="12" fill="#f59e0b" opacity="0.9"/>
-    <text x="447" y="272" text-anchor="middle" font-size="30" font-weight="800" fill="#fff">58%</text>
-    <text x="447" y="305" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">잠깐 재회</text>
-    <text x="447" y="322" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="447" y="272" text-anchor="middle" font-size="42" font-weight="800" fill="#fff">58%</text>
+    <text x="447" y="305" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">잠깐 재회</text>
+    <text x="447" y="322" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="530" y="220" width="154" height="154" rx="12" fill="#eab308" opacity="0.9"/>
-    <text x="607" y="272" text-anchor="middle" font-size="30" font-weight="800" fill="#fff">45%</text>
-    <text x="607" y="305" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">친구 복귀</text>
-    <text x="607" y="322" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="607" y="272" text-anchor="middle" font-size="42" font-weight="800" fill="#fff">45%</text>
+    <text x="607" y="305" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">친구 복귀</text>
+    <text x="607" y="322" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="690" y="220" width="154" height="154" rx="12" fill="#84cc16" opacity="0.9"/>
-    <text x="767" y="272" text-anchor="middle" font-size="30" font-weight="800" fill="#fff">28%</text>
-    <text x="767" y="305" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">완전 해방</text>
-    <text x="767" y="322" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="767" y="272" text-anchor="middle" font-size="42" font-weight="800" fill="#fff">28%</text>
+    <text x="767" y="305" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">완전 해방</text>
+    <text x="767" y="322" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="210" y="380" width="154" height="154" rx="12" fill="#16a34a" opacity="0.9"/>
-    <text x="287" y="432" text-anchor="middle" font-size="30" font-weight="800" fill="#fff">18%</text>
-    <text x="287" y="465" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">정리 불충분</text>
-    <text x="287" y="482" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="287" y="432" text-anchor="middle" font-size="42" font-weight="800" fill="#fff">18%</text>
+    <text x="287" y="465" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">정리 불충분</text>
+    <text x="287" y="482" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="370" y="380" width="154" height="154" rx="12" fill="#84cc16" opacity="0.9"/>
-    <text x="447" y="432" text-anchor="middle" font-size="30" font-weight="800" fill="#fff">32%</text>
-    <text x="447" y="465" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">조건 재평가</text>
-    <text x="447" y="482" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="447" y="432" text-anchor="middle" font-size="42" font-weight="800" fill="#fff">32%</text>
+    <text x="447" y="465" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">조건 재평가</text>
+    <text x="447" y="482" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="530" y="380" width="154" height="154" rx="12" fill="#eab308" opacity="0.9"/>
-    <text x="607" y="432" text-anchor="middle" font-size="30" font-weight="800" fill="#fff">42%</text>
-    <text x="607" y="465" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">재협상 가능</text>
-    <text x="607" y="482" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="607" y="432" text-anchor="middle" font-size="42" font-weight="800" fill="#fff">42%</text>
+    <text x="607" y="465" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">재협상 가능</text>
+    <text x="607" y="482" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="690" y="380" width="154" height="154" rx="12" fill="#84cc16" opacity="0.9"/>
-    <text x="767" y="432" text-anchor="middle" font-size="30" font-weight="800" fill="#fff">30%</text>
-    <text x="767" y="465" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">성장 후 만남</text>
-    <text x="767" y="482" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="767" y="432" text-anchor="middle" font-size="42" font-weight="800" fill="#fff">30%</text>
+    <text x="767" y="465" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">성장 후 만남</text>
+    <text x="767" y="482" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="210" y="540" width="154" height="154" rx="12" fill="#84cc16" opacity="0.9"/>
-    <text x="287" y="592" text-anchor="middle" font-size="30" font-weight="800" fill="#fff">28%</text>
-    <text x="287" y="625" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">아직 상처</text>
-    <text x="287" y="642" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="287" y="592" text-anchor="middle" font-size="42" font-weight="800" fill="#fff">28%</text>
+    <text x="287" y="625" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">아직 상처</text>
+    <text x="287" y="642" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="370" y="540" width="154" height="154" rx="12" fill="#eab308" opacity="0.9"/>
-    <text x="447" y="592" text-anchor="middle" font-size="30" font-weight="800" fill="#fff">46%</text>
-    <text x="447" y="625" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">생활 복귀</text>
-    <text x="447" y="642" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="447" y="592" text-anchor="middle" font-size="42" font-weight="800" fill="#fff">46%</text>
+    <text x="447" y="625" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">생활 복귀</text>
+    <text x="447" y="642" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="530" y="540" width="154" height="154" rx="12" fill="#f59e0b" opacity="0.9"/>
-    <text x="607" y="592" text-anchor="middle" font-size="30" font-weight="800" fill="#fff">58%</text>
-    <text x="607" y="625" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">여유의 재접촉</text>
-    <text x="607" y="642" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="607" y="592" text-anchor="middle" font-size="42" font-weight="800" fill="#fff">58%</text>
+    <text x="607" y="625" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">여유의 재접촉</text>
+    <text x="607" y="642" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="690" y="540" width="154" height="154" rx="12" fill="#eab308" opacity="0.9"/>
-    <text x="767" y="592" text-anchor="middle" font-size="30" font-weight="800" fill="#fff">52%</text>
-    <text x="767" y="625" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">깊은 이해 후 </text>
-    <text x="767" y="642" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">재회</text>
+    <text x="767" y="592" text-anchor="middle" font-size="42" font-weight="800" fill="#fff">52%</text>
+    <text x="767" y="625" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">깊은 이해 후 </text>
+    <text x="767" y="642" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">재회</text>
   
     <rect x="210" y="700" width="154" height="154" rx="12" fill="#16a34a" opacity="0.9"/>
-    <text x="287" y="752" text-anchor="middle" font-size="30" font-weight="800" fill="#fff">8%</text>
-    <text x="287" y="785" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">충격 최대치</text>
-    <text x="287" y="802" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="287" y="752" text-anchor="middle" font-size="42" font-weight="800" fill="#fff">8%</text>
+    <text x="287" y="785" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">충격 최대치</text>
+    <text x="287" y="802" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="370" y="700" width="154" height="154" rx="12" fill="#16a34a" opacity="0.9"/>
-    <text x="447" y="752" text-anchor="middle" font-size="30" font-weight="800" fill="#fff">14%</text>
-    <text x="447" y="785" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">내면 심연</text>
-    <text x="447" y="802" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="447" y="752" text-anchor="middle" font-size="42" font-weight="800" fill="#fff">14%</text>
+    <text x="447" y="785" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">내면 심연</text>
+    <text x="447" y="802" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="530" y="700" width="154" height="154" rx="12" fill="#16a34a" opacity="0.9"/>
-    <text x="607" y="752" text-anchor="middle" font-size="30" font-weight="800" fill="#fff">22%</text>
-    <text x="607" y="785" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">조용한 관조</text>
-    <text x="607" y="802" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="607" y="752" text-anchor="middle" font-size="42" font-weight="800" fill="#fff">22%</text>
+    <text x="607" y="785" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">조용한 관조</text>
+    <text x="607" y="802" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
     <rect x="690" y="700" width="154" height="154" rx="12" fill="#16a34a" opacity="0.9"/>
-    <text x="767" y="752" text-anchor="middle" font-size="30" font-weight="800" fill="#fff">18%</text>
-    <text x="767" y="785" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95">영구 도어슬램</text>
-    <text x="767" y="802" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" opacity="0.95"></text>
+    <text x="767" y="752" text-anchor="middle" font-size="42" font-weight="800" fill="#fff">18%</text>
+    <text x="767" y="785" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95">영구 도어슬램</text>
+    <text x="767" y="802" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.95"></text>
   
 
   <g transform="translate(220, 860)">
-    <text x="0" y="12" font-size="12" font-weight="600" fill="#374151">· 다혈질: 초기 재연결이 쉽지만 같은 패턴 반복 · 우울질: 초기 재접촉은 거의 불가 · 점액질: 시간이 답</text>
+    <text x="0" y="12" font-size="17" font-weight="600" fill="#374151">· 다혈질: 초기 재연결이 쉽지만 같은 패턴 반복 · 우울질: 초기 재접촉은 거의 불가 · 점액질: 시간이 답</text>
   </g>
   
 <text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 이별 회복 리포트</text>

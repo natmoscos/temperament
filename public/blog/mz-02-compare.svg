@@ -2,127 +2,127 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">INTJ vs INTJ — 어디가 다를까?</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">둘 다 INTJ 추정 · Te vs Ti 보조기능 차이가 180도 경영 스타일 만듦</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="#171717">INTJ vs INTJ — 어디가 다를까?</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="#6b7280">둘 다 INTJ 추정 · Te vs Ti 보조기능 차이가 180도 경영 스타일 만듦</text>
 
   <!-- Column headers -->
   <g transform="translate(60, 110)">
     <rect x="300" width="360" height="60" rx="14" fill="#dc2626"/>
-    <text x="480" y="38" text-anchor="middle" font-size="22" font-weight="900" fill="#fff">일론 머스크</text>
+    <text x="480" y="38" text-anchor="middle" font-size="31" font-weight="900" fill="#fff">일론 머스크</text>
 
     <rect x="720" width="360" height="60" rx="14" fill="#2563eb"/>
-    <text x="900" y="38" text-anchor="middle" font-size="22" font-weight="900" fill="#fff">마크 저커버그</text>
+    <text x="900" y="38" text-anchor="middle" font-size="31" font-weight="900" fill="#fff">마크 저커버그</text>
   </g>
 
   
       <g transform="translate(60, 200)">
         <rect width="280" height="50" rx="10" fill="#e5e7eb" opacity="0.4"/>
-        <text x="20" y="32" font-size="14" font-weight="800" fill="#374151">태어난 해</text>
+        <text x="20" y="32" font-size="20" font-weight="800" fill="#374151">태어난 해</text>
 
         <rect x="300" width="360" height="50" rx="10" fill="#fee2e2"/>
-        <text x="480" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#dc2626">1971</text>
+        <text x="480" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#dc2626">1971</text>
 
         <rect x="720" width="360" height="50" rx="10" fill="#dbeafe"/>
-        <text x="900" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#2563eb">1984</text>
+        <text x="900" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#2563eb">1984</text>
       </g>
     
       <g transform="translate(60, 265)">
         <rect width="280" height="50" rx="10" fill="#e5e7eb" opacity="0.4"/>
-        <text x="20" y="32" font-size="14" font-weight="800" fill="#374151">회사</text>
+        <text x="20" y="32" font-size="20" font-weight="800" fill="#374151">회사</text>
 
         <rect x="300" width="360" height="50" rx="10" fill="#fee2e2"/>
-        <text x="480" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#dc2626">Tesla · SpaceX · X</text>
+        <text x="480" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#dc2626">Tesla · SpaceX · X</text>
 
         <rect x="720" width="360" height="50" rx="10" fill="#dbeafe"/>
-        <text x="900" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#2563eb">Meta (Facebook)</text>
+        <text x="900" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#2563eb">Meta (Facebook)</text>
       </g>
     
       <g transform="translate(60, 330)">
         <rect width="280" height="50" rx="10" fill="#e5e7eb" opacity="0.4"/>
-        <text x="20" y="32" font-size="14" font-weight="800" fill="#374151">추정 MBTI</text>
+        <text x="20" y="32" font-size="20" font-weight="800" fill="#374151">추정 MBTI</text>
 
         <rect x="300" width="360" height="50" rx="10" fill="#fee2e2"/>
-        <text x="480" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#dc2626">INTJ</text>
+        <text x="480" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#dc2626">INTJ</text>
 
         <rect x="720" width="360" height="50" rx="10" fill="#dbeafe"/>
-        <text x="900" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#2563eb">INTJ</text>
+        <text x="900" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#2563eb">INTJ</text>
       </g>
     
       <g transform="translate(60, 395)">
         <rect width="280" height="50" rx="10" fill="#e5e7eb" opacity="0.4"/>
-        <text x="20" y="32" font-size="14" font-weight="800" fill="#374151">주기능</text>
+        <text x="20" y="32" font-size="20" font-weight="800" fill="#374151">주기능</text>
 
         <rect x="300" width="360" height="50" rx="10" fill="#fee2e2"/>
-        <text x="480" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#dc2626">Ni (비전)</text>
+        <text x="480" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#dc2626">Ni (비전)</text>
 
         <rect x="720" width="360" height="50" rx="10" fill="#dbeafe"/>
-        <text x="900" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#2563eb">Ni (비전)</text>
+        <text x="900" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#2563eb">Ni (비전)</text>
       </g>
     
       <g transform="translate(60, 460)">
         <rect width="280" height="50" rx="10" fill="#e5e7eb" opacity="0.4"/>
-        <text x="20" y="32" font-size="14" font-weight="800" fill="#374151">보조기능</text>
+        <text x="20" y="32" font-size="20" font-weight="800" fill="#374151">보조기능</text>
 
         <rect x="300" width="360" height="50" rx="10" fill="#fee2e2"/>
-        <text x="480" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#dc2626">Te (효율 실행)</text>
+        <text x="480" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#dc2626">Te (효율 실행)</text>
 
         <rect x="720" width="360" height="50" rx="10" fill="#dbeafe"/>
-        <text x="900" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#2563eb">Ti (논리 분석)</text>
+        <text x="900" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#2563eb">Ti (논리 분석)</text>
       </g>
     
       <g transform="translate(60, 525)">
         <rect width="280" height="50" rx="10" fill="#e5e7eb" opacity="0.4"/>
-        <text x="20" y="32" font-size="14" font-weight="800" fill="#374151">공개 표현 스타일</text>
+        <text x="20" y="32" font-size="20" font-weight="800" fill="#374151">공개 표현 스타일</text>
 
         <rect x="300" width="360" height="50" rx="10" fill="#fee2e2"/>
-        <text x="480" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#dc2626">직설적 · 논쟁적</text>
+        <text x="480" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#dc2626">직설적 · 논쟁적</text>
 
         <rect x="720" width="360" height="50" rx="10" fill="#dbeafe"/>
-        <text x="900" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#2563eb">신중 · 방어적</text>
+        <text x="900" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#2563eb">신중 · 방어적</text>
       </g>
     
       <g transform="translate(60, 590)">
         <rect width="280" height="50" rx="10" fill="#e5e7eb" opacity="0.4"/>
-        <text x="20" y="32" font-size="14" font-weight="800" fill="#374151">의사결정</text>
+        <text x="20" y="32" font-size="20" font-weight="800" fill="#374151">의사결정</text>
 
         <rect x="300" width="360" height="50" rx="10" fill="#fee2e2"/>
-        <text x="480" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#dc2626">직관 → 즉시 실행</text>
+        <text x="480" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#dc2626">직관 → 즉시 실행</text>
 
         <rect x="720" width="360" height="50" rx="10" fill="#dbeafe"/>
-        <text x="900" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#2563eb">분석 → 데이터 검증</text>
+        <text x="900" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#2563eb">분석 → 데이터 검증</text>
       </g>
     
       <g transform="translate(60, 655)">
         <rect width="280" height="50" rx="10" fill="#e5e7eb" opacity="0.4"/>
-        <text x="20" y="32" font-size="14" font-weight="800" fill="#374151">리스크 허용</text>
+        <text x="20" y="32" font-size="20" font-weight="800" fill="#374151">리스크 허용</text>
 
         <rect x="300" width="360" height="50" rx="10" fill="#fee2e2"/>
-        <text x="480" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#dc2626">극단적 (총 자산 재투입)</text>
+        <text x="480" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#dc2626">극단적 (총 자산 재투입)</text>
 
         <rect x="720" width="360" height="50" rx="10" fill="#dbeafe"/>
-        <text x="900" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#2563eb">체계적 (점진 확장)</text>
+        <text x="900" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#2563eb">체계적 (점진 확장)</text>
       </g>
     
       <g transform="translate(60, 720)">
         <rect width="280" height="50" rx="10" fill="#e5e7eb" opacity="0.4"/>
-        <text x="20" y="32" font-size="14" font-weight="800" fill="#374151">실패 대응</text>
+        <text x="20" y="32" font-size="20" font-weight="800" fill="#374151">실패 대응</text>
 
         <rect x="300" width="360" height="50" rx="10" fill="#fee2e2"/>
-        <text x="480" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#dc2626">공개 · 재시도</text>
+        <text x="480" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#dc2626">공개 · 재시도</text>
 
         <rect x="720" width="360" height="50" rx="10" fill="#dbeafe"/>
-        <text x="900" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#2563eb">조용히 수정 · 계속</text>
+        <text x="900" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#2563eb">조용히 수정 · 계속</text>
       </g>
     
       <g transform="translate(60, 785)">
         <rect width="280" height="50" rx="10" fill="#e5e7eb" opacity="0.4"/>
-        <text x="20" y="32" font-size="14" font-weight="800" fill="#374151">대표 프로젝트</text>
+        <text x="20" y="32" font-size="20" font-weight="800" fill="#374151">대표 프로젝트</text>
 
         <rect x="300" width="360" height="50" rx="10" fill="#fee2e2"/>
-        <text x="480" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#dc2626">화성 이주 · 자율주행</text>
+        <text x="480" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#dc2626">화성 이주 · 자율주행</text>
 
         <rect x="720" width="360" height="50" rx="10" fill="#dbeafe"/>
-        <text x="900" y="32" text-anchor="middle" font-size="13" font-weight="700" fill="#2563eb">Metaverse · AI</text>
+        <text x="900" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#2563eb">Metaverse · AI</text>
       </g>
     
   

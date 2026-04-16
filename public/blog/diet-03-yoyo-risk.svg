@@ -2,168 +2,168 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">요요 위험도 랭킹 — 감량 후 6개월 재증가</text>
-  <text x="600" y="80" text-anchor="middle" font-size="14" font-weight="500" fill="#6b7280">감량 성공 후 체중 원복 확률 · 높을수록 위험</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="#171717">요요 위험도 랭킹 — 감량 후 6개월 재증가</text>
+  <text x="600" y="80" text-anchor="middle" font-size="20" font-weight="500" fill="#6b7280">감량 성공 후 체중 원복 확률 · 높을수록 위험</text>
 
   
       <g transform="translate(80, 130)">
-        <text x="0" y="20" font-size="16" font-weight="900" fill="#9ca3af">01</text>
-        <text x="35" y="20" font-size="18" font-weight="800" fill="#e11d48">ENFP</text>
+        <text x="0" y="20" font-size="22" font-weight="900" fill="#9ca3af">01</text>
+        <text x="35" y="20" font-size="25" font-weight="800" fill="#e11d48">ENFP</text>
         <rect x="110" y="5" width="369" height="24" rx="12" fill="#dc2626" opacity="0.25"/>
         <rect x="110" y="5" width="369" height="24" rx="12" fill="#dc2626" opacity="0.85"/>
-        <text x="489" y="22" font-size="13" font-weight="800" fill="#dc2626">82%</text>
+        <text x="489" y="22" font-size="18" font-weight="800" fill="#dc2626">82%</text>
         <rect x="460" y="5" width="56" height="24" rx="12" fill="#dc2626"/>
-        <text x="488" y="21" text-anchor="middle" font-size="12" font-weight="900" fill="#fff">HIGH</text>
+        <text x="488" y="21" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">HIGH</text>
       </g>
     
       <g transform="translate(640, 130)">
-        <text x="0" y="20" font-size="16" font-weight="900" fill="#9ca3af">02</text>
-        <text x="35" y="20" font-size="18" font-weight="800" fill="#d97706">ESFP</text>
+        <text x="0" y="20" font-size="22" font-weight="900" fill="#9ca3af">02</text>
+        <text x="35" y="20" font-size="25" font-weight="800" fill="#d97706">ESFP</text>
         <rect x="110" y="5" width="351" height="24" rx="12" fill="#dc2626" opacity="0.25"/>
         <rect x="110" y="5" width="351" height="24" rx="12" fill="#dc2626" opacity="0.85"/>
-        <text x="471" y="22" font-size="13" font-weight="800" fill="#dc2626">78%</text>
+        <text x="471" y="22" font-size="18" font-weight="800" fill="#dc2626">78%</text>
         <rect x="460" y="5" width="56" height="24" rx="12" fill="#dc2626"/>
-        <text x="488" y="21" text-anchor="middle" font-size="12" font-weight="900" fill="#fff">HIGH</text>
+        <text x="488" y="21" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">HIGH</text>
       </g>
     
       <g transform="translate(80, 210)">
-        <text x="0" y="20" font-size="16" font-weight="900" fill="#9ca3af">03</text>
-        <text x="35" y="20" font-size="18" font-weight="800" fill="#e11d48">INFP</text>
+        <text x="0" y="20" font-size="22" font-weight="900" fill="#9ca3af">03</text>
+        <text x="35" y="20" font-size="25" font-weight="800" fill="#e11d48">INFP</text>
         <rect x="110" y="5" width="333" height="24" rx="12" fill="#dc2626" opacity="0.25"/>
         <rect x="110" y="5" width="333" height="24" rx="12" fill="#dc2626" opacity="0.85"/>
-        <text x="453" y="22" font-size="13" font-weight="800" fill="#dc2626">74%</text>
+        <text x="453" y="22" font-size="18" font-weight="800" fill="#dc2626">74%</text>
         <rect x="460" y="5" width="56" height="24" rx="12" fill="#dc2626"/>
-        <text x="488" y="21" text-anchor="middle" font-size="12" font-weight="900" fill="#fff">HIGH</text>
+        <text x="488" y="21" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">HIGH</text>
       </g>
     
       <g transform="translate(640, 210)">
-        <text x="0" y="20" font-size="16" font-weight="900" fill="#9ca3af">04</text>
-        <text x="35" y="20" font-size="18" font-weight="800" fill="#d97706">ISFP</text>
+        <text x="0" y="20" font-size="22" font-weight="900" fill="#9ca3af">04</text>
+        <text x="35" y="20" font-size="25" font-weight="800" fill="#d97706">ISFP</text>
         <rect x="110" y="5" width="324" height="24" rx="12" fill="#dc2626" opacity="0.25"/>
         <rect x="110" y="5" width="324" height="24" rx="12" fill="#dc2626" opacity="0.85"/>
-        <text x="444" y="22" font-size="13" font-weight="800" fill="#dc2626">72%</text>
+        <text x="444" y="22" font-size="18" font-weight="800" fill="#dc2626">72%</text>
         <rect x="460" y="5" width="56" height="24" rx="12" fill="#dc2626"/>
-        <text x="488" y="21" text-anchor="middle" font-size="12" font-weight="900" fill="#fff">HIGH</text>
+        <text x="488" y="21" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">HIGH</text>
       </g>
     
       <g transform="translate(80, 290)">
-        <text x="0" y="20" font-size="16" font-weight="900" fill="#9ca3af">05</text>
-        <text x="35" y="20" font-size="18" font-weight="800" fill="#0891b2">ENTP</text>
+        <text x="0" y="20" font-size="22" font-weight="900" fill="#9ca3af">05</text>
+        <text x="35" y="20" font-size="25" font-weight="800" fill="#0891b2">ENTP</text>
         <rect x="110" y="5" width="306" height="24" rx="12" fill="#f59e0b" opacity="0.25"/>
         <rect x="110" y="5" width="306" height="24" rx="12" fill="#f59e0b" opacity="0.85"/>
-        <text x="426" y="22" font-size="13" font-weight="800" fill="#f59e0b">68%</text>
+        <text x="426" y="22" font-size="18" font-weight="800" fill="#f59e0b">68%</text>
         <rect x="460" y="5" width="56" height="24" rx="12" fill="#f59e0b"/>
-        <text x="488" y="21" text-anchor="middle" font-size="12" font-weight="900" fill="#fff">MID</text>
+        <text x="488" y="21" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">MID</text>
       </g>
     
       <g transform="translate(640, 290)">
-        <text x="0" y="20" font-size="16" font-weight="900" fill="#9ca3af">06</text>
-        <text x="35" y="20" font-size="18" font-weight="800" fill="#e11d48">ENFJ</text>
+        <text x="0" y="20" font-size="22" font-weight="900" fill="#9ca3af">06</text>
+        <text x="35" y="20" font-size="25" font-weight="800" fill="#e11d48">ENFJ</text>
         <rect x="110" y="5" width="270" height="24" rx="12" fill="#f59e0b" opacity="0.25"/>
         <rect x="110" y="5" width="270" height="24" rx="12" fill="#f59e0b" opacity="0.85"/>
-        <text x="390" y="22" font-size="13" font-weight="800" fill="#f59e0b">60%</text>
+        <text x="390" y="22" font-size="18" font-weight="800" fill="#f59e0b">60%</text>
         <rect x="460" y="5" width="56" height="24" rx="12" fill="#f59e0b"/>
-        <text x="488" y="21" text-anchor="middle" font-size="12" font-weight="900" fill="#fff">MID</text>
+        <text x="488" y="21" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">MID</text>
       </g>
     
       <g transform="translate(80, 370)">
-        <text x="0" y="20" font-size="16" font-weight="900" fill="#9ca3af">07</text>
-        <text x="35" y="20" font-size="18" font-weight="800" fill="#059669">ESFJ</text>
+        <text x="0" y="20" font-size="22" font-weight="900" fill="#9ca3af">07</text>
+        <text x="35" y="20" font-size="25" font-weight="800" fill="#059669">ESFJ</text>
         <rect x="110" y="5" width="252" height="24" rx="12" fill="#f59e0b" opacity="0.25"/>
         <rect x="110" y="5" width="252" height="24" rx="12" fill="#f59e0b" opacity="0.85"/>
-        <text x="372" y="22" font-size="13" font-weight="800" fill="#f59e0b">56%</text>
+        <text x="372" y="22" font-size="18" font-weight="800" fill="#f59e0b">56%</text>
         <rect x="460" y="5" width="56" height="24" rx="12" fill="#f59e0b"/>
-        <text x="488" y="21" text-anchor="middle" font-size="12" font-weight="900" fill="#fff">MID</text>
+        <text x="488" y="21" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">MID</text>
       </g>
     
       <g transform="translate(640, 370)">
-        <text x="0" y="20" font-size="16" font-weight="900" fill="#9ca3af">08</text>
-        <text x="35" y="20" font-size="18" font-weight="800" fill="#e11d48">INFJ</text>
+        <text x="0" y="20" font-size="22" font-weight="900" fill="#9ca3af">08</text>
+        <text x="35" y="20" font-size="25" font-weight="800" fill="#e11d48">INFJ</text>
         <rect x="110" y="5" width="234" height="24" rx="12" fill="#f59e0b" opacity="0.25"/>
         <rect x="110" y="5" width="234" height="24" rx="12" fill="#f59e0b" opacity="0.85"/>
-        <text x="354" y="22" font-size="13" font-weight="800" fill="#f59e0b">52%</text>
+        <text x="354" y="22" font-size="18" font-weight="800" fill="#f59e0b">52%</text>
         <rect x="460" y="5" width="56" height="24" rx="12" fill="#f59e0b"/>
-        <text x="488" y="21" text-anchor="middle" font-size="12" font-weight="900" fill="#fff">MID</text>
+        <text x="488" y="21" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">MID</text>
       </g>
     
       <g transform="translate(80, 450)">
-        <text x="0" y="20" font-size="16" font-weight="900" fill="#9ca3af">09</text>
-        <text x="35" y="20" font-size="18" font-weight="800" fill="#0891b2">INTP</text>
+        <text x="0" y="20" font-size="22" font-weight="900" fill="#9ca3af">09</text>
+        <text x="35" y="20" font-size="25" font-weight="800" fill="#0891b2">INTP</text>
         <rect x="110" y="5" width="216" height="24" rx="12" fill="#f59e0b" opacity="0.25"/>
         <rect x="110" y="5" width="216" height="24" rx="12" fill="#f59e0b" opacity="0.85"/>
-        <text x="336" y="22" font-size="13" font-weight="800" fill="#f59e0b">48%</text>
+        <text x="336" y="22" font-size="18" font-weight="800" fill="#f59e0b">48%</text>
         <rect x="460" y="5" width="56" height="24" rx="12" fill="#f59e0b"/>
-        <text x="488" y="21" text-anchor="middle" font-size="12" font-weight="900" fill="#fff">MID</text>
+        <text x="488" y="21" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">MID</text>
       </g>
     
       <g transform="translate(640, 450)">
-        <text x="0" y="20" font-size="16" font-weight="900" fill="#9ca3af">10</text>
-        <text x="35" y="20" font-size="18" font-weight="800" fill="#d97706">ESTP</text>
+        <text x="0" y="20" font-size="22" font-weight="900" fill="#9ca3af">10</text>
+        <text x="35" y="20" font-size="25" font-weight="800" fill="#d97706">ESTP</text>
         <rect x="110" y="5" width="189" height="24" rx="12" fill="#f59e0b" opacity="0.25"/>
         <rect x="110" y="5" width="189" height="24" rx="12" fill="#f59e0b" opacity="0.85"/>
-        <text x="309" y="22" font-size="13" font-weight="800" fill="#f59e0b">42%</text>
+        <text x="309" y="22" font-size="18" font-weight="800" fill="#f59e0b">42%</text>
         <rect x="460" y="5" width="56" height="24" rx="12" fill="#f59e0b"/>
-        <text x="488" y="21" text-anchor="middle" font-size="12" font-weight="900" fill="#fff">MID</text>
+        <text x="488" y="21" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">MID</text>
       </g>
     
       <g transform="translate(80, 530)">
-        <text x="0" y="20" font-size="16" font-weight="900" fill="#9ca3af">11</text>
-        <text x="35" y="20" font-size="18" font-weight="800" fill="#d97706">ISTP</text>
+        <text x="0" y="20" font-size="22" font-weight="900" fill="#9ca3af">11</text>
+        <text x="35" y="20" font-size="25" font-weight="800" fill="#d97706">ISTP</text>
         <rect x="110" y="5" width="153" height="24" rx="12" fill="#16a34a" opacity="0.25"/>
         <rect x="110" y="5" width="153" height="24" rx="12" fill="#16a34a" opacity="0.85"/>
-        <text x="273" y="22" font-size="13" font-weight="800" fill="#16a34a">34%</text>
+        <text x="273" y="22" font-size="18" font-weight="800" fill="#16a34a">34%</text>
         <rect x="460" y="5" width="56" height="24" rx="12" fill="#16a34a"/>
-        <text x="488" y="21" text-anchor="middle" font-size="12" font-weight="900" fill="#fff">LOW</text>
+        <text x="488" y="21" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">LOW</text>
       </g>
     
       <g transform="translate(640, 530)">
-        <text x="0" y="20" font-size="16" font-weight="900" fill="#9ca3af">12</text>
-        <text x="35" y="20" font-size="18" font-weight="800" fill="#059669">ISTJ</text>
+        <text x="0" y="20" font-size="22" font-weight="900" fill="#9ca3af">12</text>
+        <text x="35" y="20" font-size="25" font-weight="800" fill="#059669">ISTJ</text>
         <rect x="110" y="5" width="126" height="24" rx="12" fill="#16a34a" opacity="0.25"/>
         <rect x="110" y="5" width="126" height="24" rx="12" fill="#16a34a" opacity="0.85"/>
-        <text x="246" y="22" font-size="13" font-weight="800" fill="#16a34a">28%</text>
+        <text x="246" y="22" font-size="18" font-weight="800" fill="#16a34a">28%</text>
         <rect x="460" y="5" width="56" height="24" rx="12" fill="#16a34a"/>
-        <text x="488" y="21" text-anchor="middle" font-size="12" font-weight="900" fill="#fff">LOW</text>
+        <text x="488" y="21" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">LOW</text>
       </g>
     
       <g transform="translate(80, 610)">
-        <text x="0" y="20" font-size="16" font-weight="900" fill="#9ca3af">13</text>
-        <text x="35" y="20" font-size="18" font-weight="800" fill="#059669">ESTJ</text>
+        <text x="0" y="20" font-size="22" font-weight="900" fill="#9ca3af">13</text>
+        <text x="35" y="20" font-size="25" font-weight="800" fill="#059669">ESTJ</text>
         <rect x="110" y="5" width="108" height="24" rx="12" fill="#16a34a" opacity="0.25"/>
         <rect x="110" y="5" width="108" height="24" rx="12" fill="#16a34a" opacity="0.85"/>
-        <text x="228" y="22" font-size="13" font-weight="800" fill="#16a34a">24%</text>
+        <text x="228" y="22" font-size="18" font-weight="800" fill="#16a34a">24%</text>
         <rect x="460" y="5" width="56" height="24" rx="12" fill="#16a34a"/>
-        <text x="488" y="21" text-anchor="middle" font-size="12" font-weight="900" fill="#fff">LOW</text>
+        <text x="488" y="21" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">LOW</text>
       </g>
     
       <g transform="translate(640, 610)">
-        <text x="0" y="20" font-size="16" font-weight="900" fill="#9ca3af">14</text>
-        <text x="35" y="20" font-size="18" font-weight="800" fill="#0891b2">ENTJ</text>
+        <text x="0" y="20" font-size="22" font-weight="900" fill="#9ca3af">14</text>
+        <text x="35" y="20" font-size="25" font-weight="800" fill="#0891b2">ENTJ</text>
         <rect x="110" y="5" width="99" height="24" rx="12" fill="#16a34a" opacity="0.25"/>
         <rect x="110" y="5" width="99" height="24" rx="12" fill="#16a34a" opacity="0.85"/>
-        <text x="219" y="22" font-size="13" font-weight="800" fill="#16a34a">22%</text>
+        <text x="219" y="22" font-size="18" font-weight="800" fill="#16a34a">22%</text>
         <rect x="460" y="5" width="56" height="24" rx="12" fill="#16a34a"/>
-        <text x="488" y="21" text-anchor="middle" font-size="12" font-weight="900" fill="#fff">LOW</text>
+        <text x="488" y="21" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">LOW</text>
       </g>
     
       <g transform="translate(80, 690)">
-        <text x="0" y="20" font-size="16" font-weight="900" fill="#9ca3af">15</text>
-        <text x="35" y="20" font-size="18" font-weight="800" fill="#059669">ISFJ</text>
+        <text x="0" y="20" font-size="22" font-weight="900" fill="#9ca3af">15</text>
+        <text x="35" y="20" font-size="25" font-weight="800" fill="#059669">ISFJ</text>
         <rect x="110" y="5" width="90" height="24" rx="12" fill="#16a34a" opacity="0.25"/>
         <rect x="110" y="5" width="90" height="24" rx="12" fill="#16a34a" opacity="0.85"/>
-        <text x="210" y="22" font-size="13" font-weight="800" fill="#16a34a">20%</text>
+        <text x="210" y="22" font-size="18" font-weight="800" fill="#16a34a">20%</text>
         <rect x="460" y="5" width="56" height="24" rx="12" fill="#16a34a"/>
-        <text x="488" y="21" text-anchor="middle" font-size="12" font-weight="900" fill="#fff">LOW</text>
+        <text x="488" y="21" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">LOW</text>
       </g>
     
       <g transform="translate(640, 690)">
-        <text x="0" y="20" font-size="16" font-weight="900" fill="#9ca3af">16</text>
-        <text x="35" y="20" font-size="18" font-weight="800" fill="#0891b2">INTJ</text>
+        <text x="0" y="20" font-size="22" font-weight="900" fill="#9ca3af">16</text>
+        <text x="35" y="20" font-size="25" font-weight="800" fill="#0891b2">INTJ</text>
         <rect x="110" y="5" width="81" height="24" rx="12" fill="#16a34a" opacity="0.25"/>
         <rect x="110" y="5" width="81" height="24" rx="12" fill="#16a34a" opacity="0.85"/>
-        <text x="201" y="22" font-size="13" font-weight="800" fill="#16a34a">18%</text>
+        <text x="201" y="22" font-size="18" font-weight="800" fill="#16a34a">18%</text>
         <rect x="460" y="5" width="56" height="24" rx="12" fill="#16a34a"/>
-        <text x="488" y="21" text-anchor="middle" font-size="12" font-weight="900" fill="#fff">LOW</text>
+        <text x="488" y="21" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">LOW</text>
       </g>
     
   

@@ -73,8 +73,8 @@ function richestList() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">세계 부자 TOP 10 MBTI 추정</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">공개된 인터뷰 · 전기 · 행동 패턴 기반 · 2026년 기준</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">세계 부자 TOP 10 MBTI 추정</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">공개된 인터뷰 · 전기 · 행동 패턴 기반 · 2026년 기준</text>
 
   ${data.map((d, i) => {
     const y = 120 + i * 72;
@@ -84,18 +84,18 @@ function richestList() {
         <rect width="1080" height="62" rx="18" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="62" rx="4" fill="${color}"/>
 
-        <text x="30" y="40" font-size="22" font-weight="900" fill="${C.gold}">#${d.rank}</text>
+        <text x="30" y="40" font-size="31" font-weight="900" fill="${C.gold}">#${d.rank}</text>
 
-        <text x="90" y="26" font-size="17" font-weight="900" fill="${C.text}">${d.name}</text>
-        <text x="90" y="48" font-size="12" font-weight="600" fill="${C.textMuted}">${d.co}</text>
+        <text x="90" y="26" font-size="24" font-weight="900" fill="${C.text}">${d.name}</text>
+        <text x="90" y="48" font-size="17" font-weight="600" fill="${C.textMuted}">${d.co}</text>
 
         <g transform="translate(530, 18)">
           <rect width="70" height="28" rx="14" fill="${color}"/>
-          <text x="35" y="20" text-anchor="middle" font-size="14" font-weight="900" fill="#fff">${d.mbti}</text>
+          <text x="35" y="20" text-anchor="middle" font-size="20" font-weight="900" fill="#fff">${d.mbti}</text>
         </g>
 
-        <text x="620" y="38" font-size="13" font-weight="700" fill="${C.moneyDeep}">${d.est}</text>
-        <text x="790" y="38" font-size="12" font-weight="600" fill="${C.textSoft}">${d.trait}</text>
+        <text x="620" y="38" font-size="18" font-weight="700" fill="${C.moneyDeep}">${d.est}</text>
+        <text x="790" y="38" font-size="17" font-weight="600" fill="${C.textSoft}">${d.trait}</text>
       </g>
     `;
   }).join('')}
@@ -113,8 +113,8 @@ function mbtiDistribution() {
   const total = dist.reduce((s, d) => s + d.count, 0);
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">부자 TOP 10 MBTI 분포</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">NT 분석가형(INTJ+ENTJ+INTP)이 80% — 일반 인구 비율 5% 대비 16배</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">부자 TOP 10 MBTI 분포</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">NT 분석가형(INTJ+ENTJ+INTP)이 80% — 일반 인구 비율 5% 대비 16배</text>
 
   <!-- Bars -->
   ${dist.map((d, i) => {
@@ -122,19 +122,19 @@ function mbtiDistribution() {
     const barW = (d.count / 4) * 700;
     return `
       <g transform="translate(200, ${y})">
-        <text x="0" y="40" font-size="24" font-weight="900" fill="${d.color}">${d.mbti}</text>
+        <text x="0" y="40" font-size="34" font-weight="900" fill="${d.color}">${d.mbti}</text>
         <rect x="120" y="20" width="${barW}" height="44" rx="22" fill="${d.color}" opacity="0.25"/>
         <rect x="120" y="20" width="${barW}" height="44" rx="22" fill="${d.color}" opacity="0.85"/>
-        <text x="${130 + barW}" y="48" font-size="20" font-weight="900" fill="${d.color}">${d.count}명</text>
-        <text x="${130 + barW + 60}" y="48" font-size="14" font-weight="600" fill="${C.textMuted}">${Math.round(d.count / total * 100)}%</text>
+        <text x="${130 + barW}" y="48" font-size="28" font-weight="900" fill="${d.color}">${d.count}명</text>
+        <text x="${130 + barW + 60}" y="48" font-size="20" font-weight="600" fill="${C.textMuted}">${Math.round(d.count / total * 100)}%</text>
       </g>
     `;
   }).join('')}
 
   <!-- Insight box -->
   <rect x="100" y="810" width="1000" height="70" rx="16" fill="${C.goldSoft}" stroke="${C.goldDeep}"/>
-  <text x="600" y="840" text-anchor="middle" font-size="14" font-weight="800" fill="${C.goldDeep}">💡 공통점: Ni(장기 비전) 또는 Ti(논리 분석) 주·보조기능 · Te(효율 실행) 보유</text>
-  <text x="600" y="865" text-anchor="middle" font-size="13" font-weight="600" fill="${C.text}">→ "10~20년 미래 설계 + 감정 배제한 실행" 조합이 부의 공식</text>
+  <text x="600" y="840" text-anchor="middle" font-size="20" font-weight="800" fill="${C.goldDeep}">💡 공통점: Ni(장기 비전) 또는 Ti(논리 분석) 주·보조기능 · Te(효율 실행) 보유</text>
+  <text x="600" y="865" text-anchor="middle" font-size="18" font-weight="600" fill="${C.text}">→ "10~20년 미래 설계 + 감정 배제한 실행" 조합이 부의 공식</text>
   `);
 }
 
@@ -147,8 +147,8 @@ function commonFunctions() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">부자 TOP 10 공통 인지기능</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">사용 빈도 % · Ni + Te 조합이 핵심 "부의 공식"</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">부자 TOP 10 공통 인지기능</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">사용 빈도 % · Ni + Te 조합이 핵심 "부의 공식"</text>
 
   ${funcs.map((f, i) => {
     const y = 150 + i * 160;
@@ -158,15 +158,15 @@ function commonFunctions() {
       <g transform="translate(120, ${y})">
         <circle cx="40" cy="40" r="40" fill="${color}" opacity="0.15"/>
         <circle cx="40" cy="40" r="36" fill="${color}" opacity="0.85"/>
-        <text x="40" y="47" text-anchor="middle" font-size="22" font-weight="900" fill="#fff">${f.code}</text>
+        <text x="40" y="47" text-anchor="middle" font-size="31" font-weight="900" fill="#fff">${f.code}</text>
 
-        <text x="110" y="30" font-size="20" font-weight="800" fill="${color}">${f.name}</text>
+        <text x="110" y="30" font-size="28" font-weight="800" fill="${color}">${f.name}</text>
 
         <rect x="110" y="48" width="${barW}" height="22" rx="11" fill="${color}" opacity="0.25"/>
         <rect x="110" y="48" width="${barW}" height="22" rx="11" fill="${color}" opacity="0.85"/>
-        <text x="${120 + barW}" y="65" font-size="14" font-weight="900" fill="${color}">${f.pct}%</text>
+        <text x="${120 + barW}" y="65" font-size="20" font-weight="900" fill="${color}">${f.pct}%</text>
 
-        <text x="110" y="98" font-size="13" font-weight="500" fill="${C.textSoft}">${f.why}</text>
+        <text x="110" y="98" font-size="18" font-weight="500" fill="${C.textSoft}">${f.why}</text>
       </g>
     `;
   }).join('')}
@@ -193,8 +193,8 @@ function pathToWealth() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="${C.text}">부자 5단계 경로 — 공통 패턴</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">TOP 10 부자들의 공통 부 축적 단계 · 인지기능 활용 흐름</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">부자 5단계 경로 — 공통 패턴</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">TOP 10 부자들의 공통 부 축적 단계 · 인지기능 활용 흐름</text>
 
   ${paths.map((p, i) => {
     const y = 130 + i * 150;
@@ -204,16 +204,16 @@ function pathToWealth() {
         <rect width="8" height="130" rx="4" fill="${p.color}"/>
 
         <circle cx="60" cy="65" r="40" fill="${p.color}" opacity="0.15"/>
-        <text x="60" y="78" text-anchor="middle" font-size="32">${p.icon}</text>
+        <text x="60" y="78" text-anchor="middle" font-size="45">${p.icon}</text>
 
-        <text x="130" y="45" font-size="20" font-weight="900" fill="${p.color}">${p.path}</text>
+        <text x="130" y="45" font-size="28" font-weight="900" fill="${p.color}">${p.path}</text>
         <g transform="translate(130, 58)">
           <rect width="65" height="22" rx="11" fill="${p.color}" opacity="0.2"/>
-          <text x="32" y="16" text-anchor="middle" font-size="12" font-weight="900" fill="${p.color}">${p.stage}</text>
+          <text x="32" y="16" text-anchor="middle" font-size="17" font-weight="900" fill="${p.color}">${p.stage}</text>
         </g>
 
-        <text x="220" y="74" font-size="15" font-weight="700" fill="${C.textSoft}">${p.what}</text>
-        <text x="130" y="105" font-size="13" font-weight="500" fill="${C.textMuted}">👉 ${p.how}</text>
+        <text x="220" y="74" font-size="21" font-weight="700" fill="${C.textSoft}">${p.what}</text>
+        <text x="130" y="105" font-size="18" font-weight="500" fill="${C.textMuted}">👉 ${p.how}</text>
       </g>
     `;
   }).join('')}
@@ -262,8 +262,8 @@ function actionGuide() {
   const w = 520, h = 340;
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">기질별 부 축적 가이드</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">부자들의 공식을 네 유형에 맞게 적용하는 4단계</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">기질별 부 축적 가이드</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">부자들의 공식을 네 유형에 맞게 적용하는 4단계</text>
 
   ${positions.map((p, i) => {
     const g = groups[i];
@@ -271,10 +271,10 @@ function actionGuide() {
       <g transform="translate(${p.x},${p.y})">
         <rect width="${w}" height="${h}" rx="18" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="${h}" rx="4" fill="${g.color}"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="${C.textMuted}">${g.types}</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="${C.textMuted}">${g.types}</text>
         ${g.items.map((it, j) => `
-          <text x="28" y="${115 + j * 52}" font-size="13" font-weight="600" fill="${C.textSoft}">${it}</text>
+          <text x="28" y="${115 + j * 52}" font-size="18" font-weight="600" fill="${C.textSoft}">${it}</text>
         `).join('')}
       </g>
     `;

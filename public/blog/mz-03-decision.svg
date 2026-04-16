@@ -2,53 +2,53 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">의사결정 스타일 — Te vs Ti</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">같은 Ni 비전 · 다른 보조기능이 만드는 정반대 경로</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="#171717">의사결정 스타일 — Te vs Ti</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="#6b7280">같은 Ni 비전 · 다른 보조기능이 만드는 정반대 경로</text>
 
   <!-- Musk: Te -->
   <g transform="translate(60, 140)">
     <rect width="520" height="680" rx="22" fill="#ffffff" stroke="#dc2626" stroke-width="2"/>
     <rect width="8" height="680" rx="4" fill="#dc2626"/>
 
-    <text x="30" y="45" font-size="24" font-weight="900" fill="#dc2626">머스크 (Ni + Te)</text>
-    <text x="30" y="75" font-size="14" font-weight="700" fill="#6b7280">외향 사고: 효율 · 실행 · 감정 배제</text>
+    <text x="30" y="45" font-size="34" font-weight="900" fill="#dc2626">머스크 (Ni + Te)</text>
+    <text x="30" y="75" font-size="20" font-weight="700" fill="#6b7280">외향 사고: 효율 · 실행 · 감정 배제</text>
 
-    <text x="30" y="130" font-size="18" font-weight="900" fill="#dc2626">⚡ 결정 프로세스</text>
+    <text x="30" y="130" font-size="25" font-weight="900" fill="#dc2626">⚡ 결정 프로세스</text>
 
     
       <g transform="translate(30, 175)">
         <circle cx="10" cy="5" r="12" fill="#dc2626" opacity="0.2"/>
-        <text x="10" y="10" text-anchor="middle" font-size="12" font-weight="900" fill="#dc2626">1</text>
-        <text x="32" y="7" font-size="14" font-weight="800" fill="#171717">Step 1 — 비전 설정</text>
-        <text x="32" y="30" font-size="12" font-weight="500" fill="#6b7280">"화성에 인간 정착" 같은 10년+ 목표</text>
+        <text x="10" y="10" text-anchor="middle" font-size="17" font-weight="900" fill="#dc2626">1</text>
+        <text x="32" y="7" font-size="20" font-weight="800" fill="#171717">Step 1 — 비전 설정</text>
+        <text x="32" y="30" font-size="17" font-weight="500" fill="#6b7280">"화성에 인간 정착" 같은 10년+ 목표</text>
       </g>
     
       <g transform="translate(30, 270)">
         <circle cx="10" cy="5" r="12" fill="#dc2626" opacity="0.2"/>
-        <text x="10" y="10" text-anchor="middle" font-size="12" font-weight="900" fill="#dc2626">2</text>
-        <text x="32" y="7" font-size="14" font-weight="800" fill="#171717">Step 2 — 즉시 실행</text>
-        <text x="32" y="30" font-size="12" font-weight="500" fill="#6b7280">분석 길게 X · 일단 시작</text>
+        <text x="10" y="10" text-anchor="middle" font-size="17" font-weight="900" fill="#dc2626">2</text>
+        <text x="32" y="7" font-size="20" font-weight="800" fill="#171717">Step 2 — 즉시 실행</text>
+        <text x="32" y="30" font-size="17" font-weight="500" fill="#6b7280">분석 길게 X · 일단 시작</text>
       </g>
     
       <g transform="translate(30, 365)">
         <circle cx="10" cy="5" r="12" fill="#dc2626" opacity="0.2"/>
-        <text x="10" y="10" text-anchor="middle" font-size="12" font-weight="900" fill="#dc2626">3</text>
-        <text x="32" y="7" font-size="14" font-weight="800" fill="#171717">Step 3 — 피드백 학습</text>
-        <text x="32" y="30" font-size="12" font-weight="500" fill="#6b7280">실패 공개 · 빠른 재설계</text>
+        <text x="10" y="10" text-anchor="middle" font-size="17" font-weight="900" fill="#dc2626">3</text>
+        <text x="32" y="7" font-size="20" font-weight="800" fill="#171717">Step 3 — 피드백 학습</text>
+        <text x="32" y="30" font-size="17" font-weight="500" fill="#6b7280">실패 공개 · 빠른 재설계</text>
       </g>
     
       <g transform="translate(30, 460)">
         <circle cx="10" cy="5" r="12" fill="#dc2626" opacity="0.2"/>
-        <text x="10" y="10" text-anchor="middle" font-size="12" font-weight="900" fill="#dc2626">4</text>
-        <text x="32" y="7" font-size="14" font-weight="800" fill="#171717">Step 4 — 직원 압박</text>
-        <text x="32" y="30" font-size="12" font-weight="500" fill="#6b7280">주 80시간+ 요구 · 단기 가혹</text>
+        <text x="10" y="10" text-anchor="middle" font-size="17" font-weight="900" fill="#dc2626">4</text>
+        <text x="32" y="7" font-size="20" font-weight="800" fill="#171717">Step 4 — 직원 압박</text>
+        <text x="32" y="30" font-size="17" font-weight="500" fill="#6b7280">주 80시간+ 요구 · 단기 가혹</text>
       </g>
     
       <g transform="translate(30, 555)">
         <circle cx="10" cy="5" r="12" fill="#dc2626" opacity="0.2"/>
-        <text x="10" y="10" text-anchor="middle" font-size="12" font-weight="900" fill="#dc2626">5</text>
-        <text x="32" y="7" font-size="14" font-weight="800" fill="#171717">Step 5 — 자산 재투입</text>
-        <text x="32" y="30" font-size="12" font-weight="500" fill="#6b7280">2008년 Tesla+SpaceX 파산 직전</text>
+        <text x="10" y="10" text-anchor="middle" font-size="17" font-weight="900" fill="#dc2626">5</text>
+        <text x="32" y="7" font-size="20" font-weight="800" fill="#171717">Step 5 — 자산 재투입</text>
+        <text x="32" y="30" font-size="17" font-weight="500" fill="#6b7280">2008년 Tesla+SpaceX 파산 직전</text>
       </g>
     
   </g>
@@ -58,45 +58,45 @@
     <rect width="520" height="680" rx="22" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
     <rect width="8" height="680" rx="4" fill="#2563eb"/>
 
-    <text x="30" y="45" font-size="24" font-weight="900" fill="#2563eb">저커버그 (Ni + Ti)</text>
-    <text x="30" y="75" font-size="14" font-weight="700" fill="#6b7280">내향 사고: 분석 · 구조 · 정확성</text>
+    <text x="30" y="45" font-size="34" font-weight="900" fill="#2563eb">저커버그 (Ni + Ti)</text>
+    <text x="30" y="75" font-size="20" font-weight="700" fill="#6b7280">내향 사고: 분석 · 구조 · 정확성</text>
 
-    <text x="30" y="130" font-size="18" font-weight="900" fill="#2563eb">🧠 결정 프로세스</text>
+    <text x="30" y="130" font-size="25" font-weight="900" fill="#2563eb">🧠 결정 프로세스</text>
 
     
       <g transform="translate(30, 175)">
         <circle cx="10" cy="5" r="12" fill="#2563eb" opacity="0.2"/>
-        <text x="10" y="10" text-anchor="middle" font-size="12" font-weight="900" fill="#2563eb">1</text>
-        <text x="32" y="7" font-size="14" font-weight="800" fill="#171717">Step 1 — 비전 설정</text>
-        <text x="32" y="30" font-size="12" font-weight="500" fill="#6b7280">"세계 연결 · Metaverse" 같은 장기 비전</text>
+        <text x="10" y="10" text-anchor="middle" font-size="17" font-weight="900" fill="#2563eb">1</text>
+        <text x="32" y="7" font-size="20" font-weight="800" fill="#171717">Step 1 — 비전 설정</text>
+        <text x="32" y="30" font-size="17" font-weight="500" fill="#6b7280">"세계 연결 · Metaverse" 같은 장기 비전</text>
       </g>
     
       <g transform="translate(30, 270)">
         <circle cx="10" cy="5" r="12" fill="#2563eb" opacity="0.2"/>
-        <text x="10" y="10" text-anchor="middle" font-size="12" font-weight="900" fill="#2563eb">2</text>
-        <text x="32" y="7" font-size="14" font-weight="800" fill="#171717">Step 2 — 데이터 분석</text>
-        <text x="32" y="30" font-size="12" font-weight="500" fill="#6b7280">수치 · 사용자 행동 심층 연구</text>
+        <text x="10" y="10" text-anchor="middle" font-size="17" font-weight="900" fill="#2563eb">2</text>
+        <text x="32" y="7" font-size="20" font-weight="800" fill="#171717">Step 2 — 데이터 분석</text>
+        <text x="32" y="30" font-size="17" font-weight="500" fill="#6b7280">수치 · 사용자 행동 심층 연구</text>
       </g>
     
       <g transform="translate(30, 365)">
         <circle cx="10" cy="5" r="12" fill="#2563eb" opacity="0.2"/>
-        <text x="10" y="10" text-anchor="middle" font-size="12" font-weight="900" fill="#2563eb">3</text>
-        <text x="32" y="7" font-size="14" font-weight="800" fill="#171717">Step 3 — A/B 테스트</text>
-        <text x="32" y="30" font-size="12" font-weight="500" fill="#6b7280">소규모 실험 → 확장</text>
+        <text x="10" y="10" text-anchor="middle" font-size="17" font-weight="900" fill="#2563eb">3</text>
+        <text x="32" y="7" font-size="20" font-weight="800" fill="#171717">Step 3 — A/B 테스트</text>
+        <text x="32" y="30" font-size="17" font-weight="500" fill="#6b7280">소규모 실험 → 확장</text>
       </g>
     
       <g transform="translate(30, 460)">
         <circle cx="10" cy="5" r="12" fill="#2563eb" opacity="0.2"/>
-        <text x="10" y="10" text-anchor="middle" font-size="12" font-weight="900" fill="#2563eb">4</text>
-        <text x="32" y="7" font-size="14" font-weight="800" fill="#171717">Step 4 — 체계적 인재 관리</text>
-        <text x="32" y="30" font-size="12" font-weight="500" fill="#6b7280">구조화된 승진 · 보상</text>
+        <text x="10" y="10" text-anchor="middle" font-size="17" font-weight="900" fill="#2563eb">4</text>
+        <text x="32" y="7" font-size="20" font-weight="800" fill="#171717">Step 4 — 체계적 인재 관리</text>
+        <text x="32" y="30" font-size="17" font-weight="500" fill="#6b7280">구조화된 승진 · 보상</text>
       </g>
     
       <g transform="translate(30, 555)">
         <circle cx="10" cy="5" r="12" fill="#2563eb" opacity="0.2"/>
-        <text x="10" y="10" text-anchor="middle" font-size="12" font-weight="900" fill="#2563eb">5</text>
-        <text x="32" y="7" font-size="14" font-weight="800" fill="#171717">Step 5 — 점진 확장</text>
-        <text x="32" y="30" font-size="12" font-weight="500" fill="#6b7280">60B 투자도 10년 분할</text>
+        <text x="10" y="10" text-anchor="middle" font-size="17" font-weight="900" fill="#2563eb">5</text>
+        <text x="32" y="7" font-size="20" font-weight="800" fill="#171717">Step 5 — 점진 확장</text>
+        <text x="32" y="30" font-size="17" font-weight="500" fill="#6b7280">60B 투자도 10년 분할</text>
       </g>
     
   </g>

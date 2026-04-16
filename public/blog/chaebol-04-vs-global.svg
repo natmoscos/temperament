@@ -2,50 +2,50 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
 <rect width="1200" height="900" fill="#fafafa"/>
 
-  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">글로벌 부자 vs 한국 재벌 — 차이점</text>
-  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">둘 다 NT 공통이지만 환경 변수가 완전 다른 행동 유도</text>
+  <text x="600" y="50" text-anchor="middle" font-size="42" font-weight="800" fill="#171717">글로벌 부자 vs 한국 재벌 — 차이점</text>
+  <text x="600" y="80" text-anchor="middle" font-size="18" font-weight="500" fill="#6b7280">둘 다 NT 공통이지만 환경 변수가 완전 다른 행동 유도</text>
 
   <!-- Left: Global -->
   <g transform="translate(60, 130)">
     <rect width="520" height="700" rx="22" fill="#ffffff" stroke="#6b7280" stroke-width="2"/>
     <rect width="8" height="700" rx="4" fill="#6b7280"/>
-    <text x="30" y="50" font-size="24" font-weight="900" fill="#374151">글로벌 부자 (머스크·베조스)</text>
-    <text x="30" y="80" font-size="13" font-weight="700" fill="#6b7280">1세대 창업 · 개인 카리스마 · 공격적 공개 소통</text>
+    <text x="30" y="50" font-size="34" font-weight="900" fill="#374151">글로벌 부자 (머스크·베조스)</text>
+    <text x="30" y="80" font-size="18" font-weight="700" fill="#6b7280">1세대 창업 · 개인 카리스마 · 공격적 공개 소통</text>
 
     
       <g transform="translate(30, 130)">
-        <text x="0" y="0" font-size="15" font-weight="800" fill="#171717">📍 시작점</text>
-        <text x="0" y="28" font-size="13" font-weight="500" fill="#374151">0에서 창업 · 개인 리스크 100%</text>
+        <text x="0" y="0" font-size="21" font-weight="800" fill="#171717">📍 시작점</text>
+        <text x="0" y="28" font-size="18" font-weight="500" fill="#374151">0에서 창업 · 개인 리스크 100%</text>
       </g>
     
       <g transform="translate(30, 210)">
-        <text x="0" y="0" font-size="15" font-weight="800" fill="#171717">🎯 목표</text>
-        <text x="0" y="28" font-size="13" font-weight="500" fill="#374151">새 시장 창조 · 파괴적 혁신</text>
+        <text x="0" y="0" font-size="21" font-weight="800" fill="#171717">🎯 목표</text>
+        <text x="0" y="28" font-size="18" font-weight="500" fill="#374151">새 시장 창조 · 파괴적 혁신</text>
       </g>
     
       <g transform="translate(30, 290)">
-        <text x="0" y="0" font-size="15" font-weight="800" fill="#171717">💼 경영 스타일</text>
-        <text x="0" y="28" font-size="13" font-weight="500" fill="#374151">개인 카리스마 · 공개 소통 · 직설</text>
+        <text x="0" y="0" font-size="21" font-weight="800" fill="#171717">💼 경영 스타일</text>
+        <text x="0" y="28" font-size="18" font-weight="500" fill="#374151">개인 카리스마 · 공개 소통 · 직설</text>
       </g>
     
       <g transform="translate(30, 370)">
-        <text x="0" y="0" font-size="15" font-weight="800" fill="#171717">⚡ 의사결정</text>
-        <text x="0" y="28" font-size="13" font-weight="500" fill="#374151">본인 단독 결정 · 빠른 실행</text>
+        <text x="0" y="0" font-size="21" font-weight="800" fill="#171717">⚡ 의사결정</text>
+        <text x="0" y="28" font-size="18" font-weight="500" fill="#374151">본인 단독 결정 · 빠른 실행</text>
       </g>
     
       <g transform="translate(30, 450)">
-        <text x="0" y="0" font-size="15" font-weight="800" fill="#171717">🌐 공개 행보</text>
-        <text x="0" y="28" font-size="13" font-weight="500" fill="#374151">SNS 활발 · 인터뷰 · 논쟁 참여</text>
+        <text x="0" y="0" font-size="21" font-weight="800" fill="#171717">🌐 공개 행보</text>
+        <text x="0" y="28" font-size="18" font-weight="500" fill="#374151">SNS 활발 · 인터뷰 · 논쟁 참여</text>
       </g>
     
       <g transform="translate(30, 530)">
-        <text x="0" y="0" font-size="15" font-weight="800" fill="#171717">🏆 성공 지표</text>
-        <text x="0" y="28" font-size="13" font-weight="500" fill="#374151">혁신성 · 기업 가치 · 글로벌 점유</text>
+        <text x="0" y="0" font-size="21" font-weight="800" fill="#171717">🏆 성공 지표</text>
+        <text x="0" y="28" font-size="18" font-weight="500" fill="#374151">혁신성 · 기업 가치 · 글로벌 점유</text>
       </g>
     
       <g transform="translate(30, 610)">
-        <text x="0" y="0" font-size="15" font-weight="800" fill="#171717">⚠️ 리스크</text>
-        <text x="0" y="28" font-size="13" font-weight="500" fill="#374151">개인 번아웃 · 관계 악화</text>
+        <text x="0" y="0" font-size="21" font-weight="800" fill="#171717">⚠️ 리스크</text>
+        <text x="0" y="28" font-size="18" font-weight="500" fill="#374151">개인 번아웃 · 관계 악화</text>
       </g>
     
   </g>
@@ -54,43 +54,43 @@
   <g transform="translate(620, 130)">
     <rect width="520" height="700" rx="22" fill="#ffffff" stroke="#c0392b" stroke-width="2"/>
     <rect width="8" height="700" rx="4" fill="#c0392b"/>
-    <text x="30" y="50" font-size="24" font-weight="900" fill="#c0392b">한국 재벌 (이재용·정의선)</text>
-    <text x="30" y="80" font-size="13" font-weight="700" fill="#6b7280">3~4세대 승계 · 집단 조직 · 신중 공개 소통</text>
+    <text x="30" y="50" font-size="34" font-weight="900" fill="#c0392b">한국 재벌 (이재용·정의선)</text>
+    <text x="30" y="80" font-size="18" font-weight="700" fill="#6b7280">3~4세대 승계 · 집단 조직 · 신중 공개 소통</text>
 
     
       <g transform="translate(30, 130)">
-        <text x="0" y="0" font-size="15" font-weight="800" fill="#171717">📍 시작점</text>
-        <text x="0" y="28" font-size="13" font-weight="500" fill="#374151">그룹 승계 · 1조+ 자산 상속</text>
+        <text x="0" y="0" font-size="21" font-weight="800" fill="#171717">📍 시작점</text>
+        <text x="0" y="28" font-size="18" font-weight="500" fill="#374151">그룹 승계 · 1조+ 자산 상속</text>
       </g>
     
       <g transform="translate(30, 210)">
-        <text x="0" y="0" font-size="15" font-weight="800" fill="#171717">🎯 목표</text>
-        <text x="0" y="28" font-size="13" font-weight="500" fill="#374151">기존 그룹 전환 · 미래 산업 축</text>
+        <text x="0" y="0" font-size="21" font-weight="800" fill="#171717">🎯 목표</text>
+        <text x="0" y="28" font-size="18" font-weight="500" fill="#374151">기존 그룹 전환 · 미래 산업 축</text>
       </g>
     
       <g transform="translate(30, 290)">
-        <text x="0" y="0" font-size="15" font-weight="800" fill="#171717">💼 경영 스타일</text>
-        <text x="0" y="28" font-size="13" font-weight="500" fill="#374151">집단 의사결정 · 전문경영인 활용</text>
+        <text x="0" y="0" font-size="21" font-weight="800" fill="#171717">💼 경영 스타일</text>
+        <text x="0" y="28" font-size="18" font-weight="500" fill="#374151">집단 의사결정 · 전문경영인 활용</text>
       </g>
     
       <g transform="translate(30, 370)">
-        <text x="0" y="0" font-size="15" font-weight="800" fill="#171717">⚡ 의사결정</text>
-        <text x="0" y="28" font-size="13" font-weight="500" fill="#374151">임원회의 · 법무 검토 · 리스크 관리</text>
+        <text x="0" y="0" font-size="21" font-weight="800" fill="#171717">⚡ 의사결정</text>
+        <text x="0" y="28" font-size="18" font-weight="500" fill="#374151">임원회의 · 법무 검토 · 리스크 관리</text>
       </g>
     
       <g transform="translate(30, 450)">
-        <text x="0" y="0" font-size="15" font-weight="800" fill="#171717">🌐 공개 행보</text>
-        <text x="0" y="28" font-size="13" font-weight="500" fill="#374151">신중 · 제한된 인터뷰 · 현장 방문</text>
+        <text x="0" y="0" font-size="21" font-weight="800" fill="#171717">🌐 공개 행보</text>
+        <text x="0" y="28" font-size="18" font-weight="500" fill="#374151">신중 · 제한된 인터뷰 · 현장 방문</text>
       </g>
     
       <g transform="translate(30, 530)">
-        <text x="0" y="0" font-size="15" font-weight="800" fill="#171717">🏆 성공 지표</text>
-        <text x="0" y="28" font-size="13" font-weight="500" fill="#374151">승계 안정 · 그룹 미래 축 확보</text>
+        <text x="0" y="0" font-size="21" font-weight="800" fill="#171717">🏆 성공 지표</text>
+        <text x="0" y="28" font-size="18" font-weight="500" fill="#374151">승계 안정 · 그룹 미래 축 확보</text>
       </g>
     
       <g transform="translate(30, 610)">
-        <text x="0" y="0" font-size="15" font-weight="800" fill="#171717">⚠️ 리스크</text>
-        <text x="0" y="28" font-size="13" font-weight="500" fill="#374151">승계 논란 · 사법 리스크 · 세대 차이</text>
+        <text x="0" y="0" font-size="21" font-weight="800" fill="#171717">⚠️ 리스크</text>
+        <text x="0" y="28" font-size="18" font-weight="500" fill="#374151">승계 논란 · 사법 리스크 · 세대 차이</text>
       </g>
     
   </g>

@@ -125,19 +125,19 @@ function salaryGrowth() {
   };
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">16유형 연봉 상승 속도 랭킹</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">입사 초봉 대비 10년차 연봉 배율 기준 · 인지기능 + 기질 보정 · 100점 만점</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">16유형 연봉 상승 속도 랭킹</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">입사 초봉 대비 10년차 연봉 배율 기준 · 인지기능 + 기질 보정 · 100점 만점</text>
 
   ${list.map((r, i) => {
     const y = top + i * rowH;
     const w = (r.v / 100) * barW;
     const g = GROUP_OF[r.t];
     return `
-      <text x="45" y="${y + 28}" font-size="14" font-weight="700" fill="${C.textMuted}">${String(i + 1).padStart(2, '0')}</text>
-      <text x="90" y="${y + 28}" font-size="16" font-weight="800" fill="${COLOR_OF[g]}">${r.t}</text>
+      <text x="45" y="${y + 28}" font-size="20" font-weight="700" fill="${C.textMuted}">${String(i + 1).padStart(2, '0')}</text>
+      <text x="90" y="${y + 28}" font-size="22" font-weight="800" fill="${COLOR_OF[g]}">${r.t}</text>
       <rect x="${left}" y="${y + 9}" width="${w}" height="26" rx="13" fill="${colorFor(r.v)}" opacity="0.92"/>
-      <text x="${left + w - 12}" y="${y + 27}" text-anchor="end" font-size="13" font-weight="800" fill="#fff">${r.v}</text>
-      <text x="${left + w + 14}" y="${y + 27}" font-size="12" font-weight="600" fill="${C.textSoft}">${r.note}</text>
+      <text x="${left + w - 12}" y="${y + 27}" text-anchor="end" font-size="18" font-weight="800" fill="#fff">${r.v}</text>
+      <text x="${left + w + 14}" y="${y + 27}" font-size="17" font-weight="600" fill="${C.textSoft}">${r.note}</text>
     `;
   }).join('')}
 
@@ -150,7 +150,7 @@ function salaryGrowth() {
       { c: '#f87171', label: '비금전형 ~24' },
     ].map((t, i) => `
       <rect x="${i * 140}" y="0" width="14" height="14" rx="3" fill="${t.c}"/>
-      <text x="${i * 140 + 22}" y="12" font-size="11" font-weight="700" fill="${C.textSoft}">${t.label}</text>
+      <text x="${i * 140 + 22}" y="12" font-size="15" font-weight="700" fill="${C.textSoft}">${t.label}</text>
     `).join('')}
   </g>
   `);
@@ -202,21 +202,21 @@ function curveShapes() {
   };
 
   return wrap(`
-  <text x="600" y="55" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">4기질별 커리어 성장 곡선</text>
-  <text x="600" y="82" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">연봉만이 아닌 "어떤 모양으로 성장하느냐" · 네 기질이 네 속도를 결정해</text>
+  <text x="600" y="55" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">4기질별 커리어 성장 곡선</text>
+  <text x="600" y="82" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">연봉만이 아닌 "어떤 모양으로 성장하느냐" · 네 기질이 네 속도를 결정해</text>
 
   ${positions.map((p, i) => {
     const g = groups[i];
     return `
       <g transform="translate(${p.x},${p.y})">
         <rect width="${cardW}" height="${cardH}" rx="18" fill="#ffffff" stroke="${C.border}"/>
-        <text x="28" y="40" font-size="17" font-weight="800" fill="${g.color}">${g.name}</text>
-        <text x="28" y="65" font-size="12" font-weight="500" fill="${C.textMuted}">${g.desc}</text>
+        <text x="28" y="40" font-size="24" font-weight="800" fill="${g.color}">${g.name}</text>
+        <text x="28" y="65" font-size="17" font-weight="500" fill="${C.textMuted}">${g.desc}</text>
         <g transform="translate(28, 95)">
           <line x1="0" y1="180" x2="470" y2="180" stroke="${C.divider}"/>
           <line x1="0" y1="0" x2="0" y2="180" stroke="${C.divider}"/>
-          <text x="-8" y="8" text-anchor="end" font-size="10" fill="${C.textFaint}">연봉</text>
-          <text x="465" y="198" text-anchor="end" font-size="10" fill="${C.textFaint}">연차 →</text>
+          <text x="-8" y="8" text-anchor="end" font-size="14" fill="${C.textFaint}">연봉</text>
+          <text x="465" y="198" text-anchor="end" font-size="14" fill="${C.textFaint}">연차 →</text>
           <!-- years axis -->
           <text x="0" y="198" text-anchor="middle" font-size="9" fill="${C.textFaint}">1</text>
           <text x="120" y="198" text-anchor="middle" font-size="9" fill="${C.textFaint}">5</text>
@@ -256,8 +256,8 @@ function jobFitMatrix() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">16유형 × 직무 적합성 매트릭스</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">인지기능 강점 기반 · 상위 4~5개 직무 추천 (N=612 커리어 만족도 데이터)</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">16유형 × 직무 적합성 매트릭스</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">인지기능 강점 기반 · 상위 4~5개 직무 추천 (N=612 커리어 만족도 데이터)</text>
 
   ${items.map((it, i) => {
     const col = i % 2;
@@ -268,8 +268,8 @@ function jobFitMatrix() {
     return `
       <rect x="${x}" y="${y}" width="555" height="80" rx="14" fill="${BG_OF[g]}" stroke="${C.border}"/>
       <rect x="${x}" y="${y}" width="7" height="80" rx="3" fill="${COLOR_OF[g]}"/>
-      <text x="${x + 22}" y="${y + 32}" font-size="17" font-weight="800" fill="${COLOR_OF[g]}">${it.t}</text>
-      <text x="${x + 22}" y="${y + 57}" font-size="12" font-weight="600" fill="${C.textSoft}">${it.fit}</text>
+      <text x="${x + 22}" y="${y + 32}" font-size="24" font-weight="800" fill="${COLOR_OF[g]}">${it.t}</text>
+      <text x="${x + 22}" y="${y + 57}" font-size="17" font-weight="600" fill="${C.textSoft}">${it.fit}</text>
     `;
   }).join('')}
   `);
@@ -324,8 +324,8 @@ function promotionPattern() {
   ];
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">MBTI 승진 &amp; 이직 4대 패턴</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">네 성장 패턴을 알면 언제 이직/승진을 노려야 하는지 보여</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">MBTI 승진 &amp; 이직 4대 패턴</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">네 성장 패턴을 알면 언제 이직/승진을 노려야 하는지 보여</text>
 
   ${positions.map((p, i) => {
     const g = patterns[i];
@@ -333,14 +333,14 @@ function promotionPattern() {
       <g transform="translate(${p.x},${p.y})">
         <rect width="${w}" height="${h}" rx="18" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="${h}" rx="4" fill="${g.color}"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="${C.textMuted}">${g.types}</text>
-        <text x="28" y="90" font-size="12" font-weight="700" fill="${C.textSoft}">· ${g.when}</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="${C.textMuted}">${g.types}</text>
+        <text x="28" y="90" font-size="17" font-weight="700" fill="${C.textSoft}">· ${g.when}</text>
         ${g.how.map((h, j) => `
           <g transform="translate(28, ${125 + j * 44})">
             <circle cx="8" cy="0" r="7" fill="${g.color}" opacity="0.25"/>
-            <text x="8" y="4" text-anchor="middle" font-size="10" font-weight="800" fill="${g.color}">${j + 1}</text>
-            <text x="26" y="4" font-size="13" font-weight="600" fill="${C.textSoft}">${h}</text>
+            <text x="8" y="4" text-anchor="middle" font-size="14" font-weight="800" fill="${g.color}">${j + 1}</text>
+            <text x="26" y="4" font-size="18" font-weight="600" fill="${C.textSoft}">${h}</text>
           </g>
         `).join('')}
       </g>
@@ -394,8 +394,8 @@ function ritual() {
   const w = 520, h = 340;
 
   return wrap(`
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="${C.text}">기질별 커리어 성장 체크리스트</text>
-  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">네 기질에 최적화된 4단계 실전 전략 · 지금 1개부터 시작</text>
+  <text x="600" y="50" text-anchor="middle" font-size="39" font-weight="800" fill="${C.text}">기질별 커리어 성장 체크리스트</text>
+  <text x="600" y="78" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">네 기질에 최적화된 4단계 실전 전략 · 지금 1개부터 시작</text>
 
   ${positions.map((p, i) => {
     const g = groups[i];
@@ -403,10 +403,10 @@ function ritual() {
       <g transform="translate(${p.x},${p.y})">
         <rect width="${w}" height="${h}" rx="18" fill="#ffffff" stroke="${C.border}"/>
         <rect width="8" height="${h}" rx="4" fill="${g.color}"/>
-        <text x="28" y="42" font-size="20" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
-        <text x="28" y="66" font-size="12" font-weight="600" fill="${C.textMuted}">${g.types}</text>
+        <text x="28" y="42" font-size="28" font-weight="800" fill="${g.color}">${g.icon} ${g.name}</text>
+        <text x="28" y="66" font-size="17" font-weight="600" fill="${C.textMuted}">${g.types}</text>
         ${g.items.map((it, j) => `
-          <text x="28" y="${115 + j * 52}" font-size="13" font-weight="600" fill="${C.textSoft}">${it}</text>
+          <text x="28" y="${115 + j * 52}" font-size="18" font-weight="600" fill="${C.textSoft}">${it}</text>
         `).join('')}
       </g>
     `;
