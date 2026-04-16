@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AdSenseScript from "@/components/AdSenseScript";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import JsonLd from "@/components/JsonLd";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -62,6 +63,59 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // ── 사이트 전역 Organization + WebSite JSON-LD ──
+  // GEO 관점에서 AI가 "192types"라는 엔터티를 지식 그래프에 등록하도록 함.
+  const organizationJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': `${SITE_URL}#organization`,
+    name: '192 성격 유형 검사',
+    alternateName: ['192types', '192types.com', '192가지 성격 유형 검사'],
+    url: SITE_URL,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE_URL}/og-default.jpg`,
+      width: 1200,
+      height: 630,
+    },
+    description:
+      'MBTI 16유형과 히포크라테스 4기질론을 결합한 192가지 성격 유형 검사. 100문항 정밀 검사와 빠른 검사를 무료로 제공합니다.',
+    knowsAbout: [
+      'MBTI',
+      '히포크라테스 기질론',
+      '성격 유형 검사',
+      '인지기능',
+      'Jungian cognitive functions',
+      '다혈질',
+      '담즙질',
+      '점액질',
+      '우울질',
+      '성격 궁합',
+      '성격 유형별 커리어',
+    ],
+    inLanguage: 'ko-KR',
+  };
+
+  const websiteJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${SITE_URL}#website`,
+    name: '192 성격 유형 검사',
+    url: SITE_URL,
+    description:
+      '16가지 성격 유형 × 4가지 히포크라테스 기질 × 3단계 강도 = 192가지 성격 유형 검사',
+    inLanguage: 'ko-KR',
+    publisher: { '@id': `${SITE_URL}#organization` },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${SITE_URL}/blog?q={search_term_string}`,
+      },
+      'query-input': 'required name=search_term_string',
+    },
+  };
+
   return (
     <html
       lang="ko"
@@ -69,6 +123,8 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
+        <JsonLd data={organizationJsonLd} />
+        <JsonLd data={websiteJsonLd} />
         <GoogleAnalytics />
         <AdSenseScript />
         <Navbar />

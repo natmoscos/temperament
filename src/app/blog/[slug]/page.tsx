@@ -95,6 +95,70 @@ function renderContentWithLinks(content: string): React.ReactNode {
   return nodes.length > 0 ? nodes : content;
 }
 
+// ── GEO 보조: 글마다 자동 TL;DR + FAQ 생성 ──
+// AI 검색(ChatGPT, Perplexity, Claude)이 답변에 인용할 수 있는
+// "직접 답변(direct answer)" 블록을 자동으로 만들어준다.
+// 글 작성자가 별도 데이터를 추가하지 않아도 description + 첫 섹션 + 키워드에서 추출.
+
+function buildTldr(post: { title: string; description: string; sections: { heading: string; content: string }[]; keywords: string[] }): string[] {
+  const bullets: string[] = [];
+  bullets.push(post.description);
+
+  // 첫 섹션 content의 가장 정보 밀도 높은 문장 1개 추출
+  const firstSection = post.sections[0];
+  if (firstSection) {
+    const sentences = firstSection.content.split(/(?<=[.!?。…])\s+/);
+    // 숫자/랭킹/192/MBTI 등이 들어간 문장 우선
+    const info = sentences.find((s) =>
+      /(\d|MBTI|유형|192|기질|공식|랭킹|차이|이유|핵심|결과)/i.test(s) && s.length < 180 && s.length > 30,
+    );
+    if (info) bullets.push(info.trim());
+  }
+
+  // 마지막 섹션에서 액션/체크리스트 문장 추출
+  const lastSection = post.sections[post.sections.length - 1];
+  if (lastSection && lastSection !== firstSection) {
+    const sentences = lastSection.content.split(/(?<=[.!?。…])\s+/);
+    const action = sentences.find((s) =>
+      /(시작|해봐|확인|체크|실행|루틴|전략|해결|추천|팁)/i.test(s) && s.length < 160 && s.length > 30,
+    );
+    if (action) bullets.push(action.trim());
+  }
+
+  return bullets.filter(Boolean).slice(0, 3);
+}
+
+function buildFaqs(post: { title: string; description: string; sections: { heading: string; content: string }[]; keywords: string[]; relatedTypes?: string[] }): { q: string; a: string }[] {
+  const faqs: { q: string; a: string }[] = [];
+
+  // Q1: 이 글이 뭐야? — description 활용
+  faqs.push({
+    q: `${post.title}`,
+    a: post.description,
+  });
+
+  // Q2: 섹션 2개를 Q&A로 변환 (heading → question, content 첫 문장 → answer)
+  post.sections.slice(0, 4).forEach((s) => {
+    const firstSentence = s.content.split(/(?<=[.!?。…])\s+/)[0] ?? s.content;
+    const answer = firstSentence.length > 320 ? `${firstSentence.slice(0, 300)}…` : firstSentence;
+    const question = s.heading.length > 60 ? `${s.heading.slice(0, 58)}…` : s.heading;
+    // heading이 이미 문장형이면 그대로, 아니면 "~란?" 형태 변환
+    const isQuestion = /[\?？]$/.test(question) || /\b(이란|는 뭐|가 뭐|의 이유|의 차이|의 핵심)\b/.test(question);
+    faqs.push({
+      q: isQuestion ? question : `${question}란?`,
+      a: answer,
+    });
+  });
+
+  // Q3 (fixed): 검사 방법
+  faqs.push({
+    q: '192가지 성격 유형 검사는 어떻게 받나요?',
+    a: '192types.com에서 100문항 정밀 검사 또는 15문항 빠른 검사를 무료로 받을 수 있습니다. MBTI 16유형 × 히포크라테스 4기질 × 3단계 강도를 결합해 192가지 조합으로 성격을 분류하며, 회원가입 없이 바로 검사 가능합니다.',
+  });
+
+  return faqs.slice(0, 6);
+}
+
 const categoryLabels: Record<string, { label: string; color: string }> = {
   compatibility: { label: '궁합', color: 'bg-pink-100 text-pink-700' },
   mbti: { label: '성격 유형', color: 'bg-indigo-100 text-indigo-700' },
@@ -119,8 +183,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     .sort((a, b) => (a.category === post.category ? -1 : 1) - (b.category === post.category ? -1 : 1))
     .slice(0, 3);
 
+  const tldr = buildTldr(post);
+  const faqs = buildFaqs(post);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-8 px-4">
+      {/* ── GEO: Article schema 확장 (articleBody·wordCount·speakable·Person author) ── */}
       <JsonLd data={{
         '@context': 'https://schema.org',
         '@type': 'Article',
@@ -129,21 +197,57 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         datePublished: post.publishDate,
         dateModified: post.publishDate,
         author: {
-          '@type': 'Organization',
-          name: '192 성격 유형 검사',
-          url: SITE_URL,
+          '@type': 'Person',
+          name: '박서연',
+          description:
+            'ENFP-다혈질, 24세 패션 스타트업 MD. 친구 민지(ISFJ-점액질, 대학병원 간호사)와 함께 192가지 성격 유형을 일상 언어로 풀어쓴다.',
+          worksFor: {
+            '@type': 'Organization',
+            name: '192 성격 유형 검사',
+            url: SITE_URL,
+          },
+          knowsAbout: [
+            'MBTI',
+            '히포크라테스 기질론',
+            '성격 유형',
+            '인지기능',
+            '연애 심리',
+            '직장 심리',
+          ],
         },
         publisher: {
           '@type': 'Organization',
           name: '192 성격 유형 검사',
           url: SITE_URL,
+          logo: {
+            '@type': 'ImageObject',
+            url: `${SITE_URL}/og-default.jpg`,
+            width: 1200,
+            height: 630,
+          },
         },
         mainEntityOfPage: {
           '@type': 'WebPage',
           '@id': `${SITE_URL}/blog/${slug}`,
         },
+        image: post.thumbnail
+          ? [`${SITE_URL}${post.thumbnail}`]
+          : [`${SITE_URL}/og-default.jpg`],
+        articleSection: cat.label,
         keywords: post.keywords.join(', '),
-        inLanguage: 'ko',
+        articleBody: post.sections.map((s) => `${s.heading}\n${s.content}`).join('\n\n'),
+        wordCount: post.sections.reduce((sum, s) => sum + s.content.length, 0),
+        inLanguage: 'ko-KR',
+        isAccessibleForFree: true,
+        // AI 음성 요약 / 보조 기술이 우선 읽어야 하는 영역 지정
+        speakable: {
+          '@type': 'SpeakableSpecification',
+          cssSelector: ['h1', 'article > header p', '.tldr'],
+        },
+        about: (post.relatedTypes ?? []).map((t) => ({
+          '@type': 'Thing',
+          name: `MBTI ${t} 유형`,
+        })),
       }} />
       <JsonLd data={{
         '@context': 'https://schema.org',
@@ -151,8 +255,21 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: '홈', item: SITE_URL },
           { '@type': 'ListItem', position: 2, name: '블로그', item: `${SITE_URL}/blog` },
-          { '@type': 'ListItem', position: 3, name: post.title },
+          { '@type': 'ListItem', position: 3, name: post.title, item: `${SITE_URL}/blog/${slug}` },
         ],
+      }} />
+      {/* ── GEO: FAQPage schema (AI 답변 인용 최적화) ── */}
+      <JsonLd data={{
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: buildFaqs(post).map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: f.a,
+          },
+        })),
       }} />
       <article className="w-full max-w-2xl mx-auto">
 
@@ -197,13 +314,36 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         )}
 
         {/* 키워드 태그 */}
-        <div className="flex flex-wrap gap-2 mb-8">
+        <div className="flex flex-wrap gap-2 mb-6">
           {post.keywords.map((kw) => (
             <span key={kw} className="text-xs text-indigo-500 bg-indigo-50 px-2.5 py-1 rounded-lg">
               #{kw}
             </span>
           ))}
         </div>
+
+        {/* ── GEO: TL;DR 직접 답변 블록 (AI가 요약 인용하는 구간) ── */}
+        {tldr.length > 0 && (
+          <aside
+            className="tldr mb-8 bg-gradient-to-br from-indigo-50 to-purple-50 border border-indigo-100 rounded-2xl p-5 sm:p-6"
+            aria-label="글 핵심 요약"
+          >
+            <div className="flex items-center gap-2 mb-3">
+              <span className="text-lg">📌</span>
+              <h2 className="text-sm font-black text-indigo-800 tracking-wide">
+                한 눈에 보기 (TL;DR)
+              </h2>
+            </div>
+            <ul className="space-y-2 text-[14px] leading-relaxed text-gray-700">
+              {tldr.map((b, i) => (
+                <li key={i} className="flex gap-2">
+                  <span className="shrink-0 text-indigo-500 font-bold">·</span>
+                  <span>{b}</span>
+                </li>
+              ))}
+            </ul>
+          </aside>
+        )}
 
         {/* Pillar 배너 — 여자/남자 특징 cluster 글 상단에 노출 */}
         {(slug.endsWith('-women-characteristics') || slug.endsWith('-men-characteristics')) && (
@@ -351,6 +491,39 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </div>
           <p className="text-xs text-indigo-200 mt-3">완전 무료 | 회원가입 불필요</p>
         </div>
+
+        {/* ── GEO: 자주 묻는 질문(FAQ) — 생성형 AI 답변 인용 핵심 구간 ── */}
+        {faqs.length > 0 && (
+          <section
+            className="mt-10 bg-white rounded-2xl border border-gray-100 shadow-sm p-5 sm:p-6"
+            aria-labelledby="faq-heading"
+          >
+            <h2
+              id="faq-heading"
+              className="text-base font-black text-gray-800 mb-4 flex items-center gap-2"
+            >
+              <span className="text-lg">💬</span> 자주 묻는 질문
+            </h2>
+            <div className="space-y-4">
+              {faqs.map((f, i) => (
+                <details
+                  key={i}
+                  open={i === 0}
+                  className="group border-b border-gray-100 pb-3 last:border-0 last:pb-0"
+                >
+                  <summary className="cursor-pointer list-none text-[14px] font-bold text-gray-800 flex items-start gap-2 hover:text-indigo-600 transition">
+                    <span className="shrink-0 text-indigo-500 text-sm mt-[2px]">Q.</span>
+                    <span className="flex-1">{f.q}</span>
+                  </summary>
+                  <p className="mt-2 pl-6 text-[13.5px] leading-relaxed text-gray-600">
+                    <span className="text-indigo-500 font-bold mr-1">A.</span>
+                    {f.a}
+                  </p>
+                </details>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* 관련 글 */}
         {relatedPosts.length > 0 && (
