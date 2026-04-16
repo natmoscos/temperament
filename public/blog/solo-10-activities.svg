@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <text x="600" y="58" text-anchor="middle" font-size="32" font-weight="800" fill="#171717">유형별 혼놀 활동 선호도</text>
+  <text x="600" y="90" text-anchor="middle" font-size="15" font-weight="500" fill="#6b7280">진할수록 해당 활동에 깊게 빠지는 유형 (1~5점)</text>
+  <!-- column headers -->
+  
+    <text x="250" y="150" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">독서·학습</text>
+  
+    <text x="350" y="150" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">혼자 산책</text>
+  
+    <text x="450" y="150" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">창작·글쓰기</text>
+  
+    <text x="550" y="150" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">게임</text>
+  
+    <text x="650" y="150" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">영상 시청</text>
+  
+    <text x="750" y="150" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">명상·사색</text>
+  
+  <!-- rows -->
+  
+    <g>
+      <rect x="110" y="160" width="80" height="32" rx="6" fill="#0891b2" fill-opacity="0.12"/>
+      <text x="150" y="182" text-anchor="middle" font-size="13" font-weight="700" fill="#0891b2">INTP</text>
+      
+          <rect x="204" y="162" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="1"/>
+          <text x="250" y="182" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">5</text>
+        
+          <rect x="304" y="162" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="0.66"/>
+          <text x="350" y="182" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="404" y="162" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="0.8300000000000001"/>
+          <text x="450" y="182" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+        
+          <rect x="504" y="162" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="1"/>
+          <text x="550" y="182" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">5</text>
+        
+          <rect x="604" y="162" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="0.8300000000000001"/>
+          <text x="650" y="182" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+        
+          <rect x="704" y="162" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="1"/>
+          <text x="750" y="182" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">5</text>
+        
+    </g>
+  
+    <g>
+      <rect x="110" y="196" width="80" height="32" rx="6" fill="#0891b2" fill-opacity="0.12"/>
+      <text x="150" y="218" text-anchor="middle" font-size="13" font-weight="700" fill="#0891b2">INTJ</text>
+      
+          <rect x="204" y="198" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="1"/>
+          <text x="250" y="218" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">5</text>
+        
+          <rect x="304" y="198" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="0.8300000000000001"/>
+          <text x="350" y="218" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+        
+          <rect x="404" y="198" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="0.8300000000000001"/>
+          <text x="450" y="218" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+        
+          <rect x="504" y="198" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="0.8300000000000001"/>
+          <text x="550" y="218" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+        
+          <rect x="604" y="198" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="0.66"/>
+          <text x="650" y="218" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="704" y="198" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="1"/>
+          <text x="750" y="218" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">5</text>
+        
+    </g>
+  
+    <g>
+      <rect x="110" y="232" width="80" height="32" rx="6" fill="#e11d48" fill-opacity="0.12"/>
+      <text x="150" y="254" text-anchor="middle" font-size="13" font-weight="700" fill="#e11d48">INFJ</text>
+      
+          <rect x="204" y="234" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="1"/>
+          <text x="250" y="254" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">5</text>
+        
+          <rect x="304" y="234" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="1"/>
+          <text x="350" y="254" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">5</text>
+        
+          <rect x="404" y="234" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="1"/>
+          <text x="450" y="254" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">5</text>
+        
+          <rect x="504" y="234" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="0.49"/>
+          <text x="550" y="254" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">2</text>
+        
+          <rect x="604" y="234" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="0.66"/>
+          <text x="650" y="254" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="704" y="234" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="1"/>
+          <text x="750" y="254" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">5</text>
+        
+    </g>
+  
+    <g>
+      <rect x="110" y="268" width="80" height="32" rx="6" fill="#e11d48" fill-opacity="0.12"/>
+      <text x="150" y="290" text-anchor="middle" font-size="13" font-weight="700" fill="#e11d48">INFP</text>
+      
+          <rect x="204" y="270" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="1"/>
+          <text x="250" y="290" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">5</text>
+        
+          <rect x="304" y="270" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="1"/>
+          <text x="350" y="290" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">5</text>
+        
+          <rect x="404" y="270" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="1"/>
+          <text x="450" y="290" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">5</text>
+        
+          <rect x="504" y="270" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="0.66"/>
+          <text x="550" y="290" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="604" y="270" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="0.8300000000000001"/>
+          <text x="650" y="290" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+        
+          <rect x="704" y="270" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="0.8300000000000001"/>
+          <text x="750" y="290" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+        
+    </g>
+  
+    <g>
+      <rect x="110" y="304" width="80" height="32" rx="6" fill="#059669" fill-opacity="0.12"/>
+      <text x="150" y="326" text-anchor="middle" font-size="13" font-weight="700" fill="#059669">ISTJ</text>
+      
+          <rect x="204" y="306" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.8300000000000001"/>
+          <text x="250" y="326" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+        
+          <rect x="304" y="306" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.8300000000000001"/>
+          <text x="350" y="326" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+        
+          <rect x="404" y="306" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.49"/>
+          <text x="450" y="326" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">2</text>
+        
+          <rect x="504" y="306" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.66"/>
+          <text x="550" y="326" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="604" y="306" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.8300000000000001"/>
+          <text x="650" y="326" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+        
+          <rect x="704" y="306" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.66"/>
+          <text x="750" y="326" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+    </g>
+  
+    <g>
+      <rect x="110" y="340" width="80" height="32" rx="6" fill="#059669" fill-opacity="0.12"/>
+      <text x="150" y="362" text-anchor="middle" font-size="13" font-weight="700" fill="#059669">ISFJ</text>
+      
+          <rect x="204" y="342" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.66"/>
+          <text x="250" y="362" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="304" y="342" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.8300000000000001"/>
+          <text x="350" y="362" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+        
+          <rect x="404" y="342" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.66"/>
+          <text x="450" y="362" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="504" y="342" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.49"/>
+          <text x="550" y="362" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">2</text>
+        
+          <rect x="604" y="342" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.8300000000000001"/>
+          <text x="650" y="362" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+        
+          <rect x="704" y="342" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.66"/>
+          <text x="750" y="362" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+    </g>
+  
+    <g>
+      <rect x="110" y="376" width="80" height="32" rx="6" fill="#d97706" fill-opacity="0.12"/>
+      <text x="150" y="398" text-anchor="middle" font-size="13" font-weight="700" fill="#d97706">ISTP</text>
+      
+          <rect x="204" y="378" width="92" height="28" rx="4" fill="#d97706" fill-opacity="0.66"/>
+          <text x="250" y="398" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="304" y="378" width="92" height="28" rx="4" fill="#d97706" fill-opacity="0.8300000000000001"/>
+          <text x="350" y="398" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+        
+          <rect x="404" y="378" width="92" height="28" rx="4" fill="#d97706" fill-opacity="0.49"/>
+          <text x="450" y="398" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">2</text>
+        
+          <rect x="504" y="378" width="92" height="28" rx="4" fill="#d97706" fill-opacity="1"/>
+          <text x="550" y="398" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">5</text>
+        
+          <rect x="604" y="378" width="92" height="28" rx="4" fill="#d97706" fill-opacity="0.8300000000000001"/>
+          <text x="650" y="398" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+        
+          <rect x="704" y="378" width="92" height="28" rx="4" fill="#d97706" fill-opacity="0.66"/>
+          <text x="750" y="398" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+    </g>
+  
+    <g>
+      <rect x="110" y="412" width="80" height="32" rx="6" fill="#d97706" fill-opacity="0.12"/>
+      <text x="150" y="434" text-anchor="middle" font-size="13" font-weight="700" fill="#d97706">ISFP</text>
+      
+          <rect x="204" y="414" width="92" height="28" rx="4" fill="#d97706" fill-opacity="0.66"/>
+          <text x="250" y="434" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="304" y="414" width="92" height="28" rx="4" fill="#d97706" fill-opacity="1"/>
+          <text x="350" y="434" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">5</text>
+        
+          <rect x="404" y="414" width="92" height="28" rx="4" fill="#d97706" fill-opacity="1"/>
+          <text x="450" y="434" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">5</text>
+        
+          <rect x="504" y="414" width="92" height="28" rx="4" fill="#d97706" fill-opacity="0.66"/>
+          <text x="550" y="434" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="604" y="414" width="92" height="28" rx="4" fill="#d97706" fill-opacity="0.8300000000000001"/>
+          <text x="650" y="434" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+        
+          <rect x="704" y="414" width="92" height="28" rx="4" fill="#d97706" fill-opacity="0.8300000000000001"/>
+          <text x="750" y="434" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+        
+    </g>
+  
+    <g>
+      <rect x="110" y="448" width="80" height="32" rx="6" fill="#0891b2" fill-opacity="0.12"/>
+      <text x="150" y="470" text-anchor="middle" font-size="13" font-weight="700" fill="#0891b2">ENTP</text>
+      
+          <rect x="204" y="450" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="0.8300000000000001"/>
+          <text x="250" y="470" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+        
+          <rect x="304" y="450" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="0.49"/>
+          <text x="350" y="470" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">2</text>
+        
+          <rect x="404" y="450" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="0.66"/>
+          <text x="450" y="470" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="504" y="450" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="0.8300000000000001"/>
+          <text x="550" y="470" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+        
+          <rect x="604" y="450" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="0.66"/>
+          <text x="650" y="470" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="704" y="450" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="0.66"/>
+          <text x="750" y="470" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+    </g>
+  
+    <g>
+      <rect x="110" y="484" width="80" height="32" rx="6" fill="#0891b2" fill-opacity="0.12"/>
+      <text x="150" y="506" text-anchor="middle" font-size="13" font-weight="700" fill="#0891b2">ENTJ</text>
+      
+          <rect x="204" y="486" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="0.8300000000000001"/>
+          <text x="250" y="506" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+        
+          <rect x="304" y="486" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="0.49"/>
+          <text x="350" y="506" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">2</text>
+        
+          <rect x="404" y="486" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="0.66"/>
+          <text x="450" y="506" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="504" y="486" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="0.66"/>
+          <text x="550" y="506" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="604" y="486" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="0.49"/>
+          <text x="650" y="506" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">2</text>
+        
+          <rect x="704" y="486" width="92" height="28" rx="4" fill="#0891b2" fill-opacity="0.49"/>
+          <text x="750" y="506" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">2</text>
+        
+    </g>
+  
+    <g>
+      <rect x="110" y="520" width="80" height="32" rx="6" fill="#e11d48" fill-opacity="0.12"/>
+      <text x="150" y="542" text-anchor="middle" font-size="13" font-weight="700" fill="#e11d48">ENFP</text>
+      
+          <rect x="204" y="522" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="0.66"/>
+          <text x="250" y="542" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="304" y="522" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="0.66"/>
+          <text x="350" y="542" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="404" y="522" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="0.8300000000000001"/>
+          <text x="450" y="542" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+        
+          <rect x="504" y="522" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="0.66"/>
+          <text x="550" y="542" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="604" y="522" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="0.66"/>
+          <text x="650" y="542" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="704" y="522" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="0.66"/>
+          <text x="750" y="542" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+    </g>
+  
+    <g>
+      <rect x="110" y="556" width="80" height="32" rx="6" fill="#e11d48" fill-opacity="0.12"/>
+      <text x="150" y="578" text-anchor="middle" font-size="13" font-weight="700" fill="#e11d48">ENFJ</text>
+      
+          <rect x="204" y="558" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="0.66"/>
+          <text x="250" y="578" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="304" y="558" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="0.66"/>
+          <text x="350" y="578" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="404" y="558" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="0.66"/>
+          <text x="450" y="578" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="504" y="558" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="0.49"/>
+          <text x="550" y="578" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">2</text>
+        
+          <rect x="604" y="558" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="0.66"/>
+          <text x="650" y="578" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="704" y="558" width="92" height="28" rx="4" fill="#e11d48" fill-opacity="0.66"/>
+          <text x="750" y="578" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+    </g>
+  
+    <g>
+      <rect x="110" y="592" width="80" height="32" rx="6" fill="#d97706" fill-opacity="0.12"/>
+      <text x="150" y="614" text-anchor="middle" font-size="13" font-weight="700" fill="#d97706">ESTP</text>
+      
+          <rect x="204" y="594" width="92" height="28" rx="4" fill="#d97706" fill-opacity="0.49"/>
+          <text x="250" y="614" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">2</text>
+        
+          <rect x="304" y="594" width="92" height="28" rx="4" fill="#d97706" fill-opacity="0.49"/>
+          <text x="350" y="614" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">2</text>
+        
+          <rect x="404" y="594" width="92" height="28" rx="4" fill="#d97706" fill-opacity="0.32"/>
+          <text x="450" y="614" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">1</text>
+        
+          <rect x="504" y="594" width="92" height="28" rx="4" fill="#d97706" fill-opacity="1"/>
+          <text x="550" y="614" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">5</text>
+        
+          <rect x="604" y="594" width="92" height="28" rx="4" fill="#d97706" fill-opacity="0.66"/>
+          <text x="650" y="614" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="704" y="594" width="92" height="28" rx="4" fill="#d97706" fill-opacity="0.32"/>
+          <text x="750" y="614" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">1</text>
+        
+    </g>
+  
+    <g>
+      <rect x="110" y="628" width="80" height="32" rx="6" fill="#059669" fill-opacity="0.12"/>
+      <text x="150" y="650" text-anchor="middle" font-size="13" font-weight="700" fill="#059669">ESTJ</text>
+      
+          <rect x="204" y="630" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.66"/>
+          <text x="250" y="650" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="304" y="630" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.49"/>
+          <text x="350" y="650" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">2</text>
+        
+          <rect x="404" y="630" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.49"/>
+          <text x="450" y="650" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">2</text>
+        
+          <rect x="504" y="630" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.49"/>
+          <text x="550" y="650" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">2</text>
+        
+          <rect x="604" y="630" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.49"/>
+          <text x="650" y="650" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">2</text>
+        
+          <rect x="704" y="630" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.32"/>
+          <text x="750" y="650" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">1</text>
+        
+    </g>
+  
+    <g>
+      <rect x="110" y="664" width="80" height="32" rx="6" fill="#d97706" fill-opacity="0.12"/>
+      <text x="150" y="686" text-anchor="middle" font-size="13" font-weight="700" fill="#d97706">ESFP</text>
+      
+          <rect x="204" y="666" width="92" height="28" rx="4" fill="#d97706" fill-opacity="0.49"/>
+          <text x="250" y="686" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">2</text>
+        
+          <rect x="304" y="666" width="92" height="28" rx="4" fill="#d97706" fill-opacity="0.49"/>
+          <text x="350" y="686" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">2</text>
+        
+          <rect x="404" y="666" width="92" height="28" rx="4" fill="#d97706" fill-opacity="0.49"/>
+          <text x="450" y="686" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">2</text>
+        
+          <rect x="504" y="666" width="92" height="28" rx="4" fill="#d97706" fill-opacity="0.8300000000000001"/>
+          <text x="550" y="686" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+        
+          <rect x="604" y="666" width="92" height="28" rx="4" fill="#d97706" fill-opacity="0.8300000000000001"/>
+          <text x="650" y="686" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">4</text>
+        
+          <rect x="704" y="666" width="92" height="28" rx="4" fill="#d97706" fill-opacity="0.32"/>
+          <text x="750" y="686" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">1</text>
+        
+    </g>
+  
+    <g>
+      <rect x="110" y="700" width="80" height="32" rx="6" fill="#059669" fill-opacity="0.12"/>
+      <text x="150" y="722" text-anchor="middle" font-size="13" font-weight="700" fill="#059669">ESFJ</text>
+      
+          <rect x="204" y="702" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.49"/>
+          <text x="250" y="722" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">2</text>
+        
+          <rect x="304" y="702" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.49"/>
+          <text x="350" y="722" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">2</text>
+        
+          <rect x="404" y="702" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.49"/>
+          <text x="450" y="722" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">2</text>
+        
+          <rect x="504" y="702" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.49"/>
+          <text x="550" y="722" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">2</text>
+        
+          <rect x="604" y="702" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.66"/>
+          <text x="650" y="722" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">3</text>
+        
+          <rect x="704" y="702" width="92" height="28" rx="4" fill="#059669" fill-opacity="0.32"/>
+          <text x="750" y="722" text-anchor="middle" font-size="12" font-weight="700" fill="#374151">1</text>
+        
+    </g>
+  
+  <!-- legend -->
+  <g transform="translate(200, 785)">
+    <text x="0" y="15" font-size="11" font-weight="700" fill="#6b7280" letter-spacing="2">선호도 스케일</text>
+    
+      <rect x="100" y="0" width="36" height="22" rx="4" fill="#0891b2" fill-opacity="0.32"/>
+      <text x="118" y="16" text-anchor="middle" font-size="11" font-weight="700" fill="#374151">1</text>
+    
+      <rect x="140" y="0" width="36" height="22" rx="4" fill="#0891b2" fill-opacity="0.49"/>
+      <text x="158" y="16" text-anchor="middle" font-size="11" font-weight="700" fill="#374151">2</text>
+    
+      <rect x="180" y="0" width="36" height="22" rx="4" fill="#0891b2" fill-opacity="0.66"/>
+      <text x="198" y="16" text-anchor="middle" font-size="11" font-weight="700" fill="#374151">3</text>
+    
+      <rect x="220" y="0" width="36" height="22" rx="4" fill="#0891b2" fill-opacity="0.8300000000000001"/>
+      <text x="238" y="16" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">4</text>
+    
+      <rect x="260" y="0" width="36" height="22" rx="4" fill="#0891b2" fill-opacity="1"/>
+      <text x="278" y="16" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">5</text>
+    
+    <text x="320" y="15" font-size="11" font-weight="500" fill="#6b7280">1=관심 없음 · 5=깊이 몰입</text>
+    <circle cx="600" cy="11" r="7" fill="#0891b2"/><text x="615" y="15" font-size="11" font-weight="600" fill="#374151">NT</text>
+    <circle cx="655" cy="11" r="7" fill="#e11d48"/><text x="670" y="15" font-size="11" font-weight="600" fill="#374151">NF</text>
+    <circle cx="710" cy="11" r="7" fill="#059669"/><text x="725" y="15" font-size="11" font-weight="600" fill="#374151">SJ</text>
+    <circle cx="765" cy="11" r="7" fill="#d97706"/><text x="780" y="15" font-size="11" font-weight="600" fill="#374151">SP</text>
+  </g>
+  
+<text x="1180" y="890" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.8">192types.co.kr · 2026 MBTI 트렌드 시리즈</text>
+</svg>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <text x="600" y="58" text-anchor="middle" font-size="32" font-weight="800" fill="#171717">I형 vs E형 · 혼자 있을 때 에너지 변화</text>
+  <text x="600" y="90" text-anchor="middle" font-size="15" font-weight="500" fill="#6b7280">시간이 지날수록 완전히 반대로 가는 에너지 곡선</text>
+  <!-- grid -->
+  
+    <line x1="180" y1="640" x2="1080" y2="640" stroke="#e5e7eb" stroke-dasharray="3 3"/>
+    <text x="168" y="644" text-anchor="end" font-size="11" fill="#9ca3af" font-weight="500">0%</text>
+  
+    <line x1="180" y1="530" x2="1080" y2="530" stroke="#e5e7eb" stroke-dasharray="3 3"/>
+    <text x="168" y="534" text-anchor="end" font-size="11" fill="#9ca3af" font-weight="500">25%</text>
+  
+    <line x1="180" y1="420" x2="1080" y2="420" stroke="#e5e7eb" stroke-dasharray="3 3"/>
+    <text x="168" y="424" text-anchor="end" font-size="11" fill="#9ca3af" font-weight="500">50%</text>
+  
+    <line x1="180" y1="310" x2="1080" y2="310" stroke="#e5e7eb" stroke-dasharray="3 3"/>
+    <text x="168" y="314" text-anchor="end" font-size="11" fill="#9ca3af" font-weight="500">75%</text>
+  
+    <line x1="180" y1="200" x2="1080" y2="200" stroke="#e5e7eb" stroke-dasharray="3 3"/>
+    <text x="168" y="204" text-anchor="end" font-size="11" fill="#9ca3af" font-weight="500">100%</text>
+  
+  
+    <text x="180" y="664" text-anchor="middle" font-size="11" fill="#9ca3af" font-weight="500">0h</text>
+  
+    <text x="405" y="664" text-anchor="middle" font-size="11" fill="#9ca3af" font-weight="500">6h</text>
+  
+    <text x="630" y="664" text-anchor="middle" font-size="11" fill="#9ca3af" font-weight="500">12h</text>
+  
+    <text x="855" y="664" text-anchor="middle" font-size="11" fill="#9ca3af" font-weight="500">18h</text>
+  
+    <text x="1080" y="664" text-anchor="middle" font-size="11" fill="#9ca3af" font-weight="500">24h</text>
+  
+  <!-- axis labels -->
+  <text x="125" y="420" text-anchor="middle" font-size="12" font-weight="600" fill="#374151" transform="rotate(-90 125 420)">에너지 레벨</text>
+  <text x="630" y="690" text-anchor="middle" font-size="12" font-weight="600" fill="#374151">혼자 있는 시간 (hour)</text>
+  <!-- axis lines -->
+  <line x1="180" y1="200" x2="180" y2="640" stroke="#9ca3af" stroke-width="1.5"/>
+  <line x1="180" y1="640" x2="1080" y2="640" stroke="#9ca3af" stroke-width="1.5"/>
+  <!-- I area fill -->
+  <path d="M 180.0 464.0 L 217.5 435.6 L 255.0 410.5 L 292.5 388.3 L 330.0 368.8 L 367.5 351.5 L 405.0 336.3 L 442.5 322.9 L 480.0 311.0 L 517.5 300.6 L 555.0 291.3 L 592.5 283.2 L 630.0 276.0 L 667.5 269.7 L 705.0 264.1 L 742.5 259.1 L 780.0 254.8 L 817.5 250.9 L 855.0 247.5 L 892.5 244.5 L 930.0 241.9 L 967.5 239.5 L 1005.0 237.5 L 1042.5 235.7 L 1080.0 234.0 L 1080 640 L 180 640 Z" fill="#0891b2" opacity="0.08"/>
+  <!-- E area fill -->
+  <path d="M 180.0 244.0 L 217.5 273.3 L 255.0 299.8 L 292.5 323.8 L 330.0 345.5 L 367.5 365.2 L 405.0 383.0 L 442.5 399.1 L 480.0 413.6 L 517.5 426.8 L 555.0 438.7 L 592.5 449.5 L 630.0 459.2 L 667.5 468.1 L 705.0 476.0 L 742.5 483.3 L 780.0 489.8 L 817.5 495.7 L 855.0 501.1 L 892.5 505.9 L 930.0 510.3 L 967.5 514.3 L 1005.0 517.9 L 1042.5 521.1 L 1080.0 524.1 L 1080 640 L 180 640 Z" fill="#e11d48" opacity="0.08"/>
+  <!-- I line -->
+  <path d="M 180.0 464.0 L 217.5 435.6 L 255.0 410.5 L 292.5 388.3 L 330.0 368.8 L 367.5 351.5 L 405.0 336.3 L 442.5 322.9 L 480.0 311.0 L 517.5 300.6 L 555.0 291.3 L 592.5 283.2 L 630.0 276.0 L 667.5 269.7 L 705.0 264.1 L 742.5 259.1 L 780.0 254.8 L 817.5 250.9 L 855.0 247.5 L 892.5 244.5 L 930.0 241.9 L 967.5 239.5 L 1005.0 237.5 L 1042.5 235.7 L 1080.0 234.0" fill="none" stroke="#0891b2" stroke-width="4" stroke-linecap="round"/>
+  <!-- E line -->
+  <path d="M 180.0 244.0 L 217.5 273.3 L 255.0 299.8 L 292.5 323.8 L 330.0 345.5 L 367.5 365.2 L 405.0 383.0 L 442.5 399.1 L 480.0 413.6 L 517.5 426.8 L 555.0 438.7 L 592.5 449.5 L 630.0 459.2 L 667.5 468.1 L 705.0 476.0 L 742.5 483.3 L 780.0 489.8 L 817.5 495.7 L 855.0 501.1 L 892.5 505.9 L 930.0 510.3 L 967.5 514.3 L 1005.0 517.9 L 1042.5 521.1 L 1080.0 524.1" fill="none" stroke="#e11d48" stroke-width="4" stroke-linecap="round"/>
+  <!-- endpoints -->
+  <circle cx="1080" cy="234.048470545023" r="8" fill="#0891b2"/>
+  <circle cx="1080" cy="524.0588703868609" r="8" fill="#e11d48"/>
+  <!-- labels on curves -->
+  <rect x="990" y="186.048470545023" width="85" height="32" rx="6" fill="#0891b2"/>
+  <text x="1033" y="207.048470545023" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">I형 95%</text>
+  <rect x="990" y="540.0588703868609" width="85" height="32" rx="6" fill="#e11d48"/>
+  <text x="1033" y="561.0588703868609" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">E형 20%</text>
+  <!-- annotation -->
+  <g transform="translate(200, 740)">
+    <rect x="0" y="0" width="380" height="120" rx="12" fill="#ecfeff" stroke="#0891b2" stroke-width="1"/>
+    <text x="20" y="30" font-size="14" font-weight="800" fill="#0e7490">I형: 혼자 있을수록 충전된다</text>
+    <text x="20" y="54" font-size="12" fill="#374151">사색·집중·몰입으로 에너지가 오히려 증가.</text>
+    <text x="20" y="74" font-size="12" fill="#374151">8시간 이후 평정 상태 진입.</text>
+    <text x="20" y="100" font-size="11" font-weight="600" fill="#0891b2">▶ 혼자놀기 고수 영역</text>
+  </g>
+  <g transform="translate(620, 740)">
+    <rect x="0" y="0" width="380" height="120" rx="12" fill="#fff1f2" stroke="#e11d48" stroke-width="1"/>
+    <text x="20" y="30" font-size="14" font-weight="800" fill="#be123c">E형: 혼자 있을수록 방전된다</text>
+    <text x="20" y="54" font-size="12" fill="#374151">외부 자극 차단 시 에너지 급격히 감소.</text>
+    <text x="20" y="74" font-size="12" fill="#374151">6시간 넘으면 우울감·무기력 발생.</text>
+    <text x="20" y="100" font-size="11" font-weight="600" fill="#e11d48">▶ 사교 필수 영역</text>
+  </g>
+  
+<text x="1180" y="890" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.8">192types.co.kr · 2026 MBTI 트렌드 시리즈</text>
+</svg>
