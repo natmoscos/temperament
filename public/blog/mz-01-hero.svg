@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <defs>
+    <linearGradient id="mzBg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fee2e2"/>
+      <stop offset="100%" stop-color="#dbeafe"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#mzBg)"/>
+
+  <text x="200" y="200" font-size="50" opacity="0.2">🚀</text>
+  <text x="960" y="200" font-size="50" opacity="0.2">🌐</text>
+
+  <rect x="180" y="300" width="840" height="280" rx="32" fill="#ffffff" stroke="#6b7280" stroke-width="3" opacity="0.97"/>
+  <text x="600" y="370" text-anchor="middle" font-size="22" font-weight="700" fill="#6b7280">192TYPES · TITANS COMPARED</text>
+  <text x="600" y="445" text-anchor="middle" font-size="48" font-weight="900" fill="#171717">머스크 vs 저커버그</text>
+  <text x="600" y="495" text-anchor="middle" font-size="26" font-weight="700" fill="#374151">같은 INTJ 추정 · 180도 다른 경영 DNA</text>
+  <text x="600" y="550" text-anchor="middle" font-size="17" font-weight="600" fill="#6b7280">Te vs Ti 보조기능이 만든 두 리더의 길</text>
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 경제학 리포트</text>
+</svg>

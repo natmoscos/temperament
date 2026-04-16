@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">너는 Te형 INTJ? Ti형 INTJ?</text>
+  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">INTJ · INTP · ENTJ · ENTP 유형 모두 참고 · 네 방식 선택</text>
+
+  <!-- Left: Te -->
+  <g transform="translate(60, 130)">
+    <rect width="520" height="700" rx="22" fill="#ffffff" stroke="#dc2626" stroke-width="2"/>
+    <rect width="8" height="700" rx="4" fill="#dc2626"/>
+
+    <text x="30" y="50" font-size="22" font-weight="900" fill="#dc2626">Te 강화형 (머스크 방식)</text>
+    <text x="30" y="80" font-size="13" font-weight="700" fill="#6b7280">효율 · 실행 · 공개 경쟁</text>
+
+    <text x="30" y="140" font-size="16" font-weight="900" fill="#dc2626">✅ 강점</text>
+    
+      <text x="50" y="170" font-size="13" font-weight="600" fill="#16a34a">• 빠른 실행 속도</text>
+    
+      <text x="50" y="200" font-size="13" font-weight="600" fill="#16a34a">• 큰 판 짜기 능력</text>
+    
+      <text x="50" y="230" font-size="13" font-weight="600" fill="#16a34a">• 위기 시 돌파력</text>
+    
+      <text x="50" y="260" font-size="13" font-weight="600" fill="#16a34a">• 논쟁 뚫고 가는 힘</text>
+    
+
+    <text x="30" y="320" font-size="16" font-weight="900" fill="#dc2626">⚠️ 약점</text>
+    
+      <text x="50" y="350" font-size="13" font-weight="600" fill="#dc2626">• 주변 갈등 · 관계 소진</text>
+    
+      <text x="50" y="380" font-size="13" font-weight="600" fill="#dc2626">• 번아웃 · 건강 악화</text>
+    
+      <text x="50" y="410" font-size="13" font-weight="600" fill="#dc2626">• 감정 공감 부족</text>
+    
+      <text x="50" y="440" font-size="13" font-weight="600" fill="#dc2626">• 충동적 결정 리스크</text>
+    
+
+    <text x="30" y="500" font-size="16" font-weight="900" fill="#dc2626">💼 적합 직무</text>
+    
+      <text x="50" y="530" font-size="13" font-weight="600" fill="#374151">• 창업 · CEO 포지션</text>
+    
+      <text x="50" y="560" font-size="13" font-weight="600" fill="#374151">• 영업 · 세일즈 · 협상</text>
+    
+      <text x="50" y="590" font-size="13" font-weight="600" fill="#374151">• 프로덕트 매니저</text>
+    
+      <text x="50" y="620" font-size="13" font-weight="600" fill="#374151">• M&amp;A · 투자은행</text>
+    
+  </g>
+
+  <!-- Right: Ti -->
+  <g transform="translate(620, 130)">
+    <rect width="520" height="700" rx="22" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+    <rect width="8" height="700" rx="4" fill="#2563eb"/>
+
+    <text x="30" y="50" font-size="22" font-weight="900" fill="#2563eb">Ti 강화형 (저커버그 방식)</text>
+    <text x="30" y="80" font-size="13" font-weight="700" fill="#6b7280">분석 · 시스템 · 조용한 확장</text>
+
+    <text x="30" y="140" font-size="16" font-weight="900" fill="#2563eb">✅ 강점</text>
+    
+      <text x="50" y="170" font-size="13" font-weight="600" fill="#16a34a">• 깊은 분석 · 구조 파악</text>
+    
+      <text x="50" y="200" font-size="13" font-weight="600" fill="#16a34a">• 알고리즘 · 시스템 설계</text>
+    
+      <text x="50" y="230" font-size="13" font-weight="600" fill="#16a34a">• 장기 실험 가능</text>
+    
+      <text x="50" y="260" font-size="13" font-weight="600" fill="#16a34a">• 조용히 꾸준한 확장</text>
+    
+
+    <text x="30" y="320" font-size="16" font-weight="900" fill="#2563eb">⚠️ 약점</text>
+    
+      <text x="50" y="350" font-size="13" font-weight="600" fill="#dc2626">• 결정 느림 · 분석 마비</text>
+    
+      <text x="50" y="380" font-size="13" font-weight="600" fill="#dc2626">• 커뮤니케이션 약점</text>
+    
+      <text x="50" y="410" font-size="13" font-weight="600" fill="#dc2626">• 위기 순간 망설임</text>
+    
+      <text x="50" y="440" font-size="13" font-weight="600" fill="#dc2626">• 감정 표현 어려움</text>
+    
+
+    <text x="30" y="500" font-size="16" font-weight="900" fill="#2563eb">💼 적합 직무</text>
+    
+      <text x="50" y="530" font-size="13" font-weight="600" fill="#374151">• 연구 · R&amp;D 리더</text>
+    
+      <text x="50" y="560" font-size="13" font-weight="600" fill="#374151">• 소프트웨어 아키텍트</text>
+    
+      <text x="50" y="590" font-size="13" font-weight="600" fill="#374151">• 데이터 사이언스</text>
+    
+      <text x="50" y="620" font-size="13" font-weight="600" fill="#374151">• 전략 컨설팅</text>
+    
+  </g>
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 경제학 리포트</text>
+</svg>

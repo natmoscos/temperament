@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">리스크 허용도 · 실패 대응</text>
+  <text x="600" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">Te는 "다 던지고 해결", Ti는 "단계별 실험" 스타일</text>
+
+  <!-- Risk scale -->
+  <g transform="translate(100, 160)">
+    <text x="0" y="0" font-size="16" font-weight="800" fill="#171717">총 자산 대비 단일 투자 비율</text>
+
+    <rect x="0" y="20" width="1000" height="40" rx="20" fill="#e5e7eb" opacity="0.3"/>
+
+    <!-- Zuck marker (30%) -->
+    <rect x="0" y="20" width="300" height="40" rx="20" fill="#2563eb" opacity="0.85"/>
+    <circle cx="300" cy="40" r="14" fill="#2563eb" stroke="#fff" stroke-width="3"/>
+    <text x="300" y="85" text-anchor="middle" font-size="13" font-weight="900" fill="#2563eb">저커버그</text>
+    <text x="300" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#6b7280">점진 확장 30%</text>
+
+    <!-- Musk marker (95%) -->
+    <rect x="300" y="20" width="650" height="40" rx="0" fill="#dc2626" opacity="0.85"/>
+    <circle cx="950" cy="40" r="14" fill="#dc2626" stroke="#fff" stroke-width="3"/>
+    <text x="950" y="85" text-anchor="middle" font-size="13" font-weight="900" fill="#dc2626">머스크</text>
+    <text x="950" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#6b7280">극단 95%</text>
+  </g>
+
+  <!-- Failure response -->
+  <g transform="translate(60, 350)">
+    <text x="540" y="0" text-anchor="middle" font-size="22" font-weight="800" fill="#171717">실패 대응 방식</text>
+
+    <rect x="60" y="40" width="460" height="220" rx="20" fill="#ffffff" stroke="#dc2626"/>
+    <rect x="60" y="40" width="8" height="220" rx="4" fill="#dc2626"/>
+    <text x="90" y="80" font-size="20" font-weight="900" fill="#dc2626">🚀 머스크 방식</text>
+    <text x="90" y="115" font-size="13" font-weight="700" fill="#171717">실패 공개 + 즉시 재시도</text>
+
+    
+      <text x="90" y="150" font-size="12" font-weight="500" fill="#374151">• SpaceX 로켓 4번 폭발 공개</text>
+    
+      <text x="90" y="175" font-size="12" font-weight="500" fill="#374151">• Tesla Model 3 생산 위기 "생산 지옥"</text>
+    
+      <text x="90" y="200" font-size="12" font-weight="500" fill="#374151">• Twitter (X) 인수 후 공개 혼란</text>
+    
+      <text x="90" y="225" font-size="12" font-weight="500" fill="#374151">• 실패를 학습 데이터로</text>
+    
+
+    <rect x="560" y="40" width="460" height="220" rx="20" fill="#ffffff" stroke="#2563eb"/>
+    <rect x="560" y="40" width="8" height="220" rx="4" fill="#2563eb"/>
+    <text x="590" y="80" font-size="20" font-weight="900" fill="#2563eb">🌐 저커버그 방식</text>
+    <text x="590" y="115" font-size="13" font-weight="700" fill="#171717">조용히 수정 + 장기 전환</text>
+
+    
+      <text x="590" y="150" font-size="12" font-weight="500" fill="#374151">• Meta 이름 변경 조용히 진행</text>
+    
+      <text x="590" y="175" font-size="12" font-weight="500" fill="#374151">• Metaverse 비용 손실 인정 후 AI 전환</text>
+    
+      <text x="590" y="200" font-size="12" font-weight="500" fill="#374151">• 알고리즘 변경 사용자 모르게</text>
+    
+      <text x="590" y="225" font-size="12" font-weight="500" fill="#374151">• 공개 갈등 회피</text>
+    
+  </g>
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 경제학 리포트</text>
+</svg>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="#171717">NT 유형 적용 가이드 — 너의 방식 선택</text>
+  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">머스크형 vs 저커버그형 · 통합형 · NT 공통 체크리스트</text>
+
+  
+      <g transform="translate(60,115)">
+        <rect width="520" height="340" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="340" rx="4" fill="#dc2626"/>
+        <text x="28" y="42" font-size="18" font-weight="800" fill="#dc2626">🚀 Te형 강화하기 (머스크 배우기)</text>
+        
+          <text x="28" y="95" font-size="13" font-weight="600" fill="#374151">① 분석보다 "실행 먼저" 30일 챌린지</text>
+        
+          <text x="28" y="147" font-size="13" font-weight="600" fill="#374151">② 감정 배제 결정 훈련 · 데이터 중심</text>
+        
+          <text x="28" y="199" font-size="13" font-weight="600" fill="#374151">③ 주 1회 큰 판 짜기 사고 · 10년 후</text>
+        
+          <text x="28" y="251" font-size="13" font-weight="600" fill="#374151">④ 공개 소통 연습 · 블로그 · 트윗</text>
+        
+      </g>
+    
+      <g transform="translate(620,115)">
+        <rect width="520" height="340" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="340" rx="4" fill="#2563eb"/>
+        <text x="28" y="42" font-size="18" font-weight="800" fill="#2563eb">🧠 Ti형 강화하기 (저커버그 배우기)</text>
+        
+          <text x="28" y="95" font-size="13" font-weight="600" fill="#374151">① 결정 전 체계적 분석 문서화</text>
+        
+          <text x="28" y="147" font-size="13" font-weight="600" fill="#374151">② A/B 테스트 사고 · 작게 시작</text>
+        
+          <text x="28" y="199" font-size="13" font-weight="600" fill="#374151">③ 장기 학습 · 원리 파악 우선</text>
+        
+          <text x="28" y="251" font-size="13" font-weight="600" fill="#374151">④ 조용한 실행 · 과시 최소화</text>
+        
+      </g>
+    
+      <g transform="translate(60,490)">
+        <rect width="520" height="340" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="340" rx="4" fill="#6b7280"/>
+        <text x="28" y="42" font-size="18" font-weight="800" fill="#6b7280">⚖️ 둘 다 가진 통합 INTJ 만들기</text>
+        
+          <text x="28" y="95" font-size="13" font-weight="600" fill="#374151">① 비전 · 데이터 50:50 밸런스</text>
+        
+          <text x="28" y="147" font-size="13" font-weight="600" fill="#374151">② 단기 실행(Te) + 장기 구조(Ti)</text>
+        
+          <text x="28" y="199" font-size="13" font-weight="600" fill="#374151">③ 실패 공개(Te) + 정밀 수정(Ti)</text>
+        
+          <text x="28" y="251" font-size="13" font-weight="600" fill="#374151">④ 분기 1회 방식 점검 + 전환</text>
+        
+      </g>
+    
+      <g transform="translate(620,490)">
+        <rect width="520" height="340" rx="18" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="340" rx="4" fill="#0891b2"/>
+        <text x="28" y="42" font-size="18" font-weight="800" fill="#0891b2">🔬 NT 전체 유형 공통 가이드</text>
+        
+          <text x="28" y="95" font-size="13" font-weight="600" fill="#374151">① Fe(감정) 약점 훈련 · 주 1회 감정 표현</text>
+        
+          <text x="28" y="147" font-size="13" font-weight="600" fill="#374151">② Se(현실) 보완 · 월 1회 현장 방문</text>
+        
+          <text x="28" y="199" font-size="13" font-weight="600" fill="#374151">③ 번아웃 방지 · 주 2일 완전 휴식</text>
+        
+          <text x="28" y="251" font-size="13" font-weight="600" fill="#374151">④ 인간관계 투자 · 절친 1~2명 유지</text>
+        
+      </g>
+    
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 경제학 리포트</text>
+</svg>
