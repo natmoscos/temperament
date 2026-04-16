@@ -51,11 +51,11 @@ function hero() {
   <text x="200" y="760" font-size="45" opacity="0.2">💡</text>
   <text x="940" y="740" font-size="50" opacity="0.2">🎓</text>
 
-  <rect x="180" y="300" width="840" height="280" rx="32" fill="#ffffff" stroke="${C.studyDeep}" stroke-width="3" opacity="0.97"/>
-  <text x="600" y="370" text-anchor="middle" font-size="22" font-weight="700" fill="${C.studyDeep}">192TYPES · STUDY REPORT 2026</text>
-  <text x="600" y="445" text-anchor="middle" font-size="52" font-weight="900" fill="${C.text}">MBTI 공부법</text>
-  <text x="600" y="495" text-anchor="middle" font-size="28" font-weight="700" fill="${C.textSoft}">시험 공부 효율 + 집중 패턴 16유형</text>
-  <text x="600" y="550" text-anchor="middle" font-size="17" font-weight="600" fill="${C.textMuted}">암기형 · 이해형 · 적용형 · 토론형 4가지 공부 DNA</text>
+  <rect x="120" y="260" width="960" height="410" rx="36" fill="#ffffff" stroke="${C.studyDeep}" stroke-width="4" opacity="0.97"/>
+  <text x="600" y="340" text-anchor="middle" font-size="30" font-weight="800" fill="${C.studyDeep}">192TYPES · STUDY REPORT 2026</text>
+  <text x="600" y="445" text-anchor="middle" font-size="82" font-weight="900" fill="${C.text}">MBTI 공부법</text>
+  <text x="600" y="520" text-anchor="middle" font-size="40" font-weight="700" fill="${C.textSoft}">시험 효율 + 집중 패턴 16유형</text>
+  <text x="600" y="615" text-anchor="middle" font-size="24" font-weight="600" fill="${C.textMuted}">암기 · 이해 · 적용 · 토론 4가지 공부 DNA</text>
   `);
 }
 

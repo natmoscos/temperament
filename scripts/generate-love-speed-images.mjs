@@ -86,14 +86,14 @@ function hero() {
   `).join('')}
 
   <!-- Center card -->
-  <rect x="290" y="290" width="620" height="320" rx="28" fill="#ffffff" stroke="${C.border}" stroke-width="1"/>
-  <text x="600" y="340" text-anchor="middle" font-size="16" font-weight="600" fill="${C.textMuted}" letter-spacing="9">MBTI · LOVE SPEED · 2026</text>
-  <text x="600" y="410" text-anchor="middle" font-size="44" font-weight="800" fill="${C.text}">MBTI 연애 속도 순위</text>
-  <text x="600" y="455" text-anchor="middle" font-size="23" font-weight="700" fill="${C.love}">금사빠부터 J병까지</text>
-  <line x1="460" y1="485" x2="740" y2="485" stroke="${C.border}" stroke-width="1"/>
-  <text x="600" y="516" text-anchor="middle" font-size="14" font-weight="600" fill="${C.textSoft}">첫 만남 → 연애 확정 평균 일수 · 16유형 랭킹</text>
-  <text x="600" y="544" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">인지기능 + 4기질로 분석한 감정 돌입 속도</text>
-  <text x="600" y="580" text-anchor="middle" font-size="12" font-weight="500" fill="${C.textFaint}">© 192types · ENFP 박서연의 현장 리포트</text>
+  <rect x="140" y="240" width="920" height="420" rx="32" fill="#ffffff" stroke="${C.border}" stroke-width="2"/>
+  <text x="600" y="305" text-anchor="middle" font-size="26" font-weight="700" fill="${C.textMuted}" letter-spacing="8">MBTI · LOVE SPEED · 2026</text>
+  <text x="600" y="400" text-anchor="middle" font-size="74" font-weight="900" fill="${C.text}">MBTI 연애 속도 순위</text>
+  <text x="600" y="460" text-anchor="middle" font-size="36" font-weight="800" fill="${C.love}">금사빠부터 J병까지</text>
+  <line x1="380" y1="495" x2="820" y2="495" stroke="${C.border}" stroke-width="2"/>
+  <text x="600" y="535" text-anchor="middle" font-size="22" font-weight="700" fill="${C.textSoft}">첫 만남 → 연애 확정 · 16유형 랭킹</text>
+  <text x="600" y="572" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">인지기능 + 4기질 감정 돌입 속도 분석</text>
+  <text x="600" y="615" text-anchor="middle" font-size="16" font-weight="500" fill="${C.textFaint}">© 192types · ENFP 박서연의 현장 리포트</text>
   `);
 }
 

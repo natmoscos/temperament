@@ -42,11 +42,11 @@ function hero() {
   <text x="200" y="760" font-size="45" opacity="0.2">🏦</text>
   <text x="940" y="740" font-size="50" opacity="0.2">💎</text>
 
-  <rect x="180" y="280" width="840" height="320" rx="32" fill="#ffffff" stroke="${C.bufDeep}" stroke-width="3" opacity="0.97"/>
-  <text x="600" y="355" text-anchor="middle" font-size="22" font-weight="700" fill="${C.bufDeep}">192TYPES · WARREN BUFFETT</text>
-  <text x="600" y="440" text-anchor="middle" font-size="52" font-weight="900" fill="${C.text}">ISTJ 버핏의 투자 철학</text>
-  <text x="600" y="495" text-anchor="middle" font-size="28" font-weight="700" fill="${C.textSoft}">87세 현역 · 연복리 20% · 70년 유지</text>
-  <text x="600" y="555" text-anchor="middle" font-size="16" font-weight="600" fill="${C.textMuted}">Si 주기능 검증 + Te 실행이 만든 "복리의 신"</text>
+  <rect x="120" y="240" width="960" height="420" rx="36" fill="#ffffff" stroke="${C.bufDeep}" stroke-width="4" opacity="0.97"/>
+  <text x="600" y="320" text-anchor="middle" font-size="30" font-weight="800" fill="${C.bufDeep}">192TYPES · WARREN BUFFETT</text>
+  <text x="600" y="425" text-anchor="middle" font-size="76" font-weight="900" fill="${C.text}">ISTJ 버핏의 투자 철학</text>
+  <text x="600" y="505" text-anchor="middle" font-size="40" font-weight="700" fill="${C.textSoft}">94세 현역 · 연복리 20% · 70년 유지</text>
+  <text x="600" y="600" text-anchor="middle" font-size="24" font-weight="600" fill="${C.textMuted}">Si 검증 + Te 실행이 만든 "복리의 신"</text>
   `);
 }
 

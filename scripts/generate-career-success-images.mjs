@@ -81,13 +81,13 @@ function hero() {
 
   <!-- Center card -->
   <rect x="290" y="230" width="620" height="340" rx="28" fill="#ffffff" stroke="${C.border}"/>
-  <text x="600" y="285" text-anchor="middle" font-size="16" font-weight="600" fill="${C.textMuted}" letter-spacing="8">CAREER SUCCESS · 2026</text>
-  <text x="600" y="355" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">MBTI 커리어 성공률</text>
-  <text x="600" y="398" text-anchor="middle" font-size="22" font-weight="700" fill="${C.growth}">유형별 연봉 상승 속도 랭킹</text>
+  <text x="600" y="285" text-anchor="middle" font-size="26" font-weight="700" fill="${C.textMuted}" letter-spacing="8">CAREER SUCCESS · 2026</text>
+  <text x="600" y="380" text-anchor="middle" font-size="72" font-weight="900" fill="${C.text}">MBTI 커리어 성공률</text>
+  <text x="600" y="440" text-anchor="middle" font-size="38" font-weight="800" fill="${C.growth}">유형별 연봉 상승 속도 랭킹</text>
   <line x1="460" y1="428" x2="740" y2="428" stroke="${C.border}"/>
-  <text x="600" y="460" text-anchor="middle" font-size="14" font-weight="600" fill="${C.textSoft}">16유형 × 4기질별 커리어 성장 곡선</text>
-  <text x="600" y="488" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">연봉 속도 · 직무 적성 · 승진 타이밍 · 이직 패턴</text>
-  <text x="600" y="525" text-anchor="middle" font-size="12" font-weight="500" fill="${C.textFaint}">© 192types · 박서연의 현장 관찰 N=612</text>
+  <text x="600" y="510" text-anchor="middle" font-size="24" font-weight="700" fill="${C.textSoft}">16유형 × 4기질별 커리어 성장 곡선</text>
+  <text x="600" y="555" text-anchor="middle" font-size="20" font-weight="600" fill="${C.textMuted}">연봉 속도 · 직무 적성 · 승진 타이밍 · 이직 패턴</text>
+  <text x="600" y="600" text-anchor="middle" font-size="16" font-weight="500" fill="${C.textFaint}">© 192types · 박서연의 현장 관찰 N=612</text>
   `);
 }
 

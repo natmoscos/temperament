@@ -82,13 +82,13 @@ function hero() {
   <text x="820" y="650" font-size="44" font-weight="800" fill="${C.money}" opacity="0.15">¥</text>
 
   <!-- Center card -->
-  <rect x="270" y="220" width="660" height="280" rx="24" fill="#ffffff" stroke="${C.border}" stroke-width="1"/>
-  <text x="600" y="275" text-anchor="middle" font-size="17" font-weight="600" fill="${C.textMuted}" letter-spacing="8">MBTI ECONOMICS · 2026</text>
-  <text x="600" y="345" text-anchor="middle" font-size="46" font-weight="800" fill="${C.text}">MBTI 재테크 DNA</text>
-  <text x="600" y="388" text-anchor="middle" font-size="26" font-weight="700" fill="${C.textSoft}">내 유형의 돈 관리 스타일</text>
-  <line x1="460" y1="413" x2="740" y2="413" stroke="${C.border}" stroke-width="1"/>
-  <text x="600" y="438" text-anchor="middle" font-size="15" font-weight="500" fill="${C.textMuted}">16유형 × 4기질 × 3가지 머니 프로파일</text>
-  <text x="600" y="465" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textFaint}">소비 · 저축 · 투자 · 리스크 · 커플 돈궁합</text>
+  <rect x="120" y="190" width="960" height="370" rx="28" fill="#ffffff" stroke="${C.border}" stroke-width="2"/>
+  <text x="600" y="255" text-anchor="middle" font-size="26" font-weight="700" fill="${C.textMuted}" letter-spacing="8">MBTI ECONOMICS · 2026</text>
+  <text x="600" y="355" text-anchor="middle" font-size="78" font-weight="900" fill="${C.text}">MBTI 재테크 DNA</text>
+  <text x="600" y="420" text-anchor="middle" font-size="38" font-weight="700" fill="${C.textSoft}">내 유형의 돈 관리 스타일</text>
+  <line x1="380" y1="450" x2="820" y2="450" stroke="${C.border}" stroke-width="2"/>
+  <text x="600" y="490" text-anchor="middle" font-size="22" font-weight="600" fill="${C.textMuted}">16유형 × 4기질 × 3가지 머니 프로파일</text>
+  <text x="600" y="528" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textFaint}">소비 · 저축 · 투자 · 리스크 · 커플 돈궁합</text>
 
   <g transform="translate(300, 540)">
     ${[

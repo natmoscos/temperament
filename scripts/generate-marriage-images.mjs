@@ -72,11 +72,11 @@ function hero() {
   <text x="940" y="760" font-size="45" opacity="0.2">🕊</text>
 
   <!-- Center brand card -->
-  <rect x="180" y="280" width="840" height="290" rx="32" fill="#ffffff" stroke="${C.ring}" stroke-width="3" opacity="0.97"/>
-  <text x="600" y="355" text-anchor="middle" font-size="22" font-weight="700" fill="${C.ring}">192TYPES · MARRIAGE REPORT 2026</text>
-  <text x="600" y="430" text-anchor="middle" font-size="52" font-weight="900" fill="${C.text}">MBTI 결혼 만족도</text>
-  <text x="600" y="480" text-anchor="middle" font-size="28" font-weight="700" fill="${C.textSoft}">장기 결혼 행복도 랭킹 TOP 16</text>
-  <text x="600" y="535" text-anchor="middle" font-size="17" font-weight="600" fill="${C.textMuted}">16유형 × 4기질로 본 결혼 후 5년 / 10년 / 20년</text>
+  <rect x="120" y="240" width="960" height="410" rx="36" fill="#ffffff" stroke="${C.ring}" stroke-width="4" opacity="0.97"/>
+  <text x="600" y="320" text-anchor="middle" font-size="30" font-weight="800" fill="${C.ring}">192TYPES · MARRIAGE REPORT 2026</text>
+  <text x="600" y="425" text-anchor="middle" font-size="78" font-weight="900" fill="${C.text}">MBTI 결혼 만족도</text>
+  <text x="600" y="500" text-anchor="middle" font-size="40" font-weight="700" fill="${C.textSoft}">장기 결혼 행복도 TOP 16</text>
+  <text x="600" y="595" text-anchor="middle" font-size="24" font-weight="600" fill="${C.textMuted}">16유형 × 4기질로 본 결혼 후 5년 / 10년 / 20년</text>
   `);
 }
 

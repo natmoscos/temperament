@@ -86,13 +86,13 @@ function hero() {
   </g>
 
   <!-- Center card -->
-  <rect x="270" y="230" width="660" height="270" rx="24" fill="#ffffff" stroke="${C.border}" stroke-width="1"/>
-  <text x="600" y="285" text-anchor="middle" font-size="17" font-weight="600" fill="${C.textMuted}" letter-spacing="8">PILLAR GUIDE · 2026</text>
-  <text x="600" y="352" text-anchor="middle" font-size="46" font-weight="800" fill="${C.text}">MBTI 여자 · 남자 특징</text>
-  <text x="600" y="395" text-anchor="middle" font-size="30" font-weight="700" fill="${C.textSoft}">완전 정리</text>
-  <line x1="460" y1="420" x2="740" y2="420" stroke="${C.border}" stroke-width="1"/>
-  <text x="600" y="445" text-anchor="middle" font-size="16" font-weight="500" fill="${C.textMuted}">16유형 × 성별 = 32가지 조합 · 인지기능 기반 해석</text>
-  <text x="600" y="473" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textFaint}">매력 포인트 · 연애 스타일 · 오해받는 이유</text>
+  <rect x="140" y="200" width="920" height="340" rx="32" fill="#ffffff" stroke="${C.border}" stroke-width="2"/>
+  <text x="600" y="265" text-anchor="middle" font-size="26" font-weight="700" fill="${C.textMuted}" letter-spacing="8">PILLAR GUIDE · 2026</text>
+  <text x="600" y="360" text-anchor="middle" font-size="72" font-weight="900" fill="${C.text}">MBTI 여자 · 남자 특징</text>
+  <text x="600" y="420" text-anchor="middle" font-size="42" font-weight="800" fill="${C.textSoft}">완전 정리</text>
+  <line x1="380" y1="455" x2="820" y2="455" stroke="${C.border}" stroke-width="2"/>
+  <text x="600" y="490" text-anchor="middle" font-size="22" font-weight="600" fill="${C.textMuted}">16유형 × 성별 = 32가지 조합</text>
+  <text x="600" y="520" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textFaint}">매력 포인트 · 연애 스타일 · 오해받는 이유</text>
 
   <!-- Bottom 4-temperament chip row -->
   <g transform="translate(300, 560)">

@@ -59,12 +59,12 @@ function hero() {
     <text x="${b.x}" y="${b.y - 2}" text-anchor="middle" font-size="${b.r * 0.42}" font-weight="800" fill="#fff">${b.t}</text>
     <text x="${b.x}" y="${b.y + b.r * 0.36}" text-anchor="middle" font-size="${b.r * 0.26}" font-weight="600" fill="#fff" opacity="0.85">#${b.rank}</text>
   `).join('')}
-  <rect x="290" y="340" width="620" height="220" rx="20" fill="#ffffff" stroke="${C.border}" stroke-width="1"/>
-  <text x="600" y="400" text-anchor="middle" font-size="18" font-weight="600" fill="${C.textMuted}" letter-spacing="6">2026 MBTI TREND REPORT</text>
-  <text x="600" y="460" text-anchor="middle" font-size="48" font-weight="800" fill="${C.text}">혼자 잘 노는 MBTI 순위</text>
-  <text x="600" y="505" text-anchor="middle" font-size="17" font-weight="500" fill="${C.textMuted}">내향성 · 몰입력 · 자기완결성 기준 · 16유형 완전 분석</text>
-  <line x1="460" y1="525" x2="740" y2="525" stroke="${C.border}" stroke-width="1"/>
-  <text x="600" y="548" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textFaint}">TOP 16 · 과학적 랭킹 · 기질론 기반 해석</text>
+  <rect x="140" y="280" width="920" height="340" rx="28" fill="#ffffff" stroke="${C.border}" stroke-width="2"/>
+  <text x="600" y="345" text-anchor="middle" font-size="26" font-weight="700" fill="${C.textMuted}" letter-spacing="6">2026 MBTI TREND REPORT</text>
+  <text x="600" y="440" text-anchor="middle" font-size="74" font-weight="900" fill="${C.text}">혼자 잘 노는 MBTI</text>
+  <text x="600" y="500" text-anchor="middle" font-size="28" font-weight="700" fill="${C.textSoft}">내향 · 몰입 · 자기완결 랭킹</text>
+  <line x1="380" y1="535" x2="820" y2="535" stroke="${C.border}" stroke-width="2"/>
+  <text x="600" y="575" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textFaint}">TOP 16 · 과학적 랭킹 · 기질론 기반 해석</text>
   `);
 }
 

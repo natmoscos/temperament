@@ -75,11 +75,11 @@ function hero() {
   </g>
 
   <!-- Center brand card -->
-  <rect x="180" y="330" width="840" height="280" rx="32" fill="#ffffff" stroke="${C.kakaoDeep}" stroke-width="3"/>
-  <text x="600" y="400" text-anchor="middle" font-size="22" font-weight="700" fill="${C.kakaoDeep}">192TYPES · KAKAO REPORT 2026</text>
-  <text x="600" y="475" text-anchor="middle" font-size="52" font-weight="900" fill="${C.text}">MBTI 카톡 스타일</text>
-  <text x="600" y="525" text-anchor="middle" font-size="28" font-weight="700" fill="${C.textSoft}">답장 속도 · 이모티콘 · 대화 패턴 16유형</text>
-  <text x="600" y="580" text-anchor="middle" font-size="17" font-weight="600" fill="${C.textMuted}">즉답형 · 생각형 · 잠수형 · 답정너형 4가지 카톡 DNA</text>
+  <rect x="120" y="270" width="960" height="400" rx="36" fill="#ffffff" stroke="${C.kakaoDeep}" stroke-width="4"/>
+  <text x="600" y="345" text-anchor="middle" font-size="30" font-weight="800" fill="${C.kakaoDeep}">192TYPES · KAKAO REPORT 2026</text>
+  <text x="600" y="450" text-anchor="middle" font-size="78" font-weight="900" fill="${C.text}">MBTI 카톡 스타일</text>
+  <text x="600" y="525" text-anchor="middle" font-size="42" font-weight="700" fill="${C.textSoft}">답장 속도 · 이모티콘 · 대화 패턴</text>
+  <text x="600" y="620" text-anchor="middle" font-size="24" font-weight="600" fill="${C.textMuted}">즉답형 · 생각형 · 잠수형 · 답정너형 4가지 카톡 DNA</text>
   `);
 }
 

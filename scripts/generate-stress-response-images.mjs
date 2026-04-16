@@ -91,14 +91,14 @@ function hero() {
   </g>
 
   <!-- Center card -->
-  <rect x="290" y="300" width="620" height="320" rx="28" fill="#ffffff" stroke="${C.border}"/>
-  <text x="600" y="355" text-anchor="middle" font-size="16" font-weight="600" fill="${C.textMuted}" letter-spacing="8">STRESS RESPONSE · 2026</text>
-  <text x="600" y="420" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">MBTI 스트레스 대응</text>
-  <text x="600" y="462" text-anchor="middle" font-size="22" font-weight="700" fill="${C.attack}">압박 받을 때 나오는 민낯</text>
-  <line x1="460" y1="490" x2="740" y2="490" stroke="${C.border}"/>
-  <text x="600" y="520" text-anchor="middle" font-size="14" font-weight="600" fill="${C.textSoft}">16유형 × 4가지 반응 모드 × 그림자 기능 매핑</text>
-  <text x="600" y="548" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">급성 vs 만성 · 압박 임계치 · 기질별 해소 공식</text>
-  <text x="600" y="585" text-anchor="middle" font-size="12" font-weight="500" fill="${C.textFaint}">© 192types · 박서연의 현장 관찰기</text>
+  <rect x="140" y="250" width="920" height="420" rx="32" fill="#ffffff" stroke="${C.border}" stroke-width="2"/>
+  <text x="600" y="315" text-anchor="middle" font-size="26" font-weight="700" fill="${C.textMuted}" letter-spacing="8">STRESS RESPONSE · 2026</text>
+  <text x="600" y="410" text-anchor="middle" font-size="72" font-weight="900" fill="${C.text}">MBTI 스트레스 대응</text>
+  <text x="600" y="470" text-anchor="middle" font-size="36" font-weight="800" fill="${C.attack}">압박 받을 때 나오는 민낯</text>
+  <line x1="380" y1="505" x2="820" y2="505" stroke="${C.border}" stroke-width="2"/>
+  <text x="600" y="545" text-anchor="middle" font-size="22" font-weight="700" fill="${C.textSoft}">16유형 × 4가지 반응 × 그림자 기능</text>
+  <text x="600" y="585" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">급성 vs 만성 · 압박 임계치 · 해소 공식</text>
+  <text x="600" y="645" text-anchor="middle" font-size="16" font-weight="500" fill="${C.textFaint}">© 192types · 박서연의 현장 관찰기</text>
   `);
 }
 

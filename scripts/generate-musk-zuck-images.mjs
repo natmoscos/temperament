@@ -37,11 +37,11 @@ function hero() {
   <text x="200" y="200" font-size="50" opacity="0.2">🚀</text>
   <text x="960" y="200" font-size="50" opacity="0.2">🌐</text>
 
-  <rect x="180" y="300" width="840" height="280" rx="32" fill="#ffffff" stroke="#6b7280" stroke-width="3" opacity="0.97"/>
-  <text x="600" y="370" text-anchor="middle" font-size="22" font-weight="700" fill="#6b7280">192TYPES · TITANS COMPARED</text>
-  <text x="600" y="445" text-anchor="middle" font-size="48" font-weight="900" fill="${C.text}">머스크 vs 저커버그</text>
-  <text x="600" y="495" text-anchor="middle" font-size="26" font-weight="700" fill="${C.textSoft}">같은 INTJ 추정 · 180도 다른 경영 DNA</text>
-  <text x="600" y="550" text-anchor="middle" font-size="17" font-weight="600" fill="${C.textMuted}">Te vs Ti 보조기능이 만든 두 리더의 길</text>
+  <rect x="120" y="260" width="960" height="400" rx="36" fill="#ffffff" stroke="#6b7280" stroke-width="4" opacity="0.97"/>
+  <text x="600" y="340" text-anchor="middle" font-size="30" font-weight="800" fill="#6b7280">192TYPES · TITANS COMPARED</text>
+  <text x="600" y="440" text-anchor="middle" font-size="78" font-weight="900" fill="${C.text}">머스크 vs 저커버그</text>
+  <text x="600" y="520" text-anchor="middle" font-size="38" font-weight="700" fill="${C.textSoft}">같은 INTJ · 180도 다른 경영 DNA</text>
+  <text x="600" y="615" text-anchor="middle" font-size="24" font-weight="600" fill="${C.textMuted}">Te vs Ti 보조기능이 만든 두 리더의 길</text>
   `);
 }
 

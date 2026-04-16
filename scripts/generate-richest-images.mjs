@@ -50,11 +50,11 @@ function hero() {
   <text x="200" y="760" font-size="50" opacity="0.2">📈</text>
   <text x="940" y="740" font-size="55" opacity="0.2">💎</text>
 
-  <rect x="180" y="300" width="840" height="280" rx="32" fill="#ffffff" stroke="${C.goldDeep}" stroke-width="3" opacity="0.97"/>
-  <text x="600" y="370" text-anchor="middle" font-size="22" font-weight="700" fill="${C.goldDeep}">192TYPES · ECONOMICS REPORT 2026</text>
-  <text x="600" y="445" text-anchor="middle" font-size="48" font-weight="900" fill="${C.text}">세계 부자 TOP 10 MBTI</text>
-  <text x="600" y="495" text-anchor="middle" font-size="28" font-weight="700" fill="${C.textSoft}">머스크 · 베조스 · 자커버그 · 버핏 · LVMH</text>
-  <text x="600" y="550" text-anchor="middle" font-size="17" font-weight="600" fill="${C.textMuted}">부자들의 MBTI 분포 + 공통 인지기능 패턴 분석</text>
+  <rect x="80" y="250" width="1040" height="410" rx="36" fill="#ffffff" stroke="${C.goldDeep}" stroke-width="4" opacity="0.97"/>
+  <text x="600" y="330" text-anchor="middle" font-size="30" font-weight="800" fill="${C.goldDeep}">192TYPES · ECONOMICS REPORT 2026</text>
+  <text x="600" y="430" text-anchor="middle" font-size="72" font-weight="900" fill="${C.text}">세계 부자 TOP 10 MBTI</text>
+  <text x="600" y="510" text-anchor="middle" font-size="36" font-weight="700" fill="${C.textSoft}">머스크 · 베조스 · 자커버그 · 버핏</text>
+  <text x="600" y="605" text-anchor="middle" font-size="24" font-weight="600" fill="${C.textMuted}">부자들의 MBTI 분포 + 공통 인지기능 패턴</text>
   `);
 }
 

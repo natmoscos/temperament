@@ -15,11 +15,11 @@
   <text x="200" y="760" font-size="45" opacity="0.2">⚖️</text>
   <text x="940" y="740" font-size="50" opacity="0.2">🏃</text>
 
-  <rect x="180" y="300" width="840" height="280" rx="32" fill="#ffffff" stroke="#047857" stroke-width="3" opacity="0.97"/>
-  <text x="600" y="370" text-anchor="middle" font-size="22" font-weight="700" fill="#047857">192TYPES · DIET REPORT 2026</text>
-  <text x="600" y="445" text-anchor="middle" font-size="52" font-weight="900" fill="#171717">MBTI 다이어트 성공 공식</text>
-  <text x="600" y="495" text-anchor="middle" font-size="28" font-weight="700" fill="#374151">감량 성공률 + 요요 위험 랭킹 TOP 16</text>
-  <text x="600" y="550" text-anchor="middle" font-size="17" font-weight="600" fill="#6b7280">네 유형에 맞는 식단 · 운동 · 동기부여 전략</text>
+  <rect x="80" y="250" width="1040" height="410" rx="36" fill="#ffffff" stroke="#047857" stroke-width="4" opacity="0.97"/>
+  <text x="600" y="330" text-anchor="middle" font-size="30" font-weight="800" fill="#047857">192TYPES · DIET REPORT 2026</text>
+  <text x="600" y="430" text-anchor="middle" font-size="72" font-weight="900" fill="#171717">MBTI 다이어트 성공 공식</text>
+  <text x="600" y="505" text-anchor="middle" font-size="40" font-weight="700" fill="#374151">감량 성공률 + 요요 위험 랭킹</text>
+  <text x="600" y="605" text-anchor="middle" font-size="24" font-weight="600" fill="#6b7280">네 유형에 맞는 식단 · 운동 · 동기부여 전략</text>
   
 <text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 다이어트 리포트</text>
 </svg>

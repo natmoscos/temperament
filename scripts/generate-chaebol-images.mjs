@@ -47,11 +47,11 @@ function hero() {
   <text x="200" y="740" font-size="50" opacity="0.2">🇰🇷</text>
   <text x="960" y="740" font-size="50" opacity="0.2">📊</text>
 
-  <rect x="180" y="290" width="840" height="300" rx="32" fill="#ffffff" stroke="${C.korea}" stroke-width="3" opacity="0.97"/>
-  <text x="600" y="360" text-anchor="middle" font-size="22" font-weight="700" fill="${C.korea}">192TYPES · K-CHAEBOL REPORT 2026</text>
-  <text x="600" y="440" text-anchor="middle" font-size="48" font-weight="900" fill="${C.text}">한국 재벌 총수 MBTI</text>
-  <text x="600" y="495" text-anchor="middle" font-size="26" font-weight="700" fill="${C.textSoft}">이재용 · 정의선 · 최태원 · 구광모</text>
-  <text x="600" y="545" text-anchor="middle" font-size="16" font-weight="600" fill="${C.textMuted}">공개 행보 · 인터뷰 · 의사결정 패턴 기반 추정</text>
+  <rect x="120" y="250" width="960" height="410" rx="36" fill="#ffffff" stroke="${C.korea}" stroke-width="4" opacity="0.97"/>
+  <text x="600" y="330" text-anchor="middle" font-size="30" font-weight="800" fill="${C.korea}">192TYPES · K-CHAEBOL REPORT 2026</text>
+  <text x="600" y="430" text-anchor="middle" font-size="72" font-weight="900" fill="${C.text}">한국 재벌 총수 MBTI</text>
+  <text x="600" y="510" text-anchor="middle" font-size="38" font-weight="700" fill="${C.textSoft}">이재용 · 정의선 · 최태원 · 구광모</text>
+  <text x="600" y="605" text-anchor="middle" font-size="24" font-weight="600" fill="${C.textMuted}">공개 행보 · 의사결정 패턴 기반 추정</text>
   `);
 }
 

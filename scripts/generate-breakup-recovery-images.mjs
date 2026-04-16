@@ -81,14 +81,14 @@ function hero() {
   `).join('')}
 
   <!-- Center card -->
-  <rect x="290" y="260" width="620" height="360" rx="28" fill="#ffffff" stroke="${C.border}"/>
-  <text x="600" y="315" text-anchor="middle" font-size="16" font-weight="600" fill="${C.textMuted}" letter-spacing="8">BREAKUP RECOVERY · 2026</text>
-  <text x="600" y="380" text-anchor="middle" font-size="40" font-weight="800" fill="${C.text}">MBTI 이별 회복 속도 순위</text>
-  <text x="600" y="425" text-anchor="middle" font-size="22" font-weight="700" fill="${C.pain}">너는 며칠이면 괜찮아져?</text>
-  <line x1="460" y1="455" x2="740" y2="455" stroke="${C.border}"/>
-  <text x="600" y="488" text-anchor="middle" font-size="14" font-weight="600" fill="${C.textSoft}">16유형 × 4가지 이별 반응 × 기질별 회복 공식</text>
-  <text x="600" y="516" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">도어슬램 위험도 · 재결합 확률 · 잠수 vs 분석 vs 새사람 패턴</text>
-  <text x="600" y="556" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textFaint}">© 192types · 박서연 N=348 리포트</text>
+  <rect x="140" y="220" width="920" height="450" rx="32" fill="#ffffff" stroke="${C.border}" stroke-width="2"/>
+  <text x="600" y="285" text-anchor="middle" font-size="26" font-weight="700" fill="${C.textMuted}" letter-spacing="8">BREAKUP RECOVERY · 2026</text>
+  <text x="600" y="380" text-anchor="middle" font-size="72" font-weight="900" fill="${C.text}">MBTI 이별 회복 속도</text>
+  <text x="600" y="440" text-anchor="middle" font-size="36" font-weight="800" fill="${C.pain}">너는 며칠이면 괜찮아져?</text>
+  <line x1="380" y1="475" x2="820" y2="475" stroke="${C.border}" stroke-width="2"/>
+  <text x="600" y="515" text-anchor="middle" font-size="22" font-weight="700" fill="${C.textSoft}">16유형 × 4가지 이별 반응 × 회복 공식</text>
+  <text x="600" y="555" text-anchor="middle" font-size="18" font-weight="500" fill="${C.textMuted}">도어슬램 · 재결합 · 잠수 vs 분석 vs 새사람</text>
+  <text x="600" y="620" text-anchor="middle" font-size="16" font-weight="500" fill="${C.textFaint}">© 192types · 박서연 N=348 리포트</text>
   `);
 }
 

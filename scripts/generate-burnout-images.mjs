@@ -83,14 +83,14 @@ function hero() {
   <text x="780" y="650" font-size="42" opacity="0.22">🔥</text>
 
   <!-- Center card -->
-  <rect x="290" y="280" width="620" height="340" rx="28" fill="#ffffff" stroke="${C.border}"/>
-  <text x="600" y="335" text-anchor="middle" font-size="16" font-weight="600" fill="${C.textMuted}" letter-spacing="9">BURNOUT REPORT · 2026</text>
-  <text x="600" y="400" text-anchor="middle" font-size="42" font-weight="800" fill="${C.text}">MBTI 번아웃 취약도 순위</text>
-  <text x="600" y="442" text-anchor="middle" font-size="22" font-weight="700" fill="${C.burn}">네가 무너지는 진짜 포인트</text>
-  <line x1="460" y1="472" x2="740" y2="472" stroke="${C.border}" stroke-width="1"/>
-  <text x="600" y="505" text-anchor="middle" font-size="14" font-weight="600" fill="${C.textSoft}">16유형 × 4기질로 본 번아웃 취약점과 회복 공식</text>
-  <text x="600" y="532" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textMuted}">ENFJ 93 · ISFJ 88 · ISTP 28 · INTP 34</text>
-  <text x="600" y="572" text-anchor="middle" font-size="13" font-weight="500" fill="${C.textFaint}">© 192types · 박서연의 현장 리포트</text>
+  <rect x="140" y="230" width="920" height="430" rx="32" fill="#ffffff" stroke="${C.border}" stroke-width="2"/>
+  <text x="600" y="295" text-anchor="middle" font-size="26" font-weight="700" fill="${C.textMuted}" letter-spacing="8">BURNOUT REPORT · 2026</text>
+  <text x="600" y="390" text-anchor="middle" font-size="72" font-weight="900" fill="${C.text}">MBTI 번아웃 취약도</text>
+  <text x="600" y="450" text-anchor="middle" font-size="36" font-weight="800" fill="${C.burn}">네가 무너지는 진짜 포인트</text>
+  <line x1="380" y1="485" x2="820" y2="485" stroke="${C.border}" stroke-width="2"/>
+  <text x="600" y="525" text-anchor="middle" font-size="22" font-weight="700" fill="${C.textSoft}">16유형 × 4기질 번아웃 + 회복 공식</text>
+  <text x="600" y="565" text-anchor="middle" font-size="20" font-weight="600" fill="${C.textMuted}">ENFJ 93 · ISFJ 88 · ISTP 28 · INTP 34</text>
+  <text x="600" y="615" text-anchor="middle" font-size="16" font-weight="500" fill="${C.textFaint}">© 192types · 박서연의 현장 리포트</text>
   `);
 }
 
