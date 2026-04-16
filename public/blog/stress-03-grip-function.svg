@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="800" fill="#171717">그립(Grip) 기능 — 네 민낯이 튀어나오는 순간</text>
+  <text x="600" y="78" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">극심한 스트레스에서 열등기능이 폭주하면 "평소의 나"와 정반대 모습이 드러나</text>
+
+  
+      <rect x="60" y="115" width="555" height="80" rx="14" fill="#ecfeff" stroke="#e5e7eb"/>
+      <rect x="60" y="115" width="7" height="80" rx="3" fill="#0891b2"/>
+      <text x="82" y="147" font-size="17" font-weight="800" fill="#0891b2">INTJ</text>
+      <text x="82" y="172" font-size="12" font-weight="600" fill="#374151">열등 Se 폭주 → 폭식·충동쇼핑</text>
+    
+      <rect x="640" y="115" width="555" height="80" rx="14" fill="#ecfeff" stroke="#e5e7eb"/>
+      <rect x="640" y="115" width="7" height="80" rx="3" fill="#0891b2"/>
+      <text x="662" y="147" font-size="17" font-weight="800" fill="#0891b2">INTP</text>
+      <text x="662" y="172" font-size="12" font-weight="600" fill="#374151">열등 Fe 폭주 → 울컥·과민반응</text>
+    
+      <rect x="60" y="210" width="555" height="80" rx="14" fill="#ecfeff" stroke="#e5e7eb"/>
+      <rect x="60" y="210" width="7" height="80" rx="3" fill="#0891b2"/>
+      <text x="82" y="242" font-size="17" font-weight="800" fill="#0891b2">ENTJ</text>
+      <text x="82" y="267" font-size="12" font-weight="600" fill="#374151">열등 Fi 폭주 → 감정 홍수·자책</text>
+    
+      <rect x="640" y="210" width="555" height="80" rx="14" fill="#ecfeff" stroke="#e5e7eb"/>
+      <rect x="640" y="210" width="7" height="80" rx="3" fill="#0891b2"/>
+      <text x="662" y="242" font-size="17" font-weight="800" fill="#0891b2">ENTP</text>
+      <text x="662" y="267" font-size="12" font-weight="600" fill="#374151">열등 Si 폭주 → 반복 불안·과거 집착</text>
+    
+      <rect x="60" y="305" width="555" height="80" rx="14" fill="#fff1f2" stroke="#e5e7eb"/>
+      <rect x="60" y="305" width="7" height="80" rx="3" fill="#e11d48"/>
+      <text x="82" y="337" font-size="17" font-weight="800" fill="#e11d48">INFJ</text>
+      <text x="82" y="362" font-size="12" font-weight="600" fill="#374151">열등 Se 폭주 → 충동 소비·감각 과잉</text>
+    
+      <rect x="640" y="305" width="555" height="80" rx="14" fill="#fff1f2" stroke="#e5e7eb"/>
+      <rect x="640" y="305" width="7" height="80" rx="3" fill="#e11d48"/>
+      <text x="662" y="337" font-size="17" font-weight="800" fill="#e11d48">INFP</text>
+      <text x="662" y="362" font-size="12" font-weight="600" fill="#374151">열등 Te 폭주 → 과잉 통제·목록 강박</text>
+    
+      <rect x="60" y="400" width="555" height="80" rx="14" fill="#fff1f2" stroke="#e5e7eb"/>
+      <rect x="60" y="400" width="7" height="80" rx="3" fill="#e11d48"/>
+      <text x="82" y="432" font-size="17" font-weight="800" fill="#e11d48">ENFJ</text>
+      <text x="82" y="457" font-size="12" font-weight="600" fill="#374151">열등 Ti 폭주 → 냉소적·차가운 분석</text>
+    
+      <rect x="640" y="400" width="555" height="80" rx="14" fill="#fff1f2" stroke="#e5e7eb"/>
+      <rect x="640" y="400" width="7" height="80" rx="3" fill="#e11d48"/>
+      <text x="662" y="432" font-size="17" font-weight="800" fill="#e11d48">ENFP</text>
+      <text x="662" y="457" font-size="12" font-weight="600" fill="#374151">열등 Si 폭주 → 몸이 아픔·건강염려</text>
+    
+      <rect x="60" y="495" width="555" height="80" rx="14" fill="#ecfdf5" stroke="#e5e7eb"/>
+      <rect x="60" y="495" width="7" height="80" rx="3" fill="#059669"/>
+      <text x="82" y="527" font-size="17" font-weight="800" fill="#059669">ISTJ</text>
+      <text x="82" y="552" font-size="12" font-weight="600" fill="#374151">열등 Ne 폭주 → 과장된 걱정·시나리오</text>
+    
+      <rect x="640" y="495" width="555" height="80" rx="14" fill="#ecfdf5" stroke="#e5e7eb"/>
+      <rect x="640" y="495" width="7" height="80" rx="3" fill="#059669"/>
+      <text x="662" y="527" font-size="17" font-weight="800" fill="#059669">ISFJ</text>
+      <text x="662" y="552" font-size="12" font-weight="600" fill="#374151">열등 Ne 폭주 → 최악 상상·불면</text>
+    
+      <rect x="60" y="590" width="555" height="80" rx="14" fill="#ecfdf5" stroke="#e5e7eb"/>
+      <rect x="60" y="590" width="7" height="80" rx="3" fill="#059669"/>
+      <text x="82" y="622" font-size="17" font-weight="800" fill="#059669">ESTJ</text>
+      <text x="82" y="647" font-size="12" font-weight="600" fill="#374151">열등 Fi 폭주 → 격한 눈물·자기연민</text>
+    
+      <rect x="640" y="590" width="555" height="80" rx="14" fill="#ecfdf5" stroke="#e5e7eb"/>
+      <rect x="640" y="590" width="7" height="80" rx="3" fill="#059669"/>
+      <text x="662" y="622" font-size="17" font-weight="800" fill="#059669">ESFJ</text>
+      <text x="662" y="647" font-size="12" font-weight="600" fill="#374151">열등 Ti 폭주 → 비난적 분석·공격</text>
+    
+      <rect x="60" y="685" width="555" height="80" rx="14" fill="#fffbeb" stroke="#e5e7eb"/>
+      <rect x="60" y="685" width="7" height="80" rx="3" fill="#d97706"/>
+      <text x="82" y="717" font-size="17" font-weight="800" fill="#d97706">ISTP</text>
+      <text x="82" y="742" font-size="12" font-weight="600" fill="#374151">열등 Fe 폭주 → 갑작스런 감정 폭발</text>
+    
+      <rect x="640" y="685" width="555" height="80" rx="14" fill="#fffbeb" stroke="#e5e7eb"/>
+      <rect x="640" y="685" width="7" height="80" rx="3" fill="#d97706"/>
+      <text x="662" y="717" font-size="17" font-weight="800" fill="#d97706">ISFP</text>
+      <text x="662" y="742" font-size="12" font-weight="600" fill="#374151">열등 Te 폭주 → 강박적 계획·통제</text>
+    
+      <rect x="60" y="780" width="555" height="80" rx="14" fill="#fffbeb" stroke="#e5e7eb"/>
+      <rect x="60" y="780" width="7" height="80" rx="3" fill="#d97706"/>
+      <text x="82" y="812" font-size="17" font-weight="800" fill="#d97706">ESTP</text>
+      <text x="82" y="837" font-size="12" font-weight="600" fill="#374151">열등 Ni 폭주 → 음모론·부정 예측</text>
+    
+      <rect x="640" y="780" width="555" height="80" rx="14" fill="#fffbeb" stroke="#e5e7eb"/>
+      <rect x="640" y="780" width="7" height="80" rx="3" fill="#d97706"/>
+      <text x="662" y="812" font-size="17" font-weight="800" fill="#d97706">ESFP</text>
+      <text x="662" y="837" font-size="12" font-weight="600" fill="#374151">열등 Ni 폭주 → 무의미감·종말 감각</text>
+    
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 스트레스 리포트</text>
+</svg>

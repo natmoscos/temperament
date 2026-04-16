@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <defs>
+    <radialGradient id="hG" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#fff"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#hG)"/>
+
+  <!-- 4 corners showing stress modes -->
+  <g transform="translate(150, 200)">
+    <circle cx="0" cy="0" r="60" fill="#dc2626" opacity="0.15"/>
+    <circle cx="0" cy="0" r="50" fill="#dc2626"/>
+    <text x="0" y="5" text-anchor="middle" font-size="26" font-weight="800" fill="#fff">⚔</text>
+    <text x="0" y="82" text-anchor="middle" font-size="13" font-weight="800" fill="#dc2626">공격</text>
+    <text x="0" y="100" text-anchor="middle" font-size="10" font-weight="600" fill="#6b7280">ENTJ · ESTJ · ESTP</text>
+  </g>
+  <g transform="translate(1050, 200)">
+    <circle cx="0" cy="0" r="60" fill="#7c3aed" opacity="0.15"/>
+    <circle cx="0" cy="0" r="50" fill="#7c3aed"/>
+    <text x="0" y="5" text-anchor="middle" font-size="26" font-weight="800" fill="#fff">🏃</text>
+    <text x="0" y="82" text-anchor="middle" font-size="13" font-weight="800" fill="#7c3aed">회피</text>
+    <text x="0" y="100" text-anchor="middle" font-size="10" font-weight="600" fill="#6b7280">ENFP · ESFP · ENTP</text>
+  </g>
+  <g transform="translate(150, 700)">
+    <circle cx="0" cy="0" r="60" fill="#0369a1" opacity="0.15"/>
+    <circle cx="0" cy="0" r="50" fill="#0369a1"/>
+    <text x="0" y="5" text-anchor="middle" font-size="26" font-weight="800" fill="#fff">🔬</text>
+    <text x="0" y="82" text-anchor="middle" font-size="13" font-weight="800" fill="#0369a1">분석</text>
+    <text x="0" y="100" text-anchor="middle" font-size="10" font-weight="600" fill="#6b7280">INTJ · INTP · INFJ</text>
+  </g>
+  <g transform="translate(1050, 700)">
+    <circle cx="0" cy="0" r="60" fill="#475569" opacity="0.15"/>
+    <circle cx="0" cy="0" r="50" fill="#475569"/>
+    <text x="0" y="5" text-anchor="middle" font-size="26" font-weight="800" fill="#fff">🌑</text>
+    <text x="0" y="82" text-anchor="middle" font-size="13" font-weight="800" fill="#475569">은둔</text>
+    <text x="0" y="100" text-anchor="middle" font-size="10" font-weight="600" fill="#6b7280">ISFJ · ISTJ · ISFP</text>
+  </g>
+
+  <!-- Center card -->
+  <rect x="290" y="300" width="620" height="320" rx="28" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="600" y="355" text-anchor="middle" font-size="16" font-weight="600" fill="#6b7280" letter-spacing="8">STRESS RESPONSE · 2026</text>
+  <text x="600" y="420" text-anchor="middle" font-size="42" font-weight="800" fill="#171717">MBTI 스트레스 대응</text>
+  <text x="600" y="462" text-anchor="middle" font-size="22" font-weight="700" fill="#dc2626">압박 받을 때 나오는 민낯</text>
+  <line x1="460" y1="490" x2="740" y2="490" stroke="#e5e7eb"/>
+  <text x="600" y="520" text-anchor="middle" font-size="14" font-weight="600" fill="#374151">16유형 × 4가지 반응 모드 × 그림자 기능 매핑</text>
+  <text x="600" y="548" text-anchor="middle" font-size="13" font-weight="500" fill="#6b7280">급성 vs 만성 · 압박 임계치 · 기질별 해소 공식</text>
+  <text x="600" y="585" text-anchor="middle" font-size="12" font-weight="500" fill="#9ca3af">© 192types · 박서연의 현장 관찰기</text>
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 스트레스 리포트</text>
+</svg>
