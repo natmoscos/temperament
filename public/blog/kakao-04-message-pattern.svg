@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">카톡 대화 4대 모드 — 네 유형은?</text>
+  <text x="600" y="80" text-anchor="middle" font-size="14" font-weight="500" fill="#6b7280">인지기능별 카톡 대응 스타일 · 즉답 / 생각 / 잠수 / 답정너</text>
+
+  
+      <g transform="translate(60, 115)">
+        <rect width="520" height="360" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="360" rx="4" fill="#059669"/>
+        <text x="30" y="45" font-size="24" font-weight="900" fill="#059669">⚡ 즉답형</text>
+        <text x="30" y="72" font-size="13" font-weight="700" fill="#6b7280">ESFJ · ENFJ · ESTJ · ESFP</text>
+
+        <rect x="30" y="90" width="460" height="55" rx="12" fill="#059669" opacity="0.08"/>
+        <text x="45" y="120" font-size="13" font-weight="700" fill="#059669">예시 대화</text>
+        <text x="45" y="138" font-size="12" font-weight="500" fill="#374151">"지금 뭐해?" → 30초 안에 답장</text>
+
+        
+          <g transform="translate(30, 175)">
+            <circle cx="10" cy="0" r="10" fill="#059669" opacity="0.2"/>
+            <text x="10" y="5" text-anchor="middle" font-size="11" font-weight="900" fill="#059669">1</text>
+            <text x="32" y="5" font-size="13" font-weight="600" fill="#374151">메시지 보이자마자 바로 답장</text>
+          </g>
+        
+          <g transform="translate(30, 217)">
+            <circle cx="10" cy="0" r="10" fill="#059669" opacity="0.2"/>
+            <text x="10" y="5" text-anchor="middle" font-size="11" font-weight="900" fill="#059669">2</text>
+            <text x="32" y="5" font-size="13" font-weight="600" fill="#374151">읽씹이 가장 큰 스트레스</text>
+          </g>
+        
+          <g transform="translate(30, 259)">
+            <circle cx="10" cy="0" r="10" fill="#059669" opacity="0.2"/>
+            <text x="10" y="5" text-anchor="middle" font-size="11" font-weight="900" fill="#059669">3</text>
+            <text x="32" y="5" font-size="13" font-weight="600" fill="#374151">답장 늦으면 상대 걱정</text>
+          </g>
+        
+          <g transform="translate(30, 301)">
+            <circle cx="10" cy="0" r="10" fill="#059669" opacity="0.2"/>
+            <text x="10" y="5" text-anchor="middle" font-size="11" font-weight="900" fill="#059669">4</text>
+            <text x="32" y="5" font-size="13" font-weight="600" fill="#374151">그룹톡에서도 혼자 활약</text>
+          </g>
+        
+      </g>
+    
+      <g transform="translate(620, 115)">
+        <rect width="520" height="360" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="360" rx="4" fill="#e11d48"/>
+        <text x="30" y="45" font-size="24" font-weight="900" fill="#e11d48">💭 생각형</text>
+        <text x="30" y="72" font-size="13" font-weight="700" fill="#6b7280">INFJ · ENFJ · ISFJ · INFP</text>
+
+        <rect x="30" y="90" width="460" height="55" rx="12" fill="#e11d48" opacity="0.08"/>
+        <text x="45" y="120" font-size="13" font-weight="700" fill="#e11d48">예시 대화</text>
+        <text x="45" y="138" font-size="12" font-weight="500" fill="#374151">"괜찮아?" → 3문단 답장 + 수정 3번</text>
+
+        
+          <g transform="translate(30, 175)">
+            <circle cx="10" cy="0" r="10" fill="#e11d48" opacity="0.2"/>
+            <text x="10" y="5" text-anchor="middle" font-size="11" font-weight="900" fill="#e11d48">1</text>
+            <text x="32" y="5" font-size="13" font-weight="600" fill="#374151">답장 전 문장 구성 고민</text>
+          </g>
+        
+          <g transform="translate(30, 217)">
+            <circle cx="10" cy="0" r="10" fill="#e11d48" opacity="0.2"/>
+            <text x="10" y="5" text-anchor="middle" font-size="11" font-weight="900" fill="#e11d48">2</text>
+            <text x="32" y="5" font-size="13" font-weight="600" fill="#374151">오타·어투 신경 써서 수정</text>
+          </g>
+        
+          <g transform="translate(30, 259)">
+            <circle cx="10" cy="0" r="10" fill="#e11d48" opacity="0.2"/>
+            <text x="10" y="5" text-anchor="middle" font-size="11" font-weight="900" fill="#e11d48">3</text>
+            <text x="32" y="5" font-size="13" font-weight="600" fill="#374151">깊은 내용은 긴 답장</text>
+          </g>
+        
+          <g transform="translate(30, 301)">
+            <circle cx="10" cy="0" r="10" fill="#e11d48" opacity="0.2"/>
+            <text x="10" y="5" text-anchor="middle" font-size="11" font-weight="900" fill="#e11d48">4</text>
+            <text x="32" y="5" font-size="13" font-weight="600" fill="#374151">가벼운 톡엔 이모지로 대응</text>
+          </g>
+        
+      </g>
+    
+      <g transform="translate(60, 510)">
+        <rect width="520" height="360" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="360" rx="4" fill="#0891b2"/>
+        <text x="30" y="45" font-size="24" font-weight="900" fill="#0891b2">🌊 잠수형</text>
+        <text x="30" y="72" font-size="13" font-weight="700" fill="#6b7280">INTJ · INTP · INFP · ISTP</text>
+
+        <rect x="30" y="90" width="460" height="55" rx="12" fill="#0891b2" opacity="0.08"/>
+        <text x="45" y="120" font-size="13" font-weight="700" fill="#0891b2">예시 대화</text>
+        <text x="45" y="138" font-size="12" font-weight="500" fill="#374151">"답장 기다려" → 3일 후 "미안, 바빴어"</text>
+
+        
+          <g transform="translate(30, 175)">
+            <circle cx="10" cy="0" r="10" fill="#0891b2" opacity="0.2"/>
+            <text x="10" y="5" text-anchor="middle" font-size="11" font-weight="900" fill="#0891b2">1</text>
+            <text x="32" y="5" font-size="13" font-weight="600" fill="#374151">답장 에너지 소진 빠름</text>
+          </g>
+        
+          <g transform="translate(30, 217)">
+            <circle cx="10" cy="0" r="10" fill="#0891b2" opacity="0.2"/>
+            <text x="10" y="5" text-anchor="middle" font-size="11" font-weight="900" fill="#0891b2">2</text>
+            <text x="32" y="5" font-size="13" font-weight="600" fill="#374151">여러 개 메시지 쌓이면 더 잠수</text>
+          </g>
+        
+          <g transform="translate(30, 259)">
+            <circle cx="10" cy="0" r="10" fill="#0891b2" opacity="0.2"/>
+            <text x="10" y="5" text-anchor="middle" font-size="11" font-weight="900" fill="#0891b2">3</text>
+            <text x="32" y="5" font-size="13" font-weight="600" fill="#374151">진짜 급한 일엔 전화가 빠름</text>
+          </g>
+        
+          <g transform="translate(30, 301)">
+            <circle cx="10" cy="0" r="10" fill="#0891b2" opacity="0.2"/>
+            <text x="10" y="5" text-anchor="middle" font-size="11" font-weight="900" fill="#0891b2">4</text>
+            <text x="32" y="5" font-size="13" font-weight="600" fill="#374151">잠수 후 복귀 때 상세 설명</text>
+          </g>
+        
+      </g>
+    
+      <g transform="translate(620, 510)">
+        <rect width="520" height="360" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="360" rx="4" fill="#d97706"/>
+        <text x="30" y="45" font-size="24" font-weight="900" fill="#d97706">📢 답정너형</text>
+        <text x="30" y="72" font-size="13" font-weight="700" fill="#6b7280">ENTJ · ESTJ · ENTP · ESTP</text>
+
+        <rect x="30" y="90" width="460" height="55" rx="12" fill="#d97706" opacity="0.08"/>
+        <text x="45" y="120" font-size="13" font-weight="700" fill="#d97706">예시 대화</text>
+        <text x="45" y="138" font-size="12" font-weight="500" fill="#374151">"어때?" → 이미 결정된 답 공유</text>
+
+        
+          <g transform="translate(30, 175)">
+            <circle cx="10" cy="0" r="10" fill="#d97706" opacity="0.2"/>
+            <text x="10" y="5" text-anchor="middle" font-size="11" font-weight="900" fill="#d97706">1</text>
+            <text x="32" y="5" font-size="13" font-weight="600" fill="#374151">결정된 안건만 톡으로 확인</text>
+          </g>
+        
+          <g transform="translate(30, 217)">
+            <circle cx="10" cy="0" r="10" fill="#d97706" opacity="0.2"/>
+            <text x="10" y="5" text-anchor="middle" font-size="11" font-weight="900" fill="#d97706">2</text>
+            <text x="32" y="5" font-size="13" font-weight="600" fill="#374151">불필요한 안부 대화 지양</text>
+          </g>
+        
+          <g transform="translate(30, 259)">
+            <circle cx="10" cy="0" r="10" fill="#d97706" opacity="0.2"/>
+            <text x="10" y="5" text-anchor="middle" font-size="11" font-weight="900" fill="#d97706">3</text>
+            <text x="32" y="5" font-size="13" font-weight="600" fill="#374151">실행 관련은 즉답</text>
+          </g>
+        
+          <g transform="translate(30, 301)">
+            <circle cx="10" cy="0" r="10" fill="#d97706" opacity="0.2"/>
+            <text x="10" y="5" text-anchor="middle" font-size="11" font-weight="900" fill="#d97706">4</text>
+            <text x="32" y="5" font-size="13" font-weight="600" fill="#374151">감정 대화는 대면 선호</text>
+          </g>
+        
+      </g>
+    
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 카톡 스타일 리포트</text>
+</svg>

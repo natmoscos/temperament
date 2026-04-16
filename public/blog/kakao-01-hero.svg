@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <defs>
+    <linearGradient id="hBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff9e6"/>
+      <stop offset="100%" stop-color="#fffdf5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#hBg)"/>
+
+  <!-- Speech bubbles scattered background -->
+  <g opacity="0.35">
+    <rect x="120" y="160" width="260" height="62" rx="28" fill="#fee500" stroke="#ffc107" stroke-width="2"/>
+    <text x="250" y="200" text-anchor="middle" font-size="22" font-weight="700" fill="#3c1e1e">지금 뭐해? 😊</text>
+
+    <rect x="820" y="230" width="240" height="62" rx="28" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+    <text x="940" y="270" text-anchor="middle" font-size="22" font-weight="700" fill="#374151">.........</text>
+
+    <rect x="150" y="700" width="220" height="62" rx="28" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+    <text x="260" y="740" text-anchor="middle" font-size="22" font-weight="700" fill="#374151">ㅇㅋ</text>
+
+    <rect x="820" y="660" width="280" height="62" rx="28" fill="#fee500" stroke="#ffc107" stroke-width="2"/>
+    <text x="960" y="700" text-anchor="middle" font-size="22" font-weight="700" fill="#3c1e1e">ㅋㅋㅋㅋㅋㅋ 🤣</text>
+  </g>
+
+  <!-- Center brand card -->
+  <rect x="180" y="330" width="840" height="280" rx="32" fill="#ffffff" stroke="#ffc107" stroke-width="3"/>
+  <text x="600" y="400" text-anchor="middle" font-size="22" font-weight="700" fill="#ffc107">192TYPES · KAKAO REPORT 2026</text>
+  <text x="600" y="475" text-anchor="middle" font-size="52" font-weight="900" fill="#171717">MBTI 카톡 스타일</text>
+  <text x="600" y="525" text-anchor="middle" font-size="28" font-weight="700" fill="#374151">답장 속도 · 이모티콘 · 대화 패턴 16유형</text>
+  <text x="600" y="580" text-anchor="middle" font-size="17" font-weight="600" fill="#6b7280">즉답형 · 생각형 · 잠수형 · 답정너형 4가지 카톡 DNA</text>
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 카톡 스타일 리포트</text>
+</svg>

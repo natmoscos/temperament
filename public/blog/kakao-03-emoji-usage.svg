@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#fafafa"/>
+
+  <text x="600" y="50" text-anchor="middle" font-size="30" font-weight="800" fill="#171717">16유형 이모티콘 사용 패턴</text>
+  <text x="600" y="80" text-anchor="middle" font-size="14" font-weight="500" fill="#6b7280">4기질별 카톡 이모지·이모티콘 사용 공식 · 네 유형 확인해봐</text>
+
+  
+      <g transform="translate(60, 120)">
+        <rect width="1080" height="165" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="165" rx="4" fill="#0891b2"/>
+        <text x="32" y="40" font-size="24" font-weight="900" fill="#0891b2">NT 분석가형</text>
+        <text x="32" y="68" font-size="13" font-weight="700" fill="#6b7280">INTJ · INTP · ENTJ · ENTP</text>
+
+        <!-- Emoji samples -->
+        
+          <g transform="translate(32, 90)">
+            <rect width="95" height="50" rx="12" fill="#0891b2" opacity="0.1"/>
+            <text x="47" y="34" text-anchor="middle" font-size="22" font-weight="800" fill="#0891b2">.</text>
+          </g>
+        
+          <g transform="translate(142, 90)">
+            <rect width="95" height="50" rx="12" fill="#0891b2" opacity="0.1"/>
+            <text x="47" y="34" text-anchor="middle" font-size="22" font-weight="800" fill="#0891b2">ㅇㅇ</text>
+          </g>
+        
+          <g transform="translate(252, 90)">
+            <rect width="95" height="50" rx="12" fill="#0891b2" opacity="0.1"/>
+            <text x="47" y="34" text-anchor="middle" font-size="22" font-weight="800" fill="#0891b2">ㅇㅋ</text>
+          </g>
+        
+          <g transform="translate(362, 90)">
+            <rect width="95" height="50" rx="12" fill="#0891b2" opacity="0.1"/>
+            <text x="47" y="34" text-anchor="middle" font-size="22" font-weight="800" fill="#0891b2">🤔</text>
+          </g>
+        
+          <g transform="translate(472, 90)">
+            <rect width="95" height="50" rx="12" fill="#0891b2" opacity="0.1"/>
+            <text x="47" y="34" text-anchor="middle" font-size="22" font-weight="800" fill="#0891b2">…</text>
+          </g>
+        
+
+        <text x="620" y="105" font-size="15" font-weight="800" fill="#374151">이모티콘 거의 無 · 마침표 하나</text>
+        <text x="620" y="135" font-size="13" font-weight="500" fill="#6b7280">ENTP만 예외적으로 밈·짤 많이 써</text>
+      </g>
+    
+      <g transform="translate(60, 305)">
+        <rect width="1080" height="165" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="165" rx="4" fill="#e11d48"/>
+        <text x="32" y="40" font-size="24" font-weight="900" fill="#e11d48">NF 이상주의형</text>
+        <text x="32" y="68" font-size="13" font-weight="700" fill="#6b7280">INFJ · INFP · ENFJ · ENFP</text>
+
+        <!-- Emoji samples -->
+        
+          <g transform="translate(32, 90)">
+            <rect width="95" height="50" rx="12" fill="#e11d48" opacity="0.1"/>
+            <text x="47" y="34" text-anchor="middle" font-size="22" font-weight="800" fill="#e11d48">🥺</text>
+          </g>
+        
+          <g transform="translate(142, 90)">
+            <rect width="95" height="50" rx="12" fill="#e11d48" opacity="0.1"/>
+            <text x="47" y="34" text-anchor="middle" font-size="22" font-weight="800" fill="#e11d48">🥹</text>
+          </g>
+        
+          <g transform="translate(252, 90)">
+            <rect width="95" height="50" rx="12" fill="#e11d48" opacity="0.1"/>
+            <text x="47" y="34" text-anchor="middle" font-size="22" font-weight="800" fill="#e11d48">🫶</text>
+          </g>
+        
+          <g transform="translate(362, 90)">
+            <rect width="95" height="50" rx="12" fill="#e11d48" opacity="0.1"/>
+            <text x="47" y="34" text-anchor="middle" font-size="22" font-weight="800" fill="#e11d48">💖</text>
+          </g>
+        
+          <g transform="translate(472, 90)">
+            <rect width="95" height="50" rx="12" fill="#e11d48" opacity="0.1"/>
+            <text x="47" y="34" text-anchor="middle" font-size="22" font-weight="800" fill="#e11d48">✨</text>
+          </g>
+        
+
+        <text x="620" y="105" font-size="15" font-weight="800" fill="#374151">감정 이모지 폭발 · 공감 이모티콘 필수</text>
+        <text x="620" y="135" font-size="13" font-weight="500" fill="#6b7280">ENFP(나)는 한 메시지에 3개 박아</text>
+      </g>
+    
+      <g transform="translate(60, 490)">
+        <rect width="1080" height="165" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="165" rx="4" fill="#059669"/>
+        <text x="32" y="40" font-size="24" font-weight="900" fill="#059669">SJ 관리자형</text>
+        <text x="32" y="68" font-size="13" font-weight="700" fill="#6b7280">ISTJ · ISFJ · ESTJ · ESFJ</text>
+
+        <!-- Emoji samples -->
+        
+          <g transform="translate(32, 90)">
+            <rect width="95" height="50" rx="12" fill="#059669" opacity="0.1"/>
+            <text x="47" y="34" text-anchor="middle" font-size="22" font-weight="800" fill="#059669">😊</text>
+          </g>
+        
+          <g transform="translate(142, 90)">
+            <rect width="95" height="50" rx="12" fill="#059669" opacity="0.1"/>
+            <text x="47" y="34" text-anchor="middle" font-size="22" font-weight="800" fill="#059669">🙂</text>
+          </g>
+        
+          <g transform="translate(252, 90)">
+            <rect width="95" height="50" rx="12" fill="#059669" opacity="0.1"/>
+            <text x="47" y="34" text-anchor="middle" font-size="22" font-weight="800" fill="#059669">👍</text>
+          </g>
+        
+          <g transform="translate(362, 90)">
+            <rect width="95" height="50" rx="12" fill="#059669" opacity="0.1"/>
+            <text x="47" y="34" text-anchor="middle" font-size="22" font-weight="800" fill="#059669">ㅎㅎ</text>
+          </g>
+        
+          <g transform="translate(472, 90)">
+            <rect width="95" height="50" rx="12" fill="#059669" opacity="0.1"/>
+            <text x="47" y="34" text-anchor="middle" font-size="22" font-weight="800" fill="#059669">ㅋㅋ</text>
+          </g>
+        
+
+        <text x="620" y="105" font-size="15" font-weight="800" fill="#374151">무난한 기본 이모지 · 정중한 어투</text>
+        <text x="620" y="135" font-size="13" font-weight="500" fill="#6b7280">ISFJ는 하트 이모티콘 구매 제일 많아</text>
+      </g>
+    
+      <g transform="translate(60, 675)">
+        <rect width="1080" height="165" rx="20" fill="#ffffff" stroke="#e5e7eb"/>
+        <rect width="8" height="165" rx="4" fill="#d97706"/>
+        <text x="32" y="40" font-size="24" font-weight="900" fill="#d97706">SP 기회포착형</text>
+        <text x="32" y="68" font-size="13" font-weight="700" fill="#6b7280">ISTP · ISFP · ESTP · ESFP</text>
+
+        <!-- Emoji samples -->
+        
+          <g transform="translate(32, 90)">
+            <rect width="95" height="50" rx="12" fill="#d97706" opacity="0.1"/>
+            <text x="47" y="34" text-anchor="middle" font-size="22" font-weight="800" fill="#d97706">ㅋㅋㅋㅋㅋ</text>
+          </g>
+        
+          <g transform="translate(142, 90)">
+            <rect width="95" height="50" rx="12" fill="#d97706" opacity="0.1"/>
+            <text x="47" y="34" text-anchor="middle" font-size="22" font-weight="800" fill="#d97706">🤣</text>
+          </g>
+        
+          <g transform="translate(252, 90)">
+            <rect width="95" height="50" rx="12" fill="#d97706" opacity="0.1"/>
+            <text x="47" y="34" text-anchor="middle" font-size="22" font-weight="800" fill="#d97706">👀</text>
+          </g>
+        
+          <g transform="translate(362, 90)">
+            <rect width="95" height="50" rx="12" fill="#d97706" opacity="0.1"/>
+            <text x="47" y="34" text-anchor="middle" font-size="22" font-weight="800" fill="#d97706">GIF</text>
+          </g>
+        
+          <g transform="translate(472, 90)">
+            <rect width="95" height="50" rx="12" fill="#d97706" opacity="0.1"/>
+            <text x="47" y="34" text-anchor="middle" font-size="22" font-weight="800" fill="#d97706">짤</text>
+          </g>
+        
+
+        <text x="620" y="105" font-size="15" font-weight="800" fill="#374151">GIF·짤 활용 · ㅋㅋㅋ 연속 최강</text>
+        <text x="620" y="135" font-size="13" font-weight="500" fill="#6b7280">ESFP는 움직이는 이모티콘 결제왕</text>
+      </g>
+    
+  
+<text x="1180" y="892" text-anchor="end" font-size="10" font-weight="500" fill="#9ca3af" opacity="0.85">192types.co.kr · 카톡 스타일 리포트</text>
+</svg>
