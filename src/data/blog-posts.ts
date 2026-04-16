@@ -22,6 +22,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['MBTI 경제학', 'MBTI 소비', 'MBTI 재테크', 'MBTI 투자', 'MBTI 돈 관리', '성격 유형 경제'],
     category: 'mbti-economics',
     publishDate: '2026-04-16',
+    thumbnail: '/blog/thumb-mbti-economics-intro.webp',
     relatedTypes: ['INTJ', 'ENTP', 'ISFJ', 'ESFP'],
     sections: [
       { heading: 'MBTI로 돈 얘기, 이게 왜 중요한가',
@@ -925,6 +926,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['MBTI 궁합', 'MBTI 궁합 순위', 'MBTI 최고 궁합', 'MBTI 연애 궁합', 'MBTI 커플'],
     category: 'compatibility',
     publishDate: '2026-04-01',
+    thumbnail: '/blog/thumb-mbti-compatibility-ranking.webp',
     relatedTypes: ['INFP', 'ENFJ', 'INTP', 'ENTJ', 'ENFP', 'INTJ'],
     sections: [
       { heading: '성격 유형 궁합, 어떻게 판단할까?',
@@ -956,6 +958,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['MBTI 연애', 'MBTI 연애 스타일', 'MBTI 유형별 연애', 'MBTI 사랑', 'ENFJ 연애', 'INFP 연애'],
     category: 'mbti',
     publishDate: '2026-04-02',
+    thumbnail: '/blog/thumb-mbti-love-style-all-types.webp',
     relatedTypes: ['INFJ', 'ENFP', 'ISFP', 'ESTP'],
     sections: [
       { heading: '성격 유형으로 연애 스타일이 정말 달라질까?',
@@ -1008,6 +1011,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['MBTI 직업', 'MBTI 직업 추천', 'MBTI 커리어', 'MBTI 적성', 'MBTI 직업 테스트'],
     category: 'career',
     publishDate: '2026-04-03',
+    thumbnail: '/blog/thumb-mbti-career-guide.webp',
     sections: [
       { heading: '성격 유형과 직업, 정말 관련이 있을까?',
         content: 'Isabel Briggs Myers는 저서 \'Gifts Differing\'(1980)에서 특정 MBTI 유형이 특정 직업군에서 높은 만족도를 보이는 경향이 있음을 제시했습니다. 하지만 "INTJ는 과학자가 돼야 한다"처럼 단순화하면 안 됩니다.\n\n직업 만족도를 결정하는 것은 "무슨 일을 하느냐"보다 "어떤 환경에서 일하느냐"입니다. 같은 마케터라도 ENFP에게는 자유로운 스타트업이, ESTJ에게는 체계적인 대기업이 맞습니다.' },
@@ -1034,6 +1038,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['MBTI 한계', 'MBTI 정확도', '192가지 성격 유형', 'MBTI 기질론', 'MBTI 보완'],
     category: 'guide',
     publishDate: '2026-03-25',
+    thumbnail: '/blog/thumb-mbti-vs-temperament-192-types.webp',
     sections: [
       { heading: '같은 ENFJ인데 왜 이렇게 다를까?',
         content: 'MBTI 커뮤니티에서 자주 보이는 질문입니다. "저도 ENFJ인데 저는 안 그런데요?" 같은 유형인데 왜 다르게 행동하는 걸까요?\n\n그 답은 MBTI에 빠져있는 한 가지 차원에 있습니다. 바로 "신경증(Neuroticism)" — 감정적 안정성입니다. Big Five 성격 모델의 5가지 요인 중 MBTI가 가장 명확하게 다루지 못하는 축입니다. (MBTI의 네 가지 선호 지표는 Big Five의 외향성, 개방성, 우호성, 성실성과 부분적으로 대응되지만, 그 대응도 완전하지는 않습니다.)\n\n히포크라테스의 기질론이 바로 이 빈자리를 채워줍니다.' },
@@ -1108,6 +1113,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['외향성', '내향성', '도파민', '뇌과학', '신경과학'],
     category: 'science',
     publishDate: '2026-04-06',
+    thumbnail: '/blog/thumb-extraversion-introversion-neuroscience.webp',
     sections: [
       { heading: '외향성-내향성 구분의 과학적 근거',
         content: 'Jung이 1921년 \'Psychological Types\'에서 처음 제안한 외향성-내향성 개념은 이후 100년간 성격 심리학의 핵심 축으로 자리 잡았습니다. 그러나 이 구분이 단순한 이론적 분류가 아니라 실제 뇌의 작동 방식에 기반한다는 사실이 현대 신경과학에 의해 밝혀지고 있습니다. Eysenck는 1967년 피질 각성(cortical arousal) 이론을 통해 내향인이 외향인보다 기저 각성 수준이 높다고 주장하며, 성격의 생물학적 기반 연구의 문을 열었습니다.' },
@@ -1134,6 +1140,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['직장', 'MBTI 궁합', '팀워크', '업무 스타일'],
     category: 'compatibility',
     publishDate: '2026-04-06',
+    thumbnail: '/blog/thumb-workplace-mbti-compatibility.webp',
     relatedTypes: ['ESTJ', 'INFP', 'ENTJ', 'ISFJ'],
     sections: [
       { heading: '직장 궁합은 연애 궁합과 다르다',
@@ -1161,6 +1168,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['스트레스', '기질', '대처 방식', '신경증'],
     category: 'psychology',
     publishDate: '2026-04-06',
+    thumbnail: '/blog/thumb-temperament-stress-response.webp',
     sections: [
       { heading: '스트레스 반응은 성격에 따라 다르다',
         content: 'Lazarus와 Folkman은 1984년 저서 \'Stress, Appraisal, and Coping\'에서 스트레스란 객관적 사건이 아니라 개인의 인지적 평가(appraisal)에 의해 결정된다고 주장했습니다. 동일한 상황에서도 어떤 사람은 위협으로, 어떤 사람은 도전으로 인식합니다. 이 인지적 평가의 차이에 기질이 깊이 관여합니다. Eysenck의 성격 이론에서 신경증(Neuroticism) 차원이 높은 기질(담즙질, 우울질)은 부정적 사건에 대한 정서적 반응이 더 강하고 지속적인 경향을 보입니다.' },
@@ -1187,6 +1195,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['ENFP', 'INFJ', '궁합', '연애', '인지기능'],
     category: 'compatibility',
     publishDate: '2026-04-07',
+    thumbnail: '/blog/thumb-enfp-infj-compatibility-analysis.webp',
     relatedTypes: ['ENFP', 'INFJ'],
     sections: [
       { heading: 'ENFP-INFJ 궁합의 이론적 배경',
@@ -1214,6 +1223,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['리더십', '기질', '리더 유형', '감성지능'],
     category: 'career',
     publishDate: '2026-04-07',
+    thumbnail: '/blog/thumb-temperament-leadership-styles.webp',
     sections: [
       { heading: '리더십과 기질의 관계',
         content: '효과적인 리더십에 단일한 정답은 없습니다. Daniel Goleman은 2002년 저서 \'Primal Leadership\'에서 비전형, 코칭형, 관계형, 민주형, 선도형, 지시형이라는 6가지 리더십 스타일을 제시하며, 상황에 따라 스타일을 전환할 수 있는 "감성지능(emotional intelligence)"이 핵심 리더 역량이라고 주장했습니다. 흥미롭게도 히포크라테스가 2,400년 전 관찰한 4가지 기질은 현대 리더십 이론의 스타일 분류와 구조적으로 대응되는 부분이 있습니다.' },
@@ -1240,6 +1250,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['그림자 기능', 'Shadow Functions', 'MBTI', '인지기능', '8기능 모델'],
     category: 'psychology',
     publishDate: '2026-04-07',
+    thumbnail: '/blog/thumb-mbti-shadow-functions-explained.webp',
     sections: [
       { heading: 'Jung의 그림자 개념과 인지기능',
         content: 'Carl Jung은 인간의 정신에 의식적 자아가 억압하거나 인식하지 못하는 어두운 측면이 존재한다고 보았으며, 이를 "그림자(Shadow)"라 명명했습니다. 이 개념은 단순히 부정적 특성만을 가리키는 것이 아니라, 발달하지 않은 잠재력까지 포함합니다. MBTI 맥락에서 그림자 기능은 일반적으로 다루는 4가지 인지기능(주기능, 보조기능, 3차기능, 열등기능) 외에 존재하는 나머지 4가지 기능을 의미합니다.\n\n이 8개 기능 전체를 하나의 모델로 통합한 것이 John Beebe의 8기능 모델입니다.' },
@@ -1266,6 +1277,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['성격 심리학', '역사', '히포크라테스', 'Big Five', '아이젠크'],
     category: 'science',
     publishDate: '2026-04-08',
+    thumbnail: '/blog/thumb-personality-psychology-history.webp',
     sections: [
       { heading: '히포크라테스와 갈레노스: 체액으로 성격을 설명하다',
         content: '기원전 400년경 히포크라테스는 인체의 4가지 체액(혈액, 황담즙, 흑담즙, 점액)의 균형이 건강과 성격을 결정한다고 주장했습니다. 이후 2세기 로마의 의사 갈레노스(Galen)가 이 체액 이론을 체계화하여 다혈질(Sanguine), 담즙질(Choleric), 우울질(Melancholic), 점액질(Phlegmatic)이라는 4가지 기질 유형을 확립했습니다. 체액이 성격을 결정한다는 생리학적 가설은 부정되었지만, 이 네 가지 성격 패턴의 관찰적 타당성은 이후 수천 년간 반복적으로 확인되었습니다.' },
@@ -1292,6 +1304,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['자녀', '기질', '양육', '부모', '아동 발달'],
     category: 'compatibility',
     publishDate: '2026-04-08',
+    thumbnail: '/blog/thumb-understanding-child-temperament.webp',
     sections: [
       { heading: '아이의 기질은 타고난다',
         content: 'Alexander Thomas와 Stella Chess는 1977년 저서 \'Temperament and Development\'에서 뉴욕 종단 연구(New York Longitudinal Study)의 결과를 발표하며, 영아기부터 관찰 가능한 9가지 기질 차원을 제시했습니다. 이들은 활동 수준, 규칙성, 접근-회피 반응, 적응성, 반응 강도, 반응 역치, 기분의 질, 주의 분산, 주의 지속성이라는 차원으로 아동의 기질을 측정했습니다. 이 연구는 양육 방식만이 아니라 아이의 타고난 기질이 발달에 핵심적 역할을 한다는 것을 학술적으로 입증한 중요한 연구입니다.' },
@@ -1318,6 +1331,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['학습', '공부법', 'MBTI', '학습 스타일', '인지기능'],
     category: 'career',
     publishDate: '2026-04-08',
+    thumbnail: '/blog/thumb-personality-type-learning-styles.webp',
     sections: [
       { heading: '왜 같은 방법으로 공부해도 결과가 다를까',
         content: '학습 효과는 지능이나 노력만으로 결정되지 않습니다. David Kolb는 1984년 저서 \'Experiential Learning\'에서 학습이 구체적 경험, 반성적 관찰, 추상적 개념화, 능동적 실험이라는 4단계 순환으로 이루어진다고 제시하며, 개인마다 이 순환에서 선호하는 단계가 다르다고 설명했습니다. 또한 Fleming은 2001년에 VARK 모델을 통해 시각(Visual), 청각(Aural), 읽기/쓰기(Read/Write), 운동감각(Kinesthetic)이라는 4가지 감각적 학습 선호를 분류했습니다. MBTI의 인지기능은 이러한 학습 선호의 인지적 기반을 이해하는 데 유용한 프레임워크를 제공합니다.' },
@@ -1344,6 +1358,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['INFP', 'INFP 특징', 'INFP 유형', '192유형', '기질 차이', 'INFP 성격'],
     category: 'mbti',
     publishDate: '2026-04-09',
+    thumbnail: '/blog/thumb-same-infp-different-temperament.webp',
     relatedTypes: ['INFP'],
     sections: [
       { heading: '한국에서 INFP가 가장 많다는데, 왜 나는 다른 INFP와 다를까',
@@ -1371,6 +1386,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['MBTI 인기 순위', 'MBTI 인기 유형', '2026 MBTI', 'INFP', 'ENFP', 'MBTI 매력'],
     category: 'mbti',
     publishDate: '2026-04-09',
+    thumbnail: '/blog/thumb-popular-mbti-types-2026-temperament.webp',
     sections: [
       { heading: '한국의 MBTI 열풍, 왜 인기 유형 순위에 관심이 집중될까',
         content: '한국은 세계적으로 MBTI 활용도가 가장 높은 나라 중 하나입니다. 채용 면접, 소개팅, 학교 수업까지 MBTI가 일상 깊숙이 자리 잡으면서 "어떤 유형이 가장 많은가"에 대한 관심도 자연스럽게 높아졌습니다. 인기 유형 순위는 단순한 호기심을 넘어, 사회 구성원의 집단적 성격 경향을 이해하는 창구가 됩니다.\n\n다만 여기서 중요한 점은, 같은 유형 안에서도 기질에 따라 전혀 다른 매력이 존재한다는 사실입니다. 192유형 관점에서 보면, 인기 순위 너머의 진짜 다양성이 드러납니다.' },
@@ -1397,6 +1413,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['번아웃', 'MBTI 스트레스', '스트레스 관리', '기질 스트레스', '직장 스트레스', '번아웃 회복'],
     category: 'psychology',
     publishDate: '2026-04-10',
+    thumbnail: '/blog/thumb-mbti-burnout-warning-signs.webp',
     relatedTypes: ['INFJ', 'ENFP', 'INTJ', 'ISFP'],
     sections: [
       { heading: '왜 유형마다 번아웃의 모습이 다를까',
@@ -1424,6 +1441,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['ENFP INTJ 궁합', 'MBTI 궁합', 'ENFP 연애', 'INTJ 연애', '192유형 궁합'],
     category: 'compatibility',
     publishDate: '2026-04-10',
+    thumbnail: '/blog/thumb-enfp-intj-compatibility-192types.webp',
     relatedTypes: ['ENFP', 'INTJ'],
     sections: [
       { heading: 'ENFP-INTJ가 "황금 조합"으로 불리는 인지기능적 이유',
@@ -1451,6 +1469,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['MBTI 직업', 'MBTI 직업 추천', '직업 적성', '기질 직업', '커리어 추천', 'MBTI 진로'],
     category: 'career',
     publishDate: '2026-04-10',
+    thumbnail: '/blog/thumb-mbti-career-aptitude-temperament.webp',
     relatedTypes: ['ENTJ', 'INFP', 'ISTP', 'ESFJ'],
     sections: [
       { heading: '왜 성격 유형 직업 추천이 항상 맞지는 않을까',
@@ -1476,6 +1495,7 @@ export const blogPosts: BlogPost[] = [
     keywords: ['MBTI 화났을때', 'MBTI 분노', 'MBTI 화나면', 'MBTI 스트레스', 'MBTI 유형별 화', '화났을때 반응', 'INFP 화', 'INTJ 화', 'ENTJ 분노'],
     category: 'psychology',
     publishDate: '2026-04-06',
+    thumbnail: '/blog/thumb-mbti-anger-style-temperament.webp',
     sections: [
       {
         heading: '왜 같은 성격 유형인데 화내는 방식이 다를까?',
