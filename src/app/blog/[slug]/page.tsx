@@ -57,17 +57,42 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-// 인라인 마크다운 링크 파서: [text](/path) → <Link>, 외부 URL은 <a target="_blank">
-// Pillar-Cluster 내부 링크용. 개행과 공백은 whitespace-pre-line 이 처리.
+// 볼드 마크다운 파서: **텍스트** → <strong>
+// 링크 파서 내부에서 텍스트 chunk를 한 번 더 처리한다.
+function renderBoldInText(text: string, keyPrefix: string): React.ReactNode {
+  const boldPattern = /\*\*([^*]+)\*\*/g;
+  const parts: React.ReactNode[] = [];
+  let last = 0;
+  let m: RegExpExecArray | null;
+  let k = 0;
+  while ((m = boldPattern.exec(text)) !== null) {
+    if (m.index > last) parts.push(text.slice(last, m.index));
+    parts.push(
+      <strong key={`${keyPrefix}-b-${k++}`} className="font-black text-gray-900">
+        {m[1]}
+      </strong>,
+    );
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) parts.push(text.slice(last));
+  return parts.length > 0 ? parts : text;
+}
+
+// 인라인 마크다운 링크 + 볼드 파서
+// - [text](/path) → <Link>
+// - [text](https://...) → <a target="_blank">
+// - **텍스트** → <strong>
+// 개행·공백은 whitespace-pre-line 이 처리.
 function renderContentWithLinks(content: string): React.ReactNode {
-  const pattern = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const linkPattern = /\[([^\]]+)\]\(([^)]+)\)/g;
   const nodes: React.ReactNode[] = [];
   let lastIndex = 0;
   let match: RegExpExecArray | null;
   let key = 0;
-  while ((match = pattern.exec(content)) !== null) {
+  while ((match = linkPattern.exec(content)) !== null) {
     if (match.index > lastIndex) {
-      nodes.push(content.slice(lastIndex, match.index));
+      // 링크 사이 일반 텍스트도 볼드 파싱
+      nodes.push(renderBoldInText(content.slice(lastIndex, match.index), `t-${key}`));
     }
     const [, text, href] = match;
     const isInternal = href.startsWith('/');
@@ -78,7 +103,7 @@ function renderContentWithLinks(content: string): React.ReactNode {
           href={href}
           className="text-indigo-600 font-semibold underline decoration-indigo-200 decoration-2 underline-offset-2 hover:text-indigo-800 hover:decoration-indigo-500 transition"
         >
-          {text}
+          {renderBoldInText(text, `lt-${key}`)}
         </Link>
       ) : (
         <a
@@ -88,13 +113,15 @@ function renderContentWithLinks(content: string): React.ReactNode {
           rel="noopener noreferrer"
           className="text-indigo-600 font-semibold underline decoration-indigo-200 decoration-2 underline-offset-2 hover:text-indigo-800 transition"
         >
-          {text}
+          {renderBoldInText(text, `lt-${key}`)}
         </a>
       )
     );
     lastIndex = match.index + match[0].length;
   }
-  if (lastIndex < content.length) nodes.push(content.slice(lastIndex));
+  if (lastIndex < content.length) {
+    nodes.push(renderBoldInText(content.slice(lastIndex), `t-end`));
+  }
   return nodes.length > 0 ? nodes : content;
 }
 
