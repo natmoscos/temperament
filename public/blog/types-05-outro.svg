@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#faf8f5"/>
+
+  <defs>
+    <linearGradient id="og" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e7490"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#og)"/>
+  <text x="600" y="220" text-anchor="middle" font-size="28" font-weight="700" fill="#cffafe" letter-spacing="6">ONE LINE</text>
+  <text x="100" y="320" font-size="180" font-weight="900" fill="#cffafe" opacity="0.5">&quot;</text>
+  <text x="600" y="440" text-anchor="middle" font-size="62" font-weight="900" fill="#ffffff">MBTI는 하나가 아냐</text>
+  <text x="600" y="525" text-anchor="middle" font-size="62" font-weight="900" fill="#cffafe">네 목적에 맞는</text>
+  <text x="600" y="610" text-anchor="middle" font-size="62" font-weight="900" fill="#ffffff">검사를 고르자</text>
+  <text x="1100" y="680" text-anchor="end" font-size="180" font-weight="900" fill="#cffafe" opacity="0.5">&quot;</text>
+  <line x1="400" y1="760" x2="800" y2="760" stroke="#cffafe" stroke-width="2"/>
+  <text x="600" y="810" text-anchor="middle" font-size="26" font-weight="700" fill="#cffafe">192가지 유형 정밀 검사 — 100문항 무료</text>
+  <text x="600" y="850" text-anchor="middle" font-size="20" font-weight="600" fill="#cffafe" opacity="0.85">192types.co.kr · 100문항 정밀 검사 (무료)</text>
+  
+<text x="1180" y="892" text-anchor="end" font-size="14" font-weight="600" fill="#9ca3af" opacity="0.85">192types.co.kr · 검사 가이드</text>
+</svg>

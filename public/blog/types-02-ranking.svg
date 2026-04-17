@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#faf8f5"/>
+
+  <rect x="0" y="0" width="1200" height="140" fill="#2c3e50"/>
+  <text x="600" y="70" text-anchor="middle" font-size="28" font-weight="700" fill="#fce7f3" letter-spacing="6">TOP RANKING</text>
+  <text x="600" y="115" text-anchor="middle" font-size="42" font-weight="900" fill="#ffffff">대표 MBTI 검사 5가지</text>
+  
+      <g transform="translate(60, 180)">
+        <rect x="0" y="0" width="1080" height="95" rx="18" fill="#ffffff" stroke="#0e7490" stroke-width="2"/>
+        <rect x="0" y="0" width="110" height="95" rx="18 0 0 18" fill="#0e7490"/>
+        <text x="55" y="62" text-anchor="middle" font-size="40" font-weight="900" fill="#ffffff">1</text>
+        <text x="140" y="40" font-size="30" font-weight="900" fill="#1a1a1a">공식 MBTI® (Myers-Briggs)</text>
+        <text x="140" y="72" font-size="22" font-weight="600" fill="#4b5563">1943년 원조 · 93문항 · 유료 15만원+</text>
+        
+        <g transform="translate(920, 47)">
+          <rect x="-70" y="-22" width="140" height="44" rx="22" fill="#0e7490" opacity="0.15"/>
+          <text x="0" y="8" text-anchor="middle" font-size="18" font-weight="900" fill="#0e7490">원조</text>
+        </g>
+        
+      </g>
+    
+      <g transform="translate(60, 295)">
+        <rect x="0" y="0" width="1080" height="95" rx="18" fill="#ffffff" stroke="#0e7490" stroke-width="2"/>
+        <rect x="0" y="0" width="110" height="95" rx="18 0 0 18" fill="#0e7490"/>
+        <text x="55" y="62" text-anchor="middle" font-size="40" font-weight="900" fill="#ffffff">2</text>
+        <text x="140" y="40" font-size="30" font-weight="900" fill="#1a1a1a">16Personalities (NERIS)</text>
+        <text x="140" y="72" font-size="22" font-weight="600" fill="#4b5563">60문항 · 글로벌 무료 · 일부 유료</text>
+        
+        <g transform="translate(920, 47)">
+          <rect x="-70" y="-22" width="140" height="44" rx="22" fill="#0e7490" opacity="0.15"/>
+          <text x="0" y="8" text-anchor="middle" font-size="18" font-weight="900" fill="#0e7490">대중</text>
+        </g>
+        
+      </g>
+    
+      <g transform="translate(60, 410)">
+        <rect x="0" y="0" width="1080" height="95" rx="18" fill="#ffffff" stroke="#0e7490" stroke-width="2"/>
+        <rect x="0" y="0" width="110" height="95" rx="18 0 0 18" fill="#0e7490"/>
+        <text x="55" y="62" text-anchor="middle" font-size="40" font-weight="900" fill="#ffffff">3</text>
+        <text x="140" y="40" font-size="30" font-weight="900" fill="#1a1a1a">192types.com</text>
+        <text x="140" y="72" font-size="22" font-weight="600" fill="#4b5563">100문항 · 기질론 통합 · 전체 무료</text>
+        
+        <g transform="translate(920, 47)">
+          <rect x="-70" y="-22" width="140" height="44" rx="22" fill="#0e7490" opacity="0.15"/>
+          <text x="0" y="8" text-anchor="middle" font-size="18" font-weight="900" fill="#0e7490">정밀</text>
+        </g>
+        
+      </g>
+    
+      <g transform="translate(60, 525)">
+        <rect x="0" y="0" width="1080" height="95" rx="18" fill="#ffffff" stroke="#0e7490" stroke-width="2"/>
+        <rect x="0" y="0" width="110" height="95" rx="18 0 0 18" fill="#0e7490"/>
+        <text x="55" y="62" text-anchor="middle" font-size="40" font-weight="900" fill="#ffffff">4</text>
+        <text x="140" y="40" font-size="30" font-weight="900" fill="#1a1a1a">Keirsey Temperament</text>
+        <text x="140" y="72" font-size="22" font-weight="600" fill="#4b5563">기질 4분류 · 심리학자 Keirsey</text>
+        
+        <g transform="translate(920, 47)">
+          <rect x="-70" y="-22" width="140" height="44" rx="22" fill="#0e7490" opacity="0.15"/>
+          <text x="0" y="8" text-anchor="middle" font-size="18" font-weight="900" fill="#0e7490">학문</text>
+        </g>
+        
+      </g>
+    
+      <g transform="translate(60, 640)">
+        <rect x="0" y="0" width="1080" height="95" rx="18" fill="#ffffff" stroke="#0e7490" stroke-width="2"/>
+        <rect x="0" y="0" width="110" height="95" rx="18 0 0 18" fill="#0e7490"/>
+        <text x="55" y="62" text-anchor="middle" font-size="40" font-weight="900" fill="#ffffff">5</text>
+        <text x="140" y="40" font-size="30" font-weight="900" fill="#1a1a1a">Socionics</text>
+        <text x="140" y="72" font-size="22" font-weight="600" fill="#4b5563">러시아·동유럽 계열 변형</text>
+        
+        <g transform="translate(920, 47)">
+          <rect x="-70" y="-22" width="140" height="44" rx="22" fill="#0e7490" opacity="0.15"/>
+          <text x="0" y="8" text-anchor="middle" font-size="18" font-weight="900" fill="#0e7490">학파</text>
+        </g>
+        
+      </g>
+    
+  
+<text x="1180" y="892" text-anchor="end" font-size="14" font-weight="600" fill="#9ca3af" opacity="0.85">192types.co.kr · 검사 가이드</text>
+</svg>

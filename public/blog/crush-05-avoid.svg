@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#faf8f5"/>
+
+  <rect width="1200" height="900" fill="#faf8f5"/>
+  <rect x="0" y="0" width="1200" height="150" fill="#fee2e2"/>
+  <text x="600" y="70" text-anchor="middle" font-size="40" font-weight="900" fill="#dc2626">⛔ 고백 실패하는 5가지 실수</text>
+  <text x="600" y="115" text-anchor="middle" font-size="24" font-weight="700" fill="#4b5563">성공률 높이는 반대 공식</text>
+
+  
+      <g transform="translate(60, 200)">
+        <rect x="0" y="0" width="520" height="160" rx="20" fill="#ffffff" stroke="#dc2626" stroke-width="3"/>
+        <g transform="translate(50, 80)">
+          <circle cx="0" cy="0" r="38" fill="#dc2626"/>
+          <text x="0" y="15" text-anchor="middle" font-size="44" font-weight="900" fill="#ffffff">✕</text>
+        </g>
+        <text x="110" y="48" font-size="20" font-weight="800" fill="#dc2626" opacity="0.6">NO. 01</text>
+        <text x="110" y="88" font-size="28" font-weight="900" fill="#1a1a1a">과한 이벤트</text>
+        <text x="110" y="125" font-size="21" font-weight="600" fill="#4b5563">상대 부담 = 거절 확률 ↑</text>
+      </g>
+    
+      <g transform="translate(620, 200)">
+        <rect x="0" y="0" width="520" height="160" rx="20" fill="#ffffff" stroke="#dc2626" stroke-width="3"/>
+        <g transform="translate(50, 80)">
+          <circle cx="0" cy="0" r="38" fill="#dc2626"/>
+          <text x="0" y="15" text-anchor="middle" font-size="44" font-weight="900" fill="#ffffff">✕</text>
+        </g>
+        <text x="110" y="48" font-size="20" font-weight="800" fill="#dc2626" opacity="0.6">NO. 02</text>
+        <text x="110" y="88" font-size="28" font-weight="900" fill="#1a1a1a">대중 앞 고백</text>
+        <text x="110" y="125" font-size="21" font-weight="600" fill="#4b5563">거절해도 착한 척 의무 발생</text>
+      </g>
+    
+      <g transform="translate(60, 380)">
+        <rect x="0" y="0" width="520" height="160" rx="20" fill="#ffffff" stroke="#dc2626" stroke-width="3"/>
+        <g transform="translate(50, 80)">
+          <circle cx="0" cy="0" r="38" fill="#dc2626"/>
+          <text x="0" y="15" text-anchor="middle" font-size="44" font-weight="900" fill="#ffffff">✕</text>
+        </g>
+        <text x="110" y="48" font-size="20" font-weight="800" fill="#dc2626" opacity="0.6">NO. 03</text>
+        <text x="110" y="88" font-size="28" font-weight="900" fill="#1a1a1a">일기처럼 긴 글</text>
+        <text x="110" y="125" font-size="21" font-weight="600" fill="#4b5563">3줄 이내 진심이 이김</text>
+      </g>
+    
+      <g transform="translate(620, 380)">
+        <rect x="0" y="0" width="520" height="160" rx="20" fill="#ffffff" stroke="#dc2626" stroke-width="3"/>
+        <g transform="translate(50, 80)">
+          <circle cx="0" cy="0" r="38" fill="#dc2626"/>
+          <text x="0" y="15" text-anchor="middle" font-size="44" font-weight="900" fill="#ffffff">✕</text>
+        </g>
+        <text x="110" y="48" font-size="20" font-weight="800" fill="#dc2626" opacity="0.6">NO. 04</text>
+        <text x="110" y="88" font-size="28" font-weight="900" fill="#1a1a1a">"언제부터" 질문</text>
+        <text x="110" y="125" font-size="21" font-weight="600" fill="#4b5563">대답 강요는 부담</text>
+      </g>
+    
+      <g transform="translate(340, 560)">
+        <rect x="0" y="0" width="520" height="160" rx="20" fill="#ffffff" stroke="#dc2626" stroke-width="3"/>
+        <g transform="translate(50, 80)">
+          <circle cx="0" cy="0" r="38" fill="#dc2626"/>
+          <text x="0" y="15" text-anchor="middle" font-size="44" font-weight="900" fill="#ffffff">✕</text>
+        </g>
+        <text x="110" y="48" font-size="20" font-weight="800" fill="#dc2626" opacity="0.6">NO. 05</text>
+        <text x="110" y="88" font-size="28" font-weight="900" fill="#1a1a1a">답 재촉</text>
+        <text x="110" y="125" font-size="21" font-weight="600" fill="#4b5563">24시간 이상 여유 주기</text>
+      </g>
+    
+  
+<text x="1180" y="892" text-anchor="end" font-size="14" font-weight="600" fill="#9ca3af" opacity="0.85">192types.co.kr · 고백 리포트</text>
+</svg>

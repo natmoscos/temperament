@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#faf8f5"/>
+
+  <rect x="0" y="0" width="1200" height="140" fill="#d97706"/>
+  <text x="600" y="70" text-anchor="middle" font-size="28" font-weight="700" fill="#ffffff" opacity="0.85" letter-spacing="6">COMPARISON</text>
+  <text x="600" y="115" text-anchor="middle" font-size="40" font-weight="900" fill="#ffffff">SP 탐험가형 — 감각·행동·자유</text>
+  
+      <g transform="translate(60, 175)">
+        <rect x="0" y="0" width="1080" height="115" rx="20" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+        <rect x="0" y="0" width="12" height="115" rx="6 0 0 6" fill="#d97706"/>
+        <text x="40" y="62" font-size="52">🔧</text>
+        <text x="125" y="48" font-size="30" font-weight="900" fill="#1a1a1a">ISTP · 장인</text>
+        <text x="125" y="82" font-size="22" font-weight="600" fill="#4b5563">손재주 · 쿨함 · 문제 해결</text>
+      </g>
+    
+      <g transform="translate(60, 310)">
+        <rect x="0" y="0" width="1080" height="115" rx="20" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+        <rect x="0" y="0" width="12" height="115" rx="6 0 0 6" fill="#d97706"/>
+        <text x="40" y="62" font-size="52">🎨</text>
+        <text x="125" y="48" font-size="30" font-weight="900" fill="#1a1a1a">ISFP · 모험가</text>
+        <text x="125" y="82" font-size="22" font-weight="600" fill="#4b5563">감성 예술 · 자기 가치 · 조용</text>
+      </g>
+    
+      <g transform="translate(60, 445)">
+        <rect x="0" y="0" width="1080" height="115" rx="20" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+        <rect x="0" y="0" width="12" height="115" rx="6 0 0 6" fill="#d97706"/>
+        <text x="40" y="62" font-size="52">🏎</text>
+        <text x="125" y="48" font-size="30" font-weight="900" fill="#1a1a1a">ESTP · 사업가</text>
+        <text x="125" y="82" font-size="22" font-weight="600" fill="#4b5563">즉흥 · 대담 · 현장 강함</text>
+      </g>
+    
+      <g transform="translate(60, 580)">
+        <rect x="0" y="0" width="1080" height="115" rx="20" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+        <rect x="0" y="0" width="12" height="115" rx="6 0 0 6" fill="#d97706"/>
+        <text x="40" y="62" font-size="52">🎉</text>
+        <text x="125" y="48" font-size="30" font-weight="900" fill="#1a1a1a">ESFP · 엔터테이너</text>
+        <text x="125" y="82" font-size="22" font-weight="600" fill="#4b5563">밝음 · 사교 · 현재 순간</text>
+      </g>
+    
+  
+<text x="1180" y="892" text-anchor="end" font-size="14" font-weight="600" fill="#9ca3af" opacity="0.85">192types.co.kr · 16유형 요약</text>
+</svg>

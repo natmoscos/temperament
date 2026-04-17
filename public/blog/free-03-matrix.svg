@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#faf8f5"/>
+
+  <rect x="0" y="0" width="1200" height="140" fill="#4338ca"/>
+  <text x="600" y="70" text-anchor="middle" font-size="28" font-weight="700" fill="#ffffff" opacity="0.85" letter-spacing="6">COMPARISON</text>
+  <text x="600" y="115" text-anchor="middle" font-size="40" font-weight="900" fill="#ffffff">검사별 특징 한눈 비교</text>
+  
+      <g transform="translate(60, 175)">
+        <rect x="0" y="0" width="1080" height="115" rx="20" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+        <rect x="0" y="0" width="12" height="115" rx="6 0 0 6" fill="#4338ca"/>
+        <text x="40" y="62" font-size="52">🌍</text>
+        <text x="125" y="48" font-size="30" font-weight="900" fill="#1a1a1a">16Personalities — 글로벌 표준</text>
+        <text x="125" y="82" font-size="22" font-weight="600" fill="#4b5563">세계 3천만 이용 · NERIS 테스트 기반</text>
+      </g>
+    
+      <g transform="translate(60, 310)">
+        <rect x="0" y="0" width="1080" height="115" rx="20" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+        <rect x="0" y="0" width="12" height="115" rx="6 0 0 6" fill="#4338ca"/>
+        <text x="40" y="62" font-size="52">🎯</text>
+        <text x="125" y="48" font-size="30" font-weight="900" fill="#1a1a1a">192types — 기질론 통합</text>
+        <text x="125" y="82" font-size="22" font-weight="600" fill="#4b5563">MBTI × 히포크라테스 4기질 × 3단계 강도</text>
+      </g>
+    
+      <g transform="translate(60, 445)">
+        <rect x="0" y="0" width="1080" height="115" rx="20" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+        <rect x="0" y="0" width="12" height="115" rx="6 0 0 6" fill="#4338ca"/>
+        <text x="40" y="62" font-size="52">⚡</text>
+        <text x="125" y="48" font-size="30" font-weight="900" fill="#1a1a1a">심리스케일 — 간편형</text>
+        <text x="125" y="82" font-size="22" font-weight="600" fill="#4b5563">5분 컷 · 재미로 보기 좋음</text>
+      </g>
+    
+      <g transform="translate(60, 580)">
+        <rect x="0" y="0" width="1080" height="115" rx="20" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+        <rect x="0" y="0" width="12" height="115" rx="6 0 0 6" fill="#4338ca"/>
+        <text x="40" y="62" font-size="52">📜</text>
+        <text x="125" y="48" font-size="30" font-weight="900" fill="#1a1a1a">MBTI® 공식 — 한국형</text>
+        <text x="125" y="82" font-size="22" font-weight="600" fill="#4b5563">유료(15만원+) · 전문가 해석 포함</text>
+      </g>
+    
+  
+<text x="1180" y="892" text-anchor="end" font-size="14" font-weight="600" fill="#9ca3af" opacity="0.85">192types.co.kr · 무료 검사 리포트</text>
+</svg>

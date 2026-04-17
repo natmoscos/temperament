@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#faf8f5"/>
+
+  <rect width="1200" height="900" fill="#fdf6e3"/>
+
+  
+    <circle cx="90" cy="120" r="14" fill="#d4c5a0"/>
+    <circle cx="90" cy="120" r="8" fill="#fdf6e3"/>
+  
+    <circle cx="90" cy="270" r="14" fill="#d4c5a0"/>
+    <circle cx="90" cy="270" r="8" fill="#fdf6e3"/>
+  
+    <circle cx="90" cy="420" r="14" fill="#d4c5a0"/>
+    <circle cx="90" cy="420" r="8" fill="#fdf6e3"/>
+  
+    <circle cx="90" cy="570" r="14" fill="#d4c5a0"/>
+    <circle cx="90" cy="570" r="8" fill="#fdf6e3"/>
+  
+    <circle cx="90" cy="720" r="14" fill="#d4c5a0"/>
+    <circle cx="90" cy="720" r="8" fill="#fdf6e3"/>
+  
+  <line x1="135" y1="60" x2="135" y2="870" stroke="#dc2626" stroke-width="2" opacity="0.5"/>
+  
+    <line x1="150" y1="110" x2="1150" y2="110" stroke="#e8dcc0" stroke-width="1.5"/>
+  
+    <line x1="150" y1="150" x2="1150" y2="150" stroke="#e8dcc0" stroke-width="1.5"/>
+  
+    <line x1="150" y1="190" x2="1150" y2="190" stroke="#e8dcc0" stroke-width="1.5"/>
+  
+    <line x1="150" y1="230" x2="1150" y2="230" stroke="#e8dcc0" stroke-width="1.5"/>
+  
+    <line x1="150" y1="270" x2="1150" y2="270" stroke="#e8dcc0" stroke-width="1.5"/>
+  
+    <line x1="150" y1="310" x2="1150" y2="310" stroke="#e8dcc0" stroke-width="1.5"/>
+  
+    <line x1="150" y1="350" x2="1150" y2="350" stroke="#e8dcc0" stroke-width="1.5"/>
+  
+    <line x1="150" y1="390" x2="1150" y2="390" stroke="#e8dcc0" stroke-width="1.5"/>
+  
+    <line x1="150" y1="430" x2="1150" y2="430" stroke="#e8dcc0" stroke-width="1.5"/>
+  
+    <line x1="150" y1="470" x2="1150" y2="470" stroke="#e8dcc0" stroke-width="1.5"/>
+  
+    <line x1="150" y1="510" x2="1150" y2="510" stroke="#e8dcc0" stroke-width="1.5"/>
+  
+    <line x1="150" y1="550" x2="1150" y2="550" stroke="#e8dcc0" stroke-width="1.5"/>
+  
+    <line x1="150" y1="590" x2="1150" y2="590" stroke="#e8dcc0" stroke-width="1.5"/>
+  
+    <line x1="150" y1="630" x2="1150" y2="630" stroke="#e8dcc0" stroke-width="1.5"/>
+  
+    <line x1="150" y1="670" x2="1150" y2="670" stroke="#e8dcc0" stroke-width="1.5"/>
+  
+    <line x1="150" y1="710" x2="1150" y2="710" stroke="#e8dcc0" stroke-width="1.5"/>
+  
+    <line x1="150" y1="750" x2="1150" y2="750" stroke="#e8dcc0" stroke-width="1.5"/>
+  
+    <line x1="150" y1="790" x2="1150" y2="790" stroke="#e8dcc0" stroke-width="1.5"/>
+  
+    <line x1="150" y1="830" x2="1150" y2="830" stroke="#e8dcc0" stroke-width="1.5"/>
+  
+    <line x1="150" y1="870" x2="1150" y2="870" stroke="#e8dcc0" stroke-width="1.5"/>
+  
+
+  <g transform="translate(800, 75) rotate(5)" opacity="0.6">
+    <rect x="0" y="0" width="160" height="36" fill="#fbbf24" opacity="0.4"/>
+  </g>
+
+  <text x="175" y="130" font-size="58" font-weight="900" fill="#1a1a1a" font-family="'Nanum Pen Script', 'Gamja Flower', 'Jua', cursive, 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+    고윤정 × ISTP 증거 5가지 ✎
+  </text>
+  <text x="175" y="168" font-size="26" font-weight="600" fill="#b76e79" font-family="'Nanum Pen Script', 'Gamja Flower', 'Jua', cursive, 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+    — 본인 발언·동료 증언·행동 패턴 분석
+  </text>
+
+  
+      <g transform="translate(175, 225)">
+        <rect x="0" y="0" width="75" height="75" rx="16" fill="#ec4899"/>
+        <text x="37" y="52" text-anchor="middle" font-size="32" font-weight="900" fill="#ffffff">01</text>
+
+        <text x="105" y="42" font-size="40" font-weight="900" fill="#1a1a1a" font-family="'Nanum Pen Script', 'Gamja Flower', 'Jua', cursive, 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">"생각 많지 않다"</text>
+        <text x="105" y="72" font-size="22" font-weight="600" fill="#4b5563">Ti의 "불필요한 것 제거" 특징</text>
+      </g>
+    
+      <g transform="translate(175, 350)">
+        <rect x="0" y="0" width="75" height="75" rx="16" fill="#ec4899"/>
+        <text x="37" y="52" text-anchor="middle" font-size="32" font-weight="900" fill="#ffffff">02</text>
+
+        <text x="105" y="42" font-size="40" font-weight="900" fill="#1a1a1a" font-family="'Nanum Pen Script', 'Gamja Flower', 'Jua', cursive, 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">"뒤끝 없다·의리"</text>
+        <text x="105" y="72" font-size="22" font-weight="600" fill="#4b5563">ISTP의 Fi 3차 원칙 중심</text>
+      </g>
+    
+      <g transform="translate(175, 475)">
+        <rect x="0" y="0" width="75" height="75" rx="16" fill="#ec4899"/>
+        <text x="37" y="52" text-anchor="middle" font-size="32" font-weight="900" fill="#ffffff">03</text>
+
+        <text x="105" y="42" font-size="40" font-weight="900" fill="#1a1a1a" font-family="'Nanum Pen Script', 'Gamja Flower', 'Jua', cursive, 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">"돌려 말 못 한다"</text>
+        <text x="105" y="72" font-size="22" font-weight="600" fill="#4b5563">직설 화법 = Ti 주기능 전형</text>
+      </g>
+    
+      <g transform="translate(175, 600)">
+        <rect x="0" y="0" width="75" height="75" rx="16" fill="#ec4899"/>
+        <text x="37" y="52" text-anchor="middle" font-size="32" font-weight="900" fill="#ffffff">04</text>
+
+        <text x="105" y="42" font-size="40" font-weight="900" fill="#1a1a1a" font-family="'Nanum Pen Script', 'Gamja Flower', 'Jua', cursive, 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">털털 · 장난 잘 침</text>
+        <text x="105" y="72" font-size="22" font-weight="600" fill="#4b5563">Se가 주는 현장 편안함</text>
+      </g>
+    
+      <g transform="translate(175, 725)">
+        <rect x="0" y="0" width="75" height="75" rx="16" fill="#ec4899"/>
+        <text x="37" y="52" text-anchor="middle" font-size="32" font-weight="900" fill="#ffffff">05</text>
+
+        <text x="105" y="42" font-size="40" font-weight="900" fill="#1a1a1a" font-family="'Nanum Pen Script', 'Gamja Flower', 'Jua', cursive, 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">감정 기복 적음</text>
+        <text x="105" y="72" font-size="22" font-weight="600" fill="#4b5563">Fe 열등 → 안정된 내면</text>
+      </g>
+    
+
+  <g transform="translate(850, 850) rotate(-3)">
+    <text font-size="26" font-weight="700" fill="#b76e79" font-family="'Nanum Pen Script', 'Gamja Flower', 'Jua', cursive, 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+      - 박서연 💕
+    </text>
+  </g>
+  
+<text x="1180" y="892" text-anchor="end" font-size="14" font-weight="600" fill="#9ca3af" opacity="0.85">192types.co.kr · 셀럽 MBTI</text>
+</svg>
