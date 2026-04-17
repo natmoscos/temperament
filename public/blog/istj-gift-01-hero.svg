@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#faf8f5"/>
+
+  <defs>
+    <linearGradient id="heroBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe5ec"/>
+      <stop offset="50%" stop-color="#fce7f3"/>
+      <stop offset="100%" stop-color="#e0bbe4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#heroBg)"/>
+
+  <!-- 상단 카테고리 라벨 -->
+  <g transform="translate(600, 150)">
+    <rect x="-220" y="-38" width="440" height="76" rx="38" fill="#ffffff" opacity="0.7"/>
+    <text x="0" y="14" text-anchor="middle" font-size="28" font-weight="900" fill="#ec4899" letter-spacing="6">ISTJ GIFT GUIDE</text>
+  </g>
+
+  <!-- 거대 메인 타이틀 -->
+  <text x="600" y="360" text-anchor="middle" font-size="96" font-weight="900" fill="#2c3e50">ISTJ 여자친구</text>
+  <text x="600" y="470" text-anchor="middle" font-size="96" font-weight="900" fill="#ec4899">선물 추천</text>
+
+  <!-- 구분선 -->
+  <line x1="500" y1="520" x2="700" y2="520" stroke="#b76e79" stroke-width="5"/>
+
+  <!-- 서브타이틀 -->
+  <text x="600" y="580" text-anchor="middle" font-size="38" font-weight="800" fill="#4b5563">10년 쓸 선물 · 한 번에 성공하는 공식</text>
+
+  <!-- 중간 강조 박스 -->
+  <g transform="translate(600, 670)">
+    <rect x="-380" y="0" width="760" height="90" rx="20" fill="#ffffff" opacity="0.85"/>
+    <text x="0" y="40" text-anchor="middle" font-size="26" font-weight="700" fill="#1a1a1a">실용성 60% × 감성 40%의 황금 비율</text>
+    <text x="0" y="72" text-anchor="middle" font-size="22" font-weight="600" fill="#6b7280">ISTJ 여자 특성 기반 큐레이션 5선 수록</text>
+  </g>
+
+  <!-- 페르소나 크레딧 -->
+  <g transform="translate(600, 810)">
+    <text x="0" y="0" text-anchor="middle" font-size="22" font-weight="700" fill="#b76e79">by. 박서연 (ENFP, 연애 관찰자) × 이준형 (ISTJ, 차장 12년차)</text>
+  </g>
+  
+<text x="1180" y="892" text-anchor="end" font-size="14" font-weight="600" fill="#9ca3af" opacity="0.85">192types.co.kr · 선물 가이드</text>
+</svg>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#faf8f5"/>
+
+  <rect width="1200" height="900" fill="#faf8f5"/>
+
+  <!-- 상단 빨간 경고띠 -->
+  <rect x="0" y="0" width="1200" height="150" fill="#fee2e2"/>
+  <text x="600" y="70" text-anchor="middle" font-size="40" font-weight="900" fill="#dc2626">⛔ 절대 피해야 할 5가지</text>
+  <text x="600" y="115" text-anchor="middle" font-size="24" font-weight="700" fill="#4b5563">ISTJ 여자한테는 이것만은 NO — Ne 열등기능 자극 주의</text>
+
+  <!-- 5가지 X 카드 -->
+  
+      <g transform="translate(60, 200)">
+        <rect x="0" y="0" width="520" height="160" rx="20" fill="#ffffff" stroke="#dc2626" stroke-width="3"/>
+
+        <!-- X 배지 -->
+        <g transform="translate(50, 80)">
+          <circle cx="0" cy="0" r="38" fill="#dc2626"/>
+          <text x="0" y="15" text-anchor="middle" font-size="44" font-weight="900" fill="#ffffff">✕</text>
+        </g>
+
+        <!-- 번호 -->
+        <text x="110" y="48" font-size="20" font-weight="800" fill="#dc2626" opacity="0.6">NO. 01</text>
+
+        <!-- 제목 -->
+        <text x="110" y="88" font-size="30" font-weight="900" fill="#1a1a1a">즉흥 서프라이즈</text>
+
+        <!-- 설명 -->
+        <text x="110" y="125" font-size="22" font-weight="600" fill="#4b5563">예고 없는 이벤트 = 부담</text>
+      </g>
+    
+      <g transform="translate(620, 200)">
+        <rect x="0" y="0" width="520" height="160" rx="20" fill="#ffffff" stroke="#dc2626" stroke-width="3"/>
+
+        <!-- X 배지 -->
+        <g transform="translate(50, 80)">
+          <circle cx="0" cy="0" r="38" fill="#dc2626"/>
+          <text x="0" y="15" text-anchor="middle" font-size="44" font-weight="900" fill="#ffffff">✕</text>
+        </g>
+
+        <!-- 번호 -->
+        <text x="110" y="48" font-size="20" font-weight="800" fill="#dc2626" opacity="0.6">NO. 02</text>
+
+        <!-- 제목 -->
+        <text x="110" y="88" font-size="30" font-weight="900" fill="#1a1a1a">자극적 디자인</text>
+
+        <!-- 설명 -->
+        <text x="110" y="125" font-size="22" font-weight="600" fill="#4b5563">네온·화려한 컬러 NO</text>
+      </g>
+    
+      <g transform="translate(60, 380)">
+        <rect x="0" y="0" width="520" height="160" rx="20" fill="#ffffff" stroke="#dc2626" stroke-width="3"/>
+
+        <!-- X 배지 -->
+        <g transform="translate(50, 80)">
+          <circle cx="0" cy="0" r="38" fill="#dc2626"/>
+          <text x="0" y="15" text-anchor="middle" font-size="44" font-weight="900" fill="#ffffff">✕</text>
+        </g>
+
+        <!-- 번호 -->
+        <text x="110" y="48" font-size="20" font-weight="800" fill="#dc2626" opacity="0.6">NO. 03</text>
+
+        <!-- 제목 -->
+        <text x="110" y="88" font-size="30" font-weight="900" fill="#1a1a1a">본인이 골라야 하는 것</text>
+
+        <!-- 설명 -->
+        <text x="110" y="125" font-size="22" font-weight="600" fill="#4b5563">립스틱 색·옷 사이즈</text>
+      </g>
+    
+      <g transform="translate(620, 380)">
+        <rect x="0" y="0" width="520" height="160" rx="20" fill="#ffffff" stroke="#dc2626" stroke-width="3"/>
+
+        <!-- X 배지 -->
+        <g transform="translate(50, 80)">
+          <circle cx="0" cy="0" r="38" fill="#dc2626"/>
+          <text x="0" y="15" text-anchor="middle" font-size="44" font-weight="900" fill="#ffffff">✕</text>
+        </g>
+
+        <!-- 번호 -->
+        <text x="110" y="48" font-size="20" font-weight="800" fill="#dc2626" opacity="0.6">NO. 04</text>
+
+        <!-- 제목 -->
+        <text x="110" y="88" font-size="30" font-weight="900" fill="#1a1a1a">명품 과시용 브랜드</text>
+
+        <!-- 설명 -->
+        <text x="110" y="125" font-size="22" font-weight="600" fill="#4b5563">불편함 · 부담감 유발</text>
+      </g>
+    
+      <g transform="translate(340, 560)">
+        <rect x="0" y="0" width="520" height="160" rx="20" fill="#ffffff" stroke="#dc2626" stroke-width="3"/>
+
+        <!-- X 배지 -->
+        <g transform="translate(50, 80)">
+          <circle cx="0" cy="0" r="38" fill="#dc2626"/>
+          <text x="0" y="15" text-anchor="middle" font-size="44" font-weight="900" fill="#ffffff">✕</text>
+        </g>
+
+        <!-- 번호 -->
+        <text x="110" y="48" font-size="20" font-weight="800" fill="#dc2626" opacity="0.6">NO. 05</text>
+
+        <!-- 제목 -->
+        <text x="110" y="88" font-size="30" font-weight="900" fill="#1a1a1a">소모성 꽃다발만</text>
+
+        <!-- 설명 -->
+        <text x="110" y="125" font-size="22" font-weight="600" fill="#4b5563">대신 화분 or 드라이플라워</text>
+      </g>
+    
+  
+<text x="1180" y="892" text-anchor="end" font-size="14" font-weight="600" fill="#9ca3af" opacity="0.85">192types.co.kr · 선물 가이드</text>
+</svg>

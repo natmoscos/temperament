@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#faf8f5"/>
+
+  <defs>
+    <linearGradient id="letterBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef9e7"/>
+      <stop offset="100%" stop-color="#fff4d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#letterBg)"/>
+
+  <!-- 편지지 느낌 상단 장식 -->
+  <g transform="translate(600, 110)">
+    <text x="0" y="0" text-anchor="middle" font-size="56" font-weight="900" fill="#b76e79" font-family="'Nanum Pen Script', 'Nanum Myeongjo', 'Gamja Flower', 'Jua', cursive, 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+      ✉ 선물 포장·편지 꿀팁
+    </text>
+    <text x="0" y="45" text-anchor="middle" font-size="24" font-weight="700" fill="#6b7280">
+      — ISTJ가 감동받는 디테일 5가지
+    </text>
+    <line x1="-120" y1="65" x2="120" y2="65" stroke="#b76e79" stroke-width="3"/>
+  </g>
+
+  <!-- 5가지 팁 (편지 형식) -->
+  
+      <g transform="translate(100, 250)">
+        <!-- 번호 원 -->
+        <circle cx="40" cy="40" r="34" fill="#b76e79" opacity="0.15"/>
+        <text x="40" y="52" text-anchor="middle" font-size="32" font-weight="900" fill="#b76e79" font-family="'Nanum Pen Script', 'Nanum Myeongjo', 'Gamja Flower', 'Jua', cursive, 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+          1
+        </text>
+
+        <!-- 제목 -->
+        <text x="110" y="35" font-size="32" font-weight="900" fill="#1a1a1a" font-family="'Nanum Pen Script', 'Nanum Myeongjo', 'Gamja Flower', 'Jua', cursive, 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">포장 컬러</text>
+
+        <!-- 내용 -->
+        <text x="110" y="70" font-size="24" font-weight="600" fill="#4b5563">베이지 · 크림 · 더스티 핑크. 네온 금지.</text>
+
+        <!-- 하단 구분선 (편지지 줄) -->
+        <line x1="0" y1="92" x2="1000" y2="92" stroke="#e8dcc0" stroke-width="1" stroke-dasharray="4,6"/>
+      </g>
+    
+      <g transform="translate(100, 365)">
+        <!-- 번호 원 -->
+        <circle cx="40" cy="40" r="34" fill="#b76e79" opacity="0.15"/>
+        <text x="40" y="52" text-anchor="middle" font-size="32" font-weight="900" fill="#b76e79" font-family="'Nanum Pen Script', 'Nanum Myeongjo', 'Gamja Flower', 'Jua', cursive, 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+          2
+        </text>
+
+        <!-- 제목 -->
+        <text x="110" y="35" font-size="32" font-weight="900" fill="#1a1a1a" font-family="'Nanum Pen Script', 'Nanum Myeongjo', 'Gamja Flower', 'Jua', cursive, 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">리본 소재</text>
+
+        <!-- 내용 -->
+        <text x="110" y="70" font-size="24" font-weight="600" fill="#4b5563">실크 or 린넨. 플라스틱 X.</text>
+
+        <!-- 하단 구분선 (편지지 줄) -->
+        <line x1="0" y1="92" x2="1000" y2="92" stroke="#e8dcc0" stroke-width="1" stroke-dasharray="4,6"/>
+      </g>
+    
+      <g transform="translate(100, 480)">
+        <!-- 번호 원 -->
+        <circle cx="40" cy="40" r="34" fill="#b76e79" opacity="0.15"/>
+        <text x="40" y="52" text-anchor="middle" font-size="32" font-weight="900" fill="#b76e79" font-family="'Nanum Pen Script', 'Nanum Myeongjo', 'Gamja Flower', 'Jua', cursive, 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+          3
+        </text>
+
+        <!-- 제목 -->
+        <text x="110" y="35" font-size="32" font-weight="900" fill="#1a1a1a" font-family="'Nanum Pen Script', 'Nanum Myeongjo', 'Gamja Flower', 'Jua', cursive, 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">카드 위치</text>
+
+        <!-- 내용 -->
+        <text x="110" y="70" font-size="24" font-weight="600" fill="#4b5563">선물 위에 올려놓기. 안쪽 숨기기 NO.</text>
+
+        <!-- 하단 구분선 (편지지 줄) -->
+        <line x1="0" y1="92" x2="1000" y2="92" stroke="#e8dcc0" stroke-width="1" stroke-dasharray="4,6"/>
+      </g>
+    
+      <g transform="translate(100, 595)">
+        <!-- 번호 원 -->
+        <circle cx="40" cy="40" r="34" fill="#b76e79" opacity="0.15"/>
+        <text x="40" y="52" text-anchor="middle" font-size="32" font-weight="900" fill="#b76e79" font-family="'Nanum Pen Script', 'Nanum Myeongjo', 'Gamja Flower', 'Jua', cursive, 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+          4
+        </text>
+
+        <!-- 제목 -->
+        <text x="110" y="35" font-size="32" font-weight="900" fill="#1a1a1a" font-family="'Nanum Pen Script', 'Nanum Myeongjo', 'Gamja Flower', 'Jua', cursive, 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">편지 분량</text>
+
+        <!-- 내용 -->
+        <text x="110" y="70" font-size="24" font-weight="600" fill="#4b5563">3~5줄. 과한 미사여구 X, 구체 에피소드 O.</text>
+
+        <!-- 하단 구분선 (편지지 줄) -->
+        <line x1="0" y1="92" x2="1000" y2="92" stroke="#e8dcc0" stroke-width="1" stroke-dasharray="4,6"/>
+      </g>
+    
+      <g transform="translate(100, 710)">
+        <!-- 번호 원 -->
+        <circle cx="40" cy="40" r="34" fill="#b76e79" opacity="0.15"/>
+        <text x="40" y="52" text-anchor="middle" font-size="32" font-weight="900" fill="#b76e79" font-family="'Nanum Pen Script', 'Nanum Myeongjo', 'Gamja Flower', 'Jua', cursive, 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+          5
+        </text>
+
+        <!-- 제목 -->
+        <text x="110" y="35" font-size="32" font-weight="900" fill="#1a1a1a" font-family="'Nanum Pen Script', 'Nanum Myeongjo', 'Gamja Flower', 'Jua', cursive, 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">타이밍</text>
+
+        <!-- 내용 -->
+        <text x="110" y="70" font-size="24" font-weight="600" fill="#4b5563">저녁보다 아침. ISTJ는 하루 종일 여운 즐김.</text>
+
+        <!-- 하단 구분선 (편지지 줄) -->
+        <line x1="0" y1="92" x2="1000" y2="92" stroke="#e8dcc0" stroke-width="1" stroke-dasharray="4,6"/>
+      </g>
+    
+
+  <!-- 사인 -->
+  <g transform="translate(950, 855) rotate(-3)">
+    <text font-size="24" font-weight="700" fill="#b76e79" font-family="'Nanum Pen Script', 'Nanum Myeongjo', 'Gamja Flower', 'Jua', cursive, 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+      from. 박서연 ♡
+    </text>
+  </g>
+  
+<text x="1180" y="892" text-anchor="end" font-size="14" font-weight="600" fill="#9ca3af" opacity="0.85">192types.co.kr · 선물 가이드</text>
+</svg>
