@@ -7,6 +7,7 @@ import { getBlogPostBySlug, getAllSlugsFromNotion } from '@/lib/notion';
 import AdPlaceholder from '@/components/AdPlaceholder';
 import JsonLd from '@/components/JsonLd';
 import BlogShareButtons from '@/components/BlogShareButtons';
+import AffiliateSectionBlock from '@/components/AffiliateSection';
 
 // 1시간마다 자동 갱신 (Notion 콘텐츠 반영)
 export const revalidate = 3600;
@@ -413,6 +414,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         </div>
 
         <AdPlaceholder />
+
+        {/* ── 제휴 제품 추천 섹션 (이준형 PICK 등) ── */}
+        {post.affiliateSection && (
+          <AffiliateSectionBlock section={post.affiliateSection} />
+        )}
 
         {/* 관련 유형 페이지 내부 링크 */}
         {post.relatedTypes && post.relatedTypes.length > 0 && (

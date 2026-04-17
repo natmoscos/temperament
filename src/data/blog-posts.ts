@@ -1,6 +1,30 @@
 // SEO 블로그 콘텐츠 데이터
 // 각 글은 고트래픽 검색 키워드를 타겟팅
 
+import type { AffiliatePlatform } from './affiliate-personas';
+
+// ── 제휴 제품 카드 데이터 ────────────────────────────
+export interface AffiliateProduct {
+  platform: AffiliatePlatform;   // 'coupang' | 'oliveyoung' | 'toss'
+  category: string;              // "공부법 책", "독서대", "플래너" 등
+  categoryIcon: string;          // 큰 이모지 (카드 상단 표시)
+  title: string;                 // 제품 정식명
+  brand?: string;                // 저자·브랜드 (선택)
+  price?: string;                // "14,400원" 등 (선택)
+  priceNote?: string;            // "★ 쿠팡 로켓배송" 등 (선택)
+  url: string;                   // 파트너스 추적 링크
+  personaComment: string;        // 페르소나의 추천 한마디
+}
+
+// ── 제휴 섹션 블록 ────────────────────────────────
+export interface AffiliateSection {
+  title: string;                 // 예: "이준형의 PICK — 공부 효율 세트"
+  personaId: 'lee-junhyung' | 'park-seoyeon';
+  intro: string;                 // 섹션 도입 멘트 (페르소나 목소리)
+  products: AffiliateProduct[];  // 제품 카드 (권장 3개)
+  targetTypes?: string[];        // 대상 유형 (예: ['INTJ', 'INTP'])
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -11,6 +35,7 @@ export interface BlogPost {
   thumbnail?: string;  // optional thumbnail image path (e.g., '/blog/socrates-mbti.jpg')
   sections: { heading: string; content: string; image?: string }[];  // optional image per section
   relatedTypes?: string[];    // 관련 MBTI 유형
+  affiliateSection?: AffiliateSection;  // 하단 제품 추천 섹션 (선택)
 }
 
 export const blogPosts: BlogPost[] = [
@@ -649,6 +674,41 @@ export const blogPosts: BlogPost[] = [
     publishDate: '2026-04-17',
     thumbnail: '/blog/study-01-hero.webp',
     relatedTypes: ['INTJ', 'ISTJ', 'INTP', 'ENTJ', 'ENFP', 'ESFP'],
+    affiliateSection: {
+      title: '공부 효율 세트 — 16유형 공용',
+      personaId: 'lee-junhyung',
+      intro: '결론부터. 공부법은 유형마다 다르지만, 이 3가지는 16유형 누구한테나 본전 이상이에요. 제가 증권사 입사 후 12년간 책상에 올려뒀던 기본 세트입니다. 서연이도 입사 3개월차에 똑같이 추천했고, 1년 빨리 승진했죠.',
+      targetTypes: ['INTJ', 'ISTJ', 'INTP', 'ENTJ', 'INFJ', 'ISFJ', 'ENFP', 'ESFP'],
+      products: [
+        {
+          platform: 'coupang',
+          category: '공부법 책',
+          categoryIcon: '📚',
+          title: '메타인지 학습법',
+          brand: '베스트셀러 공부법 서적',
+          url: 'https://link.coupang.com/a/eq25nO',
+          personaComment: '"공부법의 본질은 내가 뭘 모르는지 아는 것." 후배 30명에게 권했던 책입니다. 초반 이론은 잠깐 지루해도 실전 챕터가 본전을 찾아줘요.',
+        },
+        {
+          platform: 'coupang',
+          category: '독서대',
+          categoryIcon: '📖',
+          title: '스틸리 알루미늄 접이식 독서대',
+          brand: '각도·높이 조절 · 투명 디자인',
+          url: 'https://link.coupang.com/a/eq26DH',
+          personaComment: '제 책상에 10년째 올려둔 모델의 최신 버전입니다. 알루미늄이라 가볍고, 높이·각도 모두 조절돼서 목·허리 피로가 절반으로 줄어요.',
+        },
+        {
+          platform: 'coupang',
+          category: '스터디 플래너',
+          categoryIcon: '📓',
+          title: '모트모트 텐미닛 플래너',
+          brand: '10분 단위 시간 관리 · 국민 플래너',
+          url: 'https://link.coupang.com/a/eq28V7',
+          personaComment: '매년 1월 새로 사는 관례. 저는 13권째 쓰는 중이에요. 10분 단위로 쪼개는 방식이 ISTJ·INTJ의 꾸준 공부 DNA에 완벽히 맞습니다.',
+        },
+      ],
+    },
     sections: [
       {
         heading: '"같이 공부했는데 왜 저는 암기가 안 될까요?"의 진짜 이유',
