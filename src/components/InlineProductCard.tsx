@@ -60,14 +60,23 @@ export default function InlineProductCard({
 
         {/* 카드 본체 — 가로 레이아웃 (모바일 세로) */}
         <div className="flex flex-col sm:flex-row">
-          {/* 좌측 대형 이모지 */}
+          {/* 좌측 제품 이미지 (imageUrl 있으면 사진, 없으면 이모지) */}
           <div
-            className="flex items-center justify-center py-6 sm:py-0 sm:w-36 sm:min-h-[180px] shrink-0"
-            style={{ backgroundColor: `${platform.brandColor}10` }}
+            className="flex items-center justify-center py-4 sm:py-0 sm:w-48 sm:min-h-[220px] shrink-0 overflow-hidden"
+            style={{ backgroundColor: product.imageUrl ? '#ffffff' : `${platform.brandColor}10` }}
           >
-            <span className="text-6xl sm:text-7xl" aria-hidden>
-              {product.categoryIcon}
-            </span>
+            {product.imageUrl ? (
+              <img
+                src={product.imageUrl}
+                alt={product.title}
+                className="w-full h-auto max-h-[220px] object-contain p-2"
+                loading="lazy"
+              />
+            ) : (
+              <span className="text-6xl sm:text-7xl" aria-hidden>
+                {product.categoryIcon}
+              </span>
+            )}
           </div>
 
           {/* 중앙 정보 영역 */}

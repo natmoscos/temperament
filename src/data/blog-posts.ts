@@ -14,6 +14,8 @@ export interface AffiliateProduct {
   priceNote?: string;            // "★ 쿠팡 로켓배송" 등 (선택)
   url: string;                   // 파트너스 추적 링크
   personaComment: string;        // 페르소나의 추천 한마디
+  /** 자체 호스팅 제품 이미지 경로 (예: "/blog/products/perfume.webp"). 없으면 이모지로 폴백. */
+  imageUrl?: string;
 }
 
 // ── 제휴 섹션 블록 ────────────────────────────────
@@ -893,6 +895,7 @@ export const blogPosts: BlogPost[] = [
             title: '이름 각인 실버 목걸이',
             brand: '이니셜·기념일 각인 서비스',
             url: 'https://link.coupang.com/a/eq4eVu',
+            imageUrl: '/blog/products/necklace.webp',
             personaComment:
               '10년 뒤에도 차고 있을 선물. ISTJ는 한 번 맺은 관계·물건과 오래 가는 본능이 강해요. 원칙 4(각인) + 원칙 5(10년)를 동시에 충족하는 가장 안전한 공식입니다.',
           },
@@ -910,6 +913,7 @@ export const blogPosts: BlogPost[] = [
             title: '아뜰리에페이 퍼퓸 마이 스킨 벗 베러 30ml',
             brand: '본인이 절대 안 사는 고급 니치 향수',
             url: 'https://oy.run/jWQ1FZvnMNvzH0',
+            imageUrl: '/blog/products/perfume.webp',
             personaComment:
               '본인이 직접 사기엔 부담스러운 5만원대 니치 향수가 가장 기억에 남아요. ISTJ는 시그니처 향을 오래 쓰는 성향이라 한 번 손에 들어가면 평생 리필합니다. TOP 10 중 2위 그대로 실물 제품.',
           },
@@ -920,6 +924,7 @@ export const blogPosts: BlogPost[] = [
             title: '스탠리 퀜처 텀블러',
             brand: '각인 가능 · 10년 내구성',
             url: 'https://link.coupang.com/a/eq4d2F',
+            imageUrl: '/blog/products/tumbler.webp',
             personaComment:
               '제 아내가 3년째 매일 쓰고 있는 모델. 각인 서비스 추가하면 ISTJ 여자친구 심장 직격. "검증된 브랜드 + 각인" 황금 조합입니다. TOP 10의 3위 제품.',
           },
@@ -937,6 +942,7 @@ export const blogPosts: BlogPost[] = [
             title: '양키캔들 시그니처 세트',
             brand: '20년 스테디셀러 · 장시간 연소',
             url: 'https://link.coupang.com/a/eq4fK8',
+            imageUrl: '/blog/products/candle.webp',
             personaComment:
               '크리스마스·1주년 선물 대표격. 단가는 낮은데 매일 킬 때마다 떠오르는 제품입니다. 공간 관리·루틴을 중시하는 ISTJ가 조용히 감동하는 선물이에요.',
           },
@@ -959,6 +965,7 @@ export const blogPosts: BlogPost[] = [
             title: '록시땅 시어 버터 핸드크림 30ml (카리테 콩포르)',
             brand: '25년 스테디셀러 · 검증된 프리미엄',
             url: 'https://oy.run/sk7FaLoOdU92i6',
+            imageUrl: '/blog/products/handcream.webp',
             personaComment:
               '매일 여러 번 바르면서 매번 준 사람이 떠오르는 선물. 브랜드 신뢰도·내구성·실용성 모두 만점. 박서연도 2년째 같은 제품 재구매 중입니다. 메인 선물에 함께 담아두면 감동이 두 배가 돼요.',
           },
