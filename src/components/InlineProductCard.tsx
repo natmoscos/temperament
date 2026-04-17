@@ -62,14 +62,14 @@ export default function InlineProductCard({
         <div className="flex flex-col sm:flex-row">
           {/* 좌측 제품 이미지 (imageUrl 있으면 사진, 없으면 이모지) */}
           <div
-            className="flex items-center justify-center py-4 sm:py-0 sm:w-48 sm:min-h-[220px] shrink-0 overflow-hidden"
+            className="flex items-center justify-center p-4 sm:w-52 sm:min-h-[240px] shrink-0"
             style={{ backgroundColor: product.imageUrl ? '#ffffff' : `${platform.brandColor}10` }}
           >
             {product.imageUrl ? (
               <img
                 src={product.imageUrl}
                 alt={product.title}
-                className="w-full h-auto max-h-[220px] object-contain p-2"
+                className="w-full h-auto max-h-[200px] object-contain rounded-2xl"
                 loading="lazy"
               />
             ) : (
