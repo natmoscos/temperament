@@ -674,41 +674,8 @@ export const blogPosts: BlogPost[] = [
     publishDate: '2026-04-17',
     thumbnail: '/blog/study-01-hero.webp',
     relatedTypes: ['INTJ', 'ISTJ', 'INTP', 'ENTJ', 'ENFP', 'ESFP'],
-    affiliateSection: {
-      title: '공부 효율 세트 — 16유형 공용',
-      personaId: 'lee-junhyung',
-      intro: '결론부터. 공부법은 유형마다 다르지만, 이 3가지는 16유형 누구한테나 본전 이상이에요. 제가 증권사 입사 후 12년간 책상에 올려뒀던 기본 세트입니다. 서연이도 입사 3개월차에 똑같이 추천했고, 1년 빨리 승진했죠.',
-      targetTypes: ['INTJ', 'ISTJ', 'INTP', 'ENTJ', 'INFJ', 'ISFJ', 'ENFP', 'ESFP'],
-      products: [
-        {
-          platform: 'coupang',
-          category: '공부법 책',
-          categoryIcon: '📚',
-          title: '메타인지 학습법',
-          brand: '베스트셀러 공부법 서적',
-          url: 'https://link.coupang.com/a/eq25nO',
-          personaComment: '"공부법의 본질은 내가 뭘 모르는지 아는 것." 후배 30명에게 권했던 책입니다. 초반 이론은 잠깐 지루해도 실전 챕터가 본전을 찾아줘요.',
-        },
-        {
-          platform: 'coupang',
-          category: '독서대',
-          categoryIcon: '📖',
-          title: '스틸리 알루미늄 접이식 독서대',
-          brand: '각도·높이 조절 · 투명 디자인',
-          url: 'https://link.coupang.com/a/eq26DH',
-          personaComment: '제 책상에 10년째 올려둔 모델의 최신 버전입니다. 알루미늄이라 가볍고, 높이·각도 모두 조절돼서 목·허리 피로가 절반으로 줄어요.',
-        },
-        {
-          platform: 'coupang',
-          category: '스터디 플래너',
-          categoryIcon: '📓',
-          title: '모트모트 텐미닛 플래너',
-          brand: '10분 단위 시간 관리 · 국민 플래너',
-          url: 'https://link.coupang.com/a/eq28V7',
-          personaComment: '매년 1월 새로 사는 관례. 저는 13권째 쓰는 중이에요. 10분 단위로 쪼개는 방식이 ISTJ·INTJ의 꾸준 공부 DNA에 완벽히 맞습니다.',
-        },
-      ],
-    },
+    // 이 글의 제휴 PICK은 category='guide' 기본값(공부 효율 세트)이 자동 적용됨
+    // — src/data/affiliate-category-defaults.ts 참고.
     sections: [
       {
         heading: '"같이 공부했는데 왜 저는 암기가 안 될까요?"의 진짜 이유',
