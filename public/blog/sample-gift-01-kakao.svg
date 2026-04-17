@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#faf8f5"/>
+
+  <!-- 카톡 배경 (하늘색 그라데이션) -->
+  <defs>
+    <linearGradient id="kakaoBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b2c7d9"/>
+      <stop offset="100%" stop-color="#95adc2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#kakaoBg)"/>
+
+  <!-- 상단 카톡 헤더 -->
+  <rect x="0" y="0" width="1200" height="90" fill="#fee500"/>
+  <text x="600" y="55" text-anchor="middle" font-size="30" font-weight="900" fill="#3c1e1e">카톡 · 민지 💛</text>
+  <text x="30" y="55" font-size="28" fill="#3c1e1e" font-weight="700">←</text>
+  <circle cx="1120" cy="45" r="20" fill="#3c1e1e" opacity="0.1"/>
+  <text x="1120" y="52" text-anchor="middle" font-size="20" fill="#3c1e1e" font-weight="700">⋮</text>
+
+  <!-- 민지 아바타 + 첫 메시지 (왼쪽) -->
+  <circle cx="80" cy="180" r="42" fill="#ffdab9"/>
+  <text x="80" y="196" text-anchor="middle" font-size="40">👩</text>
+  <text x="140" y="145" font-size="20" font-weight="700" fill="#3c1e1e">민지</text>
+  <g transform="translate(140, 155)">
+    <rect x="0" y="0" width="720" height="90" rx="24" fill="#ffffff"/>
+    <text x="28" y="40" font-size="26" font-weight="600" fill="#1a1a1a">야 서연아 나 어떻게 해 😭</text>
+    <text x="28" y="74" font-size="26" font-weight="600" fill="#1a1a1a">남친한테 선물 사야 하는데</text>
+  </g>
+
+  <!-- 민지 2번째 메시지 -->
+  <g transform="translate(140, 260)">
+    <rect x="0" y="0" width="800" height="90" rx="24" fill="#ffffff"/>
+    <text x="28" y="40" font-size="26" font-weight="600" fill="#1a1a1a">남친이 ISTJ거든? 뭘 사야</text>
+    <text x="28" y="74" font-size="26" font-weight="600" fill="#1a1a1a">좋아할지 진짜 모르겠어...</text>
+  </g>
+
+  <!-- 내(박서연) 답장 (오른쪽 노랑색) -->
+  <g transform="translate(420, 380)">
+    <rect x="0" y="0" width="680" height="90" rx="24" fill="#fef4c6"/>
+    <text x="28" y="40" font-size="26" font-weight="600" fill="#1a1a1a">오 ISTJ 여자 선물 진짜 쉬워</text>
+    <text x="28" y="74" font-size="26" font-weight="600" fill="#1a1a1a">3원칙만 알면 돼 🎯</text>
+  </g>
+
+  <g transform="translate(620, 490)">
+    <rect x="0" y="0" width="480" height="90" rx="24" fill="#fef4c6"/>
+    <text x="28" y="40" font-size="26" font-weight="600" fill="#1a1a1a">내가 지금 정리해서</text>
+    <text x="28" y="74" font-size="26" font-weight="600" fill="#1a1a1a">보내줄게 ✨</text>
+  </g>
+
+  <!-- 민지 반응 -->
+  <g transform="translate(140, 600)">
+    <rect x="0" y="0" width="380" height="90" rx="24" fill="#ffffff"/>
+    <text x="28" y="40" font-size="26" font-weight="600" fill="#1a1a1a">진짜?? 고마워 ㅠㅠ</text>
+    <text x="28" y="74" font-size="26" font-weight="700" fill="#ec4899">너 천잰가봐 💕</text>
+  </g>
+
+  <!-- 타이핑 중 표시 -->
+  <g transform="translate(140, 710)">
+    <rect x="0" y="0" width="180" height="66" rx="20" fill="#ffffff" opacity="0.95"/>
+    <circle cx="45" cy="33" r="8" fill="#6b7280"/>
+    <circle cx="75" cy="33" r="8" fill="#6b7280" opacity="0.7"/>
+    <circle cx="105" cy="33" r="8" fill="#6b7280" opacity="0.4"/>
+    <text x="145" y="42" font-size="18" font-weight="600" fill="#6b7280">서연 입력중...</text>
+  </g>
+
+  <!-- 하단 제목 띠 -->
+  <rect x="0" y="820" width="1200" height="80" fill="#3c1e1e"/>
+  <text x="600" y="870" text-anchor="middle" font-size="32" font-weight="900" fill="#fee500">ISTJ 여자친구 선물 · 박서연 × 민지</text>
+  
+<text x="1180" y="892" text-anchor="end" font-size="14" font-weight="600" fill="#9ca3af" opacity="0.85">192types.co.kr · 선물 가이드</text>
+</svg>
