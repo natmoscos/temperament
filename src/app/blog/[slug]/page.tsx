@@ -8,6 +8,7 @@ import AdPlaceholder from '@/components/AdPlaceholder';
 import JsonLd from '@/components/JsonLd';
 import BlogShareButtons from '@/components/BlogShareButtons';
 import AffiliateSectionBlock from '@/components/AffiliateSection';
+import InlineProductCard from '@/components/InlineProductCard';
 import { resolveAffiliateSection } from '@/data/affiliate-category-defaults';
 
 // 1시간마다 자동 갱신 (Notion 콘텐츠 반영)
@@ -392,6 +393,19 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   {renderContentWithLinks(section.content)}
                 </div>
               </section>
+
+              {/* ── 섹션 직후 인라인 제휴 제품 카드 ── */}
+              {section.inlineProducts && section.inlineProducts.length > 0 && (
+                <div className="mt-4">
+                  {section.inlineProducts.map((product, pidx) => (
+                    <InlineProductCard
+                      key={`${idx}-${pidx}`}
+                      product={product}
+                      personaId="lee-junhyung"
+                    />
+                  ))}
+                </div>
+              )}
 
               {/* 2번째, 4번째 섹션 뒤에 광고 */}
               {(idx === 1 || idx === 3) && <AdPlaceholder />}

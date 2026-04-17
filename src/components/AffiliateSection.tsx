@@ -149,8 +149,8 @@ export default function AffiliateSectionBlock({ section }: Props) {
         })}
       </div>
 
-      {/* 고지 문구 (플랫폼별 자동 생성) */}
-      <p className="mt-6 text-[11px] text-gray-400 leading-relaxed bg-gray-50 border border-gray-100 rounded-lg p-3">
+      {/* 고지 문구 (플랫폼별 자동 생성) — 검정색으로 가독성 확보 */}
+      <p className="mt-6 text-[12px] text-black font-medium leading-relaxed bg-gray-50 border border-gray-200 rounded-lg p-3">
         {disclosure}
       </p>
     </section>

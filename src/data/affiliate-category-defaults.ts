@@ -128,7 +128,7 @@ const ISTJ_GIRLFRIEND_GIFT_SET: AffiliateSection = {
 
 export const POST_SPECIFIC_SECTIONS: Record<string, AffiliateSection> = {
   'mbti-study-method-guide': STUDY_EFFICIENCY_SET,
-  'istj-girlfriend-gift-guide-2026': ISTJ_GIRLFRIEND_GIFT_SET,
+  // istj-girlfriend-gift-guide-2026은 인라인 배치로 전환 — 각 섹션 inlineProducts 사용.
   // 링크 준비되는 대로 추가:
   // 'mbti-diet-success-formula': DIET_FITNESS_SET,
   // 'mbti-career-success-ranking': CAREER_SELF_GROWTH_SET,
