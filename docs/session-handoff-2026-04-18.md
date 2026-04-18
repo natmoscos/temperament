@@ -56,11 +56,32 @@
 
 ## 다음 세션 우선순위
 
-### 🔴 높음
-1. **기존 34개 긴급 포스트 리라이트** — `node scripts/score-posts.mjs --top 34` 결과 기준
+### 🔴 높음 — 단, AdSense 심사 완료 전에는 연예인 글 건드리지 말 것
+1. **기존 긴급 포스트 리라이트** — `node scripts/score-posts.mjs --top 40` 결과 기준
    - 대부분 2026-03~04-10 초기 글들. 100% "~다." 종결 텍스트북 톤.
+   - **AdSense 심사 중 제외해야 할 슬러그** (톱 25 기준 5개):
+     - `trump-mbti-estp-temperament`
+     - `taylor-swift-mbti-enfj`
+     - `lady-gaga-mbti-infj`
+     - `zendaya-mbti-enfj`
+     - `billie-eilish-mbti-isfp`
+   - 이유: 연예인 사진 저작권 리스크가 심사 중이라, 본문 리라이트도 "변경 감지"로 재검토 트리거할 수 있음. 심사 완료 후 일괄 진행.
+   - 남는 안전한 긴급 포스트 = **약 29개** (non-celebrity)
    - 한 세션에 5~10개씩 쪼개서 진행 권장 (컨텍스트 소모 고려)
    - **트래픽 가중치**: GA/Vercel Analytics 데이터 있으면 방문자 많은 글부터. 없으면 키워드 검색량 큰 글부터.
+
+### 🌟 추천 다음 세션 워크플로우 (병렬 Agent)
+```
+1. session-handoff-2026-04-18.md 읽기
+2. node scripts/score-posts.mjs --top 30 실행, 연예인 글 5개 제외한 리스트 확보
+3. 카테고리별로 5~7개씩 묶음 (compatibility / career / temperament / science 등)
+4. 각 묶음을 별도 Agent에 위임:
+   - 입력: docs/writing-style.md + docs/blog-persona.md + 해당 청크 파일 경로 + 대상 슬러그 목록
+   - 작업: 각 슬러그의 섹션 2~6 중 리스트 패턴만 서사로 리라이트
+   - 출력: Edit 호출로 파일 직접 수정
+5. 본 세션은 검토 + check:posts 실행 + 커밋 역할
+```
+병렬 Agent 활용 시 체감 속도 3~5배 + 본 세션 컨텍스트 보존.
 
 ### 🟡 중간
 2. **홈페이지 다이어트 A/B 효과 측정** — 배포 후 체류시간·검사 시작 전환율 변화 확인
@@ -78,6 +99,20 @@
 - **한국 정서**: Unsplash 스톡 사진 금지 — 커스텀 SVG + Sharp WebP 사용
 - **pre-commit 훅**: `check:posts` 실패 시 커밋 불가. `.husky/pre-commit` 스킵하지 말 것
 - **커밋 메시지 스타일**: 과거 커밋 10개 `git log --oneline -10` 참조. 현재 prefix: `chore:` / `refactor:` / `feat:` / `fix:` / `docs:`
+
+## AdSense 심사 중 안전 원칙 (심사 완료 전 필수)
+
+심사 리스크를 최소화하려면 다음 세션도 이 원칙 유지:
+- ❌ **연예인 사진·연예인 글 본문 수정 금지** — 저작권 재검토 트리거 가능
+- ❌ **사이트 구조 대규모 변경 금지** (네비 추가·카테고리 신설 등) — 이번 세션의 네비 통합은 완료됨
+- ✅ **기존 글 본문 품질 개선은 OK** — 오히려 AdSense 점수에 긍정적
+- ✅ **비-연예인 포스트(일반 MBTI·심리·가이드 글) 리라이트 OK**
+- ✅ **인프라 개선, 버그 수정, 내부 리팩토링 OK**
+
+심사 완료 후에야:
+- 연예인 글 리라이트 재개
+- 새로운 연예인 MBTI 분석 글 추가
+- 연예인 이미지 교체·추가
 
 ## 주요 파일 경로 업데이트
 
