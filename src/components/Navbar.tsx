@@ -52,8 +52,16 @@ const navItems = [
       ]},
     ],
   },
-  { label: '인물투표', href: '/profiles' },
-  { label: '오픈채팅', href: '/community' },
+  {
+    label: '커뮤니티',
+    href: '/community',
+    children: [
+      { group: '커뮤니티', items: [
+        { label: '오픈채팅', href: '/community' },
+        { label: '인물투표', href: '/profiles' },
+      ]},
+    ],
+  },
   { label: '블로그', href: '/blog' },
 ];
 
@@ -182,8 +190,13 @@ export default function Navbar() {
               ))}
             </div>
           ))}
-          <Link href="/profiles" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 rounded-lg">인물투표</Link>
-          <Link href="/community" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 rounded-lg">오픈채팅</Link>
+          <div className="px-3 py-2 text-sm text-gray-700">
+            <p className="font-medium mb-1">커뮤니티</p>
+            <div className="pl-3 space-y-1">
+              <Link href="/community" onClick={() => setMobileOpen(false)} className="block px-2 py-1.5 text-sm text-gray-600 hover:text-indigo-600">오픈채팅</Link>
+              <Link href="/profiles" onClick={() => setMobileOpen(false)} className="block px-2 py-1.5 text-sm text-gray-600 hover:text-indigo-600">인물투표</Link>
+            </div>
+          </div>
           <Link href="/blog" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-sm text-gray-700 hover:bg-indigo-50 rounded-lg">블로그</Link>
         </div>
       )}
