@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#faf8f5"/>
+
+  <text x="600" y="130" text-anchor="middle" font-size="48" font-weight="900" fill="#1a1a1a">16유형 스타벅스 주문 패턴</text>
+  <rect x="500" y="160" width="200" height="6" fill="#6366f1"/>
+  
+        <rect x="100" y="220" width="480" height="260" rx="24" fill="#ffffff" stroke="#6366f1" stroke-width="3"/>
+        <circle cx="150" cy="280" r="30" fill="#6366f1"/>
+        <text x="150" y="288" text-anchor="middle" font-size="28" font-weight="900" fill="#ffffff">NT</text>
+        <text x="200" y="290" font-size="30" font-weight="900" fill="#1a1a1a">효율 극대</text>
+        <foreignObject x="140" y="320" width="400" height="140">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif;font-size:18px;line-height:1.5;color:#4b5563;font-weight:500;">INTJ 콜드브루 고정 · INTP 3분 고민 · ENTJ 커스텀 · ENTP 실험 주문.</div>
+        </foreignObject>
+      
+
+        <rect x="610" y="220" width="480" height="260" rx="24" fill="#ffffff" stroke="#f43f5e" stroke-width="3"/>
+        <circle cx="660" cy="280" r="30" fill="#f43f5e"/>
+        <text x="660" y="288" text-anchor="middle" font-size="28" font-weight="900" fill="#ffffff">NF</text>
+        <text x="710" y="290" font-size="30" font-weight="900" fill="#1a1a1a">경험 구매</text>
+        <foreignObject x="650" y="320" width="400" height="140">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif;font-size:18px;line-height:1.5;color:#4b5563;font-weight:500;">INFJ 시즌 리미티드 · INFP 감성 메뉴 · ENFJ 일행 맞춤 · ENFP 신메뉴 덕후.</div>
+        </foreignObject>
+      
+
+        <rect x="100" y="520" width="480" height="260" rx="24" fill="#ffffff" stroke="#10b981" stroke-width="3"/>
+        <circle cx="150" cy="580" r="30" fill="#10b981"/>
+        <text x="150" y="588" text-anchor="middle" font-size="28" font-weight="900" fill="#ffffff">SJ</text>
+        <text x="200" y="590" font-size="30" font-weight="900" fill="#1a1a1a">루틴 고정</text>
+        <foreignObject x="140" y="620" width="400" height="140">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif;font-size:18px;line-height:1.5;color:#4b5563;font-weight:500;">ISTJ 3년 아메리카노 · ISFJ 매장 단골 · ESTJ 효율 · ESFJ 전원 결제.</div>
+        </foreignObject>
+      
+
+        <rect x="610" y="520" width="480" height="260" rx="24" fill="#ffffff" stroke="#f59e0b" stroke-width="3"/>
+        <circle cx="660" cy="580" r="30" fill="#f59e0b"/>
+        <text x="660" y="588" text-anchor="middle" font-size="28" font-weight="900" fill="#ffffff">SP</text>
+        <text x="710" y="590" font-size="30" font-weight="900" fill="#1a1a1a">즉흥 폭발</text>
+        <foreignObject x="650" y="620" width="400" height="140">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif;font-size:18px;line-height:1.5;color:#4b5563;font-weight:500;">ISTP 가성비 · ISFP 비주얼 · ESTP 프로모션 사냥 · ESFP 함께 나눠 먹기.</div>
+        </foreignObject>
+      
+  
+<text x="1180" y="892" text-anchor="end" font-size="14" font-weight="600" fill="#9ca3af" opacity="0.85">192types.co.kr</text>
+</svg>

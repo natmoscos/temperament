@@ -72,12 +72,14 @@ function extractPosts() {
     for (let i = 0; i < matches.length; i++) {
       const end = matches[i + 1]?.start ?? src.length;
       const body = src.slice(matches[i].start, end);
-      // 본문은 content: 필드에 들어있는 문자열만 사용 (heading, title 제외)
-      const contentRegex = /content:\s*['"]([^'"\\]*(?:\\.[^'"\\]*)*)['"]/g;
+      // 본문은 content: 필드에 들어있는 문자열만 사용 (heading, title 제외).
+      // 단일따옴표·쌍따옴표 문자열을 분리해서 매칭 — 작은따옴표 문자열 안에
+      // 쌍따옴표가 있으면 조기 종료하던 버그 수정.
+      const contentRegex = /content:\s*(?:'([^'\\]*(?:\\.[^'\\]*)*)'|"([^"\\]*(?:\\.[^"\\]*)*)")/g;
       let c;
       const contents = [];
       while ((c = contentRegex.exec(body)) !== null) {
-        contents.push(c[1]);
+        contents.push(c[1] ?? c[2] ?? '');
       }
       const fullText = contents.join('\n\n');
       // title + publishDate 도 수집

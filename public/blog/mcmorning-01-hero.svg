@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#faf8f5"/>
+
+  <defs>
+    <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#hg)" opacity="0.12"/>
+
+  <!-- 배지 -->
+  <rect x="100" y="90" rx="24" width="240" height="48" fill="#ffffff" stroke="#ef4444" stroke-width="2"/>
+  <text x="220" y="122" text-anchor="middle" font-size="18" font-weight="800" fill="#ef4444">🍟 월 63,900 +16% 인기 검색</text>
+
+  <!-- 대형 이모지 -->
+  <text x="1050" y="280" text-anchor="middle" font-size="260">🍳</text>
+
+  <!-- 제목 -->
+  <text x="100" y="420" font-size="78" font-weight="900" fill="#1a1a1a">맥모닝 10:30</text>
+  <text x="100" y="520" font-size="78" font-weight="900" fill="#ef4444">누가 언제 가?</text>
+
+  <!-- 서브 -->
+  <text x="100" y="620" font-size="28" font-weight="600" fill="#4b5563">마감 시간 같은데 MBTI별 도착 시간은 3시간 차이</text>
+
+  <!-- 하단 강조선 -->
+  <rect x="100" y="680" width="200" height="6" fill="#ef4444"/>
+
+<text x="1180" y="892" text-anchor="end" font-size="14" font-weight="600" fill="#9ca3af" opacity="0.85">192types.co.kr</text>
+</svg>
