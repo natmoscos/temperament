@@ -1,14 +1,9 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import JsonLd from '@/components/JsonLd';
-import HeroQuizPreview from '@/components/HeroQuizPreview';
 import LiveTestFeed from '@/components/LiveTestFeed';
-import RoastCarousel from '@/components/RoastCarousel';
-import ElementPreview from '@/components/ElementPreview';
-import RarityTeaser from '@/components/RarityTeaser';
 import ScrollReveal from '@/components/ScrollReveal';
 import TonePreview from '@/components/TonePreview';
-import { TodaysDebateHero } from '@/components/TodaysDebateHero';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://192types.com';
 
@@ -165,130 +160,34 @@ export default function Home() {
           </Link>
         </div>
 
-        {/* 미니 퀴즈 체험 (Zero Friction Hook) */}
-        <HeroQuizPreview />
-
-        {/* 사회적 증거 */}
-        <div className="mt-8 flex flex-col items-center gap-3">
-          <div className="flex items-center gap-3">
-            {[
-              { icon: '🔬', text: 'Eysenck 성격 모델 기반' },
-              { icon: '🧬', text: 'Helen Fisher 신경화학 이론' },
-            ].map((item) => (
-              <div key={item.text} className="flex items-center gap-1.5 px-3 py-1.5 bg-white/5 rounded-lg border border-white/10">
-                <span className="text-sm">{item.icon}</span>
-                <span className="text-xs text-indigo-300/60">{item.text}</span>
-              </div>
-            ))}
-          </div>
-          <p className="text-xs text-indigo-400/50">현대 심리학 + 2,400년 관찰 데이터 통합 분석</p>
-        </div>
+        {/* 사회적 증거 한 줄 */}
+        <p className="mt-8 text-xs text-indigo-400/50">
+          🔬 Eysenck 성격 모델 · 🧬 Helen Fisher 신경화학 · 🏺 2,400년 기질론 통합
+        </p>
       </div>
 
-      {/* ━━━ 도발 섹션 ━━━ */}
+      {/* ━━━ NAS 50% 통계 — 검사 당위성 ━━━ */}
       <div className="w-full max-w-2xl mb-12">
-        <div className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-6 sm:p-8 text-center">
-          <p className="text-2xl sm:text-3xl font-black text-white mb-3 leading-snug">
-            &ldquo;나 진짜 I야? E야?&rdquo;
+        <div className="bg-amber-400/10 border border-amber-400/30 rounded-2xl p-6 sm:p-8 text-center">
+          <span className="text-4xl sm:text-5xl font-black text-amber-300">50%</span>
+          <p className="text-sm sm:text-base text-amber-200/90 mt-2 font-medium leading-relaxed">
+            같은 16가지 유형 검사를 5주 뒤 다시 받으면<br />
+            <strong className="text-white">절반이 다른 유형</strong>을 받습니다.
           </p>
-          <p className="text-sm sm:text-base text-indigo-200/80 leading-relaxed max-w-md mx-auto">
-            16가지 유형에는 빠진 차원이 있습니다.<br />
-            <strong className="text-amber-300">기질(Temperament)</strong>이 그 답입니다.
+          <p className="text-[11px] text-indigo-300/50 mt-3">
+            — 미국 국립과학원(NAS) 1991년 공식 검증 보고서
+          </p>
+          <p className="text-sm text-indigo-100/80 mt-4 max-w-md mx-auto">
+            인지기능 하나만으로는 부족합니다. <strong className="text-amber-300">기질</strong>이 그 빈 자리를 채웁니다.
           </p>
         </div>
       </div>
-
-      {/* ━━━ 오늘의 토론 인물 ━━━ */}
-      <TodaysDebateHero />
-
-      {/* ━━━ 이모지 원소 선택 위젯 ━━━ */}
-      <ElementPreview />
-
-      {/* ━━━ 한 줄 팩폭 캐러셀 ━━━ */}
-      <RoastCarousel />
-
-      {/* ━━━ 학술 근거 섹션 ━━━ */}
-      <div className="w-full max-w-2xl mb-12">
-        <div className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-6 sm:p-8">
-          <h2 className="text-xl sm:text-2xl font-black text-white mb-6 text-center leading-snug">
-            16가지 유형 검사를<br />
-            <span className="text-amber-300">절대 믿으면 안 되는 이유</span>
-          </h2>
-
-          <div className="space-y-4 text-sm sm:text-[15px] text-indigo-100/90 leading-[1.85]">
-            <p>
-              <strong className="text-white">&ldquo;성격 유형은 당신을 정의하지 않는다.&rdquo;</strong>{' '}
-              조직심리학 박사 벤저민 하디는 저서 《Personality Isn&apos;t Permanent》에서 이렇게 단언합니다.
-              네 글자 코드에 자신을 가두는 순간, <strong className="text-amber-300">&ldquo;나는 원래 이런 사람이야&rdquo;라는
-              착각이 시작</strong>됩니다. 그 착각은 성장을 가로막는 족쇄가 됩니다.
-            </p>
-
-            {/* 충격 통계 박스 */}
-            <div className="bg-amber-400/10 border border-amber-400/30 rounded-xl p-4 sm:p-5 my-2">
-              <p className="text-center">
-                <span className="text-3xl sm:text-4xl font-black text-amber-300">50%</span>
-              </p>
-              <p className="text-center text-sm text-amber-200/90 mt-1 font-medium">
-                같은 검사를 5주 뒤 다시 받으면,<br />
-                <strong className="text-white">절반이 다른 유형</strong>을 받습니다.
-              </p>
-              <p className="text-center text-[11px] text-indigo-300/50 mt-2">
-                — 미국 국립과학원(NAS) 1991년 공식 검증 보고서
-              </p>
-            </div>
-
-            <p>
-              &ldquo;분명 I인데 E가 나왔어&rdquo;, &ldquo;T인 줄 알았는데 F래&rdquo;
-              — 이건 당신의 문제가 아닙니다.
-              <strong className="text-amber-300"> 검사 구조 자체의 한계</strong>입니다.
-              인지기능 하나만으로는 감정 반응, 에너지 패턴, 스트레스 행동을 설명할 수 없기 때문입니다.
-              칼 융 본인도 자신의 유형론이 인간 성격의 일부만 다룬다고 인정했습니다.
-            </p>
-
-            <p>
-              그렇다면 <strong className="text-white">빠진 퍼즐 조각은 무엇일까요?</strong>{' '}
-              캘리포니아 주립대 심리학 교수 <strong className="text-white">데이비드 커시(David Keirsey)</strong>가
-              《Please Understand Me》에서 찾아낸 답은 <strong className="text-amber-300">2,400년 역사의 기질론</strong>이었습니다.
-              16가지 유형이 <em>&lsquo;어떻게 생각하는가&rsquo;</em>를 분류한다면,
-              기질은 <em>&lsquo;어떻게 느끼고 반응하는가&rsquo;</em>를 분류합니다.
-              같은 유형이라도 기질이 다르면 <strong className="text-amber-300">완전히 다른 사람</strong>이 됩니다.
-            </p>
-
-            <p>
-              <strong className="text-white">192 성격 유형 검사</strong>는 이 두 축을 통합합니다.
-              16가지 유형이 놓치는 감정의 결과 행동의 온도를 기질이 채워주기에,
-              &ldquo;같은 유형인데 왜 이렇게 다르지?&rdquo;라는 질문에 <strong className="text-amber-300">비로소 답할 수 있습니다.</strong>
-            </p>
-          </div>
-
-          {/* 참고문헌 */}
-          <div className="mt-6 pt-4 border-t border-white/10">
-            <p className="text-[11px] text-indigo-400/50 font-medium mb-2">참고문헌</p>
-            <ul className="text-[11px] text-indigo-400/40 space-y-1">
-              <li>Hardy, B. (2020). <em>Personality Isn&apos;t Permanent.</em> Portfolio/Penguin.</li>
-              <li>National Research Council. (1991). <em>In the Mind&apos;s Eye.</em> National Academy Press.</li>
-              <li>Keirsey, D. (1998). <em>Please Understand Me II.</em> Prometheus Nemesis Book Co.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      {/* ━━━ 희귀도 티저 ━━━ */}
-      <RarityTeaser />
 
       {/* ━━━ 비교 카드 (밝은 영역) ━━━ */}
       <div className="w-full bg-white rounded-t-[2.5rem] pt-12 pb-8 px-4">
         <div className="max-w-2xl mx-auto">
 
-          {/* USP */}
-          <div className="text-center mb-10">
-            <h2 className="text-2xl sm:text-3xl font-black text-gray-900 mb-3">
-              <span className="text-indigo-600">16가지</span> 성격 유형으로는 부족했다
-            </h2>
-            <p className="text-sm text-gray-500">같은 유형이라도 기질에 따라 완전히 달라집니다</p>
-          </div>
-
-          {/* 비교 예시 */}
+          {/* 비교 예시 — 같은 ENFJ 기질별 차이 */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
             <ScrollReveal>
               <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-5 border border-red-100">
@@ -316,27 +215,10 @@ export default function Home() {
             </ScrollReveal>
           </div>
 
-          <div className="text-center mb-10">
+          <div className="text-center mb-12">
             <p className="text-sm text-gray-500 mb-1">같은 ENFJ인데 이렇게 다릅니다</p>
             <p className="text-sm text-gray-400">16가지 성격 유형 × 기질 12조합 = <strong className="text-indigo-600">192가지</strong> 고유한 성격</p>
           </div>
-
-          {/* Feature Cards */}
-          <ScrollReveal>
-            <div className="grid grid-cols-3 gap-3 mb-12">
-              {[
-                { icon: '🧩', title: '16가지 성격 유형', desc: '인지기능 분석', color: 'bg-indigo-50 border-indigo-100' },
-                { icon: '🧬', title: '기질 12조합', desc: '4기질 × 2 조합', color: 'bg-purple-50 border-purple-100' },
-                { icon: '📖', title: '인생 공략집', desc: '맞춤형 가이드', color: 'bg-pink-50 border-pink-100' },
-              ].map((f) => (
-                <div key={f.title} className={`rounded-2xl p-4 sm:p-5 border text-center ${f.color}`}>
-                  <span className="text-2xl block mb-2">{f.icon}</span>
-                  <p className="text-sm font-bold text-gray-800">{f.title}</p>
-                  <p className="text-xs text-gray-400 mt-0.5">{f.desc}</p>
-                </div>
-              ))}
-            </div>
-          </ScrollReveal>
 
           {/* 제공 분석 미리보기 */}
           <ScrollReveal>
@@ -390,12 +272,11 @@ export default function Home() {
           {/* 블로그 미리보기 */}
           <div className="mb-8">
             <h3 className="text-lg font-bold text-gray-800 mb-4 text-center">📖 인기 글</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               {[
                 { href: '/blog/mbti-compatibility-ranking', title: '성격 유형 궁합 순위 TOP 10', tag: '궁합' },
                 { href: '/blog/mbti-love-style-all-types', title: '성격 유형별 연애 스타일 총정리', tag: '성격' },
                 { href: '/blog/four-temperaments-guide', title: '다혈질 담즙질 점액질 우울질 완벽 가이드', tag: '기질론' },
-                { href: '/blog/mbti-career-guide', title: '성격 유형별 직업 추천', tag: '커리어' },
               ].map((item) => (
                 <Link
                   key={item.href}
