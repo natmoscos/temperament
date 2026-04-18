@@ -12,6 +12,8 @@ Allow: /
 Disallow: /api/
 Disallow: /result/
 Disallow: /quick-result
+Disallow: /_next/
+Disallow: /static/
 
 # ── AI / LLM 크롤러 (GEO 허용 정책) ──
 # OpenAI · ChatGPT 검색
@@ -20,18 +22,24 @@ Allow: /
 Disallow: /api/
 Disallow: /result/
 Disallow: /quick-result
+Disallow: /_next/
+Disallow: /static/
 
 User-agent: OAI-SearchBot
 Allow: /
 Disallow: /api/
 Disallow: /result/
 Disallow: /quick-result
+Disallow: /_next/
+Disallow: /static/
 
 User-agent: ChatGPT-User
 Allow: /
 Disallow: /api/
 Disallow: /result/
 Disallow: /quick-result
+Disallow: /_next/
+Disallow: /static/
 
 # Anthropic · Claude
 User-agent: ClaudeBot
@@ -39,18 +47,24 @@ Allow: /
 Disallow: /api/
 Disallow: /result/
 Disallow: /quick-result
+Disallow: /_next/
+Disallow: /static/
 
 User-agent: Claude-Web
 Allow: /
 Disallow: /api/
 Disallow: /result/
 Disallow: /quick-result
+Disallow: /_next/
+Disallow: /static/
 
 User-agent: anthropic-ai
 Allow: /
 Disallow: /api/
 Disallow: /result/
 Disallow: /quick-result
+Disallow: /_next/
+Disallow: /static/
 
 # Perplexity
 User-agent: PerplexityBot
@@ -58,12 +72,16 @@ Allow: /
 Disallow: /api/
 Disallow: /result/
 Disallow: /quick-result
+Disallow: /_next/
+Disallow: /static/
 
 User-agent: Perplexity-User
 Allow: /
 Disallow: /api/
 Disallow: /result/
 Disallow: /quick-result
+Disallow: /_next/
+Disallow: /static/
 
 # Google Gemini / Bard (AI 학습용)
 User-agent: Google-Extended
@@ -71,6 +89,8 @@ Allow: /
 Disallow: /api/
 Disallow: /result/
 Disallow: /quick-result
+Disallow: /_next/
+Disallow: /static/
 
 # Common Crawl (여러 LLM 학습 데이터)
 User-agent: CCBot
@@ -78,6 +98,8 @@ Allow: /
 Disallow: /api/
 Disallow: /result/
 Disallow: /quick-result
+Disallow: /_next/
+Disallow: /static/
 
 # Cohere / You.com / DuckDuckGo AI
 User-agent: cohere-ai
@@ -85,18 +107,24 @@ Allow: /
 Disallow: /api/
 Disallow: /result/
 Disallow: /quick-result
+Disallow: /_next/
+Disallow: /static/
 
 User-agent: YouBot
 Allow: /
 Disallow: /api/
 Disallow: /result/
 Disallow: /quick-result
+Disallow: /_next/
+Disallow: /static/
 
 User-agent: DuckAssistBot
 Allow: /
 Disallow: /api/
 Disallow: /result/
 Disallow: /quick-result
+Disallow: /_next/
+Disallow: /static/
 
 # Amazonbot / Applebot-Extended (AI)
 User-agent: Amazonbot
@@ -104,12 +132,16 @@ Allow: /
 Disallow: /api/
 Disallow: /result/
 Disallow: /quick-result
+Disallow: /_next/
+Disallow: /static/
 
 User-agent: Applebot-Extended
 Allow: /
 Disallow: /api/
 Disallow: /result/
 Disallow: /quick-result
+Disallow: /_next/
+Disallow: /static/
 
 # Meta AI (Llama)
 User-agent: Meta-ExternalAgent
@@ -117,12 +149,16 @@ Allow: /
 Disallow: /api/
 Disallow: /result/
 Disallow: /quick-result
+Disallow: /_next/
+Disallow: /static/
 
 User-agent: FacebookBot
 Allow: /
 Disallow: /api/
 Disallow: /result/
 Disallow: /quick-result
+Disallow: /_next/
+Disallow: /static/
 
 # Mistral
 User-agent: MistralAI-User
@@ -130,6 +166,8 @@ Allow: /
 Disallow: /api/
 Disallow: /result/
 Disallow: /quick-result
+Disallow: /_next/
+Disallow: /static/
 
 # Bytedance / 기타
 User-agent: Bytespider
@@ -137,6 +175,8 @@ Allow: /
 Disallow: /api/
 Disallow: /result/
 Disallow: /quick-result
+Disallow: /_next/
+Disallow: /static/
 
 Sitemap: ${SITE_URL}/sitemap.xml
 
