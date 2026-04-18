@@ -15,12 +15,15 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 # 커밋 전 검증
 
+`.husky/pre-commit` 훅이 `npm run check:posts` 를 자동 실행한다. 에러 나오면 커밋 차단.
+
+수동 실행:
 ```
-npm run check:posts
+npm run check:posts       # 마크다운 볼드 짝, 스톡 이미지, 누락 이미지, SVG 엔티티
+node scripts/score-posts.mjs --top 20   # 리라이트 시급한 포스트 랭킹
 ```
 
-마크다운 볼드 짝, 스톡 이미지 URL, 누락 이미지, SVG 엔티티 오류를 자동 검사한다.
-에러 나오면 반드시 고치고 커밋.
+`score-posts.mjs` 는 docs/writing-style.md 의 금지 패턴 기준으로 "핵심 정리 지수"를 계산한다. 점수 20+ 는 긴급 리라이트, 0 이하는 톤 OK.
 
 # 작업 디렉토리
 
