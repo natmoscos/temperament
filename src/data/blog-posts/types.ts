@@ -49,4 +49,9 @@ export interface BlogPost {
   relatedTypes?: string[];    // 관련 MBTI 유형
   /** 글 하단 "전체 PICK" 섹션 (선택) — 요약 추천이 필요한 경우만. */
   affiliateSection?: AffiliateSection;
+  /**
+   * true 면 검색 엔진 색인 제외 (noindex meta + sitemap 제외).
+   * 품질 리라이트 대기 중이거나 저작권 리스크 있는 글(연예인 분석 등)에 사용.
+   */
+  noindex?: boolean;
 }

@@ -85,12 +85,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   // ── 블로그 글 (높은 우선순위 - SEO 핵심) ──
-  const blogPages: MetadataRoute.Sitemap = blogPosts.map((post) => ({
-    url: `${SITE_URL}/blog/${post.slug}`,
-    lastModified: post.publishDate,
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
-  }));
+  // noindex 처리된 글은 sitemap에서도 제외해 크롤 예산 절약.
+  const blogPages: MetadataRoute.Sitemap = blogPosts
+    .filter((post) => !post.noindex)
+    .map((post) => ({
+      url: `${SITE_URL}/blog/${post.slug}`,
+      lastModified: post.publishDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    }));
 
   // ── MBTI 유형 페이지 ──
   const typePages: MetadataRoute.Sitemap = MBTI_TYPES.map((type) => ({

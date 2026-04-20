@@ -54,6 +54,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: post.description,
       images: [ogImage],
     },
+    // 품질 리라이트 대기 중이거나 저작권 리스크 있는 글은 색인 제외.
+    ...(post.noindex && {
+      robots: {
+        index: false,
+        follow: false,
+        googleBot: { index: false, follow: false },
+      },
+    }),
   };
 }
 
