@@ -2,6 +2,7 @@
 // MBTI + 기질을 분리하지 않고, 하나의 통합된 인생 공략집으로 제공
 
 import { MBTIResult, TemperamentResult } from './types';
+import { generateStrengthsList, generateWeaknessBulletsList } from './profiles-strengths';
 
 // ────────────────────────────────────────────
 // MBTI 축별 기본 특성 데이터 (기질과 결합하기 위한 원자료)
@@ -1024,6 +1025,9 @@ export interface IntegratedProfile {
   humorTheoryInsight: string;
   parentingInsight: string;
   weaknessInsight: string;
+  // 16p 벤치마크: bullet-list 형식의 강점·약점 (스캔성 ↑, SEO ↑)
+  strengths: string[];          // MBTI 5 + 기질 2 = 7개
+  weaknessBullets: string[];    // MBTI 4 + 기질 2 = 6개
   careers: string[];
   bestMatch: string[];
   celebrities: string[];
@@ -1121,6 +1125,8 @@ export function generateIntegratedProfile(
     humorTheoryInsight: humorTheoryNarrative,
     parentingInsight: parentingNarrative,
     weaknessInsight: weaknessNarrative,
+    strengths: generateStrengthsList(mbtiType, tempCode),
+    weaknessBullets: generateWeaknessBulletsList(mbtiType, tempCode),
     careers: mbti.careers,
     bestMatch: mbti.bestMatch,
     celebrities: mbti.celebrities,

@@ -6,6 +6,7 @@ import { PremiumSectionTeaser } from '@/components/PremiumTeaser';
 import AdPlaceholder from '@/components/AdPlaceholder';
 import ToneToggle from '@/components/ToneToggle';
 import CitationBox from '@/components/CitationBox';
+import StrengthsWeaknessesSection from '@/components/StrengthsWeaknessesSection';
 import { temperamentProfiles } from '@/data/profiles-temperament';
 
 export default function PersonalityPage() {
@@ -46,6 +47,15 @@ export default function PersonalityPage() {
           />
         )}
       </Section>
+
+      {/* ━━━ 강점과 약점 (FREE) ━━━ */}
+      {tone !== 'spicy' && (
+        <StrengthsWeaknessesSection
+          strengths={profile.strengths}
+          weaknesses={profile.weaknessBullets}
+          mbtiType={result.mbti.type}
+        />
+      )}
 
       <AdPlaceholder />
 
