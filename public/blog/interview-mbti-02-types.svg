@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#faf8f5"/>
+
+  <text x="600" y="130" text-anchor="middle" font-size="46" font-weight="900" fill="#1a1a1a">유형별 면접 치명 약점</text>
+  <rect x="500" y="160" width="200" height="6" fill="#f43f5e"/>
+  
+      <rect x="100" y="220" width="480" height="260" rx="24" fill="#ffffff" stroke="#6366f1" stroke-width="3"/>
+      <circle cx="150" cy="280" r="30" fill="#6366f1"/>
+      <text x="150" y="288" text-anchor="middle" font-size="22" font-weight="900" fill="#ffffff">NT</text>
+      <text x="200" y="290" font-size="26" font-weight="900" fill="#1a1a1a">분석가형</text>
+      <foreignObject x="140" y="320" width="400" height="140">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif;font-size:17px;line-height:1.5;color:#4b5563;font-weight:500;">논리 강, 감정 약. "왜 우리 회사?" 질문에 IR 보고서처럼 답하면 탈락.</div>
+      </foreignObject>
+    
+
+      <rect x="610" y="220" width="480" height="260" rx="24" fill="#ffffff" stroke="#f43f5e" stroke-width="3"/>
+      <circle cx="660" cy="280" r="30" fill="#f43f5e"/>
+      <text x="660" y="288" text-anchor="middle" font-size="22" font-weight="900" fill="#ffffff">NF</text>
+      <text x="710" y="290" font-size="26" font-weight="900" fill="#1a1a1a">이상주의형</text>
+      <foreignObject x="650" y="320" width="400" height="140">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif;font-size:17px;line-height:1.5;color:#4b5563;font-weight:500;">가치관 강, 성과 숫자 약. 감정 3분 풀고 구체 결과 없으면 기억 안 남음.</div>
+      </foreignObject>
+    
+
+      <rect x="100" y="520" width="480" height="260" rx="24" fill="#ffffff" stroke="#10b981" stroke-width="3"/>
+      <circle cx="150" cy="580" r="30" fill="#10b981"/>
+      <text x="150" y="588" text-anchor="middle" font-size="22" font-weight="900" fill="#ffffff">SJ</text>
+      <text x="200" y="590" font-size="26" font-weight="900" fill="#1a1a1a">관리자형</text>
+      <foreignObject x="140" y="620" width="400" height="140">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif;font-size:17px;line-height:1.5;color:#4b5563;font-weight:500;">안정성 강, 창의성 약. "창의적 경험" 질문 대비: 기존 개선 사례로 재정의.</div>
+      </foreignObject>
+    
+
+      <rect x="610" y="520" width="480" height="260" rx="24" fill="#ffffff" stroke="#f59e0b" stroke-width="3"/>
+      <circle cx="660" cy="580" r="30" fill="#f59e0b"/>
+      <text x="660" y="588" text-anchor="middle" font-size="22" font-weight="900" fill="#ffffff">SP</text>
+      <text x="710" y="590" font-size="26" font-weight="900" fill="#1a1a1a">탐험가형</text>
+      <foreignObject x="650" y="620" width="400" height="140">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif;font-size:17px;line-height:1.5;color:#4b5563;font-weight:500;">순발력 강, 장기계획 약. "5년 후" 질문 멈춤. 미리 대본 외워두기.</div>
+      </foreignObject>
+    
+  
+<text x="1180" y="892" text-anchor="end" font-size="14" font-weight="600" fill="#9ca3af" opacity="0.85">192types.co.kr</text>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#faf8f5"/>
+
+  <defs>
+    <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#hg)" opacity="0.12"/>
+  <rect x="100" y="90" rx="24" width="280" height="48" fill="#ffffff" stroke="#6366f1" stroke-width="2"/>
+  <text x="240" y="122" text-anchor="middle" font-size="18" font-weight="800" fill="#6366f1">💼 취업 시즌 합격 공식</text>
+  <text x="1050" y="280" text-anchor="middle" font-size="260">💼</text>
+  <text x="100" y="420" font-size="78" font-weight="900" fill="#1a1a1a">MBTI 면접</text>
+  <text x="100" y="520" font-size="78" font-weight="900" fill="#6366f1">약점 보완법</text>
+  <text x="100" y="620" font-size="28" font-weight="600" fill="#4b5563">박서연 3번 떨어진 ENFP 실수담 · 이준형 12년 면접관 뷰</text>
+  <rect x="100" y="680" width="200" height="6" fill="#6366f1"/>
+
+<text x="1180" y="892" text-anchor="end" font-size="14" font-weight="600" fill="#9ca3af" opacity="0.85">192types.co.kr</text>
+</svg>
