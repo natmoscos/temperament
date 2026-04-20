@@ -3,6 +3,7 @@
 
 import { MBTIResult, TemperamentResult } from './types';
 import { generateStrengthsList, generateWeaknessBulletsList } from './profiles-strengths';
+import { generateFriendshipNarrative } from './profiles-friendship';
 
 // ────────────────────────────────────────────
 // MBTI 축별 기본 특성 데이터 (기질과 결합하기 위한 원자료)
@@ -1028,6 +1029,8 @@ export interface IntegratedProfile {
   // 16p 벤치마크: bullet-list 형식의 강점·약점 (스캔성 ↑, SEO ↑)
   strengths: string[];          // MBTI 5 + 기질 2 = 7개
   weaknessBullets: string[];    // MBTI 4 + 기질 2 = 6개
+  // 16p 벤치마크: 친구 관계 서사 (MBTI 기본 + 기질 보강)
+  friendshipNarrative: string;  // 5문단
   careers: string[];
   bestMatch: string[];
   celebrities: string[];
@@ -1127,6 +1130,7 @@ export function generateIntegratedProfile(
     weaknessInsight: weaknessNarrative,
     strengths: generateStrengthsList(mbtiType, tempCode),
     weaknessBullets: generateWeaknessBulletsList(mbtiType, tempCode),
+    friendshipNarrative: generateFriendshipNarrative(mbtiType, tempCode),
     careers: mbti.careers,
     bestMatch: mbti.bestMatch,
     celebrities: mbti.celebrities,

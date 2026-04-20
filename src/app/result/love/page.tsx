@@ -88,6 +88,17 @@ export default function LovePage() {
 
       <AdPlaceholder />
 
+      {/* ━━━ 친구 관계 (FREE) — 16p 벤치마크 ━━━ */}
+      {tone !== 'spicy' && (
+        <Section
+          icon="🤝"
+          title="친구 관계 스타일"
+          subtitle="성격 유형과 기질이 만드는 당신만의 우정 패턴"
+        >
+          <Paragraph text={profile.friendshipNarrative} />
+        </Section>
+      )}
+
       {/* ━━━ 궁합 검사 유도 ━━━ */}
       <a
         href="/compatibility"
