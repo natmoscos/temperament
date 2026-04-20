@@ -215,9 +215,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   const cat = categoryLabels[post.category] ?? { label: post.category, color: 'bg-gray-100 text-gray-700' };
 
-  // 관련 글 (같은 카테고리, 현재 글 제외, 최대 3개)
+  // 관련 글 (같은 카테고리, 현재 글 제외, noindex 제외, 최대 3개)
   const relatedPosts = blogPosts
-    .filter((p) => p.slug !== slug)
+    .filter((p) => p.slug !== slug && !p.noindex)
     .sort((a, b) => (a.category === post.category ? -1 : 1) - (b.category === post.category ? -1 : 1))
     .slice(0, 3);
 

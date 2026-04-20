@@ -24,7 +24,9 @@ export function GET() {
   };
 
   // 카테고리별로 글 묶기 (AI가 토픽 구조를 빠르게 이해하도록)
-  const byCategory = blogPosts.reduce<Record<string, typeof blogPosts>>((acc, p) => {
+  // noindex 글은 AI manifest에서도 제외 (검색 인덱스와 일관성 유지)
+  const indexablePosts = blogPosts.filter((p) => !p.noindex);
+  const byCategory = indexablePosts.reduce<Record<string, typeof blogPosts>>((acc, p) => {
     (acc[p.category] ||= []).push(p);
     return acc;
   }, {});

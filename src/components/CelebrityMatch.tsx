@@ -59,8 +59,9 @@ function extractCelebrityInfo(post: typeof blogPosts[number]): CelebrityInfo | n
 }
 
 export default function CelebrityMatch({ mbtiType, temperamentCode }: CelebrityMatchProps) {
-  // 모든 유명인 포스트에서 정보 추출
+  // 모든 유명인 포스트에서 정보 추출 (noindex 글은 AdSense 품질 리스크로 제외)
   const allCelebrities = blogPosts
+    .filter((p) => !p.noindex)
     .map(extractCelebrityInfo)
     .filter((c): c is CelebrityInfo => c !== null);
 

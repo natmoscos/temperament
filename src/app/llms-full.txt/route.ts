@@ -10,7 +10,9 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://192types.com';
 export const revalidate = 3600;
 
 export function GET() {
+  // noindex 글은 AI 본문 덤프에서도 제외 (검색 인덱스와 일관성 유지)
   const posts = blogPosts
+    .filter((p) => !p.noindex)
     .slice()
     .sort((a, b) => (a.publishDate < b.publishDate ? 1 : -1));
 

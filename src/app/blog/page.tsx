@@ -33,7 +33,9 @@ const categoryLabels: Record<string, { label: string; color: string }> = {
 };
 
 export default async function BlogIndexPage() {
-  const blogPosts = await getAllBlogPosts();
+  const allPosts = await getAllBlogPosts();
+  // noindex 글은 블로그 리스트에서도 숨김 (크롤 예산 절약 + 리스트 품질 유지)
+  const blogPosts = allPosts.filter((p) => !p.noindex);
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-12 px-4">
       <JsonLd data={{
