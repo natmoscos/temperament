@@ -817,7 +817,7 @@ export const chunk01: BlogPost[] = [
   // ── 0.979. MBTI 술버릇 완전분석 (취중진담 패턴) ──
   {
     slug: 'mbti-drinking-style-ranking',
-    title: 'MBTI 술버릇 완전분석, 16유형이 취하면 드러나는 진짜 민낯',
+    title: 'MBTI 술버릇 TOP 5, ENFP 3잔 폭발 vs ISTJ 2병 멀쩡 — 누가 제일 돌변해?',
     description: '16유형이 술 마시면 어떻게 변할까? 고백형·통곡형·각성형·무변화형 4대 취중 DNA로 분류해서 정리했어. ENFP 3잔부터 사랑 고백, ISTJ 끝까지 멀쩡... 그 이유를 인지기능으로 풀었어.',
     keywords: ['MBTI 술버릇', 'MBTI 술', '16유형 술', 'MBTI 취중진담', 'MBTI 주사', 'MBTI 음주', 'MBTI 고백', '술자리 MBTI', 'MBTI 취했을 때', '성격별 술'],
     category: 'psychology',
@@ -905,7 +905,7 @@ export const chunk01: BlogPost[] = [
   // ── 0.977. MBTI 짝사랑 고백 스타일 ──
   {
     slug: 'mbti-crush-confession-style',
-    title: 'MBTI 짝사랑 고백 스타일, 16유형이 "좋아해"를 말하는 방식',
+    title: 'MBTI 짝사랑 고백 패턴, ENTJ 2주 직진 vs INFP 평생 짝사랑 — 네 스타일은?',
     description: '너는 짝사랑할 때 어떻게 고백할까? 직진형·편지형·행동형·잠수형 4대 DNA로 정리. ENTJ 2주 만에 "사귀자", INFP 평생 짝사랑으로 끝, INFJ 1년 관찰 후 편지... 네 유형에 맞는 고백 성공 공식까지.',
     keywords: ['MBTI 짝사랑', 'MBTI 고백', 'MBTI 좋아할 때', '짝사랑 MBTI', 'MBTI 고백 방법', '성격별 고백', 'MBTI 연애 시작', 'MBTI 썸', 'MBTI 고백 타이밍', 'MBTI 좋아하는 티'],
     category: 'compatibility',

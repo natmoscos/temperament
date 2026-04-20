@@ -402,7 +402,7 @@ export const chunk06: BlogPost[] = [
   // ── 1.02. 2026 서울커피엑스포 MBTI별 관람 동선 (네이버 60,300 +46) ──
   {
     slug: 'seoul-coffee-expo-2026-mbti-guide',
-    title: '2026 서울커피엑스포, 16유형별 관람 동선과 체류 시간 완전분석',
+    title: '2026 서울커피엑스포 완벽 공략, MBTI별 안 피곤한 관람 루트 (5월 코엑스)',
     description: '2026 서울커피엑스포(5월 개최) 관람 스타일이 MBTI별로 이렇게 달라. NT 효율형, NF 스토리형, SJ 검증형, SP 즉흥형 4기질별 추천 동선과 체류 시간, 부스 선택 팁까지 완전 정리.',
     keywords: ['2026 서울커피엑스포', '서울커피엑스포 MBTI', '커피엑스포 관람', '커피엑스포 동선', 'MBTI 전시회', 'MBTI 커피', '서울커피엑스포 가이드', '커피엑스포 추천', '전시회 MBTI', '커피 MBTI'],
     category: 'guide',
@@ -442,7 +442,7 @@ export const chunk06: BlogPost[] = [
   // ── 1.03. MBTI별 스타벅스 주문 패턴 (네이버 "스타벅스 가방걸이" 7,390 new) ──
   {
     slug: 'mbti-starbucks-order-habits',
-    title: 'MBTI별 스타벅스 주문 습관, 스벅 3년 관찰기',
+    title: 'MBTI별 스벅 주문 패턴, INTP 3분 고민 vs ISTJ 10년째 아메리카노',
     description: '같은 스타벅스인데 MBTI별 주문 스타일이 완전 달라. INTP 3분 고민, ISTJ 10년째 아메리카노, ENFP 신메뉴 덕후... 16유형 스벅 행동 패턴 + 가방걸이·MD 굿즈 반응까지 해부.',
     keywords: ['MBTI 스타벅스', '스타벅스 주문 MBTI', 'MBTI 카페', '스타벅스 가방걸이 MBTI', 'MBTI 커피 취향', '스벅 MBTI', '성격별 카페', 'MBTI 굿즈', 'MBTI 음료 추천', '스타벅스 성격'],
     category: 'psychology',
@@ -526,7 +526,7 @@ export const chunk06: BlogPost[] = [
   // ── 1.05. 셋로그 MBTI 기록 스타일 (네이버 "셋로그" 83,830 +1) ──
   {
     slug: 'setlog-mbti-journaling-style',
-    title: '셋로그 MBTI별 일기 쓰기, 너는 어떤 기록 타입이야?',
+    title: '셋로그 3일 만에 지우는 MBTI 따로 있다, 네 유형은 버티는 타입?',
     description: '셋로그 앱 1년 쓰면서 발견한 것 — MBTI별 기록 방식이 완전 달라. 민지(ISFJ) 3일 만에 포기, ENFP는 폭발적 기록, INTJ는 데이터 수집. 16유형 일기 습관 분석 + 너한테 맞는 앱 사용법.',
     keywords: ['셋로그', '셋로그 MBTI', 'MBTI 일기', 'MBTI 기록 앱', '성격별 일기', 'MBTI 자기관리', '일기 앱 추천', 'MBTI 루틴', '기록 습관 MBTI', '셋로그 사용법'],
     category: 'psychology',
