@@ -5,6 +5,7 @@ import { Section, Paragraph, LoadingSpinner, NextPageCTA } from '@/components/Re
 import { PremiumSectionTeaser } from '@/components/PremiumTeaser';
 import AdPlaceholder from '@/components/AdPlaceholder';
 import ToneToggle from '@/components/ToneToggle';
+import CitationBox from '@/components/CitationBox';
 
 export default function LovePage() {
   const { result, profile, loading, tone, setTone } = useResult();
@@ -44,6 +45,16 @@ export default function LovePage() {
       </Section>
 
       <AdPlaceholder />
+
+      {/* ━━━ 학술 인용: Helen Fisher 신경화학 ━━━ */}
+      {tone !== 'spicy' && (
+        <CitationBox
+          variant="rose"
+          source="Fisher, H. (2009). Why Him? Why Her?: How to Find and Keep Lasting Love. Henry Holt"
+          quote="파트너 선호는 도파민·세로토닌·테스토스테론·에스트로겐 네 가지 신경전달물질 시스템의 상대적 우세에 의해 조직된다."
+          relevance={`당신의 ${profile.primaryTemperament.name} 기질은 ${profile.primaryTemperament.name === '다혈질' ? '도파민 우세(탐험가형)' : profile.primaryTemperament.name === '담즙질' ? '테스토스테론 우세(지휘자형)' : profile.primaryTemperament.name === '점액질' ? '세로토닌 우세(건설자형)' : '에스트로겐 우세(협상가형)'}으로 분류되어, 사랑의 언어와 끌리는 상대 유형이 생물학적 근거를 가집니다.`}
+        />
+      )}
 
       {/* ━━━ 연애 핵심 키워드 (FREE) ━━━ */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

@@ -6,6 +6,7 @@ import { PremiumSectionTeaser } from '@/components/PremiumTeaser';
 import PremiumTeaser from '@/components/PremiumTeaser';
 import AdPlaceholder from '@/components/AdPlaceholder';
 import ToneToggle from '@/components/ToneToggle';
+import CitationBox from '@/components/CitationBox';
 
 export default function StressPage() {
   const { result, profile, loading, tone, setTone } = useResult();
@@ -30,6 +31,14 @@ export default function StressPage() {
         subtitle={tone === 'spicy' ? '자기 객관화의 시간입니다' : '열등기능이 폭주하는 순간 — 평소와 전혀 다른 당신이 나타납니다'}
       >
         <Paragraph text={tone === 'spicy' ? profile.spicy.gripStressNarrative : profile.gripStressNarrative} />
+        {tone !== 'spicy' && (
+          <CitationBox
+            variant="amber"
+            source="Quenk, N.L. (2002). Was That Really Me? How Everyday Stress Brings Out Our Hidden Personality. Davies-Black"
+            quote="장기 스트레스 상태에서 열등기능(Inferior Function)이 통제 불능으로 분출하는 현상을 '그립(Grip) 상태'라 부르며, 이는 평소 주기능과 정반대의 행동으로 나타난다."
+            relevance={`당신의 ${profile.cognitiveStack} 스택에서 열등기능이 폭주할 때 평소와 전혀 다른 모습이 나타나는 것은 정상적인 심리 반응이며, 이 패턴을 인지하는 것이 회복의 첫걸음입니다.`}
+          />
+        )}
       </Section>
 
       <AdPlaceholder />

@@ -5,6 +5,7 @@ import { Section, Paragraph, LoadingSpinner, NextPageCTA } from '@/components/Re
 import PremiumTeaser from '@/components/PremiumTeaser';
 import AdPlaceholder from '@/components/AdPlaceholder';
 import ToneToggle from '@/components/ToneToggle';
+import CitationBox from '@/components/CitationBox';
 
 export default function CareerPage() {
   const { result, profile, loading, tone, setTone } = useResult();
@@ -35,6 +36,16 @@ export default function CareerPage() {
           ))}
         </div>
       </Section>
+
+      {/* ━━━ 학술 인용: Keirsey 4기질-직업 ━━━ */}
+      {tone !== 'spicy' && (
+        <CitationBox
+          variant="emerald"
+          source="Keirsey, D. (1998). Please Understand Me II: Temperament, Character, Intelligence. Prometheus Nemesis"
+          quote="히포크라테스의 4기질은 개인의 직업 적성을 예측하는 네 가지 행동 양식 — Artisan(장인)·Guardian(수호자)·Idealist(이상가)·Rational(합리가) — 으로 재정의될 수 있다."
+          relevance={`당신의 ${profile.primaryTemperament.name} 기질은 Keirsey 모델에서 ${profile.primaryTemperament.name === '다혈질' ? 'Artisan(장인) — 즉흥·현장 대응' : profile.primaryTemperament.name === '담즙질' ? 'Rational(합리가) — 전략·시스템 구축' : profile.primaryTemperament.name === '점액질' ? 'Guardian(수호자) — 안정·책임 수행' : 'Idealist(이상가) — 의미·사람 연결'} 군에 해당하며, 위에 추천된 직업군의 근거가 됩니다.`}
+        />
+      )}
 
       <AdPlaceholder />
 

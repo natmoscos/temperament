@@ -5,6 +5,7 @@ import { Section, Paragraph, LoadingSpinner, NextPageCTA } from '@/components/Re
 import { PremiumSectionTeaser } from '@/components/PremiumTeaser';
 import AdPlaceholder from '@/components/AdPlaceholder';
 import ToneToggle from '@/components/ToneToggle';
+import CitationBox from '@/components/CitationBox';
 import { temperamentProfiles } from '@/data/profiles-temperament';
 
 export default function PersonalityPage() {
@@ -36,6 +37,14 @@ export default function PersonalityPage() {
         subtitle={tone === 'spicy' ? '뼈 때리는 자기 분석 — 심장이 약하면 순한맛으로 전환하세요' : '성격 유형과 기질론이 만나 그려내는 당신의 초상화'}
       >
         <Paragraph text={tone === 'spicy' ? profile.spicy.personalityNarrative : profile.personalityNarrative} />
+        {tone !== 'spicy' && (
+          <CitationBox
+            variant="indigo"
+            source="Jung, C.G. (1921). Psychological Types (융, 『심리 유형론』)"
+            quote="인간의 심리 기능은 네 가지 — 사고·감정·감각·직관 — 이며, 각 기능이 외향과 내향의 방향을 가진다."
+            relevance={`당신의 ${result.fullCode.split('-')[0]} 유형은 이 여덟 가지 인지기능 중 ${profile.cognitiveStack}의 순서로 작동하는 고유 패턴입니다.`}
+          />
+        )}
       </Section>
 
       <AdPlaceholder />
