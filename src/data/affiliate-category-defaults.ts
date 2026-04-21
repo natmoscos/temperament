@@ -249,19 +249,21 @@ export const POST_SPECIFIC_SECTIONS: Record<string, AffiliateSection> = {
 // 현재는 전부 null — slug 기반 매칭만 사용.
 // 카테고리별 범용 세트 준비되면 null → 세트로 교체하면 즉시 전체 글 자동 적용.
 
-// 카테고리 매핑 원칙:
-//   - career / guide / mbti-economics / science → 성장 루틴 (공부·자기계발)
-//   - compatibility / psychology → 선물·관계 큐레이션
-//   - mbti / temperament → 성장 루틴 (기본 유형 이해 후 다음 단계 = 성장)
+// 카테고리 매핑 원칙 (AdSense 승인 우선):
+//   - "자기계발 맥락"에서 주제-상품 일치되는 카테고리에만 적용
+//   - career / guide / mbti-economics / science → 성장 루틴 (책·플래너·독서대)
+//   - mbti / temperament / compatibility / psychology 는 null 유지
+//     ("성격 분석" 주제에 상품 추천은 주제 불일치로 AdSense 리스크)
+//     향후 AdSense 승인 후 선별적으로 활성화 검토.
 export const CATEGORY_DEFAULT_SECTIONS: Record<Category, AffiliateSection | null> = {
   guide: GROWTH_ROUTINE_SET,
   career: GROWTH_ROUTINE_SET,
-  compatibility: RELATIONSHIP_GIFT_SET,
-  psychology: RELATIONSHIP_GIFT_SET,
   'mbti-economics': GROWTH_ROUTINE_SET,
-  mbti: GROWTH_ROUTINE_SET,
-  temperament: GROWTH_ROUTINE_SET,
   science: GROWTH_ROUTINE_SET,
+  compatibility: null,
+  psychology: null,
+  mbti: null,
+  temperament: null,
 };
 
 // ─────────────────────────────────────────────────────

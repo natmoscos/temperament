@@ -6,8 +6,6 @@ import { PremiumSectionTeaser } from '@/components/PremiumTeaser';
 import AdPlaceholder from '@/components/AdPlaceholder';
 import ToneToggle from '@/components/ToneToggle';
 import CitationBox from '@/components/CitationBox';
-import AffiliateSectionBlock from '@/components/AffiliateSection';
-import { CATEGORY_DEFAULT_SECTIONS } from '@/data/affiliate-category-defaults';
 
 export default function LovePage() {
   const { result, profile, loading, tone, setTone } = useResult();
@@ -99,11 +97,6 @@ export default function LovePage() {
         >
           <Paragraph text={profile.friendshipNarrative} />
         </Section>
-      )}
-
-      {/* ━━━ 제휴 제품 추천 — 관계·선물 세트 ━━━ */}
-      {tone !== 'spicy' && CATEGORY_DEFAULT_SECTIONS.compatibility && (
-        <AffiliateSectionBlock section={CATEGORY_DEFAULT_SECTIONS.compatibility} />
       )}
 
       {/* ━━━ 궁합 검사 유도 ━━━ */}
