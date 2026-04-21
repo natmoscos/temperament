@@ -6,6 +6,8 @@ import PremiumTeaser from '@/components/PremiumTeaser';
 import AdPlaceholder from '@/components/AdPlaceholder';
 import ToneToggle from '@/components/ToneToggle';
 import CitationBox from '@/components/CitationBox';
+import AffiliateSectionBlock from '@/components/AffiliateSection';
+import { CATEGORY_DEFAULT_SECTIONS } from '@/data/affiliate-category-defaults';
 
 export default function CareerPage() {
   const { result, profile, loading, tone, setTone } = useResult();
@@ -58,6 +60,11 @@ export default function CareerPage() {
       </div>
 
       <AdPlaceholder />
+
+      {/* ━━━ 제휴 제품 추천 — 성장 루틴 세트 ━━━ */}
+      {tone !== 'spicy' && CATEGORY_DEFAULT_SECTIONS.career && (
+        <AffiliateSectionBlock section={CATEGORY_DEFAULT_SECTIONS.career} />
+      )}
 
       <NextPageCTA
         href="/result/stress"

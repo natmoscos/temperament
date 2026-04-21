@@ -7,6 +7,8 @@ import PremiumTeaser from '@/components/PremiumTeaser';
 import AdPlaceholder from '@/components/AdPlaceholder';
 import ToneToggle from '@/components/ToneToggle';
 import CitationBox from '@/components/CitationBox';
+import AffiliateSectionBlock from '@/components/AffiliateSection';
+import { CATEGORY_DEFAULT_SECTIONS } from '@/data/affiliate-category-defaults';
 
 export default function StressPage() {
   const { result, profile, loading, tone, setTone } = useResult();
@@ -81,6 +83,11 @@ export default function StressPage() {
       />
 
       <AdPlaceholder />
+
+      {/* ━━━ 제휴 제품 추천 — 성장·힐링 루틴 ━━━ */}
+      {tone !== 'spicy' && CATEGORY_DEFAULT_SECTIONS.guide && (
+        <AffiliateSectionBlock section={CATEGORY_DEFAULT_SECTIONS.guide} />
+      )}
 
       <NextPageCTA
         href="/result/science"
