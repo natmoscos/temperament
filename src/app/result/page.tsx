@@ -6,7 +6,7 @@ import { HeroCharacter } from '@/components/CharacterAvatar';
 import ShareButtons from '@/components/ShareButtons';
 import AdPlaceholder from '@/components/AdPlaceholder';
 import PdfDownloadButton from '@/components/PdfDownloadButton';
-import { LoadingSpinner, NextPageCTA } from '@/components/ResultSection';
+import { Section, Paragraph, LoadingSpinner, NextPageCTA } from '@/components/ResultSection';
 import ResultSaveReminder from '@/components/ResultSaveReminder';
 import ToneToggle from '@/components/ToneToggle';
 import ResultCountdown from '@/components/ResultCountdown';
@@ -15,6 +15,7 @@ import CelebrityMatch from '@/components/CelebrityMatch';
 import SituationCards from '@/components/SituationCards';
 import TypePulse from '@/components/TypePulse';
 import ResultTimeline from '@/components/ResultTimeline';
+import StrengthsWeaknessesSection from '@/components/StrengthsWeaknessesSection';
 
 const temperamentNames: Record<string, string> = { S: '다혈질', C: '담즙질', P: '점액질', M: '우울질' };
 const temperamentTextColors: Record<string, string> = { S: 'text-amber-700', C: 'text-red-700', P: 'text-emerald-700', M: 'text-blue-700' };
@@ -147,6 +148,72 @@ export default function ResultSummaryPage() {
             {tone === 'spicy' ? profile.spicy.dualTemperamentDescription : profile.dualTemperamentDescription}
           </p>
         </div>
+      )}
+
+      {/* ━━━ Introduction — 당신은 이런 사람입니다 (mild 전용) ━━━ */}
+      {tone !== 'spicy' && (
+        <Section
+          icon="🪞"
+          title="당신은 이런 사람입니다"
+          subtitle="성격 유형과 기질론이 만나 그려내는 당신의 초상화"
+        >
+          <Paragraph text={profile.personalityNarrative} />
+        </Section>
+      )}
+
+      {/* ━━━ 강점과 약점 (mild 전용, 16p 벤치마크) ━━━ */}
+      {tone !== 'spicy' && (
+        <StrengthsWeaknessesSection
+          strengths={profile.strengths}
+          weaknesses={profile.weaknessBullets}
+          mbtiType={mbti.type}
+        />
+      )}
+
+      <AdPlaceholder />
+
+      {/* ━━━ 사람들이 모르는 진짜 당신 (프리뷰 50%) ━━━ */}
+      {tone !== 'spicy' && profile.hiddenSelf && (
+        <Section
+          icon="🎭"
+          title="사람들이 모르는 진짜 당신"
+          subtitle="겉모습과 내면 사이의 숨겨진 이야기"
+        >
+          <Paragraph text={profile.hiddenSelf.slice(0, Math.floor(profile.hiddenSelf.length / 2)) + '...'} />
+          <div className="mt-4 flex items-center justify-center">
+            <a
+              href="/result/personality"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-indigo-50 text-indigo-600 hover:bg-indigo-100 rounded-xl text-sm font-semibold transition"
+            >
+              전체 분석 보기 →
+            </a>
+          </div>
+        </Section>
+      )}
+
+      {/* ━━━ 이 조합만의 특별한 인사이트 (첫 1개) ━━━ */}
+      {tone !== 'spicy' && profile.contradictionInsights && profile.contradictionInsights.length > 0 && (
+        <Section
+          icon="🔑"
+          title="이 조합만의 특별한 인사이트"
+          subtitle={`${result.fullCode} 유형이 가진 모순과 깊이의 첫 번째 실마리`}
+        >
+          <div className="rounded-xl p-5 border bg-gradient-to-r from-indigo-50 to-purple-50 border-indigo-100">
+            <p className="text-gray-700 leading-[1.85] text-[15px]">
+              {profile.contradictionInsights[0]}
+            </p>
+          </div>
+          {profile.contradictionInsights.length > 1 && (
+            <div className="mt-4 flex items-center justify-center">
+              <a
+                href="/result/personality"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-purple-50 text-purple-600 hover:bg-purple-100 rounded-xl text-sm font-semibold transition"
+              >
+                {profile.contradictionInsights.length - 1}개 인사이트 더 보기 →
+              </a>
+            </div>
+          )}
+        </Section>
       )}
 
       {/* ━━━ 인지기능 & 인구비율 뱃지 ━━━ */}
