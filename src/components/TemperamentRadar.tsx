@@ -74,8 +74,8 @@ export default function TemperamentRadar({ temperamentScores }: TemperamentRadar
       {/* Radar chart */}
       <div className="flex justify-center mb-6">
         <svg
-          viewBox="0 0 300 300"
-          className="w-full max-w-[320px] sm:max-w-[360px]"
+          viewBox="-60 -10 420 340"
+          className="w-full max-w-[380px] sm:max-w-[420px]"
           role="img"
           aria-label="기질 밸런스 레이더 차트"
         >
@@ -203,27 +203,58 @@ export default function TemperamentRadar({ temperamentScores }: TemperamentRadar
         </svg>
       </div>
 
-      {/* Score breakdown mini bar */}
-      <div className="grid grid-cols-4 gap-2 mb-6">
-        {axes.map((axis) => {
-          const pct = temperamentScores[axis.key].percentage;
-          return (
-            <div key={axis.key} className="text-center">
-              <div className="w-full h-1.5 bg-gray-100 rounded-full overflow-hidden mb-1">
+      {/* Score breakdown mini bar + percentages */}
+      <div className="mb-6">
+        <p className="text-sm font-semibold text-gray-500 mb-3 text-center">
+          4기질 분포 (히포크라테스 기준)
+        </p>
+        <div className="grid grid-cols-4 gap-2">
+          {axes.map((axis) => {
+            const pct = temperamentScores[axis.key].percentage;
+            const isPrimary = sortedByScore[0].key === axis.key;
+            const isSecondary = sortedByScore[1].key === axis.key;
+            return (
+              <div key={axis.key} className="text-center">
+                {/* 퍼센트 수치 (바 위에 표시) */}
                 <div
-                  className="h-full rounded-full transition-all duration-1000 ease-out"
-                  style={{
-                    width: animated ? `${pct}%` : '0%',
-                    backgroundColor: axis.color,
-                  }}
-                />
+                  className="text-base font-black mb-1"
+                  style={{ color: axis.color }}
+                >
+                  {pct}%
+                </div>
+                {/* 프로그레스 바 */}
+                <div className="w-full h-2 bg-gray-100 rounded-full overflow-hidden mb-1.5">
+                  <div
+                    className="h-full rounded-full transition-all duration-1000 ease-out"
+                    style={{
+                      width: animated ? `${pct}%` : '0%',
+                      backgroundColor: axis.color,
+                    }}
+                  />
+                </div>
+                {/* 기질 이름 + 1차·2차 배지 */}
+                <div className="flex flex-col items-center gap-0.5">
+                  <span
+                    className="text-xs font-semibold"
+                    style={{ color: axis.color }}
+                  >
+                    {axis.label.replace(/\(.\)/, '').trim()}
+                  </span>
+                  {isPrimary && (
+                    <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-gray-900 text-white">
+                      1차
+                    </span>
+                  )}
+                  {isSecondary && (
+                    <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-gray-400 text-white">
+                      2차
+                    </span>
+                  )}
+                </div>
               </div>
-              <span className="text-xs font-medium" style={{ color: axis.color }}>
-                {axis.label.replace(/\(.\)/, '').trim()}
-              </span>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
 
       {/* Balance tip */}
