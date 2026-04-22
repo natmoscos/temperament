@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+<rect width="1200" height="900" fill="#faf8f5"/>
+
+  <defs>
+    <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fb7185"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#hg)" opacity="0.12"/>
+  <rect x="100" y="90" rx="24" width="340" height="48" fill="#ffffff" stroke="#fb7185" stroke-width="2"/>
+  <text x="270" y="122" text-anchor="middle" font-size="18" font-weight="800" fill="#fb7185">💫 변우석 MBTI 분석</text>
+  <text x="1050" y="280" text-anchor="middle" font-size="260">💫</text>
+  <text x="100" y="420" font-size="78" font-weight="900" fill="#1a1a1a">변우석 ENFJ</text>
+  <text x="100" y="520" font-size="78" font-weight="900" fill="#fb7185">따뜻한 리더의 반전</text>
+  <text x="100" y="620" font-size="28" font-weight="600" fill="#4b5563">선재 업고 튀어가 보여준 Fe 주기능 완전체</text>
+  <rect x="100" y="680" width="200" height="6" fill="#fb7185"/>
+
+<text x="1180" y="892" text-anchor="end" font-size="14" font-weight="600" fill="#9ca3af" opacity="0.85">192types.co.kr</text>
+</svg>
