@@ -3,6 +3,15 @@
 import jsPDF from 'jspdf';
 import { TestResult } from '@/data/types';
 import { IntegratedProfile } from '@/data/profiles-integrated';
+import {
+  getTopCompatible,
+  getBottomCompatible,
+  getFullCompatibilityRow,
+  getRelationshipSummary,
+  type MbtiType,
+} from '@/data/pdf-premium-compatibility';
+import { GROWTH_PLANS } from '@/data/pdf-premium-growth-plan';
+import { STRESS_CHECKLISTS, getCategoryLabel } from '@/data/pdf-premium-stress-check';
 
 /**
  * 프리미엄 PDF 보고서 생성
@@ -294,6 +303,307 @@ function drawQuoteBlock(doc: jsPDF, text: string, y: number, contentWidth: numbe
 }
 
 // ═══════════════════════════════════════════════════════
+// 프리미엄 섹션 1: 16×16 궁합 매트릭스
+// ═══════════════════════════════════════════════════════
+function drawCompatibilityMatrix(doc: jsPDF, mbtiType: MbtiType, y: number, contentWidth: number): number {
+  y = drawSectionHeader(doc, '16유형 궁합 매트릭스', y);
+  y = drawBoldAccent(doc, `${mbtiType} 유형의 16가지 상대와의 호환성 전망`, y, contentWidth);
+
+  // TOP 3 호환
+  y = drawSubHeader(doc, '⭐ 최고 호환 TOP 3', y);
+  const top3 = getTopCompatible(mbtiType);
+  for (const { type, score } of top3) {
+    y = ensureSpace(doc, y, 22);
+    // 카드 배경 (골드 톤)
+    doc.setFillColor(252, 246, 230);
+    doc.setDrawColor(...C.gold);
+    doc.setLineWidth(0.4);
+    doc.roundedRect(MARGIN, y, contentWidth, 18, 2, 2, 'FD');
+
+    // 유형 코드
+    doc.setFont(FONT, 'bold');
+    doc.setFontSize(11);
+    doc.setTextColor(...C.navy);
+    doc.text(type, MARGIN + 5, y + 7);
+
+    // 별점
+    const stars = '★'.repeat(score) + '☆'.repeat(5 - score);
+    doc.setFontSize(9);
+    doc.setTextColor(...C.gold);
+    doc.text(stars, MARGIN + 30, y + 7);
+
+    // 한 줄 설명
+    doc.setFont(FONT, 'normal');
+    doc.setFontSize(8.5);
+    doc.setTextColor(...C.textMid);
+    const summary = getRelationshipSummary(mbtiType, type, score);
+    const lines = wrapText(doc, summary, contentWidth - 10);
+    doc.text(lines[0] || '', MARGIN + 5, y + 14);
+
+    y += 22;
+  }
+
+  // BOTTOM 3 주의 관계
+  y += 2;
+  y = drawSubHeader(doc, '⚠ 주의 관계 TOP 3', y);
+  const bottom3 = getBottomCompatible(mbtiType);
+  for (const { type, score } of bottom3) {
+    y = ensureSpace(doc, y, 18);
+    doc.setFillColor(252, 238, 238);
+    doc.setDrawColor(...C.rose);
+    doc.setLineWidth(0.3);
+    doc.roundedRect(MARGIN, y, contentWidth, 15, 2, 2, 'FD');
+
+    doc.setFont(FONT, 'bold');
+    doc.setFontSize(10);
+    doc.setTextColor(...C.rose);
+    doc.text(type, MARGIN + 5, y + 6);
+
+    const stars = '★'.repeat(score) + '☆'.repeat(5 - score);
+    doc.setFontSize(8);
+    doc.text(stars, MARGIN + 30, y + 6);
+
+    doc.setFont(FONT, 'normal');
+    doc.setFontSize(8);
+    doc.setTextColor(...C.textMid);
+    const summary = getRelationshipSummary(mbtiType, type, score);
+    const lines = wrapText(doc, summary, contentWidth - 10);
+    doc.text(lines[0] || '', MARGIN + 5, y + 12);
+
+    y += 18;
+  }
+
+  // 전체 16유형 매트릭스 (그리드 4×4)
+  y += 3;
+  y = drawSubHeader(doc, '📊 16유형 전체 점수표', y);
+  const fullRow = getFullCompatibilityRow(mbtiType);
+  const cellW = contentWidth / 4;
+  const cellH = 12;
+  y = ensureSpace(doc, y, cellH * 4 + 4);
+
+  for (let i = 0; i < 16; i++) {
+    const col = i % 4;
+    const row = Math.floor(i / 4);
+    const cx = MARGIN + col * cellW;
+    const cy = y + row * cellH;
+    const entry = fullRow[i];
+
+    // 배경 색상 (점수별)
+    const bgColor = entry.score === 5 ? [254, 246, 220]
+                  : entry.score === 4 ? [240, 248, 240]
+                  : entry.score === 3 ? [245, 245, 245]
+                  : entry.score === 2 ? [253, 236, 234]
+                  : [250, 220, 220];
+    doc.setFillColor(bgColor[0], bgColor[1], bgColor[2]);
+    doc.setDrawColor(...C.lineLight);
+    doc.setLineWidth(0.2);
+    doc.rect(cx, cy, cellW, cellH, 'FD');
+
+    // 유형 코드
+    doc.setFont(FONT, 'bold');
+    doc.setFontSize(8);
+    doc.setTextColor(...C.navy);
+    doc.text(entry.type, cx + 3, cy + 5);
+
+    // 별점
+    doc.setFontSize(7);
+    doc.setTextColor(...C.gold);
+    const stars = '★'.repeat(entry.score);
+    doc.text(stars, cx + 3, cy + 9.5);
+  }
+
+  return y + cellH * 4 + 6;
+}
+
+// ═══════════════════════════════════════════════════════
+// 프리미엄 섹션 2: 30일 성장 액션 플랜
+// ═══════════════════════════════════════════════════════
+function drawGrowthPlan(doc: jsPDF, mbtiType: MbtiType, y: number, contentWidth: number): number {
+  const plan = GROWTH_PLANS[mbtiType];
+  if (!plan) return y;
+
+  y = drawSectionHeader(doc, '30일 성장 액션 플랜', y);
+  y = drawGoldInsight(doc, plan.intro, y, contentWidth);
+
+  // 4주차 카드
+  for (const week of plan.weeks) {
+    y = ensureSpace(doc, y, 35);
+
+    // 주차 헤더
+    doc.setFillColor(...C.bgCream);
+    doc.setDrawColor(...C.gold);
+    doc.setLineWidth(0.4);
+    doc.roundedRect(MARGIN, y, contentWidth, 9, 2, 2, 'FD');
+    doc.setFont(FONT, 'bold');
+    doc.setFontSize(10);
+    doc.setTextColor(...C.navy);
+    doc.text(week.title, MARGIN + 5, y + 6);
+    y += 13;
+
+    // Focus
+    doc.setFont(FONT, 'bold');
+    doc.setFontSize(9);
+    doc.setTextColor(...C.blue);
+    doc.text('Focus', MARGIN + 2, y);
+    doc.setFont(FONT, 'normal');
+    doc.setTextColor(...C.textMid);
+    const focusLines = wrapText(doc, week.focus, contentWidth - 22);
+    doc.text(focusLines[0] || '', MARGIN + 18, y);
+    y += 6;
+    for (let i = 1; i < focusLines.length; i++) {
+      y = ensureSpace(doc, y, 5);
+      doc.text(focusLines[i], MARGIN + 18, y);
+      y += 5;
+    }
+    y += 2;
+
+    // Actions
+    doc.setFont(FONT, 'bold');
+    doc.setFontSize(9);
+    doc.setTextColor(...C.blue);
+    doc.text('실천 과제', MARGIN + 2, y);
+    y += 5;
+    doc.setFont(FONT, 'normal');
+    doc.setTextColor(...C.textMid);
+    for (const action of week.actions) {
+      y = ensureSpace(doc, y, 8);
+      // 체크박스
+      doc.setDrawColor(...C.gold);
+      doc.setLineWidth(0.4);
+      doc.rect(MARGIN + 4, y - 3, 3, 3, 'D');
+      // 텍스트
+      const actionLines = wrapText(doc, action, contentWidth - 12);
+      doc.text(actionLines[0] || '', MARGIN + 10, y);
+      y += 5;
+      for (let i = 1; i < actionLines.length; i++) {
+        y = ensureSpace(doc, y, 5);
+        doc.text(actionLines[i], MARGIN + 10, y);
+        y += 5;
+      }
+    }
+    y += 2;
+
+    // Why
+    doc.setFillColor(245, 241, 235);
+    const whyLines = wrapText(doc, week.why, contentWidth - 10);
+    const whyH = whyLines.length * 4.5 + 5;
+    y = ensureSpace(doc, y, whyH + 3);
+    doc.roundedRect(MARGIN, y, contentWidth, whyH, 2, 2, 'F');
+    doc.setFont(FONT, 'normal');
+    doc.setFontSize(8);
+    doc.setTextColor(...C.textMid);
+    let wy = y + 4;
+    for (const line of whyLines) {
+      doc.text(line, MARGIN + 5, wy);
+      wy += 4.5;
+    }
+    y += whyH + 6;
+  }
+
+  // Closing
+  y = drawGoldInsight(doc, plan.closing, y, contentWidth);
+
+  return y;
+}
+
+// ═══════════════════════════════════════════════════════
+// 프리미엄 섹션 3: 스트레스 조기 경보 체크리스트
+// ═══════════════════════════════════════════════════════
+function drawStressChecklist(doc: jsPDF, mbtiType: MbtiType, y: number, contentWidth: number): number {
+  const checklist = STRESS_CHECKLISTS[mbtiType];
+  if (!checklist) return y;
+
+  y = drawSectionHeader(doc, '스트레스 조기 경보 체크리스트', y);
+  y = drawBody(doc, checklist.intro, y, contentWidth);
+
+  // 카테고리별 항목
+  let prevCategory: string | null = null;
+  for (const signal of checklist.signals) {
+    if (prevCategory !== signal.category) {
+      y += 1;
+      y = drawSubHeader(doc, getCategoryLabel(signal.category) + ' 신호', y);
+      prevCategory = signal.category;
+    }
+
+    y = ensureSpace(doc, y, 7);
+    // 체크박스
+    doc.setDrawColor(...C.navy);
+    doc.setLineWidth(0.4);
+    doc.rect(MARGIN + 4, y - 3, 3.5, 3.5, 'D');
+
+    // 텍스트
+    doc.setFont(FONT, 'normal');
+    doc.setFontSize(9);
+    doc.setTextColor(...C.textMid);
+    const lines = wrapText(doc, signal.signal, contentWidth - 14);
+    doc.text(lines[0] || '', MARGIN + 11, y);
+    y += 5;
+    for (let i = 1; i < lines.length; i++) {
+      y = ensureSpace(doc, y, 5);
+      doc.text(lines[i], MARGIN + 11, y);
+      y += 5;
+    }
+  }
+
+  y += 4;
+  // 점수 해석
+  y = drawSubHeader(doc, '📊 체크 개수별 해석', y);
+  const interps = [
+    { label: '0~4개', color: [220, 240, 220], text: checklist.interpretation.low },
+    { label: '5~9개', color: [254, 246, 220], text: checklist.interpretation.mid },
+    { label: '10~15개', color: [253, 230, 230], text: checklist.interpretation.high },
+  ];
+  for (const interp of interps) {
+    const lines = wrapText(doc, interp.text, contentWidth - 30);
+    const boxH = Math.max(12, lines.length * 4.5 + 5);
+    y = ensureSpace(doc, y, boxH + 3);
+
+    doc.setFillColor(interp.color[0], interp.color[1], interp.color[2]);
+    doc.setDrawColor(...C.lineLight);
+    doc.setLineWidth(0.2);
+    doc.roundedRect(MARGIN, y, contentWidth, boxH, 2, 2, 'FD');
+
+    doc.setFont(FONT, 'bold');
+    doc.setFontSize(9);
+    doc.setTextColor(...C.navy);
+    doc.text(interp.label, MARGIN + 4, y + 5.5);
+
+    doc.setFont(FONT, 'normal');
+    doc.setFontSize(8);
+    doc.setTextColor(...C.textMid);
+    let ly = y + 5.5;
+    for (const line of lines) {
+      doc.text(line, MARGIN + 25, ly);
+      ly += 4.5;
+    }
+    y += boxH + 3;
+  }
+
+  y += 3;
+  // 회복 행동
+  y = drawSubHeader(doc, '💚 즉시 실행할 회복 행동', y);
+  for (const action of checklist.recoveryActions) {
+    y = ensureSpace(doc, y, 7);
+    doc.setDrawColor(...C.teal);
+    doc.setLineWidth(0.4);
+    doc.rect(MARGIN + 4, y - 3, 3.5, 3.5, 'D');
+    doc.setFont(FONT, 'normal');
+    doc.setFontSize(9);
+    doc.setTextColor(...C.textMid);
+    const lines = wrapText(doc, action, contentWidth - 14);
+    doc.text(lines[0] || '', MARGIN + 11, y);
+    y += 5;
+    for (let i = 1; i < lines.length; i++) {
+      y = ensureSpace(doc, y, 5);
+      doc.text(lines[i], MARGIN + 11, y);
+      y += 5;
+    }
+  }
+
+  return y + 4;
+}
+
+// ═══════════════════════════════════════════════════════
 // 메인 PDF 생성 함수
 // ═══════════════════════════════════════════════════════
 export async function generatePremiumPDF(result: TestResult, profile: IntegratedProfile): Promise<void> {
@@ -479,6 +789,11 @@ export async function generatePremiumPDF(result: TestResult, profile: Integrated
   }
 
   // ═══════════════════════════════════════════
+  // 🎁 프리미엄 전용: 16유형 궁합 매트릭스
+  // ═══════════════════════════════════════════
+  y = drawCompatibilityMatrix(doc, result.mbti.type as MbtiType, y, contentW);
+
+  // ═══════════════════════════════════════════
   // 커리어 전략
   // ═══════════════════════════════════════════
   y = drawSectionHeader(doc, '커리어 전략', y);
@@ -496,12 +811,22 @@ export async function generatePremiumPDF(result: TestResult, profile: Integrated
   y = drawBody(doc, profile.gripStressNarrative, y, contentW);
   y = drawGoldInsight(doc, `핵심: 스트레스 상황에서 평소와 다른 모습이 나타나는 것은 자연스러운 현상입니다. 자신의 패턴을 인식하는 것이 회복의 첫걸음입니다.`, y, contentW);
 
+  // ═══════════════════════════════════════════
+  // 🎁 프리미엄 전용: 스트레스 조기 경보 체크리스트
+  // ═══════════════════════════════════════════
+  y = drawStressChecklist(doc, result.mbti.type as MbtiType, y, contentW);
+
   y = drawSectionHeader(doc, '회복 & 성장 전략', y);
   y = drawBody(doc, profile.stressGuide, y, contentW);
 
   y = drawSectionHeader(doc, '인생 전략', y);
   y = drawBoldAccent(doc, `${result.fullCode} 유형의 인생 전략 핵심`, y, contentW);
   y = drawBody(doc, profile.lifeStrategy, y, contentW);
+
+  // ═══════════════════════════════════════════
+  // 🎁 프리미엄 전용: 30일 성장 액션 플랜
+  // ═══════════════════════════════════════════
+  y = drawGrowthPlan(doc, result.mbti.type as MbtiType, y, contentW);
 
   // ═══════════════════════════════════════════
   // 소통 & 양육
