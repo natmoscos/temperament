@@ -12,6 +12,15 @@ import {
 } from '@/data/pdf-premium-compatibility';
 import { GROWTH_PLANS } from '@/data/pdf-premium-growth-plan';
 import { STRESS_CHECKLISTS, getCategoryLabel } from '@/data/pdf-premium-stress-check';
+import { generateComboAnalysis, type ComboCode } from '@/data/pdf-premium-combo-analysis';
+import {
+  getTopCareers,
+  getBottomCareers,
+  getCareerScore,
+  getWorkEnvironment,
+  INTERVIEW_STYLES,
+  type Career,
+} from '@/data/pdf-premium-career-suite';
 
 /**
  * 프리미엄 PDF 보고서 생성
@@ -604,6 +613,235 @@ function drawStressChecklist(doc: jsPDF, mbtiType: MbtiType, y: number, contentW
 }
 
 // ═══════════════════════════════════════════════════════
+// 프리미엄 섹션 5: Career Suite (50 직업 적합도 + 근무 환경 + 면접)
+// ═══════════════════════════════════════════════════════
+function drawCareerSuite(doc: jsPDF, mbtiType: MbtiType, y: number, contentWidth: number): number {
+  y = drawSectionHeader(doc, 'Career Suite — 직업 적합도 정밀 분석', y);
+  y = drawBoldAccent(doc, `${mbtiType} 유형의 50개 직업 매칭 + 근무 환경 + 면접 전략`, y, contentWidth);
+
+  // ─── TOP 10 직업 ───
+  y = drawSubHeader(doc, '✨ 당신에게 가장 적합한 직업 TOP 10', y);
+  const top10 = getTopCareers(mbtiType, 10);
+  for (let i = 0; i < top10.length; i++) {
+    const career = top10[i];
+    const score = getCareerScore(career, mbtiType);
+    y = drawCareerCard(doc, career, score, i + 1, y, contentWidth, 'best');
+  }
+
+  y += 3;
+
+  // ─── BOTTOM 5 주의 직업 ───
+  y = drawSubHeader(doc, '⚠ 주의해야 할 직업 5개', y);
+  const bottom5 = getBottomCareers(mbtiType, 5);
+  for (let i = 0; i < bottom5.length; i++) {
+    const career = bottom5[i];
+    const score = getCareerScore(career, mbtiType);
+    y = drawCareerCard(doc, career, score, i + 1, y, contentWidth, 'challenge');
+  }
+
+  y += 4;
+
+  // ─── 근무 환경 4축 ───
+  y = drawSubHeader(doc, '🏢 당신에게 맞는 근무 환경 4축', y);
+  const env = getWorkEnvironment(mbtiType);
+  y = drawEnvBar(doc, '원격 근무', '대면 근무', env.remoteVsOffice, y, contentWidth);
+  y = drawEnvBar(doc, '독립 작업', '팀 협업', env.soloVsTeam, y, contentWidth);
+  y = drawEnvBar(doc, '유연 일정', '체계 구조', env.structuredVsFlex, y, contentWidth);
+  y = drawEnvBar(doc, '안정 환경', '변화·도전', env.stableVsDynamic, y, contentWidth);
+
+  y += 4;
+
+  // ─── 면접·협상 스타일 ───
+  y = drawSubHeader(doc, '🎤 면접·협상 스타일 가이드', y);
+  const style = INTERVIEW_STYLES[mbtiType];
+
+  y = drawBoldAccent(doc, '💪 면접에서 자연스러운 강점', y, contentWidth);
+  y = drawBody(doc, style.strength, y, contentWidth);
+
+  y = drawBoldAccent(doc, '⚠ 주의해야 할 약점', y, contentWidth);
+  y = drawBody(doc, style.weakness, y, contentWidth);
+
+  y = drawBoldAccent(doc, '📋 면접 준비 3가지', y, contentWidth);
+  for (const prep of style.preparation) {
+    y = ensureSpace(doc, y, 7);
+    doc.setDrawColor(...C.gold);
+    doc.setLineWidth(0.4);
+    doc.rect(MARGIN + 4, y - 3, 3, 3, 'D');
+    doc.setFont(FONT, 'normal');
+    doc.setFontSize(9);
+    doc.setTextColor(...C.textMid);
+    const lines = wrapText(doc, prep, contentWidth - 12);
+    doc.text(lines[0] || '', MARGIN + 10, y);
+    y += 5;
+    for (let i = 1; i < lines.length; i++) {
+      y = ensureSpace(doc, y, 5);
+      doc.text(lines[i], MARGIN + 10, y);
+      y += 5;
+    }
+  }
+  y += 2;
+
+  y = drawBoldAccent(doc, '💰 연봉 협상 스타일', y, contentWidth);
+  y = drawGoldInsight(doc, style.negotiation, y, contentWidth);
+
+  return y;
+}
+
+function drawCareerCard(
+  doc: jsPDF,
+  career: Career,
+  score: number,
+  rank: number,
+  y: number,
+  contentWidth: number,
+  variant: 'best' | 'challenge',
+): number {
+  const lines = wrapText(doc, career.description, contentWidth - 40);
+  const boxH = Math.max(18, 12 + lines.length * 4.5);
+  y = ensureSpace(doc, y, boxH + 2);
+
+  const bgColor = variant === 'best' ? [252, 246, 230] : [253, 238, 238];
+  const borderColor = variant === 'best' ? C.gold : C.rose;
+
+  doc.setFillColor(bgColor[0], bgColor[1], bgColor[2]);
+  doc.setDrawColor(borderColor[0], borderColor[1], borderColor[2]);
+  doc.setLineWidth(0.3);
+  doc.roundedRect(MARGIN, y, contentWidth, boxH, 2, 2, 'FD');
+
+  // 순위
+  doc.setFont(FONT, 'bold');
+  doc.setFontSize(8);
+  doc.setTextColor(...C.textLight);
+  doc.text(`#${rank}`, MARGIN + 3, y + 5);
+
+  // 직업명 + 이모지
+  doc.setFont(FONT, 'bold');
+  doc.setFontSize(10.5);
+  doc.setTextColor(...C.navy);
+  doc.text(`${career.emoji}  ${career.title}`, MARGIN + 12, y + 5.5);
+
+  // 별점
+  const stars = '★'.repeat(score) + '☆'.repeat(5 - score);
+  doc.setFontSize(9);
+  doc.setTextColor(borderColor[0], borderColor[1], borderColor[2]);
+  doc.text(stars, MARGIN + contentWidth - 32, y + 5.5);
+
+  // 카테고리
+  doc.setFont(FONT, 'normal');
+  doc.setFontSize(7.5);
+  doc.setTextColor(...C.textLight);
+  doc.text(career.category, MARGIN + contentWidth - 4, y + 5.5, { align: 'right' });
+
+  // 설명
+  doc.setFont(FONT, 'normal');
+  doc.setFontSize(8.5);
+  doc.setTextColor(...C.textMid);
+  let ly = y + 11;
+  for (const line of lines) {
+    doc.text(line, MARGIN + 5, ly);
+    ly += 4.5;
+  }
+
+  return y + boxH + 2;
+}
+
+function drawEnvBar(
+  doc: jsPDF,
+  leftLabel: string,
+  rightLabel: string,
+  value: number,
+  y: number,
+  contentWidth: number,
+): number {
+  y = ensureSpace(doc, y, 14);
+  const barX = MARGIN + 2;
+  const barW = contentWidth - 4;
+  const barH = 4;
+
+  // 라벨
+  doc.setFont(FONT, 'normal');
+  doc.setFontSize(8.5);
+  doc.setTextColor(...C.textMid);
+  doc.text(leftLabel, barX, y);
+  doc.text(rightLabel, barX + barW, y, { align: 'right' });
+  y += 3;
+
+  // 배경
+  doc.setFillColor(238, 235, 230);
+  doc.roundedRect(barX, y, barW, barH, 2, 2, 'F');
+
+  // 마커 (지점)
+  const markerX = barX + (barW * value) / 100;
+  doc.setFillColor(...C.gold);
+  doc.circle(markerX, y + barH / 2, 3, 'F');
+  doc.setDrawColor(...C.navy);
+  doc.setLineWidth(0.5);
+  doc.circle(markerX, y + barH / 2, 3, 'S');
+
+  return y + barH + 7;
+}
+
+// ═══════════════════════════════════════════════════════
+// 프리미엄 섹션 4: 192 조합 고유 심층 분석
+// ═══════════════════════════════════════════════════════
+function drawCombinationAnalysis(
+  doc: jsPDF,
+  mbtiType: MbtiType,
+  comboCode: ComboCode,
+  y: number,
+  contentWidth: number,
+): number {
+  const analysis = generateComboAnalysis(mbtiType, comboCode);
+  const { combo } = analysis;
+
+  y = drawSectionHeader(doc, `${mbtiType}-${comboCode} 고유 심층 분석`, y);
+  y = drawBoldAccent(doc, `"${combo.nickname}" — ${combo.essence}`, y, contentWidth);
+
+  // 대표 인물
+  y = drawSubHeader(doc, '이 기질 조합의 대표 인물', y);
+  y = ensureSpace(doc, y, 8);
+  doc.setFont(FONT, 'normal');
+  doc.setFontSize(9);
+  doc.setTextColor(...C.textMid);
+  for (const fig of combo.historicalFigures) {
+    y = ensureSpace(doc, y, 6);
+    doc.setTextColor(...C.gold);
+    doc.text('◆', MARGIN + 4, y);
+    doc.setTextColor(...C.textMid);
+    const lines = wrapText(doc, fig, contentWidth - 12);
+    doc.text(lines[0] || '', MARGIN + 10, y);
+    y += 5.5;
+  }
+  y += 3;
+
+  // 빛나는 순간
+  y = drawSubHeader(doc, '✨ 가장 빛나는 순간', y);
+  y = drawBody(doc, combo.shiningMoment, y, contentWidth);
+
+  // 무너지는 순간
+  y = drawSubHeader(doc, '⚠ 가장 무너지는 순간', y);
+  y = drawBody(doc, combo.breakingPoint, y, contentWidth);
+
+  // MBTI × 기질 결합 서술
+  y = drawSubHeader(doc, `${mbtiType}가 이 기질을 만났을 때`, y);
+  y = drawBody(doc, analysis.mbtiMeetCombo, y, contentWidth);
+
+  // 같은 MBTI, 다른 기질
+  y = drawSubHeader(doc, `같은 ${mbtiType}인데 다른 사람인 이유`, y);
+  y = drawBody(doc, analysis.sameTypeDiff, y, contentWidth);
+
+  // 같은 기질, 다른 MBTI
+  y = drawSubHeader(doc, `같은 "${combo.nickname}" 기질인데 다른 표현인 이유`, y);
+  y = drawBody(doc, analysis.sameComboDiff, y, contentWidth);
+
+  // 통합 인생 경로
+  y = drawSubHeader(doc, '당신만의 통합 인생 경로', y);
+  y = drawGoldInsight(doc, analysis.integratedLifePath, y, contentWidth);
+
+  return y;
+}
+
+// ═══════════════════════════════════════════════════════
 // 메인 PDF 생성 함수
 // ═══════════════════════════════════════════════════════
 export async function generatePremiumPDF(result: TestResult, profile: IntegratedProfile): Promise<void> {
@@ -805,6 +1043,11 @@ export async function generatePremiumPDF(result: TestResult, profile: Integrated
   }
 
   // ═══════════════════════════════════════════
+  // 🎁 프리미엄 전용: Career Suite (50 직업 정밀 분석)
+  // ═══════════════════════════════════════════
+  y = drawCareerSuite(doc, result.mbti.type as MbtiType, y, contentW);
+
+  // ═══════════════════════════════════════════
   // 스트레스 & 성장
   // ═══════════════════════════════════════════
   y = drawSectionHeader(doc, '스트레스 패턴 (Grip 상태)', y);
@@ -857,6 +1100,17 @@ export async function generatePremiumPDF(result: TestResult, profile: Integrated
 
   y = drawSubHeader(doc, '4체액설', y);
   y = drawBody(doc, profile.humorTheoryInsight, y, contentW);
+
+  // ═══════════════════════════════════════════
+  // 🎁 프리미엄 전용: 192 조합 고유 심층 분석
+  // ═══════════════════════════════════════════
+  y = drawCombinationAnalysis(
+    doc,
+    result.mbti.type as MbtiType,
+    result.temperament.code as ComboCode,
+    y,
+    contentW,
+  );
 
   // ═══════════════════════════════════════════
   // 유명인
