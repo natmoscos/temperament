@@ -204,8 +204,7 @@ export const chunk03: BlogPost[] = [
 
   // ── 트럼프 MBTI 분석 (시사/심리 분석) ──
   {
-    slug: 'trump-mbti-estp-temperament',
-    noindex: true,
+    slug: 'trump-mbti-estp-temperament',
     title: '트럼프 MBTI를 알아보자 ㅋㅋ',
     description: '미·이란 사태에서 드러난 트럼프의 행동 패턴을 MBTI 4축과 히포크라테스 기질론으로 분석합니다. ESTP-CS(담즙+다혈) 조합의 전형적인 특징을 살펴보세요.',
     keywords: ['트럼프 MBTI', '트럼프 성격유형', 'ESTP', 'ESTP 유명인', '트럼프 성격분석', '유명인 MBTI 분석'],
@@ -241,8 +240,7 @@ export const chunk03: BlogPost[] = [
 
   // ── 테일러 스위프트 MBTI ──
   {
-    slug: 'taylor-swift-mbti-enfj',
-    noindex: true,
+    slug: 'taylor-swift-mbti-enfj',
     title: '테일러 스위프트 MBTI를 분석해봤더니 소름',
     description: '테일러 스위프트의 행동 패턴과 커리어를 MBTI 4축과 기질론으로 분석합니다. ENFJ-CM(담즙+우울) 조합의 전략적 감성 리더.',
     keywords: ['테일러 스위프트 MBTI', 'Taylor Swift MBTI', 'ENFJ 유명인', '테일러 스위프트 성격', '유명인 MBTI'],
@@ -278,8 +276,7 @@ export const chunk03: BlogPost[] = [
 
   // ── 일론 머스크 MBTI ──
   {
-    slug: 'elon-musk-mbti-intj',
-    noindex: true,
+    slug: 'elon-musk-mbti-intj',
     title: '일론 머스크 MBTI 분석 — 화성 갈 남자의 뇌구조 (실화)',
     description: '일론 머스크의 행동과 경영 스타일을 MBTI와 기질론으로 분석합니다. INTJ-CM(담즙+우울) 조합, 왜 화성에 집착하는지 이해됩니다.',
     keywords: ['일론 머스크 MBTI', 'Elon Musk MBTI', 'INTJ 유명인', '일론 머스크 성격', '유명인 MBTI'],
@@ -351,8 +348,7 @@ export const chunk03: BlogPost[] = [
 
   // ── 레이디 가가 MBTI ──
   {
-    slug: 'lady-gaga-mbti-infj',
-    noindex: true,
+    slug: 'lady-gaga-mbti-infj',
     title: '레이디 가가 MBTI를 파헤쳐 봤다 (반전주의)',
     description: '레이디 가가의 음악과 퍼포먼스를 MBTI와 기질론으로 분석합니다. INFJ-MC(우울+담즙), 세상에서 가장 화려한 내향인.',
     keywords: ['레이디 가가 MBTI', 'Lady Gaga MBTI', 'INFJ 유명인', '레이디 가가 성격', '유명인 MBTI'],
@@ -388,8 +384,7 @@ export const chunk03: BlogPost[] = [
 
   // ── 젠데이아 MBTI ──
   {
-    slug: 'zendaya-mbti-enfj',
-    noindex: true,
+    slug: 'zendaya-mbti-enfj',
     title: '젠데이아 MBTI 분석 — 조용한데 세상을 지배하는 비결',
     description: '젠데이아의 커리어와 성격을 MBTI와 기질론으로 분석합니다. ENFJ-PM(점액+우울) 조합, 부드러움으로 세상을 이기는 타입.',
     keywords: ['젠데이아 MBTI', 'Zendaya MBTI', 'ENFJ 유명인', '젠데이아 성격', '유명인 MBTI 분석'],
@@ -425,8 +420,7 @@ export const chunk03: BlogPost[] = [
 
   // ── 티모시 샬라메 MBTI ──
   {
-    slug: 'timothee-chalamet-mbti-infp',
-    noindex: true,
+    slug: 'timothee-chalamet-mbti-infp',
     title: '티모시 샬라메 MBTI — 몽환적인 이유가 납득됨',
     description: '티모시 샬라메의 연기와 성격을 MBTI와 기질론으로 분석합니다. INFP-MS(우울+다혈), 꿈꾸는 소년의 내면세계.',
     keywords: ['티모시 샬라메 MBTI', 'Timothée Chalamet MBTI', 'INFP 유명인', '샬라메 성격', '유명인 MBTI'],
@@ -498,8 +492,7 @@ export const chunk03: BlogPost[] = [
 
   // ── 빌리 아일리시 MBTI ──
   {
-    slug: 'billie-eilish-mbti-isfp',
-    noindex: true,
+    slug: 'billie-eilish-mbti-isfp',
     title: '빌리 아일리시 MBTI 분석 — 속삭이는데 왜 이렇게 강렬하지?',
     description: '빌리 아일리시의 음악과 성격을 MBTI와 기질론으로 분석합니다. ISFP-MP(우울+점액), 조용한 반항아의 내면세계.',
     keywords: ['빌리 아일리시 MBTI', 'Billie Eilish MBTI', 'ISFP 유명인', '빌리 아일리시 성격', '유명인 MBTI'],

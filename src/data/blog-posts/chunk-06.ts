@@ -758,7 +758,6 @@ export const chunk06: BlogPost[] = [
     category: 'psychology',
     publishDate: '2026-04-21',
     thumbnail: '/blog/park-jihoon-mbti-01-hero.webp',
-    noindex: true,
     relatedTypes: ['ISFP', 'INFP', 'INFJ'],
     sections: [
       {
@@ -794,7 +793,6 @@ export const chunk06: BlogPost[] = [
     category: 'psychology',
     publishDate: '2026-04-21',
     thumbnail: '/blog/byun-wooseok-mbti-01-hero.webp',
-    noindex: true,
     relatedTypes: ['ENFJ', 'ESFJ', 'INFJ'],
     sections: [
       {
