@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bg-j" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="55%" stop-color="#2d0a4e"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+    <radialGradient id="glow-j" cx="50%" cy="80%" r="70%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="1200" height="900" fill="url(#bg-j)"/>
+  <rect width="1200" height="900" fill="url(#glow-j)"/>
+
+  <!-- 뱃지 (상단) -->
+  <rect x="70" y="80" rx="8" width="310" height="52" fill="#f5ff3d"/>
+  <text x="225" y="115" text-anchor="middle" font-size="22" font-weight="900" fill="#0a0a0a" letter-spacing="1">🎤 3번 바뀐 MBTI</text>
+
+  <!-- 이름 -->
+  <text x="70" y="230" font-size="86" font-weight="900" fill="#ffffff" letter-spacing="-3">BTS 정국</text>
+
+  <!-- 변화 박스 3개 + 화살표 2개 (수평 배치) -->
+  <!-- Box1: 2019 INFP (주황/핑크 = 감정) -->
+  <rect x="70" y="300" rx="16" width="320" height="170" fill="#ff6b1a" opacity="0.15"/>
+  <rect x="70" y="300" rx="16" width="320" height="170" fill="none" stroke="#ff6b1a" stroke-width="4"/>
+  <text x="230" y="350" text-anchor="middle" font-size="26" font-weight="900" fill="#ff6b1a" letter-spacing="1">2019</text>
+  <text x="230" y="430" text-anchor="middle" font-size="72" font-weight="900" fill="#ffffff" letter-spacing="-2">INFP</text>
+
+  <!-- Arrow1: → -->
+  <text x="412" y="405" text-anchor="middle" font-size="44" font-weight="900" fill="#f5ff3d">→</text>
+
+  <!-- Box2: 2020 ISFP (그린 = 감각) -->
+  <rect x="440" y="300" rx="16" width="320" height="170" fill="#7cff5b" opacity="0.15"/>
+  <rect x="440" y="300" rx="16" width="320" height="170" fill="none" stroke="#7cff5b" stroke-width="4"/>
+  <text x="600" y="350" text-anchor="middle" font-size="26" font-weight="900" fill="#7cff5b" letter-spacing="1">2020</text>
+  <text x="600" y="430" text-anchor="middle" font-size="72" font-weight="900" fill="#ffffff" letter-spacing="-2">ISFP</text>
+
+  <!-- Arrow2: → -->
+  <text x="782" y="405" text-anchor="middle" font-size="44" font-weight="900" fill="#f5ff3d">→</text>
+
+  <!-- Box3: 2022 INTP (블루 = 논리) -->
+  <rect x="810" y="300" rx="16" width="320" height="170" fill="#4d8bff" opacity="0.18"/>
+  <rect x="810" y="300" rx="16" width="320" height="170" fill="none" stroke="#4d8bff" stroke-width="4"/>
+  <text x="970" y="350" text-anchor="middle" font-size="26" font-weight="900" fill="#4d8bff" letter-spacing="1">2022</text>
+  <text x="970" y="430" text-anchor="middle" font-size="72" font-weight="900" fill="#ffffff" letter-spacing="-2">INTP</text>
+
+  <!-- 강조 세로선 + 본인 발언 인용 -->
+  <rect x="70" y="530" width="14" height="90" fill="#f5ff3d"/>
+  <text x="100" y="570" font-size="56" font-weight="900" fill="#f5ff3d" letter-spacing="-2">I와 P는 평생 고정</text>
+  <text x="100" y="610" font-size="26" font-weight="700" fill="#ffffff" opacity="0.9">= 정국의 IxxP 뼈대는 안 바뀐다</text>
+
+  <!-- 하단 태그라인 -->
+  <rect x="70" y="780" width="14" height="58" fill="#f5ff3d"/>
+  <text x="100" y="810" font-size="26" font-weight="900" fill="#ffffff">본인이 밝힌 MBTI 변화 서사</text>
+  <text x="100" y="842" font-size="18" font-weight="700" fill="#ffffff" opacity="0.85">각 시기 인지기능 재배치 완전 분석 · Fi → Fi → Ti</text>
+
+  <!-- 우하단 브랜드 -->
+  <text x="1130" y="862" text-anchor="end" font-size="16" font-weight="800" fill="#f5ff3d" opacity="0.9">192types.co.kr</text>
+</svg>
