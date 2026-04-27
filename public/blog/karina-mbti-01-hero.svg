@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bg-k" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#062231"/>
+      <stop offset="60%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <radialGradient id="glow-k" cx="20%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#0fdfb5" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0fdfb5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="1200" height="900" fill="url(#bg-k)"/>
+  <rect width="1200" height="900" fill="url(#glow-k)"/>
+
+  <!-- 상단 뱃지 (미신 깨기) -->
+  <rect x="70" y="80" rx="8" width="380" height="52" fill="#ff006e"/>
+  <text x="260" y="115" text-anchor="middle" font-size="22" font-weight="900" fill="#ffffff" letter-spacing="1">💥 미신 깨기 · 5번 공개</text>
+
+  <!-- 미신 카피 -->
+  <text x="70" y="200" font-size="48" font-weight="900" fill="#ffffff" opacity="0.55" letter-spacing="-2">"ENTJ는 안 변한다"</text>
+  <line x1="55" y1="187" x2="650" y2="187" stroke="#ff006e" stroke-width="8"/>
+
+  <!-- 메인 카피 -->
+  <text x="70" y="265" font-size="56" font-weight="900" fill="#0fdfb5" letter-spacing="-2">카리나가 깨버렸어 →</text>
+
+  <!-- 변화박스 5개 + 화살표 4개 -->
+  <!-- Box1: 2020 ENTJ -->
+  <rect x="70" y="320" rx="12" width="195" height="125" fill="#ff6b1a" opacity="0.2"/>
+  <rect x="70" y="320" rx="12" width="195" height="125" fill="none" stroke="#ff6b1a" stroke-width="3"/>
+  <text x="167" y="360" text-anchor="middle" font-size="20" font-weight="900" fill="#ff6b1a">2020</text>
+  <text x="167" y="415" text-anchor="middle" font-size="44" font-weight="900" fill="#ffffff" letter-spacing="-1">ENTJ</text>
+
+  <!-- Arrow1 -->
+  <text x="282" y="395" text-anchor="middle" font-size="32" font-weight="900" fill="#0fdfb5">→</text>
+
+  <!-- Box2: 2022 ESTJ -->
+  <rect x="300" y="320" rx="12" width="195" height="125" fill="#7cff5b" opacity="0.2"/>
+  <rect x="300" y="320" rx="12" width="195" height="125" fill="none" stroke="#7cff5b" stroke-width="3"/>
+  <text x="397" y="360" text-anchor="middle" font-size="20" font-weight="900" fill="#7cff5b">2022</text>
+  <text x="397" y="415" text-anchor="middle" font-size="44" font-weight="900" fill="#ffffff" letter-spacing="-1">ESTJ</text>
+
+  <!-- Arrow2 -->
+  <text x="512" y="395" text-anchor="middle" font-size="32" font-weight="900" fill="#0fdfb5">→</text>
+
+  <!-- Box3: 2023 INTJ -->
+  <rect x="530" y="320" rx="12" width="195" height="125" fill="#4d8bff" opacity="0.2"/>
+  <rect x="530" y="320" rx="12" width="195" height="125" fill="none" stroke="#4d8bff" stroke-width="3"/>
+  <text x="627" y="360" text-anchor="middle" font-size="20" font-weight="900" fill="#4d8bff">2023</text>
+  <text x="627" y="415" text-anchor="middle" font-size="44" font-weight="900" fill="#ffffff" letter-spacing="-1">INTJ</text>
+
+  <!-- Arrow3 -->
+  <text x="742" y="395" text-anchor="middle" font-size="32" font-weight="900" fill="#0fdfb5">→</text>
+
+  <!-- Box4: 2024 ISFJ -->
+  <rect x="760" y="320" rx="12" width="195" height="125" fill="#ff2d8a" opacity="0.2"/>
+  <rect x="760" y="320" rx="12" width="195" height="125" fill="none" stroke="#ff2d8a" stroke-width="3"/>
+  <text x="857" y="360" text-anchor="middle" font-size="20" font-weight="900" fill="#ff2d8a">2024</text>
+  <text x="857" y="415" text-anchor="middle" font-size="44" font-weight="900" fill="#ffffff" letter-spacing="-1">ISFJ</text>
+
+  <!-- Arrow4 (회귀 화살표) -->
+  <text x="977" y="395" text-anchor="middle" font-size="32" font-weight="900" fill="#ffd700">↩</text>
+
+  <!-- Box5: 2024+ ESTJ (회귀, 골드) -->
+  <rect x="995" y="320" rx="12" width="135" height="125" fill="#ffd700" opacity="0.2"/>
+  <rect x="995" y="320" rx="12" width="135" height="125" fill="none" stroke="#ffd700" stroke-width="3"/>
+  <text x="1062" y="360" text-anchor="middle" font-size="16" font-weight="900" fill="#ffd700">현재</text>
+  <text x="1062" y="415" text-anchor="middle" font-size="36" font-weight="900" fill="#ffffff" letter-spacing="-1">ESTJ</text>
+
+  <!-- 본질 라벨 -->
+  <rect x="70" y="495" width="14" height="70" fill="#ffd700"/>
+  <text x="100" y="535" font-size="48" font-weight="900" fill="#ffd700" letter-spacing="-2">본질 = ESTJ (본인 자가 진단)</text>
+  <text x="100" y="580" font-size="20" font-weight="700" fill="#ffffff" opacity="0.9">📚 Heilman 2007 backlash · Marcia 1980 정체성 4단계</text>
+
+  <!-- 비교 정보 박스 -->
+  <g transform="translate(70, 620)">
+    <rect x="0" y="0" rx="12" width="1060" height="120" fill="#ffffff" opacity="0.08"/>
+    <rect x="0" y="0" rx="12" width="1060" height="120" fill="none" stroke="#0fdfb5" stroke-width="2"/>
+    <text x="30" y="40" font-size="22" font-weight="900" fill="#0fdfb5">장원영 vs 카리나 — 같은 ENTJ, 다른 생존 전략</text>
+    <text x="30" y="75" font-size="18" font-weight="700" fill="#ffffff">장원영: 정체성 유지 + 럭키비키 페르소나로 backlash 우회</text>
+    <text x="30" y="102" font-size="18" font-weight="700" fill="#ffffff">카리나: 환경 따라 보조기능 활성화 (검사 결과 자체 변동)</text>
+  </g>
+
+  <!-- 하단 태그라인 -->
+  <rect x="70" y="780" width="14" height="58" fill="#ffd700"/>
+  <text x="100" y="810" font-size="26" font-weight="900" fill="#ffffff">한국 ENTJ 여성의 backlash 우회법</text>
+  <text x="100" y="842" font-size="18" font-weight="700" fill="#ffffff" opacity="0.85">청년기 정체성 발달 모델로 본 5번 변동의 진짜 의미</text>
+
+  <!-- 우하단 브랜드 -->
+  <text x="1130" y="862" text-anchor="end" font-size="16" font-weight="800" fill="#ffd700" opacity="0.9">192types.co.kr</text>
+</svg>
