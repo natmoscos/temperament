@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { TypeDetailContent } from '@/components/TypeDetailContent';
 import JsonLd from '@/components/JsonLd';
 
@@ -25,11 +26,20 @@ const mbtiDescriptions: Record<string, { name: string; desc: string }> = {
   ENTJ: { name: '대담한 통솔자', desc: 'ENTJ 유형의 성격 특징, 기질별 차이, 연애 스타일, 직업 추천을 확인하세요.' },
 };
 
+// 유형별 hero 이미지 매핑 — 사용자가 추가할 때마다 한 줄씩 등록
+// 파일 위치: public/types/{lowercase}.webp (1200×630 권장)
+const TYPE_IMAGES: Record<string, string> = {
+  INTJ: '/types/intj.webp',
+  // 다른 유형 이미지 추가 예정
+};
+
 export async function generateMetadata({ params }: { params: Promise<{ type: string }> }): Promise<Metadata> {
   const { type } = await params;
   const mbtiType = type.toUpperCase();
   const info = mbtiDescriptions[mbtiType];
   if (!info) return { title: '유형을 찾을 수 없습니다' };
+
+  const imageUrl = TYPE_IMAGES[mbtiType];
 
   return {
     title: `${mbtiType} 성격 유형 — ${info.name} | 기질별 심층 분석`,
@@ -41,7 +51,11 @@ export async function generateMetadata({ params }: { params: Promise<{ type: str
     openGraph: {
       title: `${mbtiType} 성격 유형 — ${info.name}`,
       description: info.desc,
+      ...(imageUrl
+        ? { images: [{ url: `${SITE_URL}${imageUrl}`, width: 1200, height: 630, alt: `${mbtiType} ${info.name} — 성격 유형 일러스트` }] }
+        : {}),
     },
+    twitter: imageUrl ? { card: 'summary_large_image', images: [`${SITE_URL}${imageUrl}`] } : undefined,
   };
 }
 
@@ -61,6 +75,8 @@ export default async function TypePage({ params }: { params: Promise<{ type: str
 
   const info = mbtiDescriptions[mbtiType];
   const typeName = info ? `${mbtiType} ${info.name}` : mbtiType;
+  const imageUrl = TYPE_IMAGES[mbtiType];
+  const altText = info ? `${mbtiType} ${info.name} — 성격 유형 일러스트` : `${mbtiType} 성격 유형`;
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-12 px-4">
@@ -73,6 +89,16 @@ export default async function TypePage({ params }: { params: Promise<{ type: str
           { '@type': 'ListItem', position: 3, name: typeName },
         ],
       }} />
+      {imageUrl && (
+        <JsonLd data={{
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          headline: `${mbtiType} 성격 유형 — ${info?.name ?? ''}`,
+          description: info?.desc,
+          image: `${SITE_URL}${imageUrl}`,
+          mainEntityOfPage: `${SITE_URL}/types/${type}`,
+        }} />
+      )}
       <div className="max-w-3xl mx-auto">
         <Link href="/types" className="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-indigo-600 mb-6 transition">
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -80,6 +106,20 @@ export default async function TypePage({ params }: { params: Promise<{ type: str
           </svg>
           모든 유형 보기
         </Link>
+
+        {imageUrl && (
+          <div className="mb-8 rounded-2xl overflow-hidden shadow-md bg-white">
+            <Image
+              src={imageUrl}
+              alt={altText}
+              width={1200}
+              height={630}
+              priority
+              sizes="(max-width: 768px) 100vw, 768px"
+              className="w-full h-auto"
+            />
+          </div>
+        )}
 
         <TypeDetailContent mbtiType={mbtiType} />
       </div>
