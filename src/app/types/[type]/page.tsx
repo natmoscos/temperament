@@ -31,6 +31,7 @@ const mbtiDescriptions: Record<string, { name: string; desc: string }> = {
 const TYPE_IMAGES: Record<string, string> = {
   INTJ: '/types/intj.webp',
   INTP: '/types/intp.webp',
+  ENTJ: '/types/entj.webp',
   // 다른 유형 이미지 추가 예정
 };
 
