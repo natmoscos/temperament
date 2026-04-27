@@ -30,6 +30,7 @@ const mbtiDescriptions: Record<string, { name: string; desc: string }> = {
 // 파일 위치: public/types/{lowercase}.webp (1200×630 권장)
 const TYPE_IMAGES: Record<string, string> = {
   INTJ: '/types/intj.webp',
+  INTP: '/types/intp.webp',
   // 다른 유형 이미지 추가 예정
 };
 
