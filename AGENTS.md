@@ -8,13 +8,17 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 블로그 콘텐츠(신규 작성, 리라이트, 섹션 확장) 작업 시 **반드시** 먼저 읽을 것:
 
-- **`docs/writing-style-v2.md` — 메인 가이드** (구조·다양성·SEO·학술 인용·Hook 6패턴·CTA 8변형·FAQ 필수)
-- `docs/writing-style.md` — v1 보조 (톤·리듬·금지 표현·문장 규칙)
-- `docs/blog-persona.md` — 박서연 페르소나 배경 (v2에서 사용 빈도 제한)
+- **`docs/writing-style.md` — 메인 가이드** (446줄, 톤·구조·SEO·학술·Hook 6패턴·CTA 8변형·FAQ 필수·마크다운 표 금지)
+- `docs/blog-persona.md` — 박서연 페르소나 배경 (사용 빈도 제한)
 
-**v2 우선 적용 (2026-04-25부터). v1은 톤·문장 규칙만 폴백 참조.**
-
-v2가 해결하려는 핵심 문제: 모든 글이 "5섹션 고정 + 기질 4종 비교 마무리 + 같은 도입 패턴"으로 비슷해 보임. v2는 Hook 6패턴·섹션 구조 매트릭스·분석 깊이 4단계·FAQ 섹션·CTA 8변형으로 다양성 확보.
+핵심 규칙:
+- 핵심 정리체 금지 (~입니다/~합니다 X)
+- Information Gain 2개 이상 필수 (1차 자료·학술·비교 등)
+- Hook 6패턴 다양화 (같은 패턴 두 글 연속 ❌)
+- 분석 깊이 3단계 이상 (학술 인용 1회+)
+- FAQ 섹션 1개 필수
+- **마크다운 표 사용 금지** (렌더러 미지원 — bullet list로 대체)
+- **TL;DR 박스 사용 금지** (한국 톤 어색·체류시간 ↓)
 
 기본값은 "핵심 정리체" 회귀다. 가이드 없이 쓰면 망한다.
 
