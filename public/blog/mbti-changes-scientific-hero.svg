@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bg-s" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="55%" stop-color="#0b1437"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <radialGradient id="glow-s" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="1200" height="900" fill="url(#bg-s)"/>
+  <rect width="1200" height="900" fill="url(#glow-s)"/>
+
+  <!-- 뱃지 -->
+  <rect x="70" y="80" rx="10" width="340" height="56" fill="#00e5ff"/>
+  <text x="240" y="118" text-anchor="middle" font-size="22" font-weight="900" fill="#0a0a0a" letter-spacing="1">📚 학술 답변 · 메타 분석</text>
+
+  <!-- 메인 질문 -->
+  <text x="70" y="210" font-size="58" font-weight="900" fill="#ffffff" letter-spacing="-2">MBTI 결과 자꾸 바뀐다고?</text>
+
+  <!-- 충격 답변: 50% 초대형 + "는 정상" (겹침 회피로 위치 분리) -->
+  <text x="70" y="400" font-size="200" font-weight="900" fill="#00e5ff" letter-spacing="-8" stroke="#0a0a0a" stroke-width="2">50%</text>
+  <text x="540" y="370" font-size="56" font-weight="900" fill="#ffffff" letter-spacing="-2">는 정상이야</text>
+  <text x="540" y="420" font-size="26" font-weight="700" fill="#00e5ff" opacity="0.9">학술적으로 검증됐다</text>
+
+  <!-- 학술 출처 라인 -->
+  <rect x="70" y="465" width="14" height="40" fill="#00e5ff"/>
+  <text x="100" y="495" font-size="22" font-weight="800" fill="#ffffff">📖 Pittenger 1993 · Beebe 8기능 · Marcia 정체성 4단계</text>
+
+  <!-- 4패턴 박스 -->
+  <g transform="translate(70, 540)">
+    <!-- NP 뼈대형 (V) -->
+    <rect x="0" y="0" rx="12" width="250" height="130" fill="#ff006e" opacity="0.18"/>
+    <rect x="0" y="0" rx="12" width="250" height="130" fill="none" stroke="#ff006e" stroke-width="3"/>
+    <text x="125" y="38" text-anchor="middle" font-size="20" font-weight="900" fill="#ff006e" letter-spacing="1">패턴 1</text>
+    <text x="125" y="78" text-anchor="middle" font-size="34" font-weight="900" fill="#ffffff">NP 뼈대형</text>
+    <text x="125" y="108" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.85">V (BTS) 사례</text>
+
+    <!-- IxxP 뼈대형 (정국) -->
+    <rect x="270" y="0" rx="12" width="250" height="130" fill="#fbbf24" opacity="0.18"/>
+    <rect x="270" y="0" rx="12" width="250" height="130" fill="none" stroke="#fbbf24" stroke-width="3"/>
+    <text x="395" y="38" text-anchor="middle" font-size="20" font-weight="900" fill="#fbbf24" letter-spacing="1">패턴 2</text>
+    <text x="395" y="78" text-anchor="middle" font-size="34" font-weight="900" fill="#ffffff">IxxP 뼈대</text>
+    <text x="395" y="108" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.85">정국 (BTS) 사례</text>
+
+    <!-- 검사 노이즈형 -->
+    <rect x="540" y="0" rx="12" width="250" height="130" fill="#00e5ff" opacity="0.18"/>
+    <rect x="540" y="0" rx="12" width="250" height="130" fill="none" stroke="#00e5ff" stroke-width="3"/>
+    <text x="665" y="38" text-anchor="middle" font-size="20" font-weight="900" fill="#00e5ff" letter-spacing="1">패턴 3</text>
+    <text x="665" y="78" text-anchor="middle" font-size="32" font-weight="900" fill="#ffffff">검사 노이즈</text>
+    <text x="665" y="108" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.85">인구 60%+ 가장 흔함</text>
+
+    <!-- 격동기형 -->
+    <rect x="810" y="0" rx="12" width="250" height="130" fill="#f5ff3d" opacity="0.18"/>
+    <rect x="810" y="0" rx="12" width="250" height="130" fill="none" stroke="#f5ff3d" stroke-width="3"/>
+    <text x="935" y="38" text-anchor="middle" font-size="20" font-weight="900" fill="#f5ff3d" letter-spacing="1">패턴 4</text>
+    <text x="935" y="78" text-anchor="middle" font-size="34" font-weight="900" fill="#ffffff">격동기형</text>
+    <text x="935" y="108" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff" opacity="0.85">큰 환경 변화 직후</text>
+  </g>
+
+  <!-- 하단 태그라인 -->
+  <rect x="70" y="730" width="14" height="60" fill="#00e5ff"/>
+  <text x="100" y="760" font-size="26" font-weight="900" fill="#ffffff">너의 변동 패턴은 어느 쪽?</text>
+  <text x="100" y="792" font-size="18" font-weight="700" fill="#ffffff" opacity="0.85">V·정국·카리나·장원영 사례로 풀어본 4가지 변화 패턴 분류</text>
+
+  <!-- 우하단 브랜드 -->
+  <text x="1130" y="862" text-anchor="end" font-size="16" font-weight="800" fill="#00e5ff">192types.co.kr</text>
+</svg>
