@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" font-family="'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bg-c" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="55%" stop-color="#0b1437"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+    <radialGradient id="glow-c" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffd700" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="1200" height="900" fill="url(#bg-c)"/>
+  <rect width="1200" height="900" fill="url(#glow-c)"/>
+
+  <!-- 뱃지 -->
+  <rect x="70" y="80" rx="10" width="380" height="56" fill="#ffd700"/>
+  <text x="260" y="118" text-anchor="middle" font-size="22" font-weight="900" fill="#0a0a0a" letter-spacing="1">📚 학술 가이드 · Jung 1921</text>
+
+  <!-- 메인 카피 -->
+  <text x="70" y="200" font-size="62" font-weight="900" fill="#ffffff" letter-spacing="-3">8개 인지기능 완전 정리</text>
+  <text x="70" y="245" font-size="28" font-weight="700" fill="#ffd700" opacity="0.9">MBTI 16유형의 진짜 메커니즘</text>
+
+  <!-- 8기능 매트릭스 (4 × 2) -->
+  <g transform="translate(70, 290)">
+    <!-- 헤더 -->
+    <text x="280" y="0" text-anchor="middle" font-size="20" font-weight="900" fill="#ffffff" opacity="0.7" letter-spacing="2">외향 (e)</text>
+    <text x="780" y="0" text-anchor="middle" font-size="20" font-weight="900" fill="#ffffff" opacity="0.7" letter-spacing="2">내향 (i)</text>
+
+    <!-- Row 1: 감각 (S) -->
+    <text x="-20" y="80" text-anchor="end" font-size="22" font-weight="900" fill="#ffffff" opacity="0.85">감각</text>
+
+    <!-- Se -->
+    <rect x="0" y="20" rx="14" width="510" height="110" fill="#fbbf24" opacity="0.18"/>
+    <rect x="0" y="20" rx="14" width="510" height="110" fill="none" stroke="#fbbf24" stroke-width="3"/>
+    <text x="40" y="62" font-size="40" font-weight="900" fill="#fbbf24">Se</text>
+    <text x="115" y="62" font-size="22" font-weight="800" fill="#ffffff">외향 감각</text>
+    <text x="40" y="105" font-size="18" font-weight="700" fill="#ffffff" opacity="0.85">지금 이 순간 감각 자극 · ESTP·ESFP 주기능</text>
+
+    <!-- Si -->
+    <rect x="540" y="20" rx="14" width="510" height="110" fill="#92400e" opacity="0.22"/>
+    <rect x="540" y="20" rx="14" width="510" height="110" fill="none" stroke="#92400e" stroke-width="3"/>
+    <text x="580" y="62" font-size="40" font-weight="900" fill="#f5e6c5">Si</text>
+    <text x="655" y="62" font-size="22" font-weight="800" fill="#ffffff">내향 감각</text>
+    <text x="580" y="105" font-size="18" font-weight="700" fill="#ffffff" opacity="0.85">과거 기억 정밀 보관 · ISTJ·ISFJ 주기능</text>
+
+    <!-- Row 2: 직관 (N) -->
+    <text x="-20" y="200" text-anchor="end" font-size="22" font-weight="900" fill="#ffffff" opacity="0.85">직관</text>
+
+    <!-- Ne -->
+    <rect x="0" y="140" rx="14" width="510" height="110" fill="#f472b6" opacity="0.18"/>
+    <rect x="0" y="140" rx="14" width="510" height="110" fill="none" stroke="#f472b6" stroke-width="3"/>
+    <text x="40" y="182" font-size="40" font-weight="900" fill="#f472b6">Ne</text>
+    <text x="115" y="182" font-size="22" font-weight="800" fill="#ffffff">외향 직관</text>
+    <text x="40" y="225" font-size="18" font-weight="700" fill="#ffffff" opacity="0.85">가능성 무한 확장 · ENTP·ENFP 주기능</text>
+
+    <!-- Ni -->
+    <rect x="540" y="140" rx="14" width="510" height="110" fill="#7c3aed" opacity="0.22"/>
+    <rect x="540" y="140" rx="14" width="510" height="110" fill="none" stroke="#7c3aed" stroke-width="3"/>
+    <text x="580" y="182" font-size="40" font-weight="900" fill="#7c3aed">Ni</text>
+    <text x="655" y="182" font-size="22" font-weight="800" fill="#ffffff">내향 직관</text>
+    <text x="580" y="225" font-size="18" font-weight="700" fill="#ffffff" opacity="0.85">미래 한 점 응시 · INTJ·INFJ 주기능</text>
+
+    <!-- Row 3: 사고 (T) -->
+    <text x="-20" y="320" text-anchor="end" font-size="22" font-weight="900" fill="#ffffff" opacity="0.85">사고</text>
+
+    <!-- Te -->
+    <rect x="0" y="260" rx="14" width="510" height="110" fill="#06b6d4" opacity="0.18"/>
+    <rect x="0" y="260" rx="14" width="510" height="110" fill="none" stroke="#06b6d4" stroke-width="3"/>
+    <text x="40" y="302" font-size="40" font-weight="900" fill="#06b6d4">Te</text>
+    <text x="115" y="302" font-size="22" font-weight="800" fill="#ffffff">외향 사고</text>
+    <text x="40" y="345" font-size="18" font-weight="700" fill="#ffffff" opacity="0.85">외부 시스템 효율 최적화 · ENTJ·ESTJ 주기능</text>
+
+    <!-- Ti -->
+    <rect x="540" y="260" rx="14" width="510" height="110" fill="#1e40af" opacity="0.25"/>
+    <rect x="540" y="260" rx="14" width="510" height="110" fill="none" stroke="#1e40af" stroke-width="3"/>
+    <text x="580" y="302" font-size="40" font-weight="900" fill="#00e5ff">Ti</text>
+    <text x="655" y="302" font-size="22" font-weight="800" fill="#ffffff">내향 사고</text>
+    <text x="580" y="345" font-size="18" font-weight="700" fill="#ffffff" opacity="0.85">내부 논리 체계 구축 · INTP·ISTP 주기능</text>
+
+    <!-- Row 4: 감정 (F) -->
+    <text x="-20" y="440" text-anchor="end" font-size="22" font-weight="900" fill="#ffffff" opacity="0.85">감정</text>
+
+    <!-- Fe -->
+    <rect x="0" y="380" rx="14" width="510" height="110" fill="#f97316" opacity="0.20"/>
+    <rect x="0" y="380" rx="14" width="510" height="110" fill="none" stroke="#f97316" stroke-width="3"/>
+    <text x="40" y="422" font-size="40" font-weight="900" fill="#f97316">Fe</text>
+    <text x="115" y="422" font-size="22" font-weight="800" fill="#ffffff">외향 감정</text>
+    <text x="40" y="465" font-size="18" font-weight="700" fill="#ffffff" opacity="0.85">집단 가치 조율 · ENFJ·ESFJ 주기능</text>
+
+    <!-- Fi -->
+    <rect x="540" y="380" rx="14" width="510" height="110" fill="#be123c" opacity="0.22"/>
+    <rect x="540" y="380" rx="14" width="510" height="110" fill="none" stroke="#be123c" stroke-width="3"/>
+    <text x="580" y="422" font-size="40" font-weight="900" fill="#be123c">Fi</text>
+    <text x="655" y="422" font-size="22" font-weight="800" fill="#ffffff">내향 감정</text>
+    <text x="580" y="465" font-size="18" font-weight="700" fill="#ffffff" opacity="0.85">개인 가치 진실 · INFP·ISFP 주기능</text>
+  </g>
+
+  <!-- 하단 태그라인 -->
+  <rect x="70" y="800" width="14" height="56" fill="#ffd700"/>
+  <text x="100" y="828" font-size="22" font-weight="900" fill="#ffffff">8기능 위계 + 16유형 매핑 + Beebe 8기능 모델</text>
+  <text x="100" y="855" font-size="16" font-weight="700" fill="#ffffff" opacity="0.85">Jung 1921 · Beebe 2004 · Quenk 2002 학술 인용</text>
+
+  <!-- 우하단 브랜드 -->
+  <text x="1130" y="876" text-anchor="end" font-size="16" font-weight="800" fill="#ffd700">192types.co.kr</text>
+</svg>
